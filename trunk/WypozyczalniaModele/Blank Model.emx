@@ -1,0 +1,2066 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--xtools2_universal_type_manager-->
+<?com.ibm.xtools.emf.core.signature <signature id="com.ibm.xtools.uml.msl.model" version="7.0.0"><feature description="" name="com.ibm.xtools.ruml.feature" url="" version="7.0.0"/></signature>?>
+<?com.ibm.xtools.emf.core.signature <signature id="com.ibm.xtools.mmi.ui.signatures.diagram" version="7.0.0"><feature description="" name="Rational Modeling Platform (com.ibm.xtools.rmp)" url="" version="7.0.0"/></signature>?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:JavaTransformation50="http:///schemas/JavaTransformation50/_p9euoQh4Edy3mNZQMQSk2Q/17" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.0/notation" xmlns:uml="http://www.eclipse.org/uml2/2.0.0/UML" xmlns:umlnotation="http://www.ibm.com/xtools/1.5.2/Umlnotation" xsi:schemaLocation="http:///schemas/JavaTransformation50/_p9euoQh4Edy3mNZQMQSk2Q/17 pathmap://TRANSFORM_JAVA5_PROFILES/JavaTransformProfile.epx#_p9yQoAh4Edy3mNZQMQSk2Q?JavaTransformation5.0/JavaTransformation50?">
+  <uml:Model xmi:id="_lE7zsAPhEd2W2ZxVwhnqfg" name="oracleModel">
+    <eAnnotations xmi:id="_lE7zsQPhEd2W2ZxVwhnqfg" source="uml2.diagrams" references="_lE7zsgPhEd2W2ZxVwhnqfg">
+      <contents xmi:type="notation:Diagram" xmi:id="_lE7zsgPhEd2W2ZxVwhnqfg" type="Class" name="Main">
+        <children xmi:id="_nGfw7QPjEd2W2ZxVwhnqfg" element="_kyhjIgPjEd2W2ZxVwhnqfg">
+          <children xmi:id="_nGo60APjEd2W2ZxVwhnqfg" type="ImageCompartment">
+            <layoutConstraint xmi:type="notation:Size" xmi:id="_nGo60QPjEd2W2ZxVwhnqfg" width="1320" height="1320"/>
+          </children>
+          <children xmi:id="_nGo60gPjEd2W2ZxVwhnqfg" type="Stereotype"/>
+          <children xmi:id="_nGo60wPjEd2W2ZxVwhnqfg" type="Name"/>
+          <children xmi:id="_nGo61APjEd2W2ZxVwhnqfg" type="Parent"/>
+          <children xmi:id="_nGo61QPjEd2W2ZxVwhnqfg" type="AttributeCompartment">
+            <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_nGo61gPjEd2W2ZxVwhnqfg"/>
+          </children>
+          <children xmi:id="_nGo61wPjEd2W2ZxVwhnqfg" type="OperationCompartment">
+            <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_nGo62APjEd2W2ZxVwhnqfg"/>
+          </children>
+          <children xmi:id="_nGo62QPjEd2W2ZxVwhnqfg" type="SignalCompartment">
+            <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_nGo62gPjEd2W2ZxVwhnqfg"/>
+          </children>
+          <children xmi:id="_nGo62wPjEd2W2ZxVwhnqfg" visible="false" type="StructureCompartment">
+            <styles xmi:type="umlnotation:UMLShapeCompartmentStyle" xmi:id="_nGo63APjEd2W2ZxVwhnqfg"/>
+          </children>
+          <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="_nGfw7gPjEd2W2ZxVwhnqfg" showListSignature="true" showStereotype="Label"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_nGfw7wPjEd2W2ZxVwhnqfg" x="19781" y="22660"/>
+        </children>
+        <children xmi:id="_nGo63QPjEd2W2ZxVwhnqfg" element="_ky0esAPjEd2W2ZxVwhnqfg">
+          <children xmi:id="_nGo64APjEd2W2ZxVwhnqfg" type="ImageCompartment">
+            <layoutConstraint xmi:type="notation:Size" xmi:id="_nGo64QPjEd2W2ZxVwhnqfg" width="1320" height="1320"/>
+          </children>
+          <children xmi:id="_nGyr0APjEd2W2ZxVwhnqfg" type="Stereotype"/>
+          <children xmi:id="_nGyr0QPjEd2W2ZxVwhnqfg" type="Name"/>
+          <children xmi:id="_nGyr0gPjEd2W2ZxVwhnqfg" type="Parent"/>
+          <children xmi:id="_nGyr0wPjEd2W2ZxVwhnqfg" type="AttributeCompartment">
+            <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_nGyr1APjEd2W2ZxVwhnqfg"/>
+          </children>
+          <children xmi:id="_nGyr1QPjEd2W2ZxVwhnqfg" type="OperationCompartment">
+            <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_nGyr1gPjEd2W2ZxVwhnqfg"/>
+          </children>
+          <children xmi:id="_nGyr1wPjEd2W2ZxVwhnqfg" visible="false" type="SignalCompartment">
+            <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_nGyr2APjEd2W2ZxVwhnqfg"/>
+          </children>
+          <children xmi:id="_nGyr2QPjEd2W2ZxVwhnqfg" visible="false" type="StructureCompartment">
+            <styles xmi:type="umlnotation:UMLShapeCompartmentStyle" xmi:id="_nGyr2gPjEd2W2ZxVwhnqfg"/>
+          </children>
+          <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="_nGo63gPjEd2W2ZxVwhnqfg" showStereotype="Label"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_nGo63wPjEd2W2ZxVwhnqfg" x="10730" y="22665"/>
+        </children>
+        <children xmi:id="_nGyr2wPjEd2W2ZxVwhnqfg" element="_kyhjdQPjEd2W2ZxVwhnqfg">
+          <children xmi:id="_nGyr3gPjEd2W2ZxVwhnqfg" type="ImageCompartment">
+            <layoutConstraint xmi:type="notation:Size" xmi:id="_nGyr3wPjEd2W2ZxVwhnqfg" width="1320" height="1320"/>
+          </children>
+          <children xmi:id="_nGyr4APjEd2W2ZxVwhnqfg" type="Stereotype"/>
+          <children xmi:id="_nGyr4QPjEd2W2ZxVwhnqfg" type="Name"/>
+          <children xmi:id="_nGyr4gPjEd2W2ZxVwhnqfg" type="Parent"/>
+          <children xmi:id="_nGyr4wPjEd2W2ZxVwhnqfg" type="AttributeCompartment">
+            <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_nGyr5APjEd2W2ZxVwhnqfg"/>
+          </children>
+          <children xmi:id="_nGyr5QPjEd2W2ZxVwhnqfg" type="OperationCompartment">
+            <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_nGyr5gPjEd2W2ZxVwhnqfg"/>
+          </children>
+          <children xmi:id="_nGyr5wPjEd2W2ZxVwhnqfg" visible="false" type="SignalCompartment">
+            <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_nGyr6APjEd2W2ZxVwhnqfg"/>
+          </children>
+          <children xmi:id="_nGyr6QPjEd2W2ZxVwhnqfg" visible="false" type="StructureCompartment">
+            <styles xmi:type="umlnotation:UMLShapeCompartmentStyle" xmi:id="_nG71wAPjEd2W2ZxVwhnqfg"/>
+          </children>
+          <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="_nGyr3APjEd2W2ZxVwhnqfg" showStereotype="Label"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_nGyr3QPjEd2W2ZxVwhnqfg" x="10239" y="8441"/>
+        </children>
+        <children xmi:id="_nG71wQPjEd2W2ZxVwhnqfg" element="_kyrUVwPjEd2W2ZxVwhnqfg">
+          <children xmi:id="_nG71xAPjEd2W2ZxVwhnqfg" type="ImageCompartment">
+            <layoutConstraint xmi:type="notation:Size" xmi:id="_nG71xQPjEd2W2ZxVwhnqfg" width="1320" height="1320"/>
+          </children>
+          <children xmi:id="_nG71xgPjEd2W2ZxVwhnqfg" type="Stereotype"/>
+          <children xmi:id="_nG71xwPjEd2W2ZxVwhnqfg" type="Name"/>
+          <children xmi:id="_nG71yAPjEd2W2ZxVwhnqfg" type="Parent"/>
+          <children xmi:id="_nG71yQPjEd2W2ZxVwhnqfg" type="AttributeCompartment">
+            <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_nG71ygPjEd2W2ZxVwhnqfg"/>
+          </children>
+          <children xmi:id="_nG71ywPjEd2W2ZxVwhnqfg" type="OperationCompartment">
+            <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_nG71zAPjEd2W2ZxVwhnqfg"/>
+          </children>
+          <children xmi:id="_nG71zQPjEd2W2ZxVwhnqfg" visible="false" type="SignalCompartment">
+            <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_nG71zgPjEd2W2ZxVwhnqfg"/>
+          </children>
+          <children xmi:id="_nG71zwPjEd2W2ZxVwhnqfg" visible="false" type="StructureCompartment">
+            <styles xmi:type="umlnotation:UMLShapeCompartmentStyle" xmi:id="_nG710APjEd2W2ZxVwhnqfg"/>
+          </children>
+          <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="_nG71wgPjEd2W2ZxVwhnqfg" showStereotype="Label"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_nG71wwPjEd2W2ZxVwhnqfg" x="6121" y="44593"/>
+        </children>
+        <children xmi:id="_nG710QPjEd2W2ZxVwhnqfg" element="_kyrVGwPjEd2W2ZxVwhnqfg">
+          <children xmi:id="_nG711APjEd2W2ZxVwhnqfg" type="ImageCompartment">
+            <layoutConstraint xmi:type="notation:Size" xmi:id="_nG711QPjEd2W2ZxVwhnqfg" width="1320" height="1320"/>
+          </children>
+          <children xmi:id="_nG711gPjEd2W2ZxVwhnqfg" type="Stereotype"/>
+          <children xmi:id="_nHFmwAPjEd2W2ZxVwhnqfg" type="Name"/>
+          <children xmi:id="_nHFmwQPjEd2W2ZxVwhnqfg" type="Parent"/>
+          <children xmi:id="_nHFmwgPjEd2W2ZxVwhnqfg" type="AttributeCompartment">
+            <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_nHFmwwPjEd2W2ZxVwhnqfg"/>
+          </children>
+          <children xmi:id="_nHFmxAPjEd2W2ZxVwhnqfg" type="OperationCompartment">
+            <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_nHFmxQPjEd2W2ZxVwhnqfg"/>
+          </children>
+          <children xmi:id="_nHFmxgPjEd2W2ZxVwhnqfg" visible="false" type="SignalCompartment">
+            <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_nHFmxwPjEd2W2ZxVwhnqfg"/>
+          </children>
+          <children xmi:id="_nHFmyAPjEd2W2ZxVwhnqfg" visible="false" type="StructureCompartment">
+            <styles xmi:type="umlnotation:UMLShapeCompartmentStyle" xmi:id="_nHFmyQPjEd2W2ZxVwhnqfg"/>
+          </children>
+          <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="_nG710gPjEd2W2ZxVwhnqfg" showStereotype="Label"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_nG710wPjEd2W2ZxVwhnqfg" x="2558" y="33067"/>
+        </children>
+        <children xmi:id="_nHFmygPjEd2W2ZxVwhnqfg" element="_ky0eeQPjEd2W2ZxVwhnqfg">
+          <children xmi:id="_nHFmzQPjEd2W2ZxVwhnqfg" type="ImageCompartment">
+            <layoutConstraint xmi:type="notation:Size" xmi:id="_nHFmzgPjEd2W2ZxVwhnqfg" width="1320" height="1320"/>
+          </children>
+          <children xmi:id="_nHFmzwPjEd2W2ZxVwhnqfg" type="Stereotype"/>
+          <children xmi:id="_nHFm0APjEd2W2ZxVwhnqfg" type="Name"/>
+          <children xmi:id="_nHFm0QPjEd2W2ZxVwhnqfg" type="Parent"/>
+          <children xmi:id="_nHFm0gPjEd2W2ZxVwhnqfg" type="AttributeCompartment">
+            <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_nHFm0wPjEd2W2ZxVwhnqfg"/>
+          </children>
+          <children xmi:id="_nHFm1APjEd2W2ZxVwhnqfg" type="OperationCompartment">
+            <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_nHFm1QPjEd2W2ZxVwhnqfg"/>
+          </children>
+          <children xmi:id="_nHFm1gPjEd2W2ZxVwhnqfg" visible="false" type="SignalCompartment">
+            <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_nHFm1wPjEd2W2ZxVwhnqfg"/>
+          </children>
+          <children xmi:id="_nHFm2APjEd2W2ZxVwhnqfg" visible="false" type="StructureCompartment">
+            <styles xmi:type="umlnotation:UMLShapeCompartmentStyle" xmi:id="_nHFm2QPjEd2W2ZxVwhnqfg"/>
+          </children>
+          <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="_nHFmywPjEd2W2ZxVwhnqfg" showStereotype="Label"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_nHFmzAPjEd2W2ZxVwhnqfg" x="10294" y="33051"/>
+        </children>
+        <children xmi:id="_nHFm2gPjEd2W2ZxVwhnqfg" element="_ky0eGQPjEd2W2ZxVwhnqfg">
+          <children xmi:id="_nHFm3QPjEd2W2ZxVwhnqfg" type="ImageCompartment">
+            <layoutConstraint xmi:type="notation:Size" xmi:id="_nHFm3gPjEd2W2ZxVwhnqfg" width="1320" height="1320"/>
+          </children>
+          <children xmi:id="_nHFm3wPjEd2W2ZxVwhnqfg" type="Stereotype"/>
+          <children xmi:id="_nHFm4APjEd2W2ZxVwhnqfg" type="Name"/>
+          <children xmi:id="_nHFm4QPjEd2W2ZxVwhnqfg" type="Parent"/>
+          <children xmi:id="_nHFm4gPjEd2W2ZxVwhnqfg" type="AttributeCompartment">
+            <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_nHFm4wPjEd2W2ZxVwhnqfg"/>
+          </children>
+          <children xmi:id="_nHFm5APjEd2W2ZxVwhnqfg" type="OperationCompartment">
+            <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_nHFm5QPjEd2W2ZxVwhnqfg"/>
+          </children>
+          <children xmi:id="_nHFm5gPjEd2W2ZxVwhnqfg" visible="false" type="SignalCompartment">
+            <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_nHFm5wPjEd2W2ZxVwhnqfg"/>
+          </children>
+          <children xmi:id="_nHFm6APjEd2W2ZxVwhnqfg" visible="false" type="StructureCompartment">
+            <styles xmi:type="umlnotation:UMLShapeCompartmentStyle" xmi:id="_nHFm6QPjEd2W2ZxVwhnqfg"/>
+          </children>
+          <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="_nHFm2wPjEd2W2ZxVwhnqfg" showStereotype="Label"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_nHFm3APjEd2W2ZxVwhnqfg" x="1442" y="22662"/>
+        </children>
+        <children xmi:id="_nHFm6gPjEd2W2ZxVwhnqfg" element="_kyrUmQPjEd2W2ZxVwhnqfg">
+          <children xmi:id="_nHFm7QPjEd2W2ZxVwhnqfg" type="ImageCompartment">
+            <layoutConstraint xmi:type="notation:Size" xmi:id="_nHFm7gPjEd2W2ZxVwhnqfg" width="1320" height="1320"/>
+          </children>
+          <children xmi:id="_nHFm7wPjEd2W2ZxVwhnqfg" type="Stereotype"/>
+          <children xmi:id="_nHFm8APjEd2W2ZxVwhnqfg" type="Name"/>
+          <children xmi:id="_nHFm8QPjEd2W2ZxVwhnqfg" type="Parent"/>
+          <children xmi:id="_nHFm8gPjEd2W2ZxVwhnqfg" type="AttributeCompartment">
+            <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_nHFm8wPjEd2W2ZxVwhnqfg"/>
+          </children>
+          <children xmi:id="_nHPXwAPjEd2W2ZxVwhnqfg" type="OperationCompartment">
+            <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_nHPXwQPjEd2W2ZxVwhnqfg"/>
+          </children>
+          <children xmi:id="_nHPXwgPjEd2W2ZxVwhnqfg" visible="false" type="SignalCompartment">
+            <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_nHPXwwPjEd2W2ZxVwhnqfg"/>
+          </children>
+          <children xmi:id="_nHPXxAPjEd2W2ZxVwhnqfg" visible="false" type="StructureCompartment">
+            <styles xmi:type="umlnotation:UMLShapeCompartmentStyle" xmi:id="_nHPXxQPjEd2W2ZxVwhnqfg"/>
+          </children>
+          <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="_nHFm6wPjEd2W2ZxVwhnqfg" showStereotype="Label"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_nHFm7APjEd2W2ZxVwhnqfg" x="5659" y="57545"/>
+        </children>
+        <children xmi:id="_nHPXxgPjEd2W2ZxVwhnqfg" element="_kyrU0APjEd2W2ZxVwhnqfg">
+          <children xmi:id="_nHPXyQPjEd2W2ZxVwhnqfg" type="ImageCompartment">
+            <layoutConstraint xmi:type="notation:Size" xmi:id="_nHPXygPjEd2W2ZxVwhnqfg" width="1320" height="1320"/>
+          </children>
+          <children xmi:id="_nHPXywPjEd2W2ZxVwhnqfg" type="Stereotype"/>
+          <children xmi:id="_nHPXzAPjEd2W2ZxVwhnqfg" type="Name"/>
+          <children xmi:id="_nHPXzQPjEd2W2ZxVwhnqfg" type="Parent"/>
+          <children xmi:id="_nHPXzgPjEd2W2ZxVwhnqfg" type="AttributeCompartment">
+            <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_nHPXzwPjEd2W2ZxVwhnqfg"/>
+          </children>
+          <children xmi:id="_nHPX0APjEd2W2ZxVwhnqfg" type="OperationCompartment">
+            <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_nHPX0QPjEd2W2ZxVwhnqfg"/>
+          </children>
+          <children xmi:id="_nHPX0gPjEd2W2ZxVwhnqfg" visible="false" type="SignalCompartment">
+            <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_nHPX0wPjEd2W2ZxVwhnqfg"/>
+          </children>
+          <children xmi:id="_nHPX1APjEd2W2ZxVwhnqfg" visible="false" type="StructureCompartment">
+            <styles xmi:type="umlnotation:UMLShapeCompartmentStyle" xmi:id="_nHPX1QPjEd2W2ZxVwhnqfg"/>
+          </children>
+          <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="_nHPXxwPjEd2W2ZxVwhnqfg" showStereotype="Label"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_nHPXyAPjEd2W2ZxVwhnqfg" x="2016" y="8448"/>
+        </children>
+        <children xmi:id="_nHPX1gPjEd2W2ZxVwhnqfg" element="_kyrUPAPjEd2W2ZxVwhnqfg">
+          <children xmi:id="_nHPX2QPjEd2W2ZxVwhnqfg" type="ImageCompartment">
+            <layoutConstraint xmi:type="notation:Size" xmi:id="_nHPX2gPjEd2W2ZxVwhnqfg" width="1320" height="1320"/>
+          </children>
+          <children xmi:id="_nHPX2wPjEd2W2ZxVwhnqfg" type="Stereotype"/>
+          <children xmi:id="_nHPX3APjEd2W2ZxVwhnqfg" type="Name"/>
+          <children xmi:id="_nHPX3QPjEd2W2ZxVwhnqfg" type="Parent"/>
+          <children xmi:id="_nHPX3gPjEd2W2ZxVwhnqfg" type="AttributeCompartment">
+            <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_nHPX3wPjEd2W2ZxVwhnqfg"/>
+          </children>
+          <children xmi:id="_nHPX4APjEd2W2ZxVwhnqfg" type="OperationCompartment">
+            <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_nHPX4QPjEd2W2ZxVwhnqfg"/>
+          </children>
+          <children xmi:id="_nHPX4gPjEd2W2ZxVwhnqfg" visible="false" type="SignalCompartment">
+            <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_nHPX4wPjEd2W2ZxVwhnqfg"/>
+          </children>
+          <children xmi:id="_nHPX5APjEd2W2ZxVwhnqfg" visible="false" type="StructureCompartment">
+            <styles xmi:type="umlnotation:UMLShapeCompartmentStyle" xmi:id="_nHPX5QPjEd2W2ZxVwhnqfg"/>
+          </children>
+          <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="_nHPX1wPjEd2W2ZxVwhnqfg" showStereotype="Label"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_nHPX2APjEd2W2ZxVwhnqfg" x="2239" y="1447"/>
+        </children>
+        <children xmi:id="_nHPX5gPjEd2W2ZxVwhnqfg" element="_ky0eUAPjEd2W2ZxVwhnqfg">
+          <children xmi:id="_nHPX6QPjEd2W2ZxVwhnqfg" type="ImageCompartment">
+            <layoutConstraint xmi:type="notation:Size" xmi:id="_nHPX6gPjEd2W2ZxVwhnqfg" width="1320" height="1320"/>
+          </children>
+          <children xmi:id="_nHPX6wPjEd2W2ZxVwhnqfg" type="Stereotype"/>
+          <children xmi:id="_nHPX7APjEd2W2ZxVwhnqfg" type="Name"/>
+          <children xmi:id="_nHPX7QPjEd2W2ZxVwhnqfg" type="Parent"/>
+          <children xmi:id="_nHPX7gPjEd2W2ZxVwhnqfg" type="AttributeCompartment">
+            <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_nHPX7wPjEd2W2ZxVwhnqfg"/>
+          </children>
+          <children xmi:id="_nHYhsAPjEd2W2ZxVwhnqfg" type="OperationCompartment">
+            <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_nHYhsQPjEd2W2ZxVwhnqfg"/>
+          </children>
+          <children xmi:id="_nHYhsgPjEd2W2ZxVwhnqfg" visible="false" type="SignalCompartment">
+            <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_nHYhswPjEd2W2ZxVwhnqfg"/>
+          </children>
+          <children xmi:id="_nHYhtAPjEd2W2ZxVwhnqfg" visible="false" type="StructureCompartment">
+            <styles xmi:type="umlnotation:UMLShapeCompartmentStyle" xmi:id="_nHYhtQPjEd2W2ZxVwhnqfg"/>
+          </children>
+          <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="_nHPX5wPjEd2W2ZxVwhnqfg" showStereotype="Label"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_nHPX6APjEd2W2ZxVwhnqfg" x="10662" y="67944"/>
+        </children>
+        <children xmi:id="_nHYhtgPjEd2W2ZxVwhnqfg" element="_kyrUIQPjEd2W2ZxVwhnqfg">
+          <children xmi:id="_nHYhuQPjEd2W2ZxVwhnqfg" type="ImageCompartment">
+            <layoutConstraint xmi:type="notation:Size" xmi:id="_nHYhugPjEd2W2ZxVwhnqfg" width="1320" height="1320"/>
+          </children>
+          <children xmi:id="_nHYhuwPjEd2W2ZxVwhnqfg" type="Stereotype"/>
+          <children xmi:id="_nHYhvAPjEd2W2ZxVwhnqfg" type="Name"/>
+          <children xmi:id="_nHYhvQPjEd2W2ZxVwhnqfg" type="Parent"/>
+          <children xmi:id="_nHYhvgPjEd2W2ZxVwhnqfg" type="AttributeCompartment">
+            <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_nHYhvwPjEd2W2ZxVwhnqfg"/>
+          </children>
+          <children xmi:id="_nHYhwAPjEd2W2ZxVwhnqfg" type="OperationCompartment">
+            <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_nHYhwQPjEd2W2ZxVwhnqfg"/>
+          </children>
+          <children xmi:id="_nHYhwgPjEd2W2ZxVwhnqfg" visible="false" type="SignalCompartment">
+            <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_nHYhwwPjEd2W2ZxVwhnqfg"/>
+          </children>
+          <children xmi:id="_nHYhxAPjEd2W2ZxVwhnqfg" visible="false" type="StructureCompartment">
+            <styles xmi:type="umlnotation:UMLShapeCompartmentStyle" xmi:id="_nHYhxQPjEd2W2ZxVwhnqfg"/>
+          </children>
+          <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="_nHYhtwPjEd2W2ZxVwhnqfg" showStereotype="Label"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_nHYhuAPjEd2W2ZxVwhnqfg" x="14827" y="57532"/>
+        </children>
+        <children xmi:id="_CAeEBgPkEd2W2ZxVwhnqfg">
+          <children xmi:id="_CAeECQPkEd2W2ZxVwhnqfg" type="ImageCompartment">
+            <layoutConstraint xmi:type="notation:Size" xmi:id="_CAeECgPkEd2W2ZxVwhnqfg" width="530" height="530"/>
+          </children>
+          <children xmi:id="_CAeECwPkEd2W2ZxVwhnqfg" type="Stereotype"/>
+          <children xmi:id="_CAeEDAPkEd2W2ZxVwhnqfg" type="Kind"/>
+          <children xmi:id="_CAeEDQPkEd2W2ZxVwhnqfg" type="Name"/>
+          <children xmi:id="_CAeEDgPkEd2W2ZxVwhnqfg" type="Parent"/>
+          <children xmi:id="_CAeEDwPkEd2W2ZxVwhnqfg" type="AttributeCompartment">
+            <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_CAeEEAPkEd2W2ZxVwhnqfg"/>
+          </children>
+          <children xmi:id="_CAn1AAPkEd2W2ZxVwhnqfg" type="OperationCompartment">
+            <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_CAn1AQPkEd2W2ZxVwhnqfg"/>
+          </children>
+          <children xmi:id="_CAn1AgPkEd2W2ZxVwhnqfg" type="SignalCompartment">
+            <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_CAn1AwPkEd2W2ZxVwhnqfg"/>
+          </children>
+          <styles xmi:type="umlnotation:UMLClassifierStyle" xmi:id="_CAeEBwPkEd2W2ZxVwhnqfg" showListSignature="true" showStereotype="Label" useClassifierShape="true"/>
+          <element xmi:type="uml:Interface" href="mmi:///#jbintype%5Ename=oracle.sql.ORAData%5Bproject%5Eid=WypozyczalniaOracleDane%5D$uml.Interface"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_CAeECAPkEd2W2ZxVwhnqfg" x="17971" y="8447"/>
+        </children>
+        <children xmi:id="_C4DMTwPkEd2W2ZxVwhnqfg">
+          <children xmi:id="_C4DMUgPkEd2W2ZxVwhnqfg" type="ImageCompartment">
+            <layoutConstraint xmi:type="notation:Size" xmi:id="_C4DMUwPkEd2W2ZxVwhnqfg" width="530" height="530"/>
+          </children>
+          <children xmi:id="_C4DMVAPkEd2W2ZxVwhnqfg" type="Stereotype"/>
+          <children xmi:id="_C4DMVQPkEd2W2ZxVwhnqfg" type="Kind"/>
+          <children xmi:id="_C4DMVgPkEd2W2ZxVwhnqfg" type="Name"/>
+          <children xmi:id="_C4DMVwPkEd2W2ZxVwhnqfg" type="Parent"/>
+          <children xmi:id="_C4DMWAPkEd2W2ZxVwhnqfg" type="AttributeCompartment">
+            <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_C4DMWQPkEd2W2ZxVwhnqfg"/>
+          </children>
+          <children xmi:id="_C4DMWgPkEd2W2ZxVwhnqfg" type="OperationCompartment">
+            <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_C4DMWwPkEd2W2ZxVwhnqfg"/>
+          </children>
+          <children xmi:id="_C4DMXAPkEd2W2ZxVwhnqfg" type="SignalCompartment">
+            <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_C4DMXQPkEd2W2ZxVwhnqfg"/>
+          </children>
+          <styles xmi:type="umlnotation:UMLClassifierStyle" xmi:id="_C4DMUAPkEd2W2ZxVwhnqfg" showListSignature="true" showStereotype="Label" useClassifierShape="true"/>
+          <element xmi:type="uml:Interface" href="mmi:///#jbintype%5Ename=oracle.sql.ORADataFactory%5Bproject%5Eid=WypozyczalniaOracleDane%5D$uml.Interface"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_C4DMUQPkEd2W2ZxVwhnqfg" x="28171" y="8446"/>
+        </children>
+        <children xmi:id="_F-O6EAPkEd2W2ZxVwhnqfg" element="_kyhjPQPjEd2W2ZxVwhnqfg">
+          <children xmi:id="_F-O6EwPkEd2W2ZxVwhnqfg" type="ImageCompartment">
+            <layoutConstraint xmi:type="notation:Size" xmi:id="_F-O6FAPkEd2W2ZxVwhnqfg" width="1320" height="1320"/>
+          </children>
+          <children xmi:id="_F-YrEAPkEd2W2ZxVwhnqfg" type="Stereotype"/>
+          <children xmi:id="_F-YrEQPkEd2W2ZxVwhnqfg" type="Name"/>
+          <children xmi:id="_F-YrEgPkEd2W2ZxVwhnqfg" type="Parent"/>
+          <children xmi:id="_F-YrEwPkEd2W2ZxVwhnqfg" type="AttributeCompartment">
+            <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_F-YrFAPkEd2W2ZxVwhnqfg"/>
+          </children>
+          <children xmi:id="_F-YrFQPkEd2W2ZxVwhnqfg" type="OperationCompartment">
+            <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_F-YrFgPkEd2W2ZxVwhnqfg"/>
+          </children>
+          <children xmi:id="_F-YrFwPkEd2W2ZxVwhnqfg" type="SignalCompartment">
+            <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_F-YrGAPkEd2W2ZxVwhnqfg"/>
+          </children>
+          <children xmi:id="_F-YrGQPkEd2W2ZxVwhnqfg" visible="false" type="StructureCompartment">
+            <styles xmi:type="umlnotation:UMLShapeCompartmentStyle" xmi:id="_F-YrGgPkEd2W2ZxVwhnqfg"/>
+          </children>
+          <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="_F-O6EQPkEd2W2ZxVwhnqfg" showListSignature="true" showStereotype="Label"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_F-O6EgPkEd2W2ZxVwhnqfg" x="17927" y="33068"/>
+        </children>
+        <styles xmi:type="umlnotation:UMLDiagramStyle" xmi:id="_lE7zswPhEd2W2ZxVwhnqfg"/>
+        <edges xmi:id="_nWlbUAPjEd2W2ZxVwhnqfg" element="_ky0esQPjEd2W2ZxVwhnqfg" source="_nGo63QPjEd2W2ZxVwhnqfg" target="_nHPXxgPjEd2W2ZxVwhnqfg">
+          <children xmi:id="_nWlbUwPjEd2W2ZxVwhnqfg" type="NameLabel">
+            <children xmi:id="_nWvMUAPjEd2W2ZxVwhnqfg" type="Stereotype"/>
+            <children xmi:id="_nWvMUQPjEd2W2ZxVwhnqfg" type="Name"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_nWlbVAPjEd2W2ZxVwhnqfg" y="-530"/>
+          </children>
+          <styles xmi:type="umlnotation:UMLConnectorStyle" xmi:id="_nWlbUQPjEd2W2ZxVwhnqfg" routing="Tree" showStereotype="Text"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_nWlbUgPjEd2W2ZxVwhnqfg" points="[-13, -4405, 7977, 7898]$[-8003, -5993, -13, 6310]"/>
+        </edges>
+        <edges xmi:id="_ApoXmgPlEd2W2ZxVwhnqfg" element="_kyhjKgPjEd2W2ZxVwhnqfg" source="_nGfw7QPjEd2W2ZxVwhnqfg" target="_CAeEBgPkEd2W2ZxVwhnqfg">
+          <children xmi:id="_ApxhYAPlEd2W2ZxVwhnqfg" type="NameLabel">
+            <children xmi:id="_ApxhYgPlEd2W2ZxVwhnqfg" type="Stereotype"/>
+            <children xmi:id="_ApxhYwPlEd2W2ZxVwhnqfg" type="Name"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ApxhYQPlEd2W2ZxVwhnqfg" y="-530"/>
+          </children>
+          <styles xmi:type="umlnotation:UMLConnectorStyle" xmi:id="_ApoXmwPlEd2W2ZxVwhnqfg" showStereotype="Text"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_ApoXnAPlEd2W2ZxVwhnqfg" points="[-14, -4405, 4365, 7898]$[-4380, -5993, -1, 6310]"/>
+        </edges>
+        <edges xmi:id="_ApxhawPlEd2W2ZxVwhnqfg" element="_kyhjKwPjEd2W2ZxVwhnqfg" source="_nGfw7QPjEd2W2ZxVwhnqfg" target="_C4DMTwPkEd2W2ZxVwhnqfg">
+          <children xmi:id="_ApxhbgPlEd2W2ZxVwhnqfg" type="NameLabel">
+            <children xmi:id="_ApxhcAPlEd2W2ZxVwhnqfg" type="Stereotype"/>
+            <children xmi:id="_ApxhcQPlEd2W2ZxVwhnqfg" type="Name"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ApxhbwPlEd2W2ZxVwhnqfg" y="-530"/>
+          </children>
+          <styles xmi:type="umlnotation:UMLConnectorStyle" xmi:id="_ApxhbAPlEd2W2ZxVwhnqfg" showStereotype="Text"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_ApxhbQPlEd2W2ZxVwhnqfg" points="[-14, -4405, -5715, 7898]$[5701, -5993, 0, 6310]"/>
+        </edges>
+        <edges xmi:id="_ApxheQPlEd2W2ZxVwhnqfg" element="_kyhjTgPjEd2W2ZxVwhnqfg" source="_F-O6EAPkEd2W2ZxVwhnqfg" target="_C4DMTwPkEd2W2ZxVwhnqfg">
+          <children xmi:id="_ApxhfAPlEd2W2ZxVwhnqfg" type="NameLabel">
+            <children xmi:id="_ApxhfgPlEd2W2ZxVwhnqfg" type="Stereotype"/>
+            <children xmi:id="_ApxhfwPlEd2W2ZxVwhnqfg" type="Name"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ApxhfQPlEd2W2ZxVwhnqfg" y="-530"/>
+          </children>
+          <styles xmi:type="umlnotation:UMLConnectorStyle" xmi:id="_ApxhegPlEd2W2ZxVwhnqfg" showStereotype="Text"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_ApxhewPlEd2W2ZxVwhnqfg" points="[-14, -4974, -5715, 18296]$[5715, -10967, 14, 12303]$[5701, -16960, 0, 6310]"/>
+        </edges>
+        <edges xmi:id="_ApxhhwPlEd2W2ZxVwhnqfg" element="_kyhjTQPjEd2W2ZxVwhnqfg" source="_F-O6EAPkEd2W2ZxVwhnqfg" target="_CAeEBgPkEd2W2ZxVwhnqfg">
+          <children xmi:id="_ApxhigPlEd2W2ZxVwhnqfg" type="NameLabel">
+            <children xmi:id="_ApxhjAPlEd2W2ZxVwhnqfg" type="Stereotype"/>
+            <children xmi:id="_ApxhjQPlEd2W2ZxVwhnqfg" type="Name"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ApxhiwPlEd2W2ZxVwhnqfg" y="-530"/>
+          </children>
+          <styles xmi:type="umlnotation:UMLConnectorStyle" xmi:id="_ApxhiAPlEd2W2ZxVwhnqfg" showStereotype="Text"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_ApxhiQPlEd2W2ZxVwhnqfg" points="[-14, -4974, 4365, 18296]$[-5715, -10967, -1336, 12303]$[-4380, -16960, -1, 6310]"/>
+        </edges>
+        <edges xmi:id="_x9yRQAPoEd2W2ZxVwhnqfg" element="_x9fWUAPoEd2W2ZxVwhnqfg" source="_nGfw7QPjEd2W2ZxVwhnqfg" target="_F-O6EAPkEd2W2ZxVwhnqfg">
+          <children xmi:id="_x9yRQwPoEd2W2ZxVwhnqfg" type="NameLabel">
+            <children xmi:id="_x9yRRQPoEd2W2ZxVwhnqfg" type="Stereotype"/>
+            <children xmi:id="_x9yRRgPoEd2W2ZxVwhnqfg" type="Name"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_x9yRRAPoEd2W2ZxVwhnqfg" y="-530"/>
+          </children>
+          <styles xmi:type="umlnotation:UMLConnectorStyle" xmi:id="_x9yRQQPoEd2W2ZxVwhnqfg" showStereotype="Text"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_x9yRQgPoEd2W2ZxVwhnqfg" points="[-14, 4405, -14, -6562]$[-14, 5993, -14, -4974]"/>
+        </edges>
+        <edges xmi:id="_gauNsAPpEd2W2ZxVwhnqfg" element="_gakcsAPpEd2W2ZxVwhnqfg" source="_nHYhtgPjEd2W2ZxVwhnqfg" target="_nHPX5gPjEd2W2ZxVwhnqfg">
+          <children xmi:id="_gauNswPpEd2W2ZxVwhnqfg" type="NameLabel">
+            <children xmi:id="_gauNtQPpEd2W2ZxVwhnqfg" type="Stereotype"/>
+            <children xmi:id="_gauNtgPpEd2W2ZxVwhnqfg" type="Name"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_gauNtAPpEd2W2ZxVwhnqfg" y="-530"/>
+          </children>
+          <styles xmi:type="umlnotation:UMLConnectorStyle" xmi:id="_gauNsQPpEd2W2ZxVwhnqfg" showStereotype="Text"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_gauNsgPpEd2W2ZxVwhnqfg" points="[-13, 4405, 4643, -5159]$[-4670, 5992, -14, -3572]"/>
+        </edges>
+        <edges xmi:id="_kLE54APpEd2W2ZxVwhnqfg" element="_kK7I4APpEd2W2ZxVwhnqfg" source="_nHPX1gPjEd2W2ZxVwhnqfg" target="_nHPXxgPjEd2W2ZxVwhnqfg">
+          <children xmi:id="_kLE54wPpEd2W2ZxVwhnqfg" type="NameLabel">
+            <children xmi:id="_kLE55QPpEd2W2ZxVwhnqfg" type="Stereotype"/>
+            <children xmi:id="_kLE55gPpEd2W2ZxVwhnqfg" type="Name"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_kLE55APpEd2W2ZxVwhnqfg" y="-530"/>
+          </children>
+          <styles xmi:type="umlnotation:UMLConnectorStyle" xmi:id="_kLE54QPpEd2W2ZxVwhnqfg" showStereotype="Text"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_kLE54gPpEd2W2ZxVwhnqfg" points="[-13, 2712, -13, -7898]$[-13, 4300, -13, -6310]"/>
+        </edges>
+        <edges xmi:id="_lHRcYAPpEd2W2ZxVwhnqfg" element="_lHIScAPpEd2W2ZxVwhnqfg" source="_nHFmygPjEd2W2ZxVwhnqfg" target="_nG71wQPjEd2W2ZxVwhnqfg">
+          <children xmi:id="_lHRcYwPpEd2W2ZxVwhnqfg" type="NameLabel">
+            <children xmi:id="_lHRcZQPpEd2W2ZxVwhnqfg" type="Stereotype"/>
+            <children xmi:id="_lHRcZgPpEd2W2ZxVwhnqfg" type="Name"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_lHRcZAPpEd2W2ZxVwhnqfg" y="-530"/>
+          </children>
+          <styles xmi:type="umlnotation:UMLConnectorStyle" xmi:id="_lHRcYQPpEd2W2ZxVwhnqfg" showStereotype="Text"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_lHRcYgPpEd2W2ZxVwhnqfg" points="[0, 4974, 3876, -7263]$[-3889, 6562, -13, -5675]"/>
+        </edges>
+        <edges xmi:id="_pTygIQPpEd2W2ZxVwhnqfg" element="_pTygIAPpEd2W2ZxVwhnqfg" source="_nG710QPjEd2W2ZxVwhnqfg" target="_nG71wQPjEd2W2ZxVwhnqfg">
+          <children xmi:id="_pTygJAPpEd2W2ZxVwhnqfg" type="NameLabel">
+            <children xmi:id="_pTygJgPpEd2W2ZxVwhnqfg" type="Stereotype"/>
+            <children xmi:id="_pTygJwPpEd2W2ZxVwhnqfg" type="Name"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_pTygJQPpEd2W2ZxVwhnqfg" y="-530"/>
+          </children>
+          <styles xmi:type="umlnotation:UMLConnectorStyle" xmi:id="_pTygIgPpEd2W2ZxVwhnqfg" showStereotype="Text"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_pTygIwPpEd2W2ZxVwhnqfg" points="[-13, 4974, -3823, -7263]$[3797, 6562, -13, -5675]"/>
+        </edges>
+        <edges xmi:id="_u2vLUAPpEd2W2ZxVwhnqfg" element="_u2mBYAPpEd2W2ZxVwhnqfg" source="_nGyr2wPjEd2W2ZxVwhnqfg" target="_nGo63QPjEd2W2ZxVwhnqfg">
+          <children xmi:id="_u2vLUwPpEd2W2ZxVwhnqfg" type="NameLabel">
+            <children xmi:id="_u2vLVQPpEd2W2ZxVwhnqfg" type="Stereotype"/>
+            <children xmi:id="_u2vLVgPpEd2W2ZxVwhnqfg" type="Name"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_u2vLVAPpEd2W2ZxVwhnqfg" y="-530"/>
+          </children>
+          <styles xmi:type="umlnotation:UMLConnectorStyle" xmi:id="_u2vLUQPpEd2W2ZxVwhnqfg" showStereotype="Text"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_u2vLUgPpEd2W2ZxVwhnqfg" points="[0, 6310, -13, -5993]$[0, 7898, -13, -4405]"/>
+        </edges>
+        <edges xmi:id="_6cqsoAPpEd2W2ZxVwhnqfg" element="_6cg7oAPpEd2W2ZxVwhnqfg" source="_nHFm6gPjEd2W2ZxVwhnqfg" target="_nHPX5gPjEd2W2ZxVwhnqfg">
+          <children xmi:id="_6cqsowPpEd2W2ZxVwhnqfg" type="NameLabel">
+            <children xmi:id="_6cqspQPpEd2W2ZxVwhnqfg" type="Stereotype"/>
+            <children xmi:id="_6cqspgPpEd2W2ZxVwhnqfg" type="Name"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_6cqspAPpEd2W2ZxVwhnqfg" y="-530"/>
+          </children>
+          <styles xmi:type="umlnotation:UMLConnectorStyle" xmi:id="_6cqsoQPpEd2W2ZxVwhnqfg" showStereotype="Text"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_6cqsogPpEd2W2ZxVwhnqfg" points="[-13, 4405, -4670, -5159]$[4643, 5992, -14, -3572]"/>
+        </edges>
+        <edges xmi:id="__GPf0APpEd2W2ZxVwhnqfg" element="__GGV4APpEd2W2ZxVwhnqfg" source="_nHPXxgPjEd2W2ZxVwhnqfg" target="_nHFm2gPjEd2W2ZxVwhnqfg">
+          <children xmi:id="__GPf0wPpEd2W2ZxVwhnqfg" type="NameLabel">
+            <children xmi:id="__GPf1QPpEd2W2ZxVwhnqfg" type="Stereotype"/>
+            <children xmi:id="__GPf1gPpEd2W2ZxVwhnqfg" type="Name"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="__GPf1APpEd2W2ZxVwhnqfg" y="-530"/>
+          </children>
+          <styles xmi:type="umlnotation:UMLConnectorStyle" xmi:id="__GPf0QPpEd2W2ZxVwhnqfg" showStereotype="Text"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="__GPf0gPpEd2W2ZxVwhnqfg" points="[-13, 6310, 40, -5993]$[-66, 7898, -13, -4405]"/>
+        </edges>
+        <edges xmi:id="_CbCRYAPqEd2W2ZxVwhnqfg" element="_Ca4gYAPqEd2W2ZxVwhnqfg" source="_nG71wQPjEd2W2ZxVwhnqfg" target="_nHFm6gPjEd2W2ZxVwhnqfg">
+          <children xmi:id="_CbCRYwPqEd2W2ZxVwhnqfg" type="NameLabel">
+            <children xmi:id="_CbCRZQPqEd2W2ZxVwhnqfg" type="Stereotype"/>
+            <children xmi:id="_CbCRZgPqEd2W2ZxVwhnqfg" type="Name"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_CbCRZAPqEd2W2ZxVwhnqfg" y="-530"/>
+          </children>
+          <styles xmi:type="umlnotation:UMLConnectorStyle" xmi:id="_CbCRYQPqEd2W2ZxVwhnqfg" showStereotype="Text"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_CbCRYgPqEd2W2ZxVwhnqfg" points="[-13, 5675, -13, -5994]$[-13, 7263, -13, -4406]"/>
+        </edges>
+        <edges xmi:id="_SXnC0APqEd2W2ZxVwhnqfg" element="_SXd44APqEd2W2ZxVwhnqfg" source="_nGo63QPjEd2W2ZxVwhnqfg" target="_F-O6EAPkEd2W2ZxVwhnqfg">
+          <children xmi:id="_SXnC0wPqEd2W2ZxVwhnqfg" type="NameLabel">
+            <children xmi:id="_SXnC1QPqEd2W2ZxVwhnqfg" type="Stereotype"/>
+            <children xmi:id="_SXnC1gPqEd2W2ZxVwhnqfg" type="Name"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_SXnC1APqEd2W2ZxVwhnqfg" y="-530"/>
+          </children>
+          <styles xmi:type="umlnotation:UMLConnectorStyle" xmi:id="_SXnC0QPqEd2W2ZxVwhnqfg" showStereotype="Text"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_SXnC0gPqEd2W2ZxVwhnqfg" points="[-13, 4405, -11100, -6562]$[11073, 5993, -14, -4974]"/>
+        </edges>
+        <edges xmi:id="_ftTRkAPqEd2W2ZxVwhnqfg" element="_ftJgkAPqEd2W2ZxVwhnqfg" source="_nGo63QPjEd2W2ZxVwhnqfg" target="_nHFmygPjEd2W2ZxVwhnqfg">
+          <children xmi:id="_ftTRkwPqEd2W2ZxVwhnqfg" type="NameLabel">
+            <children xmi:id="_ftTRlQPqEd2W2ZxVwhnqfg" type="Stereotype"/>
+            <children xmi:id="_ftTRlgPqEd2W2ZxVwhnqfg" type="Name"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ftTRlAPqEd2W2ZxVwhnqfg" y="-530"/>
+          </children>
+          <styles xmi:type="umlnotation:UMLConnectorStyle" xmi:id="_ftTRkQPqEd2W2ZxVwhnqfg" showStereotype="Text"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_ftTRkgPqEd2W2ZxVwhnqfg" points="[-13, 4405, 0, -6562]$[-13, 5993, 0, -4974]"/>
+        </edges>
+      </contents>
+    </eAnnotations>
+    <packageImport xmi:id="_lE7ztAPhEd2W2ZxVwhnqfg">
+      <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
+    </packageImport>
+    <packageImport xmi:id="_ks3AAAPjEd2W2ZxVwhnqfg">
+      <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#_0"/>
+    </packageImport>
+    <packagedElement xmi:type="uml:Package" xmi:id="_kyhjIAPjEd2W2ZxVwhnqfg" name="wypozyczalnia">
+      <eAnnotations xmi:id="_UBq_oAPkEd2W2ZxVwhnqfg" source="uml2.diagrams"/>
+      <packagedElement xmi:type="uml:Package" xmi:id="_kyhjIQPjEd2W2ZxVwhnqfg" name="oracle">
+        <packagedElement xmi:type="uml:Class" xmi:id="_kyhjIgPjEd2W2ZxVwhnqfg" name="AdrestypRef" clientDependency="_kyhjKgPjEd2W2ZxVwhnqfg _kyhjKwPjEd2W2ZxVwhnqfg _x9fWUAPoEd2W2ZxVwhnqfg">
+          <ownedAttribute xmi:id="_kyhjIwPjEd2W2ZxVwhnqfg" name="_SQL_BASETYPE" visibility="public" isLeaf="true" isStatic="true">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            <defaultValue xmi:type="uml:LiteralString" xmi:id="_kyhjJAPjEd2W2ZxVwhnqfg" value="PI.ADRESTYP"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:id="_kyhjJQPjEd2W2ZxVwhnqfg" name="_SQL_TYPECODE" visibility="public" isLeaf="true" isStatic="true">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+            <defaultValue xmi:type="uml:OpaqueExpression" xmi:id="_kyhjJgPjEd2W2ZxVwhnqfg">
+              <body>OracleTypes.REF</body>
+            </defaultValue>
+          </ownedAttribute>
+          <ownedAttribute xmi:id="_kyhjJwPjEd2W2ZxVwhnqfg" name="_ref" visibility="package">
+            <type xmi:type="uml:Class" href="mmi:///#jbintype%5Ename=oracle.sql.REF%5Bproject%5Eid=WypozyczalniaOracleDane%5D$uml.Class"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:id="_kyhjKAPjEd2W2ZxVwhnqfg" name="_AdrestypRefFactory" visibility="private" isLeaf="true" isStatic="true" type="_kyhjIgPjEd2W2ZxVwhnqfg">
+            <defaultValue xmi:type="uml:OpaqueExpression" xmi:id="_kyhjKQPjEd2W2ZxVwhnqfg">
+              <body>new AdrestypRef()</body>
+            </defaultValue>
+          </ownedAttribute>
+          <interfaceRealization xmi:id="_kyhjKgPjEd2W2ZxVwhnqfg" client="_kyhjIgPjEd2W2ZxVwhnqfg">
+            <supplier xmi:type="uml:Interface" href="mmi:///#jbintype%5Ename=oracle.sql.ORAData%5Bproject%5Eid=WypozyczalniaOracleDane%5D$uml.Interface"/>
+            <contract href="mmi:///#jbintype%5Ename=oracle.sql.ORAData%5Bproject%5Eid=WypozyczalniaOracleDane%5D$uml.Interface"/>
+          </interfaceRealization>
+          <interfaceRealization xmi:id="_kyhjKwPjEd2W2ZxVwhnqfg" client="_kyhjIgPjEd2W2ZxVwhnqfg">
+            <supplier xmi:type="uml:Interface" href="mmi:///#jbintype%5Ename=oracle.sql.ORADataFactory%5Bproject%5Eid=WypozyczalniaOracleDane%5D$uml.Interface"/>
+            <contract href="mmi:///#jbintype%5Ename=oracle.sql.ORADataFactory%5Bproject%5Eid=WypozyczalniaOracleDane%5D$uml.Interface"/>
+          </interfaceRealization>
+          <ownedOperation xmi:id="_kyhjLAPjEd2W2ZxVwhnqfg" name="getORADataFactory" visibility="public" isStatic="true">
+            <ownedParameter xmi:id="_kyhjLQPjEd2W2ZxVwhnqfg" name="ReturnParameter" direction="return">
+              <type xmi:type="uml:Interface" href="mmi:///#jbintype%5Ename=oracle.sql.ORADataFactory%5Bproject%5Eid=WypozyczalniaOracleDane%5D$uml.Interface"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:id="_kyhjLgPjEd2W2ZxVwhnqfg" name="AdrestypRef" visibility="public"/>
+          <ownedOperation xmi:id="_kyhjLwPjEd2W2ZxVwhnqfg" name="toDatum" visibility="public">
+            <ownedParameter xmi:id="_kyhjMAPjEd2W2ZxVwhnqfg" name="ReturnParameter" direction="return">
+              <type xmi:type="uml:Class" href="mmi:///#jbintype%5Ename=oracle.sql.Datum%5Bproject%5Eid=WypozyczalniaOracleDane%5D$uml.Class"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_kyhjMQPjEd2W2ZxVwhnqfg" name="c">
+              <type xmi:type="uml:Interface" href="mmi:///#jbintype%5Ename=java.sql.Connection%5Bproject%5Eid=WypozyczalniaOracleDane%5D$uml.Interface"/>
+            </ownedParameter>
+            <raisedException xmi:type="uml:Class" href="mmi:///#jbintype%5Ename=java.sql.SQLException%5Bproject%5Eid=WypozyczalniaOracleDane%5D$uml.Class"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_kyhjMgPjEd2W2ZxVwhnqfg" name="create" visibility="public">
+            <ownedParameter xmi:id="_kyhjMwPjEd2W2ZxVwhnqfg" name="ReturnParameter" direction="return">
+              <type xmi:type="uml:Interface" href="mmi:///#jbintype%5Ename=oracle.sql.ORAData%5Bproject%5Eid=WypozyczalniaOracleDane%5D$uml.Interface"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_kyhjNAPjEd2W2ZxVwhnqfg" name="d">
+              <type xmi:type="uml:Class" href="mmi:///#jbintype%5Ename=oracle.sql.Datum%5Bproject%5Eid=WypozyczalniaOracleDane%5D$uml.Class"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_kyhjNQPjEd2W2ZxVwhnqfg" name="sqlType">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+            </ownedParameter>
+            <raisedException xmi:type="uml:Class" href="mmi:///#jbintype%5Ename=java.sql.SQLException%5Bproject%5Eid=WypozyczalniaOracleDane%5D$uml.Class"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_kyhjNgPjEd2W2ZxVwhnqfg" name="cast" visibility="public" isStatic="true">
+            <ownedParameter xmi:id="_kyhjNwPjEd2W2ZxVwhnqfg" name="ReturnParameter" type="_kyhjIgPjEd2W2ZxVwhnqfg" direction="return"/>
+            <ownedParameter xmi:id="_kyhjOAPjEd2W2ZxVwhnqfg" name="o">
+              <type xmi:type="uml:Interface" href="mmi:///#jbintype%5Ename=oracle.sql.ORAData%5Bproject%5Eid=WypozyczalniaOracleDane%5D$uml.Interface"/>
+            </ownedParameter>
+            <raisedException xmi:type="uml:Class" href="mmi:///#jbintype%5Ename=java.sql.SQLException%5Bproject%5Eid=WypozyczalniaOracleDane%5D$uml.Class"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_kyhjOQPjEd2W2ZxVwhnqfg" name="getValue" visibility="public">
+            <ownedParameter xmi:id="_kyhjOgPjEd2W2ZxVwhnqfg" name="ReturnParameter" type="_kyhjPQPjEd2W2ZxVwhnqfg" direction="return"/>
+            <raisedException xmi:type="uml:Class" href="mmi:///#jbintype%5Ename=java.sql.SQLException%5Bproject%5Eid=WypozyczalniaOracleDane%5D$uml.Class"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_kyhjOwPjEd2W2ZxVwhnqfg" name="setValue" visibility="public">
+            <ownedParameter xmi:id="_kyhjPAPjEd2W2ZxVwhnqfg" name="c" type="_kyhjPQPjEd2W2ZxVwhnqfg"/>
+            <raisedException xmi:type="uml:Class" href="mmi:///#jbintype%5Ename=java.sql.SQLException%5Bproject%5Eid=WypozyczalniaOracleDane%5D$uml.Class"/>
+          </ownedOperation>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_kyhjPQPjEd2W2ZxVwhnqfg" name="Adrestyp" clientDependency="_kyhjTQPjEd2W2ZxVwhnqfg _kyhjTgPjEd2W2ZxVwhnqfg">
+          <ownedAttribute xmi:id="_kyhjPgPjEd2W2ZxVwhnqfg" name="_SQL_NAME" visibility="public" isLeaf="true" isStatic="true">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            <defaultValue xmi:type="uml:LiteralString" xmi:id="_kyhjPwPjEd2W2ZxVwhnqfg" value="PI.ADRESTYP"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:id="_kyhjQAPjEd2W2ZxVwhnqfg" name="_SQL_TYPECODE" visibility="public" isLeaf="true" isStatic="true">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+            <defaultValue xmi:type="uml:OpaqueExpression" xmi:id="_kyhjQQPjEd2W2ZxVwhnqfg">
+              <body>OracleTypes.STRUCT</body>
+            </defaultValue>
+          </ownedAttribute>
+          <ownedAttribute xmi:id="_kyhjQgPjEd2W2ZxVwhnqfg" name="_struct" visibility="protected">
+            <type xmi:type="uml:Class" href="mmi:///#jbintype%5Ename=oracle.jpub.runtime.MutableStruct%5Bproject%5Eid=WypozyczalniaOracleDane%5D$uml.Class"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:id="_kyhjQwPjEd2W2ZxVwhnqfg" name="_sqlType" visibility="protected" isStatic="true">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_kyhjRAPjEd2W2ZxVwhnqfg" value="*"/>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_kyhjRQPjEd2W2ZxVwhnqfg"/>
+            <defaultValue xmi:type="uml:OpaqueExpression" xmi:id="_kyhjRgPjEd2W2ZxVwhnqfg">
+              <body>{12,12,4,4}</body>
+            </defaultValue>
+          </ownedAttribute>
+          <ownedAttribute xmi:id="_kyhjRwPjEd2W2ZxVwhnqfg" name="_factory" visibility="protected" isStatic="true">
+            <type xmi:type="uml:Interface" href="mmi:///#jbintype%5Ename=oracle.sql.ORADataFactory%5Bproject%5Eid=WypozyczalniaOracleDane%5D$uml.Interface"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_kyhjSAPjEd2W2ZxVwhnqfg" value="4"/>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_kyhjSQPjEd2W2ZxVwhnqfg"/>
+            <defaultValue xmi:type="uml:OpaqueExpression" xmi:id="_kyhjSgPjEd2W2ZxVwhnqfg">
+              <body>new ORADataFactory[4]</body>
+            </defaultValue>
+          </ownedAttribute>
+          <ownedAttribute xmi:id="_kyhjSwPjEd2W2ZxVwhnqfg" name="_AdresTypFactory" visibility="protected" isLeaf="true" isStatic="true" type="_kyhjPQPjEd2W2ZxVwhnqfg">
+            <defaultValue xmi:type="uml:OpaqueExpression" xmi:id="_kyhjTAPjEd2W2ZxVwhnqfg">
+              <body>new Adrestyp()</body>
+            </defaultValue>
+          </ownedAttribute>
+          <interfaceRealization xmi:id="_kyhjTQPjEd2W2ZxVwhnqfg" client="_kyhjPQPjEd2W2ZxVwhnqfg">
+            <supplier xmi:type="uml:Interface" href="mmi:///#jbintype%5Ename=oracle.sql.ORAData%5Bproject%5Eid=WypozyczalniaOracleDane%5D$uml.Interface"/>
+            <contract href="mmi:///#jbintype%5Ename=oracle.sql.ORAData%5Bproject%5Eid=WypozyczalniaOracleDane%5D$uml.Interface"/>
+          </interfaceRealization>
+          <interfaceRealization xmi:id="_kyhjTgPjEd2W2ZxVwhnqfg" client="_kyhjPQPjEd2W2ZxVwhnqfg">
+            <supplier xmi:type="uml:Interface" href="mmi:///#jbintype%5Ename=oracle.sql.ORADataFactory%5Bproject%5Eid=WypozyczalniaOracleDane%5D$uml.Interface"/>
+            <contract href="mmi:///#jbintype%5Ename=oracle.sql.ORADataFactory%5Bproject%5Eid=WypozyczalniaOracleDane%5D$uml.Interface"/>
+          </interfaceRealization>
+          <ownedOperation xmi:id="_kyhjTwPjEd2W2ZxVwhnqfg" name="getORADataFactory" visibility="public" isStatic="true">
+            <ownedParameter xmi:id="_kyhjUAPjEd2W2ZxVwhnqfg" name="ReturnParameter" direction="return">
+              <type xmi:type="uml:Interface" href="mmi:///#jbintype%5Ename=oracle.sql.ORADataFactory%5Bproject%5Eid=WypozyczalniaOracleDane%5D$uml.Interface"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:id="_kyhjUQPjEd2W2ZxVwhnqfg" name="_init_struct" visibility="protected">
+            <ownedParameter xmi:id="_kyhjUgPjEd2W2ZxVwhnqfg" name="init">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:id="_kyhjUwPjEd2W2ZxVwhnqfg" name="Adrestyp" visibility="public"/>
+          <ownedOperation xmi:id="_kyhjVAPjEd2W2ZxVwhnqfg" name="Adrestyp" visibility="public">
+            <ownedParameter xmi:id="_kyhjVQPjEd2W2ZxVwhnqfg" name="ulica">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_kyhjVgPjEd2W2ZxVwhnqfg" name="miasto">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_kyhjVwPjEd2W2ZxVwhnqfg" name="nrdomu">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_kyhjWAPjEd2W2ZxVwhnqfg" name="nrMieszkania">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+            </ownedParameter>
+            <raisedException xmi:type="uml:Class" href="mmi:///#jbintype%5Ename=java.sql.SQLException%5Bproject%5Eid=WypozyczalniaOracleDane%5D$uml.Class"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_kyhjWQPjEd2W2ZxVwhnqfg" name="toDatum" visibility="public">
+            <ownedParameter xmi:id="_kyhjWgPjEd2W2ZxVwhnqfg" name="ReturnParameter" direction="return">
+              <type xmi:type="uml:Class" href="mmi:///#jbintype%5Ename=oracle.sql.Datum%5Bproject%5Eid=WypozyczalniaOracleDane%5D$uml.Class"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_kyhjWwPjEd2W2ZxVwhnqfg" name="c">
+              <type xmi:type="uml:Interface" href="mmi:///#jbintype%5Ename=java.sql.Connection%5Bproject%5Eid=WypozyczalniaOracleDane%5D$uml.Interface"/>
+            </ownedParameter>
+            <raisedException xmi:type="uml:Class" href="mmi:///#jbintype%5Ename=java.sql.SQLException%5Bproject%5Eid=WypozyczalniaOracleDane%5D$uml.Class"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_kyhjXAPjEd2W2ZxVwhnqfg" name="create" visibility="public">
+            <ownedParameter xmi:id="_kyhjXQPjEd2W2ZxVwhnqfg" name="ReturnParameter" direction="return">
+              <type xmi:type="uml:Interface" href="mmi:///#jbintype%5Ename=oracle.sql.ORAData%5Bproject%5Eid=WypozyczalniaOracleDane%5D$uml.Interface"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_kyhjXgPjEd2W2ZxVwhnqfg" name="d">
+              <type xmi:type="uml:Class" href="mmi:///#jbintype%5Ename=oracle.sql.Datum%5Bproject%5Eid=WypozyczalniaOracleDane%5D$uml.Class"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_kyhjXwPjEd2W2ZxVwhnqfg" name="sqlType">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+            </ownedParameter>
+            <raisedException xmi:type="uml:Class" href="mmi:///#jbintype%5Ename=java.sql.SQLException%5Bproject%5Eid=WypozyczalniaOracleDane%5D$uml.Class"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_kyhjYAPjEd2W2ZxVwhnqfg" name="create" visibility="protected">
+            <ownedParameter xmi:id="_kyhjYQPjEd2W2ZxVwhnqfg" name="ReturnParameter" direction="return">
+              <type xmi:type="uml:Interface" href="mmi:///#jbintype%5Ename=oracle.sql.ORAData%5Bproject%5Eid=WypozyczalniaOracleDane%5D$uml.Interface"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_kyhjYgPjEd2W2ZxVwhnqfg" name="o" type="_kyhjPQPjEd2W2ZxVwhnqfg"/>
+            <ownedParameter xmi:id="_kyhjYwPjEd2W2ZxVwhnqfg" name="d">
+              <type xmi:type="uml:Class" href="mmi:///#jbintype%5Ename=oracle.sql.Datum%5Bproject%5Eid=WypozyczalniaOracleDane%5D$uml.Class"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_kyhjZAPjEd2W2ZxVwhnqfg" name="sqlType">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+            </ownedParameter>
+            <raisedException xmi:type="uml:Class" href="mmi:///#jbintype%5Ename=java.sql.SQLException%5Bproject%5Eid=WypozyczalniaOracleDane%5D$uml.Class"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_kyhjZQPjEd2W2ZxVwhnqfg" name="getUlica" visibility="public">
+            <ownedParameter xmi:id="_kyhjZgPjEd2W2ZxVwhnqfg" name="ReturnParameter" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+            <raisedException xmi:type="uml:Class" href="mmi:///#jbintype%5Ename=java.sql.SQLException%5Bproject%5Eid=WypozyczalniaOracleDane%5D$uml.Class"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_kyhjZwPjEd2W2ZxVwhnqfg" name="setUlica" visibility="public">
+            <ownedParameter xmi:id="_kyhjaAPjEd2W2ZxVwhnqfg" name="ulica">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+            <raisedException xmi:type="uml:Class" href="mmi:///#jbintype%5Ename=java.sql.SQLException%5Bproject%5Eid=WypozyczalniaOracleDane%5D$uml.Class"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_kyhjaQPjEd2W2ZxVwhnqfg" name="getMiasto" visibility="public">
+            <ownedParameter xmi:id="_kyhjagPjEd2W2ZxVwhnqfg" name="ReturnParameter" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+            <raisedException xmi:type="uml:Class" href="mmi:///#jbintype%5Ename=java.sql.SQLException%5Bproject%5Eid=WypozyczalniaOracleDane%5D$uml.Class"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_kyhjawPjEd2W2ZxVwhnqfg" name="setMiasto" visibility="public">
+            <ownedParameter xmi:id="_kyhjbAPjEd2W2ZxVwhnqfg" name="miasto">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+            <raisedException xmi:type="uml:Class" href="mmi:///#jbintype%5Ename=java.sql.SQLException%5Bproject%5Eid=WypozyczalniaOracleDane%5D$uml.Class"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_kyhjbQPjEd2W2ZxVwhnqfg" name="getNrdomu" visibility="public">
+            <ownedParameter xmi:id="_kyhjbgPjEd2W2ZxVwhnqfg" name="ReturnParameter" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+            </ownedParameter>
+            <raisedException xmi:type="uml:Class" href="mmi:///#jbintype%5Ename=java.sql.SQLException%5Bproject%5Eid=WypozyczalniaOracleDane%5D$uml.Class"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_kyhjbwPjEd2W2ZxVwhnqfg" name="setNrdomu" visibility="public">
+            <ownedParameter xmi:id="_kyhjcAPjEd2W2ZxVwhnqfg" name="nrdomu">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+            </ownedParameter>
+            <raisedException xmi:type="uml:Class" href="mmi:///#jbintype%5Ename=java.sql.SQLException%5Bproject%5Eid=WypozyczalniaOracleDane%5D$uml.Class"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_kyhjcQPjEd2W2ZxVwhnqfg" name="getNrMieszkania" visibility="public">
+            <ownedParameter xmi:id="_kyhjcgPjEd2W2ZxVwhnqfg" name="ReturnParameter" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+            </ownedParameter>
+            <raisedException xmi:type="uml:Class" href="mmi:///#jbintype%5Ename=java.sql.SQLException%5Bproject%5Eid=WypozyczalniaOracleDane%5D$uml.Class"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_kyhjcwPjEd2W2ZxVwhnqfg" name="setNrMieszkania" visibility="public">
+            <ownedParameter xmi:id="_kyhjdAPjEd2W2ZxVwhnqfg" name="nrMieszkania">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+            </ownedParameter>
+            <raisedException xmi:type="uml:Class" href="mmi:///#jbintype%5Ename=java.sql.SQLException%5Bproject%5Eid=WypozyczalniaOracleDane%5D$uml.Class"/>
+          </ownedOperation>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_kyhjdQPjEd2W2ZxVwhnqfg" name="KlientTypRef" clientDependency="_kyhjfQPjEd2W2ZxVwhnqfg _kyhjfgPjEd2W2ZxVwhnqfg _u2mBYAPpEd2W2ZxVwhnqfg">
+          <ownedAttribute xmi:id="_kyhjdgPjEd2W2ZxVwhnqfg" name="_SQL_BASETYPE" visibility="public" isLeaf="true" isStatic="true">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            <defaultValue xmi:type="uml:LiteralString" xmi:id="_kyhjdwPjEd2W2ZxVwhnqfg" value="PI.KLIENTTYP"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:id="_kyhjeAPjEd2W2ZxVwhnqfg" name="_SQL_TYPECODE" visibility="public" isLeaf="true" isStatic="true">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+            <defaultValue xmi:type="uml:OpaqueExpression" xmi:id="_kyhjeQPjEd2W2ZxVwhnqfg">
+              <body>OracleTypes.REF</body>
+            </defaultValue>
+          </ownedAttribute>
+          <ownedAttribute xmi:id="_kyhjegPjEd2W2ZxVwhnqfg" name="_ref" visibility="package">
+            <type xmi:type="uml:Class" href="mmi:///#jbintype%5Ename=oracle.sql.REF%5Bproject%5Eid=WypozyczalniaOracleDane%5D$uml.Class"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:id="_kyhjewPjEd2W2ZxVwhnqfg" name="_KlientTypRefFactory" visibility="private" isLeaf="true" isStatic="true" type="_kyhjdQPjEd2W2ZxVwhnqfg">
+            <defaultValue xmi:type="uml:OpaqueExpression" xmi:id="_kyhjfAPjEd2W2ZxVwhnqfg">
+              <body>new KlientTypRef()</body>
+            </defaultValue>
+          </ownedAttribute>
+          <interfaceRealization xmi:id="_kyhjfQPjEd2W2ZxVwhnqfg" client="_kyhjdQPjEd2W2ZxVwhnqfg">
+            <supplier xmi:type="uml:Interface" href="mmi:///#jbintype%5Ename=oracle.sql.ORAData%5Bproject%5Eid=WypozyczalniaOracleDane%5D$uml.Interface"/>
+            <contract href="mmi:///#jbintype%5Ename=oracle.sql.ORAData%5Bproject%5Eid=WypozyczalniaOracleDane%5D$uml.Interface"/>
+          </interfaceRealization>
+          <interfaceRealization xmi:id="_kyhjfgPjEd2W2ZxVwhnqfg" client="_kyhjdQPjEd2W2ZxVwhnqfg">
+            <supplier xmi:type="uml:Interface" href="mmi:///#jbintype%5Ename=oracle.sql.ORADataFactory%5Bproject%5Eid=WypozyczalniaOracleDane%5D$uml.Interface"/>
+            <contract href="mmi:///#jbintype%5Ename=oracle.sql.ORADataFactory%5Bproject%5Eid=WypozyczalniaOracleDane%5D$uml.Interface"/>
+          </interfaceRealization>
+          <ownedOperation xmi:id="_kyhjfwPjEd2W2ZxVwhnqfg" name="getORADataFactory" visibility="public" isStatic="true">
+            <ownedParameter xmi:id="_kyhjgAPjEd2W2ZxVwhnqfg" name="ReturnParameter" direction="return">
+              <type xmi:type="uml:Interface" href="mmi:///#jbintype%5Ename=oracle.sql.ORADataFactory%5Bproject%5Eid=WypozyczalniaOracleDane%5D$uml.Interface"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:id="_kyhjgQPjEd2W2ZxVwhnqfg" name="KlientTypRef" visibility="public"/>
+          <ownedOperation xmi:id="_kyhjggPjEd2W2ZxVwhnqfg" name="toDatum" visibility="public">
+            <ownedParameter xmi:id="_kyhjgwPjEd2W2ZxVwhnqfg" name="ReturnParameter" direction="return">
+              <type xmi:type="uml:Class" href="mmi:///#jbintype%5Ename=oracle.sql.Datum%5Bproject%5Eid=WypozyczalniaOracleDane%5D$uml.Class"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_kyhjhAPjEd2W2ZxVwhnqfg" name="c">
+              <type xmi:type="uml:Interface" href="mmi:///#jbintype%5Ename=java.sql.Connection%5Bproject%5Eid=WypozyczalniaOracleDane%5D$uml.Interface"/>
+            </ownedParameter>
+            <raisedException xmi:type="uml:Class" href="mmi:///#jbintype%5Ename=java.sql.SQLException%5Bproject%5Eid=WypozyczalniaOracleDane%5D$uml.Class"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_kyhjhQPjEd2W2ZxVwhnqfg" name="create" visibility="public">
+            <ownedParameter xmi:id="_kyhjhgPjEd2W2ZxVwhnqfg" name="ReturnParameter" direction="return">
+              <type xmi:type="uml:Interface" href="mmi:///#jbintype%5Ename=oracle.sql.ORAData%5Bproject%5Eid=WypozyczalniaOracleDane%5D$uml.Interface"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_kyhjhwPjEd2W2ZxVwhnqfg" name="d">
+              <type xmi:type="uml:Class" href="mmi:///#jbintype%5Ename=oracle.sql.Datum%5Bproject%5Eid=WypozyczalniaOracleDane%5D$uml.Class"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_kyhjiAPjEd2W2ZxVwhnqfg" name="sqlType">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+            </ownedParameter>
+            <raisedException xmi:type="uml:Class" href="mmi:///#jbintype%5Ename=java.sql.SQLException%5Bproject%5Eid=WypozyczalniaOracleDane%5D$uml.Class"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_kyhjiQPjEd2W2ZxVwhnqfg" name="cast" visibility="public" isStatic="true">
+            <ownedParameter xmi:id="_kyhjigPjEd2W2ZxVwhnqfg" name="ReturnParameter" type="_kyhjdQPjEd2W2ZxVwhnqfg" direction="return"/>
+            <ownedParameter xmi:id="_kyhjiwPjEd2W2ZxVwhnqfg" name="o">
+              <type xmi:type="uml:Interface" href="mmi:///#jbintype%5Ename=oracle.sql.ORAData%5Bproject%5Eid=WypozyczalniaOracleDane%5D$uml.Interface"/>
+            </ownedParameter>
+            <raisedException xmi:type="uml:Class" href="mmi:///#jbintype%5Ename=java.sql.SQLException%5Bproject%5Eid=WypozyczalniaOracleDane%5D$uml.Class"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_kyhjjAPjEd2W2ZxVwhnqfg" name="getValue" visibility="public">
+            <ownedParameter xmi:id="_kyhjjQPjEd2W2ZxVwhnqfg" name="ReturnParameter" type="_ky0esAPjEd2W2ZxVwhnqfg" direction="return"/>
+            <raisedException xmi:type="uml:Class" href="mmi:///#jbintype%5Ename=java.sql.SQLException%5Bproject%5Eid=WypozyczalniaOracleDane%5D$uml.Class"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_kyhjjgPjEd2W2ZxVwhnqfg" name="setValue" visibility="public">
+            <ownedParameter xmi:id="_kyrUIAPjEd2W2ZxVwhnqfg" name="c" type="_ky0esAPjEd2W2ZxVwhnqfg"/>
+            <raisedException xmi:type="uml:Class" href="mmi:///#jbintype%5Ename=java.sql.SQLException%5Bproject%5Eid=WypozyczalniaOracleDane%5D$uml.Class"/>
+          </ownedOperation>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_kyrUIQPjEd2W2ZxVwhnqfg" name="ZamowienietypRef" clientDependency="_kyrUKQPjEd2W2ZxVwhnqfg _kyrUKgPjEd2W2ZxVwhnqfg _gakcsAPpEd2W2ZxVwhnqfg">
+          <ownedAttribute xmi:id="_kyrUIgPjEd2W2ZxVwhnqfg" name="_SQL_BASETYPE" visibility="public" isLeaf="true" isStatic="true">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            <defaultValue xmi:type="uml:LiteralString" xmi:id="_kyrUIwPjEd2W2ZxVwhnqfg" value="PI.ZAMOWIENIETYP"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:id="_kyrUJAPjEd2W2ZxVwhnqfg" name="_SQL_TYPECODE" visibility="public" isLeaf="true" isStatic="true">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+            <defaultValue xmi:type="uml:OpaqueExpression" xmi:id="_kyrUJQPjEd2W2ZxVwhnqfg">
+              <body>OracleTypes.REF</body>
+            </defaultValue>
+          </ownedAttribute>
+          <ownedAttribute xmi:id="_kyrUJgPjEd2W2ZxVwhnqfg" name="_ref" visibility="package">
+            <type xmi:type="uml:Class" href="mmi:///#jbintype%5Ename=oracle.sql.REF%5Bproject%5Eid=WypozyczalniaOracleDane%5D$uml.Class"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:id="_kyrUJwPjEd2W2ZxVwhnqfg" name="_ZamowienietypRefFactory" visibility="private" isLeaf="true" isStatic="true" type="_kyrUIQPjEd2W2ZxVwhnqfg">
+            <defaultValue xmi:type="uml:OpaqueExpression" xmi:id="_kyrUKAPjEd2W2ZxVwhnqfg">
+              <body>new ZamowienietypRef()</body>
+            </defaultValue>
+          </ownedAttribute>
+          <interfaceRealization xmi:id="_kyrUKQPjEd2W2ZxVwhnqfg" client="_kyrUIQPjEd2W2ZxVwhnqfg">
+            <supplier xmi:type="uml:Interface" href="mmi:///#jbintype%5Ename=oracle.sql.ORAData%5Bproject%5Eid=WypozyczalniaOracleDane%5D$uml.Interface"/>
+            <contract href="mmi:///#jbintype%5Ename=oracle.sql.ORAData%5Bproject%5Eid=WypozyczalniaOracleDane%5D$uml.Interface"/>
+          </interfaceRealization>
+          <interfaceRealization xmi:id="_kyrUKgPjEd2W2ZxVwhnqfg" client="_kyrUIQPjEd2W2ZxVwhnqfg">
+            <supplier xmi:type="uml:Interface" href="mmi:///#jbintype%5Ename=oracle.sql.ORADataFactory%5Bproject%5Eid=WypozyczalniaOracleDane%5D$uml.Interface"/>
+            <contract href="mmi:///#jbintype%5Ename=oracle.sql.ORADataFactory%5Bproject%5Eid=WypozyczalniaOracleDane%5D$uml.Interface"/>
+          </interfaceRealization>
+          <ownedOperation xmi:id="_kyrUKwPjEd2W2ZxVwhnqfg" name="getORADataFactory" visibility="public" isStatic="true">
+            <ownedParameter xmi:id="_kyrULAPjEd2W2ZxVwhnqfg" name="ReturnParameter" direction="return">
+              <type xmi:type="uml:Interface" href="mmi:///#jbintype%5Ename=oracle.sql.ORADataFactory%5Bproject%5Eid=WypozyczalniaOracleDane%5D$uml.Interface"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:id="_kyrULQPjEd2W2ZxVwhnqfg" name="ZamowienietypRef" visibility="public"/>
+          <ownedOperation xmi:id="_kyrULgPjEd2W2ZxVwhnqfg" name="toDatum" visibility="public">
+            <ownedParameter xmi:id="_kyrULwPjEd2W2ZxVwhnqfg" name="ReturnParameter" direction="return">
+              <type xmi:type="uml:Class" href="mmi:///#jbintype%5Ename=oracle.sql.Datum%5Bproject%5Eid=WypozyczalniaOracleDane%5D$uml.Class"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_kyrUMAPjEd2W2ZxVwhnqfg" name="c">
+              <type xmi:type="uml:Interface" href="mmi:///#jbintype%5Ename=java.sql.Connection%5Bproject%5Eid=WypozyczalniaOracleDane%5D$uml.Interface"/>
+            </ownedParameter>
+            <raisedException xmi:type="uml:Class" href="mmi:///#jbintype%5Ename=java.sql.SQLException%5Bproject%5Eid=WypozyczalniaOracleDane%5D$uml.Class"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_kyrUMQPjEd2W2ZxVwhnqfg" name="create" visibility="public">
+            <ownedParameter xmi:id="_kyrUMgPjEd2W2ZxVwhnqfg" name="ReturnParameter" direction="return">
+              <type xmi:type="uml:Interface" href="mmi:///#jbintype%5Ename=oracle.sql.ORAData%5Bproject%5Eid=WypozyczalniaOracleDane%5D$uml.Interface"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_kyrUMwPjEd2W2ZxVwhnqfg" name="d">
+              <type xmi:type="uml:Class" href="mmi:///#jbintype%5Ename=oracle.sql.Datum%5Bproject%5Eid=WypozyczalniaOracleDane%5D$uml.Class"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_kyrUNAPjEd2W2ZxVwhnqfg" name="sqlType">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+            </ownedParameter>
+            <raisedException xmi:type="uml:Class" href="mmi:///#jbintype%5Ename=java.sql.SQLException%5Bproject%5Eid=WypozyczalniaOracleDane%5D$uml.Class"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_kyrUNQPjEd2W2ZxVwhnqfg" name="cast" visibility="public" isStatic="true">
+            <ownedParameter xmi:id="_kyrUNgPjEd2W2ZxVwhnqfg" name="ReturnParameter" type="_kyrUIQPjEd2W2ZxVwhnqfg" direction="return"/>
+            <ownedParameter xmi:id="_kyrUNwPjEd2W2ZxVwhnqfg" name="o">
+              <type xmi:type="uml:Interface" href="mmi:///#jbintype%5Ename=oracle.sql.ORAData%5Bproject%5Eid=WypozyczalniaOracleDane%5D$uml.Interface"/>
+            </ownedParameter>
+            <raisedException xmi:type="uml:Class" href="mmi:///#jbintype%5Ename=java.sql.SQLException%5Bproject%5Eid=WypozyczalniaOracleDane%5D$uml.Class"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_kyrUOAPjEd2W2ZxVwhnqfg" name="getValue" visibility="public">
+            <ownedParameter xmi:id="_kyrUOQPjEd2W2ZxVwhnqfg" name="ReturnParameter" type="_ky0eUAPjEd2W2ZxVwhnqfg" direction="return"/>
+            <raisedException xmi:type="uml:Class" href="mmi:///#jbintype%5Ename=java.sql.SQLException%5Bproject%5Eid=WypozyczalniaOracleDane%5D$uml.Class"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_kyrUOgPjEd2W2ZxVwhnqfg" name="setValue" visibility="public">
+            <ownedParameter xmi:id="_kyrUOwPjEd2W2ZxVwhnqfg" name="c" type="_ky0eUAPjEd2W2ZxVwhnqfg"/>
+            <raisedException xmi:type="uml:Class" href="mmi:///#jbintype%5Ename=java.sql.SQLException%5Bproject%5Eid=WypozyczalniaOracleDane%5D$uml.Class"/>
+          </ownedOperation>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_kyrUPAPjEd2W2ZxVwhnqfg" name="OsobatypRef" clientDependency="_kyrURAPjEd2W2ZxVwhnqfg _kyrURQPjEd2W2ZxVwhnqfg _kK7I4APpEd2W2ZxVwhnqfg">
+          <ownedAttribute xmi:id="_kyrUPQPjEd2W2ZxVwhnqfg" name="_SQL_BASETYPE" visibility="public" isLeaf="true" isStatic="true">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            <defaultValue xmi:type="uml:LiteralString" xmi:id="_kyrUPgPjEd2W2ZxVwhnqfg" value="PI.OSOBATYP"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:id="_kyrUPwPjEd2W2ZxVwhnqfg" name="_SQL_TYPECODE" visibility="public" isLeaf="true" isStatic="true">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+            <defaultValue xmi:type="uml:OpaqueExpression" xmi:id="_kyrUQAPjEd2W2ZxVwhnqfg">
+              <body>OracleTypes.REF</body>
+            </defaultValue>
+          </ownedAttribute>
+          <ownedAttribute xmi:id="_kyrUQQPjEd2W2ZxVwhnqfg" name="_ref" visibility="package">
+            <type xmi:type="uml:Class" href="mmi:///#jbintype%5Ename=oracle.sql.REF%5Bproject%5Eid=WypozyczalniaOracleDane%5D$uml.Class"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:id="_kyrUQgPjEd2W2ZxVwhnqfg" name="_OsobatypRefFactory" visibility="private" isLeaf="true" isStatic="true" type="_kyrUPAPjEd2W2ZxVwhnqfg">
+            <defaultValue xmi:type="uml:OpaqueExpression" xmi:id="_kyrUQwPjEd2W2ZxVwhnqfg">
+              <body>new OsobatypRef()</body>
+            </defaultValue>
+          </ownedAttribute>
+          <interfaceRealization xmi:id="_kyrURAPjEd2W2ZxVwhnqfg" client="_kyrUPAPjEd2W2ZxVwhnqfg">
+            <supplier xmi:type="uml:Interface" href="mmi:///#jbintype%5Ename=oracle.sql.ORAData%5Bproject%5Eid=WypozyczalniaOracleDane%5D$uml.Interface"/>
+            <contract href="mmi:///#jbintype%5Ename=oracle.sql.ORAData%5Bproject%5Eid=WypozyczalniaOracleDane%5D$uml.Interface"/>
+          </interfaceRealization>
+          <interfaceRealization xmi:id="_kyrURQPjEd2W2ZxVwhnqfg" client="_kyrUPAPjEd2W2ZxVwhnqfg">
+            <supplier xmi:type="uml:Interface" href="mmi:///#jbintype%5Ename=oracle.sql.ORADataFactory%5Bproject%5Eid=WypozyczalniaOracleDane%5D$uml.Interface"/>
+            <contract href="mmi:///#jbintype%5Ename=oracle.sql.ORADataFactory%5Bproject%5Eid=WypozyczalniaOracleDane%5D$uml.Interface"/>
+          </interfaceRealization>
+          <ownedOperation xmi:id="_kyrURgPjEd2W2ZxVwhnqfg" name="getORADataFactory" visibility="public" isStatic="true">
+            <ownedParameter xmi:id="_kyrURwPjEd2W2ZxVwhnqfg" name="ReturnParameter" direction="return">
+              <type xmi:type="uml:Interface" href="mmi:///#jbintype%5Ename=oracle.sql.ORADataFactory%5Bproject%5Eid=WypozyczalniaOracleDane%5D$uml.Interface"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:id="_kyrUSAPjEd2W2ZxVwhnqfg" name="OsobatypRef" visibility="public"/>
+          <ownedOperation xmi:id="_kyrUSQPjEd2W2ZxVwhnqfg" name="toDatum" visibility="public">
+            <ownedParameter xmi:id="_kyrUSgPjEd2W2ZxVwhnqfg" name="ReturnParameter" direction="return">
+              <type xmi:type="uml:Class" href="mmi:///#jbintype%5Ename=oracle.sql.Datum%5Bproject%5Eid=WypozyczalniaOracleDane%5D$uml.Class"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_kyrUSwPjEd2W2ZxVwhnqfg" name="c">
+              <type xmi:type="uml:Interface" href="mmi:///#jbintype%5Ename=java.sql.Connection%5Bproject%5Eid=WypozyczalniaOracleDane%5D$uml.Interface"/>
+            </ownedParameter>
+            <raisedException xmi:type="uml:Class" href="mmi:///#jbintype%5Ename=java.sql.SQLException%5Bproject%5Eid=WypozyczalniaOracleDane%5D$uml.Class"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_kyrUTAPjEd2W2ZxVwhnqfg" name="create" visibility="public">
+            <ownedParameter xmi:id="_kyrUTQPjEd2W2ZxVwhnqfg" name="ReturnParameter" direction="return">
+              <type xmi:type="uml:Interface" href="mmi:///#jbintype%5Ename=oracle.sql.ORAData%5Bproject%5Eid=WypozyczalniaOracleDane%5D$uml.Interface"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_kyrUTgPjEd2W2ZxVwhnqfg" name="d">
+              <type xmi:type="uml:Class" href="mmi:///#jbintype%5Ename=oracle.sql.Datum%5Bproject%5Eid=WypozyczalniaOracleDane%5D$uml.Class"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_kyrUTwPjEd2W2ZxVwhnqfg" name="sqlType">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+            </ownedParameter>
+            <raisedException xmi:type="uml:Class" href="mmi:///#jbintype%5Ename=java.sql.SQLException%5Bproject%5Eid=WypozyczalniaOracleDane%5D$uml.Class"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_kyrUUAPjEd2W2ZxVwhnqfg" name="cast" visibility="public" isStatic="true">
+            <ownedParameter xmi:id="_kyrUUQPjEd2W2ZxVwhnqfg" name="ReturnParameter" type="_kyrUPAPjEd2W2ZxVwhnqfg" direction="return"/>
+            <ownedParameter xmi:id="_kyrUUgPjEd2W2ZxVwhnqfg" name="o">
+              <type xmi:type="uml:Interface" href="mmi:///#jbintype%5Ename=oracle.sql.ORAData%5Bproject%5Eid=WypozyczalniaOracleDane%5D$uml.Interface"/>
+            </ownedParameter>
+            <raisedException xmi:type="uml:Class" href="mmi:///#jbintype%5Ename=java.sql.SQLException%5Bproject%5Eid=WypozyczalniaOracleDane%5D$uml.Class"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_kyrUUwPjEd2W2ZxVwhnqfg" name="getValue" visibility="public">
+            <ownedParameter xmi:id="_kyrUVAPjEd2W2ZxVwhnqfg" name="ReturnParameter" type="_kyrU0APjEd2W2ZxVwhnqfg" direction="return"/>
+            <raisedException xmi:type="uml:Class" href="mmi:///#jbintype%5Ename=java.sql.SQLException%5Bproject%5Eid=WypozyczalniaOracleDane%5D$uml.Class"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_kyrUVQPjEd2W2ZxVwhnqfg" name="setValue" visibility="public">
+            <ownedParameter xmi:id="_kyrUVgPjEd2W2ZxVwhnqfg" name="c" type="_kyrU0APjEd2W2ZxVwhnqfg"/>
+            <raisedException xmi:type="uml:Class" href="mmi:///#jbintype%5Ename=java.sql.SQLException%5Bproject%5Eid=WypozyczalniaOracleDane%5D$uml.Class"/>
+          </ownedOperation>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_kyrUVwPjEd2W2ZxVwhnqfg" name="Kontotyp" clientDependency="_kyrUZwPjEd2W2ZxVwhnqfg _kyrUaAPjEd2W2ZxVwhnqfg _Ca4gYAPqEd2W2ZxVwhnqfg">
+          <ownedAttribute xmi:id="_kyrUWAPjEd2W2ZxVwhnqfg" name="_SQL_NAME" visibility="public" isLeaf="true" isStatic="true">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            <defaultValue xmi:type="uml:LiteralString" xmi:id="_kyrUWQPjEd2W2ZxVwhnqfg" value="PI.KONTOTYP"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:id="_kyrUWgPjEd2W2ZxVwhnqfg" name="_SQL_TYPECODE" visibility="public" isLeaf="true" isStatic="true">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+            <defaultValue xmi:type="uml:OpaqueExpression" xmi:id="_kyrUWwPjEd2W2ZxVwhnqfg">
+              <body>OracleTypes.STRUCT</body>
+            </defaultValue>
+          </ownedAttribute>
+          <ownedAttribute xmi:id="_kyrUXAPjEd2W2ZxVwhnqfg" name="_struct" visibility="protected">
+            <type xmi:type="uml:Class" href="mmi:///#jbintype%5Ename=oracle.jpub.runtime.MutableStruct%5Bproject%5Eid=WypozyczalniaOracleDane%5D$uml.Class"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:id="_kyrUXQPjEd2W2ZxVwhnqfg" name="_sqlType" visibility="protected" isStatic="true">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_kyrUXgPjEd2W2ZxVwhnqfg" value="*"/>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_kyrUXwPjEd2W2ZxVwhnqfg"/>
+            <defaultValue xmi:type="uml:OpaqueExpression" xmi:id="_kyrUYAPjEd2W2ZxVwhnqfg">
+              <body>{12,4,93,12,93,2003}</body>
+            </defaultValue>
+          </ownedAttribute>
+          <ownedAttribute xmi:id="_kyrUYQPjEd2W2ZxVwhnqfg" name="_factory" visibility="protected" isStatic="true">
+            <type xmi:type="uml:Interface" href="mmi:///#jbintype%5Ename=oracle.sql.ORADataFactory%5Bproject%5Eid=WypozyczalniaOracleDane%5D$uml.Interface"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_kyrUYgPjEd2W2ZxVwhnqfg" value="6"/>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_kyrUYwPjEd2W2ZxVwhnqfg"/>
+            <defaultValue xmi:type="uml:OpaqueExpression" xmi:id="_kyrUZAPjEd2W2ZxVwhnqfg">
+              <body>new ORADataFactory[6]</body>
+            </defaultValue>
+          </ownedAttribute>
+          <ownedAttribute xmi:id="_kyrUZQPjEd2W2ZxVwhnqfg" name="_KontotypFactory" visibility="protected" isLeaf="true" isStatic="true" type="_kyrUVwPjEd2W2ZxVwhnqfg">
+            <defaultValue xmi:type="uml:OpaqueExpression" xmi:id="_kyrUZgPjEd2W2ZxVwhnqfg">
+              <body>new Kontotyp()</body>
+            </defaultValue>
+          </ownedAttribute>
+          <interfaceRealization xmi:id="_kyrUZwPjEd2W2ZxVwhnqfg" client="_kyrUVwPjEd2W2ZxVwhnqfg">
+            <supplier xmi:type="uml:Interface" href="mmi:///#jbintype%5Ename=oracle.sql.ORAData%5Bproject%5Eid=WypozyczalniaOracleDane%5D$uml.Interface"/>
+            <contract href="mmi:///#jbintype%5Ename=oracle.sql.ORAData%5Bproject%5Eid=WypozyczalniaOracleDane%5D$uml.Interface"/>
+          </interfaceRealization>
+          <interfaceRealization xmi:id="_kyrUaAPjEd2W2ZxVwhnqfg" client="_kyrUVwPjEd2W2ZxVwhnqfg">
+            <supplier xmi:type="uml:Interface" href="mmi:///#jbintype%5Ename=oracle.sql.ORADataFactory%5Bproject%5Eid=WypozyczalniaOracleDane%5D$uml.Interface"/>
+            <contract href="mmi:///#jbintype%5Ename=oracle.sql.ORADataFactory%5Bproject%5Eid=WypozyczalniaOracleDane%5D$uml.Interface"/>
+          </interfaceRealization>
+          <ownedOperation xmi:id="_kyrUaQPjEd2W2ZxVwhnqfg" name="getORADataFactory" visibility="public" isStatic="true">
+            <ownedParameter xmi:id="_kyrUagPjEd2W2ZxVwhnqfg" name="ReturnParameter" direction="return">
+              <type xmi:type="uml:Interface" href="mmi:///#jbintype%5Ename=oracle.sql.ORADataFactory%5Bproject%5Eid=WypozyczalniaOracleDane%5D$uml.Interface"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:id="_kyrUawPjEd2W2ZxVwhnqfg" name="_init_struct" visibility="protected">
+            <ownedParameter xmi:id="_kyrUbAPjEd2W2ZxVwhnqfg" name="init">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:id="_kyrUbQPjEd2W2ZxVwhnqfg" name="Kontotyp" visibility="public"/>
+          <ownedOperation xmi:id="_kyrUbgPjEd2W2ZxVwhnqfg" name="Kontotyp" visibility="public">
+            <ownedParameter xmi:id="_kyrUbwPjEd2W2ZxVwhnqfg" name="stan">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_kyrUcAPjEd2W2ZxVwhnqfg" name="wygaslohaslo">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_kyrUcQPjEd2W2ZxVwhnqfg" name="dataostatniegologowania">
+              <type xmi:type="uml:Class" href="mmi:///#jbintype%5Ename=java.sql.Timestamp%5Bproject%5Eid=WypozyczalniaOracleDane%5D$uml.Class"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_kyrUcgPjEd2W2ZxVwhnqfg" name="skrothasla">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_kyrUcwPjEd2W2ZxVwhnqfg" name="dataostatniejzmianyhasla">
+              <type xmi:type="uml:Class" href="mmi:///#jbintype%5Ename=java.sql.Timestamp%5Bproject%5Eid=WypozyczalniaOracleDane%5D$uml.Class"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_kyrUdAPjEd2W2ZxVwhnqfg" name="zamowienia" type="_kyrUmQPjEd2W2ZxVwhnqfg"/>
+            <raisedException xmi:type="uml:Class" href="mmi:///#jbintype%5Ename=java.sql.SQLException%5Bproject%5Eid=WypozyczalniaOracleDane%5D$uml.Class"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_kyrUdQPjEd2W2ZxVwhnqfg" name="toDatum" visibility="public">
+            <ownedParameter xmi:id="_kyrUdgPjEd2W2ZxVwhnqfg" name="ReturnParameter" direction="return">
+              <type xmi:type="uml:Class" href="mmi:///#jbintype%5Ename=oracle.sql.Datum%5Bproject%5Eid=WypozyczalniaOracleDane%5D$uml.Class"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_kyrUdwPjEd2W2ZxVwhnqfg" name="c">
+              <type xmi:type="uml:Interface" href="mmi:///#jbintype%5Ename=java.sql.Connection%5Bproject%5Eid=WypozyczalniaOracleDane%5D$uml.Interface"/>
+            </ownedParameter>
+            <raisedException xmi:type="uml:Class" href="mmi:///#jbintype%5Ename=java.sql.SQLException%5Bproject%5Eid=WypozyczalniaOracleDane%5D$uml.Class"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_kyrUeAPjEd2W2ZxVwhnqfg" name="create" visibility="public">
+            <ownedParameter xmi:id="_kyrUeQPjEd2W2ZxVwhnqfg" name="ReturnParameter" direction="return">
+              <type xmi:type="uml:Interface" href="mmi:///#jbintype%5Ename=oracle.sql.ORAData%5Bproject%5Eid=WypozyczalniaOracleDane%5D$uml.Interface"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_kyrUegPjEd2W2ZxVwhnqfg" name="d">
+              <type xmi:type="uml:Class" href="mmi:///#jbintype%5Ename=oracle.sql.Datum%5Bproject%5Eid=WypozyczalniaOracleDane%5D$uml.Class"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_kyrUewPjEd2W2ZxVwhnqfg" name="sqlType">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+            </ownedParameter>
+            <raisedException xmi:type="uml:Class" href="mmi:///#jbintype%5Ename=java.sql.SQLException%5Bproject%5Eid=WypozyczalniaOracleDane%5D$uml.Class"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_kyrUfAPjEd2W2ZxVwhnqfg" name="create" visibility="protected">
+            <ownedParameter xmi:id="_kyrUfQPjEd2W2ZxVwhnqfg" name="ReturnParameter" direction="return">
+              <type xmi:type="uml:Interface" href="mmi:///#jbintype%5Ename=oracle.sql.ORAData%5Bproject%5Eid=WypozyczalniaOracleDane%5D$uml.Interface"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_kyrUfgPjEd2W2ZxVwhnqfg" name="o" type="_kyrUVwPjEd2W2ZxVwhnqfg"/>
+            <ownedParameter xmi:id="_kyrUfwPjEd2W2ZxVwhnqfg" name="d">
+              <type xmi:type="uml:Class" href="mmi:///#jbintype%5Ename=oracle.sql.Datum%5Bproject%5Eid=WypozyczalniaOracleDane%5D$uml.Class"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_kyrUgAPjEd2W2ZxVwhnqfg" name="sqlType">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+            </ownedParameter>
+            <raisedException xmi:type="uml:Class" href="mmi:///#jbintype%5Ename=java.sql.SQLException%5Bproject%5Eid=WypozyczalniaOracleDane%5D$uml.Class"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_kyrUgQPjEd2W2ZxVwhnqfg" name="getStan" visibility="public">
+            <ownedParameter xmi:id="_kyrUggPjEd2W2ZxVwhnqfg" name="ReturnParameter" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+            <raisedException xmi:type="uml:Class" href="mmi:///#jbintype%5Ename=java.sql.SQLException%5Bproject%5Eid=WypozyczalniaOracleDane%5D$uml.Class"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_kyrUgwPjEd2W2ZxVwhnqfg" name="setStan" visibility="public">
+            <ownedParameter xmi:id="_kyrUhAPjEd2W2ZxVwhnqfg" name="stan">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+            <raisedException xmi:type="uml:Class" href="mmi:///#jbintype%5Ename=java.sql.SQLException%5Bproject%5Eid=WypozyczalniaOracleDane%5D$uml.Class"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_kyrUhQPjEd2W2ZxVwhnqfg" name="getWygaslohaslo" visibility="public">
+            <ownedParameter xmi:id="_kyrUhgPjEd2W2ZxVwhnqfg" name="ReturnParameter" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+            </ownedParameter>
+            <raisedException xmi:type="uml:Class" href="mmi:///#jbintype%5Ename=java.sql.SQLException%5Bproject%5Eid=WypozyczalniaOracleDane%5D$uml.Class"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_kyrUhwPjEd2W2ZxVwhnqfg" name="setWygaslohaslo" visibility="public">
+            <ownedParameter xmi:id="_kyrUiAPjEd2W2ZxVwhnqfg" name="wygaslohaslo">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+            </ownedParameter>
+            <raisedException xmi:type="uml:Class" href="mmi:///#jbintype%5Ename=java.sql.SQLException%5Bproject%5Eid=WypozyczalniaOracleDane%5D$uml.Class"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_kyrUiQPjEd2W2ZxVwhnqfg" name="getDataostatniegologowania" visibility="public">
+            <ownedParameter xmi:id="_kyrUigPjEd2W2ZxVwhnqfg" name="ReturnParameter" direction="return">
+              <type xmi:type="uml:Class" href="mmi:///#jbintype%5Ename=java.sql.Timestamp%5Bproject%5Eid=WypozyczalniaOracleDane%5D$uml.Class"/>
+            </ownedParameter>
+            <raisedException xmi:type="uml:Class" href="mmi:///#jbintype%5Ename=java.sql.SQLException%5Bproject%5Eid=WypozyczalniaOracleDane%5D$uml.Class"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_kyrUiwPjEd2W2ZxVwhnqfg" name="setDataostatniegologowania" visibility="public">
+            <ownedParameter xmi:id="_kyrUjAPjEd2W2ZxVwhnqfg" name="dataostatniegologowania">
+              <type xmi:type="uml:Class" href="mmi:///#jbintype%5Ename=java.sql.Timestamp%5Bproject%5Eid=WypozyczalniaOracleDane%5D$uml.Class"/>
+            </ownedParameter>
+            <raisedException xmi:type="uml:Class" href="mmi:///#jbintype%5Ename=java.sql.SQLException%5Bproject%5Eid=WypozyczalniaOracleDane%5D$uml.Class"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_kyrUjQPjEd2W2ZxVwhnqfg" name="getSkrothasla" visibility="public">
+            <ownedParameter xmi:id="_kyrUjgPjEd2W2ZxVwhnqfg" name="ReturnParameter" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+            <raisedException xmi:type="uml:Class" href="mmi:///#jbintype%5Ename=java.sql.SQLException%5Bproject%5Eid=WypozyczalniaOracleDane%5D$uml.Class"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_kyrUjwPjEd2W2ZxVwhnqfg" name="setSkrothasla" visibility="public">
+            <ownedParameter xmi:id="_kyrUkAPjEd2W2ZxVwhnqfg" name="skrothasla">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+            <raisedException xmi:type="uml:Class" href="mmi:///#jbintype%5Ename=java.sql.SQLException%5Bproject%5Eid=WypozyczalniaOracleDane%5D$uml.Class"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_kyrUkQPjEd2W2ZxVwhnqfg" name="getDataostatniejzmianyhasla" visibility="public">
+            <ownedParameter xmi:id="_kyrUkgPjEd2W2ZxVwhnqfg" name="ReturnParameter" direction="return">
+              <type xmi:type="uml:Class" href="mmi:///#jbintype%5Ename=java.sql.Timestamp%5Bproject%5Eid=WypozyczalniaOracleDane%5D$uml.Class"/>
+            </ownedParameter>
+            <raisedException xmi:type="uml:Class" href="mmi:///#jbintype%5Ename=java.sql.SQLException%5Bproject%5Eid=WypozyczalniaOracleDane%5D$uml.Class"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_kyrUkwPjEd2W2ZxVwhnqfg" name="setDataostatniejzmianyhasla" visibility="public">
+            <ownedParameter xmi:id="_kyrUlAPjEd2W2ZxVwhnqfg" name="dataostatniejzmianyhasla">
+              <type xmi:type="uml:Class" href="mmi:///#jbintype%5Ename=java.sql.Timestamp%5Bproject%5Eid=WypozyczalniaOracleDane%5D$uml.Class"/>
+            </ownedParameter>
+            <raisedException xmi:type="uml:Class" href="mmi:///#jbintype%5Ename=java.sql.SQLException%5Bproject%5Eid=WypozyczalniaOracleDane%5D$uml.Class"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_kyrUlQPjEd2W2ZxVwhnqfg" name="getZamowienia" visibility="public">
+            <ownedParameter xmi:id="_kyrUlgPjEd2W2ZxVwhnqfg" name="ReturnParameter" type="_kyrUmQPjEd2W2ZxVwhnqfg" direction="return"/>
+            <raisedException xmi:type="uml:Class" href="mmi:///#jbintype%5Ename=java.sql.SQLException%5Bproject%5Eid=WypozyczalniaOracleDane%5D$uml.Class"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_kyrUlwPjEd2W2ZxVwhnqfg" name="setZamowienia" visibility="public">
+            <ownedParameter xmi:id="_kyrUmAPjEd2W2ZxVwhnqfg" name="zamowienia" type="_kyrUmQPjEd2W2ZxVwhnqfg"/>
+            <raisedException xmi:type="uml:Class" href="mmi:///#jbintype%5Ename=java.sql.SQLException%5Bproject%5Eid=WypozyczalniaOracleDane%5D$uml.Class"/>
+          </ownedOperation>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_kyrUmQPjEd2W2ZxVwhnqfg" name="Listazamowientyp" clientDependency="_kyrUoQPjEd2W2ZxVwhnqfg _kyrUogPjEd2W2ZxVwhnqfg _6cg7oAPpEd2W2ZxVwhnqfg">
+          <ownedAttribute xmi:id="_kyrUmgPjEd2W2ZxVwhnqfg" name="_SQL_NAME" visibility="public" isLeaf="true" isStatic="true">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            <defaultValue xmi:type="uml:LiteralString" xmi:id="_kyrUmwPjEd2W2ZxVwhnqfg" value="PI.LISTAZAMOWIENTYP"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:id="_kyrUnAPjEd2W2ZxVwhnqfg" name="_SQL_TYPECODE" visibility="public" isLeaf="true" isStatic="true">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+            <defaultValue xmi:type="uml:OpaqueExpression" xmi:id="_kyrUnQPjEd2W2ZxVwhnqfg">
+              <body>OracleTypes.ARRAY</body>
+            </defaultValue>
+          </ownedAttribute>
+          <ownedAttribute xmi:id="_kyrUngPjEd2W2ZxVwhnqfg" name="_array" visibility="package">
+            <type xmi:type="uml:Class" href="mmi:///#jbintype%5Ename=oracle.jpub.runtime.MutableArray%5Bproject%5Eid=WypozyczalniaOracleDane%5D$uml.Class"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:id="_kyrUnwPjEd2W2ZxVwhnqfg" name="_ListazamowientypFactory" visibility="private" isLeaf="true" isStatic="true" type="_kyrUmQPjEd2W2ZxVwhnqfg">
+            <defaultValue xmi:type="uml:OpaqueExpression" xmi:id="_kyrUoAPjEd2W2ZxVwhnqfg">
+              <body>new Listazamowientyp()</body>
+            </defaultValue>
+          </ownedAttribute>
+          <interfaceRealization xmi:id="_kyrUoQPjEd2W2ZxVwhnqfg" client="_kyrUmQPjEd2W2ZxVwhnqfg">
+            <supplier xmi:type="uml:Interface" href="mmi:///#jbintype%5Ename=oracle.sql.ORAData%5Bproject%5Eid=WypozyczalniaOracleDane%5D$uml.Interface"/>
+            <contract href="mmi:///#jbintype%5Ename=oracle.sql.ORAData%5Bproject%5Eid=WypozyczalniaOracleDane%5D$uml.Interface"/>
+          </interfaceRealization>
+          <interfaceRealization xmi:id="_kyrUogPjEd2W2ZxVwhnqfg" client="_kyrUmQPjEd2W2ZxVwhnqfg">
+            <supplier xmi:type="uml:Interface" href="mmi:///#jbintype%5Ename=oracle.sql.ORADataFactory%5Bproject%5Eid=WypozyczalniaOracleDane%5D$uml.Interface"/>
+            <contract href="mmi:///#jbintype%5Ename=oracle.sql.ORADataFactory%5Bproject%5Eid=WypozyczalniaOracleDane%5D$uml.Interface"/>
+          </interfaceRealization>
+          <ownedOperation xmi:id="_kyrUowPjEd2W2ZxVwhnqfg" name="getORADataFactory" visibility="public" isStatic="true">
+            <ownedParameter xmi:id="_kyrUpAPjEd2W2ZxVwhnqfg" name="ReturnParameter" direction="return">
+              <type xmi:type="uml:Interface" href="mmi:///#jbintype%5Ename=oracle.sql.ORADataFactory%5Bproject%5Eid=WypozyczalniaOracleDane%5D$uml.Interface"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:id="_kyrUpQPjEd2W2ZxVwhnqfg" name="Listazamowientyp" visibility="public"/>
+          <ownedOperation xmi:id="_kyrUpgPjEd2W2ZxVwhnqfg" name="Listazamowientyp" visibility="public">
+            <ownedParameter xmi:id="_kyrUpwPjEd2W2ZxVwhnqfg" name="a" type="_ky0eUAPjEd2W2ZxVwhnqfg">
+              <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_kyrUqAPjEd2W2ZxVwhnqfg" value="*"/>
+              <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_kyrUqQPjEd2W2ZxVwhnqfg"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:id="_kyrUqgPjEd2W2ZxVwhnqfg" name="toDatum" visibility="public">
+            <ownedParameter xmi:id="_kyrUqwPjEd2W2ZxVwhnqfg" name="ReturnParameter" direction="return">
+              <type xmi:type="uml:Class" href="mmi:///#jbintype%5Ename=oracle.sql.Datum%5Bproject%5Eid=WypozyczalniaOracleDane%5D$uml.Class"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_kyrUrAPjEd2W2ZxVwhnqfg" name="c">
+              <type xmi:type="uml:Interface" href="mmi:///#jbintype%5Ename=java.sql.Connection%5Bproject%5Eid=WypozyczalniaOracleDane%5D$uml.Interface"/>
+            </ownedParameter>
+            <raisedException xmi:type="uml:Class" href="mmi:///#jbintype%5Ename=java.sql.SQLException%5Bproject%5Eid=WypozyczalniaOracleDane%5D$uml.Class"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_kyrUrQPjEd2W2ZxVwhnqfg" name="create" visibility="public">
+            <ownedParameter xmi:id="_kyrUrgPjEd2W2ZxVwhnqfg" name="ReturnParameter" direction="return">
+              <type xmi:type="uml:Interface" href="mmi:///#jbintype%5Ename=oracle.sql.ORAData%5Bproject%5Eid=WypozyczalniaOracleDane%5D$uml.Interface"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_kyrUrwPjEd2W2ZxVwhnqfg" name="d">
+              <type xmi:type="uml:Class" href="mmi:///#jbintype%5Ename=oracle.sql.Datum%5Bproject%5Eid=WypozyczalniaOracleDane%5D$uml.Class"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_kyrUsAPjEd2W2ZxVwhnqfg" name="sqlType">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+            </ownedParameter>
+            <raisedException xmi:type="uml:Class" href="mmi:///#jbintype%5Ename=java.sql.SQLException%5Bproject%5Eid=WypozyczalniaOracleDane%5D$uml.Class"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_kyrUsQPjEd2W2ZxVwhnqfg" name="length" visibility="public">
+            <ownedParameter xmi:id="_kyrUsgPjEd2W2ZxVwhnqfg" name="ReturnParameter" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+            </ownedParameter>
+            <raisedException xmi:type="uml:Class" href="mmi:///#jbintype%5Ename=java.sql.SQLException%5Bproject%5Eid=WypozyczalniaOracleDane%5D$uml.Class"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_kyrUswPjEd2W2ZxVwhnqfg" name="getBaseType" visibility="public">
+            <ownedParameter xmi:id="_kyrUtAPjEd2W2ZxVwhnqfg" name="ReturnParameter" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+            </ownedParameter>
+            <raisedException xmi:type="uml:Class" href="mmi:///#jbintype%5Ename=java.sql.SQLException%5Bproject%5Eid=WypozyczalniaOracleDane%5D$uml.Class"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_kyrUtQPjEd2W2ZxVwhnqfg" name="getBaseTypeName" visibility="public">
+            <ownedParameter xmi:id="_kyrUtgPjEd2W2ZxVwhnqfg" name="ReturnParameter" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+            <raisedException xmi:type="uml:Class" href="mmi:///#jbintype%5Ename=java.sql.SQLException%5Bproject%5Eid=WypozyczalniaOracleDane%5D$uml.Class"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_kyrUtwPjEd2W2ZxVwhnqfg" name="getDescriptor" visibility="public">
+            <ownedParameter xmi:id="_kyrUuAPjEd2W2ZxVwhnqfg" name="ReturnParameter" direction="return">
+              <type xmi:type="uml:Class" href="mmi:///#jbintype%5Ename=oracle.sql.ArrayDescriptor%5Bproject%5Eid=WypozyczalniaOracleDane%5D$uml.Class"/>
+            </ownedParameter>
+            <raisedException xmi:type="uml:Class" href="mmi:///#jbintype%5Ename=java.sql.SQLException%5Bproject%5Eid=WypozyczalniaOracleDane%5D$uml.Class"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_kyrUuQPjEd2W2ZxVwhnqfg" name="getArray" visibility="public">
+            <ownedParameter xmi:id="_kyrUugPjEd2W2ZxVwhnqfg" name="ReturnParameter" type="_ky0eUAPjEd2W2ZxVwhnqfg" direction="return">
+              <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_kyrUuwPjEd2W2ZxVwhnqfg" value="*"/>
+            </ownedParameter>
+            <raisedException xmi:type="uml:Class" href="mmi:///#jbintype%5Ename=java.sql.SQLException%5Bproject%5Eid=WypozyczalniaOracleDane%5D$uml.Class"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_kyrUvAPjEd2W2ZxVwhnqfg" name="getArray" visibility="public">
+            <ownedParameter xmi:id="_kyrUvQPjEd2W2ZxVwhnqfg" name="ReturnParameter" type="_ky0eUAPjEd2W2ZxVwhnqfg" direction="return">
+              <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_kyrUvgPjEd2W2ZxVwhnqfg" value="*"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_kyrUvwPjEd2W2ZxVwhnqfg" name="index">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#long"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_kyrUwAPjEd2W2ZxVwhnqfg" name="count">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+            </ownedParameter>
+            <raisedException xmi:type="uml:Class" href="mmi:///#jbintype%5Ename=java.sql.SQLException%5Bproject%5Eid=WypozyczalniaOracleDane%5D$uml.Class"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_kyrUwQPjEd2W2ZxVwhnqfg" name="setArray" visibility="public">
+            <ownedParameter xmi:id="_kyrUwgPjEd2W2ZxVwhnqfg" name="a" type="_ky0eUAPjEd2W2ZxVwhnqfg">
+              <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_kyrUwwPjEd2W2ZxVwhnqfg" value="*"/>
+              <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_kyrUxAPjEd2W2ZxVwhnqfg"/>
+            </ownedParameter>
+            <raisedException xmi:type="uml:Class" href="mmi:///#jbintype%5Ename=java.sql.SQLException%5Bproject%5Eid=WypozyczalniaOracleDane%5D$uml.Class"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_kyrUxQPjEd2W2ZxVwhnqfg" name="setArray" visibility="public">
+            <ownedParameter xmi:id="_kyrUxgPjEd2W2ZxVwhnqfg" name="a" type="_ky0eUAPjEd2W2ZxVwhnqfg">
+              <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_kyrUxwPjEd2W2ZxVwhnqfg" value="*"/>
+              <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_kyrUyAPjEd2W2ZxVwhnqfg"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_kyrUyQPjEd2W2ZxVwhnqfg" name="index">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#long"/>
+            </ownedParameter>
+            <raisedException xmi:type="uml:Class" href="mmi:///#jbintype%5Ename=java.sql.SQLException%5Bproject%5Eid=WypozyczalniaOracleDane%5D$uml.Class"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_kyrUygPjEd2W2ZxVwhnqfg" name="getElement" visibility="public">
+            <ownedParameter xmi:id="_kyrUywPjEd2W2ZxVwhnqfg" name="ReturnParameter" type="_ky0eUAPjEd2W2ZxVwhnqfg" direction="return"/>
+            <ownedParameter xmi:id="_kyrUzAPjEd2W2ZxVwhnqfg" name="index">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#long"/>
+            </ownedParameter>
+            <raisedException xmi:type="uml:Class" href="mmi:///#jbintype%5Ename=java.sql.SQLException%5Bproject%5Eid=WypozyczalniaOracleDane%5D$uml.Class"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_kyrUzQPjEd2W2ZxVwhnqfg" name="setElement" visibility="public">
+            <ownedParameter xmi:id="_kyrUzgPjEd2W2ZxVwhnqfg" name="a" type="_ky0eUAPjEd2W2ZxVwhnqfg"/>
+            <ownedParameter xmi:id="_kyrUzwPjEd2W2ZxVwhnqfg" name="index">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#long"/>
+            </ownedParameter>
+            <raisedException xmi:type="uml:Class" href="mmi:///#jbintype%5Ename=java.sql.SQLException%5Bproject%5Eid=WypozyczalniaOracleDane%5D$uml.Class"/>
+          </ownedOperation>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_kyrU0APjEd2W2ZxVwhnqfg" name="Osobatyp" clientDependency="_kyrU5APjEd2W2ZxVwhnqfg _kyrU5QPjEd2W2ZxVwhnqfg __GGV4APpEd2W2ZxVwhnqfg">
+          <ownedAttribute xmi:id="_kyrU0QPjEd2W2ZxVwhnqfg" name="_SQL_NAME" visibility="public" isLeaf="true" isStatic="true">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            <defaultValue xmi:type="uml:LiteralString" xmi:id="_kyrU0gPjEd2W2ZxVwhnqfg" value="PI.OSOBATYP"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:id="_kyrU0wPjEd2W2ZxVwhnqfg" name="_SQL_TYPECODE" visibility="public" isLeaf="true" isStatic="true">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+            <defaultValue xmi:type="uml:OpaqueExpression" xmi:id="_kyrU1APjEd2W2ZxVwhnqfg">
+              <body>OracleTypes.STRUCT</body>
+            </defaultValue>
+          </ownedAttribute>
+          <ownedAttribute xmi:id="_kyrU1QPjEd2W2ZxVwhnqfg" name="_struct" visibility="protected">
+            <type xmi:type="uml:Class" href="mmi:///#jbintype%5Ename=oracle.jpub.runtime.MutableStruct%5Bproject%5Eid=WypozyczalniaOracleDane%5D$uml.Class"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:id="_kyrU1gPjEd2W2ZxVwhnqfg" name="_sqlType" visibility="protected" isStatic="true">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_kyrU1wPjEd2W2ZxVwhnqfg" value="*"/>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_kyrU2APjEd2W2ZxVwhnqfg"/>
+            <defaultValue xmi:type="uml:OpaqueExpression" xmi:id="_kyrU2QPjEd2W2ZxVwhnqfg">
+              <body>{12,12,12,12,2003}</body>
+            </defaultValue>
+          </ownedAttribute>
+          <ownedAttribute xmi:id="_kyrU2gPjEd2W2ZxVwhnqfg" name="_factory" visibility="protected" isStatic="true">
+            <type xmi:type="uml:Interface" href="mmi:///#jbintype%5Ename=oracle.sql.ORADataFactory%5Bproject%5Eid=WypozyczalniaOracleDane%5D$uml.Interface"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_kyrU2wPjEd2W2ZxVwhnqfg" value="5"/>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_kyrU3APjEd2W2ZxVwhnqfg"/>
+            <defaultValue xmi:type="uml:OpaqueExpression" xmi:id="_kyrU3QPjEd2W2ZxVwhnqfg">
+              <body>new ORADataFactory[5]</body>
+            </defaultValue>
+          </ownedAttribute>
+          <ownedAttribute xmi:id="_kyrU3gPjEd2W2ZxVwhnqfg" name="_OsobatypFactory" visibility="protected" isLeaf="true" isStatic="true" type="_kyrU0APjEd2W2ZxVwhnqfg">
+            <defaultValue xmi:type="uml:OpaqueExpression" xmi:id="_kyrU3wPjEd2W2ZxVwhnqfg">
+              <body>new Osobatyp()</body>
+            </defaultValue>
+          </ownedAttribute>
+          <ownedAttribute xmi:id="_kyrU4APjEd2W2ZxVwhnqfg" name="_map" visibility="protected" isStatic="true">
+            <type xmi:type="uml:Class" href="mmi:///#jbintype%5Ename=java.util.Hashtable%5Bproject%5Eid=WypozyczalniaOracleDane%5D$uml.Class"/>
+            <defaultValue xmi:type="uml:OpaqueExpression" xmi:id="_kyrU4QPjEd2W2ZxVwhnqfg">
+              <body>new java.util.Hashtable()</body>
+            </defaultValue>
+          </ownedAttribute>
+          <ownedAttribute xmi:id="_kyrU4gPjEd2W2ZxVwhnqfg" name="_initialized" visibility="protected" isStatic="true">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+            <defaultValue xmi:type="uml:LiteralBoolean" xmi:id="_kyrU4wPjEd2W2ZxVwhnqfg"/>
+          </ownedAttribute>
+          <interfaceRealization xmi:id="_kyrU5APjEd2W2ZxVwhnqfg" client="_kyrU0APjEd2W2ZxVwhnqfg">
+            <supplier xmi:type="uml:Interface" href="mmi:///#jbintype%5Ename=oracle.sql.ORAData%5Bproject%5Eid=WypozyczalniaOracleDane%5D$uml.Interface"/>
+            <contract href="mmi:///#jbintype%5Ename=oracle.sql.ORAData%5Bproject%5Eid=WypozyczalniaOracleDane%5D$uml.Interface"/>
+          </interfaceRealization>
+          <interfaceRealization xmi:id="_kyrU5QPjEd2W2ZxVwhnqfg" client="_kyrU0APjEd2W2ZxVwhnqfg">
+            <supplier xmi:type="uml:Interface" href="mmi:///#jbintype%5Ename=oracle.sql.ORADataFactory%5Bproject%5Eid=WypozyczalniaOracleDane%5D$uml.Interface"/>
+            <contract href="mmi:///#jbintype%5Ename=oracle.sql.ORADataFactory%5Bproject%5Eid=WypozyczalniaOracleDane%5D$uml.Interface"/>
+          </interfaceRealization>
+          <ownedOperation xmi:id="_kyrU5gPjEd2W2ZxVwhnqfg" name="getORADataFactory" visibility="public" isStatic="true">
+            <ownedParameter xmi:id="_kyrU5wPjEd2W2ZxVwhnqfg" name="ReturnParameter" direction="return">
+              <type xmi:type="uml:Interface" href="mmi:///#jbintype%5Ename=oracle.sql.ORADataFactory%5Bproject%5Eid=WypozyczalniaOracleDane%5D$uml.Interface"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:id="_kyrU6APjEd2W2ZxVwhnqfg" name="init" visibility="protected" isStatic="true" concurrency="guarded"/>
+          <ownedOperation xmi:id="_kyrU6QPjEd2W2ZxVwhnqfg" name="_init_struct" visibility="protected">
+            <ownedParameter xmi:id="_kyrU6gPjEd2W2ZxVwhnqfg" name="init">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:id="_kyrU6wPjEd2W2ZxVwhnqfg" name="Osobatyp" visibility="protected"/>
+          <ownedOperation xmi:id="_kyrU7APjEd2W2ZxVwhnqfg" name="Osobatyp" visibility="protected">
+            <ownedParameter xmi:id="_kyrU7QPjEd2W2ZxVwhnqfg" name="imie">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_kyrU7gPjEd2W2ZxVwhnqfg" name="nazwisko">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_kyrU7wPjEd2W2ZxVwhnqfg" name="adresmailowy">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_kyrU8APjEd2W2ZxVwhnqfg" name="nazwiskorodowe">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_kyrU8QPjEd2W2ZxVwhnqfg" name="telefony" type="_ky0eGQPjEd2W2ZxVwhnqfg"/>
+            <raisedException xmi:type="uml:Class" href="mmi:///#jbintype%5Ename=java.sql.SQLException%5Bproject%5Eid=WypozyczalniaOracleDane%5D$uml.Class"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_kyrU8gPjEd2W2ZxVwhnqfg" name="toDatum" visibility="public">
+            <ownedParameter xmi:id="_kyrU8wPjEd2W2ZxVwhnqfg" name="ReturnParameter" direction="return">
+              <type xmi:type="uml:Class" href="mmi:///#jbintype%5Ename=oracle.sql.Datum%5Bproject%5Eid=WypozyczalniaOracleDane%5D$uml.Class"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_kyrU9APjEd2W2ZxVwhnqfg" name="c">
+              <type xmi:type="uml:Interface" href="mmi:///#jbintype%5Ename=java.sql.Connection%5Bproject%5Eid=WypozyczalniaOracleDane%5D$uml.Interface"/>
+            </ownedParameter>
+            <raisedException xmi:type="uml:Class" href="mmi:///#jbintype%5Ename=java.sql.SQLException%5Bproject%5Eid=WypozyczalniaOracleDane%5D$uml.Class"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_kyrU9QPjEd2W2ZxVwhnqfg" name="create" visibility="public">
+            <ownedParameter xmi:id="_kyrU9gPjEd2W2ZxVwhnqfg" name="ReturnParameter" direction="return">
+              <type xmi:type="uml:Interface" href="mmi:///#jbintype%5Ename=oracle.sql.ORAData%5Bproject%5Eid=WypozyczalniaOracleDane%5D$uml.Interface"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_kyrU9wPjEd2W2ZxVwhnqfg" name="d">
+              <type xmi:type="uml:Class" href="mmi:///#jbintype%5Ename=oracle.sql.Datum%5Bproject%5Eid=WypozyczalniaOracleDane%5D$uml.Class"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_kyrU-APjEd2W2ZxVwhnqfg" name="sqlType">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+            </ownedParameter>
+            <raisedException xmi:type="uml:Class" href="mmi:///#jbintype%5Ename=java.sql.SQLException%5Bproject%5Eid=WypozyczalniaOracleDane%5D$uml.Class"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_kyrU-QPjEd2W2ZxVwhnqfg" name="create" visibility="protected">
+            <ownedParameter xmi:id="_kyrU-gPjEd2W2ZxVwhnqfg" name="ReturnParameter" direction="return">
+              <type xmi:type="uml:Interface" href="mmi:///#jbintype%5Ename=oracle.sql.ORAData%5Bproject%5Eid=WypozyczalniaOracleDane%5D$uml.Interface"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_kyrU-wPjEd2W2ZxVwhnqfg" name="o" type="_kyrU0APjEd2W2ZxVwhnqfg"/>
+            <ownedParameter xmi:id="_kyrU_APjEd2W2ZxVwhnqfg" name="d">
+              <type xmi:type="uml:Class" href="mmi:///#jbintype%5Ename=oracle.sql.Datum%5Bproject%5Eid=WypozyczalniaOracleDane%5D$uml.Class"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_kyrU_QPjEd2W2ZxVwhnqfg" name="sqlType">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+            </ownedParameter>
+            <raisedException xmi:type="uml:Class" href="mmi:///#jbintype%5Ename=java.sql.SQLException%5Bproject%5Eid=WypozyczalniaOracleDane%5D$uml.Class"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_kyrU_gPjEd2W2ZxVwhnqfg" name="createExact" visibility="protected">
+            <ownedParameter xmi:id="_kyrU_wPjEd2W2ZxVwhnqfg" name="ReturnParameter" direction="return">
+              <type xmi:type="uml:Interface" href="mmi:///#jbintype%5Ename=oracle.sql.ORAData%5Bproject%5Eid=WypozyczalniaOracleDane%5D$uml.Interface"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_kyrVAAPjEd2W2ZxVwhnqfg" name="d">
+              <type xmi:type="uml:Class" href="mmi:///#jbintype%5Ename=oracle.sql.Datum%5Bproject%5Eid=WypozyczalniaOracleDane%5D$uml.Class"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_kyrVAQPjEd2W2ZxVwhnqfg" name="sqlType">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+            </ownedParameter>
+            <raisedException xmi:type="uml:Class" href="mmi:///#jbintype%5Ename=java.sql.SQLException%5Bproject%5Eid=WypozyczalniaOracleDane%5D$uml.Class"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_kyrVAgPjEd2W2ZxVwhnqfg" name="createFromFactory" visibility="protected">
+            <ownedParameter xmi:id="_kyrVAwPjEd2W2ZxVwhnqfg" name="ReturnParameter" direction="return">
+              <type xmi:type="uml:Interface" href="mmi:///#jbintype%5Ename=oracle.sql.ORAData%5Bproject%5Eid=WypozyczalniaOracleDane%5D$uml.Interface"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_kyrVBAPjEd2W2ZxVwhnqfg" name="s">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_kyrVBQPjEd2W2ZxVwhnqfg" name="d">
+              <type xmi:type="uml:Class" href="mmi:///#jbintype%5Ename=oracle.sql.Datum%5Bproject%5Eid=WypozyczalniaOracleDane%5D$uml.Class"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_kyrVBgPjEd2W2ZxVwhnqfg" name="sqlType">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+            </ownedParameter>
+            <raisedException xmi:type="uml:Class" href="mmi:///#jbintype%5Ename=java.sql.SQLException%5Bproject%5Eid=WypozyczalniaOracleDane%5D$uml.Class"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_kyrVBwPjEd2W2ZxVwhnqfg" name="getImie" visibility="public">
+            <ownedParameter xmi:id="_kyrVCAPjEd2W2ZxVwhnqfg" name="ReturnParameter" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+            <raisedException xmi:type="uml:Class" href="mmi:///#jbintype%5Ename=java.sql.SQLException%5Bproject%5Eid=WypozyczalniaOracleDane%5D$uml.Class"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_kyrVCQPjEd2W2ZxVwhnqfg" name="setImie" visibility="public">
+            <ownedParameter xmi:id="_kyrVCgPjEd2W2ZxVwhnqfg" name="imie">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+            <raisedException xmi:type="uml:Class" href="mmi:///#jbintype%5Ename=java.sql.SQLException%5Bproject%5Eid=WypozyczalniaOracleDane%5D$uml.Class"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_kyrVCwPjEd2W2ZxVwhnqfg" name="getNazwisko" visibility="public">
+            <ownedParameter xmi:id="_kyrVDAPjEd2W2ZxVwhnqfg" name="ReturnParameter" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+            <raisedException xmi:type="uml:Class" href="mmi:///#jbintype%5Ename=java.sql.SQLException%5Bproject%5Eid=WypozyczalniaOracleDane%5D$uml.Class"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_kyrVDQPjEd2W2ZxVwhnqfg" name="setNazwisko" visibility="public">
+            <ownedParameter xmi:id="_kyrVDgPjEd2W2ZxVwhnqfg" name="nazwisko">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+            <raisedException xmi:type="uml:Class" href="mmi:///#jbintype%5Ename=java.sql.SQLException%5Bproject%5Eid=WypozyczalniaOracleDane%5D$uml.Class"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_kyrVDwPjEd2W2ZxVwhnqfg" name="getAdresmailowy" visibility="public">
+            <ownedParameter xmi:id="_kyrVEAPjEd2W2ZxVwhnqfg" name="ReturnParameter" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+            <raisedException xmi:type="uml:Class" href="mmi:///#jbintype%5Ename=java.sql.SQLException%5Bproject%5Eid=WypozyczalniaOracleDane%5D$uml.Class"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_kyrVEQPjEd2W2ZxVwhnqfg" name="setAdresmailowy" visibility="public">
+            <ownedParameter xmi:id="_kyrVEgPjEd2W2ZxVwhnqfg" name="adresmailowy">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+            <raisedException xmi:type="uml:Class" href="mmi:///#jbintype%5Ename=java.sql.SQLException%5Bproject%5Eid=WypozyczalniaOracleDane%5D$uml.Class"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_kyrVEwPjEd2W2ZxVwhnqfg" name="getNazwiskorodowe" visibility="public">
+            <ownedParameter xmi:id="_kyrVFAPjEd2W2ZxVwhnqfg" name="ReturnParameter" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+            <raisedException xmi:type="uml:Class" href="mmi:///#jbintype%5Ename=java.sql.SQLException%5Bproject%5Eid=WypozyczalniaOracleDane%5D$uml.Class"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_kyrVFQPjEd2W2ZxVwhnqfg" name="setNazwiskorodowe" visibility="public">
+            <ownedParameter xmi:id="_kyrVFgPjEd2W2ZxVwhnqfg" name="nazwiskorodowe">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+            <raisedException xmi:type="uml:Class" href="mmi:///#jbintype%5Ename=java.sql.SQLException%5Bproject%5Eid=WypozyczalniaOracleDane%5D$uml.Class"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_kyrVFwPjEd2W2ZxVwhnqfg" name="getTelefony" visibility="public">
+            <ownedParameter xmi:id="_kyrVGAPjEd2W2ZxVwhnqfg" name="ReturnParameter" type="_ky0eGQPjEd2W2ZxVwhnqfg" direction="return"/>
+            <raisedException xmi:type="uml:Class" href="mmi:///#jbintype%5Ename=java.sql.SQLException%5Bproject%5Eid=WypozyczalniaOracleDane%5D$uml.Class"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_kyrVGQPjEd2W2ZxVwhnqfg" name="setTelefony" visibility="public">
+            <ownedParameter xmi:id="_kyrVGgPjEd2W2ZxVwhnqfg" name="telefony" type="_ky0eGQPjEd2W2ZxVwhnqfg"/>
+            <raisedException xmi:type="uml:Class" href="mmi:///#jbintype%5Ename=java.sql.SQLException%5Bproject%5Eid=WypozyczalniaOracleDane%5D$uml.Class"/>
+          </ownedOperation>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_kyrVGwPjEd2W2ZxVwhnqfg" name="KontotypRef" clientDependency="_kyrVIwPjEd2W2ZxVwhnqfg _kyrVJAPjEd2W2ZxVwhnqfg _pTygIAPpEd2W2ZxVwhnqfg">
+          <ownedAttribute xmi:id="_kyrVHAPjEd2W2ZxVwhnqfg" name="_SQL_BASETYPE" visibility="public" isLeaf="true" isStatic="true">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            <defaultValue xmi:type="uml:LiteralString" xmi:id="_kyrVHQPjEd2W2ZxVwhnqfg" value="PI.KONTOTYP"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:id="_kyrVHgPjEd2W2ZxVwhnqfg" name="_SQL_TYPECODE" visibility="public" isLeaf="true" isStatic="true">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+            <defaultValue xmi:type="uml:OpaqueExpression" xmi:id="_kyrVHwPjEd2W2ZxVwhnqfg">
+              <body>OracleTypes.REF</body>
+            </defaultValue>
+          </ownedAttribute>
+          <ownedAttribute xmi:id="_kyrVIAPjEd2W2ZxVwhnqfg" name="_ref" visibility="package">
+            <type xmi:type="uml:Class" href="mmi:///#jbintype%5Ename=oracle.sql.REF%5Bproject%5Eid=WypozyczalniaOracleDane%5D$uml.Class"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:id="_kyrVIQPjEd2W2ZxVwhnqfg" name="_KontotypRefFactory" visibility="private" isLeaf="true" isStatic="true" type="_kyrVGwPjEd2W2ZxVwhnqfg">
+            <defaultValue xmi:type="uml:OpaqueExpression" xmi:id="_kyrVIgPjEd2W2ZxVwhnqfg">
+              <body>new KontotypRef()</body>
+            </defaultValue>
+          </ownedAttribute>
+          <interfaceRealization xmi:id="_kyrVIwPjEd2W2ZxVwhnqfg" client="_kyrVGwPjEd2W2ZxVwhnqfg">
+            <supplier xmi:type="uml:Interface" href="mmi:///#jbintype%5Ename=oracle.sql.ORAData%5Bproject%5Eid=WypozyczalniaOracleDane%5D$uml.Interface"/>
+            <contract href="mmi:///#jbintype%5Ename=oracle.sql.ORAData%5Bproject%5Eid=WypozyczalniaOracleDane%5D$uml.Interface"/>
+          </interfaceRealization>
+          <interfaceRealization xmi:id="_kyrVJAPjEd2W2ZxVwhnqfg" client="_kyrVGwPjEd2W2ZxVwhnqfg">
+            <supplier xmi:type="uml:Interface" href="mmi:///#jbintype%5Ename=oracle.sql.ORADataFactory%5Bproject%5Eid=WypozyczalniaOracleDane%5D$uml.Interface"/>
+            <contract href="mmi:///#jbintype%5Ename=oracle.sql.ORADataFactory%5Bproject%5Eid=WypozyczalniaOracleDane%5D$uml.Interface"/>
+          </interfaceRealization>
+          <ownedOperation xmi:id="_kyrVJQPjEd2W2ZxVwhnqfg" name="getORADataFactory" visibility="public" isStatic="true">
+            <ownedParameter xmi:id="_kyrVJgPjEd2W2ZxVwhnqfg" name="ReturnParameter" direction="return">
+              <type xmi:type="uml:Interface" href="mmi:///#jbintype%5Ename=oracle.sql.ORADataFactory%5Bproject%5Eid=WypozyczalniaOracleDane%5D$uml.Interface"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:id="_kyrVJwPjEd2W2ZxVwhnqfg" name="KontotypRef" visibility="public"/>
+          <ownedOperation xmi:id="_kyrVKAPjEd2W2ZxVwhnqfg" name="toDatum" visibility="public">
+            <ownedParameter xmi:id="_kyrVKQPjEd2W2ZxVwhnqfg" name="ReturnParameter" direction="return">
+              <type xmi:type="uml:Class" href="mmi:///#jbintype%5Ename=oracle.sql.Datum%5Bproject%5Eid=WypozyczalniaOracleDane%5D$uml.Class"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_kyrVKgPjEd2W2ZxVwhnqfg" name="c">
+              <type xmi:type="uml:Interface" href="mmi:///#jbintype%5Ename=java.sql.Connection%5Bproject%5Eid=WypozyczalniaOracleDane%5D$uml.Interface"/>
+            </ownedParameter>
+            <raisedException xmi:type="uml:Class" href="mmi:///#jbintype%5Ename=java.sql.SQLException%5Bproject%5Eid=WypozyczalniaOracleDane%5D$uml.Class"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_kyrVKwPjEd2W2ZxVwhnqfg" name="create" visibility="public">
+            <ownedParameter xmi:id="_kyrVLAPjEd2W2ZxVwhnqfg" name="ReturnParameter" direction="return">
+              <type xmi:type="uml:Interface" href="mmi:///#jbintype%5Ename=oracle.sql.ORAData%5Bproject%5Eid=WypozyczalniaOracleDane%5D$uml.Interface"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_ky0eEAPjEd2W2ZxVwhnqfg" name="d">
+              <type xmi:type="uml:Class" href="mmi:///#jbintype%5Ename=oracle.sql.Datum%5Bproject%5Eid=WypozyczalniaOracleDane%5D$uml.Class"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_ky0eEQPjEd2W2ZxVwhnqfg" name="sqlType">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+            </ownedParameter>
+            <raisedException xmi:type="uml:Class" href="mmi:///#jbintype%5Ename=java.sql.SQLException%5Bproject%5Eid=WypozyczalniaOracleDane%5D$uml.Class"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_ky0eEgPjEd2W2ZxVwhnqfg" name="cast" visibility="public" isStatic="true">
+            <ownedParameter xmi:id="_ky0eEwPjEd2W2ZxVwhnqfg" name="ReturnParameter" type="_kyrVGwPjEd2W2ZxVwhnqfg" direction="return"/>
+            <ownedParameter xmi:id="_ky0eFAPjEd2W2ZxVwhnqfg" name="o">
+              <type xmi:type="uml:Interface" href="mmi:///#jbintype%5Ename=oracle.sql.ORAData%5Bproject%5Eid=WypozyczalniaOracleDane%5D$uml.Interface"/>
+            </ownedParameter>
+            <raisedException xmi:type="uml:Class" href="mmi:///#jbintype%5Ename=java.sql.SQLException%5Bproject%5Eid=WypozyczalniaOracleDane%5D$uml.Class"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_ky0eFQPjEd2W2ZxVwhnqfg" name="getValue" visibility="public">
+            <ownedParameter xmi:id="_ky0eFgPjEd2W2ZxVwhnqfg" name="ReturnParameter" type="_kyrUVwPjEd2W2ZxVwhnqfg" direction="return"/>
+            <raisedException xmi:type="uml:Class" href="mmi:///#jbintype%5Ename=java.sql.SQLException%5Bproject%5Eid=WypozyczalniaOracleDane%5D$uml.Class"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_ky0eFwPjEd2W2ZxVwhnqfg" name="setValue" visibility="public">
+            <ownedParameter xmi:id="_ky0eGAPjEd2W2ZxVwhnqfg" name="c" type="_kyrUVwPjEd2W2ZxVwhnqfg"/>
+            <raisedException xmi:type="uml:Class" href="mmi:///#jbintype%5Ename=java.sql.SQLException%5Bproject%5Eid=WypozyczalniaOracleDane%5D$uml.Class"/>
+          </ownedOperation>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_ky0eGQPjEd2W2ZxVwhnqfg" name="Listatelefonowtyp" clientDependency="_ky0eIQPjEd2W2ZxVwhnqfg _ky0eIgPjEd2W2ZxVwhnqfg">
+          <ownedAttribute xmi:id="_ky0eGgPjEd2W2ZxVwhnqfg" name="_SQL_NAME" visibility="public" isLeaf="true" isStatic="true">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            <defaultValue xmi:type="uml:LiteralString" xmi:id="_ky0eGwPjEd2W2ZxVwhnqfg" value="PI.LISTATELEFONOWTYP"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:id="_ky0eHAPjEd2W2ZxVwhnqfg" name="_SQL_TYPECODE" visibility="public" isLeaf="true" isStatic="true">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+            <defaultValue xmi:type="uml:OpaqueExpression" xmi:id="_ky0eHQPjEd2W2ZxVwhnqfg">
+              <body>OracleTypes.ARRAY</body>
+            </defaultValue>
+          </ownedAttribute>
+          <ownedAttribute xmi:id="_ky0eHgPjEd2W2ZxVwhnqfg" name="_array" visibility="package">
+            <type xmi:type="uml:Class" href="mmi:///#jbintype%5Ename=oracle.jpub.runtime.MutableArray%5Bproject%5Eid=WypozyczalniaOracleDane%5D$uml.Class"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:id="_ky0eHwPjEd2W2ZxVwhnqfg" name="_ListatelefonowtypFactory" visibility="private" isLeaf="true" isStatic="true" type="_ky0eGQPjEd2W2ZxVwhnqfg">
+            <defaultValue xmi:type="uml:OpaqueExpression" xmi:id="_ky0eIAPjEd2W2ZxVwhnqfg">
+              <body>new Listatelefonowtyp()</body>
+            </defaultValue>
+          </ownedAttribute>
+          <interfaceRealization xmi:id="_ky0eIQPjEd2W2ZxVwhnqfg" client="_ky0eGQPjEd2W2ZxVwhnqfg">
+            <supplier xmi:type="uml:Interface" href="mmi:///#jbintype%5Ename=oracle.sql.ORAData%5Bproject%5Eid=WypozyczalniaOracleDane%5D$uml.Interface"/>
+            <contract href="mmi:///#jbintype%5Ename=oracle.sql.ORAData%5Bproject%5Eid=WypozyczalniaOracleDane%5D$uml.Interface"/>
+          </interfaceRealization>
+          <interfaceRealization xmi:id="_ky0eIgPjEd2W2ZxVwhnqfg" client="_ky0eGQPjEd2W2ZxVwhnqfg">
+            <supplier xmi:type="uml:Interface" href="mmi:///#jbintype%5Ename=oracle.sql.ORADataFactory%5Bproject%5Eid=WypozyczalniaOracleDane%5D$uml.Interface"/>
+            <contract href="mmi:///#jbintype%5Ename=oracle.sql.ORADataFactory%5Bproject%5Eid=WypozyczalniaOracleDane%5D$uml.Interface"/>
+          </interfaceRealization>
+          <ownedOperation xmi:id="_ky0eIwPjEd2W2ZxVwhnqfg" name="getORADataFactory" visibility="public" isStatic="true">
+            <ownedParameter xmi:id="_ky0eJAPjEd2W2ZxVwhnqfg" name="ReturnParameter" direction="return">
+              <type xmi:type="uml:Interface" href="mmi:///#jbintype%5Ename=oracle.sql.ORADataFactory%5Bproject%5Eid=WypozyczalniaOracleDane%5D$uml.Interface"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:id="_ky0eJQPjEd2W2ZxVwhnqfg" name="Listatelefonowtyp" visibility="public"/>
+          <ownedOperation xmi:id="_ky0eJgPjEd2W2ZxVwhnqfg" name="Listatelefonowtyp" visibility="public">
+            <ownedParameter xmi:id="_ky0eJwPjEd2W2ZxVwhnqfg" name="a">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ky0eKAPjEd2W2ZxVwhnqfg" value="*"/>
+              <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ky0eKQPjEd2W2ZxVwhnqfg"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:id="_ky0eKgPjEd2W2ZxVwhnqfg" name="toDatum" visibility="public">
+            <ownedParameter xmi:id="_ky0eKwPjEd2W2ZxVwhnqfg" name="ReturnParameter" direction="return">
+              <type xmi:type="uml:Class" href="mmi:///#jbintype%5Ename=oracle.sql.Datum%5Bproject%5Eid=WypozyczalniaOracleDane%5D$uml.Class"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_ky0eLAPjEd2W2ZxVwhnqfg" name="c">
+              <type xmi:type="uml:Interface" href="mmi:///#jbintype%5Ename=java.sql.Connection%5Bproject%5Eid=WypozyczalniaOracleDane%5D$uml.Interface"/>
+            </ownedParameter>
+            <raisedException xmi:type="uml:Class" href="mmi:///#jbintype%5Ename=java.sql.SQLException%5Bproject%5Eid=WypozyczalniaOracleDane%5D$uml.Class"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_ky0eLQPjEd2W2ZxVwhnqfg" name="create" visibility="public">
+            <ownedParameter xmi:id="_ky0eLgPjEd2W2ZxVwhnqfg" name="ReturnParameter" direction="return">
+              <type xmi:type="uml:Interface" href="mmi:///#jbintype%5Ename=oracle.sql.ORAData%5Bproject%5Eid=WypozyczalniaOracleDane%5D$uml.Interface"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_ky0eLwPjEd2W2ZxVwhnqfg" name="d">
+              <type xmi:type="uml:Class" href="mmi:///#jbintype%5Ename=oracle.sql.Datum%5Bproject%5Eid=WypozyczalniaOracleDane%5D$uml.Class"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_ky0eMAPjEd2W2ZxVwhnqfg" name="sqlType">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+            </ownedParameter>
+            <raisedException xmi:type="uml:Class" href="mmi:///#jbintype%5Ename=java.sql.SQLException%5Bproject%5Eid=WypozyczalniaOracleDane%5D$uml.Class"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_ky0eMQPjEd2W2ZxVwhnqfg" name="length" visibility="public">
+            <ownedParameter xmi:id="_ky0eMgPjEd2W2ZxVwhnqfg" name="ReturnParameter" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+            </ownedParameter>
+            <raisedException xmi:type="uml:Class" href="mmi:///#jbintype%5Ename=java.sql.SQLException%5Bproject%5Eid=WypozyczalniaOracleDane%5D$uml.Class"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_ky0eMwPjEd2W2ZxVwhnqfg" name="getBaseType" visibility="public">
+            <ownedParameter xmi:id="_ky0eNAPjEd2W2ZxVwhnqfg" name="ReturnParameter" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+            </ownedParameter>
+            <raisedException xmi:type="uml:Class" href="mmi:///#jbintype%5Ename=java.sql.SQLException%5Bproject%5Eid=WypozyczalniaOracleDane%5D$uml.Class"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_ky0eNQPjEd2W2ZxVwhnqfg" name="getBaseTypeName" visibility="public">
+            <ownedParameter xmi:id="_ky0eNgPjEd2W2ZxVwhnqfg" name="ReturnParameter" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+            <raisedException xmi:type="uml:Class" href="mmi:///#jbintype%5Ename=java.sql.SQLException%5Bproject%5Eid=WypozyczalniaOracleDane%5D$uml.Class"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_ky0eNwPjEd2W2ZxVwhnqfg" name="getDescriptor" visibility="public">
+            <ownedParameter xmi:id="_ky0eOAPjEd2W2ZxVwhnqfg" name="ReturnParameter" direction="return">
+              <type xmi:type="uml:Class" href="mmi:///#jbintype%5Ename=oracle.sql.ArrayDescriptor%5Bproject%5Eid=WypozyczalniaOracleDane%5D$uml.Class"/>
+            </ownedParameter>
+            <raisedException xmi:type="uml:Class" href="mmi:///#jbintype%5Ename=java.sql.SQLException%5Bproject%5Eid=WypozyczalniaOracleDane%5D$uml.Class"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_ky0eOQPjEd2W2ZxVwhnqfg" name="getArray" visibility="public">
+            <ownedParameter xmi:id="_ky0eOgPjEd2W2ZxVwhnqfg" name="ReturnParameter" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ky0eOwPjEd2W2ZxVwhnqfg" value="*"/>
+            </ownedParameter>
+            <raisedException xmi:type="uml:Class" href="mmi:///#jbintype%5Ename=java.sql.SQLException%5Bproject%5Eid=WypozyczalniaOracleDane%5D$uml.Class"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_ky0ePAPjEd2W2ZxVwhnqfg" name="getArray" visibility="public">
+            <ownedParameter xmi:id="_ky0ePQPjEd2W2ZxVwhnqfg" name="ReturnParameter" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ky0ePgPjEd2W2ZxVwhnqfg" value="*"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_ky0ePwPjEd2W2ZxVwhnqfg" name="index">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#long"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_ky0eQAPjEd2W2ZxVwhnqfg" name="count">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+            </ownedParameter>
+            <raisedException xmi:type="uml:Class" href="mmi:///#jbintype%5Ename=java.sql.SQLException%5Bproject%5Eid=WypozyczalniaOracleDane%5D$uml.Class"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_ky0eQQPjEd2W2ZxVwhnqfg" name="setArray" visibility="public">
+            <ownedParameter xmi:id="_ky0eQgPjEd2W2ZxVwhnqfg" name="a">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ky0eQwPjEd2W2ZxVwhnqfg" value="*"/>
+              <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ky0eRAPjEd2W2ZxVwhnqfg"/>
+            </ownedParameter>
+            <raisedException xmi:type="uml:Class" href="mmi:///#jbintype%5Ename=java.sql.SQLException%5Bproject%5Eid=WypozyczalniaOracleDane%5D$uml.Class"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_ky0eRQPjEd2W2ZxVwhnqfg" name="setArray" visibility="public">
+            <ownedParameter xmi:id="_ky0eRgPjEd2W2ZxVwhnqfg" name="a">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ky0eRwPjEd2W2ZxVwhnqfg" value="*"/>
+              <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ky0eSAPjEd2W2ZxVwhnqfg"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_ky0eSQPjEd2W2ZxVwhnqfg" name="index">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#long"/>
+            </ownedParameter>
+            <raisedException xmi:type="uml:Class" href="mmi:///#jbintype%5Ename=java.sql.SQLException%5Bproject%5Eid=WypozyczalniaOracleDane%5D$uml.Class"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_ky0eSgPjEd2W2ZxVwhnqfg" name="getElement" visibility="public">
+            <ownedParameter xmi:id="_ky0eSwPjEd2W2ZxVwhnqfg" name="ReturnParameter" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_ky0eTAPjEd2W2ZxVwhnqfg" name="index">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#long"/>
+            </ownedParameter>
+            <raisedException xmi:type="uml:Class" href="mmi:///#jbintype%5Ename=java.sql.SQLException%5Bproject%5Eid=WypozyczalniaOracleDane%5D$uml.Class"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_ky0eTQPjEd2W2ZxVwhnqfg" name="setElement" visibility="public">
+            <ownedParameter xmi:id="_ky0eTgPjEd2W2ZxVwhnqfg" name="a">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_ky0eTwPjEd2W2ZxVwhnqfg" name="index">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#long"/>
+            </ownedParameter>
+            <raisedException xmi:type="uml:Class" href="mmi:///#jbintype%5Ename=java.sql.SQLException%5Bproject%5Eid=WypozyczalniaOracleDane%5D$uml.Class"/>
+          </ownedOperation>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_ky0eUAPjEd2W2ZxVwhnqfg" name="Zamowienietyp" clientDependency="_ky0eYAPjEd2W2ZxVwhnqfg _ky0eYQPjEd2W2ZxVwhnqfg">
+          <ownedAttribute xmi:id="_ky0eUQPjEd2W2ZxVwhnqfg" name="_SQL_NAME" visibility="public" isLeaf="true" isStatic="true">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            <defaultValue xmi:type="uml:LiteralString" xmi:id="_ky0eUgPjEd2W2ZxVwhnqfg" value="PI.ZAMOWIENIETYP"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:id="_ky0eUwPjEd2W2ZxVwhnqfg" name="_SQL_TYPECODE" visibility="public" isLeaf="true" isStatic="true">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+            <defaultValue xmi:type="uml:OpaqueExpression" xmi:id="_ky0eVAPjEd2W2ZxVwhnqfg">
+              <body>OracleTypes.STRUCT</body>
+            </defaultValue>
+          </ownedAttribute>
+          <ownedAttribute xmi:id="_ky0eVQPjEd2W2ZxVwhnqfg" name="_struct" visibility="protected">
+            <type xmi:type="uml:Class" href="mmi:///#jbintype%5Ename=oracle.jpub.runtime.MutableStruct%5Bproject%5Eid=WypozyczalniaOracleDane%5D$uml.Class"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:id="_ky0eVgPjEd2W2ZxVwhnqfg" name="_sqlType" visibility="protected" isStatic="true">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ky0eVwPjEd2W2ZxVwhnqfg" value="*"/>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ky0eWAPjEd2W2ZxVwhnqfg"/>
+            <defaultValue xmi:type="uml:OpaqueExpression" xmi:id="_ky0eWQPjEd2W2ZxVwhnqfg">
+              <body>{93}</body>
+            </defaultValue>
+          </ownedAttribute>
+          <ownedAttribute xmi:id="_ky0eWgPjEd2W2ZxVwhnqfg" name="_factory" visibility="protected" isStatic="true">
+            <type xmi:type="uml:Interface" href="mmi:///#jbintype%5Ename=oracle.sql.ORADataFactory%5Bproject%5Eid=WypozyczalniaOracleDane%5D$uml.Interface"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ky0eWwPjEd2W2ZxVwhnqfg" value="1"/>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ky0eXAPjEd2W2ZxVwhnqfg"/>
+            <defaultValue xmi:type="uml:OpaqueExpression" xmi:id="_ky0eXQPjEd2W2ZxVwhnqfg">
+              <body>new ORADataFactory[1]</body>
+            </defaultValue>
+          </ownedAttribute>
+          <ownedAttribute xmi:id="_ky0eXgPjEd2W2ZxVwhnqfg" name="_ZamowienietypFactory" visibility="protected" isLeaf="true" isStatic="true" type="_ky0eUAPjEd2W2ZxVwhnqfg">
+            <defaultValue xmi:type="uml:OpaqueExpression" xmi:id="_ky0eXwPjEd2W2ZxVwhnqfg">
+              <body>new Zamowienietyp()</body>
+            </defaultValue>
+          </ownedAttribute>
+          <interfaceRealization xmi:id="_ky0eYAPjEd2W2ZxVwhnqfg" client="_ky0eUAPjEd2W2ZxVwhnqfg">
+            <supplier xmi:type="uml:Interface" href="mmi:///#jbintype%5Ename=oracle.sql.ORAData%5Bproject%5Eid=WypozyczalniaOracleDane%5D$uml.Interface"/>
+            <contract href="mmi:///#jbintype%5Ename=oracle.sql.ORAData%5Bproject%5Eid=WypozyczalniaOracleDane%5D$uml.Interface"/>
+          </interfaceRealization>
+          <interfaceRealization xmi:id="_ky0eYQPjEd2W2ZxVwhnqfg" client="_ky0eUAPjEd2W2ZxVwhnqfg">
+            <supplier xmi:type="uml:Interface" href="mmi:///#jbintype%5Ename=oracle.sql.ORADataFactory%5Bproject%5Eid=WypozyczalniaOracleDane%5D$uml.Interface"/>
+            <contract href="mmi:///#jbintype%5Ename=oracle.sql.ORADataFactory%5Bproject%5Eid=WypozyczalniaOracleDane%5D$uml.Interface"/>
+          </interfaceRealization>
+          <ownedOperation xmi:id="_ky0eYgPjEd2W2ZxVwhnqfg" name="getORADataFactory" visibility="public" isStatic="true">
+            <ownedParameter xmi:id="_ky0eYwPjEd2W2ZxVwhnqfg" name="ReturnParameter" direction="return">
+              <type xmi:type="uml:Interface" href="mmi:///#jbintype%5Ename=oracle.sql.ORADataFactory%5Bproject%5Eid=WypozyczalniaOracleDane%5D$uml.Interface"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:id="_ky0eZAPjEd2W2ZxVwhnqfg" name="_init_struct" visibility="protected">
+            <ownedParameter xmi:id="_ky0eZQPjEd2W2ZxVwhnqfg" name="init">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:id="_ky0eZgPjEd2W2ZxVwhnqfg" name="Zamowienietyp" visibility="public"/>
+          <ownedOperation xmi:id="_ky0eZwPjEd2W2ZxVwhnqfg" name="Zamowienietyp" visibility="public">
+            <ownedParameter xmi:id="_ky0eaAPjEd2W2ZxVwhnqfg" name="datazlozenia">
+              <type xmi:type="uml:Class" href="mmi:///#jbintype%5Ename=java.sql.Timestamp%5Bproject%5Eid=WypozyczalniaOracleDane%5D$uml.Class"/>
+            </ownedParameter>
+            <raisedException xmi:type="uml:Class" href="mmi:///#jbintype%5Ename=java.sql.SQLException%5Bproject%5Eid=WypozyczalniaOracleDane%5D$uml.Class"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_ky0eaQPjEd2W2ZxVwhnqfg" name="toDatum" visibility="public">
+            <ownedParameter xmi:id="_ky0eagPjEd2W2ZxVwhnqfg" name="ReturnParameter" direction="return">
+              <type xmi:type="uml:Class" href="mmi:///#jbintype%5Ename=oracle.sql.Datum%5Bproject%5Eid=WypozyczalniaOracleDane%5D$uml.Class"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_ky0eawPjEd2W2ZxVwhnqfg" name="c">
+              <type xmi:type="uml:Interface" href="mmi:///#jbintype%5Ename=java.sql.Connection%5Bproject%5Eid=WypozyczalniaOracleDane%5D$uml.Interface"/>
+            </ownedParameter>
+            <raisedException xmi:type="uml:Class" href="mmi:///#jbintype%5Ename=java.sql.SQLException%5Bproject%5Eid=WypozyczalniaOracleDane%5D$uml.Class"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_ky0ebAPjEd2W2ZxVwhnqfg" name="create" visibility="public">
+            <ownedParameter xmi:id="_ky0ebQPjEd2W2ZxVwhnqfg" name="ReturnParameter" direction="return">
+              <type xmi:type="uml:Interface" href="mmi:///#jbintype%5Ename=oracle.sql.ORAData%5Bproject%5Eid=WypozyczalniaOracleDane%5D$uml.Interface"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_ky0ebgPjEd2W2ZxVwhnqfg" name="d">
+              <type xmi:type="uml:Class" href="mmi:///#jbintype%5Ename=oracle.sql.Datum%5Bproject%5Eid=WypozyczalniaOracleDane%5D$uml.Class"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_ky0ebwPjEd2W2ZxVwhnqfg" name="sqlType">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+            </ownedParameter>
+            <raisedException xmi:type="uml:Class" href="mmi:///#jbintype%5Ename=java.sql.SQLException%5Bproject%5Eid=WypozyczalniaOracleDane%5D$uml.Class"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_ky0ecAPjEd2W2ZxVwhnqfg" name="create" visibility="protected">
+            <ownedParameter xmi:id="_ky0ecQPjEd2W2ZxVwhnqfg" name="ReturnParameter" direction="return">
+              <type xmi:type="uml:Interface" href="mmi:///#jbintype%5Ename=oracle.sql.ORAData%5Bproject%5Eid=WypozyczalniaOracleDane%5D$uml.Interface"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_ky0ecgPjEd2W2ZxVwhnqfg" name="o" type="_ky0eUAPjEd2W2ZxVwhnqfg"/>
+            <ownedParameter xmi:id="_ky0ecwPjEd2W2ZxVwhnqfg" name="d">
+              <type xmi:type="uml:Class" href="mmi:///#jbintype%5Ename=oracle.sql.Datum%5Bproject%5Eid=WypozyczalniaOracleDane%5D$uml.Class"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_ky0edAPjEd2W2ZxVwhnqfg" name="sqlType">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+            </ownedParameter>
+            <raisedException xmi:type="uml:Class" href="mmi:///#jbintype%5Ename=java.sql.SQLException%5Bproject%5Eid=WypozyczalniaOracleDane%5D$uml.Class"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_ky0edQPjEd2W2ZxVwhnqfg" name="getDatazlozenia" visibility="public">
+            <ownedParameter xmi:id="_ky0edgPjEd2W2ZxVwhnqfg" name="ReturnParameter" direction="return">
+              <type xmi:type="uml:Class" href="mmi:///#jbintype%5Ename=java.sql.Timestamp%5Bproject%5Eid=WypozyczalniaOracleDane%5D$uml.Class"/>
+            </ownedParameter>
+            <raisedException xmi:type="uml:Class" href="mmi:///#jbintype%5Ename=java.sql.SQLException%5Bproject%5Eid=WypozyczalniaOracleDane%5D$uml.Class"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_ky0edwPjEd2W2ZxVwhnqfg" name="setDatazlozenia" visibility="public">
+            <ownedParameter xmi:id="_ky0eeAPjEd2W2ZxVwhnqfg" name="datazlozenia">
+              <type xmi:type="uml:Class" href="mmi:///#jbintype%5Ename=java.sql.Timestamp%5Bproject%5Eid=WypozyczalniaOracleDane%5D$uml.Class"/>
+            </ownedParameter>
+            <raisedException xmi:type="uml:Class" href="mmi:///#jbintype%5Ename=java.sql.SQLException%5Bproject%5Eid=WypozyczalniaOracleDane%5D$uml.Class"/>
+          </ownedOperation>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_ky0eeQPjEd2W2ZxVwhnqfg" name="Listakonttyp" clientDependency="_ky0egQPjEd2W2ZxVwhnqfg _ky0eggPjEd2W2ZxVwhnqfg _lHIScAPpEd2W2ZxVwhnqfg">
+          <ownedAttribute xmi:id="_ky0eegPjEd2W2ZxVwhnqfg" name="_SQL_NAME" visibility="public" isLeaf="true" isStatic="true">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            <defaultValue xmi:type="uml:LiteralString" xmi:id="_ky0eewPjEd2W2ZxVwhnqfg" value="PI.LISTAKONTTYP"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:id="_ky0efAPjEd2W2ZxVwhnqfg" name="_SQL_TYPECODE" visibility="public" isLeaf="true" isStatic="true">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+            <defaultValue xmi:type="uml:OpaqueExpression" xmi:id="_ky0efQPjEd2W2ZxVwhnqfg">
+              <body>OracleTypes.ARRAY</body>
+            </defaultValue>
+          </ownedAttribute>
+          <ownedAttribute xmi:id="_ky0efgPjEd2W2ZxVwhnqfg" name="_array" visibility="package">
+            <type xmi:type="uml:Class" href="mmi:///#jbintype%5Ename=oracle.jpub.runtime.MutableArray%5Bproject%5Eid=WypozyczalniaOracleDane%5D$uml.Class"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:id="_ky0efwPjEd2W2ZxVwhnqfg" name="_ListakonttypFactory" visibility="private" isLeaf="true" isStatic="true" type="_ky0eeQPjEd2W2ZxVwhnqfg">
+            <defaultValue xmi:type="uml:OpaqueExpression" xmi:id="_ky0egAPjEd2W2ZxVwhnqfg">
+              <body>new Listakonttyp()</body>
+            </defaultValue>
+          </ownedAttribute>
+          <interfaceRealization xmi:id="_ky0egQPjEd2W2ZxVwhnqfg" client="_ky0eeQPjEd2W2ZxVwhnqfg">
+            <supplier xmi:type="uml:Interface" href="mmi:///#jbintype%5Ename=oracle.sql.ORAData%5Bproject%5Eid=WypozyczalniaOracleDane%5D$uml.Interface"/>
+            <contract href="mmi:///#jbintype%5Ename=oracle.sql.ORAData%5Bproject%5Eid=WypozyczalniaOracleDane%5D$uml.Interface"/>
+          </interfaceRealization>
+          <interfaceRealization xmi:id="_ky0eggPjEd2W2ZxVwhnqfg" client="_ky0eeQPjEd2W2ZxVwhnqfg">
+            <supplier xmi:type="uml:Interface" href="mmi:///#jbintype%5Ename=oracle.sql.ORADataFactory%5Bproject%5Eid=WypozyczalniaOracleDane%5D$uml.Interface"/>
+            <contract href="mmi:///#jbintype%5Ename=oracle.sql.ORADataFactory%5Bproject%5Eid=WypozyczalniaOracleDane%5D$uml.Interface"/>
+          </interfaceRealization>
+          <ownedOperation xmi:id="_ky0egwPjEd2W2ZxVwhnqfg" name="getORADataFactory" visibility="public" isStatic="true">
+            <ownedParameter xmi:id="_ky0ehAPjEd2W2ZxVwhnqfg" name="ReturnParameter" direction="return">
+              <type xmi:type="uml:Interface" href="mmi:///#jbintype%5Ename=oracle.sql.ORADataFactory%5Bproject%5Eid=WypozyczalniaOracleDane%5D$uml.Interface"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:id="_ky0ehQPjEd2W2ZxVwhnqfg" name="Listakonttyp" visibility="public"/>
+          <ownedOperation xmi:id="_ky0ehgPjEd2W2ZxVwhnqfg" name="Listakonttyp" visibility="public">
+            <ownedParameter xmi:id="_ky0ehwPjEd2W2ZxVwhnqfg" name="a" type="_kyrUVwPjEd2W2ZxVwhnqfg">
+              <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ky0eiAPjEd2W2ZxVwhnqfg" value="*"/>
+              <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ky0eiQPjEd2W2ZxVwhnqfg"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:id="_ky0eigPjEd2W2ZxVwhnqfg" name="toDatum" visibility="public">
+            <ownedParameter xmi:id="_ky0eiwPjEd2W2ZxVwhnqfg" name="ReturnParameter" direction="return">
+              <type xmi:type="uml:Class" href="mmi:///#jbintype%5Ename=oracle.sql.Datum%5Bproject%5Eid=WypozyczalniaOracleDane%5D$uml.Class"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_ky0ejAPjEd2W2ZxVwhnqfg" name="c">
+              <type xmi:type="uml:Interface" href="mmi:///#jbintype%5Ename=java.sql.Connection%5Bproject%5Eid=WypozyczalniaOracleDane%5D$uml.Interface"/>
+            </ownedParameter>
+            <raisedException xmi:type="uml:Class" href="mmi:///#jbintype%5Ename=java.sql.SQLException%5Bproject%5Eid=WypozyczalniaOracleDane%5D$uml.Class"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_ky0ejQPjEd2W2ZxVwhnqfg" name="create" visibility="public">
+            <ownedParameter xmi:id="_ky0ejgPjEd2W2ZxVwhnqfg" name="ReturnParameter" direction="return">
+              <type xmi:type="uml:Interface" href="mmi:///#jbintype%5Ename=oracle.sql.ORAData%5Bproject%5Eid=WypozyczalniaOracleDane%5D$uml.Interface"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_ky0ejwPjEd2W2ZxVwhnqfg" name="d">
+              <type xmi:type="uml:Class" href="mmi:///#jbintype%5Ename=oracle.sql.Datum%5Bproject%5Eid=WypozyczalniaOracleDane%5D$uml.Class"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_ky0ekAPjEd2W2ZxVwhnqfg" name="sqlType">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+            </ownedParameter>
+            <raisedException xmi:type="uml:Class" href="mmi:///#jbintype%5Ename=java.sql.SQLException%5Bproject%5Eid=WypozyczalniaOracleDane%5D$uml.Class"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_ky0ekQPjEd2W2ZxVwhnqfg" name="length" visibility="public">
+            <ownedParameter xmi:id="_ky0ekgPjEd2W2ZxVwhnqfg" name="ReturnParameter" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+            </ownedParameter>
+            <raisedException xmi:type="uml:Class" href="mmi:///#jbintype%5Ename=java.sql.SQLException%5Bproject%5Eid=WypozyczalniaOracleDane%5D$uml.Class"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_ky0ekwPjEd2W2ZxVwhnqfg" name="getBaseType" visibility="public">
+            <ownedParameter xmi:id="_ky0elAPjEd2W2ZxVwhnqfg" name="ReturnParameter" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+            </ownedParameter>
+            <raisedException xmi:type="uml:Class" href="mmi:///#jbintype%5Ename=java.sql.SQLException%5Bproject%5Eid=WypozyczalniaOracleDane%5D$uml.Class"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_ky0elQPjEd2W2ZxVwhnqfg" name="getBaseTypeName" visibility="public">
+            <ownedParameter xmi:id="_ky0elgPjEd2W2ZxVwhnqfg" name="ReturnParameter" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+            <raisedException xmi:type="uml:Class" href="mmi:///#jbintype%5Ename=java.sql.SQLException%5Bproject%5Eid=WypozyczalniaOracleDane%5D$uml.Class"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_ky0elwPjEd2W2ZxVwhnqfg" name="getDescriptor" visibility="public">
+            <ownedParameter xmi:id="_ky0emAPjEd2W2ZxVwhnqfg" name="ReturnParameter" direction="return">
+              <type xmi:type="uml:Class" href="mmi:///#jbintype%5Ename=oracle.sql.ArrayDescriptor%5Bproject%5Eid=WypozyczalniaOracleDane%5D$uml.Class"/>
+            </ownedParameter>
+            <raisedException xmi:type="uml:Class" href="mmi:///#jbintype%5Ename=java.sql.SQLException%5Bproject%5Eid=WypozyczalniaOracleDane%5D$uml.Class"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_ky0emQPjEd2W2ZxVwhnqfg" name="getArray" visibility="public">
+            <ownedParameter xmi:id="_ky0emgPjEd2W2ZxVwhnqfg" name="ReturnParameter" type="_kyrUVwPjEd2W2ZxVwhnqfg" direction="return">
+              <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ky0emwPjEd2W2ZxVwhnqfg" value="*"/>
+            </ownedParameter>
+            <raisedException xmi:type="uml:Class" href="mmi:///#jbintype%5Ename=java.sql.SQLException%5Bproject%5Eid=WypozyczalniaOracleDane%5D$uml.Class"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_ky0enAPjEd2W2ZxVwhnqfg" name="getArray" visibility="public">
+            <ownedParameter xmi:id="_ky0enQPjEd2W2ZxVwhnqfg" name="ReturnParameter" type="_kyrUVwPjEd2W2ZxVwhnqfg" direction="return">
+              <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ky0engPjEd2W2ZxVwhnqfg" value="*"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_ky0enwPjEd2W2ZxVwhnqfg" name="index">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#long"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_ky0eoAPjEd2W2ZxVwhnqfg" name="count">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+            </ownedParameter>
+            <raisedException xmi:type="uml:Class" href="mmi:///#jbintype%5Ename=java.sql.SQLException%5Bproject%5Eid=WypozyczalniaOracleDane%5D$uml.Class"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_ky0eoQPjEd2W2ZxVwhnqfg" name="setArray" visibility="public">
+            <ownedParameter xmi:id="_ky0eogPjEd2W2ZxVwhnqfg" name="a" type="_kyrUVwPjEd2W2ZxVwhnqfg">
+              <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ky0eowPjEd2W2ZxVwhnqfg" value="*"/>
+              <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ky0epAPjEd2W2ZxVwhnqfg"/>
+            </ownedParameter>
+            <raisedException xmi:type="uml:Class" href="mmi:///#jbintype%5Ename=java.sql.SQLException%5Bproject%5Eid=WypozyczalniaOracleDane%5D$uml.Class"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_ky0epQPjEd2W2ZxVwhnqfg" name="setArray" visibility="public">
+            <ownedParameter xmi:id="_ky0epgPjEd2W2ZxVwhnqfg" name="a" type="_kyrUVwPjEd2W2ZxVwhnqfg">
+              <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ky0epwPjEd2W2ZxVwhnqfg" value="*"/>
+              <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ky0eqAPjEd2W2ZxVwhnqfg"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_ky0eqQPjEd2W2ZxVwhnqfg" name="index">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#long"/>
+            </ownedParameter>
+            <raisedException xmi:type="uml:Class" href="mmi:///#jbintype%5Ename=java.sql.SQLException%5Bproject%5Eid=WypozyczalniaOracleDane%5D$uml.Class"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_ky0eqgPjEd2W2ZxVwhnqfg" name="getElement" visibility="public">
+            <ownedParameter xmi:id="_ky0eqwPjEd2W2ZxVwhnqfg" name="ReturnParameter" type="_kyrUVwPjEd2W2ZxVwhnqfg" direction="return"/>
+            <ownedParameter xmi:id="_ky0erAPjEd2W2ZxVwhnqfg" name="index">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#long"/>
+            </ownedParameter>
+            <raisedException xmi:type="uml:Class" href="mmi:///#jbintype%5Ename=java.sql.SQLException%5Bproject%5Eid=WypozyczalniaOracleDane%5D$uml.Class"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_ky0erQPjEd2W2ZxVwhnqfg" name="setElement" visibility="public">
+            <ownedParameter xmi:id="_ky0ergPjEd2W2ZxVwhnqfg" name="a" type="_kyrUVwPjEd2W2ZxVwhnqfg"/>
+            <ownedParameter xmi:id="_ky0erwPjEd2W2ZxVwhnqfg" name="index">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#long"/>
+            </ownedParameter>
+            <raisedException xmi:type="uml:Class" href="mmi:///#jbintype%5Ename=java.sql.SQLException%5Bproject%5Eid=WypozyczalniaOracleDane%5D$uml.Class"/>
+          </ownedOperation>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_ky0esAPjEd2W2ZxVwhnqfg" name="KlientTyp" clientDependency="_ky0etAPjEd2W2ZxVwhnqfg _ky0etQPjEd2W2ZxVwhnqfg _SXd44APqEd2W2ZxVwhnqfg _ftJgkAPqEd2W2ZxVwhnqfg">
+          <generalization xmi:id="_ky0esQPjEd2W2ZxVwhnqfg" general="_kyrU0APjEd2W2ZxVwhnqfg"/>
+          <ownedAttribute xmi:id="_ky0esgPjEd2W2ZxVwhnqfg" name="_KlientTypFactory" visibility="protected" isLeaf="true" isStatic="true" type="_ky0esAPjEd2W2ZxVwhnqfg">
+            <defaultValue xmi:type="uml:OpaqueExpression" xmi:id="_ky0eswPjEd2W2ZxVwhnqfg">
+              <body>new KlientTyp()</body>
+            </defaultValue>
+          </ownedAttribute>
+          <interfaceRealization xmi:id="_ky0etAPjEd2W2ZxVwhnqfg" client="_ky0esAPjEd2W2ZxVwhnqfg">
+            <supplier xmi:type="uml:Interface" href="mmi:///#jbintype%5Ename=oracle.sql.ORAData%5Bproject%5Eid=WypozyczalniaOracleDane%5D$uml.Interface"/>
+            <contract href="mmi:///#jbintype%5Ename=oracle.sql.ORAData%5Bproject%5Eid=WypozyczalniaOracleDane%5D$uml.Interface"/>
+          </interfaceRealization>
+          <interfaceRealization xmi:id="_ky0etQPjEd2W2ZxVwhnqfg" client="_ky0esAPjEd2W2ZxVwhnqfg">
+            <supplier xmi:type="uml:Interface" href="mmi:///#jbintype%5Ename=oracle.sql.ORADataFactory%5Bproject%5Eid=WypozyczalniaOracleDane%5D$uml.Interface"/>
+            <contract href="mmi:///#jbintype%5Ename=oracle.sql.ORADataFactory%5Bproject%5Eid=WypozyczalniaOracleDane%5D$uml.Interface"/>
+          </interfaceRealization>
+          <ownedOperation xmi:id="_ky0etgPjEd2W2ZxVwhnqfg" name="_init_struct" visibility="protected">
+            <ownedParameter xmi:id="_ky0etwPjEd2W2ZxVwhnqfg" name="init">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:id="_ky0euAPjEd2W2ZxVwhnqfg" name="KlientTyp" visibility="public"/>
+          <ownedOperation xmi:id="_ky0euQPjEd2W2ZxVwhnqfg" name="KlientTyp" visibility="public">
+            <ownedParameter xmi:id="_ky0eugPjEd2W2ZxVwhnqfg" name="imie">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_ky0euwPjEd2W2ZxVwhnqfg" name="nazwisko">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_ky0evAPjEd2W2ZxVwhnqfg" name="adresmailowy">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_ky0evQPjEd2W2ZxVwhnqfg" name="nazwiskorodowe">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_ky0evgPjEd2W2ZxVwhnqfg" name="telefony" type="_ky0eGQPjEd2W2ZxVwhnqfg"/>
+            <ownedParameter xmi:id="_ky0evwPjEd2W2ZxVwhnqfg" name="nrpesel">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_ky0ewAPjEd2W2ZxVwhnqfg" name="adres" type="_kyhjPQPjEd2W2ZxVwhnqfg"/>
+            <ownedParameter xmi:id="_ky0ewQPjEd2W2ZxVwhnqfg" name="konta" type="_ky0eeQPjEd2W2ZxVwhnqfg"/>
+            <raisedException xmi:type="uml:Class" href="mmi:///#jbintype%5Ename=java.sql.SQLException%5Bproject%5Eid=WypozyczalniaOracleDane%5D$uml.Class"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_ky0ewgPjEd2W2ZxVwhnqfg" name="toDatum" visibility="public">
+            <ownedParameter xmi:id="_ky0ewwPjEd2W2ZxVwhnqfg" name="ReturnParameter" direction="return">
+              <type xmi:type="uml:Class" href="mmi:///#jbintype%5Ename=oracle.sql.Datum%5Bproject%5Eid=WypozyczalniaOracleDane%5D$uml.Class"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_ky0exAPjEd2W2ZxVwhnqfg" name="c">
+              <type xmi:type="uml:Interface" href="mmi:///#jbintype%5Ename=java.sql.Connection%5Bproject%5Eid=WypozyczalniaOracleDane%5D$uml.Interface"/>
+            </ownedParameter>
+            <raisedException xmi:type="uml:Class" href="mmi:///#jbintype%5Ename=java.sql.SQLException%5Bproject%5Eid=WypozyczalniaOracleDane%5D$uml.Class"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_ky0exQPjEd2W2ZxVwhnqfg" name="create" visibility="public">
+            <ownedParameter xmi:id="_ky0exgPjEd2W2ZxVwhnqfg" name="ReturnParameter" direction="return">
+              <type xmi:type="uml:Interface" href="mmi:///#jbintype%5Ename=oracle.sql.ORAData%5Bproject%5Eid=WypozyczalniaOracleDane%5D$uml.Interface"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_ky0exwPjEd2W2ZxVwhnqfg" name="d">
+              <type xmi:type="uml:Class" href="mmi:///#jbintype%5Ename=oracle.sql.Datum%5Bproject%5Eid=WypozyczalniaOracleDane%5D$uml.Class"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_ky0eyAPjEd2W2ZxVwhnqfg" name="sqlType">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+            </ownedParameter>
+            <raisedException xmi:type="uml:Class" href="mmi:///#jbintype%5Ename=java.sql.SQLException%5Bproject%5Eid=WypozyczalniaOracleDane%5D$uml.Class"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_ky0eyQPjEd2W2ZxVwhnqfg" name="create" visibility="protected">
+            <ownedParameter xmi:id="_ky0eygPjEd2W2ZxVwhnqfg" name="ReturnParameter" direction="return">
+              <type xmi:type="uml:Interface" href="mmi:///#jbintype%5Ename=oracle.sql.ORAData%5Bproject%5Eid=WypozyczalniaOracleDane%5D$uml.Interface"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_ky0eywPjEd2W2ZxVwhnqfg" name="o" type="_ky0esAPjEd2W2ZxVwhnqfg"/>
+            <ownedParameter xmi:id="_ky0ezAPjEd2W2ZxVwhnqfg" name="d">
+              <type xmi:type="uml:Class" href="mmi:///#jbintype%5Ename=oracle.sql.Datum%5Bproject%5Eid=WypozyczalniaOracleDane%5D$uml.Class"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_ky0ezQPjEd2W2ZxVwhnqfg" name="sqlType">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+            </ownedParameter>
+            <raisedException xmi:type="uml:Class" href="mmi:///#jbintype%5Ename=java.sql.SQLException%5Bproject%5Eid=WypozyczalniaOracleDane%5D$uml.Class"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_ky0ezgPjEd2W2ZxVwhnqfg" name="createExact" visibility="protected">
+            <ownedParameter xmi:id="_ky0ezwPjEd2W2ZxVwhnqfg" name="ReturnParameter" direction="return">
+              <type xmi:type="uml:Interface" href="mmi:///#jbintype%5Ename=oracle.sql.ORAData%5Bproject%5Eid=WypozyczalniaOracleDane%5D$uml.Interface"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_ky0e0APjEd2W2ZxVwhnqfg" name="d">
+              <type xmi:type="uml:Class" href="mmi:///#jbintype%5Ename=oracle.sql.Datum%5Bproject%5Eid=WypozyczalniaOracleDane%5D$uml.Class"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_ky0e0QPjEd2W2ZxVwhnqfg" name="sqlType">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+            </ownedParameter>
+            <raisedException xmi:type="uml:Class" href="mmi:///#jbintype%5Ename=java.sql.SQLException%5Bproject%5Eid=WypozyczalniaOracleDane%5D$uml.Class"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_ky0e0gPjEd2W2ZxVwhnqfg" name="getNrpesel" visibility="public">
+            <ownedParameter xmi:id="_ky0e0wPjEd2W2ZxVwhnqfg" name="ReturnParameter" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+            <raisedException xmi:type="uml:Class" href="mmi:///#jbintype%5Ename=java.sql.SQLException%5Bproject%5Eid=WypozyczalniaOracleDane%5D$uml.Class"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_ky0e1APjEd2W2ZxVwhnqfg" name="setNrpesel" visibility="public">
+            <ownedParameter xmi:id="_ky0e1QPjEd2W2ZxVwhnqfg" name="nrpesel">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+            <raisedException xmi:type="uml:Class" href="mmi:///#jbintype%5Ename=java.sql.SQLException%5Bproject%5Eid=WypozyczalniaOracleDane%5D$uml.Class"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_ky0e1gPjEd2W2ZxVwhnqfg" name="getAdres" visibility="public">
+            <ownedParameter xmi:id="_ky0e1wPjEd2W2ZxVwhnqfg" name="ReturnParameter" type="_kyhjPQPjEd2W2ZxVwhnqfg" direction="return"/>
+            <raisedException xmi:type="uml:Class" href="mmi:///#jbintype%5Ename=java.sql.SQLException%5Bproject%5Eid=WypozyczalniaOracleDane%5D$uml.Class"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_ky0e2APjEd2W2ZxVwhnqfg" name="setAdres" visibility="public">
+            <ownedParameter xmi:id="_ky0e2QPjEd2W2ZxVwhnqfg" name="adres" type="_kyhjPQPjEd2W2ZxVwhnqfg"/>
+            <raisedException xmi:type="uml:Class" href="mmi:///#jbintype%5Ename=java.sql.SQLException%5Bproject%5Eid=WypozyczalniaOracleDane%5D$uml.Class"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_ky0e2gPjEd2W2ZxVwhnqfg" name="getKonta" visibility="public">
+            <ownedParameter xmi:id="_ky0e2wPjEd2W2ZxVwhnqfg" name="ReturnParameter" type="_ky0eeQPjEd2W2ZxVwhnqfg" direction="return"/>
+            <raisedException xmi:type="uml:Class" href="mmi:///#jbintype%5Ename=java.sql.SQLException%5Bproject%5Eid=WypozyczalniaOracleDane%5D$uml.Class"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_ky0e3APjEd2W2ZxVwhnqfg" name="setKonta" visibility="public">
+            <ownedParameter xmi:id="_ky0e3QPjEd2W2ZxVwhnqfg" name="konta" type="_ky0eeQPjEd2W2ZxVwhnqfg"/>
+            <raisedException xmi:type="uml:Class" href="mmi:///#jbintype%5Ename=java.sql.SQLException%5Bproject%5Eid=WypozyczalniaOracleDane%5D$uml.Class"/>
+          </ownedOperation>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Dependency" xmi:id="_x9fWUAPoEd2W2ZxVwhnqfg" supplier="_kyhjPQPjEd2W2ZxVwhnqfg" client="_kyhjIgPjEd2W2ZxVwhnqfg"/>
+        <packagedElement xmi:type="uml:Dependency" xmi:id="_gakcsAPpEd2W2ZxVwhnqfg" supplier="_ky0eUAPjEd2W2ZxVwhnqfg" client="_kyrUIQPjEd2W2ZxVwhnqfg"/>
+        <packagedElement xmi:type="uml:Dependency" xmi:id="_kK7I4APpEd2W2ZxVwhnqfg" supplier="_kyrU0APjEd2W2ZxVwhnqfg" client="_kyrUPAPjEd2W2ZxVwhnqfg"/>
+        <packagedElement xmi:type="uml:Dependency" xmi:id="_lHIScAPpEd2W2ZxVwhnqfg" supplier="_kyrUVwPjEd2W2ZxVwhnqfg" client="_ky0eeQPjEd2W2ZxVwhnqfg"/>
+        <packagedElement xmi:type="uml:Dependency" xmi:id="_pTygIAPpEd2W2ZxVwhnqfg" supplier="_kyrUVwPjEd2W2ZxVwhnqfg" client="_kyrVGwPjEd2W2ZxVwhnqfg"/>
+        <packagedElement xmi:type="uml:Dependency" xmi:id="_u2mBYAPpEd2W2ZxVwhnqfg" supplier="_ky0esAPjEd2W2ZxVwhnqfg" client="_kyhjdQPjEd2W2ZxVwhnqfg"/>
+        <packagedElement xmi:type="uml:Dependency" xmi:id="_6cg7oAPpEd2W2ZxVwhnqfg" supplier="_ky0eUAPjEd2W2ZxVwhnqfg" client="_kyrUmQPjEd2W2ZxVwhnqfg"/>
+        <packagedElement xmi:type="uml:Dependency" xmi:id="__GGV4APpEd2W2ZxVwhnqfg" supplier="_ky0eGQPjEd2W2ZxVwhnqfg" client="_kyrU0APjEd2W2ZxVwhnqfg"/>
+        <packagedElement xmi:type="uml:Dependency" xmi:id="_Ca4gYAPqEd2W2ZxVwhnqfg" supplier="_kyrUmQPjEd2W2ZxVwhnqfg" client="_kyrUVwPjEd2W2ZxVwhnqfg"/>
+        <packagedElement xmi:type="uml:Dependency" xmi:id="_SXd44APqEd2W2ZxVwhnqfg" supplier="_kyhjPQPjEd2W2ZxVwhnqfg" client="_ky0esAPjEd2W2ZxVwhnqfg"/>
+        <packagedElement xmi:type="uml:Dependency" xmi:id="_ftJgkAPqEd2W2ZxVwhnqfg" supplier="_ky0eeQPjEd2W2ZxVwhnqfg" client="_ky0esAPjEd2W2ZxVwhnqfg"/>
+      </packagedElement>
+    </packagedElement>
+    <profileApplication xmi:id="_lE7ztQPhEd2W2ZxVwhnqfg">
+      <eAnnotations xmi:id="_lE7ztgPhEd2W2ZxVwhnqfg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="pathmap://UML_PROFILES/Standard.profile.uml#_yzU58YinEdqtvbnfB2L_5w"/>
+      </eAnnotations>
+      <appliedProfile href="pathmap://UML_PROFILES/Standard.profile.uml#_0"/>
+    </profileApplication>
+    <profileApplication xmi:id="_lE7ztwPhEd2W2ZxVwhnqfg">
+      <eAnnotations xmi:id="_lE7zuAPhEd2W2ZxVwhnqfg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="pathmap://UML2_MSL_PROFILES/Default.epx#_IN8k8MmBEdqBcN1R6EvWUw?Default/Default?"/>
+      </eAnnotations>
+      <appliedProfile href="pathmap://UML2_MSL_PROFILES/Default.epx#_a_S3wNWLEdiy4IqP8whjFA?Default?"/>
+    </profileApplication>
+    <profileApplication xmi:id="_lE7zuQPhEd2W2ZxVwhnqfg">
+      <eAnnotations xmi:id="_lE7zugPhEd2W2ZxVwhnqfg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="pathmap://UML2_MSL_PROFILES/Deployment.epx#_IrdAUMmBEdqBcN1R6EvWUw?Deployment/Deployment?"/>
+      </eAnnotations>
+      <appliedProfile href="pathmap://UML2_MSL_PROFILES/Deployment.epx#_vjbuwOvHEdiDX5bji0iVSA?Deployment?"/>
+    </profileApplication>
+    <profileApplication xmi:id="_ktAxAAPjEd2W2ZxVwhnqfg">
+      <eAnnotations xmi:id="_ktAxAQPjEd2W2ZxVwhnqfg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="pathmap://TRANSFORM_JAVA5_PROFILES/JavaTransformProfile.epx#_p9yQoAh4Edy3mNZQMQSk2Q?JavaTransformation5.0/JavaTransformation50?"/>
+      </eAnnotations>
+      <appliedProfile href="pathmap://TRANSFORM_JAVA5_PROFILES/JavaTransformProfile.epx#_TQfqgOcaEdi4LptNXGi2fQ?JavaTransformation5.0?"/>
+    </profileApplication>
+  </uml:Model>
+  <JavaTransformation50:JavaArray xmi:id="_ky-PEQPjEd2W2ZxVwhnqfg" base_TypedElement="_ky0epgPjEd2W2ZxVwhnqfg"/>
+  <JavaTransformation50:JavaArray xmi:id="_ky-PEwPjEd2W2ZxVwhnqfg" base_TypedElement="_ky0eogPjEd2W2ZxVwhnqfg"/>
+  <JavaTransformation50:JavaArray xmi:id="_kzHZAQPjEd2W2ZxVwhnqfg" base_TypedElement="_ky0enQPjEd2W2ZxVwhnqfg"/>
+  <JavaTransformation50:JavaArray xmi:id="_kzHZAwPjEd2W2ZxVwhnqfg" base_TypedElement="_ky0emgPjEd2W2ZxVwhnqfg"/>
+  <JavaTransformation50:JavaArray xmi:id="_kzRKAQPjEd2W2ZxVwhnqfg" base_TypedElement="_ky0ehwPjEd2W2ZxVwhnqfg"/>
+  <JavaTransformation50:JavaArray xmi:id="_kzRKAwPjEd2W2ZxVwhnqfg" base_TypedElement="_ky0eWgPjEd2W2ZxVwhnqfg"/>
+  <JavaTransformation50:JavaArray xmi:id="_kzRKBQPjEd2W2ZxVwhnqfg" base_TypedElement="_ky0eVgPjEd2W2ZxVwhnqfg"/>
+  <JavaTransformation50:JavaArray xmi:id="_kza7AQPjEd2W2ZxVwhnqfg" base_TypedElement="_ky0eRgPjEd2W2ZxVwhnqfg"/>
+  <JavaTransformation50:JavaArray xmi:id="_kza7AwPjEd2W2ZxVwhnqfg" base_TypedElement="_ky0eQgPjEd2W2ZxVwhnqfg"/>
+  <JavaTransformation50:JavaArray xmi:id="_kzkE8QPjEd2W2ZxVwhnqfg" base_TypedElement="_ky0ePQPjEd2W2ZxVwhnqfg"/>
+  <JavaTransformation50:JavaArray xmi:id="_kzkE8wPjEd2W2ZxVwhnqfg" base_TypedElement="_ky0eOgPjEd2W2ZxVwhnqfg"/>
+  <JavaTransformation50:JavaArray xmi:id="_kzt18QPjEd2W2ZxVwhnqfg" base_TypedElement="_ky0eJwPjEd2W2ZxVwhnqfg"/>
+  <JavaTransformation50:JavaArray xmi:id="_kzt18wPjEd2W2ZxVwhnqfg" base_TypedElement="_kyrU2gPjEd2W2ZxVwhnqfg"/>
+  <JavaTransformation50:JavaArray xmi:id="_kzt19QPjEd2W2ZxVwhnqfg" base_TypedElement="_kyrU1gPjEd2W2ZxVwhnqfg"/>
+  <JavaTransformation50:JavaArray xmi:id="_kz3m8QPjEd2W2ZxVwhnqfg" base_TypedElement="_kyrUxgPjEd2W2ZxVwhnqfg"/>
+  <JavaTransformation50:JavaArray xmi:id="_k0Aw4QPjEd2W2ZxVwhnqfg" base_TypedElement="_kyrUwgPjEd2W2ZxVwhnqfg"/>
+  <JavaTransformation50:JavaArray xmi:id="_k0Aw4wPjEd2W2ZxVwhnqfg" base_TypedElement="_kyrUvQPjEd2W2ZxVwhnqfg"/>
+  <JavaTransformation50:JavaArray xmi:id="_k0Aw5QPjEd2W2ZxVwhnqfg" base_TypedElement="_kyrUugPjEd2W2ZxVwhnqfg"/>
+  <JavaTransformation50:JavaArray xmi:id="_k0Kh4QPjEd2W2ZxVwhnqfg" base_TypedElement="_kyrUpwPjEd2W2ZxVwhnqfg"/>
+  <JavaTransformation50:JavaArray xmi:id="_k0Kh4wPjEd2W2ZxVwhnqfg" base_TypedElement="_kyrUYQPjEd2W2ZxVwhnqfg"/>
+  <JavaTransformation50:JavaArray xmi:id="_k0Tr0QPjEd2W2ZxVwhnqfg" base_TypedElement="_kyrUXQPjEd2W2ZxVwhnqfg"/>
+  <JavaTransformation50:JavaArray xmi:id="_k0Tr0wPjEd2W2ZxVwhnqfg" base_TypedElement="_kyhjRwPjEd2W2ZxVwhnqfg"/>
+  <JavaTransformation50:JavaArray xmi:id="_k0dc0QPjEd2W2ZxVwhnqfg" base_TypedElement="_kyhjQwPjEd2W2ZxVwhnqfg"/>
+</xmi:XMI>
