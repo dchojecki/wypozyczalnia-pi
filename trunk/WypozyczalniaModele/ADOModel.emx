@@ -1108,7 +1108,7 @@
   <packageImport xmi:id="_NNQTpPpvEdylZYpHMTjaBQ">
     <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
   </packageImport>
-  <packagedElement xmi:type="uml:Package" xmi:id="_2aMzwPqIEdylZYpHMTjaBQ" name="wypozyczalnia.zarzadzanieKontami">
+  <packagedElement xmi:type="uml:Package" xmi:id="_2aMzwPqIEdylZYpHMTjaBQ" name="wypozyczalnia.uslugiklient">
     <eAnnotations xmi:id="_2aWkwPqIEdylZYpHMTjaBQ" source="uml2.diagrams" references="_2aWkwfqIEdylZYpHMTjaBQ">
       <contents xmi:type="notation:Diagram" xmi:id="_2aWkwfqIEdylZYpHMTjaBQ" type="Freeform" name="Main">
         <children xmi:id="__xX-gPqIEdylZYpHMTjaBQ" element="_EoXPgPpxEdylZYpHMTjaBQ">
