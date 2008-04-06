@@ -1,0 +1,1128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--xtools2_universal_type_manager-->
+<?com.ibm.xtools.emf.core.signature <signature id="com.ibm.xtools.uml.msl.model" version="7.0.0"><feature description="" name="com.ibm.xtools.ruml.feature" url="" version="7.0.0"/></signature>?>
+<?com.ibm.xtools.emf.core.signature <signature id="com.ibm.xtools.mmi.ui.signatures.diagram" version="7.0.0"><feature description="" name="Rational Modeling Platform (com.ibm.xtools.rmp)" url="" version="7.0.0"/></signature>?>
+<uml:Model xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.0/notation" xmlns:uml="http://www.eclipse.org/uml2/2.0.0/UML" xmlns:umlnotation="http://www.ibm.com/xtools/1.5.2/Umlnotation" xmi:id="_hc5qYP5tEdy6V8d2FH3wgw" name="activity">
+  <eAnnotations xmi:id="_hc5qYf5tEdy6V8d2FH3wgw" source="uml2.diagrams">
+    <contents xmi:type="notation:Diagram" xmi:id="_wxCn4fsBEdycsIeIheJDLA" type="Activity" name="ActivityDiagram1" measurementUnit="Himetric">
+      <children xmi:id="_wxCn4vsBEdycsIeIheJDLA" type="Activity Frame">
+        <children xmi:id="_wxCn4_sBEdycsIeIheJDLA" type="ActivityCompartment">
+          <children xmi:id="_Fb9-0PsCEdycsIeIheJDLA" type="Partition">
+            <children xmi:id="_Fb9-1PsCEdycsIeIheJDLA" type="Stereotype"/>
+            <children xmi:id="_Fb9-1fsCEdycsIeIheJDLA" type="PartitionName"/>
+            <children xmi:id="_Fb9-1vsCEdycsIeIheJDLA" type="PartitionCompartment">
+              <children xmi:id="_c7RJwPshEdySb8Qfgz-7oQ">
+                <children xmi:id="_c7RJw_shEdySb8Qfgz-7oQ" type="ImageCompartment">
+                  <layoutConstraint xmi:type="notation:Size" xmi:id="_c7RJxPshEdySb8Qfgz-7oQ" width="1320" height="1320"/>
+                </children>
+                <children xmi:id="_c7RJxfshEdySb8Qfgz-7oQ" type="NameLabel">
+                  <children xmi:id="_c7RJx_shEdySb8Qfgz-7oQ" type="Stereotype"/>
+                  <children xmi:id="_c7RJyPshEdySb8Qfgz-7oQ" type="Name"/>
+                  <layoutConstraint xmi:type="notation:Bounds" xmi:id="_c7RJxvshEdySb8Qfgz-7oQ" y="-186"/>
+                </children>
+                <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="_c7RJwfshEdySb8Qfgz-7oQ" fillColor="11579568" showStereotype="Label"/>
+                <element xmi:type="uml:InitialNode" href="platform:/resource/PI_PU/Use%20Case%20Model.emx#_c7H_0PshEdySb8Qfgz-7oQ?Use%20Case%20Model/1.2.3%20Wyślij%20prośbę%20o%20utworzenie%20konta/%3CInitialNode%3E?"/>
+                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_c7RJwvshEdySb8Qfgz-7oQ" x="2193" y="132"/>
+              </children>
+              <children xmi:id="_Jj-IcPsiEdySb8Qfgz-7oQ">
+                <children xmi:id="_Jj-Ic_siEdySb8Qfgz-7oQ" type="ImageCompartment">
+                  <layoutConstraint xmi:type="notation:Size" xmi:id="_Jj-IdPsiEdySb8Qfgz-7oQ" width="1320" height="1320"/>
+                </children>
+                <children xmi:id="_Jj-IdfsiEdySb8Qfgz-7oQ" type="Stereotype"/>
+                <children xmi:id="_Jj-IdvsiEdySb8Qfgz-7oQ" type="InPartitions"/>
+                <children xmi:id="_Jj-Id_siEdySb8Qfgz-7oQ" type="Name"/>
+                <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="_Jj-IcfsiEdySb8Qfgz-7oQ" showStereotype="Label"/>
+                <element xmi:type="uml:DecisionNode" href="platform:/resource/PI_PU/Use%20Case%20Model.emx#_Jj0-gPsiEdySb8Qfgz-7oQ?Use%20Case%20Model/1.2.3%20Wyślij%20prośbę%20o%20utworzenie%20konta/Akceptacja?"/>
+                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Jj-IcvsiEdySb8Qfgz-7oQ" x="1876" y="36745" width="2540" height="1270"/>
+              </children>
+              <children xmi:id="_9EtV8fsiEdySb8Qfgz-7oQ">
+                <children xmi:id="_9EtV9PsiEdySb8Qfgz-7oQ" type="ImageCompartment">
+                  <layoutConstraint xmi:type="notation:Size" xmi:id="_9EtV9fsiEdySb8Qfgz-7oQ" width="1320" height="1320"/>
+                </children>
+                <children xmi:id="_9EtV9vsiEdySb8Qfgz-7oQ" type="NameLabel">
+                  <children xmi:id="_9EtV-PsiEdySb8Qfgz-7oQ" type="Stereotype"/>
+                  <children xmi:id="_9EtV-fsiEdySb8Qfgz-7oQ" type="Name"/>
+                  <layoutConstraint xmi:type="notation:Bounds" xmi:id="_9EtV9_siEdySb8Qfgz-7oQ" x="213" y="1158"/>
+                </children>
+                <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="_9EtV8vsiEdySb8Qfgz-7oQ" showStereotype="Label"/>
+                <element xmi:type="uml:ActivityFinalNode" href="platform:/resource/PI_PU/Use%20Case%20Model.emx#_9EtV8PsiEdySb8Qfgz-7oQ?Use%20Case%20Model/1.2.3%20Wyślij%20prośbę%20o%20utworzenie%20konta/Węzeł%20końcowy?"/>
+                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_9EtV8_siEdySb8Qfgz-7oQ" x="2510" y="41183"/>
+              </children>
+              <children xmi:id="_mODJIAPnEd2AA4PGNsuhQQ">
+                <children xmi:id="_mOM6IAPnEd2AA4PGNsuhQQ" type="ImageCompartment">
+                  <layoutConstraint xmi:type="notation:Size" xmi:id="_mOM6IQPnEd2AA4PGNsuhQQ" width="1320" height="1320"/>
+                </children>
+                <children xmi:id="_mOM6IgPnEd2AA4PGNsuhQQ" type="Stereotype"/>
+                <children xmi:id="_mOM6IwPnEd2AA4PGNsuhQQ" type="InPartitions"/>
+                <children xmi:id="_mOM6JAPnEd2AA4PGNsuhQQ" type="Name"/>
+                <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="_mODJIQPnEd2AA4PGNsuhQQ" showStereotype="Label"/>
+                <element xmi:type="uml:OpaqueAction" href="platform:/resource/PI_PU/Use%20Case%20Model.emx#_mNmdMAPnEd2AA4PGNsuhQQ?Use%20Case%20Model/1.2.3%20Wyślij%20prośbę%20o%20utworzenie%20konta/Kliknięcie%20przycisku%20%22Nowy%20użytkownik%22?"/>
+                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_mODJIgPnEd2AA4PGNsuhQQ" x="291" y="1241" width="4576" height="1585"/>
+              </children>
+              <children xmi:id="_H9h7gAPoEd2AA4PGNsuhQQ">
+                <children xmi:id="_H9h7gwPoEd2AA4PGNsuhQQ" type="ImageCompartment">
+                  <layoutConstraint xmi:type="notation:Size" xmi:id="_H9h7hAPoEd2AA4PGNsuhQQ" width="1320" height="1320"/>
+                </children>
+                <children xmi:id="_H9h7hQPoEd2AA4PGNsuhQQ" type="Stereotype"/>
+                <children xmi:id="_H9h7hgPoEd2AA4PGNsuhQQ" type="InPartitions"/>
+                <children xmi:id="_H9h7hwPoEd2AA4PGNsuhQQ" type="Name"/>
+                <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="_H9h7gQPoEd2AA4PGNsuhQQ" showStereotype="Label"/>
+                <element xmi:type="uml:OpaqueAction" href="platform:/resource/PI_PU/Use%20Case%20Model.emx#_H9YKgAPoEd2AA4PGNsuhQQ?Use%20Case%20Model/1.2.3%20Wyślij%20prośbę%20o%20utworzenie%20konta/Wpisanie%20nazwiska?"/>
+                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_H9h7ggPoEd2AA4PGNsuhQQ" x="291" y="4094" width="4762" height="1031"/>
+              </children>
+              <children xmi:id="_0PbjwAPoEd2AA4PGNsuhQQ">
+                <children xmi:id="_0PbjwwPoEd2AA4PGNsuhQQ" type="ImageCompartment">
+                  <layoutConstraint xmi:type="notation:Size" xmi:id="_0PbjxAPoEd2AA4PGNsuhQQ" width="1320" height="1320"/>
+                </children>
+                <children xmi:id="_0PbjxQPoEd2AA4PGNsuhQQ" type="Stereotype"/>
+                <children xmi:id="_0PbjxgPoEd2AA4PGNsuhQQ" type="InPartitions"/>
+                <children xmi:id="_0PbjxwPoEd2AA4PGNsuhQQ" type="Name"/>
+                <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="_0PbjwQPoEd2AA4PGNsuhQQ" showStereotype="Label"/>
+                <element xmi:type="uml:OpaqueAction" href="platform:/resource/PI_PU/Use%20Case%20Model.emx#_0PRywAPoEd2AA4PGNsuhQQ?Use%20Case%20Model/1.2.3%20Wyślij%20prośbę%20o%20utworzenie%20konta/Wpisanie%20imienia?"/>
+                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_0PbjwgPoEd2AA4PGNsuhQQ" x="1559" y="10117" width="3810" height="1031"/>
+              </children>
+              <children xmi:id="_5afZwAPwEd2AA4PGNsuhQQ">
+                <children xmi:id="_5afZwwPwEd2AA4PGNsuhQQ" type="ImageCompartment">
+                  <layoutConstraint xmi:type="notation:Size" xmi:id="_5afZxAPwEd2AA4PGNsuhQQ" width="1320" height="1320"/>
+                </children>
+                <children xmi:id="_5afZxQPwEd2AA4PGNsuhQQ" type="Stereotype"/>
+                <children xmi:id="_5afZxgPwEd2AA4PGNsuhQQ" type="InPartitions"/>
+                <children xmi:id="_5afZxwPwEd2AA4PGNsuhQQ" type="Name"/>
+                <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="_5afZwQPwEd2AA4PGNsuhQQ" showStereotype="Label"/>
+                <element xmi:type="uml:OpaqueAction" href="platform:/resource/PI_PU/Use%20Case%20Model.emx#_5aVowAPwEd2AA4PGNsuhQQ?Use%20Case%20Model/1.2.3%20Wyślij%20prośbę%20o%20utworzenie%20konta/Przejście%20do%20pola%20wyboru%20daty?"/>
+                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_5afZwgPwEd2AA4PGNsuhQQ" x="608" y="17091" width="4418" height="1561"/>
+              </children>
+              <children xmi:id="_-UwUUAPwEd2AA4PGNsuhQQ">
+                <children xmi:id="_-UwUUwPwEd2AA4PGNsuhQQ" type="ImageCompartment">
+                  <layoutConstraint xmi:type="notation:Size" xmi:id="_-UwUVAPwEd2AA4PGNsuhQQ" width="1320" height="1320"/>
+                </children>
+                <children xmi:id="_-UwUVQPwEd2AA4PGNsuhQQ" type="Stereotype"/>
+                <children xmi:id="_-UwUVgPwEd2AA4PGNsuhQQ" type="InPartitions"/>
+                <children xmi:id="_-UwUVwPwEd2AA4PGNsuhQQ" type="Name"/>
+                <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="_-UwUUQPwEd2AA4PGNsuhQQ" showStereotype="Label"/>
+                <element xmi:type="uml:OpaqueAction" href="platform:/resource/PI_PU/Use%20Case%20Model.emx#_-UmjUAPwEd2AA4PGNsuhQQ?Use%20Case%20Model/1.2.3%20Wyślij%20prośbę%20o%20utworzenie%20konta/Kliknięcie%20na%20polu%20kalendarza?"/>
+                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_-UwUUgPwEd2AA4PGNsuhQQ" x="1242" y="18993" width="3810" height="1587"/>
+              </children>
+              <children xmi:id="_PVIsIAPxEd2AA4PGNsuhQQ">
+                <children xmi:id="_PVIsIwPxEd2AA4PGNsuhQQ" type="ImageCompartment">
+                  <layoutConstraint xmi:type="notation:Size" xmi:id="_PVIsJAPxEd2AA4PGNsuhQQ" width="1320" height="1320"/>
+                </children>
+                <children xmi:id="_PVIsJQPxEd2AA4PGNsuhQQ" type="Stereotype"/>
+                <children xmi:id="_PVIsJgPxEd2AA4PGNsuhQQ" type="InPartitions"/>
+                <children xmi:id="_PVIsJwPxEd2AA4PGNsuhQQ" type="Name"/>
+                <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="_PVIsIQPxEd2AA4PGNsuhQQ" showStereotype="Label"/>
+                <element xmi:type="uml:OpaqueAction" href="platform:/resource/PI_PU/Use%20Case%20Model.emx#_PU-7IAPxEd2AA4PGNsuhQQ?Use%20Case%20Model/1.2.3%20Wyślij%20prośbę%20o%20utworzenie%20konta/Wpisanie%20numeru%20PESEL?"/>
+                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_PVIsIgPxEd2AA4PGNsuhQQ" x="903" y="21696" width="4127" height="1587"/>
+              </children>
+              <children xmi:id="_3MNu4APxEd2AA4PGNsuhQQ">
+                <children xmi:id="_3MNu4wPxEd2AA4PGNsuhQQ" type="ImageCompartment">
+                  <layoutConstraint xmi:type="notation:Size" xmi:id="_3MNu5APxEd2AA4PGNsuhQQ" width="1320" height="1320"/>
+                </children>
+                <children xmi:id="_3MNu5QPxEd2AA4PGNsuhQQ" type="Stereotype"/>
+                <children xmi:id="_3MNu5gPxEd2AA4PGNsuhQQ" type="InPartitions"/>
+                <children xmi:id="_3MNu5wPxEd2AA4PGNsuhQQ" type="Name"/>
+                <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="_3MNu4QPxEd2AA4PGNsuhQQ" showStereotype="Label"/>
+                <element xmi:type="uml:OpaqueAction" href="platform:/resource/PI_PU/Use%20Case%20Model.emx#_3MD94APxEd2AA4PGNsuhQQ?Use%20Case%20Model/1.2.3%20Wyślij%20prośbę%20o%20utworzenie%20konta/Wpisanie%20nazwiska%20panieńskiego%20matki?"/>
+                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_3MNu4gPxEd2AA4PGNsuhQQ" x="1242" y="27235" width="4127" height="1586"/>
+              </children>
+              <styles xmi:type="umlnotation:UMLShapeCompartmentStyle" xmi:id="_Fb9-1_sCEdycsIeIheJDLA"/>
+            </children>
+            <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="_Fb9-0fsCEdycsIeIheJDLA" showStereotype="Label"/>
+            <styles xmi:type="umlnotation:UMLFrameStyle" xmi:id="_Fb9-0vsCEdycsIeIheJDLA"/>
+            <element xmi:type="uml:ActivityPartition" href="platform:/resource/PI_PU/Use%20Case%20Model.emx#_FbrD4PsCEdycsIeIheJDLA?Use%20Case%20Model/1.2.3%20Wyślij%20prośbę%20o%20utworzenie%20konta/Manager?"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Fb9-0_sCEdycsIeIheJDLA" x="396" y="396" width="6263"/>
+          </children>
+          <children xmi:id="_8FkOQP5xEdy6V8d2FH3wgw">
+            <children xmi:id="_8FkORP5xEdy6V8d2FH3wgw" type="Stereotype"/>
+            <children xmi:id="_8FkORf5xEdy6V8d2FH3wgw" type="PartitionName"/>
+            <children xmi:id="_8FkORv5xEdy6V8d2FH3wgw" type="PartitionCompartment">
+              <children xmi:id="_gy6cwP5uEdy6V8d2FH3wgw">
+                <children xmi:id="_gy6cw_5uEdy6V8d2FH3wgw" type="ImageCompartment">
+                  <layoutConstraint xmi:type="notation:Size" xmi:id="_gy6cxP5uEdy6V8d2FH3wgw" width="1320" height="1320"/>
+                </children>
+                <children xmi:id="_gy6cxf5uEdy6V8d2FH3wgw" type="Stereotype"/>
+                <children xmi:id="_gy6cxv5uEdy6V8d2FH3wgw" type="InPartitions"/>
+                <children xmi:id="_gy6cx_5uEdy6V8d2FH3wgw" type="Name"/>
+                <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="_gy6cwf5uEdy6V8d2FH3wgw" showStereotype="Label"/>
+                <element xmi:type="uml:MergeNode" href="platform:/resource/PI_PU/Use%20Case%20Model.emx#_gywrwP5uEdy6V8d2FH3wgw?Use%20Case%20Model/1.2.3%20Wyślij%20prośbę%20o%20utworzenie%20konta/Wyświetlenie?"/>
+                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_gy6cwv5uEdy6V8d2FH3wgw" x="1529" y="40895" width="2513" height="978"/>
+              </children>
+              <children xmi:id="__KdaIfslEdySb8Qfgz-7oQ">
+                <children xmi:id="__KdaJPslEdySb8Qfgz-7oQ" type="ImageCompartment">
+                  <layoutConstraint xmi:type="notation:Size" xmi:id="__KdaJfslEdySb8Qfgz-7oQ" width="1320" height="1320"/>
+                </children>
+                <children xmi:id="__KdaJvslEdySb8Qfgz-7oQ" type="Stereotype"/>
+                <children xmi:id="__KdaJ_slEdySb8Qfgz-7oQ" type="InPartitions"/>
+                <children xmi:id="__KdaKPslEdySb8Qfgz-7oQ" type="Name"/>
+                <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="__KdaIvslEdySb8Qfgz-7oQ" showStereotype="Label"/>
+                <element xmi:type="uml:OpaqueAction" href="platform:/resource/PI_PU/Use%20Case%20Model.emx#__KdaIPslEdySb8Qfgz-7oQ?Use%20Case%20Model/1.2.3%20Wyślij%20prośbę%20o%20utworzenie%20konta/Informacja%20o%20błędzie?"/>
+                <layoutConstraint xmi:type="notation:Bounds" xmi:id="__KdaI_slEdySb8Qfgz-7oQ" x="4489" y="39281" width="3148" height="1585"/>
+              </children>
+              <children xmi:id="_CImmQfsmEdySb8Qfgz-7oQ">
+                <children xmi:id="_CIwXQPsmEdySb8Qfgz-7oQ" type="ImageCompartment">
+                  <layoutConstraint xmi:type="notation:Size" xmi:id="_CIwXQfsmEdySb8Qfgz-7oQ" width="1320" height="1320"/>
+                </children>
+                <children xmi:id="_CIwXQvsmEdySb8Qfgz-7oQ" type="Stereotype"/>
+                <children xmi:id="_CIwXQ_smEdySb8Qfgz-7oQ" type="InPartitions"/>
+                <children xmi:id="_CIwXRPsmEdySb8Qfgz-7oQ" type="Name"/>
+                <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="_CImmQvsmEdySb8Qfgz-7oQ" showStereotype="Label"/>
+                <element xmi:type="uml:OpaqueAction" href="platform:/resource/PI_PU/Use%20Case%20Model.emx#_CImmQPsmEdySb8Qfgz-7oQ?Use%20Case%20Model/1.2.3%20Wyślij%20prośbę%20o%20utworzenie%20konta/Informacja%20o%20poprawnym%20założeniu%20konta?"/>
+                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_CImmQ_smEdySb8Qfgz-7oQ" x="4531" y="41226" width="4127" height="1877"/>
+              </children>
+              <children xmi:id="_Ev460QPoEd2AA4PGNsuhQQ">
+                <children xmi:id="_Ev461APoEd2AA4PGNsuhQQ" type="ImageCompartment">
+                  <layoutConstraint xmi:type="notation:Size" xmi:id="_Ev461QPoEd2AA4PGNsuhQQ" width="1320" height="1320"/>
+                </children>
+                <children xmi:id="_Ev461gPoEd2AA4PGNsuhQQ" type="Stereotype"/>
+                <children xmi:id="_Ev461wPoEd2AA4PGNsuhQQ" type="InPartitions"/>
+                <children xmi:id="_Ev462APoEd2AA4PGNsuhQQ" type="Name"/>
+                <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="_Ev460gPoEd2AA4PGNsuhQQ" showStereotype="Label"/>
+                <element xmi:type="uml:OpaqueAction" href="platform:/resource/PI_PU/Use%20Case%20Model.emx#_Ev460APoEd2AA4PGNsuhQQ?Use%20Case%20Model/1.2.3%20Wyślij%20prośbę%20o%20utworzenie%20konta/Wyświetlenie%20formularza?"/>
+                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Ev460wPoEd2AA4PGNsuhQQ" x="132" y="1875" width="3174" height="1587"/>
+              </children>
+              <children xmi:id="_KGw44APoEd2AA4PGNsuhQQ">
+                <children xmi:id="_KGw44wPoEd2AA4PGNsuhQQ" type="ImageCompartment">
+                  <layoutConstraint xmi:type="notation:Size" xmi:id="_KGw45APoEd2AA4PGNsuhQQ" width="1320" height="1320"/>
+                </children>
+                <children xmi:id="_KGw45QPoEd2AA4PGNsuhQQ" type="Stereotype"/>
+                <children xmi:id="_KGw45gPoEd2AA4PGNsuhQQ" type="InPartitions"/>
+                <children xmi:id="_KGw45wPoEd2AA4PGNsuhQQ" type="Name"/>
+                <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="_KGw44QPoEd2AA4PGNsuhQQ" showStereotype="Label"/>
+                <element xmi:type="uml:OpaqueAction" href="platform:/resource/PI_PU/Use%20Case%20Model.emx#_KGnu8APoEd2AA4PGNsuhQQ?Use%20Case%20Model/1.2.3%20Wyślij%20prośbę%20o%20utworzenie%20konta/Walidacja?"/>
+                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_KGw44gPoEd2AA4PGNsuhQQ" x="798" y="4094" width="2857" height="1031"/>
+              </children>
+              <children xmi:id="_ZLBiQQPoEd2AA4PGNsuhQQ">
+                <children xmi:id="_ZLBiRAPoEd2AA4PGNsuhQQ" type="ImageCompartment">
+                  <layoutConstraint xmi:type="notation:Size" xmi:id="_ZLBiRQPoEd2AA4PGNsuhQQ" width="1320" height="1320"/>
+                </children>
+                <children xmi:id="_ZLBiRgPoEd2AA4PGNsuhQQ" type="Stereotype"/>
+                <children xmi:id="_ZLBiRwPoEd2AA4PGNsuhQQ" type="InPartitions"/>
+                <children xmi:id="_ZLBiSAPoEd2AA4PGNsuhQQ" type="Name"/>
+                <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="_ZLBiQgPoEd2AA4PGNsuhQQ" showStereotype="Label"/>
+                <element xmi:type="uml:DecisionNode" href="platform:/resource/PI_PU/Use%20Case%20Model.emx#_ZLBiQAPoEd2AA4PGNsuhQQ?Use%20Case%20Model/1.2.3%20Wyślij%20prośbę%20o%20utworzenie%20konta/Poprawna?"/>
+                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ZLBiQwPoEd2AA4PGNsuhQQ" x="5117" y="4393" width="2222" height="1587"/>
+              </children>
+              <children xmi:id="_akR0MAPoEd2AA4PGNsuhQQ">
+                <children xmi:id="_akR0MwPoEd2AA4PGNsuhQQ" type="ImageCompartment">
+                  <layoutConstraint xmi:type="notation:Size" xmi:id="_akR0NAPoEd2AA4PGNsuhQQ" width="1320" height="1320"/>
+                </children>
+                <children xmi:id="_akR0NQPoEd2AA4PGNsuhQQ" type="Stereotype"/>
+                <children xmi:id="_akR0NgPoEd2AA4PGNsuhQQ" type="InPartitions"/>
+                <children xmi:id="_akR0NwPoEd2AA4PGNsuhQQ" type="Name"/>
+                <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="_akR0MQPoEd2AA4PGNsuhQQ" showStereotype="Label"/>
+                <element xmi:type="uml:OpaqueAction" href="platform:/resource/PI_PU/Use%20Case%20Model.emx#_akIqQAPoEd2AA4PGNsuhQQ?Use%20Case%20Model/1.2.3%20Wyślij%20prośbę%20o%20utworzenie%20konta/Wyświetlenie%20informacji%20o%20niepoprawnych%20danych?"/>
+                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_akR0MgPoEd2AA4PGNsuhQQ" x="7975" y="3441" width="3783" height="2221"/>
+              </children>
+              <children xmi:id="_gRDw0QPoEd2AA4PGNsuhQQ">
+                <children xmi:id="_gRDw1APoEd2AA4PGNsuhQQ" type="ImageCompartment">
+                  <layoutConstraint xmi:type="notation:Size" xmi:id="_gRDw1QPoEd2AA4PGNsuhQQ" width="1320" height="1320"/>
+                </children>
+                <children xmi:id="_gRDw1gPoEd2AA4PGNsuhQQ" type="Stereotype"/>
+                <children xmi:id="_gRDw1wPoEd2AA4PGNsuhQQ" type="InPartitions"/>
+                <children xmi:id="_gRNh0APoEd2AA4PGNsuhQQ" type="Name"/>
+                <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="_gRDw0gPoEd2AA4PGNsuhQQ" showStereotype="Label"/>
+                <element xmi:type="uml:OpaqueAction" href="platform:/resource/PI_PU/Use%20Case%20Model.emx#_gRDw0APoEd2AA4PGNsuhQQ?Use%20Case%20Model/1.2.3%20Wyślij%20prośbę%20o%20utworzenie%20konta/Oznaczenie%20pola%20%22nazwisko%22%20jako%20niepoprawne?"/>
+                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_gRDw0wPoEd2AA4PGNsuhQQ" x="8406" y="6630" width="4418" height="1903"/>
+              </children>
+              <children xmi:id="_l2GGsAPoEd2AA4PGNsuhQQ">
+                <children xmi:id="_l2GGswPoEd2AA4PGNsuhQQ" type="ImageCompartment">
+                  <layoutConstraint xmi:type="notation:Size" xmi:id="_l2GGtAPoEd2AA4PGNsuhQQ" width="1320" height="1320"/>
+                </children>
+                <children xmi:id="_l2GGtQPoEd2AA4PGNsuhQQ" type="Stereotype"/>
+                <children xmi:id="_l2GGtgPoEd2AA4PGNsuhQQ" type="InPartitions"/>
+                <children xmi:id="_l2GGtwPoEd2AA4PGNsuhQQ" type="Name"/>
+                <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="_l2GGsQPoEd2AA4PGNsuhQQ" showStereotype="Label"/>
+                <element xmi:type="uml:OpaqueAction" href="platform:/resource/PI_PU/Use%20Case%20Model.emx#_l18VsAPoEd2AA4PGNsuhQQ?Use%20Case%20Model/1.2.3%20Wyślij%20prośbę%20o%20utworzenie%20konta/Oznaczenie%20pola%20%22nazwisko%22%20jako%20poprawne?"/>
+                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_l2GGsgPoEd2AA4PGNsuhQQ" x="685" y="5996" width="3810" height="1905"/>
+              </children>
+              <children xmi:id="_7U38cAPoEd2AA4PGNsuhQQ">
+                <children xmi:id="_7U38cwPoEd2AA4PGNsuhQQ" type="ImageCompartment">
+                  <layoutConstraint xmi:type="notation:Size" xmi:id="_7U38dAPoEd2AA4PGNsuhQQ" width="1320" height="1320"/>
+                </children>
+                <children xmi:id="_7U38dQPoEd2AA4PGNsuhQQ" type="Stereotype"/>
+                <children xmi:id="_7U38dgPoEd2AA4PGNsuhQQ" type="InPartitions"/>
+                <children xmi:id="_7U38dwPoEd2AA4PGNsuhQQ" type="Name"/>
+                <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="_7U38cQPoEd2AA4PGNsuhQQ" showStereotype="Label"/>
+                <element xmi:type="uml:OpaqueAction" href="platform:/resource/PI_PU/Use%20Case%20Model.emx#_7UuLcAPoEd2AA4PGNsuhQQ?Use%20Case%20Model/1.2.3%20Wyślij%20prośbę%20o%20utworzenie%20konta/Walidacja?"/>
+                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_7U38cgPoEd2AA4PGNsuhQQ" x="685" y="10814" width="3175" height="1031"/>
+              </children>
+              <children xmi:id="_-oBvQAPoEd2AA4PGNsuhQQ">
+                <children xmi:id="_-oBvQwPoEd2AA4PGNsuhQQ" type="ImageCompartment">
+                  <layoutConstraint xmi:type="notation:Size" xmi:id="_-oBvRAPoEd2AA4PGNsuhQQ" width="1320" height="1320"/>
+                </children>
+                <children xmi:id="_-oBvRQPoEd2AA4PGNsuhQQ" type="Stereotype"/>
+                <children xmi:id="_-oBvRgPoEd2AA4PGNsuhQQ" type="InPartitions"/>
+                <children xmi:id="_-oBvRwPoEd2AA4PGNsuhQQ" type="Name"/>
+                <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="_-oBvQQPoEd2AA4PGNsuhQQ" showStereotype="Label"/>
+                <element xmi:type="uml:DecisionNode" href="platform:/resource/PI_PU/Use%20Case%20Model.emx#_-n3-QAPoEd2AA4PGNsuhQQ?Use%20Case%20Model/1.2.3%20Wyślij%20prośbę%20o%20utworzenie%20konta/Poprawna?"/>
+                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_-oBvQgPoEd2AA4PGNsuhQQ" x="4806" y="12399" width="2540" height="1270"/>
+              </children>
+              <children xmi:id="_AXL_wQPpEd2AA4PGNsuhQQ">
+                <children xmi:id="_AXL_wgPpEd2AA4PGNsuhQQ" type="ImageCompartment">
+                  <layoutConstraint xmi:type="notation:Size" xmi:id="_AXL_wwPpEd2AA4PGNsuhQQ" width="1296" height="1296"/>
+                </children>
+                <children xmi:id="_AXL_xAPpEd2AA4PGNsuhQQ" type="Stereotype"/>
+                <children xmi:id="_AXL_xQPpEd2AA4PGNsuhQQ" type="InPartitions"/>
+                <children xmi:id="_AXL_xgPpEd2AA4PGNsuhQQ" type="Name"/>
+                <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="_AXL_xwPpEd2AA4PGNsuhQQ" showStereotype="Label"/>
+                <element xmi:type="uml:OpaqueAction" href="platform:/resource/PI_PU/Use%20Case%20Model.emx#_AXL_yQPpEd2AA4PGNsuhQQ?Use%20Case%20Model/1.2.3%20Wyślij%20prośbę%20o%20utworzenie%20konta/Wyświetlenie%20informacji%20o%20niepoprawnych%20danych?"/>
+                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_AXL_yAPpEd2AA4PGNsuhQQ" x="8583" y="9711" width="3757" height="2196"/>
+              </children>
+              <children xmi:id="_D8EbwQPpEd2AA4PGNsuhQQ">
+                <children xmi:id="_D8EbwgPpEd2AA4PGNsuhQQ" type="ImageCompartment">
+                  <layoutConstraint xmi:type="notation:Size" xmi:id="_D8EbwwPpEd2AA4PGNsuhQQ" width="1296" height="1296"/>
+                </children>
+                <children xmi:id="_D8EbxAPpEd2AA4PGNsuhQQ" type="Stereotype"/>
+                <children xmi:id="_D8EbxQPpEd2AA4PGNsuhQQ" type="InPartitions"/>
+                <children xmi:id="_D8EbxgPpEd2AA4PGNsuhQQ" type="Name"/>
+                <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="_D8EbxwPpEd2AA4PGNsuhQQ" showStereotype="Label"/>
+                <element xmi:type="uml:OpaqueAction" href="platform:/resource/PI_PU/Use%20Case%20Model.emx#_D8EbyQPpEd2AA4PGNsuhQQ?Use%20Case%20Model/1.2.3%20Wyślij%20prośbę%20o%20utworzenie%20konta/Oznaczenie%20pola%20%22imie%22%20jako%20niepoprawne?"/>
+                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_D8EbyAPpEd2AA4PGNsuhQQ" x="10195" y="12019" width="3836" height="1878"/>
+              </children>
+              <children xmi:id="_F7sF8QPwEd2AA4PGNsuhQQ">
+                <children xmi:id="_F7sF8gPwEd2AA4PGNsuhQQ" type="ImageCompartment">
+                  <layoutConstraint xmi:type="notation:Size" xmi:id="_F7sF8wPwEd2AA4PGNsuhQQ" width="1270" height="1270"/>
+                </children>
+                <children xmi:id="_F7sF9APwEd2AA4PGNsuhQQ" type="Stereotype"/>
+                <children xmi:id="_F7sF9QPwEd2AA4PGNsuhQQ" type="InPartitions"/>
+                <children xmi:id="_F7sF9gPwEd2AA4PGNsuhQQ" type="Name"/>
+                <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="_F7sF9wPwEd2AA4PGNsuhQQ" showStereotype="Label"/>
+                <element xmi:type="uml:OpaqueAction" href="platform:/resource/PI_PU/Use%20Case%20Model.emx#_F7128APwEd2AA4PGNsuhQQ?Use%20Case%20Model/1.2.3%20Wyślij%20prośbę%20o%20utworzenie%20konta/Wyświetlenie%20informacji%20o%20niepoprawnych%20danych?"/>
+                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_F7sF-APwEd2AA4PGNsuhQQ" x="9357" y="14238" width="3730" height="2169"/>
+              </children>
+              <children xmi:id="_N2eyQQPwEd2AA4PGNsuhQQ">
+                <children xmi:id="_N2eyQgPwEd2AA4PGNsuhQQ" type="ImageCompartment">
+                  <layoutConstraint xmi:type="notation:Size" xmi:id="_N2eyQwPwEd2AA4PGNsuhQQ" width="1296" height="1296"/>
+                </children>
+                <children xmi:id="_N2eyRAPwEd2AA4PGNsuhQQ" type="Stereotype"/>
+                <children xmi:id="_N2eyRQPwEd2AA4PGNsuhQQ" type="InPartitions"/>
+                <children xmi:id="_N2eyRgPwEd2AA4PGNsuhQQ" type="Name"/>
+                <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="_N2eyRwPwEd2AA4PGNsuhQQ" showStereotype="Label"/>
+                <element xmi:type="uml:OpaqueAction" href="platform:/resource/PI_PU/Use%20Case%20Model.emx#_N2eySQPwEd2AA4PGNsuhQQ?Use%20Case%20Model/1.2.3%20Wyślij%20prośbę%20o%20utworzenie%20konta/Oznaczenie%20pola%20%22imie%22%20jako%20poprawne?"/>
+                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_N2eySAPwEd2AA4PGNsuhQQ" x="481" y="12970" width="3810" height="1905"/>
+              </children>
+              <children xmi:id="_8qWoAAPwEd2AA4PGNsuhQQ">
+                <children xmi:id="_8qWoAwPwEd2AA4PGNsuhQQ" type="ImageCompartment">
+                  <layoutConstraint xmi:type="notation:Size" xmi:id="_8qWoBAPwEd2AA4PGNsuhQQ" width="1320" height="1320"/>
+                </children>
+                <children xmi:id="_8qWoBQPwEd2AA4PGNsuhQQ" type="Stereotype"/>
+                <children xmi:id="_8qWoBgPwEd2AA4PGNsuhQQ" type="InPartitions"/>
+                <children xmi:id="_8qWoBwPwEd2AA4PGNsuhQQ" type="Name"/>
+                <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="_8qWoAQPwEd2AA4PGNsuhQQ" showStereotype="Label"/>
+                <element xmi:type="uml:OpaqueAction" href="platform:/resource/PI_PU/Use%20Case%20Model.emx#_8qNeEAPwEd2AA4PGNsuhQQ?Use%20Case%20Model/1.2.3%20Wyślij%20prośbę%20o%20utworzenie%20konta/Wyświetlenie%20kalendarza?"/>
+                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_8qWoAgPwEd2AA4PGNsuhQQ" x="3017" y="17408" width="3810" height="1587"/>
+              </children>
+              <children xmi:id="_BftNYAPxEd2AA4PGNsuhQQ">
+                <children xmi:id="_Bf2-YAPxEd2AA4PGNsuhQQ" type="ImageCompartment">
+                  <layoutConstraint xmi:type="notation:Size" xmi:id="_Bf2-YQPxEd2AA4PGNsuhQQ" width="1320" height="1320"/>
+                </children>
+                <children xmi:id="_Bf2-YgPxEd2AA4PGNsuhQQ" type="Stereotype"/>
+                <children xmi:id="_Bf2-YwPxEd2AA4PGNsuhQQ" type="InPartitions"/>
+                <children xmi:id="_Bf2-ZAPxEd2AA4PGNsuhQQ" type="Name"/>
+                <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="_BftNYQPxEd2AA4PGNsuhQQ" showStereotype="Label"/>
+                <element xmi:type="uml:OpaqueAction" href="platform:/resource/PI_PU/Use%20Case%20Model.emx#_BfjcYAPxEd2AA4PGNsuhQQ?Use%20Case%20Model/1.2.3%20Wyślij%20prośbę%20o%20utworzenie%20konta/Ustawienie%20pola%20%22data%22?"/>
+                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_BftNYgPxEd2AA4PGNsuhQQ" x="3334" y="19310" width="3810" height="1587"/>
+              </children>
+              <children xmi:id="_U08jwQPxEd2AA4PGNsuhQQ">
+                <children xmi:id="_U08jwgPxEd2AA4PGNsuhQQ" type="ImageCompartment">
+                  <layoutConstraint xmi:type="notation:Size" xmi:id="_U08jwwPxEd2AA4PGNsuhQQ" width="1296" height="1296"/>
+                </children>
+                <children xmi:id="_U08jxAPxEd2AA4PGNsuhQQ" type="Stereotype"/>
+                <children xmi:id="_U08jxQPxEd2AA4PGNsuhQQ" type="InPartitions"/>
+                <children xmi:id="_U08jxgPxEd2AA4PGNsuhQQ" type="Name"/>
+                <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="_U08jxwPxEd2AA4PGNsuhQQ" showStereotype="Label"/>
+                <element xmi:type="uml:OpaqueAction" href="platform:/resource/PI_PU/Use%20Case%20Model.emx#_U08j6QPxEd2AA4PGNsuhQQ?Use%20Case%20Model/1.2.3%20Wyślij%20prośbę%20o%20utworzenie%20konta/Walidacja?"/>
+                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_U08jyAPxEd2AA4PGNsuhQQ" x="798" y="22163" width="3175" height="1031"/>
+              </children>
+              <children xmi:id="_U08jyQPxEd2AA4PGNsuhQQ">
+                <children xmi:id="_U08jygPxEd2AA4PGNsuhQQ" type="ImageCompartment">
+                  <layoutConstraint xmi:type="notation:Size" xmi:id="_U08jywPxEd2AA4PGNsuhQQ" width="1296" height="1296"/>
+                </children>
+                <children xmi:id="_U08jzAPxEd2AA4PGNsuhQQ" type="Stereotype"/>
+                <children xmi:id="_U08jzQPxEd2AA4PGNsuhQQ" type="InPartitions"/>
+                <children xmi:id="_U08jzgPxEd2AA4PGNsuhQQ" type="Name"/>
+                <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="_U08jzwPxEd2AA4PGNsuhQQ" showStereotype="Label"/>
+                <element xmi:type="uml:DecisionNode" href="platform:/resource/PI_PU/Use%20Case%20Model.emx#_U08j6gPxEd2AA4PGNsuhQQ?Use%20Case%20Model/1.2.3%20Wyślij%20prośbę%20o%20utworzenie%20konta/Poprawna?"/>
+                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_U08j0APxEd2AA4PGNsuhQQ" x="5129" y="22165" width="2540" height="1270"/>
+              </children>
+              <children xmi:id="_U08j0QPxEd2AA4PGNsuhQQ">
+                <children xmi:id="_U08j0gPxEd2AA4PGNsuhQQ" type="ImageCompartment">
+                  <layoutConstraint xmi:type="notation:Size" xmi:id="_U08j0wPxEd2AA4PGNsuhQQ" width="1270" height="1270"/>
+                </children>
+                <children xmi:id="_U08j1APxEd2AA4PGNsuhQQ" type="Stereotype"/>
+                <children xmi:id="_U08j1QPxEd2AA4PGNsuhQQ" type="InPartitions"/>
+                <children xmi:id="_U08j1gPxEd2AA4PGNsuhQQ" type="Name"/>
+                <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="_U08j1wPxEd2AA4PGNsuhQQ" showStereotype="Label"/>
+                <element xmi:type="uml:OpaqueAction" href="platform:/resource/PI_PU/Use%20Case%20Model.emx#_U08j6wPxEd2AA4PGNsuhQQ?Use%20Case%20Model/1.2.3%20Wyślij%20prośbę%20o%20utworzenie%20konta/Oznaczenie%20pola%20%22pesel%22%20jako%20niepoprawne?"/>
+                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_U08j2APxEd2AA4PGNsuhQQ" x="9040" y="21529" width="3810" height="1852"/>
+              </children>
+              <children xmi:id="_U08j2QPxEd2AA4PGNsuhQQ">
+                <children xmi:id="_U08j2gPxEd2AA4PGNsuhQQ" type="ImageCompartment">
+                  <layoutConstraint xmi:type="notation:Size" xmi:id="_U08j2wPxEd2AA4PGNsuhQQ" width="1270" height="1270"/>
+                </children>
+                <children xmi:id="_U08j3APxEd2AA4PGNsuhQQ" type="Stereotype"/>
+                <children xmi:id="_U08j3QPxEd2AA4PGNsuhQQ" type="InPartitions"/>
+                <children xmi:id="_U08j3gPxEd2AA4PGNsuhQQ" type="Name"/>
+                <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="_U08j3wPxEd2AA4PGNsuhQQ" showStereotype="Label"/>
+                <element xmi:type="uml:OpaqueAction" href="platform:/resource/PI_PU/Use%20Case%20Model.emx#_U08j7APxEd2AA4PGNsuhQQ?Use%20Case%20Model/1.2.3%20Wyślij%20prośbę%20o%20utworzenie%20konta/Wyświetlenie%20informacji%20o%20niepoprawnych%20danych?"/>
+                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_U08j4APxEd2AA4PGNsuhQQ" x="9040" y="24065" width="3704" height="2143"/>
+              </children>
+              <children xmi:id="_U08j4QPxEd2AA4PGNsuhQQ">
+                <children xmi:id="_U08j4gPxEd2AA4PGNsuhQQ" type="ImageCompartment">
+                  <layoutConstraint xmi:type="notation:Size" xmi:id="_U08j4wPxEd2AA4PGNsuhQQ" width="1270" height="1270"/>
+                </children>
+                <children xmi:id="_U08j5APxEd2AA4PGNsuhQQ" type="Stereotype"/>
+                <children xmi:id="_U08j5QPxEd2AA4PGNsuhQQ" type="InPartitions"/>
+                <children xmi:id="_U08j5gPxEd2AA4PGNsuhQQ" type="Name"/>
+                <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="_U08j5wPxEd2AA4PGNsuhQQ" showStereotype="Label"/>
+                <element xmi:type="uml:OpaqueAction" href="platform:/resource/PI_PU/Use%20Case%20Model.emx#_U1GUwAPxEd2AA4PGNsuhQQ?Use%20Case%20Model/1.2.3%20Wyślij%20prośbę%20o%20utworzenie%20konta/Oznaczenie%20pola%20%22pesel%22%20jako%20poprawne?"/>
+                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_U08j6APxEd2AA4PGNsuhQQ" x="1002" y="23753" width="3810" height="1905"/>
+              </children>
+              <children xmi:id="_fN_bMQPxEd2AA4PGNsuhQQ">
+                <children xmi:id="_fN_bMgPxEd2AA4PGNsuhQQ" type="ImageCompartment">
+                  <layoutConstraint xmi:type="notation:Size" xmi:id="_fN_bMwPxEd2AA4PGNsuhQQ" width="1296" height="1296"/>
+                </children>
+                <children xmi:id="_fN_bNAPxEd2AA4PGNsuhQQ" type="Stereotype"/>
+                <children xmi:id="_fN_bNQPxEd2AA4PGNsuhQQ" type="InPartitions"/>
+                <children xmi:id="_fN_bNgPxEd2AA4PGNsuhQQ" type="Name"/>
+                <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="_fN_bNwPxEd2AA4PGNsuhQQ" showStereotype="Label"/>
+                <element xmi:type="uml:OpaqueAction" href="platform:/resource/PI_PU/Use%20Case%20Model.emx#_fN_bWQPxEd2AA4PGNsuhQQ?Use%20Case%20Model/1.2.3%20Wyślij%20prośbę%20o%20utworzenie%20konta/Walidacja?"/>
+                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_fN_bOAPxEd2AA4PGNsuhQQ" x="798" y="28820" width="3175" height="1031"/>
+              </children>
+              <children xmi:id="_fN_bOQPxEd2AA4PGNsuhQQ">
+                <children xmi:id="_fN_bOgPxEd2AA4PGNsuhQQ" type="ImageCompartment">
+                  <layoutConstraint xmi:type="notation:Size" xmi:id="_fN_bOwPxEd2AA4PGNsuhQQ" width="1296" height="1296"/>
+                </children>
+                <children xmi:id="_fN_bPAPxEd2AA4PGNsuhQQ" type="Stereotype"/>
+                <children xmi:id="_fN_bPQPxEd2AA4PGNsuhQQ" type="InPartitions"/>
+                <children xmi:id="_fN_bPgPxEd2AA4PGNsuhQQ" type="Name"/>
+                <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="_fN_bPwPxEd2AA4PGNsuhQQ" showStereotype="Label"/>
+                <element xmi:type="uml:DecisionNode" href="platform:/resource/PI_PU/Use%20Case%20Model.emx#_fOIlIAPxEd2AA4PGNsuhQQ?Use%20Case%20Model/1.2.3%20Wyślij%20prośbę%20o%20utworzenie%20konta/Poprawna?"/>
+                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_fN_bQAPxEd2AA4PGNsuhQQ" x="4919" y="29771" width="2540" height="1270"/>
+              </children>
+              <children xmi:id="_fN_bQQPxEd2AA4PGNsuhQQ">
+                <children xmi:id="_fN_bQgPxEd2AA4PGNsuhQQ" type="ImageCompartment">
+                  <layoutConstraint xmi:type="notation:Size" xmi:id="_fN_bQwPxEd2AA4PGNsuhQQ" width="1270" height="1270"/>
+                </children>
+                <children xmi:id="_fN_bRAPxEd2AA4PGNsuhQQ" type="Stereotype"/>
+                <children xmi:id="_fN_bRQPxEd2AA4PGNsuhQQ" type="InPartitions"/>
+                <children xmi:id="_fN_bRgPxEd2AA4PGNsuhQQ" type="Name"/>
+                <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="_fN_bRwPxEd2AA4PGNsuhQQ" showStereotype="Label"/>
+                <element xmi:type="uml:OpaqueAction" href="platform:/resource/PI_PU/Use%20Case%20Model.emx#_fOIlIQPxEd2AA4PGNsuhQQ?Use%20Case%20Model/1.2.3%20Wyślij%20prośbę%20o%20utworzenie%20konta/Oznaczenie%20pola%20%22nazwiskoPanienskieMatki%22%20jako%20niepoprawne?"/>
+                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_fN_bSAPxEd2AA4PGNsuhQQ" x="8723" y="29454" width="4524" height="1852"/>
+              </children>
+              <children xmi:id="_fN_bSQPxEd2AA4PGNsuhQQ">
+                <children xmi:id="_fN_bSgPxEd2AA4PGNsuhQQ" type="ImageCompartment">
+                  <layoutConstraint xmi:type="notation:Size" xmi:id="_fN_bSwPxEd2AA4PGNsuhQQ" width="1270" height="1270"/>
+                </children>
+                <children xmi:id="_fN_bTAPxEd2AA4PGNsuhQQ" type="Stereotype"/>
+                <children xmi:id="_fN_bTQPxEd2AA4PGNsuhQQ" type="InPartitions"/>
+                <children xmi:id="_fN_bTgPxEd2AA4PGNsuhQQ" type="Name"/>
+                <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="_fN_bTwPxEd2AA4PGNsuhQQ" showStereotype="Label"/>
+                <element xmi:type="uml:OpaqueAction" href="platform:/resource/PI_PU/Use%20Case%20Model.emx#_fOIlIgPxEd2AA4PGNsuhQQ?Use%20Case%20Model/1.2.3%20Wyślij%20prośbę%20o%20utworzenie%20konta/Copy_1_Wyświetlenie%20informacji%20o%20niepoprawnych%20danych?"/>
+                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_fN_bUAPxEd2AA4PGNsuhQQ" x="9674" y="31990" width="3704" height="2143"/>
+              </children>
+              <children xmi:id="_fN_bUQPxEd2AA4PGNsuhQQ">
+                <children xmi:id="_fN_bUgPxEd2AA4PGNsuhQQ" type="ImageCompartment">
+                  <layoutConstraint xmi:type="notation:Size" xmi:id="_fN_bUwPxEd2AA4PGNsuhQQ" width="1270" height="1270"/>
+                </children>
+                <children xmi:id="_fN_bVAPxEd2AA4PGNsuhQQ" type="Stereotype"/>
+                <children xmi:id="_fN_bVQPxEd2AA4PGNsuhQQ" type="InPartitions"/>
+                <children xmi:id="_fN_bVgPxEd2AA4PGNsuhQQ" type="Name"/>
+                <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="_fN_bVwPxEd2AA4PGNsuhQQ" showStereotype="Label"/>
+                <element xmi:type="uml:OpaqueAction" href="platform:/resource/PI_PU/Use%20Case%20Model.emx#_fOIlIwPxEd2AA4PGNsuhQQ?Use%20Case%20Model/1.2.3%20Wyślij%20prośbę%20o%20utworzenie%20konta/Oznaczenie%20pola%20%22nazwiskoPanienskieMatki%22%20jako%20poprawne?"/>
+                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_fN_bWAPxEd2AA4PGNsuhQQ" x="798" y="31039" width="4418" height="1878"/>
+              </children>
+              <children xmi:id="_Xc62IQPyEd2AA4PGNsuhQQ">
+                <children xmi:id="_Xc62JAPyEd2AA4PGNsuhQQ" type="ImageCompartment">
+                  <layoutConstraint xmi:type="notation:Size" xmi:id="_Xc62JQPyEd2AA4PGNsuhQQ" width="1320" height="1320"/>
+                </children>
+                <children xmi:id="_XdEAEAPyEd2AA4PGNsuhQQ" type="Stereotype"/>
+                <children xmi:id="_XdEAEQPyEd2AA4PGNsuhQQ" type="InPartitions"/>
+                <children xmi:id="_XdEAEgPyEd2AA4PGNsuhQQ" type="Name"/>
+                <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="_Xc62IgPyEd2AA4PGNsuhQQ" showStereotype="Label"/>
+                <element xmi:type="uml:MergeNode" href="platform:/resource/PI_PU/Use%20Case%20Model.emx#_Xc62IAPyEd2AA4PGNsuhQQ?Use%20Case%20Model/1.2.3%20Wyślij%20prośbę%20o%20utworzenie%20konta/%3CMergeNode%3E?"/>
+                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Xc62IwPyEd2AA4PGNsuhQQ" x="5355" y="8230"/>
+              </children>
+              <children xmi:id="_pjVB4APyEd2AA4PGNsuhQQ">
+                <children xmi:id="_pjVB4wPyEd2AA4PGNsuhQQ" type="ImageCompartment">
+                  <layoutConstraint xmi:type="notation:Size" xmi:id="_pjVB5APyEd2AA4PGNsuhQQ" width="1320" height="1320"/>
+                </children>
+                <children xmi:id="_pjVB5QPyEd2AA4PGNsuhQQ" type="Stereotype"/>
+                <children xmi:id="_pjVB5gPyEd2AA4PGNsuhQQ" type="InPartitions"/>
+                <children xmi:id="_pjVB5wPyEd2AA4PGNsuhQQ" type="Name"/>
+                <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="_pjVB4QPyEd2AA4PGNsuhQQ" showStereotype="Label"/>
+                <element xmi:type="uml:DecisionNode" href="platform:/resource/PI_PU/Use%20Case%20Model.emx#_pjL38APyEd2AA4PGNsuhQQ?Use%20Case%20Model/1.2.3%20Wyślij%20prośbę%20o%20utworzenie%20konta/Sprawdzenie,%20czy%20wszystkie%20pola%20są%20poprawne?"/>
+                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_pjVB4gPyEd2AA4PGNsuhQQ" x="1953" y="36428" width="3175" height="1905"/>
+              </children>
+              <children xmi:id="_9FFxUQPyEd2AA4PGNsuhQQ">
+                <children xmi:id="_9FFxVAPyEd2AA4PGNsuhQQ" type="ImageCompartment">
+                  <layoutConstraint xmi:type="notation:Size" xmi:id="_9FFxVQPyEd2AA4PGNsuhQQ" width="1320" height="1320"/>
+                </children>
+                <children xmi:id="_9FFxVgPyEd2AA4PGNsuhQQ" type="Stereotype"/>
+                <children xmi:id="_9FFxVwPyEd2AA4PGNsuhQQ" type="InPartitions"/>
+                <children xmi:id="_9FFxWAPyEd2AA4PGNsuhQQ" type="Name"/>
+                <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="_9FFxUgPyEd2AA4PGNsuhQQ" showStereotype="Label"/>
+                <element xmi:type="uml:MergeNode" href="platform:/resource/PI_PU/Use%20Case%20Model.emx#_9FFxUAPyEd2AA4PGNsuhQQ?Use%20Case%20Model/1.2.3%20Wyślij%20prośbę%20o%20utworzenie%20konta/%3CMergeNode%3E?"/>
+                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_9FFxUwPyEd2AA4PGNsuhQQ" x="5870" y="15506" width="1587" height="1269"/>
+              </children>
+              <children xmi:id="_nV8u4QPzEd2AA4PGNsuhQQ">
+                <children xmi:id="_nV8u5APzEd2AA4PGNsuhQQ" type="ImageCompartment">
+                  <layoutConstraint xmi:type="notation:Size" xmi:id="_nV8u5QPzEd2AA4PGNsuhQQ" width="1320" height="1320"/>
+                </children>
+                <children xmi:id="_nWGf4APzEd2AA4PGNsuhQQ" type="Stereotype"/>
+                <children xmi:id="_nWGf4QPzEd2AA4PGNsuhQQ" type="InPartitions"/>
+                <children xmi:id="_nWGf4gPzEd2AA4PGNsuhQQ" type="Name"/>
+                <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="_nV8u4gPzEd2AA4PGNsuhQQ" showStereotype="Label"/>
+                <element xmi:type="uml:MergeNode" href="platform:/resource/PI_PU/Use%20Case%20Model.emx#_nV8u4APzEd2AA4PGNsuhQQ?Use%20Case%20Model/1.2.3%20Wyślij%20prośbę%20o%20utworzenie%20konta/%3CMergeNode%3E?"/>
+                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_nV8u4wPzEd2AA4PGNsuhQQ" x="6500" y="26618"/>
+              </children>
+              <children xmi:id="_wc4eMQPzEd2AA4PGNsuhQQ">
+                <children xmi:id="_wc4eNAPzEd2AA4PGNsuhQQ" type="ImageCompartment">
+                  <layoutConstraint xmi:type="notation:Size" xmi:id="_wc4eNQPzEd2AA4PGNsuhQQ" width="1320" height="1320"/>
+                </children>
+                <children xmi:id="_wc4eNgPzEd2AA4PGNsuhQQ" type="Stereotype"/>
+                <children xmi:id="_wdCPMAPzEd2AA4PGNsuhQQ" type="InPartitions"/>
+                <children xmi:id="_wdCPMQPzEd2AA4PGNsuhQQ" type="Name"/>
+                <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="_wc4eMgPzEd2AA4PGNsuhQQ" showStereotype="Label"/>
+                <element xmi:type="uml:MergeNode" href="platform:/resource/PI_PU/Use%20Case%20Model.emx#_wc4eMAPzEd2AA4PGNsuhQQ?Use%20Case%20Model/1.2.3%20Wyślij%20prośbę%20o%20utworzenie%20konta/%3CMergeNode%3E?"/>
+                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_wc4eMwPzEd2AA4PGNsuhQQ" x="6236" y="33842"/>
+              </children>
+              <styles xmi:type="umlnotation:UMLShapeCompartmentStyle" xmi:id="_8FkOR_5xEdy6V8d2FH3wgw"/>
+            </children>
+            <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="_8FkOQf5xEdy6V8d2FH3wgw" showStereotype="Label"/>
+            <styles xmi:type="umlnotation:UMLFrameStyle" xmi:id="_8FkOQv5xEdy6V8d2FH3wgw"/>
+            <element xmi:type="uml:ActivityPartition" href="platform:/resource/PI_PU/Use%20Case%20Model.emx#_8FRTUP5xEdy6V8d2FH3wgw?Use%20Case%20Model/1.2.3%20Wyślij%20prośbę%20o%20utworzenie%20konta/Aplikacja%20kliencka?"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_8FkOQ_5xEdy6V8d2FH3wgw" x="6659" y="396" width="15716" height="1190"/>
+          </children>
+          <children xmi:id="_6TDjIPshEdySb8Qfgz-7oQ" type="Partition">
+            <children xmi:id="_6TDjJPshEdySb8Qfgz-7oQ" type="Stereotype"/>
+            <children xmi:id="_6TDjJfshEdySb8Qfgz-7oQ" type="PartitionName"/>
+            <children xmi:id="_6TDjJvshEdySb8Qfgz-7oQ" type="PartitionCompartment">
+              <children xmi:id="_7Zg4EfslEdySb8Qfgz-7oQ">
+                <children xmi:id="_7Zg4FPslEdySb8Qfgz-7oQ" type="ImageCompartment">
+                  <layoutConstraint xmi:type="notation:Size" xmi:id="_7Zg4FfslEdySb8Qfgz-7oQ" width="1320" height="1320"/>
+                </children>
+                <children xmi:id="_7Zg4FvslEdySb8Qfgz-7oQ" type="Stereotype"/>
+                <children xmi:id="_7Zg4F_slEdySb8Qfgz-7oQ" type="InPartitions"/>
+                <children xmi:id="_7Zg4GPslEdySb8Qfgz-7oQ" type="Name"/>
+                <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="_7Zg4EvslEdySb8Qfgz-7oQ" showStereotype="Label"/>
+                <element xmi:type="uml:OpaqueAction" href="platform:/resource/PI_PU/Use%20Case%20Model.emx#_7Zg4EPslEdySb8Qfgz-7oQ?Use%20Case%20Model/1.2.3%20Wyślij%20prośbę%20o%20utworzenie%20konta/Założenie%20konta?"/>
+                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_7Zg4E_slEdySb8Qfgz-7oQ" x="4942" y="43719" width="4074" height="1031"/>
+              </children>
+              <children xmi:id="_uLIbEf5uEdy6V8d2FH3wgw">
+                <children xmi:id="_uLRlAP5uEdy6V8d2FH3wgw" type="ImageCompartment">
+                  <layoutConstraint xmi:type="notation:Size" xmi:id="_uLRlAf5uEdy6V8d2FH3wgw" width="1320" height="1320"/>
+                </children>
+                <children xmi:id="_uLRlAv5uEdy6V8d2FH3wgw" type="Stereotype"/>
+                <children xmi:id="_uLRlA_5uEdy6V8d2FH3wgw" type="InPartitions"/>
+                <children xmi:id="_uLRlBP5uEdy6V8d2FH3wgw" type="Name"/>
+                <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="_uLIbEv5uEdy6V8d2FH3wgw" showStereotype="Label"/>
+                <element xmi:type="uml:DecisionNode" href="platform:/resource/PI_PU/Use%20Case%20Model.emx#_uLIbEP5uEdy6V8d2FH3wgw?Use%20Case%20Model/1.2.3%20Wyślij%20prośbę%20o%20utworzenie%20konta/Konto%20założone?"/>
+                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_uLIbE_5uEdy6V8d2FH3wgw" x="1455" y="41844" width="1905" height="1587"/>
+              </children>
+              <styles xmi:type="umlnotation:UMLShapeCompartmentStyle" xmi:id="_6TDjJ_shEdySb8Qfgz-7oQ"/>
+            </children>
+            <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="_6TDjIfshEdySb8Qfgz-7oQ" showStereotype="Label"/>
+            <styles xmi:type="umlnotation:UMLFrameStyle" xmi:id="_6TDjIvshEdySb8Qfgz-7oQ"/>
+            <element xmi:type="uml:ActivityPartition" href="platform:/resource/PI_PU/Use%20Case%20Model.emx#_6SdGMPshEdySb8Qfgz-7oQ?Use%20Case%20Model/1.2.3%20Wyślij%20prośbę%20o%20utworzenie%20konta/Serwer?"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_6TDjI_shEdySb8Qfgz-7oQ" x="13644" y="396" width="10135"/>
+          </children>
+          <styles xmi:type="umlnotation:UMLShapeCompartmentStyle" xmi:id="_wxCn5PsBEdycsIeIheJDLA"/>
+        </children>
+        <children xmi:id="_wxCn5fsBEdycsIeIheJDLA" type="Name"/>
+        <styles xmi:type="umlnotation:UMLFrameStyle" xmi:id="_wxCn5vsBEdycsIeIheJDLA" showStereotype="Label"/>
+        <element xmi:type="uml:Activity" href="platform:/resource/PI_PU/Use%20Case%20Model.emx#_wwJ3EPsBEdycsIeIheJDLA?Use%20Case%20Model/1.2.3%20Wyślij%20prośbę%20o%20utworzenie%20konta?"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_wxCn5_sBEdycsIeIheJDLA" x="-5082" y="793" width="32121" height="49016"/>
+      </children>
+      <styles xmi:type="umlnotation:UMLDiagramStyle" xmi:id="_wxCn6PsBEdycsIeIheJDLA"/>
+      <element xmi:type="uml:Activity" href="platform:/resource/PI_PU/Use%20Case%20Model.emx#_wwJ3EPsBEdycsIeIheJDLA?Use%20Case%20Model/1.2.3%20Wyślij%20prośbę%20o%20utworzenie%20konta?"/>
+      <edges xmi:id="_z8bi0_siEdySb8Qfgz-7oQ" source="_pjVB4APyEd2AA4PGNsuhQQ" target="_7Zg4EfslEdySb8Qfgz-7oQ">
+        <children xmi:id="_z8bi1vsiEdySb8Qfgz-7oQ" type="ActivityEdgeLabelCompartment">
+          <children xmi:id="_z8bi2PsiEdySb8Qfgz-7oQ" type="Stereotype"/>
+          <children xmi:id="_z8bi2fsiEdySb8Qfgz-7oQ" type="ActivityEdgeLabel"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_z8bi1_siEdySb8Qfgz-7oQ" y="-186"/>
+        </children>
+        <styles xmi:type="umlnotation:UMLConnectorStyle" xmi:id="_z8bi1PsiEdySb8Qfgz-7oQ" routing="Rectilinear" showStereotype="Text"/>
+        <element xmi:type="uml:ControlFlow" href="platform:/resource/PI_PU/Use%20Case%20Model.emx#_z8bi0PsiEdySb8Qfgz-7oQ?Use%20Case%20Model/1.2.3%20Wyślij%20prośbę%20o%20utworzenie%20konta/Tak%20-%20Utwórz%20konto?"/>
+        <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_z8bi1fsiEdySb8Qfgz-7oQ" points="[1290, 3, -22946, -6109]$[24342, 3, 106, -6109]$[24342, 6006, 106, -106]"/>
+        <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_z8lT0PsiEdySb8Qfgz-7oQ" id="right"/>
+        <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_fVm0cP5yEdy6V8d2FH3wgw" id="(0.41752577,0.089233756)"/>
+      </edges>
+      <edges xmi:id="_SRyiQ_skEdySb8Qfgz-7oQ" source="_Jj-IcPsiEdySb8Qfgz-7oQ" target="_9EtV8fsiEdySb8Qfgz-7oQ">
+        <children xmi:id="_SRyiRvskEdySb8Qfgz-7oQ" type="ActivityEdgeLabelCompartment">
+          <children xmi:id="_SRyiSPskEdySb8Qfgz-7oQ" type="Stereotype"/>
+          <children xmi:id="_SR7sMPskEdySb8Qfgz-7oQ" type="ActivityEdgeLabel"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_SRyiR_skEdySb8Qfgz-7oQ" x="-107" y="583"/>
+        </children>
+        <styles xmi:type="umlnotation:UMLConnectorStyle" xmi:id="_SRyiRPskEdySb8Qfgz-7oQ" routing="Rectilinear" showStereotype="Text"/>
+        <element xmi:type="uml:ControlFlow" href="platform:/resource/PI_PU/Use%20Case%20Model.emx#_SRyiQPskEdySb8Qfgz-7oQ?Use%20Case%20Model/1.2.3%20Wyślij%20prośbę%20o%20utworzenie%20konta/Anuluj?"/>
+        <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_SRyiRfskEdySb8Qfgz-7oQ" points="[20, 653, 629, -1914]$[-609, 2276, 0, -291]"/>
+        <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_SR7sMfskEdySb8Qfgz-7oQ" id="bottom"/>
+      </edges>
+      <edges xmi:id="_LBYk0PsmEdySb8Qfgz-7oQ" source="_CImmQfsmEdySb8Qfgz-7oQ" target="_gy6cwP5uEdy6V8d2FH3wgw">
+        <children xmi:id="_LBYk0_smEdySb8Qfgz-7oQ" type="ActivityEdgeLabelCompartment">
+          <children xmi:id="_LBYk1fsmEdySb8Qfgz-7oQ" type="Stereotype"/>
+          <children xmi:id="_LBYk1vsmEdySb8Qfgz-7oQ" type="ActivityEdgeLabel"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_LBYk1PsmEdySb8Qfgz-7oQ" y="-186"/>
+        </children>
+        <styles xmi:type="umlnotation:UMLConnectorStyle" xmi:id="_LBYk0fsmEdySb8Qfgz-7oQ" routing="Rectilinear" showStereotype="Text"/>
+        <element xmi:type="uml:ControlFlow" href="platform:/resource/PI_PU/Use%20Case%20Model.emx#_LBOz0PsmEdySb8Qfgz-7oQ?Use%20Case%20Model/1.2.3%20Wyślij%20prośbę%20o%20utworzenie%20konta/%3CControlFlow%3E?"/>
+        <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_LBYk0vsmEdySb8Qfgz-7oQ" points="[-291, 715, 1932, 1032]$[-2196, 715, 27, 1032]$[-2196, 198, 27, 515]"/>
+        <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_LBhuwPsmEdySb8Qfgz-7oQ" id="(0.07269203,0.08758664)"/>
+        <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_nX3XgP5uEdy6V8d2FH3wgw" id="bottom"/>
+      </edges>
+      <edges xmi:id="_LqWpUPsmEdySb8Qfgz-7oQ" source="__KdaIfslEdySb8Qfgz-7oQ" target="_gy6cwP5uEdy6V8d2FH3wgw">
+        <children xmi:id="_LqWpU_smEdySb8Qfgz-7oQ" type="ActivityEdgeLabelCompartment">
+          <children xmi:id="_LqWpVfsmEdySb8Qfgz-7oQ" type="Stereotype"/>
+          <children xmi:id="_LqWpVvsmEdySb8Qfgz-7oQ" type="ActivityEdgeLabel"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_LqWpVPsmEdySb8Qfgz-7oQ" y="-186"/>
+        </children>
+        <styles xmi:type="umlnotation:UMLConnectorStyle" xmi:id="_LqWpUfsmEdySb8Qfgz-7oQ" routing="Rectilinear" showStereotype="Text"/>
+        <element xmi:type="uml:ControlFlow" href="platform:/resource/PI_PU/Use%20Case%20Model.emx#_LqNfYPsmEdySb8Qfgz-7oQ?Use%20Case%20Model/1.2.3%20Wyślij%20prośbę%20o%20utworzenie%20konta/%3CControlFlow%3E?"/>
+        <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_LqWpUvsmEdySb8Qfgz-7oQ" points="[-291, -53, 2117, -1032]$[-2381, -53, 27, -1032]$[-2381, 516, 27, -463]"/>
+        <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_LqgaUPsmEdySb8Qfgz-7oQ" id="(0.09275464,0.47914645)"/>
+        <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_mynVYP5uEdy6V8d2FH3wgw" id="top"/>
+      </edges>
+      <edges xmi:id="_quvMs_5uEdy6V8d2FH3wgw" source="_gy6cwP5uEdy6V8d2FH3wgw" target="_9EtV8fsiEdySb8Qfgz-7oQ">
+        <children xmi:id="_quvMtv5uEdy6V8d2FH3wgw" type="ActivityEdgeLabelCompartment">
+          <children xmi:id="_qu49sP5uEdy6V8d2FH3wgw" type="Stereotype"/>
+          <children xmi:id="_qu49sf5uEdy6V8d2FH3wgw" type="ActivityEdgeLabel"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_quvMt_5uEdy6V8d2FH3wgw" y="-186"/>
+        </children>
+        <styles xmi:type="umlnotation:UMLConnectorStyle" xmi:id="_quvMtP5uEdy6V8d2FH3wgw" routing="Rectilinear" showStereotype="Text"/>
+        <element xmi:type="uml:ControlFlow" href="platform:/resource/PI_PU/Use%20Case%20Model.emx#_quvMsP5uEdy6V8d2FH3wgw?Use%20Case%20Model/1.2.3%20Wyślij%20prośbę%20o%20utworzenie%20konta/%3CControlFlow%3E?"/>
+        <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_quvMtf5uEdy6V8d2FH3wgw" points="[-47, 0, 167, -7]$[-223, 17, -9, 10]"/>
+        <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_qu49sv5uEdy6V8d2FH3wgw" id="left"/>
+      </edges>
+      <edges xmi:id="_wdKIE_5uEdy6V8d2FH3wgw" source="_uLIbEf5uEdy6V8d2FH3wgw" target="_CImmQfsmEdySb8Qfgz-7oQ">
+        <children xmi:id="_wdKIFv5uEdy6V8d2FH3wgw" type="ActivityEdgeLabelCompartment">
+          <children xmi:id="_wdKIGP5uEdy6V8d2FH3wgw" type="Stereotype"/>
+          <children xmi:id="_wdKIGf5uEdy6V8d2FH3wgw" type="ActivityEdgeLabel"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_wdKIF_5uEdy6V8d2FH3wgw" x="851" y="-170"/>
+        </children>
+        <styles xmi:type="umlnotation:UMLConnectorStyle" xmi:id="_wdKIFP5uEdy6V8d2FH3wgw" routing="Rectilinear" showStereotype="Text"/>
+        <element xmi:type="uml:ControlFlow" href="platform:/resource/PI_PU/Use%20Case%20Model.emx#_wdKIEP5uEdy6V8d2FH3wgw?Use%20Case%20Model/1.2.3%20Wyślij%20prośbę%20o%20utworzenie%20konta/Tak?"/>
+        <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_wdKIFf5uEdy6V8d2FH3wgw" points="[24, 808, 6532, -277]$[24, 1164, 6532, 79]$[-4418, 1164, 2090, 79]"/>
+        <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_wdT5EP5uEdy6V8d2FH3wgw" id="left"/>
+      </edges>
+      <edges xmi:id="_xOxyQP5uEdy6V8d2FH3wgw" source="_7Zg4EfslEdySb8Qfgz-7oQ" target="_uLIbEf5uEdy6V8d2FH3wgw">
+        <children xmi:id="_xOxyQ_5uEdy6V8d2FH3wgw" type="ActivityEdgeLabelCompartment">
+          <children xmi:id="_xOxyRf5uEdy6V8d2FH3wgw" type="Stereotype"/>
+          <children xmi:id="_xOxyRv5uEdy6V8d2FH3wgw" type="ActivityEdgeLabel"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_xOxyRP5uEdy6V8d2FH3wgw" y="-186"/>
+        </children>
+        <styles xmi:type="umlnotation:UMLConnectorStyle" xmi:id="_xOxyQf5uEdy6V8d2FH3wgw" routing="Rectilinear" showStereotype="Text"/>
+        <element xmi:type="uml:ControlFlow" href="platform:/resource/PI_PU/Use%20Case%20Model.emx#_xOe3UP5uEdy6V8d2FH3wgw?Use%20Case%20Model/1.2.3%20Wyślij%20prośbę%20o%20utworzenie%20konta/%3CControlFlow%3E?"/>
+        <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_xOxyQv5uEdy6V8d2FH3wgw" points="[-635, -900, 3254, 1084]$[-635, -1963, 3254, 21]$[-2922, -1963, 967, 21]"/>
+        <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_xO7jQP5uEdy6V8d2FH3wgw" id="(0.33186057,0.85645)"/>
+        <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_xO7jQf5uEdy6V8d2FH3wgw" id="right"/>
+      </edges>
+      <edges xmi:id="_yxIV0v5uEdy6V8d2FH3wgw" source="_uLIbEf5uEdy6V8d2FH3wgw" target="__KdaIfslEdySb8Qfgz-7oQ">
+        <children xmi:id="_yxSG0P5uEdy6V8d2FH3wgw" type="ActivityEdgeLabelCompartment">
+          <children xmi:id="_yxSG0v5uEdy6V8d2FH3wgw" type="Stereotype"/>
+          <children xmi:id="_yxSG0_5uEdy6V8d2FH3wgw" type="ActivityEdgeLabel"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_yxSG0f5uEdy6V8d2FH3wgw" x="703" y="250"/>
+        </children>
+        <styles xmi:type="umlnotation:UMLConnectorStyle" xmi:id="_yxIV0_5uEdy6V8d2FH3wgw" routing="Rectilinear" showStereotype="Text"/>
+        <element xmi:type="uml:ControlFlow" href="platform:/resource/PI_PU/Use%20Case%20Model.emx#_yw-k0P5uEdy6V8d2FH3wgw?Use%20Case%20Model/1.2.3%20Wyślij%20prośbę%20o%20utworzenie%20konta/Nie?"/>
+        <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_yxIV1P5uEdy6V8d2FH3wgw" points="[-931, 25, 10393, 4840]$[-931, -4709, 10393, 106]$[-9737, -4709, 1587, 106]"/>
+        <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_yxSG1P5uEdy6V8d2FH3wgw" id="left"/>
+      </edges>
+      <edges xmi:id="_GU8BgAPyEd2AA4PGNsuhQQ" source="_c7RJwPshEdySb8Qfgz-7oQ" target="_mODJIAPnEd2AA4PGNsuhQQ">
+        <children xmi:id="_GU8BgwPyEd2AA4PGNsuhQQ" type="ActivityEdgeLabelCompartment">
+          <children xmi:id="_GU8BhQPyEd2AA4PGNsuhQQ" type="Stereotype"/>
+          <children xmi:id="_GU8BhgPyEd2AA4PGNsuhQQ" type="ActivityEdgeLabel"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_GU8BhAPyEd2AA4PGNsuhQQ" y="-186"/>
+        </children>
+        <styles xmi:type="umlnotation:UMLConnectorStyle" xmi:id="_GU8BgQPyEd2AA4PGNsuhQQ" routing="Rectilinear" showStereotype="Text"/>
+        <element xmi:type="uml:ControlFlow" href="platform:/resource/PI_PU/Use%20Case%20Model.emx#_GUpGkAPyEd2AA4PGNsuhQQ?Use%20Case%20Model/1.2.3%20Wyślij%20prośbę%20o%20utworzenie%20konta/%3CControlFlow%3E?"/>
+        <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_GU8BggPyEd2AA4PGNsuhQQ" points="[-26, 264, -159, -1376]$[-26, 846, -159, -794]"/>
+      </edges>
+      <edges xmi:id="_JWMzEAPyEd2AA4PGNsuhQQ" source="_mODJIAPnEd2AA4PGNsuhQQ" target="_Ev460QPoEd2AA4PGNsuhQQ">
+        <children xmi:id="_JWMzEwPyEd2AA4PGNsuhQQ" type="ActivityEdgeLabelCompartment">
+          <children xmi:id="_JWMzFQPyEd2AA4PGNsuhQQ" type="Stereotype"/>
+          <children xmi:id="_JWMzFgPyEd2AA4PGNsuhQQ" type="ActivityEdgeLabel"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_JWMzFAPyEd2AA4PGNsuhQQ" y="-186"/>
+        </children>
+        <styles xmi:type="umlnotation:UMLConnectorStyle" xmi:id="_JWMzEQPyEd2AA4PGNsuhQQ" routing="Rectilinear" showStereotype="Text"/>
+        <element xmi:type="uml:ControlFlow" href="platform:/resource/PI_PU/Use%20Case%20Model.emx#_JWDpIAPyEd2AA4PGNsuhQQ?Use%20Case%20Model/1.2.3%20Wyślij%20prośbę%20o%20utworzenie%20konta/%3CControlFlow%3E?"/>
+        <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_JWMzEgPyEd2AA4PGNsuhQQ" points="[87, 15, -117, -9]$[144, 28, -60, 4]"/>
+      </edges>
+      <edges xmi:id="_Kdub0APyEd2AA4PGNsuhQQ" source="_Ev460QPoEd2AA4PGNsuhQQ" target="_H9h7gAPoEd2AA4PGNsuhQQ">
+        <children xmi:id="_Kdub0wPyEd2AA4PGNsuhQQ" type="ActivityEdgeLabelCompartment">
+          <children xmi:id="_Kdub1QPyEd2AA4PGNsuhQQ" type="Stereotype"/>
+          <children xmi:id="_Kdub1gPyEd2AA4PGNsuhQQ" type="ActivityEdgeLabel"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Kdub1APyEd2AA4PGNsuhQQ" y="-186"/>
+        </children>
+        <styles xmi:type="umlnotation:UMLConnectorStyle" xmi:id="_Kdub0QPyEd2AA4PGNsuhQQ" routing="Rectilinear" showStereotype="Text"/>
+        <element xmi:type="uml:ControlFlow" href="platform:/resource/PI_PU/Use%20Case%20Model.emx#_KdlR4APyEd2AA4PGNsuhQQ?Use%20Case%20Model/1.2.3%20Wyślij%20prośbę%20o%20utworzenie%20konta/%3CControlFlow%3E?"/>
+        <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_Kdub0gPyEd2AA4PGNsuhQQ" points="[-767, 239, 3731, -1243]$[-4683, 239, -185, -1243]$[-4683, 953, -185, -529]"/>
+        <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_Kd4M0APyEd2AA4PGNsuhQQ" id="(0.23692502,0.7863894)"/>
+      </edges>
+      <edges xmi:id="_MGyEUAPyEd2AA4PGNsuhQQ" source="_H9h7gAPoEd2AA4PGNsuhQQ" target="_KGw44APoEd2AA4PGNsuhQQ">
+        <children xmi:id="_MGyEUwPyEd2AA4PGNsuhQQ" type="ActivityEdgeLabelCompartment">
+          <children xmi:id="_MGyEVQPyEd2AA4PGNsuhQQ" type="Stereotype"/>
+          <children xmi:id="_MGyEVgPyEd2AA4PGNsuhQQ" type="ActivityEdgeLabel"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_MGyEVAPyEd2AA4PGNsuhQQ" y="-186"/>
+        </children>
+        <styles xmi:type="umlnotation:UMLConnectorStyle" xmi:id="_MGyEUQPyEd2AA4PGNsuhQQ" routing="Rectilinear" showStereotype="Text"/>
+        <element xmi:type="uml:ControlFlow" href="platform:/resource/PI_PU/Use%20Case%20Model.emx#_MGoTUAPyEd2AA4PGNsuhQQ?Use%20Case%20Model/1.2.3%20Wyślij%20prośbę%20o%20utworzenie%20konta/%3CControlFlow%3E?"/>
+        <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_MGyEUgPyEd2AA4PGNsuhQQ" points="[6, 7, -136, 13]$[88, 14, -54, 20]"/>
+        <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_MG71UAPyEd2AA4PGNsuhQQ" id="(0.9674507,0.62366635)"/>
+      </edges>
+      <edges xmi:id="_MoUEEgPyEd2AA4PGNsuhQQ" source="_KGw44APoEd2AA4PGNsuhQQ" target="_ZLBiQQPoEd2AA4PGNsuhQQ">
+        <children xmi:id="_MoUEFQPyEd2AA4PGNsuhQQ" type="ActivityEdgeLabelCompartment">
+          <children xmi:id="_MoUEFwPyEd2AA4PGNsuhQQ" type="Stereotype"/>
+          <children xmi:id="_MoUEGAPyEd2AA4PGNsuhQQ" type="ActivityEdgeLabel"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_MoUEFgPyEd2AA4PGNsuhQQ" y="-186"/>
+        </children>
+        <styles xmi:type="umlnotation:UMLConnectorStyle" xmi:id="_MoUEEwPyEd2AA4PGNsuhQQ" routing="Rectilinear" showStereotype="Text"/>
+        <element xmi:type="uml:ControlFlow" href="platform:/resource/PI_PU/Use%20Case%20Model.emx#_MoKTEAPyEd2AA4PGNsuhQQ?Use%20Case%20Model/1.2.3%20Wyślij%20prośbę%20o%20utworzenie%20konta/%3CControlFlow%3E?"/>
+        <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_MoUEFAPyEd2AA4PGNsuhQQ" points="[238, -423, -2646, -1085]$[2903, -423, 19, -1085]$[2903, -106, 19, -768]"/>
+        <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_ModOAAPyEd2AA4PGNsuhQQ" id="(0.97724885,0.44422892)"/>
+        <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_ModOAQPyEd2AA4PGNsuhQQ" id="top"/>
+      </edges>
+      <edges xmi:id="_OGCmUAPyEd2AA4PGNsuhQQ" source="_ZLBiQQPoEd2AA4PGNsuhQQ" target="_l2GGsAPoEd2AA4PGNsuhQQ">
+        <children xmi:id="_OGCmUwPyEd2AA4PGNsuhQQ" type="ActivityEdgeLabelCompartment">
+          <children xmi:id="_OGCmVQPyEd2AA4PGNsuhQQ" type="Stereotype"/>
+          <children xmi:id="_OGCmVgPyEd2AA4PGNsuhQQ" type="ActivityEdgeLabel"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_OGCmVAPyEd2AA4PGNsuhQQ" x="-458" y="456"/>
+        </children>
+        <styles xmi:type="umlnotation:UMLConnectorStyle" xmi:id="_OGCmUQPyEd2AA4PGNsuhQQ" routing="Rectilinear" showStereotype="Text"/>
+        <element xmi:type="uml:ControlFlow" href="platform:/resource/PI_PU/Use%20Case%20Model.emx#_OF41UAPyEd2AA4PGNsuhQQ?Use%20Case%20Model/1.2.3%20Wyślij%20prośbę%20o%20utworzenie%20konta/tak?"/>
+        <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_OGCmUgPyEd2AA4PGNsuhQQ" points="[-1085, 25, 2540, -1747]$[-1350, 25, 2275, -1747]$[-1350, 1693, 2275, -79]$[-1693, 1693, 1932, -79]"/>
+        <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_OGLwQAPyEd2AA4PGNsuhQQ" id="left"/>
+      </edges>
+      <edges xmi:id="_ULHHIAPyEd2AA4PGNsuhQQ" source="_ZLBiQQPoEd2AA4PGNsuhQQ" target="_akR0MAPoEd2AA4PGNsuhQQ">
+        <children xmi:id="_ULHHIwPyEd2AA4PGNsuhQQ" type="ActivityEdgeLabelCompartment">
+          <children xmi:id="_ULHHJQPyEd2AA4PGNsuhQQ" type="Stereotype"/>
+          <children xmi:id="_ULHHJgPyEd2AA4PGNsuhQQ" type="ActivityEdgeLabel"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ULHHJAPyEd2AA4PGNsuhQQ" y="-186"/>
+        </children>
+        <styles xmi:type="umlnotation:UMLConnectorStyle" xmi:id="_ULHHIQPyEd2AA4PGNsuhQQ" routing="Rectilinear" showStereotype="Text"/>
+        <element xmi:type="uml:ControlFlow" href="platform:/resource/PI_PU/Use%20Case%20Model.emx#_UK9WIAPyEd2AA4PGNsuhQQ?Use%20Case%20Model/1.2.3%20Wyślij%20prośbę%20o%20utworzenie%20konta/nie?"/>
+        <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_ULHHIgPyEd2AA4PGNsuhQQ" points="[42, 0, -96, 24]$[66, -25, -72, -1]"/>
+        <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_ULHHJwPyEd2AA4PGNsuhQQ" id="right"/>
+      </edges>
+      <edges xmi:id="_U01ZkAPyEd2AA4PGNsuhQQ" source="_akR0MAPoEd2AA4PGNsuhQQ" target="_gRDw0QPoEd2AA4PGNsuhQQ">
+        <children xmi:id="_U01ZkwPyEd2AA4PGNsuhQQ" type="ActivityEdgeLabelCompartment">
+          <children xmi:id="_U01ZlQPyEd2AA4PGNsuhQQ" type="Stereotype"/>
+          <children xmi:id="_U01ZlgPyEd2AA4PGNsuhQQ" type="ActivityEdgeLabel"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_U01ZlAPyEd2AA4PGNsuhQQ" y="-186"/>
+        </children>
+        <styles xmi:type="umlnotation:UMLConnectorStyle" xmi:id="_U01ZkQPyEd2AA4PGNsuhQQ" routing="Rectilinear" showStereotype="Text"/>
+        <element xmi:type="uml:ControlFlow" href="platform:/resource/PI_PU/Use%20Case%20Model.emx#_U0rokAPyEd2AA4PGNsuhQQ?Use%20Case%20Model/1.2.3%20Wyślij%20prośbę%20o%20utworzenie%20konta/%3CControlFlow%3E?"/>
+        <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_U01ZkgPyEd2AA4PGNsuhQQ" points="[1, 12, -62, -47]$[-21, 24, -84, -35]"/>
+        <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_U0-jgAPyEd2AA4PGNsuhQQ" id="(0.23076923,0.85772175)"/>
+      </edges>
+      <edges xmi:id="_bOK6MwPyEd2AA4PGNsuhQQ" source="_gRDw0QPoEd2AA4PGNsuhQQ" target="_Xc62IQPyEd2AA4PGNsuhQQ">
+        <children xmi:id="_bOK6NgPyEd2AA4PGNsuhQQ" type="ActivityEdgeLabelCompartment">
+          <children xmi:id="_bOK6OAPyEd2AA4PGNsuhQQ" type="Stereotype"/>
+          <children xmi:id="_bOK6OQPyEd2AA4PGNsuhQQ" type="ActivityEdgeLabel"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_bOK6NwPyEd2AA4PGNsuhQQ" y="-186"/>
+        </children>
+        <styles xmi:type="umlnotation:UMLConnectorStyle" xmi:id="_bOK6NAPyEd2AA4PGNsuhQQ" routing="Rectilinear" showStereotype="Text"/>
+        <element xmi:type="uml:ControlFlow" href="platform:/resource/PI_PU/Use%20Case%20Model.emx#_bOK6MAPyEd2AA4PGNsuhQQ?Use%20Case%20Model/1.2.3%20Wyślij%20prośbę%20o%20utworzenie%20konta/%3CControlFlow%3E?"/>
+        <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_bOK6NQPyEd2AA4PGNsuhQQ" points="[-344, -79, 2407, -1058]$[-2733, -79, 18, -1058]$[-2733, 344, 18, -635]"/>
+        <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_bOUEIAPyEd2AA4PGNsuhQQ" id="(0.07763694,0.6600105)"/>
+        <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_bOUEIQPyEd2AA4PGNsuhQQ" id="top"/>
+      </edges>
+      <edges xmi:id="_buDUIAPyEd2AA4PGNsuhQQ" source="_l2GGsAPoEd2AA4PGNsuhQQ" target="_Xc62IQPyEd2AA4PGNsuhQQ">
+        <children xmi:id="_buDUIwPyEd2AA4PGNsuhQQ" type="ActivityEdgeLabelCompartment">
+          <children xmi:id="_buDUJQPyEd2AA4PGNsuhQQ" type="Stereotype"/>
+          <children xmi:id="_buDUJgPyEd2AA4PGNsuhQQ" type="ActivityEdgeLabel"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_buDUJAPyEd2AA4PGNsuhQQ" y="-186"/>
+        </children>
+        <styles xmi:type="umlnotation:UMLConnectorStyle" xmi:id="_buDUIQPyEd2AA4PGNsuhQQ" routing="Rectilinear" showStereotype="Text"/>
+        <element xmi:type="uml:ControlFlow" href="platform:/resource/PI_PU/Use%20Case%20Model.emx#_bt6KMAPyEd2AA4PGNsuhQQ?Use%20Case%20Model/1.2.3%20Wyślij%20prośbę%20o%20utworzenie%20konta/%3CControlFlow%3E?"/>
+        <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_buDUIgPyEd2AA4PGNsuhQQ" points="[17, 11, -56, -49]$[73, 35, 0, -25]"/>
+        <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_buNFIAPyEd2AA4PGNsuhQQ" id="(0.88057745,0.67244095)"/>
+        <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_buNFIQPyEd2AA4PGNsuhQQ" id="top"/>
+      </edges>
+      <edges xmi:id="_eWShswPyEd2AA4PGNsuhQQ" source="_Xc62IQPyEd2AA4PGNsuhQQ" target="_0PbjwAPoEd2AA4PGNsuhQQ">
+        <children xmi:id="_eWShtgPyEd2AA4PGNsuhQQ" type="ActivityEdgeLabelCompartment">
+          <children xmi:id="_eWcSsAPyEd2AA4PGNsuhQQ" type="Stereotype"/>
+          <children xmi:id="_eWcSsQPyEd2AA4PGNsuhQQ" type="ActivityEdgeLabel"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_eWShtwPyEd2AA4PGNsuhQQ" y="-186"/>
+        </children>
+        <styles xmi:type="umlnotation:UMLConnectorStyle" xmi:id="_eWShtAPyEd2AA4PGNsuhQQ" routing="Rectilinear" showStereotype="Text"/>
+        <element xmi:type="uml:ControlFlow" href="platform:/resource/PI_PU/Use%20Case%20Model.emx#_eWShsAPyEd2AA4PGNsuhQQ?Use%20Case%20Model/1.2.3%20Wyślij%20prośbę%20o%20utworzenie%20konta/%3CControlFlow%3E?"/>
+        <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_eWShtQPyEd2AA4PGNsuhQQ" points="[18, 687, 8723, -1086]$[-9102, 687, -397, -1086]$[-9102, 1243, -397, -530]"/>
+        <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_eWcSsgPyEd2AA4PGNsuhQQ" id="bottom"/>
+      </edges>
+      <edges xmi:id="_2BSXYwPyEd2AA4PGNsuhQQ" source="_0PbjwAPoEd2AA4PGNsuhQQ" target="_7U38cAPoEd2AA4PGNsuhQQ">
+        <children xmi:id="_2BSXZgPyEd2AA4PGNsuhQQ" type="ActivityEdgeLabelCompartment">
+          <children xmi:id="_2BSXaAPyEd2AA4PGNsuhQQ" type="Stereotype"/>
+          <children xmi:id="_2BSXaQPyEd2AA4PGNsuhQQ" type="ActivityEdgeLabel"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_2BSXZwPyEd2AA4PGNsuhQQ" y="-186"/>
+        </children>
+        <styles xmi:type="umlnotation:UMLConnectorStyle" xmi:id="_2BSXZAPyEd2AA4PGNsuhQQ" routing="Rectilinear" showStereotype="Text"/>
+        <element xmi:type="uml:ControlFlow" href="platform:/resource/PI_PU/Use%20Case%20Model.emx#_2BSXYAPyEd2AA4PGNsuhQQ?Use%20Case%20Model/1.2.3%20Wyślij%20prośbę%20o%20utworzenie%20konta/%3CControlFlow%3E?"/>
+        <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_2BSXZQPyEd2AA4PGNsuhQQ" points="[30, 7, -115, -15]$[117, 42, -28, 20]"/>
+        <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_2BcIYAPyEd2AA4PGNsuhQQ" id="(0.7931759,0.6071775)"/>
+      </edges>
+      <edges xmi:id="_3B9xQAPyEd2AA4PGNsuhQQ" source="_7U38cAPoEd2AA4PGNsuhQQ" target="_-oBvQAPoEd2AA4PGNsuhQQ">
+        <children xmi:id="_3B9xQwPyEd2AA4PGNsuhQQ" type="ActivityEdgeLabelCompartment">
+          <children xmi:id="_3B9xRQPyEd2AA4PGNsuhQQ" type="Stereotype"/>
+          <children xmi:id="_3B9xRgPyEd2AA4PGNsuhQQ" type="ActivityEdgeLabel"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_3B9xRAPyEd2AA4PGNsuhQQ" y="-186"/>
+        </children>
+        <styles xmi:type="umlnotation:UMLConnectorStyle" xmi:id="_3B9xQQPyEd2AA4PGNsuhQQ" routing="Rectilinear" showStereotype="Text"/>
+        <element xmi:type="uml:ControlFlow" href="platform:/resource/PI_PU/Use%20Case%20Model.emx#_3B0AQAPyEd2AA4PGNsuhQQ?Use%20Case%20Model/1.2.3%20Wyślij%20prośbę%20o%20utworzenie%20konta/%3CControlFlow%3E?"/>
+        <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_3B9xQgPyEd2AA4PGNsuhQQ" points="[18, 8, -82, -52]$[100, 36, 0, -24]"/>
+        <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_3B9xRwPyEd2AA4PGNsuhQQ" id="(0.848189,0.5984481)"/>
+        <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_3B9xSAPyEd2AA4PGNsuhQQ" id="top"/>
+      </edges>
+      <edges xmi:id="_4D-A0wPyEd2AA4PGNsuhQQ" source="_-oBvQAPoEd2AA4PGNsuhQQ" target="_AXL_wQPpEd2AA4PGNsuhQQ">
+        <children xmi:id="_4D-A1gPyEd2AA4PGNsuhQQ" type="ActivityEdgeLabelCompartment">
+          <children xmi:id="_4D-A2APyEd2AA4PGNsuhQQ" type="Stereotype"/>
+          <children xmi:id="_4D-A2QPyEd2AA4PGNsuhQQ" type="ActivityEdgeLabel"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_4D-A1wPyEd2AA4PGNsuhQQ" x="40" y="-314"/>
+        </children>
+        <styles xmi:type="umlnotation:UMLConnectorStyle" xmi:id="_4D-A1APyEd2AA4PGNsuhQQ" routing="Rectilinear" showStereotype="Text"/>
+        <element xmi:type="uml:ControlFlow" href="platform:/resource/PI_PU/Use%20Case%20Model.emx#_4D-A0APyEd2AA4PGNsuhQQ?Use%20Case%20Model/1.2.3%20Wyślij%20prośbę%20o%20utworzenie%20konta/nie?"/>
+        <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_4D-A1QPyEd2AA4PGNsuhQQ" points="[48, 0, -118, 84]$[95, -82, -71, 2]"/>
+        <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_4EHx0APyEd2AA4PGNsuhQQ" id="right"/>
+      </edges>
+      <edges xmi:id="_5MGGgwPyEd2AA4PGNsuhQQ" source="_-oBvQAPoEd2AA4PGNsuhQQ" target="_N2eyQQPwEd2AA4PGNsuhQQ">
+        <children xmi:id="_5MP3gAPyEd2AA4PGNsuhQQ" type="ActivityEdgeLabelCompartment">
+          <children xmi:id="_5MP3ggPyEd2AA4PGNsuhQQ" type="Stereotype"/>
+          <children xmi:id="_5MP3gwPyEd2AA4PGNsuhQQ" type="ActivityEdgeLabel"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_5MP3gQPyEd2AA4PGNsuhQQ" y="-186"/>
+        </children>
+        <styles xmi:type="umlnotation:UMLConnectorStyle" xmi:id="_5MGGhAPyEd2AA4PGNsuhQQ" routing="Rectilinear" showStereotype="Text"/>
+        <element xmi:type="uml:ControlFlow" href="platform:/resource/PI_PU/Use%20Case%20Model.emx#_5MGGgAPyEd2AA4PGNsuhQQ?Use%20Case%20Model/1.2.3%20Wyślij%20prośbę%20o%20utworzenie%20konta/tak?"/>
+        <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_5MGGhQPyEd2AA4PGNsuhQQ" points="[-48, 0, 83, -72]$[-58, 40, 73, -32]"/>
+        <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_5MP3hAPyEd2AA4PGNsuhQQ" id="left"/>
+      </edges>
+      <edges xmi:id="_79a-owPyEd2AA4PGNsuhQQ" source="_AXL_wQPpEd2AA4PGNsuhQQ" target="_D8EbwQPpEd2AA4PGNsuhQQ">
+        <children xmi:id="_79a-pgPyEd2AA4PGNsuhQQ" type="ActivityEdgeLabelCompartment">
+          <children xmi:id="_79a-qAPyEd2AA4PGNsuhQQ" type="Stereotype"/>
+          <children xmi:id="_79a-qQPyEd2AA4PGNsuhQQ" type="ActivityEdgeLabel"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_79a-pwPyEd2AA4PGNsuhQQ" y="-186"/>
+        </children>
+        <styles xmi:type="umlnotation:UMLConnectorStyle" xmi:id="_79a-pAPyEd2AA4PGNsuhQQ" routing="Rectilinear" showStereotype="Text"/>
+        <element xmi:type="uml:ControlFlow" href="platform:/resource/PI_PU/Use%20Case%20Model.emx#_79a-oAPyEd2AA4PGNsuhQQ?Use%20Case%20Model/1.2.3%20Wyślij%20prośbę%20o%20utworzenie%20konta/%3CControlFlow%3E?"/>
+        <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_79a-pQPyEd2AA4PGNsuhQQ" points="[13, 12, -93, -40]$[33, 78, -73, 26]"/>
+        <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_79kIkAPyEd2AA4PGNsuhQQ" id="(0.19909503,0.8556466)"/>
+      </edges>
+      <edges xmi:id="_8X8XcAPyEd2AA4PGNsuhQQ" source="_D8EbwQPpEd2AA4PGNsuhQQ" target="_F7sF8QPwEd2AA4PGNsuhQQ">
+        <children xmi:id="_8X8XcwPyEd2AA4PGNsuhQQ" type="ActivityEdgeLabelCompartment">
+          <children xmi:id="_8X8XdQPyEd2AA4PGNsuhQQ" type="Stereotype"/>
+          <children xmi:id="_8X8XdgPyEd2AA4PGNsuhQQ" type="ActivityEdgeLabel"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_8X8XdAPyEd2AA4PGNsuhQQ" y="-186"/>
+        </children>
+        <styles xmi:type="umlnotation:UMLConnectorStyle" xmi:id="_8X8XcQPyEd2AA4PGNsuhQQ" routing="Rectilinear" showStereotype="Text"/>
+        <element xmi:type="uml:ControlFlow" href="platform:/resource/PI_PU/Use%20Case%20Model.emx#_8XymcAPyEd2AA4PGNsuhQQ?Use%20Case%20Model/1.2.3%20Wyślij%20prośbę%20o%20utworzenie%20konta/%3CControlFlow%3E?"/>
+        <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_8X8XcgPyEd2AA4PGNsuhQQ" points="[0, 17, -7, -53]$[0, 29, -7, -41]"/>
+        <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_8X8XdwPyEd2AA4PGNsuhQQ" id="(0.21637122,0.757721)"/>
+      </edges>
+      <edges xmi:id="_-Q75YAPyEd2AA4PGNsuhQQ" source="_F7sF8QPwEd2AA4PGNsuhQQ" target="_9FFxUQPyEd2AA4PGNsuhQQ">
+        <children xmi:id="_-Q75YwPyEd2AA4PGNsuhQQ" type="ActivityEdgeLabelCompartment">
+          <children xmi:id="_-Q75ZQPyEd2AA4PGNsuhQQ" type="Stereotype"/>
+          <children xmi:id="_-Q75ZgPyEd2AA4PGNsuhQQ" type="ActivityEdgeLabel"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_-Q75ZAPyEd2AA4PGNsuhQQ" y="-186"/>
+        </children>
+        <styles xmi:type="umlnotation:UMLConnectorStyle" xmi:id="_-Q75YQPyEd2AA4PGNsuhQQ" routing="Rectilinear" showStereotype="Text"/>
+        <element xmi:type="uml:ControlFlow" href="platform:/resource/PI_PU/Use%20Case%20Model.emx#_-QyvcAPyEd2AA4PGNsuhQQ?Use%20Case%20Model/1.2.3%20Wyślij%20prośbę%20o%20utworzenie%20konta/%3CControlFlow%3E?"/>
+        <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_-Q75YgPyEd2AA4PGNsuhQQ" points="[-53, 27, 2698, -370]$[-2726, 27, 25, -370]"/>
+        <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_-Q75ZwPyEd2AA4PGNsuhQQ" id="(0.014477212,0.5357308)"/>
+        <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_-Q75aAPyEd2AA4PGNsuhQQ" id="top"/>
+      </edges>
+      <edges xmi:id="_ACVlkAPzEd2AA4PGNsuhQQ" source="_N2eyQQPwEd2AA4PGNsuhQQ" target="_9FFxUQPyEd2AA4PGNsuhQQ">
+        <children xmi:id="_ACVlkwPzEd2AA4PGNsuhQQ" type="ActivityEdgeLabelCompartment">
+          <children xmi:id="_ACVllQPzEd2AA4PGNsuhQQ" type="Stereotype"/>
+          <children xmi:id="_ACVllgPzEd2AA4PGNsuhQQ" type="ActivityEdgeLabel"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ACVllAPzEd2AA4PGNsuhQQ" y="-186"/>
+        </children>
+        <styles xmi:type="umlnotation:UMLConnectorStyle" xmi:id="_ACVlkQPzEd2AA4PGNsuhQQ" routing="Rectilinear" showStereotype="Text"/>
+        <element xmi:type="uml:ControlFlow" href="platform:/resource/PI_PU/Use%20Case%20Model.emx#_ACL0kAPzEd2AA4PGNsuhQQ?Use%20Case%20Model/1.2.3%20Wyślij%20prośbę%20o%20utworzenie%20konta/%3CControlFlow%3E?"/>
+        <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_ACVlkgPzEd2AA4PGNsuhQQ" points="[13, 9, -89, -55]$[102, 40, 0, -24]"/>
+        <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_ACVllwPzEd2AA4PGNsuhQQ" id="(0.91312337,0.7480315)"/>
+        <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_ACVlmAPzEd2AA4PGNsuhQQ" id="top"/>
+      </edges>
+      <edges xmi:id="_DvRKUAPzEd2AA4PGNsuhQQ" source="_9FFxUQPyEd2AA4PGNsuhQQ" target="_5afZwAPwEd2AA4PGNsuhQQ">
+        <children xmi:id="_DvRKUwPzEd2AA4PGNsuhQQ" type="ActivityEdgeLabelCompartment">
+          <children xmi:id="_DvRKVQPzEd2AA4PGNsuhQQ" type="Stereotype"/>
+          <children xmi:id="_DvRKVgPzEd2AA4PGNsuhQQ" type="ActivityEdgeLabel"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_DvRKVAPzEd2AA4PGNsuhQQ" y="-186"/>
+        </children>
+        <styles xmi:type="umlnotation:UMLConnectorStyle" xmi:id="_DvRKUQPzEd2AA4PGNsuhQQ" routing="Rectilinear" showStereotype="Text"/>
+        <element xmi:type="uml:ControlFlow" href="platform:/resource/PI_PU/Use%20Case%20Model.emx#_DvHZUAPzEd2AA4PGNsuhQQ?Use%20Case%20Model/1.2.3%20Wyślij%20prośbę%20o%20utworzenie%20konta/%3CControlFlow%3E?"/>
+        <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_DvRKUgPzEd2AA4PGNsuhQQ" points="[4, -608, 10005, -2355]$[4, 610, 10005, -1137]$[-10081, 610, -80, -1137]$[-10081, 953, -80, -794]"/>
+        <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_DvaUQAPzEd2AA4PGNsuhQQ" id="bottom"/>
+      </edges>
+      <edges xmi:id="_FPiDMAPzEd2AA4PGNsuhQQ" source="_5afZwAPwEd2AA4PGNsuhQQ" target="_8qWoAAPwEd2AA4PGNsuhQQ">
+        <children xmi:id="_FPiDMwPzEd2AA4PGNsuhQQ" type="ActivityEdgeLabelCompartment">
+          <children xmi:id="_FPiDNQPzEd2AA4PGNsuhQQ" type="Stereotype"/>
+          <children xmi:id="_FPiDNgPzEd2AA4PGNsuhQQ" type="ActivityEdgeLabel"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_FPiDNAPzEd2AA4PGNsuhQQ" y="-186"/>
+        </children>
+        <styles xmi:type="umlnotation:UMLConnectorStyle" xmi:id="_FPiDMQPzEd2AA4PGNsuhQQ" routing="Rectilinear" showStereotype="Text"/>
+        <element xmi:type="uml:ControlFlow" href="platform:/resource/PI_PU/Use%20Case%20Model.emx#_FPYSMAPzEd2AA4PGNsuhQQ?Use%20Case%20Model/1.2.3%20Wyślij%20prośbę%20o%20utworzenie%20konta/%3CControlFlow%3E?"/>
+        <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_FPiDMgPzEd2AA4PGNsuhQQ" points="[11, 5, -228, 6]$[167, 5, -72, 6]"/>
+        <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_FPiDNwPzEd2AA4PGNsuhQQ" id="(0.9350385,0.7136451)"/>
+      </edges>
+      <edges xmi:id="_FpATIAPzEd2AA4PGNsuhQQ" source="_8qWoAAPwEd2AA4PGNsuhQQ" target="_-UwUUAPwEd2AA4PGNsuhQQ">
+        <children xmi:id="_FpATIwPzEd2AA4PGNsuhQQ" type="ActivityEdgeLabelCompartment">
+          <children xmi:id="_FpATJQPzEd2AA4PGNsuhQQ" type="Stereotype"/>
+          <children xmi:id="_FpATJgPzEd2AA4PGNsuhQQ" type="ActivityEdgeLabel"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_FpATJAPzEd2AA4PGNsuhQQ" y="-186"/>
+        </children>
+        <styles xmi:type="umlnotation:UMLConnectorStyle" xmi:id="_FpATIQPzEd2AA4PGNsuhQQ" routing="Rectilinear" showStereotype="Text"/>
+        <element xmi:type="uml:ControlFlow" href="platform:/resource/PI_PU/Use%20Case%20Model.emx#_Fo3JMAPzEd2AA4PGNsuhQQ?Use%20Case%20Model/1.2.3%20Wyślij%20prośbę%20o%20utworzenie%20konta/%3CControlFlow%3E?"/>
+        <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_FpATIgPzEd2AA4PGNsuhQQ" points="[-159, 27, 6033, -1164]$[-3625, 27, 2567, -1164]$[-3625, 1164, 2567, -27]$[-4260, 1164, 1932, -27]"/>
+        <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_FpATJwPzEd2AA4PGNsuhQQ" id="(0.03937008,0.7353497)"/>
+      </edges>
+      <edges xmi:id="_HhHEQAPzEd2AA4PGNsuhQQ" source="_-UwUUAPwEd2AA4PGNsuhQQ" target="_BftNYAPxEd2AA4PGNsuhQQ">
+        <children xmi:id="_HhHEQwPzEd2AA4PGNsuhQQ" type="ActivityEdgeLabelCompartment">
+          <children xmi:id="_HhHERQPzEd2AA4PGNsuhQQ" type="Stereotype"/>
+          <children xmi:id="_HhHERgPzEd2AA4PGNsuhQQ" type="ActivityEdgeLabel"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_HhHERAPzEd2AA4PGNsuhQQ" y="-186"/>
+        </children>
+        <styles xmi:type="umlnotation:UMLConnectorStyle" xmi:id="_HhHEQQPzEd2AA4PGNsuhQQ" routing="Rectilinear" showStereotype="Text"/>
+        <element xmi:type="uml:ControlFlow" href="platform:/resource/PI_PU/Use%20Case%20Model.emx#_Hg96UAPzEd2AA4PGNsuhQQ?Use%20Case%20Model/1.2.3%20Wyślij%20prośbę%20o%20utworzenie%20konta/%3CControlFlow%3E?"/>
+        <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_HhHEQgPzEd2AA4PGNsuhQQ" points="[10, 9, -239, 10]$[177, 10, -72, 11]"/>
+        <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_HhHERwPzEd2AA4PGNsuhQQ" id="(0.9317585,0.7038437)"/>
+      </edges>
+      <edges xmi:id="_IYPgkwPzEd2AA4PGNsuhQQ" source="_BftNYAPxEd2AA4PGNsuhQQ" target="_PVIsIAPxEd2AA4PGNsuhQQ">
+        <children xmi:id="_IYPglgPzEd2AA4PGNsuhQQ" type="ActivityEdgeLabelCompartment">
+          <children xmi:id="_IYPgmAPzEd2AA4PGNsuhQQ" type="Stereotype"/>
+          <children xmi:id="_IYPgmQPzEd2AA4PGNsuhQQ" type="ActivityEdgeLabel"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_IYPglwPzEd2AA4PGNsuhQQ" y="-186"/>
+        </children>
+        <styles xmi:type="umlnotation:UMLConnectorStyle" xmi:id="_IYPglAPzEd2AA4PGNsuhQQ" routing="Rectilinear" showStereotype="Text"/>
+        <element xmi:type="uml:ControlFlow" href="platform:/resource/PI_PU/Use%20Case%20Model.emx#_IYPgkAPzEd2AA4PGNsuhQQ?Use%20Case%20Model/1.2.3%20Wyślij%20prośbę%20o%20utworzenie%20konta/%3CControlFlow%3E?"/>
+        <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_IYPglQPzEd2AA4PGNsuhQQ" points="[-159, 212, 6535, -1957]$[-3995, 212, 2699, -1957]$[-3995, 2117, 2699, -52]$[-4604, 2117, 2090, -52]"/>
+        <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_IYZRkAPzEd2AA4PGNsuhQQ" id="(0.03937008,0.62066793)"/>
+      </edges>
+      <edges xmi:id="_KgJBMAPzEd2AA4PGNsuhQQ" source="_PVIsIAPxEd2AA4PGNsuhQQ" target="_U08jwQPxEd2AA4PGNsuhQQ">
+        <children xmi:id="_KgJBMwPzEd2AA4PGNsuhQQ" type="ActivityEdgeLabelCompartment">
+          <children xmi:id="_KgJBNQPzEd2AA4PGNsuhQQ" type="Stereotype"/>
+          <children xmi:id="_KgJBNgPzEd2AA4PGNsuhQQ" type="ActivityEdgeLabel"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_KgJBNAPzEd2AA4PGNsuhQQ" y="-186"/>
+        </children>
+        <styles xmi:type="umlnotation:UMLConnectorStyle" xmi:id="_KgJBMQPzEd2AA4PGNsuhQQ" routing="Rectilinear" showStereotype="Text"/>
+        <element xmi:type="uml:ControlFlow" href="platform:/resource/PI_PU/Use%20Case%20Model.emx#_Kf_3QAPzEd2AA4PGNsuhQQ?Use%20Case%20Model/1.2.3%20Wyślij%20prośbę%20o%20utworzenie%20konta/%3CControlFlow%3E?"/>
+        <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_KgJBMgPzEd2AA4PGNsuhQQ" points="[14, -3, -132, 25]$[86, -30, -60, -2]"/>
+        <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_KgSyMAPzEd2AA4PGNsuhQQ" id="(0.9103465,0.68431)"/>
+      </edges>
+      <edges xmi:id="_LMGvUwPzEd2AA4PGNsuhQQ" source="_U08jwQPxEd2AA4PGNsuhQQ" target="_U08jyQPxEd2AA4PGNsuhQQ">
+        <children xmi:id="_LMGvVgPzEd2AA4PGNsuhQQ" type="ActivityEdgeLabelCompartment">
+          <children xmi:id="_LMGvWAPzEd2AA4PGNsuhQQ" type="Stereotype"/>
+          <children xmi:id="_LMGvWQPzEd2AA4PGNsuhQQ" type="ActivityEdgeLabel"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_LMGvVwPzEd2AA4PGNsuhQQ" y="-186"/>
+        </children>
+        <styles xmi:type="umlnotation:UMLConnectorStyle" xmi:id="_LMGvVAPzEd2AA4PGNsuhQQ" routing="Rectilinear" showStereotype="Text"/>
+        <element xmi:type="uml:ControlFlow" href="platform:/resource/PI_PU/Use%20Case%20Model.emx#_LMGvUAPzEd2AA4PGNsuhQQ?Use%20Case%20Model/1.2.3%20Wyślij%20prośbę%20o%20utworzenie%20konta/%3CControlFlow%3E?"/>
+        <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_LMGvVQPzEd2AA4PGNsuhQQ" points="[6, 5, -91, 5]$[97, -24, 0, -24]"/>
+        <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_LMP5QAPzEd2AA4PGNsuhQQ" id="(0.9543307,0.600388)"/>
+        <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_LMP5QQPzEd2AA4PGNsuhQQ" id="left"/>
+      </edges>
+      <edges xmi:id="_hQcJMwPzEd2AA4PGNsuhQQ" source="_U08jyQPxEd2AA4PGNsuhQQ" target="_U08j4QPxEd2AA4PGNsuhQQ">
+        <children xmi:id="_hQlTIAPzEd2AA4PGNsuhQQ" type="ActivityEdgeLabelCompartment">
+          <children xmi:id="_hQlTIgPzEd2AA4PGNsuhQQ" type="Stereotype"/>
+          <children xmi:id="_hQlTIwPzEd2AA4PGNsuhQQ" type="ActivityEdgeLabel"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_hQlTIQPzEd2AA4PGNsuhQQ" y="-186"/>
+        </children>
+        <styles xmi:type="umlnotation:UMLConnectorStyle" xmi:id="_hQcJNAPzEd2AA4PGNsuhQQ" routing="Rectilinear" showStereotype="Text"/>
+        <element xmi:type="uml:ControlFlow" href="platform:/resource/PI_PU/Use%20Case%20Model.emx#_hQcJMAPzEd2AA4PGNsuhQQ?Use%20Case%20Model/1.2.3%20Wyślij%20prośbę%20o%20utworzenie%20konta/tak?"/>
+        <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_hQcJNQPzEd2AA4PGNsuhQQ" points="[4, 653, 3497, -1252]$[4, 1191, 3497, -714]$[-1562, 1191, 1931, -714]"/>
+        <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_hQlTJAPzEd2AA4PGNsuhQQ" id="bottom"/>
+      </edges>
+      <edges xmi:id="_jWsrEQPzEd2AA4PGNsuhQQ" source="_U08jyQPxEd2AA4PGNsuhQQ" target="_U08j0QPxEd2AA4PGNsuhQQ">
+        <children xmi:id="_jWsrFAPzEd2AA4PGNsuhQQ" type="ActivityEdgeLabelCompartment">
+          <children xmi:id="_jWsrFgPzEd2AA4PGNsuhQQ" type="Stereotype"/>
+          <children xmi:id="_jWsrFwPzEd2AA4PGNsuhQQ" type="ActivityEdgeLabel"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_jWsrFQPzEd2AA4PGNsuhQQ" y="-186"/>
+        </children>
+        <styles xmi:type="umlnotation:UMLConnectorStyle" xmi:id="_jWsrEgPzEd2AA4PGNsuhQQ" routing="Rectilinear" showStereotype="Text"/>
+        <element xmi:type="uml:ControlFlow" href="platform:/resource/PI_PU/Use%20Case%20Model.emx#_jWi6EAPzEd2AA4PGNsuhQQ?Use%20Case%20Model/1.2.3%20Wyślij%20prośbę%20o%20utworzenie%20konta/nie?"/>
+        <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_jWsrEwPzEd2AA4PGNsuhQQ" points="[48, 0, -128, 37]$[104, -40, -72, -3]"/>
+        <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_jW11AAPzEd2AA4PGNsuhQQ" id="right"/>
+      </edges>
+      <edges xmi:id="_l1isEAPzEd2AA4PGNsuhQQ" source="_U08j0QPxEd2AA4PGNsuhQQ" target="_U08j2QPxEd2AA4PGNsuhQQ">
+        <children xmi:id="_l1isEwPzEd2AA4PGNsuhQQ" type="ActivityEdgeLabelCompartment">
+          <children xmi:id="_l1isFQPzEd2AA4PGNsuhQQ" type="Stereotype"/>
+          <children xmi:id="_l1isFgPzEd2AA4PGNsuhQQ" type="ActivityEdgeLabel"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_l1isFAPzEd2AA4PGNsuhQQ" y="-186"/>
+        </children>
+        <styles xmi:type="umlnotation:UMLConnectorStyle" xmi:id="_l1isEQPzEd2AA4PGNsuhQQ" routing="Rectilinear" showStereotype="Text"/>
+        <element xmi:type="uml:ControlFlow" href="platform:/resource/PI_PU/Use%20Case%20Model.emx#_l1Y7EAPzEd2AA4PGNsuhQQ?Use%20Case%20Model/1.2.3%20Wyślij%20prośbę%20o%20utworzenie%20konta/%3CControlFlow%3E?"/>
+        <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_l1isEgPzEd2AA4PGNsuhQQ" points="[0, 0, 32, -66]$[15, 25, 47, -41]"/>
+        <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_l1isFwPzEd2AA4PGNsuhQQ" id="(0.7015748,1.0)"/>
+      </edges>
+      <edges xmi:id="_nWjL0APzEd2AA4PGNsuhQQ" source="_U08j2QPxEd2AA4PGNsuhQQ" target="_nV8u4QPzEd2AA4PGNsuhQQ">
+        <children xmi:id="_nWjL0wPzEd2AA4PGNsuhQQ" type="ActivityEdgeLabelCompartment">
+          <children xmi:id="_nWjL1QPzEd2AA4PGNsuhQQ" type="Stereotype"/>
+          <children xmi:id="_nWjL1gPzEd2AA4PGNsuhQQ" type="ActivityEdgeLabel"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_nWjL1APzEd2AA4PGNsuhQQ" y="-186"/>
+        </children>
+        <styles xmi:type="umlnotation:UMLConnectorStyle" xmi:id="_nWjL0QPzEd2AA4PGNsuhQQ" routing="Rectilinear" showStereotype="Text"/>
+        <element xmi:type="uml:ControlFlow" href="platform:/resource/PI_PU/Use%20Case%20Model.emx#_nWQQ4APzEd2AA4PGNsuhQQ?Use%20Case%20Model/1.2.3%20Wyślij%20prośbę%20o%20utworzenie%20konta/%3CControlFlow%3E?"/>
+        <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_nWjL0gPzEd2AA4PGNsuhQQ" points="[-18, -41, 393, 910]$[-411, -951, 0, 0]"/>
+        <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_nWsVwAPzEd2AA4PGNsuhQQ" id="top"/>
+      </edges>
+      <edges xmi:id="_n24RsAPzEd2AA4PGNsuhQQ" source="_U08j4QPxEd2AA4PGNsuhQQ" target="_nV8u4QPzEd2AA4PGNsuhQQ">
+        <children xmi:id="_n24RswPzEd2AA4PGNsuhQQ" type="ActivityEdgeLabelCompartment">
+          <children xmi:id="_n24RtQPzEd2AA4PGNsuhQQ" type="Stereotype"/>
+          <children xmi:id="_n24RtgPzEd2AA4PGNsuhQQ" type="ActivityEdgeLabel"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_n24RtAPzEd2AA4PGNsuhQQ" y="-186"/>
+        </children>
+        <styles xmi:type="umlnotation:UMLConnectorStyle" xmi:id="_n24RsQPzEd2AA4PGNsuhQQ" routing="Rectilinear" showStereotype="Text"/>
+        <element xmi:type="uml:ControlFlow" href="platform:/resource/PI_PU/Use%20Case%20Model.emx#_n2vHwAPzEd2AA4PGNsuhQQ?Use%20Case%20Model/1.2.3%20Wyślij%20prośbę%20o%20utworzenie%20konta/%3CControlFlow%3E?"/>
+        <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_n24RsgPzEd2AA4PGNsuhQQ" points="[0, 0, -113, -60]$[113, 35, 0, -25]"/>
+        <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_n3CCsAPzEd2AA4PGNsuhQQ" id="(0.8181102,1.0)"/>
+        <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_n3CCsQPzEd2AA4PGNsuhQQ" id="top"/>
+      </edges>
+      <edges xmi:id="_oay3EwPzEd2AA4PGNsuhQQ" source="_nV8u4QPzEd2AA4PGNsuhQQ" target="_3MNu4APxEd2AA4PGNsuhQQ">
+        <children xmi:id="_oay3FgPzEd2AA4PGNsuhQQ" type="ActivityEdgeLabelCompartment">
+          <children xmi:id="_oay3GAPzEd2AA4PGNsuhQQ" type="Stereotype"/>
+          <children xmi:id="_oay3GQPzEd2AA4PGNsuhQQ" type="ActivityEdgeLabel"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_oay3FwPzEd2AA4PGNsuhQQ" y="-186"/>
+        </children>
+        <styles xmi:type="umlnotation:UMLConnectorStyle" xmi:id="_oay3FAPzEd2AA4PGNsuhQQ" routing="Rectilinear" showStereotype="Text"/>
+        <element xmi:type="uml:ControlFlow" href="platform:/resource/PI_PU/Use%20Case%20Model.emx#_oay3EAPzEd2AA4PGNsuhQQ?Use%20Case%20Model/1.2.3%20Wyślij%20prośbę%20o%20utworzenie%20konta/%3CControlFlow%3E?"/>
+        <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_oay3FQPzEd2AA4PGNsuhQQ" points="[-25, 0, 366, 32]$[-312, -8, 79, 24]"/>
+        <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_oa8oEAPzEd2AA4PGNsuhQQ" id="left"/>
+      </edges>
+      <edges xmi:id="_phINAAPzEd2AA4PGNsuhQQ" source="_3MNu4APxEd2AA4PGNsuhQQ" target="_fN_bMQPxEd2AA4PGNsuhQQ">
+        <children xmi:id="_phINAwPzEd2AA4PGNsuhQQ" type="ActivityEdgeLabelCompartment">
+          <children xmi:id="_phINBQPzEd2AA4PGNsuhQQ" type="Stereotype"/>
+          <children xmi:id="_phINBgPzEd2AA4PGNsuhQQ" type="ActivityEdgeLabel"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_phINBAPzEd2AA4PGNsuhQQ" y="-186"/>
+        </children>
+        <styles xmi:type="umlnotation:UMLConnectorStyle" xmi:id="_phINAQPzEd2AA4PGNsuhQQ" routing="Rectilinear" showStereotype="Text"/>
+        <element xmi:type="uml:ControlFlow" href="platform:/resource/PI_PU/Use%20Case%20Model.emx#_pg-cAAPzEd2AA4PGNsuhQQ?Use%20Case%20Model/1.2.3%20Wyślij%20prośbę%20o%20utworzenie%20konta/%3CControlFlow%3E?"/>
+        <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_phINAgPzEd2AA4PGNsuhQQ" points="[0, 0, -158, -19]$[98, 26, -60, 7]"/>
+        <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_phINBwPzEd2AA4PGNsuhQQ" id="(0.75115097,1.0)"/>
+      </edges>
+      <edges xmi:id="_qOIc8APzEd2AA4PGNsuhQQ" source="_fN_bMQPxEd2AA4PGNsuhQQ" target="_fN_bOQPxEd2AA4PGNsuhQQ">
+        <children xmi:id="_qOIc8wPzEd2AA4PGNsuhQQ" type="ActivityEdgeLabelCompartment">
+          <children xmi:id="_qOIc9QPzEd2AA4PGNsuhQQ" type="Stereotype"/>
+          <children xmi:id="_qOIc9gPzEd2AA4PGNsuhQQ" type="ActivityEdgeLabel"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_qOIc9APzEd2AA4PGNsuhQQ" y="-186"/>
+        </children>
+        <styles xmi:type="umlnotation:UMLConnectorStyle" xmi:id="_qOIc8QPzEd2AA4PGNsuhQQ" routing="Rectilinear" showStereotype="Text"/>
+        <element xmi:type="uml:ControlFlow" href="platform:/resource/PI_PU/Use%20Case%20Model.emx#_qN-r8APzEd2AA4PGNsuhQQ?Use%20Case%20Model/1.2.3%20Wyślij%20prośbę%20o%20utworzenie%20konta/%3CControlFlow%3E?"/>
+        <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_qOIc8gPzEd2AA4PGNsuhQQ" points="[0, -238, -2196, -1005]$[2202, -238, 6, -1005]$[2202, 136, 6, -631]"/>
+        <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_qOIc9wPzEd2AA4PGNsuhQQ" id="(1.0,0.7643065)"/>
+        <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_qOIc-APzEd2AA4PGNsuhQQ" id="top"/>
+      </edges>
+      <edges xmi:id="_rzdcAwPzEd2AA4PGNsuhQQ" source="_fN_bOQPxEd2AA4PGNsuhQQ" target="_fN_bQQPxEd2AA4PGNsuhQQ">
+        <children xmi:id="_rzdcBgPzEd2AA4PGNsuhQQ" type="ActivityEdgeLabelCompartment">
+          <children xmi:id="_rzdcCAPzEd2AA4PGNsuhQQ" type="Stereotype"/>
+          <children xmi:id="_rzml8APzEd2AA4PGNsuhQQ" type="ActivityEdgeLabel"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_rzdcBwPzEd2AA4PGNsuhQQ" y="-186"/>
+        </children>
+        <styles xmi:type="umlnotation:UMLConnectorStyle" xmi:id="_rzdcBAPzEd2AA4PGNsuhQQ" routing="Rectilinear" showStereotype="Text"/>
+        <element xmi:type="uml:ControlFlow" href="platform:/resource/PI_PU/Use%20Case%20Model.emx#_rzdcAAPzEd2AA4PGNsuhQQ?Use%20Case%20Model/1.2.3%20Wyślij%20prośbę%20o%20utworzenie%20konta/nie?"/>
+        <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_rzdcBQPzEd2AA4PGNsuhQQ" points="[0, 24, -181, 25]$[95, 2, -86, 3]"/>
+        <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_rzml8QPzEd2AA4PGNsuhQQ" id="bottom"/>
+      </edges>
+      <edges xmi:id="_txE_QwPzEd2AA4PGNsuhQQ" source="_fN_bOQPxEd2AA4PGNsuhQQ" target="_fN_bUQPxEd2AA4PGNsuhQQ">
+        <children xmi:id="_txE_RgPzEd2AA4PGNsuhQQ" type="ActivityEdgeLabelCompartment">
+          <children xmi:id="_txE_SAPzEd2AA4PGNsuhQQ" type="Stereotype"/>
+          <children xmi:id="_txE_SQPzEd2AA4PGNsuhQQ" type="ActivityEdgeLabel"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_txE_RwPzEd2AA4PGNsuhQQ" x="-132" y="410"/>
+        </children>
+        <styles xmi:type="umlnotation:UMLConnectorStyle" xmi:id="_txE_RAPzEd2AA4PGNsuhQQ" routing="Rectilinear" showStereotype="Text"/>
+        <element xmi:type="uml:ControlFlow" href="platform:/resource/PI_PU/Use%20Case%20Model.emx#_txE_QAPzEd2AA4PGNsuhQQ?Use%20Case%20Model/1.2.3%20Wyślij%20prośbę%20o%20utworzenie%20konta/tak?"/>
+        <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_txE_RQPzEd2AA4PGNsuhQQ" points="[-48, 0, 72, -60]$[-77, 24, 43, -36]"/>
+        <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_txOJMAPzEd2AA4PGNsuhQQ" id="left"/>
+      </edges>
+      <edges xmi:id="_vSrU4wPzEd2AA4PGNsuhQQ" source="_fN_bQQPxEd2AA4PGNsuhQQ" target="_fN_bSQPxEd2AA4PGNsuhQQ">
+        <children xmi:id="_vS1F4APzEd2AA4PGNsuhQQ" type="ActivityEdgeLabelCompartment">
+          <children xmi:id="_vS1F4gPzEd2AA4PGNsuhQQ" type="Stereotype"/>
+          <children xmi:id="_vS1F4wPzEd2AA4PGNsuhQQ" type="ActivityEdgeLabel"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_vS1F4QPzEd2AA4PGNsuhQQ" y="-186"/>
+        </children>
+        <styles xmi:type="umlnotation:UMLConnectorStyle" xmi:id="_vSrU5APzEd2AA4PGNsuhQQ" routing="Rectilinear" showStereotype="Text"/>
+        <element xmi:type="uml:ControlFlow" href="platform:/resource/PI_PU/Use%20Case%20Model.emx#_vSrU4APzEd2AA4PGNsuhQQ?Use%20Case%20Model/1.2.3%20Wyślij%20prośbę%20o%20utworzenie%20konta/%3CControlFlow%3E?"/>
+        <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_vSrU5QPzEd2AA4PGNsuhQQ" points="[0, 0, -2, -65]$[0, 25, -2, -40]"/>
+        <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_vS1F5APzEd2AA4PGNsuhQQ" id="(0.6023431,1.0)"/>
+      </edges>
+      <edges xmi:id="_wdMAMgPzEd2AA4PGNsuhQQ" source="_fN_bSQPxEd2AA4PGNsuhQQ" target="_wc4eMQPzEd2AA4PGNsuhQQ">
+        <children xmi:id="_wdMANQPzEd2AA4PGNsuhQQ" type="ActivityEdgeLabelCompartment">
+          <children xmi:id="_wdMANwPzEd2AA4PGNsuhQQ" type="Stereotype"/>
+          <children xmi:id="_wdMAOAPzEd2AA4PGNsuhQQ" type="ActivityEdgeLabel"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_wdMANgPzEd2AA4PGNsuhQQ" y="-186"/>
+        </children>
+        <styles xmi:type="umlnotation:UMLConnectorStyle" xmi:id="_wdMAMwPzEd2AA4PGNsuhQQ" routing="Rectilinear" showStereotype="Text"/>
+        <element xmi:type="uml:ControlFlow" href="platform:/resource/PI_PU/Use%20Case%20Model.emx#_wdCPMgPzEd2AA4PGNsuhQQ?Use%20Case%20Model/1.2.3%20Wyślij%20prośbę%20o%20utworzenie%20konta/%3CControlFlow%3E?"/>
+        <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_wdMANAPzEd2AA4PGNsuhQQ" points="[-14, -40, 421, 1210]$[-435, -1250, 0, 0]"/>
+        <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_wdVKIAPzEd2AA4PGNsuhQQ" id="top"/>
+      </edges>
+      <edges xmi:id="_xDoVIgPzEd2AA4PGNsuhQQ" source="_fN_bUQPxEd2AA4PGNsuhQQ" target="_wc4eMQPzEd2AA4PGNsuhQQ">
+        <children xmi:id="_xDoVJQPzEd2AA4PGNsuhQQ" type="ActivityEdgeLabelCompartment">
+          <children xmi:id="_xDoVJwPzEd2AA4PGNsuhQQ" type="Stereotype"/>
+          <children xmi:id="_xDoVKAPzEd2AA4PGNsuhQQ" type="ActivityEdgeLabel"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_xDoVJgPzEd2AA4PGNsuhQQ" y="-186"/>
+        </children>
+        <styles xmi:type="umlnotation:UMLConnectorStyle" xmi:id="_xDoVIwPzEd2AA4PGNsuhQQ" routing="Rectilinear" showStereotype="Text"/>
+        <element xmi:type="uml:ControlFlow" href="platform:/resource/PI_PU/Use%20Case%20Model.emx#_xDekIAPzEd2AA4PGNsuhQQ?Use%20Case%20Model/1.2.3%20Wyślij%20prośbę%20o%20utworzenie%20konta/%3CControlFlow%3E?"/>
+        <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_xDoVJAPzEd2AA4PGNsuhQQ" points="[0, 0, -90, -58]$[90, 34, 0, -24]"/>
+        <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_xDoVKQPzEd2AA4PGNsuhQQ" id="(0.83567226,1.0)"/>
+        <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_xDoVKgPzEd2AA4PGNsuhQQ" id="top"/>
+      </edges>
+      <edges xmi:id="_0ILEMAPzEd2AA4PGNsuhQQ" source="_wc4eMQPzEd2AA4PGNsuhQQ" target="_Jj-IcPsiEdySb8Qfgz-7oQ">
+        <children xmi:id="_0ILEMwPzEd2AA4PGNsuhQQ" type="ActivityEdgeLabelCompartment">
+          <children xmi:id="_0ILENQPzEd2AA4PGNsuhQQ" type="Stereotype"/>
+          <children xmi:id="_0ILENgPzEd2AA4PGNsuhQQ" type="ActivityEdgeLabel"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_0ILENAPzEd2AA4PGNsuhQQ" y="-186"/>
+        </children>
+        <styles xmi:type="umlnotation:UMLConnectorStyle" xmi:id="_0ILEMQPzEd2AA4PGNsuhQQ" routing="Rectilinear" showStereotype="Text"/>
+        <element xmi:type="uml:ControlFlow" href="platform:/resource/PI_PU/Use%20Case%20Model.emx#_0IB6QAPzEd2AA4PGNsuhQQ?Use%20Case%20Model/1.2.3%20Wyślij%20prośbę%20o%20utworzenie%20konta/%3CControlFlow%3E?"/>
+        <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_0ILEMgPzEd2AA4PGNsuhQQ" points="[7, 687, 10035, -2514]$[-10007, 687, 21, -2514]$[-10007, 2585, 21, -616]"/>
+        <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_0IU1MAPzEd2AA4PGNsuhQQ" id="bottom"/>
+        <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_0IU1MQPzEd2AA4PGNsuhQQ" id="top"/>
+      </edges>
+      <edges xmi:id="_4GsIMAPzEd2AA4PGNsuhQQ" source="_Jj-IcPsiEdySb8Qfgz-7oQ" target="_pjVB4APyEd2AA4PGNsuhQQ">
+        <children xmi:id="_4GsIMwPzEd2AA4PGNsuhQQ" type="ActivityEdgeLabelCompartment">
+          <children xmi:id="_4GsINQPzEd2AA4PGNsuhQQ" type="Stereotype"/>
+          <children xmi:id="_4GsINgPzEd2AA4PGNsuhQQ" type="ActivityEdgeLabel"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_4GsINAPzEd2AA4PGNsuhQQ" y="-186"/>
+        </children>
+        <styles xmi:type="umlnotation:UMLConnectorStyle" xmi:id="_4GsIMQPzEd2AA4PGNsuhQQ" routing="Rectilinear" showStereotype="Text"/>
+        <element xmi:type="uml:ControlFlow" href="platform:/resource/PI_PU/Use%20Case%20Model.emx#_4GiXMAPzEd2AA4PGNsuhQQ?Use%20Case%20Model/1.2.3%20Wyślij%20prośbę%20o%20utworzenie%20konta/Utwórz%20konto?"/>
+        <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_4GsIMgPzEd2AA4PGNsuhQQ" points="[0, 24, -232, 48]$[232, -60, 0, -36]"/>
+        <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_4G1SIAPzEd2AA4PGNsuhQQ" id="right"/>
+        <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_4G1SIQPzEd2AA4PGNsuhQQ" id="left"/>
+      </edges>
+      <edges xmi:id="_Bi7ZIgP0Ed2AA4PGNsuhQQ" source="_pjVB4APyEd2AA4PGNsuhQQ" target="_Ev460QPoEd2AA4PGNsuhQQ">
+        <children xmi:id="_Bi7ZJQP0Ed2AA4PGNsuhQQ" type="ActivityEdgeLabelCompartment">
+          <children xmi:id="_Bi7ZJwP0Ed2AA4PGNsuhQQ" type="Stereotype"/>
+          <children xmi:id="_Bi7ZKAP0Ed2AA4PGNsuhQQ" type="ActivityEdgeLabel"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Bi7ZJgP0Ed2AA4PGNsuhQQ" x="-16592" y="-5239"/>
+        </children>
+        <styles xmi:type="umlnotation:UMLConnectorStyle" xmi:id="_Bi7ZIwP0Ed2AA4PGNsuhQQ" routing="Rectilinear" showStereotype="Text"/>
+        <element xmi:type="uml:ControlFlow" href="platform:/resource/PI_PU/Use%20Case%20Model.emx#_BixoIAP0Ed2AA4PGNsuhQQ?Use%20Case%20Model/1.2.3%20Wyślij%20prośbę%20o%20utworzenie%20konta/nie%20-%20któreś%20z%20pól%20niepoprawne?"/>
+        <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_Bi7ZJAP0Ed2AA4PGNsuhQQ" points="[10, -932, 433, 33649]$[11271, -932, 11694, 33649]$[11271, -34739, 11694, -158]$[-212, -34739, 211, -158]"/>
+        <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_Bi7ZKQP0Ed2AA4PGNsuhQQ" id="top"/>
+        <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_EEdhwAP0Ed2AA4PGNsuhQQ" id="(0.93730307,0.56962824)"/>
+      </edges>
+    </contents>
+  </eAnnotations>
+  <packageImport xmi:id="_hc5qZP5tEdy6V8d2FH3wgw">
+    <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
+  </packageImport>
+  <profileApplication xmi:id="_hc5qZf5tEdy6V8d2FH3wgw">
+    <eAnnotations xmi:id="_hc5qZv5tEdy6V8d2FH3wgw" source="http://www.eclipse.org/uml2/2.0.0/UML">
+      <references xmi:type="ecore:EPackage" href="pathmap://UML_PROFILES/Standard.profile.uml#_yzU58YinEdqtvbnfB2L_5w"/>
+    </eAnnotations>
+    <appliedProfile href="pathmap://UML_PROFILES/Standard.profile.uml#_0"/>
+  </profileApplication>
+  <profileApplication xmi:id="_hc5qZ_5tEdy6V8d2FH3wgw">
+    <eAnnotations xmi:id="_hc5qaP5tEdy6V8d2FH3wgw" source="http://www.eclipse.org/uml2/2.0.0/UML">
+      <references xmi:type="ecore:EPackage" href="pathmap://UML2_MSL_PROFILES/Default.epx#_IN8k8MmBEdqBcN1R6EvWUw?Default/Default?"/>
+    </eAnnotations>
+    <appliedProfile href="pathmap://UML2_MSL_PROFILES/Default.epx#_a_S3wNWLEdiy4IqP8whjFA?Default?"/>
+  </profileApplication>
+  <profileApplication xmi:id="_hc5qaf5tEdy6V8d2FH3wgw">
+    <eAnnotations xmi:id="_hc5qav5tEdy6V8d2FH3wgw" source="http://www.eclipse.org/uml2/2.0.0/UML">
+      <references xmi:type="ecore:EPackage" href="pathmap://UML2_MSL_PROFILES/Deployment.epx#_IrdAUMmBEdqBcN1R6EvWUw?Deployment/Deployment?"/>
+    </eAnnotations>
+    <appliedProfile href="pathmap://UML2_MSL_PROFILES/Deployment.epx#_vjbuwOvHEdiDX5bji0iVSA?Deployment?"/>
+  </profileApplication>
+</uml:Model>
