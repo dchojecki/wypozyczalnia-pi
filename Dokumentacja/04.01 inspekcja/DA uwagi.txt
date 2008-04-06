@@ -1,0 +1,31 @@
+1. Po konsultacji z Marcinem (odnosnie klas, ktore bedziemy pisac)
+doszedlem do wniosku, ze z diagramy powinno wyleciec sprawdzenie, czy
+konto istnieje. Jesli dobrze rozumiem, impementujemy przypadek uzycia
+1.2.3 Wyœlij proœbê o utworzenie konta.
+Tam sprawdzenie istnienia konta jest nieujete. W razie problemow
+serwer zwraca blad -- cala filozofia. :) Na diagramie klas masz
+wyjatek, skojarzony z delegacja. W razie problemow bedzie wyrzucony
+przez delegacje. Oczywiscie nalezy sprawdzic, czy ten wyjatek nie
+polecial i moze to byc w wezle decyzyjnym.
+
+2. Sprawdzenie danych oki -- ale to bedzie sie realizowalo
+automagicznie, wiec w sekwencjach mozna pominac. Wsadzenie
+odpowiednich kontrolek do formularza zalatwia walidacje danych (np.
+date picker).
+
+3. Przed wejsciem do wezla koncowego powinienes zmerdzowac
+alternatywne przebiegi (gdzie sie da).
+
+4. Wyswietlanie informacji jest zadaniem systemu.
+
+5. Przyda sie chyba linia zycia dla aplikacji klienckiej. W niej
+wyswietlalyby sie informacje, a przetwarzanie danych po stronie
+serwera.
+
+6. Sugestia Marcina, prawdopodobnie sensowna: Magott w zeszlym
+semestrze chcial, aby diagramy sekwencji byly zagniezdzone. Tj byla w
+jednym jakas akcja zlozona z innego diagramu. Nie pamietam, co trzeba
+wyklikac, aby to zrobic w Rationalu, ale akcja ,,Zalozenie konta'' az
+sie prosi, aby ja rozbudowac w taki wlasnie, zhierarchizowany sposob.
+Zreszta czesc odpowiedzialna za zakladanie konta i tak i tak bedzie
+trzeba zaimplementowac i tez powinna sie znalezc na diagramach.
