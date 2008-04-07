@@ -118,7 +118,7 @@
                   <layoutConstraint xmi:type="notation:Ratio" xmi:id="_IFAvcP75Edyr2fCU1_kWZw" value="0.049606909533827924"/>
                 </children>
                 <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="_0rkbsf6OEdy6V8d2FH3wgw" showStereotype="Label"/>
-                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_0rkbsv6OEdy6V8d2FH3wgw" x="5927" y="264" width="37519" height="7593"/>
+                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_0rkbsv6OEdy6V8d2FH3wgw" x="6375" y="248" width="37519" height="8220"/>
               </children>
               <children xmi:id="_Nu1s0AQqEd2AA4PGNsuhQQ" element="_NtDkIAQqEd2AA4PGNsuhQQ">
                 <children xmi:id="_Nu1s0wQqEd2AA4PGNsuhQQ" element="_NtDkIQQqEd2AA4PGNsuhQQ">
@@ -514,7 +514,7 @@
       <type xmi:type="uml:Node" href="model1.emx#_Nw250O9UEdySJIh14-IBWA?model1/Manager?"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_ipU1Yf1pEdyeefLDGu8ouQ" name="zarzadzanieKontamiDelegacja" end="_kQ4pFf1pEdyeefLDGu8ouQ _es3qEv1tEdyeefLDGu8ouQ _aWbjZf1vEdyeefLDGu8ouQ _VCdEJP12EdyeefLDGu8ouQ _VCdEJf12EdyeefLDGu8ouQ _SH93kf74Edyr2fCU1_kWZw">
-      <type xmi:type="uml:Class" href="ADOModel.emx#_OGxVkPpvEdylZYpHMTjaBQ?WypozyczalniaArch/wypozyczalnia.zarzadzanieKontami/ZarzadzanieKontamiDelegacja?"/>
+      <type xmi:type="uml:Class" href="ADOModel.emx#_OGxVkPpvEdylZYpHMTjaBQ?WypozyczalniaArch/wypozyczalnia.uslugiklient/ZarzadzanieKontamiDelegacja?"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_C7qUUf1qEdyeefLDGu8ouQ" name="formularzNowegoKonta" type="_A_F58P1qEdyeefLDGu8ouQ" end="_3JKPRf1sEdyeefLDGu8ouQ _aWbjZP1vEdyeefLDGu8ouQ _OMDm0f6kEdy6V8d2FH3wgw _b62xgAQoEd2AA4PGNsuhQQ _b62xgQQoEd2AA4PGNsuhQQ"/>
     <ownedAttribute xmi:id="_auz5Ef1tEdyeefLDGu8ouQ" name="kontoTO" end="_es3qE_1tEdyeefLDGu8ouQ _eXphIP6jEdy6V8d2FH3wgw">
@@ -522,7 +522,7 @@
     </ownedAttribute>
     <ownedAttribute xmi:id="_bZTtQf6OEdy6V8d2FH3wgw" name="wyjatek" type="_aZ1NQP6OEdy6V8d2FH3wgw"/>
     <ownedAttribute xmi:id="_2DghMf6dEdy6V8d2FH3wgw" name="zarzadzanieKontamiWyjatek" end="_eXphIf6jEdy6V8d2FH3wgw _OMDm0P6kEdy6V8d2FH3wgw _SH93kv74Edyr2fCU1_kWZw">
-      <type xmi:type="uml:Class" href="ADOModel.emx#_h4NhEPtyEdy2HqC4EDrJ5w?WypozyczalniaArch/ZarzadzanieKontamiWyjatek?"/>
+      <type xmi:type="uml:Class" href="ADOModel.emx#_h4NhEPtyEdy2HqC4EDrJ5w?WypozyczalniaArch/wypozyczalnia.uslugiklient/ZarzadzanieKontamiWyjatek?"/>
     </ownedAttribute>
   </packagedElement>
   <packagedElement xmi:type="uml:SendOperationEvent" xmi:id="_kQ4pFv1pEdyeefLDGu8ouQ" name="SendOperationEvent1"/>

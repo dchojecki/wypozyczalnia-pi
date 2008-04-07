@@ -105,6 +105,9 @@
       <ownedAttribute xmi:id="_c-SNYP6WEdyeyMYmOgY79Q" name="nrPeselKlienta" visibility="private">
         <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
       </ownedAttribute>
+      <ownedAttribute xmi:id="_YcSqMAR7Ed22wLR54_lEgQ" name="skrotHasla" visibility="private">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_162VgPtdEdybiL-CCYIzuw" name="AdresTO">
       <ownedAttribute xmi:id="_h7GkYPtvEdy2HqC4EDrJ5w" name="ulica" visibility="private">
