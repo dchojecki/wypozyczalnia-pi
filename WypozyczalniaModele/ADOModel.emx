@@ -25,7 +25,7 @@
           <styles xmi:type="umlnotation:UMLShapeCompartmentStyle" xmi:id="_OG7Gn_pvEdylZYpHMTjaBQ"/>
         </children>
         <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="_OG7GkfpvEdylZYpHMTjaBQ" showListSignature="true" showStereotype="Label"/>
-        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_OG7GkvpvEdylZYpHMTjaBQ" x="11292" y="22869"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_OG7GkvpvEdylZYpHMTjaBQ" x="11412" y="22824"/>
       </children>
       <children xmi:id="_UUyXAfpvEdylZYpHMTjaBQ" element="_UUyXAPpvEdylZYpHMTjaBQ">
         <children xmi:id="_UUyXBPpvEdylZYpHMTjaBQ" type="ImageCompartment">
@@ -357,114 +357,6 @@
         <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="_Aqinsvp0EdylZYpHMTjaBQ" fillColor="16763850" lineColor="16744576" showStereotype="Label"/>
         <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Aqins_p0EdylZYpHMTjaBQ" x="17496" y="19555"/>
       </children>
-      <children xmi:type="patternNotation:PatternUINode" xmi:id="_jI6YI_trEdy4tvw8w2noEw" element="_jIwnIPtrEdy4tvw8w2noEw">
-        <children xmi:id="_jJDiEPtrEdy4tvw8w2noEw" type="ImageCompartment">
-          <layoutConstraint xmi:type="notation:Size" xmi:id="_jJDiEftrEdy4tvw8w2noEw" width="1320" height="1320"/>
-        </children>
-        <children xmi:id="_jJDiEvtrEdy4tvw8w2noEw" type="Stereotype"/>
-        <children xmi:id="_jJDiE_trEdy4tvw8w2noEw" type="Name"/>
-        <children xmi:id="_jJDiFPtrEdy4tvw8w2noEw" type="Parent"/>
-        <children xmi:id="_jJDiFftrEdy4tvw8w2noEw" visible="false" type="AttributeCompartment">
-          <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_jJDiFvtrEdy4tvw8w2noEw"/>
-        </children>
-        <children xmi:id="_jJDiF_trEdy4tvw8w2noEw" type="CollaborationCompartment">
-          <styles xmi:type="umlnotation:UMLShapeCompartmentStyle" xmi:id="_jJDiGPtrEdy4tvw8w2noEw"/>
-        </children>
-        <children xmi:id="_jJDiGftrEdy4tvw8w2noEw" type="Patterns Pattern Instances">
-          <children xmi:type="patternNotation:PatternUINode" xmi:id="_jJgOAPtrEdy4tvw8w2noEw" type="Patterns Pattern Instance Name">
-            <children xmi:id="_jJgOA_trEdy4tvw8w2noEw" type="Patterns Template Argument List">
-              <children xmi:type="patternNotation:PatternUINode" xmi:id="_jJp_APtrEdy4tvw8w2noEw" type="Patterns Parameter And Value List">
-                <children xmi:type="patternNotation:PatternUINode" xmi:id="_jJzI8PtrEdy4tvw8w2noEw" type="Patterns Template ArgumentCompartment">
-                  <children xmi:type="patternNotation:PatternUINode" xmi:id="_jJzI9PtrEdy4tvw8w2noEw" type="Patterns Template Argument">
-                    <patternInstanceId xmi:id="_jJzI9ftrEdy4tvw8w2noEw" name="Bridge" code="com.ibm.xtools.patterns.framework.uml2.AbstractPatternInstance$Default@681c681c"/>
-                    <parameterId xmi:id="_jJzI9vtrEdy4tvw8w2noEw" name="Abstraction" code="com.ibm.xtools.patterns.content.gof.structural.bridge.BridgePattern$AbstractionParameter"/>
-                  </children>
-                  <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_jJzI8ftrEdy4tvw8w2noEw"/>
-                  <patternInstanceId xmi:id="_jJzI8vtrEdy4tvw8w2noEw" name="Bridge" code="com.ibm.xtools.patterns.framework.uml2.AbstractPatternInstance$Default@681c681c"/>
-                  <parameterId xmi:id="_jJzI8_trEdy4tvw8w2noEw" name="Abstraction" code="com.ibm.xtools.patterns.content.gof.structural.bridge.BridgePattern$AbstractionParameter"/>
-                </children>
-                <children xmi:type="patternNotation:PatternUINode" xmi:id="_jJzI9_trEdy4tvw8w2noEw" type="Patterns Template Argument ValueCompartment">
-                  <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_jJzI-PtrEdy4tvw8w2noEw"/>
-                  <patternInstanceId xmi:id="_jJzI-ftrEdy4tvw8w2noEw" name="Bridge" code="com.ibm.xtools.patterns.framework.uml2.AbstractPatternInstance$Default@681c681c"/>
-                  <parameterId xmi:id="_jJzI-vtrEdy4tvw8w2noEw" name="Abstraction" code="com.ibm.xtools.patterns.content.gof.structural.bridge.BridgePattern$AbstractionParameter"/>
-                </children>
-                <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_jJp_AftrEdy4tvw8w2noEw"/>
-                <patternInstanceId xmi:id="_jJp_AvtrEdy4tvw8w2noEw" name="Bridge" code="com.ibm.xtools.patterns.framework.uml2.AbstractPatternInstance$Default@681c681c"/>
-                <parameterId xmi:id="_jJp_A_trEdy4tvw8w2noEw" name="Abstraction" code="com.ibm.xtools.patterns.content.gof.structural.bridge.BridgePattern$AbstractionParameter"/>
-              </children>
-              <children xmi:type="patternNotation:PatternUINode" xmi:id="_jJzI-_trEdy4tvw8w2noEw" type="Patterns Parameter And Value List">
-                <children xmi:type="patternNotation:PatternUINode" xmi:id="_jJzI__trEdy4tvw8w2noEw" type="Patterns Template ArgumentCompartment">
-                  <children xmi:type="patternNotation:PatternUINode" xmi:id="_jJzJA_trEdy4tvw8w2noEw" type="Patterns Template Argument">
-                    <patternInstanceId xmi:id="_jJzJBPtrEdy4tvw8w2noEw" name="Bridge" code="com.ibm.xtools.patterns.framework.uml2.AbstractPatternInstance$Default@681c681c"/>
-                    <parameterId xmi:id="_jJzJBftrEdy4tvw8w2noEw" name="RefinedAbstraction" code="com.ibm.xtools.patterns.content.gof.structural.bridge.BridgePattern$RefinedAbstractionParameter"/>
-                  </children>
-                  <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_jJzJAPtrEdy4tvw8w2noEw"/>
-                  <patternInstanceId xmi:id="_jJzJAftrEdy4tvw8w2noEw" name="Bridge" code="com.ibm.xtools.patterns.framework.uml2.AbstractPatternInstance$Default@681c681c"/>
-                  <parameterId xmi:id="_jJzJAvtrEdy4tvw8w2noEw" name="RefinedAbstraction" code="com.ibm.xtools.patterns.content.gof.structural.bridge.BridgePattern$RefinedAbstractionParameter"/>
-                </children>
-                <children xmi:type="patternNotation:PatternUINode" xmi:id="_jJzJBvtrEdy4tvw8w2noEw" type="Patterns Template Argument ValueCompartment">
-                  <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_jJzJB_trEdy4tvw8w2noEw"/>
-                  <patternInstanceId xmi:id="_jJzJCPtrEdy4tvw8w2noEw" name="Bridge" code="com.ibm.xtools.patterns.framework.uml2.AbstractPatternInstance$Default@681c681c"/>
-                  <parameterId xmi:id="_jJzJCftrEdy4tvw8w2noEw" name="RefinedAbstraction" code="com.ibm.xtools.patterns.content.gof.structural.bridge.BridgePattern$RefinedAbstractionParameter"/>
-                </children>
-                <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_jJzI_PtrEdy4tvw8w2noEw"/>
-                <patternInstanceId xmi:id="_jJzI_ftrEdy4tvw8w2noEw" name="Bridge" code="com.ibm.xtools.patterns.framework.uml2.AbstractPatternInstance$Default@681c681c"/>
-                <parameterId xmi:id="_jJzI_vtrEdy4tvw8w2noEw" name="RefinedAbstraction" code="com.ibm.xtools.patterns.content.gof.structural.bridge.BridgePattern$RefinedAbstractionParameter"/>
-              </children>
-              <children xmi:type="patternNotation:PatternUINode" xmi:id="_jJzJCvtrEdy4tvw8w2noEw" type="Patterns Parameter And Value List">
-                <children xmi:type="patternNotation:PatternUINode" xmi:id="_jJzJDvtrEdy4tvw8w2noEw" type="Patterns Template ArgumentCompartment">
-                  <children xmi:type="patternNotation:PatternUINode" xmi:id="_jJzJEvtrEdy4tvw8w2noEw" type="Patterns Template Argument">
-                    <patternInstanceId xmi:id="_jJzJE_trEdy4tvw8w2noEw" name="Bridge" code="com.ibm.xtools.patterns.framework.uml2.AbstractPatternInstance$Default@681c681c"/>
-                    <parameterId xmi:id="_jJzJFPtrEdy4tvw8w2noEw" name="Implementor" code="com.ibm.xtools.patterns.content.gof.structural.bridge.BridgePattern$ImplementorParameter"/>
-                  </children>
-                  <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_jJzJD_trEdy4tvw8w2noEw"/>
-                  <patternInstanceId xmi:id="_jJzJEPtrEdy4tvw8w2noEw" name="Bridge" code="com.ibm.xtools.patterns.framework.uml2.AbstractPatternInstance$Default@681c681c"/>
-                  <parameterId xmi:id="_jJzJEftrEdy4tvw8w2noEw" name="Implementor" code="com.ibm.xtools.patterns.content.gof.structural.bridge.BridgePattern$ImplementorParameter"/>
-                </children>
-                <children xmi:type="patternNotation:PatternUINode" xmi:id="_jJzJFftrEdy4tvw8w2noEw" type="Patterns Template Argument ValueCompartment">
-                  <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_jJzJFvtrEdy4tvw8w2noEw"/>
-                  <patternInstanceId xmi:id="_jJzJF_trEdy4tvw8w2noEw" name="Bridge" code="com.ibm.xtools.patterns.framework.uml2.AbstractPatternInstance$Default@681c681c"/>
-                  <parameterId xmi:id="_jJzJGPtrEdy4tvw8w2noEw" name="Implementor" code="com.ibm.xtools.patterns.content.gof.structural.bridge.BridgePattern$ImplementorParameter"/>
-                </children>
-                <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_jJzJC_trEdy4tvw8w2noEw"/>
-                <patternInstanceId xmi:id="_jJzJDPtrEdy4tvw8w2noEw" name="Bridge" code="com.ibm.xtools.patterns.framework.uml2.AbstractPatternInstance$Default@681c681c"/>
-                <parameterId xmi:id="_jJzJDftrEdy4tvw8w2noEw" name="Implementor" code="com.ibm.xtools.patterns.content.gof.structural.bridge.BridgePattern$ImplementorParameter"/>
-              </children>
-              <children xmi:type="patternNotation:PatternUINode" xmi:id="_jJzJGftrEdy4tvw8w2noEw" type="Patterns Parameter And Value List">
-                <children xmi:type="patternNotation:PatternUINode" xmi:id="_jJ858PtrEdy4tvw8w2noEw" type="Patterns Template ArgumentCompartment">
-                  <children xmi:type="patternNotation:PatternUINode" xmi:id="_jJ859PtrEdy4tvw8w2noEw" type="Patterns Template Argument">
-                    <patternInstanceId xmi:id="_jJ859ftrEdy4tvw8w2noEw" name="Bridge" code="com.ibm.xtools.patterns.framework.uml2.AbstractPatternInstance$Default@681c681c"/>
-                    <parameterId xmi:id="_jJ859vtrEdy4tvw8w2noEw" name="ConcreteImplementor" code="com.ibm.xtools.patterns.content.gof.structural.bridge.BridgePattern$ConcreteImplementorParameter"/>
-                  </children>
-                  <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_jJ858ftrEdy4tvw8w2noEw"/>
-                  <patternInstanceId xmi:id="_jJ858vtrEdy4tvw8w2noEw" name="Bridge" code="com.ibm.xtools.patterns.framework.uml2.AbstractPatternInstance$Default@681c681c"/>
-                  <parameterId xmi:id="_jJ858_trEdy4tvw8w2noEw" name="ConcreteImplementor" code="com.ibm.xtools.patterns.content.gof.structural.bridge.BridgePattern$ConcreteImplementorParameter"/>
-                </children>
-                <children xmi:type="patternNotation:PatternUINode" xmi:id="_jJ859_trEdy4tvw8w2noEw" type="Patterns Template Argument ValueCompartment">
-                  <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_jJ85-PtrEdy4tvw8w2noEw"/>
-                  <patternInstanceId xmi:id="_jJ85-ftrEdy4tvw8w2noEw" name="Bridge" code="com.ibm.xtools.patterns.framework.uml2.AbstractPatternInstance$Default@681c681c"/>
-                  <parameterId xmi:id="_jJ85-vtrEdy4tvw8w2noEw" name="ConcreteImplementor" code="com.ibm.xtools.patterns.content.gof.structural.bridge.BridgePattern$ConcreteImplementorParameter"/>
-                </children>
-                <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_jJzJGvtrEdy4tvw8w2noEw"/>
-                <patternInstanceId xmi:id="_jJzJG_trEdy4tvw8w2noEw" name="Bridge" code="com.ibm.xtools.patterns.framework.uml2.AbstractPatternInstance$Default@681c681c"/>
-                <parameterId xmi:id="_jJzJHPtrEdy4tvw8w2noEw" name="ConcreteImplementor" code="com.ibm.xtools.patterns.content.gof.structural.bridge.BridgePattern$ConcreteImplementorParameter"/>
-              </children>
-              <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_jJgOBPtrEdy4tvw8w2noEw"/>
-            </children>
-            <styles xmi:type="notation:DrawerStyle" xmi:id="_jJgOAftrEdy4tvw8w2noEw"/>
-            <patternInstanceId xmi:id="_jJgOAvtrEdy4tvw8w2noEw" name="Bridge" code="com.ibm.xtools.patterns.framework.uml2.AbstractPatternInstance$Default@38c438c4"/>
-          </children>
-          <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_jJDiGvtrEdy4tvw8w2noEw"/>
-        </children>
-        <children xmi:id="_jJDiG_trEdy4tvw8w2noEw" visible="false" type="Patterns Overview">
-          <styles xmi:type="umlnotation:UMLShapeCompartmentStyle" xmi:id="_jJDiHPtrEdy4tvw8w2noEw"/>
-        </children>
-        <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="_jI6YJPtrEdy4tvw8w2noEw" showStereotype="Label"/>
-        <styles xmi:type="patternNotation:PatternParameterStyle" xmi:id="_jI6YJftrEdy4tvw8w2noEw"/>
-        <styles xmi:type="patternNotation:PatternShapeStyle" xmi:id="_jI6YJvtrEdy4tvw8w2noEw"/>
-        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_jI6YJ_trEdy4tvw8w2noEw" x="30749" y="28213"/>
-        <patternInstanceId xmi:id="_jI6YKPtrEdy4tvw8w2noEw"/>
-      </children>
       <children xmi:id="_qqnHoPtuEdy4tvw8w2noEw">
         <children xmi:id="_qqnHo_tuEdy4tvw8w2noEw" type="ImageCompartment">
           <layoutConstraint xmi:type="notation:Size" xmi:id="_qqnHpPtuEdy4tvw8w2noEw" width="1320" height="1320"/>
@@ -635,6 +527,95 @@
         <styles xmi:type="notation:ShapeStyle" xmi:id="_B8XGswNNEd2omajFVrQe6g" description="Nr Diagramu: 1.4&#xD;&#xA;Tytuł:&#xD;&#xA;Zarządzanie kontami" fillColor="13369343" lineColor="6737151"/>
         <element xsi:nil="true"/>
         <layoutConstraint xmi:type="notation:Bounds" xmi:id="_B8XGtANNEd2omajFVrQe6g" x="555" y="1190"/>
+      </children>
+      <children xmi:type="patternNotation:PatternUINode" xmi:id="__qny4wQjEd2rGcRigrxr3g" element="__qeo8AQjEd2rGcRigrxr3g">
+        <children xmi:id="__qxj4AQjEd2rGcRigrxr3g" type="ImageCompartment">
+          <layoutConstraint xmi:type="notation:Size" xmi:id="__qxj4QQjEd2rGcRigrxr3g" width="1320" height="1320"/>
+        </children>
+        <children xmi:id="__qxj4gQjEd2rGcRigrxr3g" type="Stereotype"/>
+        <children xmi:id="__qxj4wQjEd2rGcRigrxr3g" type="Name"/>
+        <children xmi:id="__qxj5AQjEd2rGcRigrxr3g" type="Parent"/>
+        <children xmi:id="__q6t0AQjEd2rGcRigrxr3g" visible="false" type="AttributeCompartment">
+          <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="__q6t0QQjEd2rGcRigrxr3g"/>
+        </children>
+        <children xmi:id="__q6t0gQjEd2rGcRigrxr3g" type="CollaborationCompartment">
+          <styles xmi:type="umlnotation:UMLShapeCompartmentStyle" xmi:id="__q6t0wQjEd2rGcRigrxr3g"/>
+        </children>
+        <children xmi:id="__q6t1AQjEd2rGcRigrxr3g" type="Patterns Pattern Instances">
+          <children xmi:type="patternNotation:PatternUINode" xmi:id="__rEe0AQjEd2rGcRigrxr3g" type="Patterns Pattern Instance Name">
+            <children xmi:id="__rEe0wQjEd2rGcRigrxr3g" type="Patterns Template Argument List">
+              <children xmi:type="patternNotation:PatternUINode" xmi:id="__rXZwAQjEd2rGcRigrxr3g" type="Patterns Parameter And Value List">
+                <children xmi:type="patternNotation:PatternUINode" xmi:id="__rXZxAQjEd2rGcRigrxr3g" type="Patterns Template ArgumentCompartment">
+                  <children xmi:type="patternNotation:PatternUINode" xmi:id="__rhKwAQjEd2rGcRigrxr3g" type="Patterns Template Argument">
+                    <patternInstanceId xmi:id="__rhKwQQjEd2rGcRigrxr3g" name="Proxy" code="com.ibm.xtools.patterns.framework.uml2.AbstractPatternInstance$Default@422c422c"/>
+                    <parameterId xmi:id="__rhKwgQjEd2rGcRigrxr3g" name="Proxy" code="com.ibm.xtools.patterns.content.gof.structural.proxy.ProxyPattern$ProxyParameter"/>
+                  </children>
+                  <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="__rXZxQQjEd2rGcRigrxr3g"/>
+                  <patternInstanceId xmi:id="__rXZxgQjEd2rGcRigrxr3g" name="Proxy" code="com.ibm.xtools.patterns.framework.uml2.AbstractPatternInstance$Default@422c422c"/>
+                  <parameterId xmi:id="__rXZxwQjEd2rGcRigrxr3g" name="Proxy" code="com.ibm.xtools.patterns.content.gof.structural.proxy.ProxyPattern$ProxyParameter"/>
+                </children>
+                <children xmi:type="patternNotation:PatternUINode" xmi:id="__rhKwwQjEd2rGcRigrxr3g" type="Patterns Template Argument ValueCompartment">
+                  <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="__rhKxAQjEd2rGcRigrxr3g"/>
+                  <patternInstanceId xmi:id="__rhKxQQjEd2rGcRigrxr3g" name="Proxy" code="com.ibm.xtools.patterns.framework.uml2.AbstractPatternInstance$Default@422c422c"/>
+                  <parameterId xmi:id="__rhKxgQjEd2rGcRigrxr3g" name="Proxy" code="com.ibm.xtools.patterns.content.gof.structural.proxy.ProxyPattern$ProxyParameter"/>
+                </children>
+                <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="__rXZwQQjEd2rGcRigrxr3g"/>
+                <patternInstanceId xmi:id="__rXZwgQjEd2rGcRigrxr3g" name="Proxy" code="com.ibm.xtools.patterns.framework.uml2.AbstractPatternInstance$Default@422c422c"/>
+                <parameterId xmi:id="__rXZwwQjEd2rGcRigrxr3g" name="Proxy" code="com.ibm.xtools.patterns.content.gof.structural.proxy.ProxyPattern$ProxyParameter"/>
+              </children>
+              <children xmi:type="patternNotation:PatternUINode" xmi:id="__rhKxwQjEd2rGcRigrxr3g" type="Patterns Parameter And Value List">
+                <children xmi:type="patternNotation:PatternUINode" xmi:id="__rhKywQjEd2rGcRigrxr3g" type="Patterns Template ArgumentCompartment">
+                  <children xmi:type="patternNotation:PatternUINode" xmi:id="__rhKzwQjEd2rGcRigrxr3g" type="Patterns Template Argument">
+                    <patternInstanceId xmi:id="__rhK0AQjEd2rGcRigrxr3g" name="Proxy" code="com.ibm.xtools.patterns.framework.uml2.AbstractPatternInstance$Default@422c422c"/>
+                    <parameterId xmi:id="__rhK0QQjEd2rGcRigrxr3g" name="Subject" code="com.ibm.xtools.patterns.content.gof.structural.proxy.ProxyPattern$SubjectParameter"/>
+                  </children>
+                  <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="__rhKzAQjEd2rGcRigrxr3g"/>
+                  <patternInstanceId xmi:id="__rhKzQQjEd2rGcRigrxr3g" name="Proxy" code="com.ibm.xtools.patterns.framework.uml2.AbstractPatternInstance$Default@422c422c"/>
+                  <parameterId xmi:id="__rhKzgQjEd2rGcRigrxr3g" name="Subject" code="com.ibm.xtools.patterns.content.gof.structural.proxy.ProxyPattern$SubjectParameter"/>
+                </children>
+                <children xmi:type="patternNotation:PatternUINode" xmi:id="__rhK0gQjEd2rGcRigrxr3g" type="Patterns Template Argument ValueCompartment">
+                  <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="__rhK0wQjEd2rGcRigrxr3g"/>
+                  <patternInstanceId xmi:id="__rhK1AQjEd2rGcRigrxr3g" name="Proxy" code="com.ibm.xtools.patterns.framework.uml2.AbstractPatternInstance$Default@422c422c"/>
+                  <parameterId xmi:id="__rhK1QQjEd2rGcRigrxr3g" name="Subject" code="com.ibm.xtools.patterns.content.gof.structural.proxy.ProxyPattern$SubjectParameter"/>
+                </children>
+                <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="__rhKyAQjEd2rGcRigrxr3g"/>
+                <patternInstanceId xmi:id="__rhKyQQjEd2rGcRigrxr3g" name="Proxy" code="com.ibm.xtools.patterns.framework.uml2.AbstractPatternInstance$Default@422c422c"/>
+                <parameterId xmi:id="__rhKygQjEd2rGcRigrxr3g" name="Subject" code="com.ibm.xtools.patterns.content.gof.structural.proxy.ProxyPattern$SubjectParameter"/>
+              </children>
+              <children xmi:type="patternNotation:PatternUINode" xmi:id="__rhK1gQjEd2rGcRigrxr3g" type="Patterns Parameter And Value List">
+                <children xmi:type="patternNotation:PatternUINode" xmi:id="__rhK2gQjEd2rGcRigrxr3g" type="Patterns Template ArgumentCompartment">
+                  <children xmi:type="patternNotation:PatternUINode" xmi:id="__rhK3gQjEd2rGcRigrxr3g" type="Patterns Template Argument">
+                    <patternInstanceId xmi:id="__rhK3wQjEd2rGcRigrxr3g" name="Proxy" code="com.ibm.xtools.patterns.framework.uml2.AbstractPatternInstance$Default@422c422c"/>
+                    <parameterId xmi:id="__rhK4AQjEd2rGcRigrxr3g" name="RealSubject" code="com.ibm.xtools.patterns.content.gof.structural.proxy.ProxyPattern$RealParameter"/>
+                  </children>
+                  <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="__rhK2wQjEd2rGcRigrxr3g"/>
+                  <patternInstanceId xmi:id="__rhK3AQjEd2rGcRigrxr3g" name="Proxy" code="com.ibm.xtools.patterns.framework.uml2.AbstractPatternInstance$Default@422c422c"/>
+                  <parameterId xmi:id="__rhK3QQjEd2rGcRigrxr3g" name="RealSubject" code="com.ibm.xtools.patterns.content.gof.structural.proxy.ProxyPattern$RealParameter"/>
+                </children>
+                <children xmi:type="patternNotation:PatternUINode" xmi:id="__rhK4QQjEd2rGcRigrxr3g" type="Patterns Template Argument ValueCompartment">
+                  <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="__rhK4gQjEd2rGcRigrxr3g"/>
+                  <patternInstanceId xmi:id="__rhK4wQjEd2rGcRigrxr3g" name="Proxy" code="com.ibm.xtools.patterns.framework.uml2.AbstractPatternInstance$Default@422c422c"/>
+                  <parameterId xmi:id="__rhK5AQjEd2rGcRigrxr3g" name="RealSubject" code="com.ibm.xtools.patterns.content.gof.structural.proxy.ProxyPattern$RealParameter"/>
+                </children>
+                <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="__rhK1wQjEd2rGcRigrxr3g"/>
+                <patternInstanceId xmi:id="__rhK2AQjEd2rGcRigrxr3g" name="Proxy" code="com.ibm.xtools.patterns.framework.uml2.AbstractPatternInstance$Default@422c422c"/>
+                <parameterId xmi:id="__rhK2QQjEd2rGcRigrxr3g" name="RealSubject" code="com.ibm.xtools.patterns.content.gof.structural.proxy.ProxyPattern$RealParameter"/>
+              </children>
+              <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="__rEe1AQjEd2rGcRigrxr3g"/>
+            </children>
+            <styles xmi:type="notation:DrawerStyle" xmi:id="__rEe0QQjEd2rGcRigrxr3g"/>
+            <patternInstanceId xmi:id="__rEe0gQjEd2rGcRigrxr3g" name="Proxy" code="com.ibm.xtools.patterns.framework.uml2.AbstractPatternInstance$Default@b0a0b0a"/>
+          </children>
+          <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="__q6t1QQjEd2rGcRigrxr3g"/>
+        </children>
+        <children xmi:id="__q6t1gQjEd2rGcRigrxr3g" visible="false" type="Patterns Overview">
+          <styles xmi:type="umlnotation:UMLShapeCompartmentStyle" xmi:id="__q6t1wQjEd2rGcRigrxr3g"/>
+        </children>
+        <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="__qny5AQjEd2rGcRigrxr3g" showStereotype="Label"/>
+        <styles xmi:type="patternNotation:PatternParameterStyle" xmi:id="__qny5QQjEd2rGcRigrxr3g"/>
+        <styles xmi:type="patternNotation:PatternShapeStyle" xmi:id="__qny5gQjEd2rGcRigrxr3g"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="__qny5wQjEd2rGcRigrxr3g" x="30109" y="21404"/>
+        <patternInstanceId xmi:id="__qny6AQjEd2rGcRigrxr3g"/>
       </children>
       <styles xmi:type="umlnotation:UMLDiagramStyle" xmi:id="_NNQTo_pvEdylZYpHMTjaBQ"/>
       <edges xmi:id="_G4IIRPpwEdylZYpHMTjaBQ" element="_jZo2RPpvEdylZYpHMTjaBQ" source="_iFl0cPpvEdylZYpHMTjaBQ" target="_UUyXAfpvEdylZYpHMTjaBQ">
@@ -995,36 +976,6 @@
         <styles xmi:type="umlnotation:UMLConnectorStyle" xmi:id="_k1KaYftyEdy2HqC4EDrJ5w" showStereotype="Text"/>
         <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_k1KaYvtyEdy2HqC4EDrJ5w" points="[0, 2037, -1879, -3414]$[1879, 3625, 0, -1826]"/>
       </edges>
-      <edges xmi:id="_U7Uh8Pt0Edy2HqC4EDrJ5w" element="_AE-e0ftsEdy4tvw8w2noEw" source="_OG7GkPpvEdylZYpHMTjaBQ" target="_jI6YI_trEdy4tvw8w2noEw">
-        <children xmi:id="_U7Uh8_t0Edy2HqC4EDrJ5w" type="KindLabel">
-          <children xmi:id="_U7Uh9ft0Edy2HqC4EDrJ5w" type="Stereotype"/>
-          <children xmi:id="_U7Uh9_t0Edy2HqC4EDrJ5w" type="Kind"/>
-          <children xmi:id="_U7Uh9vt0Edy2HqC4EDrJ5w" type="Name"/>
-          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_U7Uh9Pt0Edy2HqC4EDrJ5w" y="-530"/>
-        </children>
-        <styles xmi:type="umlnotation:UMLConnectorStyle" xmi:id="_U7Uh8ft0Edy2HqC4EDrJ5w" showStereotype="Text"/>
-        <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_U7Uh8vt0Edy2HqC4EDrJ5w" points="[0, 2037, -11668, -3414]$[11668, 3625, 0, -1826]"/>
-      </edges>
-      <edges xmi:id="_U7Uh-Pt0Edy2HqC4EDrJ5w" element="_60D-0PtrEdy4tvw8w2noEw" source="_iFl0cPpvEdylZYpHMTjaBQ" target="_jI6YI_trEdy4tvw8w2noEw">
-        <children xmi:id="_U7Uh-_t0Edy2HqC4EDrJ5w" type="KindLabel">
-          <children xmi:id="_U7Uh_ft0Edy2HqC4EDrJ5w" type="Stereotype"/>
-          <children xmi:id="_U7Uh__t0Edy2HqC4EDrJ5w" type="Kind"/>
-          <children xmi:id="_U7Uh_vt0Edy2HqC4EDrJ5w" type="Name"/>
-          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_U7Uh_Pt0Edy2HqC4EDrJ5w" y="-530"/>
-        </children>
-        <styles xmi:type="umlnotation:UMLConnectorStyle" xmi:id="_U7Uh-ft0Edy2HqC4EDrJ5w" showStereotype="Text"/>
-        <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_U7Uh-vt0Edy2HqC4EDrJ5w" points="[0, 2037, -2143, -3414]$[2143, 3625, 0, -1826]"/>
-      </edges>
-      <edges xmi:id="_U7UiAPt0Edy2HqC4EDrJ5w" element="_6Pi8gPtrEdy4tvw8w2noEw" source="_UUyXAfpvEdylZYpHMTjaBQ" target="_jI6YI_trEdy4tvw8w2noEw">
-        <children xmi:id="_U7eS8Pt0Edy2HqC4EDrJ5w" type="KindLabel">
-          <children xmi:id="_U7eS8vt0Edy2HqC4EDrJ5w" type="Stereotype"/>
-          <children xmi:id="_U7eS9Pt0Edy2HqC4EDrJ5w" type="Kind"/>
-          <children xmi:id="_U7eS8_t0Edy2HqC4EDrJ5w" type="Name"/>
-          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_U7eS8ft0Edy2HqC4EDrJ5w" y="-530"/>
-        </children>
-        <styles xmi:type="umlnotation:UMLConnectorStyle" xmi:id="_U7UiAft0Edy2HqC4EDrJ5w" showStereotype="Text"/>
-        <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_U7UiAvt0Edy2HqC4EDrJ5w" points="[2169, 1984, -12489, -17198]$[6879, 6271, -7779, -12911]$[11007, 10001, -3651, -9181]$[13943, 17383, -715, -1799]"/>
-      </edges>
       <edges xmi:id="_LcGCIP1bEdyQx4c0_KMOBw" element="_gyvVgPtsEdy4tvw8w2noEw" source="_OG7GmvpvEdylZYpHMTjaBQ" target="_UUyXAfpvEdylZYpHMTjaBQ">
         <children xmi:id="_LcGCI_1bEdyQx4c0_KMOBw" type="NameLabel">
           <children xmi:id="_LcPMEP1bEdyQx4c0_KMOBw" type="Stereotype"/>
@@ -1083,16 +1034,6 @@
         </children>
         <styles xmi:type="umlnotation:UMLConnectorStyle" xmi:id="_LcPML_1bEdyQx4c0_KMOBw" showStereotype="Text"/>
         <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_LcPMMP1bEdyQx4c0_KMOBw" points="[0, 0, 0, 0]$[0, 0, 0, 0]"/>
-      </edges>
-      <edges xmi:id="_LcY9Ff1bEdyQx4c0_KMOBw" element="_AE-e0ftsEdy4tvw8w2noEw" source="_OG7GmvpvEdylZYpHMTjaBQ" target="_jI6YI_trEdy4tvw8w2noEw">
-        <children xmi:id="_LcY9GP1bEdyQx4c0_KMOBw" type="KindLabel">
-          <children xmi:id="_LcY9Gv1bEdyQx4c0_KMOBw" type="Stereotype"/>
-          <children xmi:id="_LcY9HP1bEdyQx4c0_KMOBw" type="Kind"/>
-          <children xmi:id="_LcY9G_1bEdyQx4c0_KMOBw" type="Name"/>
-          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_LcY9Gf1bEdyQx4c0_KMOBw" y="-186"/>
-        </children>
-        <styles xmi:type="umlnotation:UMLConnectorStyle" xmi:id="_LcY9Fv1bEdyQx4c0_KMOBw" showStereotype="Text"/>
-        <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_LcY9F_1bEdyQx4c0_KMOBw" points="[0, 0, 0, 0]$[0, 0, 0, 0]"/>
       </edges>
       <edges xmi:id="_LcY9Hf1bEdyQx4c0_KMOBw" element="_k1ApYPtyEdy2HqC4EDrJ5w" source="_OG7GmvpvEdylZYpHMTjaBQ" target="_h4XSEPtyEdy2HqC4EDrJ5w">
         <children xmi:id="_LcY9IP1bEdyQx4c0_KMOBw" type="NameLabel">
@@ -1590,10 +1531,11 @@
       </contents>
     </eAnnotations>
     <packagedElement xmi:type="uml:Class" xmi:id="_h4NhEPtyEdy2HqC4EDrJ5w" name="ZarzadzanieKontamiWyjatek"/>
-    <packagedElement xmi:type="uml:Class" xmi:id="_OGxVkPpvEdylZYpHMTjaBQ" name="ZarzadzanieKontamiDelegacja" clientDependency="_W6XcsfpwEdylZYpHMTjaBQ _AE-e0ftsEdy4tvw8w2noEw _k1ApYPtyEdy2HqC4EDrJ5w">
+    <packagedElement xmi:type="uml:Class" xmi:id="_OGxVkPpvEdylZYpHMTjaBQ" name="ZarzadzanieKontamiDelegacja" clientDependency="_W6XcsfpwEdylZYpHMTjaBQ _k1ApYPtyEdy2HqC4EDrJ5w _FCGN4QQkEd2rGcRigrxr3g _FCGN4wQkEd2rGcRigrxr3g" isAbstract="true">
       <eAnnotations xmi:id="_VWzNovpvEdylZYpHMTjaBQ" source="http://www.eclipse.org/uml2/2.0.0/UML">
         <details xmi:id="_199ykPtrEdy4tvw8w2noEw" key="Singleton"/>
-        <details xmi:id="_AE-e0vtsEdy4tvw8w2noEw" key="RefinedAbstraction"/>
+        <details xmi:id="_vPpOMgQjEd2rGcRigrxr3g" key="Abstraction"/>
+        <details xmi:id="_FCGN4gQkEd2rGcRigrxr3g" key="Proxy"/>
       </eAnnotations>
       <ownedComment xmi:id="_9kNI4PpzEdylZYpHMTjaBQ" annotatedElement="_OGxVkPpvEdylZYpHMTjaBQ">
         <body>po stronie klienta</body>
@@ -1602,6 +1544,9 @@
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_gyvVg_tsEdy4tvw8w2noEw" value="1"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_gyvVgvtsEdy4tvw8w2noEw" value="1"/>
       </ownedAttribute>
+      <ownedAttribute xmi:id="_vPy_MQQjEd2rGcRigrxr3g" name="implementor" visibility="private" type="_UUyXAPpvEdylZYpHMTjaBQ" aggregation="shared" association="_vPy_MAQjEd2rGcRigrxr3g"/>
+      <ownedAttribute xmi:id="_FCGN5QQkEd2rGcRigrxr3g" name="realSubject" visibility="private" type="_iFcqgPpvEdylZYpHMTjaBQ" association="_FCGN5AQkEd2rGcRigrxr3g"/>
+      <interfaceRealization xmi:id="_FCGN4wQkEd2rGcRigrxr3g" supplier="_UUyXAPpvEdylZYpHMTjaBQ" client="_OGxVkPpvEdylZYpHMTjaBQ" contract="_UUyXAPpvEdylZYpHMTjaBQ"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Collaboration" xmi:id="_VkFmQPpwEdylZYpHMTjaBQ" name="Singleton">
       <eAnnotations xmi:id="_VkFmQfpwEdylZYpHMTjaBQ" source="http://www.eclipse.org/uml2/2.0.0/UML">
@@ -1615,7 +1560,6 @@
       </templateBinding>
     </packagedElement>
     <packagedElement xmi:type="uml:Abstraction" xmi:id="_W6XcsfpwEdylZYpHMTjaBQ" supplier="_VkFmQPpwEdylZYpHMTjaBQ" client="_OGxVkPpvEdylZYpHMTjaBQ"/>
-    <packagedElement xmi:type="uml:Abstraction" xmi:id="_AE-e0ftsEdy4tvw8w2noEw" supplier="_jIwnIPtrEdy4tvw8w2noEw" client="_OGxVkPpvEdylZYpHMTjaBQ"/>
     <packagedElement xmi:type="uml:Association" xmi:id="_gyvVgPtsEdy4tvw8w2noEw" memberEnd="_gyvVgftsEdy4tvw8w2noEw _gy4fcPtsEdy4tvw8w2noEw">
       <ownedEnd xmi:id="_gy4fcPtsEdy4tvw8w2noEw" name="" visibility="private" type="_OGxVkPpvEdylZYpHMTjaBQ" association="_gyvVgPtsEdy4tvw8w2noEw">
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_gy4fcvtsEdy4tvw8w2noEw" value="*"/>
@@ -1623,23 +1567,13 @@
       </ownedEnd>
     </packagedElement>
     <packagedElement xmi:type="uml:Dependency" xmi:id="_k1ApYPtyEdy2HqC4EDrJ5w" supplier="_h4NhEPtyEdy2HqC4EDrJ5w" client="_OGxVkPpvEdylZYpHMTjaBQ"/>
-  </packagedElement>
-  <packagedElement xmi:type="uml:Collaboration" xmi:id="_jIwnIPtrEdy4tvw8w2noEw" name="Bridge">
-    <eAnnotations xmi:id="_jI6YIPtrEdy4tvw8w2noEw" source="http://www.eclipse.org/uml2/2.0.0/UML">
-      <details xmi:id="_jI6YIftrEdy4tvw8w2noEw" key="Pattern Instance"/>
-    </eAnnotations>
-    <templateBinding xmi:id="_jI6YIvtrEdy4tvw8w2noEw">
-      <signature xmi:type="uml:RedefinableTemplateSignature" href="pathmap://DESIGN_PATTERNS_LIBRARY/Bridge/Bridge.emx#_iV29hrvgEdikrqU7LjCFqw?Bridge/Bridge/%3CRedefinableTemplateSignature%3E?"/>
-      <parameterSubstitution xmi:id="_6PZykPtrEdy4tvw8w2noEw" actual="_UUyXAPpvEdylZYpHMTjaBQ">
-        <formal xmi:type="uml:ClassifierTemplateParameter" href="pathmap://DESIGN_PATTERNS_LIBRARY/Bridge/Bridge.emx#_iV29h7vgEdikrqU7LjCFqw?Bridge/Bridge/%3CRedefinableTemplateSignature%3E/%3CClassifierTemplateParameter%3E?"/>
-      </parameterSubstitution>
-      <parameterSubstitution xmi:id="_6z6N0PtrEdy4tvw8w2noEw" actual="_iFcqgPpvEdylZYpHMTjaBQ">
-        <formal xmi:type="uml:ClassifierTemplateParameter" href="pathmap://DESIGN_PATTERNS_LIBRARY/Bridge/Bridge.emx#_iV29i7vgEdikrqU7LjCFqw?Bridge/Bridge/%3CRedefinableTemplateSignature%3E/%3CClassifierTemplateParameter%3E?"/>
-      </parameterSubstitution>
-      <parameterSubstitution xmi:id="_AE-e0PtsEdy4tvw8w2noEw" actual="_OGxVkPpvEdylZYpHMTjaBQ">
-        <formal xmi:type="uml:ClassifierTemplateParameter" href="pathmap://DESIGN_PATTERNS_LIBRARY/Bridge/Bridge.emx#_iV29j7vgEdikrqU7LjCFqw?Bridge/Bridge/%3CRedefinableTemplateSignature%3E/%3CClassifierTemplateParameter%3E?"/>
-      </parameterSubstitution>
-    </templateBinding>
+    <packagedElement xmi:type="uml:Association" xmi:id="_vPy_MAQjEd2rGcRigrxr3g" memberEnd="_vPy_MQQjEd2rGcRigrxr3g _vPy_MgQjEd2rGcRigrxr3g">
+      <ownedEnd xmi:id="_vPy_MgQjEd2rGcRigrxr3g" name="" type="_OGxVkPpvEdylZYpHMTjaBQ" association="_vPy_MAQjEd2rGcRigrxr3g"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Abstraction" xmi:id="_FCGN4QQkEd2rGcRigrxr3g" supplier="__qeo8AQjEd2rGcRigrxr3g" client="_OGxVkPpvEdylZYpHMTjaBQ"/>
+    <packagedElement xmi:type="uml:Association" xmi:id="_FCGN5AQkEd2rGcRigrxr3g" memberEnd="_FCGN5QQkEd2rGcRigrxr3g _FCGN5gQkEd2rGcRigrxr3g">
+      <ownedEnd xmi:id="_FCGN5gQkEd2rGcRigrxr3g" name="" type="_OGxVkPpvEdylZYpHMTjaBQ" association="_FCGN5AQkEd2rGcRigrxr3g"/>
+    </packagedElement>
   </packagedElement>
   <packagedElement xmi:type="uml:Package" xmi:id="_kxcucAPKEd23R4OzW358pg" name="wypozyczalnia.dao.fabryki">
     <eAnnotations xmi:id="_kxl4YAPKEd23R4OzW358pg" source="uml2.diagrams" references="_kxl4YQPKEd23R4OzW358pg">
@@ -1746,9 +1680,10 @@
         <element xsi:nil="true"/>
       </contents>
     </eAnnotations>
-    <packagedElement xmi:type="uml:Class" xmi:id="_iFcqgPpvEdylZYpHMTjaBQ" name="ZarzadzanieKontamiBean" clientDependency="_jZo2RPpvEdylZYpHMTjaBQ _60D-0PtrEdy4tvw8w2noEw">
+    <packagedElement xmi:type="uml:Class" xmi:id="_iFcqgPpvEdylZYpHMTjaBQ" name="ZarzadzanieKontamiBean" clientDependency="_jZo2RPpvEdylZYpHMTjaBQ _Ccig4QQkEd2rGcRigrxr3g">
       <eAnnotations xmi:id="_jZo2QvpvEdylZYpHMTjaBQ" source="http://www.eclipse.org/uml2/2.0.0/UML">
         <details xmi:id="_60D-0ftrEdy4tvw8w2noEw" key="ConcreteImplementor"/>
+        <details xmi:id="_Ccig4gQkEd2rGcRigrxr3g" key="RealSubject"/>
       </eAnnotations>
       <ownedComment xmi:id="_AqinsPp0EdylZYpHMTjaBQ" annotatedElement="_iFcqgPpvEdylZYpHMTjaBQ">
         <body>po stronie serwera aplikacji</body>
@@ -1759,9 +1694,10 @@
       </ownedAttribute>
       <interfaceRealization xmi:id="_jZo2RPpvEdylZYpHMTjaBQ" supplier="_UUyXAPpvEdylZYpHMTjaBQ" client="_iFcqgPpvEdylZYpHMTjaBQ" contract="_UUyXAPpvEdylZYpHMTjaBQ"/>
     </packagedElement>
-    <packagedElement xmi:type="uml:Interface" xmi:id="_UUyXAPpvEdylZYpHMTjaBQ" name="ZarzadzanieKontami" clientDependency="_6Pi8gPtrEdy4tvw8w2noEw _vl6kAPtuEdy4tvw8w2noEw _wFzlAPtuEdy4tvw8w2noEw _wjm7UPtuEdy4tvw8w2noEw">
+    <packagedElement xmi:type="uml:Interface" xmi:id="_UUyXAPpvEdylZYpHMTjaBQ" name="ZarzadzanieKontami" clientDependency="_vl6kAPtuEdy4tvw8w2noEw _wFzlAPtuEdy4tvw8w2noEw _wjm7UPtuEdy4tvw8w2noEw _DwI2wQQkEd2rGcRigrxr3g">
       <eAnnotations xmi:id="_VoO74vpvEdylZYpHMTjaBQ" source="http://www.eclipse.org/uml2/2.0.0/UML">
         <details xmi:id="_6Pi8gftrEdy4tvw8w2noEw" key="Implementor"/>
+        <details xmi:id="_DwI2wgQkEd2rGcRigrxr3g" key="Subject"/>
       </eAnnotations>
       <ownedOperation xmi:id="_EZT4QPtgEdybiL-CCYIzuw" name="modyfikujDaneAdresu">
         <ownedParameter xmi:id="_rA5LkPtsEdy4tvw8w2noEw" name="adres" direction="inout">
@@ -1873,14 +1809,31 @@
     <packagedElement xmi:type="uml:Dependency" xmi:id="_vl6kAPtuEdy4tvw8w2noEw" client="_UUyXAPpvEdylZYpHMTjaBQ">
       <supplier xmi:type="uml:Class" href="warstwaTO.emx#_0Ro8APtdEdybiL-CCYIzuw?warstwaTO/wypozyczalnia.to/KontoTO?"/>
     </packagedElement>
-    <packagedElement xmi:type="uml:Abstraction" xmi:id="_6Pi8gPtrEdy4tvw8w2noEw" supplier="_jIwnIPtrEdy4tvw8w2noEw" client="_UUyXAPpvEdylZYpHMTjaBQ"/>
-    <packagedElement xmi:type="uml:Abstraction" xmi:id="_60D-0PtrEdy4tvw8w2noEw" supplier="_jIwnIPtrEdy4tvw8w2noEw" client="_iFcqgPpvEdylZYpHMTjaBQ"/>
     <packagedElement xmi:type="uml:Association" xmi:id="_fwh6MPpyEdylZYpHMTjaBQ" memberEnd="_fwh6MfpyEdylZYpHMTjaBQ _fwrEIPpyEdylZYpHMTjaBQ">
       <ownedEnd xmi:id="_fwrEIPpyEdylZYpHMTjaBQ" name="" visibility="private" type="_iFcqgPpvEdylZYpHMTjaBQ" association="_fwh6MPpyEdylZYpHMTjaBQ">
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_fwrEIvpyEdylZYpHMTjaBQ" value="*"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_fwrEIfpyEdylZYpHMTjaBQ"/>
       </ownedEnd>
     </packagedElement>
+    <packagedElement xmi:type="uml:Abstraction" xmi:id="_Ccig4QQkEd2rGcRigrxr3g" supplier="__qeo8AQjEd2rGcRigrxr3g" client="_iFcqgPpvEdylZYpHMTjaBQ"/>
+    <packagedElement xmi:type="uml:Abstraction" xmi:id="_DwI2wQQkEd2rGcRigrxr3g" supplier="__qeo8AQjEd2rGcRigrxr3g" client="_UUyXAPpvEdylZYpHMTjaBQ"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Collaboration" xmi:id="__qeo8AQjEd2rGcRigrxr3g" name="Proxy">
+    <eAnnotations xmi:id="__qny4AQjEd2rGcRigrxr3g" source="http://www.eclipse.org/uml2/2.0.0/UML">
+      <details xmi:id="__qny4QQjEd2rGcRigrxr3g" key="Pattern Instance"/>
+    </eAnnotations>
+    <templateBinding xmi:id="__qny4gQjEd2rGcRigrxr3g">
+      <signature xmi:type="uml:RedefinableTemplateSignature" href="pathmap://DESIGN_PATTERNS_LIBRARY/Proxy/Proxy.emx#_HX8wJrvhEdikrqU7LjCFqw?Proxy/Proxy/%3CRedefinableTemplateSignature%3E?"/>
+      <parameterSubstitution xmi:id="_Ccig4AQkEd2rGcRigrxr3g" actual="_iFcqgPpvEdylZYpHMTjaBQ">
+        <formal xmi:type="uml:ClassifierTemplateParameter" href="pathmap://DESIGN_PATTERNS_LIBRARY/Proxy/Proxy.emx#_HX8wKbvhEdikrqU7LjCFqw?Proxy/Proxy/%3CRedefinableTemplateSignature%3E/%3CClassifierTemplateParameter%3E?"/>
+      </parameterSubstitution>
+      <parameterSubstitution xmi:id="_DwI2wAQkEd2rGcRigrxr3g" actual="_UUyXAPpvEdylZYpHMTjaBQ">
+        <formal xmi:type="uml:ClassifierTemplateParameter" href="pathmap://DESIGN_PATTERNS_LIBRARY/Proxy/Proxy.emx#_HX8wJ7vhEdikrqU7LjCFqw?Proxy/Proxy/%3CRedefinableTemplateSignature%3E/%3CClassifierTemplateParameter%3E?"/>
+      </parameterSubstitution>
+      <parameterSubstitution xmi:id="_FCGN4AQkEd2rGcRigrxr3g" actual="_OGxVkPpvEdylZYpHMTjaBQ">
+        <formal xmi:type="uml:ClassifierTemplateParameter" href="pathmap://DESIGN_PATTERNS_LIBRARY/Proxy/Proxy.emx#_HX8wK7vhEdikrqU7LjCFqw?Proxy/Proxy/%3CRedefinableTemplateSignature%3E/%3CClassifierTemplateParameter%3E?"/>
+      </parameterSubstitution>
+    </templateBinding>
   </packagedElement>
   <profileApplication xmi:id="_NNQTpfpvEdylZYpHMTjaBQ">
     <eAnnotations xmi:id="_NNQTpvpvEdylZYpHMTjaBQ" source="http://www.eclipse.org/uml2/2.0.0/UML">

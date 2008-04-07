@@ -3607,7 +3607,7 @@
           <transition xmi:id="_4mrT8P1dEdyQx4c0_KMOBw" name="brak aktywności przez 3 minuty" kind="local" target="_fc18MPsBEdyhfuHbpuItYA" source="_YxAZgPsFEdyhfuHbpuItYA"/>
         </region>
       </ownedBehavior>
-      <ownedBehavior xmi:type="uml:StateMachine" xmi:id="_fg9j8AMUEd21s-4bDukuPw" name="KontoDAO">
+      <ownedBehavior xmi:type="uml:StateMachine" xmi:id="_fg9j8AMUEd21s-4bDukuPw" name="1.5 KontoDAO">
         <eAnnotations xmi:id="_fhtK0AMUEd21s-4bDukuPw" source="uml2.diagrams">
           <contents xmi:type="notation:Diagram" xmi:id="_fhtK0QMUEd21s-4bDukuPw" type="Statechart" element="_fg9j8AMUEd21s-4bDukuPw" name="StatemachineDiagram1" measurementUnit="Himetric">
             <children xmi:id="_fhtK0gMUEd21s-4bDukuPw" type="Statemachine" element="_fg9j8AMUEd21s-4bDukuPw">
@@ -3711,23 +3711,12 @@
                   <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="_L2DrUgMvEd21s-4bDukuPw" showStereotype="Label"/>
                   <layoutConstraint xmi:type="notation:Bounds" xmi:id="_L2DrUwMvEd21s-4bDukuPw" x="2733" y="207"/>
                 </children>
-                <children xmi:id="_LkOY0QNNEd2omajFVrQe6g" type="Note">
-                  <children xmi:id="_LkOY0gNNEd2omajFVrQe6g" type="DiagramName">
-                    <element xsi:nil="true"/>
-                  </children>
-                  <children xmi:id="_LkOY0wNNEd2omajFVrQe6g" type="Description">
-                    <element xsi:nil="true"/>
-                  </children>
-                  <styles xmi:type="notation:ShapeStyle" xmi:id="_LkOY1ANNEd2omajFVrQe6g" description="Nr Diagramu: 1.5&#xD;&#xA;Tytuł:&#xD;&#xA;Diagram stanów dla&#xD;&#xA;klasy KontoDAO" fillColor="13369343" lineColor="6737151"/>
-                  <element xsi:nil="true"/>
-                  <layoutConstraint xmi:type="notation:Bounds" xmi:id="_LkOY1QNNEd2omajFVrQe6g" x="60" y="11484"/>
-                </children>
                 <styles xmi:type="umlnotation:UMLShapeCompartmentStyle" xmi:id="_fhtK1AMUEd21s-4bDukuPw"/>
               </children>
               <children xmi:id="_fhtK1QMUEd21s-4bDukuPw" type="Name"/>
               <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="_fhtK1gMUEd21s-4bDukuPw" showStereotype="Label"/>
               <styles xmi:type="umlnotation:UMLFrameStyle" xmi:id="_fhtK1wMUEd21s-4bDukuPw" alignment="Horizontal"/>
-              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_fhtK2AMUEd21s-4bDukuPw" x="-10302" y="159" width="23295" height="15027"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_fhtK2AMUEd21s-4bDukuPw" x="29006" y="20447" width="23295" height="15027"/>
             </children>
             <styles xmi:type="umlnotation:UMLDiagramStyle" xmi:id="_fhtK2QMUEd21s-4bDukuPw"/>
             <edges xmi:id="_Z56dEQMuEd21s-4bDukuPw" element="_Z56dEAMuEd21s-4bDukuPw" source="_oudOQAMUEd21s-4bDukuPw" target="_jBOlsAMUEd21s-4bDukuPw">
@@ -3953,6 +3942,23 @@
             <trigger xmi:id="_GbFMMAM2Ed21s-4bDukuPw" name="" event="_GmGwcAM2Ed21s-4bDukuPw"/>
           </transition>
         </region>
+      </ownedBehavior>
+      <ownedBehavior xmi:type="uml:StateMachine" xmi:id="_yks_gARlEd2jg8E21iJ5Ow" name="Konto - maszyna stanów">
+        <eAnnotations xmi:id="_ylcmYARlEd2jg8E21iJ5Ow" source="uml2.diagrams">
+          <contents xmi:type="notation:Diagram" xmi:id="_ylcmYQRlEd2jg8E21iJ5Ow" type="Statechart" element="_yks_gARlEd2jg8E21iJ5Ow" name="StatemachineDiagram1" measurementUnit="Himetric">
+            <children xmi:id="_ylcmYgRlEd2jg8E21iJ5Ow" type="Statemachine" element="_yks_gARlEd2jg8E21iJ5Ow">
+              <children xmi:id="_ylcmYwRlEd2jg8E21iJ5Ow" type="Region" element="_yks_gQRlEd2jg8E21iJ5Ow">
+                <styles xmi:type="umlnotation:UMLShapeCompartmentStyle" xmi:id="_ylcmZARlEd2jg8E21iJ5Ow"/>
+              </children>
+              <children xmi:id="_ylcmZQRlEd2jg8E21iJ5Ow" type="Name"/>
+              <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="_ylcmZgRlEd2jg8E21iJ5Ow" showStereotype="Label"/>
+              <styles xmi:type="umlnotation:UMLFrameStyle" xmi:id="_ylcmZwRlEd2jg8E21iJ5Ow" alignment="Horizontal"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ylcmaARlEd2jg8E21iJ5Ow" x="793" y="793"/>
+            </children>
+            <styles xmi:type="umlnotation:UMLDiagramStyle" xmi:id="_ylcmaQRlEd2jg8E21iJ5Ow"/>
+          </contents>
+        </eAnnotations>
+        <region xmi:id="_yks_gQRlEd2jg8E21iJ5Ow" name="Region1"/>
       </ownedBehavior>
       <nestedClassifier xmi:type="uml:Class" xmi:id="_IvY6IALTEd2tPIc34zYjVQ" name="OsobyZbior">
         <ownedAttribute xmi:id="_P8R-oQLTEd2tPIc34zYjVQ" name="osobadao" visibility="private" type="_lrK6YPp3EdylZYpHMTjaBQ" aggregation="shared" association="_P8R-oALTEd2tPIc34zYjVQ">
