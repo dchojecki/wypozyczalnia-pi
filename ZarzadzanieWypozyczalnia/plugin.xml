@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.2"?>
+<plugin>
+   <extension-point id="splashExtension" name="Splash Extensions" schema="schema/splashExtension.exsd"/>
+
+   <extension
+         id="application"
+         point="org.eclipse.core.runtime.applications">
+      <application>
+         <run
+               class="zarzadzaniewypozyczalnia.Application">
+         </run>
+      </application>
+   </extension>
+   <extension
+         point="org.eclipse.ui.perspectives">
+      <perspective
+            name="Zarządzanie Punktami"
+            class="zarzadzaniewypozyczalnia.Perspective"
+            id="ZarzadzanieWypozyczalnia.perspective">
+      </perspective>
+      <perspective
+            class="zarzadzaniewypozyczalnia.perspectives.ZarzadzanieKontamiPerspective"
+            icon="icons/releng_gears.gif"
+            id="zarzadzaniewypozyczalnia.perspectives.ZarzadzanieKontamiPerspective"
+            name="Zarzadzanie Kontami">
+      </perspective>
+   </extension>
+   <extension
+         point="org.eclipse.ui.views">
+      <category
+            id="ZarzadzanieWypozyczalnia"
+            name="Zarzadzanie Kontami">
+      </category>
+      <view
+            category="ZarzadzanieWypozyczalnia"
+            class="zarzadzaniewypozyczalnia.views.ListaUzytkownikowWidok"
+            icon="icons/sample.gif"
+            id="zarzadzaniewypozyczalnia.views.ListaUzytkownikowWidok"
+            name="Lista użytkowników">
+      </view>
+   </extension>
+   <extension
+         id="product"
+         point="org.eclipse.core.runtime.products">
+      <product
+            application="ZarzadzanieWypozyczalnia.application"
+            name="Zarzadzanie Wypozyczalnia">
+         <property
+               name="appName"
+               value="Zarzadzanie Wypozyczalnia">
+         </property>
+         <property
+               name="aboutImage"
+               value="272.GIF">
+         </property>
+         <property
+               name="aboutText"
+               value="Program wspomagający zarządzanie wypożyczalnia płyt DVD">
+         </property>
+      </product>
+   </extension>
+   <extension
+         point="org.eclipse.ui.intro">
+      <intro
+            class="org.eclipse.ui.intro.config.CustomizableIntroPart"
+            id="ZarzadzanieWypozyczalnia.intro">
+      </intro>
+      <introProductBinding
+            introId="ZarzadzanieWypozyczalnia.intro"
+            productId="ZarzadzanieWypozyczalnia.product">
+      </introProductBinding>
+      <intro
+            class="org.eclipse.ui.intro.config.CustomizableIntroPart"
+            id="ZarzadzanieWypozyczalnia.intro1">
+      </intro>
+      <introProductBinding
+            introId="ZarzadzanieWypozyczalnia.intro1"
+            productId="ZarzadzanieWypozyczalnia.product">
+      </introProductBinding>
+   </extension>
+   <extension
+         point="org.eclipse.ui.intro.config">
+      <config
+            content="introContent.xml"
+            id="ZarzadzanieWypozyczalnia.introConfigId"
+            introId="ZarzadzanieWypozyczalnia.intro">
+         <presentation
+               home-page-id="root">
+            <implementation
+                  kind="html"
+                  os="win32,linux,macosx"
+                  style="content/shared.css">
+            </implementation>
+         </presentation>
+      </config>
+      <config
+            content="introContent.xml"
+            id="ZarzadzanieWypozyczalnia.introConfigId"
+            introId="ZarzadzanieWypozyczalnia.intro1">
+         <presentation
+               home-page-id="root">
+            <implementation
+                  kind="html"
+                  os="win32,linux,macosx"
+                  style="content/shared.css">
+            </implementation>
+         </presentation>
+      </config>
+   </extension>
+   <extension
+         point="org.eclipse.ui.splashHandlers">
+      <splashHandler
+            class="zarzadzaniewypozyczalnia.splashHandlers.ExtensibleSplashHandler"
+            id="zarzadzaniewypozyczalnia.splashHandlers.extensible">
+      </splashHandler>
+      <splashHandlerProductBinding
+            productId="ZarzadzanieWypozyczalnia.product"
+            splashId="zarzadzaniewypozyczalnia.splashHandlers.extensible">
+      </splashHandlerProductBinding>
+   </extension>
+   <extension
+         point="ZarzadzanieWypozyczalnia.splashExtension">
+      <splashExtension
+            icon="icons/af.png"
+            id="af"
+            tooltip="Application Framework">
+      </splashExtension>
+      <splashExtension
+            icon="icons/embedded.png"
+            id="embedded"
+            tooltip="Embedded">
+      </splashExtension>
+      <splashExtension
+            icon="icons/enterprise.png"
+            id="enterprise"
+            tooltip="Enterprise">
+      </splashExtension>
+      <splashExtension
+            icon="icons/languages.png"
+            id="languages"
+            tooltip="Languages">
+      </splashExtension>
+      <splashExtension
+            icon="icons/rcp.png"
+            id="rcp"
+            tooltip="RCP">
+      </splashExtension>
+   </extension>
+   <extension
+         point="org.eclipse.ui.newWizards">
+      <category
+            id="ZarzadzanieWypozyczalnia"
+            name="Sample Wizards">
+      </category>
+      <wizard
+            category="ZarzadzanieWypozyczalnia"
+            class="zarzadzaniewypozyczalnia.wizards.SampleNewWizard"
+            icon="icons/sample.gif"
+            id="zarzadzaniewypozyczalnia.wizards.SampleNewWizard"
+            name="Multi-page Editor file">
+      </wizard>
+   </extension>
+
+</plugin>
