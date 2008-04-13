@@ -5,6 +5,8 @@
 	<projects>
 		<project>WypozyczalniaZarzadzanieKlient</project>
 		<project>WypozyczalniaEjbs</project>
+		<project>WypozyczalniaDane</project>
+		<project>WypozyczalniaOracleDane</project>
 	</projects>
 	<buildSpec>
 		<buildCommand>

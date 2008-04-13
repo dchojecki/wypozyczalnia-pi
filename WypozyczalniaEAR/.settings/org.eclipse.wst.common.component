@@ -9,5 +9,11 @@
         <dependent-module archiveName="WypozyczalniaEjbs.jar" deploy-path="/" handle="module:/resource/WypozyczalniaEjbs/WypozyczalniaEjbs">
             <dependency-type>uses</dependency-type>
         </dependent-module>
+        <dependent-module archiveName="WypozyczalniaDane.jar" deploy-path="/" handle="module:/resource/WypozyczalniaDane/WypozyczalniaDane">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="WypozyczalniaOracleDane.jar" deploy-path="/" handle="module:/resource/WypozyczalniaOracleDane/WypozyczalniaOracleDane">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
     </wb-module>
 </project-modules>
