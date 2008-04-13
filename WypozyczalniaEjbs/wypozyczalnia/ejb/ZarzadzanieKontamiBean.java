@@ -3,6 +3,8 @@
  */
 package wypozyczalnia.ejb;
 
+import javax.ejb.Stateless;
+
 import wypozyczalnia.dao.fabryki.ZarzadzanieKontamiFabrykaDanych;
 import wypozyczalnia.to.AdresTO;
 import wypozyczalnia.to.KlientTO;
@@ -15,6 +17,7 @@ import wypozyczalnia.to.KontoTO;
  * 
  * @generated "UML to Java (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform)"
  */
+@Stateless(name = "ZarzadzanieKontami", mappedName="ZarzadzanieKontamiBean")
 public class ZarzadzanieKontamiBean implements ZarzadzanieKontami {
 	/** 
 	 * <!-- begin-user-doc -->
@@ -57,6 +60,7 @@ public class ZarzadzanieKontamiBean implements ZarzadzanieKontami {
 	 * @generated "UML to Java (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform)"
 	 */
 	public void modyfikujDaneAdresu(AdresTO adres) {
+		adres.setMiast("adsfasdf");
 		// begin-user-code
 		// TODO Auto-generated method stub
 
@@ -141,9 +145,10 @@ public class ZarzadzanieKontamiBean implements ZarzadzanieKontami {
 	 * @generated "UML to Java (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform)"
 	 */
 	public KontoTO stworzNoweKonto(KlientTO klient) {
+		KontoTO konto = new KontoTO();
 		// begin-user-code
 		// TODO Auto-generated method stub
-		return null;
+		return konto;
 		// end-user-code
 	}
 
@@ -211,7 +216,7 @@ public class ZarzadzanieKontamiBean implements ZarzadzanieKontami {
 	 * @see ZarzadzanieKontami#czyKlientZarejestrowany(Integer nrPesel)
 	 * @generated "UML to Java (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform)"
 	 */
-	public boolean czyKlientZarejestrowany(Integer nrPesel) {
+	public boolean czyKlientZarejestrowany(String nrPesel) {
 		// begin-user-code
 		// TODO Auto-generated method stub
 		return false;
@@ -227,8 +232,9 @@ public class ZarzadzanieKontamiBean implements ZarzadzanieKontami {
 	 */
 	public KlientTO zarejestrujKlienta(String nrPesel) {
 		// begin-user-code
-		// TODO Auto-generated method stub
-		return null;
+		KlientTO nowyKlient = new KlientTO();
+//		nowyKlient.setNrPeselKlienta(nrPesel);
+		return nowyKlient;
 		// end-user-code
 	}
 
