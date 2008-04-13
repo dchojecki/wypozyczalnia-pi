@@ -121,7 +121,7 @@ public interface ZarzadzanieKontami {
 	 * @return
 	 * @generated "UML to Java (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform)"
 	 */
-	public boolean czyKlientZarejestrowany(Integer nrPesel);
+	public boolean czyKlientZarejestrowany(String nrPesel);
 
 	/** 
 	 * <!-- begin-user-doc -->

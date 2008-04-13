@@ -1,4 +1,4 @@
-#Sun Apr 06 12:43:09 CEST 2008
+#Sat Apr 12 16:37:58 CEST 2008
 classpath.helper/org.eclipse.jdt.launching.JRE_CONTAINER/owners=jst.java\:5.0
-classpath.helper/org.eclipse.jst.server.core.container\:\:com.sun.enterprise.jst.server.runtimeTarget\:\:GlassFish\ V2\ Java\ EE\ 5/owners=jst.utility\:1.0
+classpath.helper/org.eclipse.jst.server.core.container\:\:org.eclipse.jst.server.generic.runtimeTarget\:\:JBoss\ v4.2/owners=jst.utility\:1.0
 eclipse.preferences.version=1
