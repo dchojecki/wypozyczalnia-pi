@@ -48,6 +48,38 @@ public class ZarzadzanieKontamiDelegacja {
 	/** 
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
+	 * 
+	 * @generated "UML to Java (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform)"
+	 */
+	private ZarzadzanieKontami implementor;
+
+	/** 
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the implementor
+	 * @generated "UML to Java (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform)"
+	 */
+	public ZarzadzanieKontami getImplementor() {
+		// begin-user-code
+		return implementor;
+		// end-user-code
+	}
+
+	/** 
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param theImplementor the implementor to set
+	 * @generated "UML to Java (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform)"
+	 */
+	public void setImplementor(ZarzadzanieKontami theImplementor) {
+		// begin-user-code
+		implementor = theImplementor;
+		// end-user-code
+	}
+
+	/** 
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated "UML to Java (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform)"
 	 */
 	private static final ZarzadzanieKontamiDelegacja instance = new ZarzadzanieKontamiDelegacja();
