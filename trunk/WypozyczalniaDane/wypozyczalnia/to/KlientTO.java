@@ -3,6 +3,8 @@
  */
 package wypozyczalnia.to;
 
+import java.io.Serializable;
+
 /** 
  * <!-- begin-user-doc -->
  * <!-- end-user-doc -->
@@ -10,7 +12,11 @@ package wypozyczalnia.to;
  * 
  * @generated "UML to Java (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform)"
  */
-public class KlientTO {
+public class KlientTO implements Serializable {
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 5000074671097009807L;
 	/** 
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->

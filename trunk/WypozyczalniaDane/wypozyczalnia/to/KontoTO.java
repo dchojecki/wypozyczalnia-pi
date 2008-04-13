@@ -3,6 +3,8 @@
  */
 package wypozyczalnia.to;
 
+import java.io.Serializable;
+
 import wypozyczalnia.dao.StanKonta;
 
 /** 
@@ -12,7 +14,11 @@ import wypozyczalnia.dao.StanKonta;
  * 
  * @generated "UML to Java (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform)"
  */
-public class KontoTO {
+public class KontoTO implements Serializable  {
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = -8850837877328550396L;
 	/** 
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
