@@ -3211,6 +3211,9 @@
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_btR4cfp4EdylZYpHMTjaBQ" value="1"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_btR4cPp4EdylZYpHMTjaBQ" value="1"/>
       </ownedAttribute>
+      <ownedOperation xmi:id="_-MoU8Ay1Ed2DFuQsucY6Ww" name="czyKlientZarejestrowany"/>
+      <ownedOperation xmi:id="_Bo3yUAy2Ed2DFuQsucY6Ww" name="wyslijZapytanie"/>
+      <ownedOperation xmi:id="_GQirkAy3Ed2DFuQsucY6Ww" name="zwrocDaneKlienta"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_fWnZ0Pp8EdylZYpHMTjaBQ" name="KontaZbior">
       <ownedAttribute xmi:id="_TpYkYfqBEdylZYpHMTjaBQ" name="konta" visibility="private" type="_WPE_0Pp3EdylZYpHMTjaBQ" aggregation="shared" association="_TpYkYPqBEdylZYpHMTjaBQ">

@@ -1601,6 +1601,7 @@
         <details xmi:id="_yG2ms_pxEdylZYpHMTjaBQ" key="ConcreteProduct"/>
       </eAnnotations>
       <interfaceRealization xmi:id="_yG2mtPpxEdylZYpHMTjaBQ" supplier="_C17BgPpxEdylZYpHMTjaBQ" client="_AHba8PpxEdylZYpHMTjaBQ" contract="_C17BgPpxEdylZYpHMTjaBQ"/>
+      <ownedOperation xmi:id="_DzyjAAy8Ed2DFuQsucY6Ww" name="Operation1"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Interface" xmi:id="_C17BgPpxEdylZYpHMTjaBQ" name="ZarzadzanieKontamiDAO" clientDependency="_xv6GUfpxEdylZYpHMTjaBQ _L3XAYPtvEdy2HqC4EDrJ5w">
       <eAnnotations xmi:id="_xv6GUvpxEdylZYpHMTjaBQ" source="http://www.eclipse.org/uml2/2.0.0/UML">
