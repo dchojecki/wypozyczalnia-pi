@@ -108,6 +108,8 @@
       <ownedAttribute xmi:id="_YcSqMAR7Ed22wLR54_lEgQ" name="skrotHasla" visibility="private">
         <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
       </ownedAttribute>
+      <ownedOperation xmi:id="_UXyywAy6Ed2DFuQsucY6Ww" name="pobierzNumerKonta"/>
+      <ownedOperation xmi:id="_YaxgAAy6Ed2DFuQsucY6Ww" name="pobierzStanKonta"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_162VgPtdEdybiL-CCYIzuw" name="AdresTO">
       <ownedAttribute xmi:id="_h7GkYPtvEdy2HqC4EDrJ5w" name="ulica" visibility="private">
@@ -139,6 +141,9 @@
       <ownedAttribute xmi:id="_3TxLEPtvEdy2HqC4EDrJ5w" name="nrPeselKlienta" visibility="private">
         <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
       </ownedAttribute>
+      <ownedOperation xmi:id="_7wcCgAy5Ed2DFuQsucY6Ww" name="pobierzImie"/>
+      <ownedOperation xmi:id="__2stQAy5Ed2DFuQsucY6Ww" name="pobierzNazwisko"/>
+      <ownedOperation xmi:id="_DCZ0QAy6Ed2DFuQsucY6Ww" name="pobierzDateUrodzenia"/>
     </packagedElement>
   </packagedElement>
   <profileApplication xmi:id="_xJOZlftdEdybiL-CCYIzuw">
