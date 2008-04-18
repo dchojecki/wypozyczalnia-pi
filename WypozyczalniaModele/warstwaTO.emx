@@ -47,7 +47,7 @@
           <styles xmi:type="umlnotation:UMLShapeCompartmentStyle" xmi:id="_8H9YD_tdEdybiL-CCYIzuw"/>
         </children>
         <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="_8H9YAftdEdybiL-CCYIzuw" showStereotype="Label"/>
-        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_8H9YAvtdEdybiL-CCYIzuw" x="10461" y="5072"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_8H9YAvtdEdybiL-CCYIzuw" x="13314" y="5389"/>
       </children>
       <children xmi:id="_8XAgoPtdEdybiL-CCYIzuw" element="_0Ro8APtdEdybiL-CCYIzuw">
         <children xmi:id="_8XAgo_tdEdybiL-CCYIzuw" type="ImageCompartment">
@@ -110,6 +110,9 @@
       </ownedAttribute>
       <ownedOperation xmi:id="_UXyywAy6Ed2DFuQsucY6Ww" name="pobierzNumerKonta"/>
       <ownedOperation xmi:id="_YaxgAAy6Ed2DFuQsucY6Ww" name="pobierzStanKonta"/>
+      <ownedOperation xmi:id="_xZHfwA1xEd2HkeusZUlZ1A" name="setNumerKonta"/>
+      <ownedOperation xmi:id="_0B8jMA1xEd2HkeusZUlZ1A" name="setStanKonta"/>
+      <ownedOperation xmi:id="_DISQMA1yEd2HkeusZUlZ1A" name="setNrPeselKlienta"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_162VgPtdEdybiL-CCYIzuw" name="AdresTO">
       <ownedAttribute xmi:id="_h7GkYPtvEdy2HqC4EDrJ5w" name="ulica" visibility="private">
@@ -144,6 +147,12 @@
       <ownedOperation xmi:id="_7wcCgAy5Ed2DFuQsucY6Ww" name="pobierzImie"/>
       <ownedOperation xmi:id="__2stQAy5Ed2DFuQsucY6Ww" name="pobierzNazwisko"/>
       <ownedOperation xmi:id="_DCZ0QAy6Ed2DFuQsucY6Ww" name="pobierzDateUrodzenia"/>
+      <ownedOperation xmi:id="_F8NecA10Ed2HkeusZUlZ1A" name="setImie"/>
+      <ownedOperation xmi:id="_L6IOYA10Ed2HkeusZUlZ1A" name="setNazwisko"/>
+      <ownedOperation xmi:id="_ceMdoA10Ed2HkeusZUlZ1A" name="setAdresMailowy"/>
+      <ownedOperation xmi:id="_hqC3cA10Ed2HkeusZUlZ1A" name="setNrPesel"/>
+      <ownedOperation xmi:id="_nJaDIA10Ed2HkeusZUlZ1A" name="setDataUrodzenia"/>
+      <ownedOperation xmi:id="_CMF7cA13Ed2HkeusZUlZ1A" name="pobierzAdresMailowy"/>
     </packagedElement>
   </packagedElement>
   <profileApplication xmi:id="_xJOZlftdEdybiL-CCYIzuw">

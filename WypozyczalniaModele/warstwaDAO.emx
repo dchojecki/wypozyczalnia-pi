@@ -924,7 +924,7 @@
           <layoutConstraint xmi:type="notation:Location" xmi:id="_edtY0Pp4EdylZYpHMTjaBQ" y="1058"/>
         </children>
         <styles xmi:type="umlnotation:UMLConnectorStyle" xmi:id="_edtYsfp4EdylZYpHMTjaBQ" showStereotype="Text"/>
-        <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_edtYsvp4EdylZYpHMTjaBQ" points="[-3386, -979, 9631, 4233]$[-11880, -3440, 1137, 1772]$[-12541, -4472, 476, 740]"/>
+        <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_edtYsvp4EdylZYpHMTjaBQ" points="[-3386, -1455, 8758, 3757]$[-9657, -4154, 2487, 1058]"/>
       </edges>
       <edges xmi:id="_i8tTkPp4EdylZYpHMTjaBQ" element="_i8aYoPp4EdylZYpHMTjaBQ" source="_Gtfr0fp4EdylZYpHMTjaBQ" target="_14lkMfp3EdylZYpHMTjaBQ">
         <children xmi:id="_i8tTk_p4EdylZYpHMTjaBQ" type="NameLabel">
@@ -3214,6 +3214,16 @@
       <ownedOperation xmi:id="_-MoU8Ay1Ed2DFuQsucY6Ww" name="czyKlientZarejestrowany"/>
       <ownedOperation xmi:id="_Bo3yUAy2Ed2DFuQsucY6Ww" name="wyslijZapytanie"/>
       <ownedOperation xmi:id="_GQirkAy3Ed2DFuQsucY6Ww" name="zwrocDaneKlienta"/>
+      <ownedOperation xmi:id="_Ele8EA10Ed2HkeusZUlZ1A" name="getImie"/>
+      <ownedOperation xmi:id="_HhidgA10Ed2HkeusZUlZ1A" name="getNazwisko"/>
+      <ownedOperation xmi:id="_ZABGkA10Ed2HkeusZUlZ1A" name="getAdresMailowy"/>
+      <ownedOperation xmi:id="_ff57IA10Ed2HkeusZUlZ1A" name="getNrPesel"/>
+      <ownedOperation xmi:id="_kBIqoA10Ed2HkeusZUlZ1A" name="getDataUrodzenia"/>
+      <ownedOperation xmi:id="_Aa7xwA11Ed2HkeusZUlZ1A" name="setImie"/>
+      <ownedOperation xmi:id="_CGXY0A11Ed2HkeusZUlZ1A" name="setNazwisko"/>
+      <ownedOperation xmi:id="_D_0NwA11Ed2HkeusZUlZ1A" name="setAdresMailowy"/>
+      <ownedOperation xmi:id="_FN5KcA11Ed2HkeusZUlZ1A" name="setNrPesel"/>
+      <ownedOperation xmi:id="_HoHxMA11Ed2HkeusZUlZ1A" name="setDataUrodzenia"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_fWnZ0Pp8EdylZYpHMTjaBQ" name="KontaZbior">
       <ownedAttribute xmi:id="_TpYkYfqBEdylZYpHMTjaBQ" name="konta" visibility="private" type="_WPE_0Pp3EdylZYpHMTjaBQ" aggregation="shared" association="_TpYkYPqBEdylZYpHMTjaBQ">
@@ -3980,6 +3990,10 @@
           <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
         </ownedParameter>
       </ownedOperation>
+      <ownedOperation xmi:id="_KIN2wA1yEd2HkeusZUlZ1A" name="getNrKonta"/>
+      <ownedOperation xmi:id="_MW0cUA1yEd2HkeusZUlZ1A" name="getStanKonta"/>
+      <ownedOperation xmi:id="_jRPwsA1yEd2HkeusZUlZ1A" name="setNrKonta"/>
+      <ownedOperation xmi:id="_8MEIIA11Ed2HkeusZUlZ1A" name="setStanKonta"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_h9Wk0Pp3EdylZYpHMTjaBQ" name="ManagerDAO">
       <generalization xmi:id="_q3y60Pp4EdylZYpHMTjaBQ" general="_lC71sPp3EdylZYpHMTjaBQ"/>

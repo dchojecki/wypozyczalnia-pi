@@ -1602,6 +1602,8 @@
       </eAnnotations>
       <interfaceRealization xmi:id="_yG2mtPpxEdylZYpHMTjaBQ" supplier="_C17BgPpxEdylZYpHMTjaBQ" client="_AHba8PpxEdylZYpHMTjaBQ" contract="_C17BgPpxEdylZYpHMTjaBQ"/>
       <ownedOperation xmi:id="_DzyjAAy8Ed2DFuQsucY6Ww" name="Operation1"/>
+      <ownedOperation xmi:id="_XYXToA1xEd2HkeusZUlZ1A" name="zwrocDaneKonta"/>
+      <ownedOperation xmi:id="_sDALIA17Ed2HkeusZUlZ1A" name="zablokujKonto"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Interface" xmi:id="_C17BgPpxEdylZYpHMTjaBQ" name="ZarzadzanieKontamiDAO" clientDependency="_xv6GUfpxEdylZYpHMTjaBQ _L3XAYPtvEdy2HqC4EDrJ5w">
       <eAnnotations xmi:id="_xv6GUvpxEdylZYpHMTjaBQ" source="http://www.eclipse.org/uml2/2.0.0/UML">
