@@ -3994,6 +3994,7 @@
       <ownedOperation xmi:id="_MW0cUA1yEd2HkeusZUlZ1A" name="getStanKonta"/>
       <ownedOperation xmi:id="_jRPwsA1yEd2HkeusZUlZ1A" name="setNrKonta"/>
       <ownedOperation xmi:id="_8MEIIA11Ed2HkeusZUlZ1A" name="setStanKonta"/>
+      <ownedOperation xmi:id="_aeBBAA6lEd27s8rqzFI6Yg" name="getKlient"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_h9Wk0Pp3EdylZYpHMTjaBQ" name="ManagerDAO">
       <generalization xmi:id="_q3y60Pp4EdylZYpHMTjaBQ" general="_lC71sPp3EdylZYpHMTjaBQ"/>
