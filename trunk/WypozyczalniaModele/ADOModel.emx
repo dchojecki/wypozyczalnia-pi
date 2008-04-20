@@ -343,7 +343,7 @@
         <children xmi:id="_9kNI6PpzEdylZYpHMTjaBQ" type="Stereotype"/>
         <children xmi:id="_9kNI6fpzEdylZYpHMTjaBQ" type="CommentBody"/>
         <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="_9kNI4vpzEdylZYpHMTjaBQ" fillColor="16763850" lineColor="16744576" showStereotype="Label"/>
-        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_9kNI4_pzEdylZYpHMTjaBQ" x="8116" y="19554"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_9kNI4_pzEdylZYpHMTjaBQ" x="4755" y="22507"/>
       </children>
       <children xmi:id="_Aqinsfp0EdylZYpHMTjaBQ" element="_AqinsPp0EdylZYpHMTjaBQ">
         <eAnnotations xmi:id="_AqintPp0EdylZYpHMTjaBQ" source="com.ibm.xtools.uml.ui.diagram.internal.styles">
@@ -401,7 +401,7 @@
         </children>
         <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="_q6QGIftuEdy4tvw8w2noEw" showStereotype="Label"/>
         <element xmi:type="uml:Class" href="warstwaTO.emx#_3aqicPtdEdybiL-CCYIzuw?warstwaTO/wypozyczalnia.to/KlientTO?"/>
-        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_q6QGIvtuEdy4tvw8w2noEw" x="8242" y="15533"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_q6QGIvtuEdy4tvw8w2noEw" x="8559" y="15533"/>
       </children>
       <children xmi:id="_rMlMQPtuEdy4tvw8w2noEw">
         <children xmi:id="_rMlMQ_tuEdy4tvw8w2noEw" type="ImageCompartment">
@@ -447,7 +447,7 @@
         </children>
         <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="_EhPHYftvEdy2HqC4EDrJ5w" showListSignature="true" showStereotype="Label"/>
         <element xmi:type="uml:Class" href="warstwaDAO.emx#_WPE_0Pp3EdylZYpHMTjaBQ?warstwaDAO/wypozyczalnia.dao/KontoDAO?"/>
-        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_EhPHYvtvEdy2HqC4EDrJ5w" x="32334" y="8242"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_EhPHYvtvEdy2HqC4EDrJ5w" x="30432" y="5706"/>
       </children>
       <children xmi:id="_FfXjkPtvEdy2HqC4EDrJ5w">
         <children xmi:id="_FfXjk_tvEdy2HqC4EDrJ5w" type="ImageCompartment">
@@ -493,7 +493,7 @@
         </children>
         <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="_GGaVcftvEdy2HqC4EDrJ5w" showStereotype="Label"/>
         <element xmi:type="uml:Class" href="warstwaDAO.emx#_Q8hhEPp3EdylZYpHMTjaBQ?warstwaDAO/wypozyczalnia.dao/KlientDAO?"/>
-        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_GGaVcvtvEdy2HqC4EDrJ5w" x="37723" y="4438"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_GGaVcvtvEdy2HqC4EDrJ5w" x="43429" y="1902"/>
       </children>
       <children xmi:id="_h4XSEPtyEdy2HqC4EDrJ5w" element="_h4NhEPtyEdy2HqC4EDrJ5w">
         <children xmi:id="_h4XSE_tyEdy2HqC4EDrJ5w" type="ImageCompartment">
@@ -614,7 +614,7 @@
         <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="__qny5AQjEd2rGcRigrxr3g" showStereotype="Label"/>
         <styles xmi:type="patternNotation:PatternParameterStyle" xmi:id="__qny5QQjEd2rGcRigrxr3g"/>
         <styles xmi:type="patternNotation:PatternShapeStyle" xmi:id="__qny5gQjEd2rGcRigrxr3g"/>
-        <layoutConstraint xmi:type="notation:Bounds" xmi:id="__qny5wQjEd2rGcRigrxr3g" x="30109" y="21404"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="__qny5wQjEd2rGcRigrxr3g" x="30432" y="24092"/>
         <patternInstanceId xmi:id="__qny6AQjEd2rGcRigrxr3g"/>
       </children>
       <styles xmi:type="umlnotation:UMLDiagramStyle" xmi:id="_NNQTo_pvEdylZYpHMTjaBQ"/>
