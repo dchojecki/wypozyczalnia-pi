@@ -377,7 +377,7 @@
           <styles xmi:type="umlnotation:UMLShapeCompartmentStyle" xmi:id="_qqnHr_tuEdy4tvw8w2noEw"/>
         </children>
         <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="_qqnHoftuEdy4tvw8w2noEw" showStereotype="Label"/>
-        <element xmi:type="uml:Class" href="warstwaTO.emx#_162VgPtdEdybiL-CCYIzuw?warstwaTO/wypozyczalnia.to/AdresTO?"/>
+        <element xmi:type="uml:Class" href="warstwaTO.emx#_162VgPtdEdybiL-CCYIzuw?warstwaTO/wypozyczalnia.to.zarzadzaniekontami/AdresTO?"/>
         <layoutConstraint xmi:type="notation:Bounds" xmi:id="_qqnHovtuEdy4tvw8w2noEw" x="1447" y="14419"/>
       </children>
       <children xmi:id="_q6QGIPtuEdy4tvw8w2noEw">
@@ -400,7 +400,7 @@
           <styles xmi:type="umlnotation:UMLShapeCompartmentStyle" xmi:id="_q6QGL_tuEdy4tvw8w2noEw"/>
         </children>
         <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="_q6QGIftuEdy4tvw8w2noEw" showStereotype="Label"/>
-        <element xmi:type="uml:Class" href="warstwaTO.emx#_3aqicPtdEdybiL-CCYIzuw?warstwaTO/wypozyczalnia.to/KlientTO?"/>
+        <element xmi:type="uml:Class" href="warstwaTO.emx#_3aqicPtdEdybiL-CCYIzuw?warstwaTO/wypozyczalnia.to.zarzadzaniekontami/KlientTO?"/>
         <layoutConstraint xmi:type="notation:Bounds" xmi:id="_q6QGIvtuEdy4tvw8w2noEw" x="8559" y="15533"/>
       </children>
       <children xmi:id="_rMlMQPtuEdy4tvw8w2noEw">
@@ -423,7 +423,7 @@
           <styles xmi:type="umlnotation:UMLShapeCompartmentStyle" xmi:id="_rMlMT_tuEdy4tvw8w2noEw"/>
         </children>
         <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="_rMlMQftuEdy4tvw8w2noEw" showStereotype="Label"/>
-        <element xmi:type="uml:Class" href="warstwaTO.emx#_0Ro8APtdEdybiL-CCYIzuw?warstwaTO/wypozyczalnia.to/KontoTO?"/>
+        <element xmi:type="uml:Class" href="warstwaTO.emx#_0Ro8APtdEdybiL-CCYIzuw?warstwaTO/wypozyczalnia.to.zarzadzaniekontami/KontoTO?"/>
         <layoutConstraint xmi:type="notation:Bounds" xmi:id="_rMlMQvtuEdy4tvw8w2noEw" x="17489" y="14436"/>
       </children>
       <children xmi:id="_EhPHYPtvEdy2HqC4EDrJ5w">
@@ -1705,17 +1705,17 @@
       </eAnnotations>
       <ownedOperation xmi:id="_EZT4QPtgEdybiL-CCYIzuw" name="modyfikujDaneAdresu">
         <ownedParameter xmi:id="_rA5LkPtsEdy4tvw8w2noEw" name="adres" direction="inout">
-          <type xmi:type="uml:Class" href="warstwaTO.emx#_162VgPtdEdybiL-CCYIzuw?warstwaTO/wypozyczalnia.to/AdresTO?"/>
+          <type xmi:type="uml:Class" href="warstwaTO.emx#_162VgPtdEdybiL-CCYIzuw?warstwaTO/wypozyczalnia.to.zarzadzaniekontami/AdresTO?"/>
         </ownedParameter>
       </ownedOperation>
       <ownedOperation xmi:id="_G0i4sPttEdy4tvw8w2noEw" name="modyfikujDaneKlienta">
         <ownedParameter xmi:id="_JdFBMPttEdy4tvw8w2noEw" name="klient" direction="inout">
-          <type xmi:type="uml:Class" href="warstwaTO.emx#_3aqicPtdEdybiL-CCYIzuw?warstwaTO/wypozyczalnia.to/KlientTO?"/>
+          <type xmi:type="uml:Class" href="warstwaTO.emx#_3aqicPtdEdybiL-CCYIzuw?warstwaTO/wypozyczalnia.to.zarzadzaniekontami/KlientTO?"/>
         </ownedParameter>
       </ownedOperation>
       <ownedOperation xmi:id="_MZH7kPttEdy4tvw8w2noEw" name="modyfikujDaneKonta">
         <ownedParameter xmi:id="_NtK9YPttEdy4tvw8w2noEw" name="konto" direction="inout">
-          <type xmi:type="uml:Class" href="warstwaTO.emx#_0Ro8APtdEdybiL-CCYIzuw?warstwaTO/wypozyczalnia.to/KontoTO?"/>
+          <type xmi:type="uml:Class" href="warstwaTO.emx#_0Ro8APtdEdybiL-CCYIzuw?warstwaTO/wypozyczalnia.to.zarzadzaniekontami/KontoTO?"/>
         </ownedParameter>
       </ownedOperation>
       <ownedOperation xmi:id="_WzXF0PttEdy4tvw8w2noEw" name="zwrocDaneAdresu">
@@ -1723,7 +1723,7 @@
           <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
         </ownedParameter>
         <ownedParameter xmi:id="_daZrQPttEdy4tvw8w2noEw" name="Parameter1" direction="return">
-          <type xmi:type="uml:Class" href="warstwaTO.emx#_162VgPtdEdybiL-CCYIzuw?warstwaTO/wypozyczalnia.to/AdresTO?"/>
+          <type xmi:type="uml:Class" href="warstwaTO.emx#_162VgPtdEdybiL-CCYIzuw?warstwaTO/wypozyczalnia.to.zarzadzaniekontami/AdresTO?"/>
         </ownedParameter>
       </ownedOperation>
       <ownedOperation xmi:id="_ebYAEPttEdy4tvw8w2noEw" name="zwrocDaneKonta">
@@ -1731,7 +1731,7 @@
           <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
         </ownedParameter>
         <ownedParameter xmi:id="_lqWIMPttEdy4tvw8w2noEw" name="Parameter1" direction="return">
-          <type xmi:type="uml:Class" href="warstwaTO.emx#_0Ro8APtdEdybiL-CCYIzuw?warstwaTO/wypozyczalnia.to/KontoTO?"/>
+          <type xmi:type="uml:Class" href="warstwaTO.emx#_0Ro8APtdEdybiL-CCYIzuw?warstwaTO/wypozyczalnia.to.zarzadzaniekontami/KontoTO?"/>
         </ownedParameter>
       </ownedOperation>
       <ownedOperation xmi:id="_mYiq8PttEdy4tvw8w2noEw" name="zwrocDaneKlienta">
@@ -1739,15 +1739,15 @@
           <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
         </ownedParameter>
         <ownedParameter xmi:id="_nOe0cPttEdy4tvw8w2noEw" name="Parameter1" direction="return">
-          <type xmi:type="uml:Class" href="warstwaTO.emx#_3aqicPtdEdybiL-CCYIzuw?warstwaTO/wypozyczalnia.to/KlientTO?"/>
+          <type xmi:type="uml:Class" href="warstwaTO.emx#_3aqicPtdEdybiL-CCYIzuw?warstwaTO/wypozyczalnia.to.zarzadzaniekontami/KlientTO?"/>
         </ownedParameter>
       </ownedOperation>
       <ownedOperation xmi:id="_hOvogAMhEd21s-4bDukuPw" name="stworzNoweKonto">
         <ownedParameter xmi:id="_iZ_6sAMhEd21s-4bDukuPw" name="klient">
-          <type xmi:type="uml:Class" href="warstwaTO.emx#_3aqicPtdEdybiL-CCYIzuw?warstwaTO/wypozyczalnia.to/KlientTO?"/>
+          <type xmi:type="uml:Class" href="warstwaTO.emx#_3aqicPtdEdybiL-CCYIzuw?warstwaTO/wypozyczalnia.to.zarzadzaniekontami/KlientTO?"/>
         </ownedParameter>
         <ownedParameter xmi:id="_jxBYAAMhEd21s-4bDukuPw" name="Parameter2" direction="return">
-          <type xmi:type="uml:Class" href="warstwaTO.emx#_0Ro8APtdEdybiL-CCYIzuw?warstwaTO/wypozyczalnia.to/KontoTO?"/>
+          <type xmi:type="uml:Class" href="warstwaTO.emx#_0Ro8APtdEdybiL-CCYIzuw?warstwaTO/wypozyczalnia.to.zarzadzaniekontami/KontoTO?"/>
         </ownedParameter>
       </ownedOperation>
       <ownedOperation xmi:id="_1y0JgAMhEd21s-4bDukuPw" name="zablokujKonto">
@@ -1779,7 +1779,7 @@
           <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
         </ownedParameter>
         <ownedParameter xmi:id="_CsCesAMiEd21s-4bDukuPw" name="Parameter1" direction="return">
-          <type xmi:type="uml:Class" href="warstwaTO.emx#_0Ro8APtdEdybiL-CCYIzuw?warstwaTO/wypozyczalnia.to/KontoTO?"/>
+          <type xmi:type="uml:Class" href="warstwaTO.emx#_0Ro8APtdEdybiL-CCYIzuw?warstwaTO/wypozyczalnia.to.zarzadzaniekontami/KontoTO?"/>
         </ownedParameter>
       </ownedOperation>
       <ownedOperation xmi:id="_plQOMAMmEd21s-4bDukuPw" name="czyKlientZarejestrowany">
@@ -1795,7 +1795,7 @@
           <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
         </ownedParameter>
         <ownedParameter xmi:id="_yFl3kAMmEd21s-4bDukuPw" name="Parameter1" direction="return">
-          <type xmi:type="uml:Class" href="warstwaTO.emx#_3aqicPtdEdybiL-CCYIzuw?warstwaTO/wypozyczalnia.to/KlientTO?"/>
+          <type xmi:type="uml:Class" href="warstwaTO.emx#_3aqicPtdEdybiL-CCYIzuw?warstwaTO/wypozyczalnia.to.zarzadzaniekontami/KlientTO?"/>
         </ownedParameter>
       </ownedOperation>
       <ownedOperation xmi:id="__7kPQAMuEd21s-4bDukuPw" name="wyloguj">
@@ -1805,13 +1805,13 @@
       </ownedOperation>
     </packagedElement>
     <packagedElement xmi:type="uml:Dependency" xmi:id="_wjm7UPtuEdy4tvw8w2noEw" client="_UUyXAPpvEdylZYpHMTjaBQ">
-      <supplier xmi:type="uml:Class" href="warstwaTO.emx#_162VgPtdEdybiL-CCYIzuw?warstwaTO/wypozyczalnia.to/AdresTO?"/>
+      <supplier xmi:type="uml:Class" href="warstwaTO.emx#_162VgPtdEdybiL-CCYIzuw?warstwaTO/wypozyczalnia.to.zarzadzaniekontami/AdresTO?"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Dependency" xmi:id="_wFzlAPtuEdy4tvw8w2noEw" client="_UUyXAPpvEdylZYpHMTjaBQ">
-      <supplier xmi:type="uml:Class" href="warstwaTO.emx#_3aqicPtdEdybiL-CCYIzuw?warstwaTO/wypozyczalnia.to/KlientTO?"/>
+      <supplier xmi:type="uml:Class" href="warstwaTO.emx#_3aqicPtdEdybiL-CCYIzuw?warstwaTO/wypozyczalnia.to.zarzadzaniekontami/KlientTO?"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Dependency" xmi:id="_vl6kAPtuEdy4tvw8w2noEw" client="_UUyXAPpvEdylZYpHMTjaBQ">
-      <supplier xmi:type="uml:Class" href="warstwaTO.emx#_0Ro8APtdEdybiL-CCYIzuw?warstwaTO/wypozyczalnia.to/KontoTO?"/>
+      <supplier xmi:type="uml:Class" href="warstwaTO.emx#_0Ro8APtdEdybiL-CCYIzuw?warstwaTO/wypozyczalnia.to.zarzadzaniekontami/KontoTO?"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Association" xmi:id="_fwh6MPpyEdylZYpHMTjaBQ" memberEnd="_fwh6MfpyEdylZYpHMTjaBQ _fwrEIPpyEdylZYpHMTjaBQ">
       <ownedEnd xmi:id="_fwrEIPpyEdylZYpHMTjaBQ" name="" visibility="private" type="_iFcqgPpvEdylZYpHMTjaBQ" association="_fwh6MPpyEdylZYpHMTjaBQ">
