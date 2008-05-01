@@ -88,7 +88,7 @@
   <packageImport xmi:id="_xJOZlPtdEdybiL-CCYIzuw">
     <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
   </packageImport>
-  <packagedElement xmi:type="uml:Package" xmi:id="_yTbi4PtdEdybiL-CCYIzuw" name="wypozyczalnia.to">
+  <packagedElement xmi:type="uml:Package" xmi:id="_yTbi4PtdEdybiL-CCYIzuw" name="wypozyczalnia.to.zarzadzaniekontami">
     <eAnnotations xmi:id="_yTlT4PtdEdybiL-CCYIzuw" source="uml2.diagrams" references="_yTlT4ftdEdybiL-CCYIzuw">
       <contents xmi:type="notation:Diagram" xmi:id="_yTlT4ftdEdybiL-CCYIzuw" type="Freeform" name="Main">
         <styles xmi:type="umlnotation:UMLDiagramStyle" xmi:id="_yTlT4vtdEdybiL-CCYIzuw"/>
