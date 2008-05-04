@@ -3840,7 +3840,7 @@
           </children>
           <children xmi:id="_f9lPdRnGEd2Gx8PNDL_Vvw" type="Name"/>
           <styles xmi:type="umlnotation:UMLFrameStyle" xmi:id="_f9lPdhnGEd2Gx8PNDL_Vvw" showStereotype="Label"/>
-          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_f9lPdxnGEd2Gx8PNDL_Vvw" x="793" y="793" width="21800" height="55346"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_f9lPdxnGEd2Gx8PNDL_Vvw" x="793" y="793" width="21800" height="53441"/>
         </children>
         <styles xmi:type="umlnotation:UMLDiagramStyle" xmi:id="_f9lPeBnGEd2Gx8PNDL_Vvw"/>
         <edges xmi:id="_UUX2ABnZEd2Gx8PNDL_Vvw" element="_UUOFABnZEd2Gx8PNDL_Vvw" source="_Mw-9ERnZEd2Gx8PNDL_Vvw" target="_OaB-gBnZEd2Gx8PNDL_Vvw">
