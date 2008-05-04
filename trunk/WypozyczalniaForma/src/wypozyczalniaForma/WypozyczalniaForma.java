@@ -16,7 +16,7 @@ public class WypozyczalniaForma extends SingleFrameApplication {
      * At startup create and show the main frame of the application.
      */
     @Override protected void startup() {
-        show(new WypozyczalniaFormaView(this));
+        show(new MainWindow(this));
     }
 
     /**
