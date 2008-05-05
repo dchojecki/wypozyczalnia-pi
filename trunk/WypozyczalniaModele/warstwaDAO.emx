@@ -3209,6 +3209,8 @@
       <ownedAttribute xmi:id="_1D76gPp_EdylZYpHMTjaBQ" name="cenaJednostkowa" visibility="private">
         <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#float"/>
       </ownedAttribute>
+      <ownedOperation xmi:id="_wP0HkBplEd2gFpfjdfx1Ig" name="pobierzCeneJednostkowa"/>
+      <ownedOperation xmi:id="_yggX0BplEd2gFpfjdfx1Ig" name="pobierzTytulFilmu"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_adGGIPp8EdylZYpHMTjaBQ" name="PracownicyZbior"/>
     <packagedElement xmi:type="uml:Class" xmi:id="_lC71sPp3EdylZYpHMTjaBQ" name="PracownikDAO">
@@ -4179,6 +4181,8 @@
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_IfHDAhbKEd2lO9ZGxbSKnA" value="1"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_IfHDARbKEd2lO9ZGxbSKnA" value="1"/>
       </ownedAttribute>
+      <ownedOperation xmi:id="_ktTtsBplEd2gFpfjdfx1Ig" name="Operation1"/>
+      <ownedOperation xmi:id="_qNR9YBplEd2gFpfjdfx1Ig" name="pobierzLiczbePozycjiZamowienia"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_fzgjcPp3EdylZYpHMTjaBQ" name="WypozyczalniaDAO">
       <ownedAttribute xmi:id="_BF7mYfp4EdylZYpHMTjaBQ" name="punkty" visibility="private" type="_gt69QPp3EdylZYpHMTjaBQ" aggregation="composite" association="_BF7mYPp4EdylZYpHMTjaBQ">
