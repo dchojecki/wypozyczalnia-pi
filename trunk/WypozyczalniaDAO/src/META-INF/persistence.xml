@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="1.0" xmlns="http://java.sun.com/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/persistence http://java.sun.com/xml/ns/persistence/persistence_1_0.xsd">
+  <persistence-unit name="WypozyczalniaDAODerbyPU" transaction-type="RESOURCE_LOCAL">
+    <provider>oracle.toplink.essentials.PersistenceProvider</provider>
+    <class>wypozyczalnia.dao.PozycjaZamowieniaDAO</class>
+    <class>wypozyczalnia.dao.FilmDAO</class>
+    <class>wypozyczalnia.dao.PlytaDAO</class>
+    <class>wypozyczalnia.dao.ZamowienieDAO</class>
+    <class>wypozyczalnia.dao.KontoDAO</class>
+    <class>wypozyczalnia.dao.KlientDAO</class>
+    <class>wypozyczalnia.dao.OsobaDAO</class>
+    <class>wypozyczalnia.dao.AdresDAO</class>
+    <properties>
+      <!--<property name="toplink.jdbc.user" value="app"/>
+      <property name="toplink.jdbc.password" value="app"/>
+      <property name="toplink.jdbc.url" value="jdbc:derby://localhost:1527/sample"/>
+      <property name="toplink.jdbc.driver" value="org.apache.derby.jdbc.ClientDriver"/>      -->
+      <property name="toplink.jdbc.driver" value="oracle.jdbc.OracleDriver"/>
+      <property name="toplink.jdbc.url" value="jdbc:oracle:thin:@localhost:1521:master"/>
+      <property name="toplink.jdbc.user" value="wyp"/>
+      <property name="toplink.jdbc.password" value="wyp"/>
+      <property name="toplink.platform.class.name" value="oracle.toplink.essentials.platform.database.oracle.OraclePlatform"/>
+      <property name="toplink.logging.level" value="FINER"/>
+      <property name="toplink.ddl-generation" value="create-tables"/>
+    </properties>
+  </persistence-unit>
+</persistence>
