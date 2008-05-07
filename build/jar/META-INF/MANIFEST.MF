@@ -1,9 +1,0 @@
-Manifest-Version: 1.0
-Ant-Version: Apache Ant 1.7.0
-Created-By: 10.0-b19 (Sun Microsystems Inc.)
-X-COMMENT: Main-Class will be added automatically by build
-Main-Class: wypozyczalniaear.Main
-Class-Path: WypozyczalniaDAO.jar WypozyczalniaEar-ejb.jar calendarcomp
- onent.jar JCalendar4.jar appframework-1.0.3.jar swing-worker-1.1.jar 
- ojdbc14.jar 
-
