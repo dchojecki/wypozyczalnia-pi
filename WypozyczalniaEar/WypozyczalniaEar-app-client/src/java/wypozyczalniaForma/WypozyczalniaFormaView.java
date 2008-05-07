@@ -1,0 +1,529 @@
+/*
+ * DesktopApplication1View.java
+ */
+package wypozyczalniaForma;
+
+import org.jdesktop.application.Action;
+import org.jdesktop.application.ResourceMap;
+import org.jdesktop.application.FrameView;
+import org.jdesktop.application.TaskMonitor;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import javax.swing.Timer;
+import javax.swing.Icon;
+import javax.swing.JDialog;
+import javax.swing.JFrame;
+import org.jdesktop.application.Application;
+import wypozyczalnia.logika.zarzadzanieKontami.ZarzadzanieKontamiDelegacja;
+import wypozyczalnia.logika.zarzadzanieKontami.walidacja.IWalidatorDanychKonta;
+import wypozyczalnia.logika.zarzadzanieKontami.walidacja.WalidatorDanychKonta;
+import wypozyczalnia.logika.zarzadzanieKontami.walidacja.WalidatorDanychKontaWyjatek;
+import wypozyczalnia.to.zarzadzaniekontami.KontoTO;
+
+/**
+ * The application's main frame.
+ */
+public class WypozyczalniaFormaView extends FrameView {
+
+    private boolean[] valid;
+    boolean wszystkoPoprawne;
+    private String[] month;
+    private IWalidatorDanychKonta walidator_ekran;
+    private IWalidatorDanychKonta walidator_logika;
+
+    public WypozyczalniaFormaView(Application app) {
+        super(app);
+
+        initComponents();
+        wyslijZgloszeniePrzycisk.setEnabled(false);
+
+        walidator_ekran = WalidatorDanychKonta.pobierzWalidator(true);
+        walidator_logika = WalidatorDanychKonta.pobierzWalidator(false);
+
+        valid = new boolean[5];
+        month = new String[]{"Styczeń", "Luty", "Marzec", "Kwiecień", "Maj", "Czerwiec", "Lipiec", "Sierpień", "Wrzesień", "Listopad", "Grudzień"};
+        // status bar initialization - message timeout, idle icon and busy animation, etc
+        ResourceMap resourceMap = getResourceMap();
+        int messageTimeout = resourceMap.getInteger("StatusBar.messageTimeout");
+        messageTimer = new Timer(messageTimeout, new ActionListener() {
+
+            public void actionPerformed(ActionEvent e) {
+                statusMessageLabel.setText("");
+            }
+        });
+        messageTimer.setRepeats(false);
+        int busyAnimationRate = resourceMap.getInteger("StatusBar.busyAnimationRate");
+        for (int i = 0; i < busyIcons.length; i++) {
+            busyIcons[i] = resourceMap.getIcon("StatusBar.busyIcons[" + i + "]");
+        }
+        busyIconTimer = new Timer(busyAnimationRate, new ActionListener() {
+
+            public void actionPerformed(ActionEvent e) {
+                busyIconIndex = (busyIconIndex + 1) % busyIcons.length;
+                statusAnimationLabel.setIcon(busyIcons[busyIconIndex]);
+            }
+        });
+        idleIcon = resourceMap.getIcon("StatusBar.idleIcon");
+        statusAnimationLabel.setIcon(idleIcon);
+        progressBar.setVisible(false);
+
+        // connecting action tasks to status bar via TaskMonitor
+        TaskMonitor taskMonitor = new TaskMonitor(getApplication().getContext());
+        taskMonitor.addPropertyChangeListener(new java.beans.PropertyChangeListener() {
+
+            public void propertyChange(java.beans.PropertyChangeEvent evt) {
+                String propertyName = evt.getPropertyName();
+                if ("started".equals(propertyName)) {
+                    if (!busyIconTimer.isRunning()) {
+                        statusAnimationLabel.setIcon(busyIcons[0]);
+                        busyIconIndex = 0;
+                        busyIconTimer.start();
+                    }
+                    progressBar.setVisible(true);
+                    progressBar.setIndeterminate(true);
+                } else if ("done".equals(propertyName)) {
+                    busyIconTimer.stop();
+                    statusAnimationLabel.setIcon(idleIcon);
+                    progressBar.setVisible(false);
+                    progressBar.setValue(0);
+                } else if ("message".equals(propertyName)) {
+                    String text = (String) (evt.getNewValue());
+                    statusMessageLabel.setText((text == null) ? "" : text);
+                    messageTimer.restart();
+                } else if ("progress".equals(propertyName)) {
+                    int value = (Integer) (evt.getNewValue());
+                    progressBar.setVisible(true);
+                    progressBar.setIndeterminate(false);
+                    progressBar.setValue(value);
+                }
+            }
+        });
+    }
+
+    @Action
+    public void showAboutBox() {
+        if (aboutBox == null) {
+            JFrame mainFrame = WypozyczalniaForma.getApplication().getMainFrame();
+            aboutBox = new WypozyczalniaFormaAboutBox(mainFrame);
+            aboutBox.setLocationRelativeTo(mainFrame);
+        }
+        WypozyczalniaForma.getApplication().show(aboutBox);
+    }
+
+    /** This method is called from within the constructor to
+     * initialize the form.
+     * WARNING: Do NOT modify this code. The content of this method is
+     * always regenerated by the Form Editor.
+     */
+    // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
+    private void initComponents() {
+
+        mainPanel = new javax.swing.JPanel();
+        jLabel4 = new javax.swing.JLabel();
+        jLabel1 = new javax.swing.JLabel();
+        jLabel2 = new javax.swing.JLabel();
+        jLabel3 = new javax.swing.JLabel();
+        mailTextField = new javax.swing.JTextField();
+        nazwiskoTextField = new javax.swing.JTextField();
+        imieTextField = new javax.swing.JTextField();
+        jLabel5 = new javax.swing.JLabel();
+        peselTextField = new javax.swing.JTextField();
+        jLabel6 = new javax.swing.JLabel();
+        jLabel7 = new javax.swing.JLabel();
+        jLabel8 = new javax.swing.JLabel();
+        wyslijZgloszeniePrzycisk = new javax.swing.JButton();
+        jLabel9 = new javax.swing.JLabel();
+        jLabel10 = new javax.swing.JLabel();
+        dataUrodzeniaCalendar = new com.imagine.component.calendar.CalendarComboBox();
+        calendarComboBox2 = new com.imagine.component.calendar.CalendarComboBox();
+        jLabel11 = new javax.swing.JLabel();
+        menuBar = new javax.swing.JMenuBar();
+        javax.swing.JMenu fileMenu = new javax.swing.JMenu();
+        javax.swing.JMenuItem exitMenuItem = new javax.swing.JMenuItem();
+        javax.swing.JMenu helpMenu = new javax.swing.JMenu();
+        javax.swing.JMenuItem aboutMenuItem = new javax.swing.JMenuItem();
+        statusPanel = new javax.swing.JPanel();
+        javax.swing.JSeparator statusPanelSeparator = new javax.swing.JSeparator();
+        statusMessageLabel = new javax.swing.JLabel();
+        statusAnimationLabel = new javax.swing.JLabel();
+        progressBar = new javax.swing.JProgressBar();
+
+        mainPanel.setName("mainPanel"); // NOI18N
+
+        org.jdesktop.application.ResourceMap resourceMap = org.jdesktop.application.Application.getInstance(wypozyczalniaForma.WypozyczalniaForma.class).getContext().getResourceMap(WypozyczalniaFormaView.class);
+        jLabel4.setText(resourceMap.getString("jLabel4.text")); // NOI18N
+        jLabel4.setName("jLabel4"); // NOI18N
+
+        jLabel1.setText(resourceMap.getString("jLabel1.text")); // NOI18N
+        jLabel1.setName("jLabel1"); // NOI18N
+
+        jLabel2.setText(resourceMap.getString("jLabel2.text")); // NOI18N
+        jLabel2.setName("jLabel2"); // NOI18N
+
+        jLabel3.setText(resourceMap.getString("jLabel3.text")); // NOI18N
+        jLabel3.setName("jLabel3"); // NOI18N
+
+        mailTextField.setText(resourceMap.getString("mailTextField.text")); // NOI18N
+        mailTextField.setName("mailTextField"); // NOI18N
+        mailTextField.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyReleased(java.awt.event.KeyEvent evt) {
+                mailTextFieldKeyReleased(evt);
+            }
+        });
+
+        nazwiskoTextField.setText(resourceMap.getString("nazwiskoTextField.text")); // NOI18N
+        nazwiskoTextField.setName("nazwiskoTextField"); // NOI18N
+        nazwiskoTextField.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyReleased(java.awt.event.KeyEvent evt) {
+                nazwiskoTextFieldKeyReleased(evt);
+            }
+        });
+
+        imieTextField.setText(resourceMap.getString("imieTextField.text")); // NOI18N
+        imieTextField.setName("imieTextField"); // NOI18N
+        imieTextField.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                imieTextFieldActionPerformed(evt);
+            }
+        });
+        imieTextField.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                imieTextFieldKeyPressed(evt);
+            }
+            public void keyReleased(java.awt.event.KeyEvent evt) {
+                imieTextFieldKeyReleased(evt);
+            }
+        });
+
+        jLabel5.setText(resourceMap.getString("jLabel5.text")); // NOI18N
+        jLabel5.setName("jLabel5"); // NOI18N
+
+        peselTextField.setText(resourceMap.getString("peselTextField.text")); // NOI18N
+        peselTextField.setName("peselTextField"); // NOI18N
+        peselTextField.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyReleased(java.awt.event.KeyEvent evt) {
+                peselTextFieldKeyReleased(evt);
+            }
+        });
+
+        jLabel6.setText(resourceMap.getString("jLabel6.text")); // NOI18N
+        jLabel6.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        jLabel6.setName("jLabel6"); // NOI18N
+
+        jLabel7.setText(resourceMap.getString("jLabel7.text")); // NOI18N
+        jLabel7.setName("jLabel7"); // NOI18N
+
+        jLabel8.setText(resourceMap.getString("jLabel8.text")); // NOI18N
+        jLabel8.setName("jLabel8"); // NOI18N
+
+        javax.swing.ActionMap actionMap = org.jdesktop.application.Application.getInstance(wypozyczalniaForma.WypozyczalniaForma.class).getContext().getActionMap(WypozyczalniaFormaView.class, this);
+        wyslijZgloszeniePrzycisk.setAction(actionMap.get("createAccount")); // NOI18N
+        wyslijZgloszeniePrzycisk.setLabel(resourceMap.getString("wyslijZgloszeniePrzycisk.label")); // NOI18N
+        wyslijZgloszeniePrzycisk.setName("wyslijZgloszeniePrzycisk"); // NOI18N
+
+        jLabel9.setText(resourceMap.getString("jLabel9.text")); // NOI18N
+        jLabel9.setName("jLabel9"); // NOI18N
+
+        jLabel10.setText(resourceMap.getString("jLabel10.text")); // NOI18N
+        jLabel10.setName("jLabel10"); // NOI18N
+
+        dataUrodzeniaCalendar.setName("dataUrodzeniaCalendar"); // NOI18N
+
+        calendarComboBox2.setName("calendarComboBox2"); // NOI18N
+
+        jLabel11.setText(resourceMap.getString("jLabel11.text")); // NOI18N
+        jLabel11.setName("jLabel11"); // NOI18N
+
+        javax.swing.GroupLayout mainPanelLayout = new javax.swing.GroupLayout(mainPanel);
+        mainPanel.setLayout(mainPanelLayout);
+        mainPanelLayout.setHorizontalGroup(
+            mainPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(mainPanelLayout.createSequentialGroup()
+                .addGap(35, 35, 35)
+                .addComponent(jLabel6, javax.swing.GroupLayout.PREFERRED_SIZE, 209, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(287, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, mainPanelLayout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(mainPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addGroup(mainPanelLayout.createSequentialGroup()
+                        .addGroup(mainPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabel1)
+                            .addComponent(jLabel4)
+                            .addComponent(jLabel5)
+                            .addComponent(jLabel3)
+                            .addComponent(jLabel2))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 6, Short.MAX_VALUE)
+                        .addGroup(mainPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addGroup(mainPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                .addComponent(nazwiskoTextField, javax.swing.GroupLayout.Alignment.TRAILING)
+                                .addComponent(imieTextField, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 129, Short.MAX_VALUE))
+                            .addGroup(mainPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                .addComponent(mailTextField, javax.swing.GroupLayout.Alignment.TRAILING)
+                                .addComponent(peselTextField, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 129, Short.MAX_VALUE)
+                                .addComponent(calendarComboBox2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(mainPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(mainPanelLayout.createSequentialGroup()
+                                .addGap(18, 18, 18)
+                                .addGroup(mainPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                    .addComponent(jLabel8, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                    .addComponent(jLabel7, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 175, Short.MAX_VALUE)))
+                            .addGroup(mainPanelLayout.createSequentialGroup()
+                                .addGap(10, 10, 10)
+                                .addGroup(mainPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(jLabel11, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(jLabel10, javax.swing.GroupLayout.DEFAULT_SIZE, 183, Short.MAX_VALUE)
+                                    .addComponent(jLabel9, javax.swing.GroupLayout.PREFERRED_SIZE, 170, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED))
+                    .addComponent(wyslijZgloszeniePrzycisk))
+                .addGap(57, 57, 57))
+        );
+        mainPanelLayout.setVerticalGroup(
+            mainPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, mainPanelLayout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(mainPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addGroup(mainPanelLayout.createSequentialGroup()
+                        .addComponent(jLabel6)
+                        .addGap(55, 55, 55)
+                        .addGroup(mainPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(jLabel1)
+                            .addComponent(imieTextField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                    .addComponent(jLabel7, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(mainPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(mainPanelLayout.createSequentialGroup()
+                        .addGroup(mainPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(jLabel2)
+                            .addComponent(nazwiskoTextField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(mainPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabel4)
+                            .addComponent(calendarComboBox2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(mainPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(jLabel5)
+                            .addComponent(peselTextField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 15, Short.MAX_VALUE)
+                        .addGroup(mainPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(jLabel3)
+                            .addComponent(mailTextField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jLabel11, javax.swing.GroupLayout.PREFERRED_SIZE, 21, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(41, 41, 41))
+                    .addGroup(mainPanelLayout.createSequentialGroup()
+                        .addComponent(jLabel8, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jLabel9, javax.swing.GroupLayout.PREFERRED_SIZE, 19, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jLabel10, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(46, 46, 46)
+                        .addComponent(wyslijZgloszeniePrzycisk, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addGap(27, 27, 27))
+        );
+
+        jLabel7.getAccessibleContext().setAccessibleName(resourceMap.getString("jLabel7.AccessibleContext.accessibleName")); // NOI18N
+
+        menuBar.setName("menuBar"); // NOI18N
+
+        fileMenu.setText(resourceMap.getString("fileMenu.text")); // NOI18N
+        fileMenu.setName("fileMenu"); // NOI18N
+
+        exitMenuItem.setAction(actionMap.get("quit")); // NOI18N
+        exitMenuItem.setName("exitMenuItem"); // NOI18N
+        fileMenu.add(exitMenuItem);
+
+        menuBar.add(fileMenu);
+
+        helpMenu.setText(resourceMap.getString("helpMenu.text")); // NOI18N
+        helpMenu.setName("helpMenu"); // NOI18N
+
+        aboutMenuItem.setAction(actionMap.get("showAboutBox")); // NOI18N
+        aboutMenuItem.setName("aboutMenuItem"); // NOI18N
+        helpMenu.add(aboutMenuItem);
+
+        menuBar.add(helpMenu);
+
+        statusPanel.setName("statusPanel"); // NOI18N
+
+        statusPanelSeparator.setName("statusPanelSeparator"); // NOI18N
+
+        statusMessageLabel.setName("statusMessageLabel"); // NOI18N
+
+        statusAnimationLabel.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
+        statusAnimationLabel.setName("statusAnimationLabel"); // NOI18N
+
+        progressBar.setName("progressBar"); // NOI18N
+
+        javax.swing.GroupLayout statusPanelLayout = new javax.swing.GroupLayout(statusPanel);
+        statusPanel.setLayout(statusPanelLayout);
+        statusPanelLayout.setHorizontalGroup(
+            statusPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(statusPanelSeparator, javax.swing.GroupLayout.DEFAULT_SIZE, 531, Short.MAX_VALUE)
+            .addGroup(statusPanelLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(statusMessageLabel)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 357, Short.MAX_VALUE)
+                .addComponent(progressBar, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(statusAnimationLabel)
+                .addContainerGap())
+        );
+        statusPanelLayout.setVerticalGroup(
+            statusPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(statusPanelLayout.createSequentialGroup()
+                .addComponent(statusPanelSeparator, javax.swing.GroupLayout.PREFERRED_SIZE, 2, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addGroup(statusPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(statusMessageLabel)
+                    .addComponent(statusAnimationLabel)
+                    .addComponent(progressBar, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(3, 3, 3))
+        );
+
+        setComponent(mainPanel);
+        setMenuBar(menuBar);
+        setStatusBar(statusPanel);
+    }// </editor-fold>//GEN-END:initComponents
+    private void imieTextFieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_imieTextFieldActionPerformed
+
+}//GEN-LAST:event_imieTextFieldActionPerformed
+
+    private void imieTextFieldKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_imieTextFieldKeyPressed
+        
+}//GEN-LAST:event_imieTextFieldKeyPressed
+
+    private void imieTextFieldKeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_imieTextFieldKeyReleased
+        String imie = imieTextField.getText();
+        try {
+            walidator_ekran.zwalidujImie(imie);
+            jLabel7.setText("");
+        } catch (WalidatorDanychKontaWyjatek e) {
+            jLabel7.setText(e.getMessage());
+        }
+
+        try {
+            walidator_logika.zwalidujImie(imie);
+            valid[0] = true;
+        } catch (WalidatorDanychKontaWyjatek e) {
+            valid[0] = false;
+        }
+        wszystkoPoprawneTest();
+}//GEN-LAST:event_imieTextFieldKeyReleased
+
+    private void nazwiskoTextFieldKeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_nazwiskoTextFieldKeyReleased
+
+        String nazwisko = nazwiskoTextField.getText();
+        try {
+            walidator_ekran.zwalidujNazwisko(nazwisko);
+            jLabel8.setText("");
+        } catch (WalidatorDanychKontaWyjatek e) {
+            jLabel8.setText(e.getMessage());
+        }
+
+        try {
+            walidator_logika.zwalidujNazwisko(nazwisko);
+            valid[1] = true;
+        } catch (WalidatorDanychKontaWyjatek e) {
+            valid[1] = false;
+        }
+        wszystkoPoprawneTest();
+}//GEN-LAST:event_nazwiskoTextFieldKeyReleased
+
+    private void mailTextFieldKeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_mailTextFieldKeyReleased
+        String mail = mailTextField.getText();
+        try {
+            walidator_ekran.zwalidujMail(mail);
+            jLabel11.setText("");
+        } catch (WalidatorDanychKontaWyjatek e) {
+            jLabel11.setText(e.getMessage());
+        }
+
+        try {
+            walidator_logika.zwalidujMail(mail);
+            valid[3] = true;
+        } catch (WalidatorDanychKontaWyjatek e) {
+            valid[3] = false;
+        }
+        wszystkoPoprawneTest();
+}//GEN-LAST:event_mailTextFieldKeyReleased
+
+    private void peselTextFieldKeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_peselTextFieldKeyReleased
+        String pesel = peselTextField.getText();
+        try {
+            walidator_ekran.zwalidujPESEL(pesel);
+            jLabel10.setText("");
+        } catch (WalidatorDanychKontaWyjatek e) {
+            jLabel10.setText(e.getMessage());
+        }
+
+
+        try {
+            walidator_logika.zwalidujPESEL(pesel);
+            valid[2] = true;
+        } catch (WalidatorDanychKontaWyjatek e) {
+            valid[2] = false;
+        }        
+        wszystkoPoprawneTest();
+        
+}//GEN-LAST:event_peselTextFieldKeyReleased
+
+    void peselDataUrodzeniaTest() {
+        try {
+            walidator_logika.zwalidujDateUrodzeniaZPeselem(
+                    dataUrodzeniaCalendar.getDate().toString(), peselTextField.getText());                                    
+            valid[4] = true;
+        }
+       catch (WalidatorDanychKontaWyjatek e) {
+            valid[4] = false;
+        }
+    }
+    void wszystkoPoprawneTest() {  
+        peselDataUrodzeniaTest();
+        valid[4] = true;
+        wszystkoPoprawne = true;        
+        for (boolean i : valid) {
+            if (i == false) {
+                wszystkoPoprawne = false;
+                break;
+            }
+        }
+
+        wyslijZgloszeniePrzycisk.setEnabled(wszystkoPoprawne);
+    }
+
+    @Action
+    public void createAccount() throws Exception {       
+    }
+    // Variables declaration - do not modify//GEN-BEGIN:variables
+    private com.imagine.component.calendar.CalendarComboBox calendarComboBox2;
+    private com.imagine.component.calendar.CalendarComboBox dataUrodzeniaCalendar;
+    private javax.swing.JTextField imieTextField;
+    private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel10;
+    private javax.swing.JLabel jLabel11;
+    private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel5;
+    private javax.swing.JLabel jLabel6;
+    private javax.swing.JLabel jLabel7;
+    private javax.swing.JLabel jLabel8;
+    private javax.swing.JLabel jLabel9;
+    private javax.swing.JTextField mailTextField;
+    private javax.swing.JPanel mainPanel;
+    private javax.swing.JMenuBar menuBar;
+    private javax.swing.JTextField nazwiskoTextField;
+    private javax.swing.JTextField peselTextField;
+    private javax.swing.JProgressBar progressBar;
+    private javax.swing.JLabel statusAnimationLabel;
+    private javax.swing.JLabel statusMessageLabel;
+    private javax.swing.JPanel statusPanel;
+    private javax.swing.JButton wyslijZgloszeniePrzycisk;
+    // End of variables declaration//GEN-END:variables
+    private final Timer messageTimer;
+    private final Timer busyIconTimer;
+    private final Icon idleIcon;
+    private final Icon[] busyIcons = new Icon[15];
+    private int busyIconIndex = 0;
+    private JDialog aboutBox;
+}
