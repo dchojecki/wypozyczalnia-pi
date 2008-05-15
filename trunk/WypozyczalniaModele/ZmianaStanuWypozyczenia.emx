@@ -594,7 +594,7 @@
         </eAnnotations>
       </message>
     </ownedBehavior>
-    <ownedBehavior xmi:type="uml:Interaction" xmi:id="_r7MzsSKoEd2_8tsV0LqPjw" name="zmien stan zamówienia w klasie warstwy DAO">
+    <ownedBehavior xmi:type="uml:Interaction" xmi:id="_r7MzsSKoEd2_8tsV0LqPjw" name="1.30 zmien stan zamówienia w klasie warstwy DAO">
       <eAnnotations xmi:id="_r7WksCKoEd2_8tsV0LqPjw" source="uml2.diagrams">
         <contents xmi:type="notation:Diagram" xmi:id="_r7WksSKoEd2_8tsV0LqPjw" type="Sequence" element="_r7MzsSKoEd2_8tsV0LqPjw" name="SequenceDiagram1" measurementUnit="Himetric">
           <children xmi:id="_r7WksiKoEd2_8tsV0LqPjw" element="_r7MzsSKoEd2_8tsV0LqPjw">
