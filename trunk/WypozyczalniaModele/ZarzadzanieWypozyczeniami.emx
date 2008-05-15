@@ -648,6 +648,9 @@
       <ownedAttribute xmi:id="_GcUYgBdREd2JX9gE-KtxsA" name="dataRealizacji" visibility="private">
         <type xmi:type="uml:PrimitiveType" href="warstwaDAO.emx#_PCoFkPqKEdylZYpHMTjaBQ?warstwaDAO/wypozyczalnia.dao/java.util.Date?"/>
       </ownedAttribute>
+      <ownedOperation xmi:id="_LKsc8CKmEd2_8tsV0LqPjw" name="pobierzStanZamowienia"/>
+      <ownedOperation xmi:id="_XLTIECKmEd2_8tsV0LqPjw" name="ustawStanZamowienia"/>
+      <ownedOperation xmi:id="_X1tPoCKpEd2_8tsV0LqPjw" name="pobierzNumerZamowienia"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_eJA-sBdOEd2JX9gE-KtxsA" name="PozycjaZamowieniaTO">
       <ownedAttribute xmi:id="_uVPVsBdOEd2JX9gE-KtxsA" name="tytulFilmu" visibility="private"/>
@@ -1521,6 +1524,7 @@
       </ownedAttribute>
       <interfaceRealization xmi:id="_KKNiZRdYEd2JX9gE-KtxsA" supplier="_JEnzUBdYEd2JX9gE-KtxsA" client="_Gxc-MBdVEd2JX9gE-KtxsA" contract="_JEnzUBdYEd2JX9gE-KtxsA"/>
       <ownedOperation xmi:id="_Si3QkBdyEd2JX9gE-KtxsA" name="pobierzZamowieniaWgCzasu"/>
+      <ownedOperation xmi:id="_dGFEcCKmEd2_8tsV0LqPjw" name="scalDaneZamowienia"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_y5cKkBdXEd2JX9gE-KtxsA" name="ZarzadzanieWypozyczeniamiWyjatek"/>
     <packagedElement xmi:type="uml:Collaboration" xmi:id="_93udEBdXEd2JX9gE-KtxsA" name="Singleton">
@@ -3479,6 +3483,7 @@
           <type xmi:type="uml:PrimitiveType" href="warstwaDAO.emx#_PCoFkPqKEdylZYpHMTjaBQ?warstwaDAO/wypozyczalnia.dao/java.util.Date?"/>
         </ownedParameter>
       </ownedOperation>
+      <ownedOperation xmi:id="_bTfsgCKmEd2_8tsV0LqPjw" name="scalDaneZamowienia"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Dependency" xmi:id="_XW9QgBdYEd2JX9gE-KtxsA" supplier="_y5cKkBdXEd2JX9gE-KtxsA" client="_vJOoUBdXEd2JX9gE-KtxsA"/>
     <packagedElement xmi:type="uml:Abstraction" xmi:id="_AXUsARdYEd2JX9gE-KtxsA" supplier="_93udEBdXEd2JX9gE-KtxsA" client="_vJOoUBdXEd2JX9gE-KtxsA"/>
