@@ -26,7 +26,10 @@ public enum StanZamowienia {
      */
     DOODIORU,
     POZYCZONE,
-    ZREALIZOWANE, /** 
+    ZREALIZOWANE,
+    ANULOWANE,
+    ZALEGLE,
+    /** 
  * <!-- begin-user-doc -->
  * <!-- end-user-doc -->
  * 
