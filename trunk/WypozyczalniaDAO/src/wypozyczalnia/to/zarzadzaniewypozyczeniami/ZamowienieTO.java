@@ -20,7 +20,7 @@ import wypozyczalnia.dao.ZamowienieDAO;
 public class ZamowienieTO implements Serializable{
 
     public ZamowienieTO(ZamowienieDAO zam) {
-        setDataOdbioru(zam.getDataOdbioru());        
+        setDataOdbioru(zam.getDataDoOdbioru());        
         setDataPrzyjecia(zam.getDataPrzyjecia());
         setDataRealizacji(getDataRealizacji());    
         setDataPrzyjecia(zam.getDataPozyczenia());

@@ -18,6 +18,8 @@ import javax.persistence.SequenceGenerator;
 import javax.persistence.Table;
 import javax.persistence.Temporal;
 
+import static wypozyczalnia.dao.StanPlyty.*;
+
 /** 
  * <!-- begin-user-doc -->
  * <!-- end-user-doc -->
@@ -27,7 +29,7 @@ import javax.persistence.Temporal;
  */
 @Entity
 @Table(name = "PlytaTbl")
-@SequenceGenerator(name= "plytaIdSeq", sequenceName = "plytaIdSeq", 
+@SequenceGenerator(name = "plytaIdSeq", sequenceName = "plytaIdSeq",
 initialValue = 10, allocationSize = 1)
 public class PlytaDAO implements Serializable {
 
@@ -36,6 +38,7 @@ public class PlytaDAO implements Serializable {
     private Integer id;
 
     public PlytaDAO() {
+        setStanplyty(WDRODZE);
     }
     /** 
      * <!-- begin-user-doc -->
@@ -128,9 +131,9 @@ public class PlytaDAO implements Serializable {
      * @param theDataNabycia the dataNabycia to set
      * @generated "UML to Java (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform)"
      */
-    public void setDataNabycia(Date theDataNabycia) {
+    private void setDataNabycia() {
         // begin-user-code
-        dataNabycia = theDataNabycia;
+        dataNabycia = new Date();
     // end-user-code
     }
     /** 
@@ -173,5 +176,72 @@ public class PlytaDAO implements Serializable {
 
     public void setId(Integer id) {
         this.id = id;
+    }
+
+    /** 
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * 
+     * @generated "UML to Java (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform)"
+     */
+    public void gotowa() {
+        if (getStanplyty() != WDRODZE) {
+            throw new IllegalArgumentException("zly stan poczatkowy");
+        }
+        setStanplyty(NIEWYPOZYCZONA);
+        
+        setDataNabycia();
+    }
+
+    /** 
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * 
+     * @generated "UML to Java (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform)"
+     */
+    public void rezerwuj() {
+        if (getStanplyty() != NIEWYPOZYCZONA) {
+            throw new IllegalArgumentException("zly stan poczatkowy");
+        }
+        setStanplyty(ZAREZERWOWANA);
+    }
+
+    /** 
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * 
+     * @generated "UML to Java (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform)"
+     */
+    public void wypozycz() {
+        if (getStanplyty() != ZAREZERWOWANA) {
+            throw new IllegalArgumentException("zly stan poczatkowy");
+        }
+        setStanplyty(WYPOZYCZONA);
+    }
+
+    /** 
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * 
+     * @generated "UML to Java (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform)"
+     */
+    public void zwroc() {
+        if (getStanplyty() != WYPOZYCZONA) {
+            throw new IllegalArgumentException("zly stan poczatkowy");
+        }
+        setStanplyty(NIEWYPOZYCZONA);
+    }
+
+    /** 
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * 
+     * @generated "UML to Java (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform)"
+     */
+    public void anulujRezerwacje() {
+        if (getStanplyty() != ZAREZERWOWANA) {
+            throw new IllegalArgumentException("zly stan poczatkowy");
+        }
+        setStanplyty(NIEWYPOZYCZONA);
     }
 }

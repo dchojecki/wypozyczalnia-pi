@@ -6,8 +6,8 @@ package wypozyczalnia.dao;
 import java.io.Serializable;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
 import javax.persistence.Id;
-import javax.persistence.SequenceGenerator;
 import javax.persistence.Table;
 
 /** 
@@ -19,7 +19,7 @@ import javax.persistence.Table;
  */
 @Entity
 @Table(name = "AdresTbl")
-@SequenceGenerator(name = "adresIdSeq", sequenceName = "adresIdSeq", initialValue = 10, allocationSize = 1)
+//@SequenceGenerator(name = "adresIdSeq", sequenceName = "adresIdSeq", initialValue = 10, allocationSize = 1)
 public class AdresDAO implements Serializable {
 
     /** 
@@ -29,7 +29,8 @@ public class AdresDAO implements Serializable {
      * @generated "UML to Java (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform)"
      */
     @Id
-    @GeneratedValue(generator = "adresIdSeq")
+    @GeneratedValue(strategy = GenerationType.AUTO)
+    //@GeneratedValue(generator = "adresIdSeq")
     private Integer id;
     
     private String ulica;

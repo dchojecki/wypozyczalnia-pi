@@ -29,7 +29,7 @@ public class PozycjaZamowieniaDAO implements Serializable {
     public PozycjaZamowieniaDAO() {
     }
     @Id
-    @GeneratedValue(generator = "pZamowieniaIdSeq")    
+    @GeneratedValue(generator = "pZamowieniaIdSeq")
     private Integer id;
     /** 
      * <!-- begin-user-doc -->
@@ -94,9 +94,10 @@ public class PozycjaZamowieniaDAO implements Serializable {
      * @generated "UML to Java (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform)"
      */
     public void setCenaJednostkowa(float theCenaJednostkowa) {
-        // begin-user-code
+        if (theCenaJednostkowa < 0) {
+            throw new IllegalArgumentException("musi byc > 0");
+        }
         cenaJednostkowa = theCenaJednostkowa;
-    // end-user-code
     }
 
     public Integer getId() {
