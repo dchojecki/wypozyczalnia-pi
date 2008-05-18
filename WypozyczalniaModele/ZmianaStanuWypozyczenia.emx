@@ -3606,7 +3606,7 @@
     <group xmi:type="uml:ActivityPartition" xmi:id="_RDoIuSN2Ed2V-cIT2F-9Ew" name="Serwer" node="_RDoIuiN2Ed2V-cIT2F-9Ew _RDoItyN2Ed2V-cIT2F-9Ew _RDoItSN2Ed2V-cIT2F-9Ew _RDoItiN2Ed2V-cIT2F-9Ew _RDoIuCN2Ed2V-cIT2F-9Ew" edge="_RDxSqyN2Ed2V-cIT2F-9Ew _RDxStSN2Ed2V-cIT2F-9Ew _RDxSyiN2Ed2V-cIT2F-9Ew _RDxS3yN2Ed2V-cIT2F-9Ew _RDxS9CN2Ed2V-cIT2F-9Ew"/>
     <group xmi:type="uml:ActivityPartition" xmi:id="_RDoIvSN2Ed2V-cIT2F-9Ew" name="Baza danych" node="_RDoIviN2Ed2V-cIT2F-9Ew _RDoIuyN2Ed2V-cIT2F-9Ew _RDoIvCN2Ed2V-cIT2F-9Ew" edge="_RDxSvyN2Ed2V-cIT2F-9Ew _RDxS1CN2Ed2V-cIT2F-9Ew _RDxTCSN2Ed2V-cIT2F-9Ew"/>
   </packagedElement>
-  <packagedElement xmi:type="uml:Activity" xmi:id="_o4MUoCN3Ed2V-cIT2F-9Ew" name="PU 1.2.4 diagram nr 1.23.4 - zmiana stanu z &quot;przyjęte&quot;">
+  <packagedElement xmi:type="uml:Activity" xmi:id="_o4MUoCN3Ed2V-cIT2F-9Ew" name="PU 1.2.4 diagram nr 1.23.4 - zmiana stanu z &quot;pożyczone&quot;">
     <eAnnotations xmi:id="_o4MUoSN3Ed2V-cIT2F-9Ew" source="uml2.diagrams">
       <contents xmi:type="notation:Diagram" xmi:id="_o4MUoiN3Ed2V-cIT2F-9Ew" type="Activity" element="_o4MUoCN3Ed2V-cIT2F-9Ew" name="ActivityDiagram1" measurementUnit="Himetric">
         <children xmi:id="_o4MUoyN3Ed2V-cIT2F-9Ew" type="Activity Frame" element="_o4MUoCN3Ed2V-cIT2F-9Ew">
