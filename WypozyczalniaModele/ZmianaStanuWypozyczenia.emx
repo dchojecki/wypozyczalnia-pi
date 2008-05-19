@@ -8,7 +8,7 @@
     <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
   </packageImport>
   <packagedElement xmi:type="uml:Collaboration" xmi:id="_v6VfkCKkEd2wNeDLMwHY6Q" name="Collaboration1">
-    <ownedBehavior xmi:type="uml:Interaction" xmi:id="_v6epgCKkEd2wNeDLMwHY6Q" name="Diagram sekwencji dla PU 1.2.4">
+    <ownedBehavior xmi:type="uml:Interaction" xmi:id="_v6epgCKkEd2wNeDLMwHY6Q" name="1.24: Diagram sekwencji dla PU 1.2.4">
       <eAnnotations xmi:id="_v7FGcCKkEd2wNeDLMwHY6Q" source="uml2.diagrams">
         <contents xmi:type="notation:Diagram" xmi:id="_v7FGcSKkEd2wNeDLMwHY6Q" type="Sequence" element="_v6epgCKkEd2wNeDLMwHY6Q" name="SequenceDiagram1" measurementUnit="Himetric">
           <children xmi:id="_v7FGciKkEd2wNeDLMwHY6Q" element="_v6epgCKkEd2wNeDLMwHY6Q">
@@ -859,7 +859,7 @@
         <operand xmi:id="_0QwCACKrEd2_8tsV0LqPjw">
           <guard xmi:id="_0RMt8CKrEd2_8tsV0LqPjw">
             <specification xmi:type="uml:OpaqueExpression" xmi:id="_0RMt8SKrEd2_8tsV0LqPjw">
-              <body>stanDAO == PRZYJETE and stanTO == ANULOWANE</body>
+              <body>stanDAO == DOODBIORU and stanTO == ANULOWANE</body>
             </specification>
           </guard>
           <fragment xmi:type="uml:InteractionUse" xmi:id="_MoKRwCKsEd2_8tsV0LqPjw" name="Unspecified Interaction Ref1" covered="_85E0oCKpEd2_8tsV0LqPjw _rJAsUCKpEd2_8tsV0LqPjw _qkgRECKpEd2_8tsV0LqPjw _pnHbwCKpEd2_8tsV0LqPjw" refersTo="_MoKRwSKsEd2_8tsV0LqPjw"/>
@@ -867,7 +867,7 @@
         <operand xmi:id="_0xPf8CKrEd2_8tsV0LqPjw">
           <guard xmi:id="_0xPf8SKrEd2_8tsV0LqPjw">
             <specification xmi:type="uml:OpaqueExpression" xmi:id="_0xPf8iKrEd2_8tsV0LqPjw">
-              <body>stanDAO == DOODBIORU and stanTO == ANULOWANE</body>
+              <body>stanDAO == PRZYJETE and stanTO == ANULOWANE</body>
             </specification>
           </guard>
           <fragment xmi:type="uml:InteractionUse" xmi:id="_QK9DECKsEd2_8tsV0LqPjw" name="Unspecified Interaction Ref1" covered="_85E0oCKpEd2_8tsV0LqPjw _rJAsUCKpEd2_8tsV0LqPjw _qkgRECKpEd2_8tsV0LqPjw _pnHbwCKpEd2_8tsV0LqPjw" refersTo="_QK9DESKsEd2_8tsV0LqPjw"/>
@@ -1690,7 +1690,7 @@
       <message xmi:id="_MiD3gCKxEd2_8tsV0LqPjw" name="setDataOddania" receiveEvent="_MiD3giKxEd2_8tsV0LqPjw" sendEvent="_MiD3gSKxEd2_8tsV0LqPjw" connector="_VBHO0yKuEd2_8tsV0LqPjw"/>
       <message xmi:id="_MiD3hSKxEd2_8tsV0LqPjw" name="setDataOddania" messageSort="reply" receiveEvent="_MiD3hiKxEd2_8tsV0LqPjw" sendEvent="_MiD3hCKxEd2_8tsV0LqPjw" connector="_VBHO0yKuEd2_8tsV0LqPjw"/>
     </ownedBehavior>
-    <ownedBehavior xmi:type="uml:Interaction" xmi:id="_MoKRwSKsEd2_8tsV0LqPjw" name="1.1.28 PRZYJETE -> ANULOWANE">
+    <ownedBehavior xmi:type="uml:Interaction" xmi:id="_MoKRwSKsEd2_8tsV0LqPjw" name="1.1.28 DOODBIORU -> ANULOWANE">
       <eAnnotations xmi:id="_MoKRxiKsEd2_8tsV0LqPjw" source="uml2.diagrams">
         <contents xmi:type="notation:Diagram" xmi:id="_MoKRxyKsEd2_8tsV0LqPjw" type="Sequence" element="_MoKRwSKsEd2_8tsV0LqPjw" name="SequenceDiagram1" measurementUnit="Himetric">
           <children xmi:id="_MoKRyCKsEd2_8tsV0LqPjw" element="_MoKRwSKsEd2_8tsV0LqPjw">
@@ -1957,7 +1957,7 @@
       <message xmi:id="_T8N78CKxEd2_8tsV0LqPjw" name="setDataAnulowania" receiveEvent="_T8N78iKxEd2_8tsV0LqPjw" sendEvent="_T8N78SKxEd2_8tsV0LqPjw" connector="_SuXToyKvEd2_8tsV0LqPjw"/>
       <message xmi:id="_T8N79SKxEd2_8tsV0LqPjw" name="setDataAnulowania" messageSort="reply" receiveEvent="_T8N79iKxEd2_8tsV0LqPjw" sendEvent="_T8N79CKxEd2_8tsV0LqPjw" connector="_SuXToyKvEd2_8tsV0LqPjw"/>
     </ownedBehavior>
-    <ownedBehavior xmi:type="uml:Interaction" xmi:id="_QK9DESKsEd2_8tsV0LqPjw" name="1.1.29 DOODBIORU -> ANULOWANE">
+    <ownedBehavior xmi:type="uml:Interaction" xmi:id="_QK9DESKsEd2_8tsV0LqPjw" name="1.1.29 PRZYJETE -> ANULOWANE">
       <eAnnotations xmi:id="_QLG0ESKsEd2_8tsV0LqPjw" source="uml2.diagrams">
         <contents xmi:type="notation:Diagram" xmi:id="_QLG0EiKsEd2_8tsV0LqPjw" type="Sequence" element="_QK9DESKsEd2_8tsV0LqPjw" name="SequenceDiagram1" measurementUnit="Himetric">
           <children xmi:id="_QLG0EyKsEd2_8tsV0LqPjw" element="_QK9DESKsEd2_8tsV0LqPjw">
