@@ -25,7 +25,7 @@
           <styles xmi:type="umlnotation:UMLShapeCompartmentStyle" xmi:id="_75W7VftdEdybiL-CCYIzuw"/>
         </children>
         <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="_75NKUftdEdybiL-CCYIzuw" showStereotype="Label"/>
-        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_75NKUvtdEdybiL-CCYIzuw" x="3175" y="4841"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_75NKUvtdEdybiL-CCYIzuw" x="1428" y="1454"/>
       </children>
       <children xmi:id="_8H9YAPtdEdybiL-CCYIzuw" element="_3aqicPtdEdybiL-CCYIzuw">
         <children xmi:id="_8H9YA_tdEdybiL-CCYIzuw" type="ImageCompartment">
@@ -47,7 +47,7 @@
           <styles xmi:type="umlnotation:UMLShapeCompartmentStyle" xmi:id="_8H9YD_tdEdybiL-CCYIzuw"/>
         </children>
         <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="_8H9YAftdEdybiL-CCYIzuw" showStereotype="Label"/>
-        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_8H9YAvtdEdybiL-CCYIzuw" x="13314" y="5389"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_8H9YAvtdEdybiL-CCYIzuw" x="7334" y="1446"/>
       </children>
       <children xmi:id="_8XAgoPtdEdybiL-CCYIzuw" element="_0Ro8APtdEdybiL-CCYIzuw">
         <children xmi:id="_8XAgo_tdEdybiL-CCYIzuw" type="ImageCompartment">
@@ -69,7 +69,7 @@
           <styles xmi:type="umlnotation:UMLShapeCompartmentStyle" xmi:id="_8XKRoftdEdybiL-CCYIzuw"/>
         </children>
         <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="_8XAgoftdEdybiL-CCYIzuw" showStereotype="Label"/>
-        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_8XAgovtdEdybiL-CCYIzuw" x="7925" y="1585"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_8XAgovtdEdybiL-CCYIzuw" x="13481" y="1452"/>
       </children>
       <children xmi:id="_GuR9kANNEd2omajFVrQe6g" type="Note">
         <children xmi:id="_GuR9kQNNEd2omajFVrQe6g" type="DiagramName">
@@ -80,9 +80,171 @@
         </children>
         <styles xmi:type="notation:ShapeStyle" xmi:id="_GuR9kwNNEd2omajFVrQe6g" description="Nr Diagramu: 1.3&#xD;&#xA;Tytuł:&#xD;&#xA;Obiekty transferowe" fillColor="13369343" lineColor="6737151"/>
         <element xsi:nil="true"/>
-        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_GuR9lANNEd2omajFVrQe6g" x="793" y="1428"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_GuR9lANNEd2omajFVrQe6g" x="19419" y="1454"/>
+      </children>
+      <children xmi:id="_CvXOwCVsEd21D_eU4hCqEQ">
+        <children xmi:id="_CvXOwyVsEd21D_eU4hCqEQ" type="ImageCompartment">
+          <layoutConstraint xmi:type="notation:Size" xmi:id="_CvXOxCVsEd21D_eU4hCqEQ" width="1320" height="1320"/>
+        </children>
+        <children xmi:id="_CvXOxSVsEd21D_eU4hCqEQ" type="Stereotype"/>
+        <children xmi:id="_CvgYsCVsEd21D_eU4hCqEQ" type="Name"/>
+        <children xmi:id="_CvgYsSVsEd21D_eU4hCqEQ" type="Parent"/>
+        <children xmi:id="_CvgYsiVsEd21D_eU4hCqEQ" type="AttributeCompartment">
+          <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_CvgYsyVsEd21D_eU4hCqEQ"/>
+        </children>
+        <children xmi:id="_CvgYtCVsEd21D_eU4hCqEQ" type="OperationCompartment">
+          <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_CvgYtSVsEd21D_eU4hCqEQ"/>
+        </children>
+        <children xmi:id="_CvgYtiVsEd21D_eU4hCqEQ" visible="false" type="SignalCompartment">
+          <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_CvgYtyVsEd21D_eU4hCqEQ"/>
+        </children>
+        <children xmi:id="_CvgYuCVsEd21D_eU4hCqEQ" visible="false" type="StructureCompartment">
+          <styles xmi:type="umlnotation:UMLShapeCompartmentStyle" xmi:id="_CvgYuSVsEd21D_eU4hCqEQ"/>
+        </children>
+        <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="_CvXOwSVsEd21D_eU4hCqEQ" showStereotype="Label"/>
+        <element xmi:type="uml:Class" href="ZarzadzanieWypozyczeniami.emx#_eJA-sBdOEd2JX9gE-KtxsA?ZarzadzanieWypozyczeniami/wypozyczalnia.to.zarzadzaniewypozyczeniami/PozycjaZamowieniaTO?"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_CvXOwiVsEd21D_eU4hCqEQ" x="24499" y="1455"/>
+      </children>
+      <children xmi:id="_CvgYuiVsEd21D_eU4hCqEQ">
+        <children xmi:id="_CvgYvSVsEd21D_eU4hCqEQ" type="ImageCompartment">
+          <layoutConstraint xmi:type="notation:Size" xmi:id="_CvgYviVsEd21D_eU4hCqEQ" width="1320" height="1320"/>
+        </children>
+        <children xmi:id="_CvgYvyVsEd21D_eU4hCqEQ" type="Stereotype"/>
+        <children xmi:id="_CvgYwCVsEd21D_eU4hCqEQ" type="Name"/>
+        <children xmi:id="_CvgYwSVsEd21D_eU4hCqEQ" type="Parent"/>
+        <children xmi:id="_CvgYwiVsEd21D_eU4hCqEQ" type="AttributeCompartment">
+          <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_CvgYwyVsEd21D_eU4hCqEQ"/>
+        </children>
+        <children xmi:id="_CvgYxCVsEd21D_eU4hCqEQ" type="OperationCompartment">
+          <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_CvgYxSVsEd21D_eU4hCqEQ"/>
+        </children>
+        <children xmi:id="_CvgYxiVsEd21D_eU4hCqEQ" visible="false" type="SignalCompartment">
+          <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_CvgYxyVsEd21D_eU4hCqEQ"/>
+        </children>
+        <children xmi:id="_CvgYyCVsEd21D_eU4hCqEQ" visible="false" type="StructureCompartment">
+          <styles xmi:type="umlnotation:UMLShapeCompartmentStyle" xmi:id="_CvgYySVsEd21D_eU4hCqEQ"/>
+        </children>
+        <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="_CvgYuyVsEd21D_eU4hCqEQ" showStereotype="Label"/>
+        <element xmi:type="uml:Class" href="ZarzadzanieWypozyczeniami.emx#_VQiiIBdOEd2JX9gE-KtxsA?ZarzadzanieWypozyczeniami/wypozyczalnia.to.zarzadzaniewypozyczeniami/ZamowienieTO?"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_CvgYvCVsEd21D_eU4hCqEQ" x="15725" y="9296"/>
       </children>
       <styles xmi:type="umlnotation:UMLDiagramStyle" xmi:id="_xJOZk_tdEdybiL-CCYIzuw"/>
+      <edges xmi:id="_Cvz6sCVsEd21D_eU4hCqEQ" source="_CvgYuiVsEd21D_eU4hCqEQ" target="_CvXOwCVsEd21D_eU4hCqEQ">
+        <children xmi:id="_Cvz6syVsEd21D_eU4hCqEQ" type="NameLabel">
+          <children xmi:id="_Cvz6tSVsEd21D_eU4hCqEQ" type="Stereotype"/>
+          <children xmi:id="_Cvz6tiVsEd21D_eU4hCqEQ" type="Name"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Cvz6tCVsEd21D_eU4hCqEQ" y="-530"/>
+        </children>
+        <children xmi:id="_Cvz6tyVsEd21D_eU4hCqEQ" type="ToMultiplicityLabel">
+          <children xmi:id="_Cvz6uSVsEd21D_eU4hCqEQ" type="ToMultiplicity"/>
+          <element xmi:type="uml:Property" href="ZarzadzanieWypozyczeniami.emx#_rLxqYBdOEd2JX9gE-KtxsA?ZarzadzanieWypozyczeniami/wypozyczalnia.to.zarzadzaniewypozyczeniami/%3CAssociation%3E/%3CProperty%3E?"/>
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_Cvz6uCVsEd21D_eU4hCqEQ" y="396"/>
+        </children>
+        <children xmi:id="_Cvz6uiVsEd21D_eU4hCqEQ" type="ToRoleLabel">
+          <children xmi:id="_Cvz6vCVsEd21D_eU4hCqEQ" type="ToRole"/>
+          <element xmi:type="uml:Property" href="ZarzadzanieWypozyczeniami.emx#_rLxqYBdOEd2JX9gE-KtxsA?ZarzadzanieWypozyczeniami/wypozyczalnia.to.zarzadzaniewypozyczeniami/%3CAssociation%3E/%3CProperty%3E?"/>
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_Cvz6uyVsEd21D_eU4hCqEQ" y="-397"/>
+        </children>
+        <children xmi:id="_Cv9EoCVsEd21D_eU4hCqEQ" type="FromMultiplicityLabel">
+          <children xmi:id="_Cv9EoiVsEd21D_eU4hCqEQ" type="FromMultiplicity"/>
+          <element xmi:type="uml:Property" href="ZarzadzanieWypozyczeniami.emx#_rLogcRdOEd2JX9gE-KtxsA?ZarzadzanieWypozyczeniami/wypozyczalnia.to.zarzadzaniewypozyczeniami/ZamowienieTO/pozycjezamowienia?"/>
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_Cv9EoSVsEd21D_eU4hCqEQ" y="396"/>
+        </children>
+        <children xmi:id="_Cv9EoyVsEd21D_eU4hCqEQ" type="FromRoleLabel">
+          <children xmi:id="_Cv9EpSVsEd21D_eU4hCqEQ" type="FromRole"/>
+          <element xmi:type="uml:Property" href="ZarzadzanieWypozyczeniami.emx#_rLogcRdOEd2JX9gE-KtxsA?ZarzadzanieWypozyczeniami/wypozyczalnia.to.zarzadzaniewypozyczeniami/ZamowienieTO/pozycjezamowienia?"/>
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_Cv9EpCVsEd21D_eU4hCqEQ" y="-397"/>
+        </children>
+        <children xmi:id="_Cv9EpiVsEd21D_eU4hCqEQ" type="ToQualifierLabel">
+          <children xmi:id="_Cv9EqCVsEd21D_eU4hCqEQ" type="QualifierCompartment">
+            <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_Cv9EqSVsEd21D_eU4hCqEQ"/>
+          </children>
+          <element xmi:type="uml:Property" href="ZarzadzanieWypozyczeniami.emx#_rLxqYBdOEd2JX9gE-KtxsA?ZarzadzanieWypozyczeniami/wypozyczalnia.to.zarzadzaniewypozyczeniami/%3CAssociation%3E/%3CProperty%3E?"/>
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_Cv9EpyVsEd21D_eU4hCqEQ" y="-186"/>
+        </children>
+        <children xmi:id="_Cv9EqiVsEd21D_eU4hCqEQ" type="FromQualifierLabel">
+          <children xmi:id="_Cv9ErCVsEd21D_eU4hCqEQ" type="QualifierCompartment">
+            <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_Cv9ErSVsEd21D_eU4hCqEQ"/>
+          </children>
+          <element xmi:type="uml:Property" href="ZarzadzanieWypozyczeniami.emx#_rLogcRdOEd2JX9gE-KtxsA?ZarzadzanieWypozyczeniami/wypozyczalnia.to.zarzadzaniewypozyczeniami/ZamowienieTO/pozycjezamowienia?"/>
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_Cv9EqyVsEd21D_eU4hCqEQ" y="-186"/>
+        </children>
+        <children xmi:id="_Cv9EriVsEd21D_eU4hCqEQ" type="ToConstraintLabel">
+          <children xmi:id="_Cv9EsCVsEd21D_eU4hCqEQ" type="ToConstraintCompartment">
+            <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_Cv9EsSVsEd21D_eU4hCqEQ"/>
+          </children>
+          <element xmi:type="uml:Property" href="ZarzadzanieWypozyczeniami.emx#_rLxqYBdOEd2JX9gE-KtxsA?ZarzadzanieWypozyczeniami/wypozyczalnia.to.zarzadzaniewypozyczeniami/%3CAssociation%3E/%3CProperty%3E?"/>
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_Cv9EryVsEd21D_eU4hCqEQ" y="1058"/>
+        </children>
+        <children xmi:id="_Cv9EsiVsEd21D_eU4hCqEQ" type="FromConstraintLabel">
+          <children xmi:id="_Cv9EtCVsEd21D_eU4hCqEQ" type="FromConstraintCompartment">
+            <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_Cv9EtSVsEd21D_eU4hCqEQ"/>
+          </children>
+          <element xmi:type="uml:Property" href="ZarzadzanieWypozyczeniami.emx#_rLogcRdOEd2JX9gE-KtxsA?ZarzadzanieWypozyczeniami/wypozyczalnia.to.zarzadzaniewypozyczeniami/ZamowienieTO/pozycjezamowienia?"/>
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_Cv9EsyVsEd21D_eU4hCqEQ" y="1058"/>
+        </children>
+        <styles xmi:type="umlnotation:UMLConnectorStyle" xmi:id="_Cvz6sSVsEd21D_eU4hCqEQ" showStereotype="Text"/>
+        <element xmi:type="uml:Association" href="ZarzadzanieWypozyczeniami.emx#_rLogcBdOEd2JX9gE-KtxsA?ZarzadzanieWypozyczeniami/wypozyczalnia.to.zarzadzaniewypozyczeniami/%3CAssociation%3E?"/>
+        <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_Cvz6siVsEd21D_eU4hCqEQ" points="[8665, -2077, -13, 4722]$[8665, -3664, -13, 3135]"/>
+      </edges>
+      <edges xmi:id="_Cv9EtiVsEd21D_eU4hCqEQ" source="_CvgYuiVsEd21D_eU4hCqEQ" target="_8H9YAPtdEdybiL-CCYIzuw">
+        <children xmi:id="_Cv9EuSVsEd21D_eU4hCqEQ" type="NameLabel">
+          <children xmi:id="_Cv9EuyVsEd21D_eU4hCqEQ" type="Stereotype"/>
+          <children xmi:id="_Cv9EvCVsEd21D_eU4hCqEQ" type="Name"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Cv9EuiVsEd21D_eU4hCqEQ" y="-530"/>
+        </children>
+        <children xmi:id="_Cv9EvSVsEd21D_eU4hCqEQ" type="ToMultiplicityLabel">
+          <children xmi:id="_Cv9EvyVsEd21D_eU4hCqEQ" type="ToMultiplicity"/>
+          <element xmi:type="uml:Property" href="ZarzadzanieWypozyczeniami.emx#_8FmuQxdOEd2JX9gE-KtxsA?ZarzadzanieWypozyczeniami/wypozyczalnia.to.zarzadzaniewypozyczeniami/%3CAssociation%3E/%3CProperty%3E?"/>
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_Cv9EviVsEd21D_eU4hCqEQ" y="396"/>
+        </children>
+        <children xmi:id="_Cv9EwCVsEd21D_eU4hCqEQ" type="ToRoleLabel">
+          <children xmi:id="_Cv9EwiVsEd21D_eU4hCqEQ" type="ToRole"/>
+          <element xmi:type="uml:Property" href="ZarzadzanieWypozyczeniami.emx#_8FmuQxdOEd2JX9gE-KtxsA?ZarzadzanieWypozyczeniami/wypozyczalnia.to.zarzadzaniewypozyczeniami/%3CAssociation%3E/%3CProperty%3E?"/>
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_Cv9EwSVsEd21D_eU4hCqEQ" y="-397"/>
+        </children>
+        <children xmi:id="_Cv9EwyVsEd21D_eU4hCqEQ" type="FromMultiplicityLabel">
+          <children xmi:id="_Cv9ExSVsEd21D_eU4hCqEQ" type="FromMultiplicity"/>
+          <element xmi:type="uml:Property" href="ZarzadzanieWypozyczeniami.emx#_8FmuQBdOEd2JX9gE-KtxsA?ZarzadzanieWypozyczeniami/wypozyczalnia.to.zarzadzaniewypozyczeniami/ZamowienieTO/klient?"/>
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_Cv9ExCVsEd21D_eU4hCqEQ" y="396"/>
+        </children>
+        <children xmi:id="_Cv9ExiVsEd21D_eU4hCqEQ" type="FromRoleLabel">
+          <children xmi:id="_Cv9EyCVsEd21D_eU4hCqEQ" type="FromRole"/>
+          <element xmi:type="uml:Property" href="ZarzadzanieWypozyczeniami.emx#_8FmuQBdOEd2JX9gE-KtxsA?ZarzadzanieWypozyczeniami/wypozyczalnia.to.zarzadzaniewypozyczeniami/ZamowienieTO/klient?"/>
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_Cv9ExyVsEd21D_eU4hCqEQ" y="-397"/>
+        </children>
+        <children xmi:id="_Cv9EySVsEd21D_eU4hCqEQ" type="ToQualifierLabel">
+          <children xmi:id="_Cv9EyyVsEd21D_eU4hCqEQ" type="QualifierCompartment">
+            <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_Cv9EzCVsEd21D_eU4hCqEQ"/>
+          </children>
+          <element xmi:type="uml:Property" href="ZarzadzanieWypozyczeniami.emx#_8FmuQxdOEd2JX9gE-KtxsA?ZarzadzanieWypozyczeniami/wypozyczalnia.to.zarzadzaniewypozyczeniami/%3CAssociation%3E/%3CProperty%3E?"/>
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_Cv9EyiVsEd21D_eU4hCqEQ" y="-186"/>
+        </children>
+        <children xmi:id="_Cv9EzSVsEd21D_eU4hCqEQ" type="FromQualifierLabel">
+          <children xmi:id="_Cv9EzyVsEd21D_eU4hCqEQ" type="QualifierCompartment">
+            <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_Cv9E0CVsEd21D_eU4hCqEQ"/>
+          </children>
+          <element xmi:type="uml:Property" href="ZarzadzanieWypozyczeniami.emx#_8FmuQBdOEd2JX9gE-KtxsA?ZarzadzanieWypozyczeniami/wypozyczalnia.to.zarzadzaniewypozyczeniami/ZamowienieTO/klient?"/>
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_Cv9EziVsEd21D_eU4hCqEQ" y="-186"/>
+        </children>
+        <children xmi:id="_Cv9E0SVsEd21D_eU4hCqEQ" type="ToConstraintLabel">
+          <children xmi:id="_Cv9E0yVsEd21D_eU4hCqEQ" type="ToConstraintCompartment">
+            <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_Cv9E1CVsEd21D_eU4hCqEQ"/>
+          </children>
+          <element xmi:type="uml:Property" href="ZarzadzanieWypozyczeniami.emx#_8FmuQxdOEd2JX9gE-KtxsA?ZarzadzanieWypozyczeniami/wypozyczalnia.to.zarzadzaniewypozyczeniami/%3CAssociation%3E/%3CProperty%3E?"/>
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_Cv9E0iVsEd21D_eU4hCqEQ" y="1058"/>
+        </children>
+        <children xmi:id="_Cv9E1SVsEd21D_eU4hCqEQ" type="FromConstraintLabel">
+          <children xmi:id="_Cv9E1yVsEd21D_eU4hCqEQ" type="FromConstraintCompartment">
+            <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_Cv9E2CVsEd21D_eU4hCqEQ"/>
+          </children>
+          <element xmi:type="uml:Property" href="ZarzadzanieWypozyczeniami.emx#_8FmuQBdOEd2JX9gE-KtxsA?ZarzadzanieWypozyczeniami/wypozyczalnia.to.zarzadzaniewypozyczeniami/ZamowienieTO/klient?"/>
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_Cv9E1iVsEd21D_eU4hCqEQ" y="1058"/>
+        </children>
+        <styles xmi:type="umlnotation:UMLConnectorStyle" xmi:id="_Cv9EtyVsEd21D_eU4hCqEQ" showStereotype="Text"/>
+        <element xmi:type="uml:Association" href="ZarzadzanieWypozyczeniami.emx#_8Fc9QBdOEd2JX9gE-KtxsA?ZarzadzanieWypozyczeniami/wypozyczalnia.to.zarzadzaniewypozyczeniami/%3CAssociation%3E?"/>
+        <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_Cv9EuCVsEd21D_eU4hCqEQ" points="[-13, -2077, 8652, 4722]$[-8665, -3664, 0, 3135]"/>
+      </edges>
     </contents>
   </eAnnotations>
   <packageImport xmi:id="_xJOZlPtdEdybiL-CCYIzuw">
