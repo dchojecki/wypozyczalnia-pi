@@ -1523,8 +1523,8 @@
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="__QxBcRppEd2xgf7SwMHZrg"/>
       </ownedAttribute>
       <interfaceRealization xmi:id="_KKNiZRdYEd2JX9gE-KtxsA" supplier="_JEnzUBdYEd2JX9gE-KtxsA" client="_Gxc-MBdVEd2JX9gE-KtxsA" contract="_JEnzUBdYEd2JX9gE-KtxsA"/>
-      <ownedOperation xmi:id="_Si3QkBdyEd2JX9gE-KtxsA" name="pobierzZamowieniaWgCzasu"/>
       <ownedOperation xmi:id="_dGFEcCKmEd2_8tsV0LqPjw" name="scalDaneZamowienia"/>
+      <ownedOperation xmi:id="_Si3QkBdyEd2JX9gE-KtxsA" name="pobierzZamowieniaWgCzasu"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_y5cKkBdXEd2JX9gE-KtxsA" name="ZarzadzanieWypozyczeniamiWyjatek"/>
     <packagedElement xmi:type="uml:Collaboration" xmi:id="_93udEBdXEd2JX9gE-KtxsA" name="Singleton">
