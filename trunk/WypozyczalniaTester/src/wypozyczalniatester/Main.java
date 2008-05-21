@@ -59,7 +59,6 @@ public class Main {
 
             plyta.setUwagiDoEgzemplarza("afd");
             plyta.setFilm(film);
-            plyta.setDataNabycia(formatter.parse("851109"));
             plyta.setStanplyty(StanPlyty.NIEWYPOZYCZONA);
             film.setOpisFabuly("opisik");
             film.setTytul("indiana jones");
