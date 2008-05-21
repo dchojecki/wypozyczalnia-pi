@@ -7,12 +7,14 @@ import java.util.Collection;
 import java.util.LinkedList;
 import javax.ejb.Stateless;
 import javax.persistence.EntityManager;
+import javax.persistence.PersistenceContext;
 import wypozyczalnia.dao.AdresDAO;
 import wypozyczalnia.dao.KlientDAO;
 import wypozyczalnia.dao.KontoDAO;
 import wypozyczalnia.dao.StanKonta;
 import wypozyczalnia.dao.fabryki.zarzadzaniekontami.ZarzadzanieKontamiDAO;
 import wypozyczalnia.dao.fabryki.zarzadzaniekontami.ZarzadzanieKontamiFabrykaDanych;
+import wypozyczalnia.dao.fabryki.zarzadzaniekontami.ZarzadzanieKontamiGlownaFabrykaDanych;
 import wypozyczalnia.to.zarzadzaniekontami.AdresTO;
 import wypozyczalnia.to.zarzadzaniekontami.KlientTO;
 import wypozyczalnia.to.zarzadzaniekontami.KontoTO;
@@ -25,12 +27,10 @@ import wypozyczalnia.to.zarzadzaniekontami.KontoTO;
  * @generated "UML to Java (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform)"
  */
 @Stateless(mappedName = "ZarzadzanieKontamiBean")
-public class ZarzadzanieKontamiBean implements ZarzadzanieKontami {
+public class ZarzadzanieKontamiBean implements ZarzadzanieKontami, ZarzadzanieKontamiLocal {
 
-    //@PersistenceContext
-    private EntityManager em2;
     private ZarzadzanieKontamiFabrykaDanych fabrykaDAO =
-            new ZarzadzanieKontamiFabrykaDanych();
+            new ZarzadzanieKontamiGlownaFabrykaDanych();
 
     /** 
      * <!-- begin-user-doc -->
@@ -91,7 +91,8 @@ public class ZarzadzanieKontamiBean implements ZarzadzanieKontami {
     public KontoTO zwrocDaneKonta(String nrpesel) {
         ZarzadzanieKontamiDAO dao = fabrykaDAO.pobierzWypozyczalniaDAO();
         KlientDAO klient = dao.zwrocDaneKlienta(nrpesel);
-        KontoTO ret = new KontoTO(klient);
+        KontoTO ret = new KontoTO();
+        // TODO
         return ret;
     }
 
@@ -105,7 +106,8 @@ public class ZarzadzanieKontamiBean implements ZarzadzanieKontami {
     public KlientTO zwrocDaneKlienta(String nrpesel) {
         ZarzadzanieKontamiDAO dao = fabrykaDAO.pobierzWypozyczalniaDAO();
         KlientDAO klient = dao.zwrocDaneKlienta(nrpesel);
-        KlientTO ret = new KlientTO(klient);
+        KlientTO ret = new KlientTO();
+        // TODO
         return ret;
     }
 
@@ -219,7 +221,8 @@ public class ZarzadzanieKontamiBean implements ZarzadzanieKontami {
         dao.startSesji();
         dao.scalDaneKlienta(nowyKlient);
         dao.commit();
-        KontoTO retKonto = new KontoTO(nowyKlient);
+        KontoTO retKonto = new KontoTO();
+        // TODO
         return retKonto;
 
     }
@@ -260,7 +263,8 @@ public class ZarzadzanieKontamiBean implements ZarzadzanieKontami {
         Collection<KontoTO> ret = new LinkedList<KontoTO>();
 
         for (KlientDAO k : klienci) {
-            ret.add(new KontoTO(k));
+            ret.add(new KontoTO());
+            // TODO
         }
 
         return ret;

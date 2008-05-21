@@ -15,8 +15,8 @@ import javax.persistence.PersistenceContext;
 import wypozyczalnia.dao.KlientDAO;
 import wypozyczalnia.dao.PozycjaZamowieniaDAO;
 import wypozyczalnia.dao.ZamowienieDAO;
+import wypozyczalnia.dao.fabryki.TransferObjectFactory;
 import wypozyczalnia.dao.fabryki.zarzadzaniewypozyczeniami.ZarzWypFabrykaDanych;
-import wypozyczalnia.dao.fabryki.zarzadzaniewypozyczeniami.ZarzWypGLFabrykaDanych;
 import wypozyczalnia.dao.fabryki.zarzadzaniewypozyczeniami.ZarzWypGLFabrykaDanych;
 import wypozyczalnia.dao.fabryki.zarzadzaniewypozyczeniami.ZarzadzanieWypozyczeniamiDAO;
 import wypozyczalnia.to.zarzadzaniekontami.KlientTO;
@@ -30,9 +30,11 @@ import wypozyczalnia.to.zarzadzaniewypozyczeniami.ZamowienieTO;
  * 
  * @generated "UML to Java (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform)"
  */
-@Stateless(mappedName="ZarzadzanieWypozyczeniamiBean")
-public class ZarzadzanieWypozyczeniamiBean implements ZarzadzanieWypozyczeniami {    
-    
+@Stateless
+public class ZarzadzanieWypozyczeniamiBean implements ZarzadzanieWypozyczeniami {
+
+    public ZarzadzanieWypozyczeniamiBean() {
+    }
     private ZarzWypFabrykaDanych daoFabryka = new ZarzWypGLFabrykaDanych();
 
     public Collection<ZamowienieTO> pobierzZamowieniaWgCzasu(Date odd, Date doo) {
@@ -45,20 +47,21 @@ public class ZarzadzanieWypozyczeniamiBean implements ZarzadzanieWypozyczeniami 
         Map<String, KlientTO> bufor = new HashMap<String, KlientTO>();
 
         for (ZamowienieDAO zamD : zamowieniaDAO) {
-            ZamowienieTO zamT = new ZamowienieTO(zamD);
+            ZamowienieTO zamT = TransferObjectFactory.stworzZamowienieTO(zamD);
             zamowieniaTO.add(zamT);
 
             KlientDAO kDao = zamD.getKlient();
             KlientTO klientT = bufor.get(kDao.getNrpesel());
 
             if (klientT == null) {
-                klientT = new KlientTO(kDao);
+                // TODO
+                klientT = new KlientTO();
                 bufor.put(kDao.getNrpesel(), klientT);
             }
             zamT.setKlient(klientT);
 
             for (PozycjaZamowieniaDAO pzD : zamD.getPozycje()) {
-                PozycjaZamowieniaTO pzT = new PozycjaZamowieniaTO(pzD);
+                PozycjaZamowieniaTO pzT = TransferObjectFactory.stworzPozycjeZamowienia(pzD);
                 zamT.getPozycjezamowienia().add(pzT);
             }
 
@@ -68,6 +71,10 @@ public class ZarzadzanieWypozyczeniamiBean implements ZarzadzanieWypozyczeniami 
     }
 
     public Collection<ZamowienieTO> pobierzWszystkieZamowienia() {
+        throw new UnsupportedOperationException("Not supported yet.");
+    }
+
+    public void scalDaneZamowienia(ZamowienieTO zam) {
         throw new UnsupportedOperationException("Not supported yet.");
     }
 }
