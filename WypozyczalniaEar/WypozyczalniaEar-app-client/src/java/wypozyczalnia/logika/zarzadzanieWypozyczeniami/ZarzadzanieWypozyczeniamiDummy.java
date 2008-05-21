@@ -27,8 +27,8 @@ public class ZarzadzanieWypozyczeniamiDummy implements ZarzadzanieWypozyczeniami
     private ZamowienieTO generujZamowienie(Date odd, Date doo) {
         ZamowienieTO ret = new ZamowienieTO();
         ret.setCenaSumaryczna((float) 12.14);
-        ret.setDataOdbioru(odd);
-        ret.setDataOddania(odd);
+        ret.setDataDoOdbioru(odd);
+        ret.setDataRealizacji(odd);
         ret.setDataPrzyjecia(odd);
         ret.setDataRealizacji(odd);
         ret.setKlient(klienci.get(r.nextInt(3)));
@@ -95,5 +95,9 @@ public class ZarzadzanieWypozyczeniamiDummy implements ZarzadzanieWypozyczeniami
 
     public Collection<ZamowienieTO> pobierzWszystkieZamowienia() {
         return pobierzZamowieniaWgCzasu(new Date(), new Date());
+    }
+
+    public void scalDaneZamowienia(ZamowienieTO zam) {
+        throw new UnsupportedOperationException("Not supported yet.");
     }
 }
