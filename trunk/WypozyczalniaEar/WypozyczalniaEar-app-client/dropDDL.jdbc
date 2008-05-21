@@ -1,18 +1,2 @@
-ALTER TABLE KontoTbl DROP CONSTRAINT FK_KontoTbl_klientId
-ALTER TABLE OsobaTbl DROP CONSTRAINT FK_OsobaTbl_adresId
-ALTER TABLE PlytaTbl DROP CONSTRAINT FK_PlytaTbl_filmId
-ALTER TABLE PozycjaZamowieniaTbl DROP CONSTRAINT PzycjaZamowieniaTblzmowienieId
-ALTER TABLE PozycjaZamowieniaTbl DROP CONSTRAINT PozycjaZamowieniaTbl_plytaId
-ALTER TABLE ZamowienieTbl DROP CONSTRAINT ZamowienieTbl_KLIENT_NRPESEL
-DROP TABLE KontoTbl
-DROP TABLE OsobaTbl
-DROP TABLE PlytaTbl
-DROP TABLE FilmTbl
-DROP TABLE PozycjaZamowieniaTbl
-DROP TABLE ZamowienieTbl
 DROP TABLE AdresTbl
-DROP SEQUENCE kontoIdSeq
-DROP SEQUENCE zamowienieIdSeq
-DROP SEQUENCE adresIdSeq
-DROP SEQUENCE pozycjaZamowieniaIdSeq
-DROP SEQUENCE plytaIdSeq
+DELETE FROM SEQUENCE WHERE SEQ_NAME = 'SEQ_GEN'
