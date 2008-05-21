@@ -5,7 +5,6 @@ package wypozyczalnia.to.zarzadzaniekontami;
 
 import java.io.Serializable;
 import java.util.Date;
-import wypozyczalnia.dao.KlientDAO;
 
 /** 
  * <!-- begin-user-doc -->
@@ -15,14 +14,6 @@ import wypozyczalnia.dao.KlientDAO;
  * @generated "UML to Java (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform)"
  */
 public class KlientTO  implements Serializable{
-
-    public KlientTO(KlientDAO klient) {
-        setImie(klient.getImie());
-        setNazwisko(klient.getNazwisko());
-        setNrPeselKlienta(klient.getNrpesel());
-        setDataUrodzenia(klient.getDataUrodzenia());  
-        setNrKonta(klient.zwrocPierwszeKonto().getNrKonta());
-    }
 
     public KlientTO() {
     }
