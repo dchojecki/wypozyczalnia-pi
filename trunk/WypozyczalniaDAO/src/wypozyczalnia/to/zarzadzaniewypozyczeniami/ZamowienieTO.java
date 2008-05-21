@@ -19,12 +19,7 @@ import wypozyczalnia.dao.ZamowienieDAO;
  */
 public class ZamowienieTO implements Serializable{
 
-    public ZamowienieTO(ZamowienieDAO zam) {
-        setDataOdbioru(zam.getDataDoOdbioru());        
-        setDataPrzyjecia(zam.getDataPrzyjecia());
-        setDataRealizacji(getDataRealizacji());    
-        setDataPrzyjecia(zam.getDataPozyczenia());
-    }
+
 
     public ZamowienieTO() {
     }
@@ -198,30 +193,8 @@ public class ZamowienieTO implements Serializable{
 	 * @generated "UML to Java (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform)"
 	 */
 	private Date dataDoOdbioru;
-
-	/** 
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the dataOdbioru
-	 * @generated "UML to Java (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform)"
-	 */
-	public Date getDataOdbioru() {
-		// begin-user-code
-		return dataDoOdbioru;
-		// end-user-code
-	}
-
-	/** 
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param theDataOdbioru the dataOdbioru to set
-	 * @generated "UML to Java (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform)"
-	 */
-	public void setDataOdbioru(Date theDataOdbioru) {
-		// begin-user-code
-		dataDoOdbioru = theDataOdbioru;
-		// end-user-code
-	}
+	private Date dataAnulowane;
+	private Date dataZalegle;
 
 	/** 
 	 * <!-- begin-user-doc -->
@@ -231,29 +204,6 @@ public class ZamowienieTO implements Serializable{
 	 */
 	private Date dataPozyczenia;
 
-	/** 
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the dataOddania
-	 * @generated "UML to Java (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform)"
-	 */
-	public Date getDataOddania() {
-		// begin-user-code
-		return dataPozyczenia;
-		// end-user-code
-	}
-
-	/** 
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param theDataOddania the dataOddania to set
-	 * @generated "UML to Java (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform)"
-	 */
-	public void setDataOddania(Date theDataOddania) {
-		// begin-user-code
-		dataPozyczenia = theDataOddania;
-		// end-user-code
-	}
 
 	/** 
 	 * <!-- begin-user-doc -->
@@ -286,4 +236,28 @@ public class ZamowienieTO implements Serializable{
 		dataRealizacji = theDataRealizacji;
 		// end-user-code
 	}
+
+    public Date getDataAnulowane() {
+        return dataAnulowane;
+    }
+
+    public void setDataAnulowane(Date dataAnulowane) {
+        this.dataAnulowane = dataAnulowane;
+    }
+
+    public Date getDataZalegle() {
+        return dataZalegle;
+    }
+
+    public void setDataZalegle(Date dataZalegle) {
+        this.dataZalegle = dataZalegle;
+    }
+
+    public Date getDataDoOdbioru() {
+        return dataDoOdbioru;
+    }
+
+    public void setDataDoOdbioru(Date dataDoOdbioru) {
+        this.dataDoOdbioru = dataDoOdbioru;
+    }
 }

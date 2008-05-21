@@ -4,7 +4,6 @@
 package wypozyczalnia.to.zarzadzaniewypozyczeniami;
 
 import java.io.Serializable;
-import wypozyczalnia.dao.PozycjaZamowieniaDAO;
 
 /** 
  * <!-- begin-user-doc -->
@@ -17,18 +16,13 @@ public class PozycjaZamowieniaTO implements Serializable {
 
     public PozycjaZamowieniaTO() {
     }
-
-    public PozycjaZamowieniaTO(PozycjaZamowieniaDAO pzD) {
-        setCenaJednostkowa(pzD.getCenaJednostkowa());
-        setTytulFilmu(pzD.getPlyta().getFilm().getTytul());
-    }
     /** 
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
      * 
      * @generated "UML to Java (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform)"
      */
-    private Object tytulFilmu;
+    private String tytulFilmu;
 
     /** 
      * <!-- begin-user-doc -->
@@ -48,7 +42,7 @@ public class PozycjaZamowieniaTO implements Serializable {
      * @param theTytulFilmu the tytulFilmu to set
      * @generated "UML to Java (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform)"
      */
-    public void setTytulFilmu(Object theTytulFilmu) {
+    public void setTytulFilmu(String theTytulFilmu) {
         // begin-user-code
         tytulFilmu = theTytulFilmu;
     // end-user-code
