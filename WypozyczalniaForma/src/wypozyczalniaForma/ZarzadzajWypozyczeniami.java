@@ -6,6 +6,14 @@
 
 package wypozyczalniaForma;
 
+import java.util.Collection;
+import javax.naming.Context;
+import javax.naming.InitialContext;
+import wypozyczalnia.ejb.zarzadzaniewypozyczeniami.ZarzadzanieWypozyczeniami;
+import wypozyczalnia.ejb.zarzadzaniewypozyczeniami.ZarzadzanieWypozyczeniamiDummy;
+import wypozyczalnia.to.zarzadzaniewypozyczeniami.ZamowienieTO;
+
+
 /**
  *
  * @author  Luke
@@ -51,77 +59,44 @@ public class ZarzadzajWypozyczeniami extends javax.swing.JFrame {
 
         calendarComboBox2.setName("calendar_do"); // NOI18N
 
-        org.jdesktop.application.ResourceMap resourceMap = org.jdesktop.application.Application.getInstance(wypozyczalniaForma.WypozyczalniaForma.class).getContext().getResourceMap(ZarzadzajWypozyczeniami.class);
-        jLabel1.setText(resourceMap.getString("jLabel_od.text")); // NOI18N
         jLabel1.setName("jLabel_od"); // NOI18N
 
-        jLabel2.setText(resourceMap.getString("jLabel_do.text")); // NOI18N
         jLabel2.setName("jLabel_do"); // NOI18N
 
-        jLabel3.setText(resourceMap.getString("jLabel_info.text")); // NOI18N
         jLabel3.setName("jLabel_info"); // NOI18N
 
         jScrollPane1.setName("jScrollPane1"); // NOI18N
 
-        jTable1.setModel(new javax.swing.table.DefaultTableModel(
-            new Object [][] {
-                {null, null, null, null, null, null},
-                {null, null, null, null, null, null},
-                {null, null, null, null, null, null},
-                {null, null, null, null, null, null},
-                {null, null, null, null, null, null},
-                {null, null, null, null, null, null}
-            },
-            new String [] {
-                "Imię", "Nazwisko", "PESEL", "Data zamówienia", "Stan zamówienia", ""
-            }
-        ) {
-            Class[] types = new Class [] {
-                java.lang.Object.class, java.lang.Object.class, java.lang.String.class, java.lang.String.class, java.lang.Object.class, java.lang.Object.class
-            };
-            boolean[] canEdit = new boolean [] {
-                false, false, false, false, false, false
-            };
-
-            public Class getColumnClass(int columnIndex) {
-                return types [columnIndex];
-            }
-
-            public boolean isCellEditable(int rowIndex, int columnIndex) {
-                return canEdit [columnIndex];
-            }
-        });
+        jTable1.setModel(new wypozyczalniaForma.ModelDrzewa());
         jTable1.setColumnSelectionAllowed(true);
         jTable1.setName("jTable1"); // NOI18N
         jScrollPane1.setViewportView(jTable1);
         jTable1.getColumnModel().getSelectionModel().setSelectionMode(javax.swing.ListSelectionModel.SINGLE_SELECTION);
 
-        jLabel4.setText(resourceMap.getString("jLabel_error.text")); // NOI18N
         jLabel4.setName("jLabel_error"); // NOI18N
 
         buttonGroup_stan.add(jRadioButton1);
-        jRadioButton1.setText(resourceMap.getString("jRadioButton_przyjete.text")); // NOI18N
         jRadioButton1.setName("jRadioButton_przyjete"); // NOI18N
 
         buttonGroup_stan.add(jRadioButton2);
-        jRadioButton2.setText(resourceMap.getString("jRadioButton_zrealizowane.text")); // NOI18N
         jRadioButton2.setName("jRadioButton_zrealizowane"); // NOI18N
 
         buttonGroup_stan.add(jRadioButton3);
-        jRadioButton3.setText(resourceMap.getString("jRadioButton_doOdbioru.text")); // NOI18N
         jRadioButton3.setName("jRadioButton_doOdbioru"); // NOI18N
 
         buttonGroup_stan.add(jRadioButton4);
-        jRadioButton4.setText(resourceMap.getString("jRadioButton_pozyczone.text")); // NOI18N
         jRadioButton4.setName("jRadioButton_pozyczone"); // NOI18N
 
         buttonGroup_stan.add(jRadioButton5);
         jRadioButton5.setSelected(true);
-        jRadioButton5.setText(resourceMap.getString("jRadioButton_wszystkie.text")); // NOI18N
         jRadioButton5.setName("jRadioButton_wszystkie"); // NOI18N
 
-        jButton1.setText(resourceMap.getString("jButton_wyszukaj.text")); // NOI18N
         jButton1.setName("jButton_wyszukaj"); // NOI18N
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -196,6 +171,20 @@ public class ZarzadzajWypozyczeniami extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        ModelDrzewa model = (ModelDrzewa) jTable1.getModel();
+        try {
+            ZarzadzanieWypozyczeniami zarzadzanie = new ZarzadzanieWypozyczeniamiDummy();
+            Collection<ZamowienieTO> zam = zarzadzanie.pobierzWszystkieZamowienia();
+            model.setZamowienia(zam);
+            jTable1.updateUI();            
+        } catch (Throwable ex) {
+            ex.printStackTrace();
+        }
+
+
+    }//GEN-LAST:event_jButton1ActionPerformed
     
     /**
      * @param args the command line arguments

@@ -25,12 +25,12 @@
           <Group type="102" alignment="0" attributes="0">
               <EmptySpace max="-2" attributes="0"/>
               <Component id="jLabel1" min="-2" max="-2" attributes="0"/>
-              <EmptySpace pref="319" max="32767" attributes="0"/>
+              <EmptySpace pref="346" max="32767" attributes="0"/>
           </Group>
           <Group type="102" alignment="0" attributes="0">
               <EmptySpace max="-2" attributes="0"/>
               <Component id="jLabel2" min="-2" max="-2" attributes="0"/>
-              <EmptySpace pref="318" max="32767" attributes="0"/>
+              <EmptySpace pref="346" max="32767" attributes="0"/>
           </Group>
           <Group type="102" alignment="0" attributes="0">
               <EmptySpace max="-2" attributes="0"/>
@@ -51,7 +51,7 @@
                       </Group>
                   </Group>
               </Group>
-              <EmptySpace pref="166" max="32767" attributes="0"/>
+              <EmptySpace pref="189" max="32767" attributes="0"/>
           </Group>
           <Group type="102" alignment="0" attributes="0">
               <EmptySpace max="-2" attributes="0"/>
@@ -59,7 +59,7 @@
               <EmptySpace pref="346" max="32767" attributes="0"/>
           </Group>
           <Group type="102" alignment="1" attributes="0">
-              <EmptySpace pref="255" max="32767" attributes="0"/>
+              <EmptySpace pref="279" max="32767" attributes="0"/>
               <Component id="jButton1" min="-2" max="-2" attributes="0"/>
               <EmptySpace min="-2" pref="42" max="-2" attributes="0"/>
           </Group>
@@ -110,20 +110,17 @@
   <SubComponents>
     <Component class="javax.swing.JButton" name="jButton1">
       <Properties>
-        <Property name="text" type="java.lang.String" resourceKey="jButton1.text"/>
         <Property name="enabled" type="boolean" value="false"/>
         <Property name="name" type="java.lang.String" value="jButton1" noResource="true"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel1">
       <Properties>
-        <Property name="text" type="java.lang.String" resourceKey="jLabel1.text"/>
         <Property name="name" type="java.lang.String" value="jLabel1" noResource="true"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JTextField" name="nrPesel">
       <Properties>
-        <Property name="text" type="java.lang.String" resourceKey="nrPesel.text"/>
         <Property name="name" type="java.lang.String" value="nrPesel" noResource="true"/>
       </Properties>
       <Events>
@@ -132,37 +129,29 @@
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel2">
       <Properties>
-        <Property name="text" type="java.lang.String" resourceKey="jLabel2.text"/>
         <Property name="name" type="java.lang.String" value="jLabel2" noResource="true"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JTextField" name="imieField">
       <Properties>
         <Property name="editable" type="boolean" value="false"/>
-        <Property name="text" type="java.lang.String" resourceKey="imieField.text"/>
         <Property name="enabled" type="boolean" value="false"/>
         <Property name="name" type="java.lang.String" value="imieField" noResource="true"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JLabel" name="imieLabel">
       <Properties>
-        <Property name="text" type="java.lang.String" resourceKey="imieLabel.text"/>
         <Property name="name" type="java.lang.String" value="imieLabel" noResource="true"/>
       </Properties>
-      <AccessibilityProperties>
-        <Property name="AccessibleContext.accessibleName" type="java.lang.String" resourceKey="jLabel3.AccessibleContext.accessibleName"/>
-      </AccessibilityProperties>
     </Component>
     <Component class="javax.swing.JLabel" name="nazwiskoLabel">
       <Properties>
-        <Property name="text" type="java.lang.String" resourceKey="nazwiskoLabel.text"/>
         <Property name="name" type="java.lang.String" value="nazwiskoLabel" noResource="true"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JTextField" name="nazwiskoField">
       <Properties>
         <Property name="editable" type="boolean" value="false"/>
-        <Property name="text" type="java.lang.String" resourceKey="nazwiskoField.text"/>
         <Property name="enabled" type="boolean" value="false"/>
         <Property name="name" type="java.lang.String" value="nazwiskoField" noResource="true"/>
       </Properties>
@@ -170,27 +159,23 @@
     <Component class="javax.swing.JTextField" name="dataField">
       <Properties>
         <Property name="editable" type="boolean" value="false"/>
-        <Property name="text" type="java.lang.String" resourceKey="dataField.text"/>
         <Property name="name" type="java.lang.String" value="dataField" noResource="true"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JLabel" name="dataLabel">
       <Properties>
-        <Property name="text" type="java.lang.String" resourceKey="dataLabel.text"/>
         <Property name="name" type="java.lang.String" value="dataLabel" noResource="true"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JTextField" name="mailField">
       <Properties>
         <Property name="editable" type="boolean" value="false"/>
-        <Property name="text" type="java.lang.String" resourceKey="mailField.text"/>
         <Property name="enabled" type="boolean" value="false"/>
         <Property name="name" type="java.lang.String" value="mailField" noResource="true"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JLabel" name="mailLabel">
       <Properties>
-        <Property name="text" type="java.lang.String" resourceKey="mailLabel.text"/>
         <Property name="name" type="java.lang.String" value="mailLabel" noResource="true"/>
       </Properties>
     </Component>
