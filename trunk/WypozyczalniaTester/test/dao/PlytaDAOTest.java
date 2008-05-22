@@ -5,6 +5,7 @@
 package dao;
 
 import java.util.Date;
+import junit.framework.JUnit4TestAdapter;
 import org.junit.After;
 import org.junit.AfterClass;
 import org.junit.Before;
@@ -214,5 +215,9 @@ public class PlytaDAOTest {
         assertEquals(plyta.getStanplyty(), ZAREZERWOWANA);
         plyta.anulujRezerwacje();
         assertEquals(plyta.getStanplyty(), NIEWYPOZYCZONA);
+    }
+    
+      public static junit.framework.Test suite() {
+        return new JUnit4TestAdapter(PlytaDAOTest.class);
     }
 }

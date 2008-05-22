@@ -90,14 +90,6 @@
     </target>
     
     <target name="-post-compile-test" description="offline instrumentation">
-        <emma enabled="true">
-            <instr instrpath="${instr.dir}"
-                   destdir="${instr.dir}"	       
-                   metadatafile="${coverage.dir}/metadata.emma"
-                   merge="true"
-                   mode="overwrite"
-                    />
-        </emma>
     </target>
     
     <target name="report" description="create the Emma report" >

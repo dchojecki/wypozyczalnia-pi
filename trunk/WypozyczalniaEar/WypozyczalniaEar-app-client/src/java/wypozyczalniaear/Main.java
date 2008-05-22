@@ -4,7 +4,6 @@
  */
 package wypozyczalniaear;
 
-import java.util.Hashtable;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import javax.ejb.EJB;
@@ -15,12 +14,12 @@ import javax.naming.NamingException;
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
 import wypozyczalnia.dao.AdresDAO;
-import wypozyczalnia.dao.KlientDAO;
-import wypozyczalnia.dao.fabryki.zarzadzaniekontami.ZarzadzanieKontamiOracleDAO;
+import wypozyczalnia.dao.ZamowienieDAO;
+import wypozyczalnia.dao.fabryki.zarzadzaniewypozyczeniami.ZarzWypOracleDAO;
 import wypozyczalnia.ejb.zarzadzaniekontami.ZarzadzanieKontami;
-import wypozyczalnia.ejb.zarzadzaniewypozyczeniami.DerbyPUBeanBean;
-import wypozyczalnia.ejb.zarzadzaniewypozyczeniami.DerbyPUBeanRemote;
 import wypozyczalnia.ejb.zarzadzaniewypozyczeniami.ZarzadzanieWypozyczeniami;
+import wypozyczalnia.to.zarzadzaniekontami.AdresTO;
+import wypozyczalnia.to.zarzadzaniekontami.KlientTO;
 
 /**
  *
@@ -67,35 +66,11 @@ public class Main {
     }
 
     public static void main(String[] args) {
-        Hashtable env = new Hashtable();
-        InitialContext ic;
-        EntityManager em;
-        try {
-            ic = new InitialContext();
-            DerbyPUBeanRemote pu = (DerbyPUBeanRemote) ic.lookup("DerbyPUBeanBean");
-            em = pu.getEntityManager();
-        } catch (NamingException ex) {
-            Logger.getLogger(Main.class.getName()).log(Level.SEVERE, null, ex);
-        }
-        new Main().test();
-
-
-
-        zarzadzaniekontami.czyKlientZarejestrowany("85110916799");
-        wypozyczenia.pobierzWszystkieZamowienia();
-        ZarzadzanieKontamiOracleDAO wwyp = new ZarzadzanieKontamiOracleDAO();
-        KlientDAO klient = wwyp.utworzNoweKonto();
-
-        wypozyczenia.pobierzWszystkieZamowienia();
-    // EntityManagerFactory emf = Persistence.createEntityManagerFactory("WypozyczalniaDAODerbyPU");
-    //EntityManager em = emf.createEntityManager();
-
-    //  ZarzadzanieKontamiDelegacja.setZarzadzanieKontami(new ZarzadzanieKontamiDummy());
-
-//        ZarzadzanieWypozyczeniamiDelegacja.getInstance().setRealSubject(new ZarzadzanieWypozyczeniamiDummy());
-
-
-
+        KlientTO kl = new KlientTO();
+        AdresTO ad = new AdresTO();
+        ZarzWypOracleDAO z = new ZarzWypOracleDAO();
+        ZamowienieDAO zz = z.utworzNoweZamowienie();
+        
     //  GlowneOkno okienko = new GlowneOkno();
     //    okienko.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
     //      okienko.show();

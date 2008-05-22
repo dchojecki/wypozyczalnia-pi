@@ -218,9 +218,9 @@ public class ZarzadzanieKontamiBean implements ZarzadzanieKontami, ZarzadzanieKo
         nowyAdres.setNrDomu(adres.getNrDomu());
         nowyAdres.setNrMieszkania(adres.getNrMieszkania());
 
-        dao.startSesji();
+ //       dao.startSesji();
         dao.scalDaneKlienta(nowyKlient);
-        dao.commit();
+   //     dao.commit();
         KontoTO retKonto = new KontoTO();
         // TODO
         return retKonto;

@@ -21,11 +21,12 @@ import wypozyczalnia.ejb.zarzadzaniewypozyczeniami.DerbyPUBeanRemote;
 public class ZarzadzanieKontamiOracleDAO implements ZarzadzanieKontamiDAO {
 
     private EntityManager em;
+    private DerbyPUBeanRemote pu;
 
     public ZarzadzanieKontamiOracleDAO() {
         try {
             InitialContext ic = new InitialContext();
-            DerbyPUBeanRemote pu = (DerbyPUBeanRemote) ic.lookup("DerbyPUBeanBean");
+            pu = (DerbyPUBeanRemote) ic.lookup("DerbyPUBeanBean");
             em = pu.getEntityManager();
         } catch (Throwable e) {
             e.printStackTrace();
@@ -80,7 +81,8 @@ public class ZarzadzanieKontamiOracleDAO implements ZarzadzanieKontamiDAO {
         noweKonto.setKlient(nowyKlient);
         nowyKlient.getKonta().add(noweKonto);
 
-        em.merge(nowyKlient);
+        pu.getEntityManager().persist(nowyAdres);
+        //em.merge(nowyKlient);
         return nowyKlient;
 
     }

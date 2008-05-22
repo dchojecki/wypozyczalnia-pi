@@ -16,7 +16,7 @@ import javax.persistence.PersistenceContext;
 @Stateless(mappedName="DerbyPUBeanBean")
 public class DerbyPUBeanBean implements DerbyPUBeanRemote, DerbyPUBeanLocal {
 
-    @PersistenceContext(unitName="DerbyPU")
+    //@PersistenceContext(unitName="DerbyPU")
     private EntityManager em;
     
     public EntityManager getEntityManager() {
