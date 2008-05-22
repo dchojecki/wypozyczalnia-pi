@@ -1,20 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <persistence version="1.0" xmlns="http://java.sun.com/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/persistence http://java.sun.com/xml/ns/persistence/persistence_1_0.xsd">
   <persistence-unit name="DerbyPU">
-              <jta-data-source>jdbc/__default</jta-data-source>    
     <!-- <provider>oracle.toplink.essentials.ejb.cmp3.EntityManagerFactoryProvider</provider>
     <jta-data-source>jdbc/WypozyczalniaPoolDS</jta-data-source>-->
-    <!--    <class>wypozyczalnia.dao.PozycjaZamowieniaDAO</class>
+    <class>wypozyczalnia.dao.PozycjaZamowieniaDAO</class>
     <class>wypozyczalnia.dao.FilmDAO</class>
     <class>wypozyczalnia.dao.PlytaDAO</class>
     <class>wypozyczalnia.dao.ZamowienieDAO</class>
     <class>wypozyczalnia.dao.KontoDAO</class>
     <class>wypozyczalnia.dao.KlientDAO</class>
-    <class>wypozyczalnia.dao.OsobaDAO</class>-->
+    <class>wypozyczalnia.dao.OsobaDAO</class>
     <class>wypozyczalnia.dao.AdresDAO</class>
-    <properties>      
-      <property name="toplink.platform.class.name" value="oracle.toplink.essentials.platform.database.DerbyPlatform"/>                
-      <property name="toplink.ddl-generation" value="drop-and-create-tables"/>      
+    <properties>
+      <property name="toplink.jdbc.driver" value="org.apache.derby.jdbc.ClientDriver"/>
+      <property name="toplink.jdbc.url" value="jdbc:derby://localhost:1527/wyp;create=true"/>
+      <property name="toplink.jdbc.user" value="APP"/>
+            <property name="toplink.ddl-generation" value="drop-and-create-tables"/>
+      <property name="toplink.jdbc.password" value="APP"/>
+      <property name="" value="app"/>
     </properties>
   </persistence-unit>
 </persistence>

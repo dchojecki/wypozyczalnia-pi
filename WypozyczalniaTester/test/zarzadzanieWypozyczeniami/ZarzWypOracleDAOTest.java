@@ -11,6 +11,7 @@ import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
 import javax.persistence.EntityTransaction;
 import javax.persistence.Persistence;
+import junit.framework.JUnit4TestAdapter;
 import org.junit.After;
 import org.junit.AfterClass;
 import org.junit.Before;
@@ -29,14 +30,24 @@ import static org.junit.Assert.*;
  * @author marcin
  */
 public class ZarzWypOracleDAOTest {
-
+    
     public ZarzWypOracleDAOTest() {
     }
-
+    
     @BeforeClass
     public static void setUpClass() throws Exception {
+        try {
+            formatter = new SimpleDateFormat("yyMMdd");
+            dao = new ZarzWypOracleDAO();
+            ZamowienieDAO zz = dao.utworzNoweZamowienie();
+            zz.setStanzamowienia(StanZamowienia.ANULOWANE);
+            dao.scalZamowienie(zz);
+            daoKonta = new ZarzadzanieKontamiOracleDAO();
+        } catch (Throwable e) {
+            e.printStackTrace();
+        }
     }
-
+    
     @AfterClass
     public static void tearDownClass() throws Exception {
     }
@@ -45,37 +56,25 @@ public class ZarzWypOracleDAOTest {
     private static EntityManager em;
     private static ZarzWypOracleDAO dao;
     private static ZarzadzanieKontamiOracleDAO daoKonta;
-
+    
     @Before
     public void setUp() {
-        try {
-            formatter = new SimpleDateFormat("yyMMdd");
-            emf = Persistence.createEntityManagerFactory("WypozyczalniaDAODerbyPU");
-            em = emf.createEntityManager();
-            dao = new ZarzWypOracleDAO();
-            dao.setEm(em);
-
-            daoKonta = new ZarzadzanieKontamiOracleDAO();
-            daoKonta.setEm(em);
-        } catch (Throwable e) {
-            e.printStackTrace();
-        }
     }
-
+    
     @After
     public void tearDown() {
     }
-
+    
     @Test
     public void test1() {
-
+        
         Collection<? extends ZamowienieDAO> zamowienia = dao.pobierzWszystkieZamowienia();
         for (ZamowienieDAO zz : zamowienia) {
             System.out.println(zz.getStanzamowienia().toString());
         }
-
+        
     }
-
+    
     @Test
     public void test3() {
         ZamowienieDAO z = dao.utworzNoweZamowienie();
@@ -86,10 +85,10 @@ public class ZarzWypOracleDAOTest {
         PozycjaZamowieniaDAO p2 = new PozycjaZamowieniaDAO();
         p1.setCenaJednostkowa((float) 3.14);
         p2.setCenaJednostkowa((float) 2.73);
-
+        
         z.getPozycje().add(p1);
         z.getPozycje().add(p2);
-
+        
         EntityTransaction et = em.getTransaction();
         et.begin();
         dao.scalZamowienie(z);
@@ -98,15 +97,19 @@ public class ZarzWypOracleDAOTest {
         } catch (Exception e) {
             fail();
         }
-
+        
     }
-
+    
     @Test
     public void test4() {
         Collection<? extends ZamowienieDAO> z = dao.pobierzWszystkieZamowienia();
-
+        
         for (ZamowienieDAO zz : z) {
             System.out.println(zz.getKlient().getImie());
         }
+    }
+    
+    public static junit.framework.Test suite() {
+        return new JUnit4TestAdapter(ZarzWypOracleDAOTest.class);
     }
 }

@@ -7,6 +7,7 @@ package zarzadzanieKontami;
 
 import java.util.Collection;
 import javax.persistence.EntityManager;
+import junit.framework.JUnit4TestAdapter;
 import org.junit.After;
 import org.junit.AfterClass;
 import org.junit.Before;
@@ -25,6 +26,7 @@ public class ZarzadzanieKontamiOracleDAOTest {
     public ZarzadzanieKontamiOracleDAOTest() {
     }
     private static ZarzadzanieKontamiOracleDAO instance;
+    
     @BeforeClass
     public static void setUpClass() throws Exception {
         instance = new ZarzadzanieKontamiOracleDAO();
@@ -47,6 +49,7 @@ public class ZarzadzanieKontamiOracleDAOTest {
      */
     @Test
     public void testZwrocListeWszystkichKlientow() {
+        KlientDAO k = instance.utworzNoweKonto();
         System.out.println("zwrocListeWszystkichKlientow");
         Collection<KlientDAO> expResult = null;
         Collection<KlientDAO> result = instance.zwrocListeWszystkichKlientow();
@@ -62,7 +65,6 @@ public class ZarzadzanieKontamiOracleDAOTest {
     public void testZwrocDaneKlienta() {
         System.out.println("zwrocDaneKlienta");
         String nrpesel = "";
-        ZarzadzanieKontamiOracleDAO instance = new ZarzadzanieKontamiOracleDAO();
         KlientDAO expResult = null;
         KlientDAO result = instance.zwrocDaneKlienta(nrpesel);
         assertEquals(expResult, result);
@@ -76,7 +78,6 @@ public class ZarzadzanieKontamiOracleDAOTest {
     @Test
     public void testGetEm() {
         System.out.println("getEm");
-        ZarzadzanieKontamiOracleDAO instance = new ZarzadzanieKontamiOracleDAO();
         EntityManager expResult = null;
         EntityManager result = instance.getEm();
         assertEquals(expResult, result);
@@ -91,7 +92,6 @@ public class ZarzadzanieKontamiOracleDAOTest {
     public void testSetEm() {
         System.out.println("setEm");
         EntityManager em = null;
-        ZarzadzanieKontamiOracleDAO instance = new ZarzadzanieKontamiOracleDAO();
         instance.setEm(em);
         // TODO review the generated test code and remove the default call to fail.
         fail("The test case is a prototype.");
@@ -104,7 +104,6 @@ public class ZarzadzanieKontamiOracleDAOTest {
     public void testScalDaneKlienta() {
         System.out.println("scalDaneKlienta");
         KlientDAO klient = null;
-        ZarzadzanieKontamiOracleDAO instance = new ZarzadzanieKontamiOracleDAO();
         instance.scalDaneKlienta(klient);
         // TODO review the generated test code and remove the default call to fail.
         fail("The test case is a prototype.");
@@ -116,7 +115,6 @@ public class ZarzadzanieKontamiOracleDAOTest {
     @Test
     public void testUtworzNoweKonto() {
         System.out.println("utworzNoweKonto");
-        ZarzadzanieKontamiOracleDAO instance = new ZarzadzanieKontamiOracleDAO();
         KlientDAO expResult = null;
         KlientDAO result = instance.utworzNoweKonto();
         assertEquals(expResult, result);
@@ -131,7 +129,6 @@ public class ZarzadzanieKontamiOracleDAOTest {
     public void testUsunKonto() {
         System.out.println("usunKonto");
         KlientDAO daneKlienta = null;
-        ZarzadzanieKontamiOracleDAO instance = new ZarzadzanieKontamiOracleDAO();
         instance.usunKonto(daneKlienta);
         // TODO review the generated test code and remove the default call to fail.
         fail("The test case is a prototype.");
@@ -143,7 +140,6 @@ public class ZarzadzanieKontamiOracleDAOTest {
     @Test
     public void testStartSesji() {
         System.out.println("startSesji");
-        ZarzadzanieKontamiOracleDAO instance = new ZarzadzanieKontamiOracleDAO();
         instance.startSesji();
         // TODO review the generated test code and remove the default call to fail.
         fail("The test case is a prototype.");
@@ -155,7 +151,6 @@ public class ZarzadzanieKontamiOracleDAOTest {
     @Test
     public void testCommit() {
         System.out.println("commit");
-        ZarzadzanieKontamiOracleDAO instance = new ZarzadzanieKontamiOracleDAO();
         instance.commit();
         // TODO review the generated test code and remove the default call to fail.
         fail("The test case is a prototype.");
@@ -167,10 +162,13 @@ public class ZarzadzanieKontamiOracleDAOTest {
     @Test
     public void testRollback() {
         System.out.println("rollback");
-        ZarzadzanieKontamiOracleDAO instance = new ZarzadzanieKontamiOracleDAO();
         instance.rollback();
         // TODO review the generated test code and remove the default call to fail.
         fail("The test case is a prototype.");
+    }
+    
+    public static junit.framework.Test suite() {
+        return new JUnit4TestAdapter(ZarzadzanieKontamiOracleDAOTest.class);
     }
 
 }

@@ -5,6 +5,7 @@
 
 package zarzadzanieKontami;
 
+import junit.framework.JUnit4TestAdapter;
 import wypozyczalnia.dao.fabryki.zarzadzaniekontami.*;
 import org.junit.After;
 import org.junit.AfterClass;
@@ -44,12 +45,12 @@ public class ZarzadzanieKontamiFabrykaDanychTest {
     @Test
     public void testPobierzWypozyczalniaDAO() {
         System.out.println("pobierzWypozyczalniaDAO");
-        ZarzadzanieKontamiFabrykaDanych instance = new ZarzadzanieKontamiFabrykaDanych();
-        ZarzadzanieKontamiDAO expResult = null;
+        ZarzadzanieKontamiFabrykaDanych instance = new ZarzadzanieKontamiGlownaFabrykaDanych();
+        Class c = ZarzadzanieKontamiOracleDAO.class;
         ZarzadzanieKontamiDAO result = instance.pobierzWypozyczalniaDAO();
-        assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        assertEquals(c, result.getClass());
     }
-
+    public static junit.framework.Test suite() {
+        return new JUnit4TestAdapter(ZarzadzanieKontamiFabrykaDanychTest.class);
+    }
 }
