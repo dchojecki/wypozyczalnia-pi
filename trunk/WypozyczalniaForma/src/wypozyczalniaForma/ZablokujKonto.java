@@ -9,8 +9,9 @@ package wypozyczalniaForma;
 import java.util.ArrayList;
 import javax.swing.JFrame;
 import wypozyczalnia.dao.StanKonta;
-import wypozyczalnia.to.KontoTO;
-import wypozyczalnia.to.KlientTO;
+import wypozyczalnia.to.zarzadzaniekontami.KontoTO;
+import wypozyczalnia.to.zarzadzaniekontami.KlientTO;
+
 
 /**
  *

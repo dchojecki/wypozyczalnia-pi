@@ -128,19 +128,16 @@
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel1">
       <Properties>
-        <Property name="text" type="java.lang.String" resourceKey="jLabel_od.text"/>
         <Property name="name" type="java.lang.String" value="jLabel_od" noResource="true"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel2">
       <Properties>
-        <Property name="text" type="java.lang.String" resourceKey="jLabel_do.text"/>
         <Property name="name" type="java.lang.String" value="jLabel_do" noResource="true"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel3">
       <Properties>
-        <Property name="text" type="java.lang.String" resourceKey="jLabel_info.text"/>
         <Property name="name" type="java.lang.String" value="jLabel_info" noResource="true"/>
       </Properties>
     </Component>
@@ -156,49 +153,11 @@
       <SubComponents>
         <Component class="javax.swing.JTable" name="jTable1">
           <Properties>
-            <Property name="model" type="javax.swing.table.TableModel" editor="org.netbeans.modules.form.editors2.TableModelEditor">
-              <Table columnCount="6" rowCount="6">
-                <Column editable="false" title="Imi&#x119;" type="java.lang.Object"/>
-                <Column editable="false" title="Nazwisko" type="java.lang.Object"/>
-                <Column editable="false" title="PESEL" type="java.lang.String"/>
-                <Column editable="false" title="Data zam&#xf3;wienia" type="java.lang.String"/>
-                <Column editable="false" title="Stan zam&#xf3;wienia" type="java.lang.Object"/>
-                <Column editable="false" title="" type="java.lang.Object"/>
-              </Table>
+            <Property name="model" type="javax.swing.table.TableModel" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
+              <Connection code="new wypozyczalniaForma.ModelDrzewa()" type="code"/>
             </Property>
             <Property name="columnModel" type="javax.swing.table.TableColumnModel" editor="org.netbeans.modules.form.editors2.TableColumnModelEditor">
-              <TableColumnModel selectionModel="1">
-                <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
-                  <Title/>
-                  <Editor/>
-                  <Renderer/>
-                </Column>
-                <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
-                  <Title/>
-                  <Editor/>
-                  <Renderer/>
-                </Column>
-                <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
-                  <Title/>
-                  <Editor/>
-                  <Renderer/>
-                </Column>
-                <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
-                  <Title/>
-                  <Editor/>
-                  <Renderer/>
-                </Column>
-                <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
-                  <Title/>
-                  <Editor/>
-                  <Renderer/>
-                </Column>
-                <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
-                  <Title/>
-                  <Editor/>
-                  <Renderer/>
-                </Column>
-              </TableColumnModel>
+              <TableColumnModel selectionModel="1"/>
             </Property>
             <Property name="columnSelectionAllowed" type="boolean" value="true"/>
             <Property name="name" type="java.lang.String" value="jTable1" noResource="true"/>
@@ -211,7 +170,6 @@
     </Container>
     <Component class="javax.swing.JLabel" name="jLabel4">
       <Properties>
-        <Property name="text" type="java.lang.String" resourceKey="jLabel_error.text"/>
         <Property name="name" type="java.lang.String" value="jLabel_error" noResource="true"/>
       </Properties>
     </Component>
@@ -220,7 +178,6 @@
         <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
           <ComponentRef name="buttonGroup_stan"/>
         </Property>
-        <Property name="text" type="java.lang.String" resourceKey="jRadioButton_przyjete.text"/>
         <Property name="name" type="java.lang.String" value="jRadioButton_przyjete" noResource="true"/>
       </Properties>
     </Component>
@@ -229,7 +186,6 @@
         <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
           <ComponentRef name="buttonGroup_stan"/>
         </Property>
-        <Property name="text" type="java.lang.String" resourceKey="jRadioButton_zrealizowane.text"/>
         <Property name="name" type="java.lang.String" value="jRadioButton_zrealizowane" noResource="true"/>
       </Properties>
     </Component>
@@ -238,7 +194,6 @@
         <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
           <ComponentRef name="buttonGroup_stan"/>
         </Property>
-        <Property name="text" type="java.lang.String" resourceKey="jRadioButton_doOdbioru.text"/>
         <Property name="name" type="java.lang.String" value="jRadioButton_doOdbioru" noResource="true"/>
       </Properties>
     </Component>
@@ -247,7 +202,6 @@
         <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
           <ComponentRef name="buttonGroup_stan"/>
         </Property>
-        <Property name="text" type="java.lang.String" resourceKey="jRadioButton_pozyczone.text"/>
         <Property name="name" type="java.lang.String" value="jRadioButton_pozyczone" noResource="true"/>
       </Properties>
     </Component>
@@ -257,15 +211,16 @@
           <ComponentRef name="buttonGroup_stan"/>
         </Property>
         <Property name="selected" type="boolean" value="true"/>
-        <Property name="text" type="java.lang.String" resourceKey="jRadioButton_wszystkie.text"/>
         <Property name="name" type="java.lang.String" value="jRadioButton_wszystkie" noResource="true"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JButton" name="jButton1">
       <Properties>
-        <Property name="text" type="java.lang.String" resourceKey="jButton_wyszukaj.text"/>
         <Property name="name" type="java.lang.String" value="jButton_wyszukaj" noResource="true"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton1ActionPerformed"/>
+      </Events>
     </Component>
   </SubComponents>
 </Form>
