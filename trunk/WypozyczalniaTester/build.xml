@@ -67,8 +67,8 @@
 
     -->
 <property name="instr.dir" value="build/jar" />
-    <property name="coverage.dir" value="K:\pi\WypozyczalniaEar\emma" />
-    <property name="emma.dir" value="K:\pi\WypozyczalniaEar\emma" />
+    <property name="coverage.dir" value="..\WypozyczalniaEar\emma" />
+    <property name="emma.dir" value="..\WypozyczalniaEar\emma" />
     
     <path id="emma.lib" >
         <pathelement location="${emma.dir}/emma.jar" />

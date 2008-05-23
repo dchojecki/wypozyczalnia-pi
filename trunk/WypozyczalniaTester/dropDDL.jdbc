@@ -1,8 +1,8 @@
 ALTER TABLE KontoTbl DROP CONSTRAINT KontoTbl_klientId
 ALTER TABLE OsobaTbl DROP CONSTRAINT OsobaTbl_adresId
 ALTER TABLE PlytaTbl DROP CONSTRAINT FK_PlytaTbl_filmId
-ALTER TABLE PozycjaZamowieniaTbl DROP CONSTRAINT PzycjZmwnaTblzmwnd
 ALTER TABLE PozycjaZamowieniaTbl DROP CONSTRAINT PzycjZmwnaTblplytd
+ALTER TABLE PozycjaZamowieniaTbl DROP CONSTRAINT PzycjZmwnaTblzmwnd
 ALTER TABLE ZamowienieTbl DROP CONSTRAINT ZmwnTblKLNTNRPESEL
 DROP TABLE KontoTbl
 DROP TABLE OsobaTbl
