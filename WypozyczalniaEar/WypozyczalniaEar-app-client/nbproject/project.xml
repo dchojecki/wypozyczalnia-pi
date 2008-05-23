@@ -13,7 +13,7 @@
             </test-roots>
             <included-library files="1">reference.WypozyczalniaDAO.jar</included-library>
             <included-library files="1">reference.WypozyczalniaEar-ejb.dist</included-library>
-            <included-library>libs.swing-app-framework.classpath</included-library>
+            <included-library files="2">libs.swing-app-framework.classpath</included-library>
             <included-library files="1">libs.ORACLEJDBC.classpath</included-library>
             <included-library files="1">file.reference.calendarcomponent.jar</included-library>
         </data>
