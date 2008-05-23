@@ -6,8 +6,6 @@ package wypozyczalnia.ejb.zarzadzaniekontami;
 import java.util.Collection;
 import java.util.LinkedList;
 import javax.ejb.Stateless;
-import javax.persistence.EntityManager;
-import javax.persistence.PersistenceContext;
 import wypozyczalnia.dao.AdresDAO;
 import wypozyczalnia.dao.KlientDAO;
 import wypozyczalnia.dao.KontoDAO;
@@ -50,7 +48,6 @@ public class ZarzadzanieKontamiBean implements ZarzadzanieKontami, ZarzadzanieKo
      * @generated "UML to Java (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform)"
      */
     public void modyfikujDaneKlienta(KlientTO klient) {
-
     }
 
     /** 
@@ -61,10 +58,10 @@ public class ZarzadzanieKontamiBean implements ZarzadzanieKontami, ZarzadzanieKo
      * @generated "UML to Java (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform)"
      */
     public void modyfikujDaneKonta(KontoTO konto) {
-    // begin-user-code
-    // TODO Auto-generated method stub
+        // begin-user-code
+        // TODO Auto-generated method stub
 
-    // end-user-code
+        // end-user-code
     }
 
     /** 
@@ -89,7 +86,7 @@ public class ZarzadzanieKontamiBean implements ZarzadzanieKontami, ZarzadzanieKo
      * @generated "UML to Java (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform)"
      */
     public KontoTO zwrocDaneKonta(String nrpesel) {
-        ZarzadzanieKontamiDAO dao = fabrykaDAO.pobierzWypozyczalniaDAO();
+        ZarzadzanieKontamiDAO dao = getFabrykaDAO().pobierzWypozyczalniaDAO();
         KlientDAO klient = dao.zwrocDaneKlienta(nrpesel);
         KontoTO ret = new KontoTO();
         // TODO
@@ -104,7 +101,7 @@ public class ZarzadzanieKontamiBean implements ZarzadzanieKontami, ZarzadzanieKo
      * @generated "UML to Java (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform)"
      */
     public KlientTO zwrocDaneKlienta(String nrpesel) {
-        ZarzadzanieKontamiDAO dao = fabrykaDAO.pobierzWypozyczalniaDAO();
+        ZarzadzanieKontamiDAO dao = getFabrykaDAO().pobierzWypozyczalniaDAO();
         KlientDAO klient = dao.zwrocDaneKlienta(nrpesel);
         KlientTO ret = new KlientTO();
         // TODO
@@ -119,14 +116,14 @@ public class ZarzadzanieKontamiBean implements ZarzadzanieKontami, ZarzadzanieKo
      * @generated "UML to Java (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform)"
      */
     public void zablokujKonto(KlientTO klient) {
-        ZarzadzanieKontamiDAO dao = fabrykaDAO.pobierzWypozyczalniaDAO();
+        ZarzadzanieKontamiDAO dao = getFabrykaDAO().pobierzWypozyczalniaDAO();
         KlientDAO k = dao.zwrocDaneKlienta(klient.getNrPeselKlienta());
         KontoDAO konto = k.zwrocPierwszeKonto();
 
         StanKonta stan = konto.getStankonta();
 
         if (stan == StanKonta.AKTYWNE || stan == StanKonta.WYGASLO_HASLO) {
-        // nic
+            // nic
         } else {
             konto.setStankonta(StanKonta.ZABLOKOWANE);
             dao.scalDaneKlienta(k);
@@ -142,10 +139,10 @@ public class ZarzadzanieKontamiBean implements ZarzadzanieKontami, ZarzadzanieKo
      * @generated "UML to Java (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform)"
      */
     public void odblokujKonto(KlientTO klient) {
-    // begin-user-code
-    // TODO Auto-generated method stub
+        // begin-user-code
+        // TODO Auto-generated method stub
 
-    // end-user-code
+        // end-user-code
     }
 
     /** 
@@ -157,10 +154,10 @@ public class ZarzadzanieKontamiBean implements ZarzadzanieKontami, ZarzadzanieKo
      */
     public void zmienHaslo(String nowySkrotHasla, Integer nrKonta,
             String starySkrotHasla) {
-    // begin-user-code
-    // TODO Auto-generated method stub
+        // begin-user-code
+        // TODO Auto-generated method stub
 
-    // end-user-code
+        // end-user-code
     }
 
     /** 
@@ -185,7 +182,7 @@ public class ZarzadzanieKontamiBean implements ZarzadzanieKontami, ZarzadzanieKo
      * @generated "UML to Java (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform)"
      */
     public boolean czyKlientZarejestrowany(String nrPesel) {
-        ZarzadzanieKontamiDAO dao = fabrykaDAO.pobierzWypozyczalniaDAO();
+        ZarzadzanieKontamiDAO dao = getFabrykaDAO().pobierzWypozyczalniaDAO();
         KlientDAO k = dao.zwrocDaneKlienta(nrPesel);
         if (k == null) {
             return false;
@@ -204,7 +201,7 @@ public class ZarzadzanieKontamiBean implements ZarzadzanieKontami, ZarzadzanieKo
      */
     public KontoTO zarejestrujKlienta(KlientTO klient, AdresTO adres) {
 
-        ZarzadzanieKontamiDAO dao = fabrykaDAO.pobierzWypozyczalniaDAO();
+        ZarzadzanieKontamiDAO dao = getFabrykaDAO().pobierzWypozyczalniaDAO();
         KlientDAO nowyKlient = dao.utworzNoweKonto();
 
         nowyKlient.setImie(klient.getImie());
@@ -218,9 +215,9 @@ public class ZarzadzanieKontamiBean implements ZarzadzanieKontami, ZarzadzanieKo
         nowyAdres.setNrDomu(adres.getNrDomu());
         nowyAdres.setNrMieszkania(adres.getNrMieszkania());
 
- //       dao.startSesji();
+        //       dao.startSesji();
         dao.scalDaneKlienta(nowyKlient);
-   //     dao.commit();
+        //     dao.commit();
         KontoTO retKonto = new KontoTO();
         // TODO
         return retKonto;
@@ -235,22 +232,20 @@ public class ZarzadzanieKontamiBean implements ZarzadzanieKontami, ZarzadzanieKo
      * @generated "UML to Java (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform)"
      */
     public void wyloguj(Integer nrKonta) {
-    // begin-user-code
-    // TODO Auto-generated method stub
+        // begin-user-code
+        // TODO Auto-generated method stub
 
-    // end-user-code
+        // end-user-code
     }
 
     public void usunWszystkieKonta() {
         try {
-            ZarzadzanieKontamiDAO dao = fabrykaDAO.pobierzWypozyczalniaDAO();
+            ZarzadzanieKontamiDAO dao = getFabrykaDAO().pobierzWypozyczalniaDAO();
             Collection<KlientDAO> klienci = dao.zwrocListeWszystkichKlientow();
 
-            dao.startSesji();
             for (KlientDAO k : klienci) {
                 dao.usunKonto(k);
             }
-            dao.commit();
         } catch (Exception e) {
             e.printStackTrace();
         }
@@ -258,26 +253,30 @@ public class ZarzadzanieKontamiBean implements ZarzadzanieKontami, ZarzadzanieKo
     }
 
     public Collection<KontoTO> zwrocListeWszystkichKont() {
-        ZarzadzanieKontamiDAO dao = fabrykaDAO.pobierzWypozyczalniaDAO();
+        ZarzadzanieKontamiDAO dao = getFabrykaDAO().pobierzWypozyczalniaDAO();
         Collection<KlientDAO> klienci = dao.zwrocListeWszystkichKlientow();
         Collection<KontoTO> ret = new LinkedList<KontoTO>();
 
         for (KlientDAO k : klienci) {
             ret.add(new KontoTO());
-            // TODO
+        // TODO
         }
 
         return ret;
 
     }
 
-    public void usunKonto(KontoTO konto) {        
-        ZarzadzanieKontamiDAO dao = fabrykaDAO.pobierzWypozyczalniaDAO();
-        dao.startSesji();
+    public void usunKonto(KontoTO konto) {
+        ZarzadzanieKontamiDAO dao = getFabrykaDAO().pobierzWypozyczalniaDAO();
         KlientDAO klient = dao.zwrocDaneKlienta(konto.getNrPeselKlienta());
         dao.usunKonto(klient);
-        dao.commit();
     }
-    
-    
+
+    public ZarzadzanieKontamiFabrykaDanych getFabrykaDAO() {
+        return fabrykaDAO;
+    }
+
+    public void setFabrykaDAO(ZarzadzanieKontamiFabrykaDanych fabrykaDAO) {
+        this.fabrykaDAO = fabrykaDAO;
+    }
 }

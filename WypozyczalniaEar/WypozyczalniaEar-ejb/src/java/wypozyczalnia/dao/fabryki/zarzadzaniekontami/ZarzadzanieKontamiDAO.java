@@ -39,9 +39,4 @@ public interface ZarzadzanieKontamiDAO {
 
     void usunKonto(KlientDAO daneKlienta);
 
-    public void startSesji();
-
-    public void commit();
-
-    public void rollback();
 }

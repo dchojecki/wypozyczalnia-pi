@@ -12,7 +12,7 @@ package wypozyczalnia.dao.fabryki.zarzadzaniekontami;
  */
 public class ZarzadzanieKontamiGlownaFabrykaDanych extends
 		ZarzadzanieKontamiFabrykaDanych {
-
+    
     @Override
     public ZarzadzanieKontamiDAO pobierzWypozyczalniaDAO() {
         return new ZarzadzanieKontamiOracleDAO();

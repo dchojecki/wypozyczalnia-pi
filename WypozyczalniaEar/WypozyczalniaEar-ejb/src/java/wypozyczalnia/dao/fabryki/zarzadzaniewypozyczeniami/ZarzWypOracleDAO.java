@@ -19,9 +19,9 @@ import wypozyczalnia.dao.ZamowienieDAO;
  * @generated "UML to Java (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform)"
  */
 public class ZarzWypOracleDAO implements ZarzadzanieWypozyczeniamiDAO {
-    
+
     private EntityManager em;
-    
+
     /**
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
@@ -36,8 +36,7 @@ public class ZarzWypOracleDAO implements ZarzadzanieWypozyczeniamiDAO {
         em.getTransaction().commit();
         return z;
     }
-    
-    
+
     /**
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
@@ -45,13 +44,19 @@ public class ZarzWypOracleDAO implements ZarzadzanieWypozyczeniamiDAO {
      * @see ZarzadzanieWypozyczeniamiDAO#pobierzZamowienie()
      * @generated "UML to Java (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform)"
      */
-    public ZamowienieDAO pobierzZamowienie() {
+    public ZamowienieDAO pobierzZamowienie(Integer id) {
+        ZamowienieDAO ret;
+        try {
+            ret = em.find(ZamowienieDAO.class, id);
+        } catch (Exception e) {
+            ret = null;
+        }
         // begin-user-code
         // TODO Auto-generated method stub
-        return null;
-        // end-user-code
+        return ret;
+    // end-user-code
     }
-    
+
     /**
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
@@ -59,10 +64,12 @@ public class ZarzWypOracleDAO implements ZarzadzanieWypozyczeniamiDAO {
      * @see ZarzadzanieWypozyczeniamiDAO#scalZamowienie()
      * @generated "UML to Java (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform)"
      */
-    public void scalZamowienie(ZamowienieDAO zamowienie) {
+    public void scalZamowienie(ZamowienieDAO zamowienie) {        
+        em.getTransaction().begin();
         em.merge(zamowienie);
+        em.getTransaction().commit();
     }
-    
+
     /**
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
@@ -74,9 +81,9 @@ public class ZarzWypOracleDAO implements ZarzadzanieWypozyczeniamiDAO {
         List<ZamowienieDAO> zamowienia =
                 em.createNamedQuery("znajdzWszystkieZamowienia").getResultList();
         return zamowienia;
-        
+
     }
-    
+
     /**
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
@@ -86,28 +93,35 @@ public class ZarzWypOracleDAO implements ZarzadzanieWypozyczeniamiDAO {
      */
     public Collection<? extends ZamowienieDAO> pobierzWszystkieZamowieniaOdDo(Date odd, Date ddo) {
         List<ZamowienieDAO> zamowienia =
-                em.createNamedQuery("znajdzWszystkieOdDo").
+                em.createNamedQuery("znajdzWszystkieZamowieniaOdDo").
                 setParameter("od", odd).setParameter("do", ddo).
                 getResultList();
         return zamowienia;
     }
-    
+
     /**
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
      * @generated "UML to Java (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform)"
      */
     public ZarzWypOracleDAO() {
-        EntityManagerFactory emf = Persistence.createEntityManagerFactory("DerbyPU");
-        em = emf.createEntityManager();
-        
+        try {
+            EntityManagerFactory emf = Persistence.createEntityManagerFactory("DerbyPU");
+            em = emf.createEntityManager();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
     }
-    
-    public EntityManager getEm() {
+
+    public ZarzWypOracleDAO(EntityManager em) {
+        this.em = em;
+    }
+
+    public EntityManager getEntityManager() {
         return em;
     }
-    
-    public void setEm(EntityManager em) {
+
+    public void setEntityMangerMock(EntityManager em) {
         this.em = em;
     }
 }

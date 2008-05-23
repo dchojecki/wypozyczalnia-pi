@@ -6,13 +6,13 @@ package wypozyczalnia.dao.fabryki.zarzadzaniekontami;
 
 import java.util.Collection;
 import java.util.List;
-import javax.naming.InitialContext;
 import javax.persistence.EntityManager;
+import javax.persistence.EntityManagerFactory;
+import javax.persistence.Persistence;
 import wypozyczalnia.dao.AdresDAO;
 import wypozyczalnia.dao.KlientDAO;
 import wypozyczalnia.dao.KontoDAO;
 import wypozyczalnia.dao.OsobaDAO;
-import wypozyczalnia.ejb.zarzadzaniewypozyczeniami.DerbyPUBeanRemote;
 
 /**
  *
@@ -21,17 +21,18 @@ import wypozyczalnia.ejb.zarzadzaniewypozyczeniami.DerbyPUBeanRemote;
 public class ZarzadzanieKontamiOracleDAO implements ZarzadzanieKontamiDAO {
 
     private EntityManager em;
-    private DerbyPUBeanRemote pu;
 
     public ZarzadzanieKontamiOracleDAO() {
         try {
-            InitialContext ic = new InitialContext();
-            pu = (DerbyPUBeanRemote) ic.lookup("DerbyPUBeanBean");
-            em = pu.getEntityManager();
-        } catch (Throwable e) {
+            EntityManagerFactory emf = Persistence.createEntityManagerFactory("DerbyPU");
+            em = emf.createEntityManager();
+        } catch (Exception e) {
             e.printStackTrace();
         }
+    }
 
+    public ZarzadzanieKontamiOracleDAO(EntityManager em) {
+        this.em = em;
     }
 
     public Collection<KlientDAO> zwrocListeWszystkichKlientow() {
@@ -81,8 +82,9 @@ public class ZarzadzanieKontamiOracleDAO implements ZarzadzanieKontamiDAO {
         noweKonto.setKlient(nowyKlient);
         nowyKlient.getKonta().add(noweKonto);
 
-        pu.getEntityManager().persist(nowyAdres);
-        //em.merge(nowyKlient);
+        startSesji();
+        em.persist(nowyAdres);
+        commit();
         return nowyKlient;
 
     }
@@ -91,16 +93,16 @@ public class ZarzadzanieKontamiOracleDAO implements ZarzadzanieKontamiDAO {
         em.remove(daneKlienta);
     }
 
-    public void startSesji() {
+    private void startSesji() {
         em.getTransaction().begin();
 
     }
 
-    public void commit() {
+    private void commit() {
         em.getTransaction().commit();
     }
 
-    public void rollback() {
+    private void rollback() {
         em.getTransaction().rollback();
     }
 }
