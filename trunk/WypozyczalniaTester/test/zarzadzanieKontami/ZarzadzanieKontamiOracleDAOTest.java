@@ -134,41 +134,4 @@ public class ZarzadzanieKontamiOracleDAOTest {
         fail("The test case is a prototype.");
     }
 
-    /**
-     * Test of startSesji method, of class ZarzadzanieKontamiOracleDAO.
-     */
-    @Test
-    public void testStartSesji() {
-        System.out.println("startSesji");
-        instance.startSesji();
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
-    }
-
-    /**
-     * Test of commit method, of class ZarzadzanieKontamiOracleDAO.
-     */
-    @Test
-    public void testCommit() {
-        System.out.println("commit");
-        instance.commit();
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
-    }
-
-    /**
-     * Test of rollback method, of class ZarzadzanieKontamiOracleDAO.
-     */
-    @Test
-    public void testRollback() {
-        System.out.println("rollback");
-        instance.rollback();
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
-    }
-    
-    public static junit.framework.Test suite() {
-        return new JUnit4TestAdapter(ZarzadzanieKontamiOracleDAOTest.class);
-    }
-
 }
