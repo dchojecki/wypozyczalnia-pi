@@ -87,7 +87,7 @@ public class ZamowienieDAO implements Serializable {
      * 
      * @generated "UML to Java (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform)"
      */
-    @Temporal(javax.persistence.TemporalType.DATE)
+    @Temporal(javax.persistence.TemporalType.TIMESTAMP)
     private Date dataPrzyjecia;
 
     /** 
@@ -121,7 +121,7 @@ public class ZamowienieDAO implements Serializable {
      * 
      * @generated "UML to Java (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform)"
      */
-    @Temporal(javax.persistence.TemporalType.DATE)
+    @Temporal(javax.persistence.TemporalType.TIMESTAMP)
     private Date dataRealizacji;
 
     /** 
@@ -145,7 +145,7 @@ public class ZamowienieDAO implements Serializable {
     private void setDataRealizacji() {
         dataRealizacji = new Date();
     }
-    @Temporal(javax.persistence.TemporalType.DATE)
+    @Temporal(javax.persistence.TemporalType.TIMESTAMP)
     private Date dataZalegle;
 
     /** 
@@ -175,7 +175,7 @@ public class ZamowienieDAO implements Serializable {
      * 
      * @generated "UML to Java (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform)"
      */
-    @Temporal(javax.persistence.TemporalType.DATE)
+    @Temporal(javax.persistence.TemporalType.TIMESTAMP)
     private Date dataDoOdbioru;
 
     /** 
@@ -189,7 +189,7 @@ public class ZamowienieDAO implements Serializable {
         return dataDoOdbioru;
     // end-user-code
     }
-    @Temporal(javax.persistence.TemporalType.DATE)
+    @Temporal(javax.persistence.TemporalType.TIMESTAMP)
     private Date dataAnulowania;
 
     /** 
@@ -234,7 +234,7 @@ public class ZamowienieDAO implements Serializable {
     public void setId(Integer id) {
         this.id = id;
     }
-    @Temporal(javax.persistence.TemporalType.DATE)
+    @Temporal(javax.persistence.TemporalType.TIMESTAMP)
     private Date dataPozyczenia;
 
     public Date getDataPozyczenia() {
