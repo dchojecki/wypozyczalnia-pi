@@ -1,14 +1,14 @@
-package zarzadzanieWypozyczeniami;
-
 /*
  * To change this template, choose Tools | Templates
  * and open the template in the editor.
  */
+package zarzadzanieWypozyczeniami;
+
 import java.util.Collection;
 import java.util.Date;
 import java.util.logging.Level;
 import java.util.logging.Logger;
-import junit.framework.JUnit4TestAdapter;
+import javax.persistence.EntityManager;
 import org.junit.After;
 import org.junit.AfterClass;
 import org.junit.Before;
@@ -17,27 +17,35 @@ import org.junit.Test;
 import wypozyczalnia.dao.KlientDAO;
 import wypozyczalnia.dao.PozycjaZamowieniaDAO;
 import wypozyczalnia.dao.StanZamowienia;
-import wypozyczalnia.dao.ZamowienieDAO;
-import wypozyczalnia.dao.fabryki.zarzadzaniewypozyczeniami.ZarzWypOracleDAO;
 import static org.junit.Assert.*;
+import wypozyczalnia.dao.ZamowienieDAO;
+import wypozyczalnia.mock.EntityManagerMock;
+import wypozyczalnia.mock.ZarzWypOracleDAOMock;
+import wypozyczalnia.mock.ZarzadzanieKontamiDAOMock;
 
 /**
  *
  * @author marcin
  */
-public class ZarzWypOracleDAOTest {
+public class ZarzWypOracleDAOMockTest {
 
-    private static ZarzWypOracleDAO wypDao;
-//    private static ZarzadzanieKontamiDAO kontaDao;
+    private static ZarzWypOracleDAOMock wypDao;
+    private static EntityManagerMock wypEM;
+    private static ZarzadzanieKontamiDAOMock kontaDao;
+    private static EntityManagerMock kontaEM;
     private static String pesel1 = "85110916799";
 
-    public ZarzWypOracleDAOTest() {
+    public ZarzWypOracleDAOMockTest() {
     }
 
     @BeforeClass
     public static void setUpClass() throws Exception {
         try {
-            wypDao = new ZarzWypOracleDAO();
+            wypDao = new ZarzWypOracleDAOMock();
+            wypEM = wypDao.getEntityManagerMock();
+
+            kontaDao = new ZarzadzanieKontamiDAOMock();
+            kontaEM = wypDao.getEntityManagerMock();
         } catch (Exception e) {
             e.printStackTrace();
         }
@@ -47,63 +55,26 @@ public class ZarzWypOracleDAOTest {
     public static void tearDownClass() throws Exception {
     }
 
-    @Test
-    public void ready() {
-        assertNotNull(wypDao);
-        assertNotNull(wypDao.getEntityManager());
-    }
-
     @Before
     public void setUp() {
+        wypEM.clear();
+        kontaEM.clear();
     }
 
     @After
     public void tearDown() {
     }
 
-    /* @Test
-    public void test1() {
-    
-    Collection<? extends ZamowienieDAO> zamowienia = dao.pobierzWszystkieZamowienia();
-    for (ZamowienieDAO zz : zamowienia) {
-    System.out.println(zz.getStanzamowienia().toString());
-    }
-    
-    }*/
-    /*
-    @Test
-    public void test3() {
-    ZamowienieDAO z = dao.utworzNoweZamowienie();
-    KlientDAO k = null;//daoKonta.zwrocDaneKlienta("13");
-    z.setKlient(k);
-    z.setStanzamowienia(StanZamowienia.ZREALIZOWANE);
-    PozycjaZamowieniaDAO p1 = new PozycjaZamowieniaDAO();
-    PozycjaZamowieniaDAO p2 = new PozycjaZamowieniaDAO();
-    p1.setCenaJednostkowa((float) 3.14);
-    p2.setCenaJednostkowa((float) 2.73);
-    
-    z.getPozycje().add(p1);
-    z.getPozycje().add(p2);
-    
-    dao.scalZamowienie(z);        
-    
-    Collection<? extends ZamowienieDAO> zamowienia = 
-    dao.pobierzWszystkieZamowienia();
-    
-    }
-    
-    @Test
-    public void test4() {
-    Collection<? extends ZamowienieDAO> z = dao.pobierzWszystkieZamowienia();
-    
-    for (ZamowienieDAO zz : z) {
-    System.out.println(zz.getKlient().getImie());
-    }
-    }
-     */
     /**
      * Test of utworzNoweZamowienie method, of class ZarzWypOracleDAO.
      */
+    @Test
+    public void ready() {
+        assertNotNull(wypDao);
+        assertNotNull(kontaDao);
+        assertNotNull(wypDao.getEntityManager());
+    }
+
     @Test
     public void testUtworzNoweZamowienie() {
         System.out.println("utworzNoweZamowienie");
@@ -111,7 +82,9 @@ public class ZarzWypOracleDAOTest {
         KlientDAO k = new KlientDAO();
         k.setNrpesel(pesel1);
 
+        dbConnectionTestPre();
         ZamowienieDAO z = wypDao.utworzNoweZamowienie();
+        dbConnectionTestPost();
 
 
         z.setKlient(k);
@@ -124,32 +97,28 @@ public class ZarzWypOracleDAOTest {
         z.getPozycje().add(p1);
         z.getPozycje().add(p2);
 
+        dbConnectionTestPre();
         wypDao.scalZamowienie(z);
-
-        Collection<? extends ZamowienieDAO> zams = wypDao.pobierzWszystkieZamowienia();
-
-        boolean jest = false;
-        for (ZamowienieDAO zam : zams) {
-            if (zam.getId().equals(z.getId())) {
-                if (zam.getPozycje().size() == 2 && zam.getStanzamowienia().equals(StanZamowienia.PRZYJETE)) {
-                    jest = true;
-                }
-            }
-        }
-
-        if (!jest) {
-            fail();
-        }
+        dbConnectionTestPost();
+        
+        assertTrue(wypEM.getStorage().contains(z));
     }
 
+    /**
+     * Test of pobierzZamowienie method, of class ZarzWypOracleDAO.
+     */
     @Test
     public void testPobierzZamowienie1() {
         System.out.println("pobierzZamowienie");
 
+        dbConnectionTestPre();
         ZamowienieDAO z = wypDao.utworzNoweZamowienie();
+        dbConnectionTestPost();
 
         z.setStanzamowienia(StanZamowienia.POZYCZONE);
+        dbConnectionTestPre();
         wypDao.scalZamowienie(z);
+        dbConnectionTestPost();
 
         ZamowienieDAO zz = wypDao.pobierzZamowienie(z.getId());
         assertEquals(zz.getId(), z.getId());
@@ -164,9 +133,13 @@ public class ZarzWypOracleDAOTest {
     @Test
     public void testPobierzZamowienie2() {
         System.out.println("pobierzZamowienie");
+        dbConnectionTestPre();
         ZamowienieDAO z = wypDao.utworzNoweZamowienie();
+        dbConnectionTestPost();
         z.setStanzamowienia(StanZamowienia.POZYCZONE);
+        dbConnectionTestPre();
         wypDao.scalZamowienie(z);
+        dbConnectionTestPost();
 
         ZamowienieDAO zz = wypDao.pobierzZamowienie(-1);
         assertNull(zz);
@@ -177,15 +150,19 @@ public class ZarzWypOracleDAOTest {
      */
     @Test
     public void testScalZamowienie() {
+        dbConnectionTestPre();
         ZamowienieDAO z = wypDao.utworzNoweZamowienie();
         assertNotNull(z);
+        dbConnectionTestPost();
         KlientDAO k = new KlientDAO();
         k.setNrpesel(pesel1);
         k.setImie("Marcin");
         z.setStanzamowienia(StanZamowienia.POZYCZONE);
         z.setKlient(k);
 
+        dbConnectionTestPre();
         wypDao.scalZamowienie(z);
+        dbConnectionTestPost();
 
         Integer id = z.getId();
         z = wypDao.pobierzZamowienie(id);
@@ -200,11 +177,15 @@ public class ZarzWypOracleDAOTest {
         z.setStanzamowienia(StanZamowienia.POZYCZONE);
         PozycjaZamowieniaDAO p1 = new PozycjaZamowieniaDAO();
         PozycjaZamowieniaDAO p2 = new PozycjaZamowieniaDAO();
+        p1.setId(2);
+        p2.setId(3);
 
         z.getPozycje().add(p1);
         z.getPozycje().add(p2);
 
+        dbConnectionTestPre();
         wypDao.scalZamowienie(z);
+        dbConnectionTestPost();
 
 
         z = wypDao.pobierzZamowienie(id);
@@ -216,32 +197,67 @@ public class ZarzWypOracleDAOTest {
         assertTrue("Marcin".equals(z.getKlient().getImie()));
 
         assertTrue(z.getPozycje().size() == 2);
+        for (PozycjaZamowieniaDAO pz : z.getPozycje()) {
+            if (pz.getId() != 2 && pz.getId() != 3) {
+                fail();
+            }
+        }
+
     }
 
+    /**
+     * Test of pobierzWszystkieZamowienia method, of class ZarzWypOracleDAO.
+     */
     @Test
     public void testPobierzWszystkieZamowienia() {
-
-        Collection<? extends ZamowienieDAO> zamowieniaPrzed = wypDao.pobierzWszystkieZamowienia();
         System.out.println("pobierzWszystkieZamowienia");
+        dbConnectionTestPre();
         ZamowienieDAO z1 = wypDao.utworzNoweZamowienie();
+        dbConnectionTestPost();
+        dbConnectionTestPre();
         ZamowienieDAO z2 = wypDao.utworzNoweZamowienie();
+        dbConnectionTestPost();
+        dbConnectionTestPre();
         ZamowienieDAO z3 = wypDao.utworzNoweZamowienie();
+        dbConnectionTestPost();
+        dbConnectionTestPre();
         ZamowienieDAO z4 = wypDao.utworzNoweZamowienie();
+        dbConnectionTestPost();
 
         z1.setStanzamowienia(StanZamowienia.POZYCZONE);
         z2.setStanzamowienia(StanZamowienia.ANULOWANE);
         z3.setStanzamowienia(StanZamowienia.DOODIORU);
         z4.setStanzamowienia(StanZamowienia.ZALEGLE);
 
+        dbConnectionTestPre();
         wypDao.scalZamowienie(z1);
+        dbConnectionTestPost();
+        dbConnectionTestPre();
         wypDao.scalZamowienie(z2);
+        dbConnectionTestPost();
+        dbConnectionTestPre();
         wypDao.scalZamowienie(z3);
+        dbConnectionTestPost();
+        dbConnectionTestPre();
         wypDao.scalZamowienie(z4);
+        dbConnectionTestPost();
 
 
+        dbConnectionTestPre();
         Collection<? extends ZamowienieDAO> zamowienia = wypDao.pobierzWszystkieZamowienia();
+        dbConnectionTestPost();
 
-        assertTrue(zamowienia.size() == zamowieniaPrzed.size() + 4);
+        assertTrue(zamowienia.size() == 4);
+
+        for (ZamowienieDAO z : zamowienia) {
+            if (z.getId() != z1.getId() &&
+                    z.getId() != z2.getId() &&
+                    z.getId() != z3.getId() &&
+                    z.getId() != z4.getId()) {
+                fail();
+            }
+        }
+
 
     }
 
@@ -252,7 +268,9 @@ public class ZarzWypOracleDAOTest {
     public void testPobierzWszystkieZamowieniaOdDo() {
         System.out.println("pobierzWszystkieZamowieniaOdDo");
 
+        dbConnectionTestPre();
         ZamowienieDAO z1 = wypDao.utworzNoweZamowienie();
+        dbConnectionTestPost();
         try {
             Thread.sleep(1000);
         } catch (InterruptedException ex) {
@@ -260,24 +278,40 @@ public class ZarzWypOracleDAOTest {
         }
 
         Date odd = new Date();
+        dbConnectionTestPre();
         ZamowienieDAO z2 = wypDao.utworzNoweZamowienie();
+        dbConnectionTestPost();
+        dbConnectionTestPre();
         ZamowienieDAO z3 = wypDao.utworzNoweZamowienie();
+        dbConnectionTestPost();
         Date ddo = new Date();
+        dbConnectionTestPre();
         try {
             Thread.sleep(1000);
         } catch (InterruptedException ex) {
             Logger.getLogger(ZarzWypOracleDAOMockTest.class.getName()).log(Level.SEVERE, null, ex);
         }
         ZamowienieDAO z4 = wypDao.utworzNoweZamowienie();
+        dbConnectionTestPost();
 
 
+        dbConnectionTestPre();
         wypDao.scalZamowienie(z1);
+        dbConnectionTestPost();
+        dbConnectionTestPre();
         wypDao.scalZamowienie(z2);
+        dbConnectionTestPost();
+        dbConnectionTestPre();
         wypDao.scalZamowienie(z3);
+        dbConnectionTestPost();
+        dbConnectionTestPre();
         wypDao.scalZamowienie(z4);
+        dbConnectionTestPost();
 
 
+        dbConnectionTestPre();
         Collection<? extends ZamowienieDAO> zamowienia = wypDao.pobierzWszystkieZamowieniaOdDo(odd, ddo);
+        dbConnectionTestPost();
 
         assertTrue(zamowienia.size() == 2);
 
@@ -289,79 +323,40 @@ public class ZarzWypOracleDAOTest {
         }
     }
 
+    /**
+     * Test of getEm method, of class ZarzWypOracleDAO.
+     */
+    /**
+     * Test of setEm method, of class ZarzWypOracleDAO.
+     */
     @Test
-    public void testPobierzWszystkieZamowieniaOdDo2() {
-        System.out.println("pobierzWszystkieZamowieniaOdDo");
+    public void testSetEm() {
+        System.out.println("setEm");
+        EntityManager em = null;
+        wypDao.setEntityMangerMock(em);
+        assertNull(wypDao.getEntityManager());
 
-        Date odd = new Date();
-        try {
-            Thread.sleep(1000);
-        } catch (InterruptedException ex) {
-            Logger.getLogger(ZarzWypOracleDAOMockTest.class.getName()).log(Level.SEVERE, null, ex);
-        }
-
-        ZamowienieDAO z1 = wypDao.utworzNoweZamowienie();
-        ZamowienieDAO z2 = wypDao.utworzNoweZamowienie();
-        ZamowienieDAO z3 = wypDao.utworzNoweZamowienie();
-        ZamowienieDAO z4 = wypDao.utworzNoweZamowienie();
-        try {
-            Thread.sleep(1000);
-        } catch (InterruptedException ex) {
-            Logger.getLogger(ZarzWypOracleDAOMockTest.class.getName()).log(Level.SEVERE, null, ex);
-        }
-        Date ddo = new Date();
-
-
-        wypDao.scalZamowienie(z1);
-        wypDao.scalZamowienie(z2);
-        wypDao.scalZamowienie(z3);
-        wypDao.scalZamowienie(z4);
-
-
-        Collection<? extends ZamowienieDAO> zamowienia = wypDao.pobierzWszystkieZamowieniaOdDo(odd, ddo);
-
-        assertTrue(zamowienia.size() == 4);
-
-        for (ZamowienieDAO z : zamowienia) {
-            if (z.getId() != z2.getId() &&
-                    z.getId() != z1.getId() &&
-                    z.getId() != z3.getId() &&
-                    z.getId() != z4.getId()) {
-                fail();
-            }
-        }
     }
 
     @Test
-    public void testPobierzWszystkieZamowieniaOdDo3() {
-        System.out.println("pobierzWszystkieZamowieniaOdDo");
-
-        Date odd = new Date();
-        Date ddo = new Date();
-        try {
-            Thread.sleep(1000);
-        } catch (InterruptedException ex) {
-            Logger.getLogger(ZarzWypOracleDAOMockTest.class.getName()).log(Level.SEVERE, null, ex);
-        }
-
-        ZamowienieDAO z1 = wypDao.utworzNoweZamowienie();
-        ZamowienieDAO z2 = wypDao.utworzNoweZamowienie();
-        ZamowienieDAO z3 = wypDao.utworzNoweZamowienie();
-        ZamowienieDAO z4 = wypDao.utworzNoweZamowienie();
-
-
-        wypDao.scalZamowienie(z1);
-        wypDao.scalZamowienie(z2);
-        wypDao.scalZamowienie(z3);
-        wypDao.scalZamowienie(z4);
-
-
-        Collection<? extends ZamowienieDAO> zamowienia = wypDao.pobierzWszystkieZamowieniaOdDo(odd, ddo);
-
-        assertTrue(zamowienia.size() == 0);
+    public void testGetEm() {
+        System.out.println("getEm");
+        wypDao.setEntityMangerMock(wypEM);
+        assertSame(wypDao.getEntityManagerMock(), wypEM);
     }
 
-    public static junit.framework.Test suite() {
-        return new JUnit4TestAdapter(ZarzWypOracleDAOTest.class);
+    private void dbConnectionTestPost() {
+        assertTrue(wypEM.isOpen());
+        assertFalse(wypEM.getTransactionMock().isActive());
+        assertTrue(wypEM.getTransactionMock().isComitDone());
+        assertFalse(wypEM.getTransactionMock().isRollbackDone());
+        wypEM.reset();
+    }
+
+    private void dbConnectionTestPre() {
+        assertTrue(wypEM.isOpen());
+        assertFalse(wypEM.getTransactionMock().isActive());
+        assertFalse(wypEM.getTransactionMock().isComitDone());
+        assertFalse(wypEM.getTransactionMock().isRollbackDone());
     }
 }
