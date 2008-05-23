@@ -3,6 +3,9 @@
  */
 package wypozyczalnia.dao.fabryki.zarzadzaniewypozyczeniami;
 
+import wypozyczalnia.dao.fabryki.FactoryType;
+import wypozyczalnia.mock.ZarzWypOracleDAOMock;
+
 /** 
  * <!-- begin-user-doc -->
  * <!-- end-user-doc -->
@@ -12,8 +15,23 @@ package wypozyczalnia.dao.fabryki.zarzadzaniewypozyczeniami;
  */
 public class ZarzWypGLFabrykaDanych extends ZarzWypFabrykaDanych {
 
+    private static ZarzWypOracleDAOMock mock = null;
+    
+    public ZarzWypGLFabrykaDanych() {
+        setFactoryType(FactoryType.OracleDAO);
+    }
+
     @Override
     public ZarzadzanieWypozyczeniamiDAO createZarzadzanieWypozyczeniamiDAO() {
-        return new ZarzWypOracleDAO();
+
+        switch (getFactoryType()) {
+            case OracleDAO:
+                return new ZarzWypOracleDAO();
+
+            case MEMORY:
+                if (mock == null) mock = new ZarzWypOracleDAOMock();
+                return mock;
+        }
+                return null;
     }
 }

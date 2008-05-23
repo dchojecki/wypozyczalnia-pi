@@ -6,9 +6,12 @@ package wypozyczalnia.dao.fabryki;
 
 import wypozyczalnia.dao.AdresDAO;
 import wypozyczalnia.dao.KlientDAO;
+import wypozyczalnia.dao.KontoDAO;
 import wypozyczalnia.dao.PozycjaZamowieniaDAO;
 import wypozyczalnia.dao.ZamowienieDAO;
 import wypozyczalnia.to.zarzadzaniekontami.AdresTO;
+import wypozyczalnia.to.zarzadzaniekontami.KlientTO;
+import wypozyczalnia.to.zarzadzaniekontami.KontoTO;
 import wypozyczalnia.to.zarzadzaniewypozyczeniami.PozycjaZamowieniaTO;
 import wypozyczalnia.to.zarzadzaniewypozyczeniami.ZamowienieTO;
 
@@ -24,8 +27,18 @@ public class TransferObjectFactory {
     public static AdresTO stworzAdresTO(KlientDAO klient) {
         return null;
     }
+    
+    public static KontoTO stworzKontoTO(KlientDAO klient) {
+        KontoTO konto = new KontoTO();
+        KontoDAO d = klient.zwrocPierwszeKonto();
+        
+        konto.setNrKonta(d.getNrKonta());
+        konto.setNrPeselKlienta(klient.getNrpesel());
+        // TODO wypelnic obiekt konto
+        return konto;
+    }
 
-    public static AdresTO stworzKlientTO(AdresDAO adres) {
+    public static KlientTO stworzKlientTO(AdresDAO adres) {
         return null;
     }
 
@@ -37,6 +50,13 @@ public class TransferObjectFactory {
         ret.setDataAnulowane(zam.getDataAnulowania());
         ret.setDataPrzyjecia(zam.getDataPrzyjecia());
         ret.setDataDoOdbioru(zam.getDataDoOdbioru());
+        ret.setStanzamowienia(zam.getStanzamowienia());
+        ret.setId(zam.getId());
+        
+        for (PozycjaZamowieniaDAO pz: zam.getPozycje()) {
+            ret.getPozycjezamowienia().add(stworzPozycjeZamowienia(pz));
+        }
+        
         return ret;
     }
 
