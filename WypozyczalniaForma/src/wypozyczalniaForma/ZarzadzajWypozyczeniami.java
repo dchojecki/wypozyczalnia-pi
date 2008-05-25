@@ -93,8 +93,13 @@ public class ZarzadzajWypozyczeniami extends javax.swing.JFrame {
         jScrollPane1.setName("jScrollPane1"); // NOI18N
 
         jTable1.setModel(new wypozyczalniaForma.ModelDrzewa());
-        jTable1.setColumnSelectionAllowed(true);
+        jTable1.setCellSelectionEnabled(false);
         jTable1.setName("jTable1"); // NOI18N
+        jTable1.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jTable1MouseClicked(evt);
+            }
+        });
         jScrollPane1.setViewportView(jTable1);
         jTable1.getColumnModel().getSelectionModel().setSelectionMode(javax.swing.ListSelectionModel.SINGLE_SELECTION);
 
@@ -265,6 +270,10 @@ public class ZarzadzajWypozyczeniami extends javax.swing.JFrame {
         else 
             errorLabel.setText("");        // TODO add your handling code here:
     }//GEN-LAST:event_calendarComboBox1MouseReleased
+
+    private void jTable1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jTable1MouseClicked
+        jTable1.getSelectedRow();
+    }//GEN-LAST:event_jTable1MouseClicked
     
     /**
      * @param args the command line arguments
