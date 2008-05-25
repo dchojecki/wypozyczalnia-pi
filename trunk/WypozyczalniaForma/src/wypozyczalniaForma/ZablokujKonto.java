@@ -57,6 +57,8 @@ private KlientTO findKlient(String pesel){
     public ZablokujKonto() {
         initComponents();
         setDefaultCloseOperation(DISPOSE_ON_CLOSE);
+        pack();
+        setVisible(true);
         bazaKlienci = new ArrayList<KlientTO>();
         bazaKonta = new ArrayList<KontoTO>();
         fill("Łukasz", "Prasoł", "lprasol@gmail.com", "85102001252");
@@ -85,8 +87,8 @@ private KlientTO findKlient(String pesel){
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jButton1 = new javax.swing.JButton();
-        jLabel1 = new javax.swing.JLabel();
+        zablokujButton = new javax.swing.JButton();
+        tytulLabel = new javax.swing.JLabel();
         nrPesel = new javax.swing.JTextField();
         jLabel2 = new javax.swing.JLabel();
         imieField = new javax.swing.JTextField();
@@ -102,14 +104,13 @@ private KlientTO findKlient(String pesel){
         setName("Form"); // NOI18N
 
         org.jdesktop.application.ResourceMap resourceMap = org.jdesktop.application.Application.getInstance(wypozyczalniaForma.WypozyczalniaForma.class).getContext().getResourceMap(ZablokujKonto.class);
-        jButton1.setText(resourceMap.getString("jButton1.text")); // NOI18N
-        jButton1.setEnabled(false);
-        jButton1.setName("jButton1"); // NOI18N
+        zablokujButton.setText(resourceMap.getString("zablokujButton.text")); // NOI18N
+        zablokujButton.setEnabled(false);
+        zablokujButton.setName("zablokujButton"); // NOI18N
 
-        jLabel1.setText(resourceMap.getString("jLabel1.text")); // NOI18N
-        jLabel1.setName("jLabel1"); // NOI18N
+        tytulLabel.setText(resourceMap.getString("tytulLabel.text")); // NOI18N
+        tytulLabel.setName("tytulLabel"); // NOI18N
 
-        nrPesel.setText(resourceMap.getString("nrPesel.text")); // NOI18N
         nrPesel.setName("nrPesel"); // NOI18N
         nrPesel.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyReleased(java.awt.event.KeyEvent evt) {
@@ -121,7 +122,6 @@ private KlientTO findKlient(String pesel){
         jLabel2.setName("jLabel2"); // NOI18N
 
         imieField.setEditable(false);
-        imieField.setText(resourceMap.getString("imieField.text")); // NOI18N
         imieField.setEnabled(false);
         imieField.setName("imieField"); // NOI18N
 
@@ -132,19 +132,16 @@ private KlientTO findKlient(String pesel){
         nazwiskoLabel.setName("nazwiskoLabel"); // NOI18N
 
         nazwiskoField.setEditable(false);
-        nazwiskoField.setText(resourceMap.getString("nazwiskoField.text")); // NOI18N
         nazwiskoField.setEnabled(false);
         nazwiskoField.setName("nazwiskoField"); // NOI18N
 
         dataField.setEditable(false);
-        dataField.setText(resourceMap.getString("dataField.text")); // NOI18N
         dataField.setName("dataField"); // NOI18N
 
         dataLabel.setText(resourceMap.getString("dataLabel.text")); // NOI18N
         dataLabel.setName("dataLabel"); // NOI18N
 
         mailField.setEditable(false);
-        mailField.setText(resourceMap.getString("mailField.text")); // NOI18N
         mailField.setEnabled(false);
         mailField.setName("mailField"); // NOI18N
 
@@ -157,12 +154,12 @@ private KlientTO findKlient(String pesel){
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jLabel1)
-                .addContainerGap(319, Short.MAX_VALUE))
+                .addComponent(tytulLabel)
+                .addContainerGap(284, Short.MAX_VALUE))
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(jLabel2)
-                .addContainerGap(318, Short.MAX_VALUE))
+                .addContainerGap(282, Short.MAX_VALUE))
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
@@ -178,21 +175,21 @@ private KlientTO findKlient(String pesel){
                             .addComponent(imieField, javax.swing.GroupLayout.DEFAULT_SIZE, 109, Short.MAX_VALUE)
                             .addComponent(dataField)
                             .addComponent(mailField))))
-                .addContainerGap(166, Short.MAX_VALUE))
+                .addContainerGap(176, Short.MAX_VALUE))
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(nazwiskoLabel)
-                .addContainerGap(346, Short.MAX_VALUE))
+                .addContainerGap(310, Short.MAX_VALUE))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addContainerGap(255, Short.MAX_VALUE)
-                .addComponent(jButton1)
+                .addContainerGap(281, Short.MAX_VALUE)
+                .addComponent(zablokujButton)
                 .addGap(42, 42, 42))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jLabel1)
+                .addComponent(tytulLabel)
                 .addGap(37, 37, 37)
                 .addComponent(jLabel2)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -212,16 +209,14 @@ private KlientTO findKlient(String pesel){
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
                         .addGap(34, 34, 34)
-                        .addComponent(jButton1))
+                        .addComponent(zablokujButton))
                     .addGroup(layout.createSequentialGroup()
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(mailField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(mailLabel))))
-                .addContainerGap(22, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
-
-        imieLabel.getAccessibleContext().setAccessibleName(resourceMap.getString("jLabel3.AccessibleContext.accessibleName")); // NOI18N
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -241,14 +236,14 @@ private KlientTO findKlient(String pesel){
                 imieField.setText(klient.getImie());
                 nazwiskoField.setText(klient.getNazwisko());
                 mailField.setText(klient.getAdresMailowy());
-                jButton1.setEnabled(true);
+                zablokujButton.setEnabled(true);
             }
         }
             else{
                 imieField.setText("");
                 nazwiskoField.setText("");
                 mailField.setText("");
-                jButton1.setEnabled(false);
+                zablokujButton.setEnabled(false);
             }
         
 }//GEN-LAST:event_nrPeselKeyReleased
@@ -269,14 +264,14 @@ private KlientTO findKlient(String pesel){
     private javax.swing.JLabel dataLabel;
     private javax.swing.JTextField imieField;
     private javax.swing.JLabel imieLabel;
-    private javax.swing.JButton jButton1;
-    private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JTextField mailField;
     private javax.swing.JLabel mailLabel;
     private javax.swing.JTextField nazwiskoField;
     private javax.swing.JLabel nazwiskoLabel;
     private javax.swing.JTextField nrPesel;
+    private javax.swing.JLabel tytulLabel;
+    private javax.swing.JButton zablokujButton;
     // End of variables declaration//GEN-END:variables
     
 }

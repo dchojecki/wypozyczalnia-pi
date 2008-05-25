@@ -39,7 +39,7 @@ public class ModelDrzewa implements TableModel{
         
         // TODO
         if (arg0 == 0)
-        return "kolumnaName";
+            return "kolumnaName";
         else
             return "kolumnaName1";
     }

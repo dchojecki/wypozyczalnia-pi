@@ -46,6 +46,8 @@ public class GlowneOkno extends javax.swing.JFrame {
         jRadioButton_doOdbioru = new javax.swing.JRadioButton();
         jRadioButton_pozyczone = new javax.swing.JRadioButton();
         jRadioButton_wszystkie = new javax.swing.JRadioButton();
+        jScrollPane2 = new javax.swing.JScrollPane();
+        jTree1 = new javax.swing.JTree();
         jMenuBar1 = new javax.swing.JMenuBar();
         jMenu1 = new javax.swing.JMenu();
         jMenuItem1 = new javax.swing.JMenuItem();
@@ -60,14 +62,10 @@ public class GlowneOkno extends javax.swing.JFrame {
 
         calendarComboBox_do.setName("calendarComboBox_do"); // NOI18N
 
-        org.jdesktop.application.ResourceMap resourceMap = org.jdesktop.application.Application.getInstance(wypozyczalniaForma.WypozyczalniaForma.class).getContext().getResourceMap(GlowneOkno.class);
-        jLabel_od.setText(resourceMap.getString("jLabel_od.text")); // NOI18N
         jLabel_od.setName("jLabel_od"); // NOI18N
 
-        jLabel_do.setText(resourceMap.getString("jLabel_do.text")); // NOI18N
         jLabel_do.setName("jLabel_do"); // NOI18N
 
-        jLabel_info.setText(resourceMap.getString("jLabel_info.text")); // NOI18N
         jLabel_info.setName("jLabel_info"); // NOI18N
 
         jScrollPane1.setName("jScrollPane1"); // NOI18N
@@ -106,20 +104,15 @@ public class GlowneOkno extends javax.swing.JFrame {
 
         jLabel_error.setName("jLabel_error"); // NOI18N
 
-        jRadioButton_przyjete.setText(resourceMap.getString("jRadioButton_przyjete.text")); // NOI18N
         jRadioButton_przyjete.setName("jRadioButton_przyjete"); // NOI18N
 
-        jRadioButton_zrealizowane.setText(resourceMap.getString("jRadioButton_zrealizowane.text")); // NOI18N
         jRadioButton_zrealizowane.setName("jRadioButton_zrealizowane"); // NOI18N
 
-        jRadioButton_doOdbioru.setText(resourceMap.getString("jRadioButton_doOdbioru.text")); // NOI18N
         jRadioButton_doOdbioru.setName("jRadioButton_doOdbioru"); // NOI18N
 
-        jRadioButton_pozyczone.setText(resourceMap.getString("jRadioButton_pozyczone.text")); // NOI18N
         jRadioButton_pozyczone.setName("jRadioButton_pozyczone"); // NOI18N
 
         jRadioButton_wszystkie.setSelected(true);
-        jRadioButton_wszystkie.setText(resourceMap.getString("jRadioButton_wszystkie.text")); // NOI18N
         jRadioButton_wszystkie.setName("jRadioButton_wszystkie"); // NOI18N
 
         javax.swing.GroupLayout ZarzadzanieWypozyczeniamiLayout = new javax.swing.GroupLayout(ZarzadzanieWypozyczeniami.getContentPane());
@@ -188,10 +181,16 @@ public class GlowneOkno extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setName("Form"); // NOI18N
 
+        jScrollPane2.setName("jScrollPane2"); // NOI18N
+
+        jTree1.setName("jTree1"); // NOI18N
+        jScrollPane2.setViewportView(jTree1);
+
         jMenuBar1.setName("jMenuBar1"); // NOI18N
 
-        jMenu1.setText(resourceMap.getString("jMenu1.text")); // NOI18N
-        jMenu1.setName("jMenu1"); // NOI18N
+        org.jdesktop.application.ResourceMap resourceMap = org.jdesktop.application.Application.getInstance(wypozyczalniaForma.WypozyczalniaForma.class).getContext().getResourceMap(GlowneOkno.class);
+        jMenu1.setText(resourceMap.getString("Menu.text")); // NOI18N
+        jMenu1.setName("Menu"); // NOI18N
 
         javax.swing.ActionMap actionMap = org.jdesktop.application.Application.getInstance(wypozyczalniaForma.WypozyczalniaForma.class).getContext().getActionMap(GlowneOkno.class, this);
         jMenuItem1.setAction(actionMap.get("createAccount")); // NOI18N
@@ -238,7 +237,6 @@ public class GlowneOkno extends javax.swing.JFrame {
 
         jMenuBar1.add(jMenu1);
 
-        jMenu2.setText(resourceMap.getString("jMenu2.text")); // NOI18N
         jMenu2.setName("jMenu2"); // NOI18N
         jMenuBar1.add(jMenu2);
 
@@ -263,23 +261,19 @@ public class GlowneOkno extends javax.swing.JFrame {
     }//GEN-LAST:event_jMenuItem1AncestorAdded
 
     private void jMenuItem1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem1ActionPerformed
-        WypozyczalniaForma kreator = new WypozyczalniaForma();
-        kreator.show(new UtworzKonto());
+        new UtworzKonto();
     }//GEN-LAST:event_jMenuItem1ActionPerformed
 
     private void jMenuItem2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem2ActionPerformed
-        WypozyczalniaForma blok = new WypozyczalniaForma();
-        blok.show(new ZablokujKonto()) ;
+        new ZablokujKonto() ;
     }//GEN-LAST:event_jMenuItem2ActionPerformed
 
     private void jMenuItem3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jMenuItem3MouseClicked
-        WypozyczalniaForma zarzadzanie = new WypozyczalniaForma();
-        zarzadzanie.show( new ZarzadzajWypozyczeniami()); 
+        new ZarzadzajWypozyczeniami(); 
     }//GEN-LAST:event_jMenuItem3MouseClicked
 
     private void jMenuItem3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem3ActionPerformed
-        WypozyczalniaForma zarzadzanie = new WypozyczalniaForma();
-        zarzadzanie.show( new ZarzadzajWypozyczeniami()); 
+        new ZarzadzajWypozyczeniami(); 
     }//GEN-LAST:event_jMenuItem3ActionPerformed
     
     /**
@@ -317,7 +311,9 @@ public class GlowneOkno extends javax.swing.JFrame {
     private javax.swing.JRadioButton jRadioButton_wszystkie;
     private javax.swing.JRadioButton jRadioButton_zrealizowane;
     private javax.swing.JScrollPane jScrollPane1;
+    private javax.swing.JScrollPane jScrollPane2;
     private javax.swing.JTable jTable1;
+    private javax.swing.JTree jTree1;
     // End of variables declaration//GEN-END:variables
     
 }

@@ -100,19 +100,16 @@
         </Component>
         <Component class="javax.swing.JLabel" name="jLabel_od">
           <Properties>
-            <Property name="text" type="java.lang.String" resourceKey="jLabel_od.text"/>
             <Property name="name" type="java.lang.String" value="jLabel_od" noResource="true"/>
           </Properties>
         </Component>
         <Component class="javax.swing.JLabel" name="jLabel_do">
           <Properties>
-            <Property name="text" type="java.lang.String" resourceKey="jLabel_do.text"/>
             <Property name="name" type="java.lang.String" value="jLabel_do" noResource="true"/>
           </Properties>
         </Component>
         <Component class="javax.swing.JLabel" name="jLabel_info">
           <Properties>
-            <Property name="text" type="java.lang.String" resourceKey="jLabel_info.text"/>
             <Property name="name" type="java.lang.String" value="jLabel_info" noResource="true"/>
           </Properties>
         </Component>
@@ -154,32 +151,27 @@
         </Component>
         <Component class="javax.swing.JRadioButton" name="jRadioButton_przyjete">
           <Properties>
-            <Property name="text" type="java.lang.String" resourceKey="jRadioButton_przyjete.text"/>
             <Property name="name" type="java.lang.String" value="jRadioButton_przyjete" noResource="true"/>
           </Properties>
         </Component>
         <Component class="javax.swing.JRadioButton" name="jRadioButton_zrealizowane">
           <Properties>
-            <Property name="text" type="java.lang.String" resourceKey="jRadioButton_zrealizowane.text"/>
             <Property name="name" type="java.lang.String" value="jRadioButton_zrealizowane" noResource="true"/>
           </Properties>
         </Component>
         <Component class="javax.swing.JRadioButton" name="jRadioButton_doOdbioru">
           <Properties>
-            <Property name="text" type="java.lang.String" resourceKey="jRadioButton_doOdbioru.text"/>
             <Property name="name" type="java.lang.String" value="jRadioButton_doOdbioru" noResource="true"/>
           </Properties>
         </Component>
         <Component class="javax.swing.JRadioButton" name="jRadioButton_pozyczone">
           <Properties>
-            <Property name="text" type="java.lang.String" resourceKey="jRadioButton_pozyczone.text"/>
             <Property name="name" type="java.lang.String" value="jRadioButton_pozyczone" noResource="true"/>
           </Properties>
         </Component>
         <Component class="javax.swing.JRadioButton" name="jRadioButton_wszystkie">
           <Properties>
             <Property name="selected" type="boolean" value="true"/>
-            <Property name="text" type="java.lang.String" resourceKey="jRadioButton_wszystkie.text"/>
             <Property name="name" type="java.lang.String" value="jRadioButton_wszystkie" noResource="true"/>
           </Properties>
         </Component>
@@ -192,8 +184,8 @@
       <SubComponents>
         <Menu class="javax.swing.JMenu" name="jMenu1">
           <Properties>
-            <Property name="text" type="java.lang.String" resourceKey="jMenu1.text"/>
-            <Property name="name" type="java.lang.String" value="jMenu1" noResource="true"/>
+            <Property name="text" type="java.lang.String" resourceKey="Menu.text"/>
+            <Property name="name" type="java.lang.String" value="Menu" noResource="true"/>
           </Properties>
           <SubComponents>
             <MenuItem class="javax.swing.JMenuItem" name="jMenuItem1">
@@ -232,7 +224,6 @@
         </Menu>
         <Menu class="javax.swing.JMenu" name="jMenu2">
           <Properties>
-            <Property name="text" type="java.lang.String" resourceKey="jMenu2.text"/>
             <Property name="name" type="java.lang.String" value="jMenu2" noResource="true"/>
           </Properties>
         </Menu>
@@ -270,4 +261,23 @@
       </Group>
     </DimensionLayout>
   </Layout>
+  <SubComponents>
+    <Container class="javax.swing.JScrollPane" name="jScrollPane2">
+      <Properties>
+        <Property name="name" type="java.lang.String" value="jScrollPane2" noResource="true"/>
+      </Properties>
+      <AuxValues>
+        <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
+      </AuxValues>
+
+      <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+      <SubComponents>
+        <Component class="javax.swing.JTree" name="jTree1">
+          <Properties>
+            <Property name="name" type="java.lang.String" value="jTree1" noResource="true"/>
+          </Properties>
+        </Component>
+      </SubComponents>
+    </Container>
+  </SubComponents>
 </Form>

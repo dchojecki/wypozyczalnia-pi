@@ -19,7 +19,9 @@ public class UtworzKonto extends javax.swing.JFrame {
     public UtworzKonto() {
         initComponents();
         setDefaultCloseOperation(DISPOSE_ON_CLOSE);
-        
+        //getContentPane().add(emptyLabel, BorderLayout.CENTER);
+        pack();
+        setVisible(true);
     }
     
     /** This method is called from within the constructor to
@@ -30,84 +32,84 @@ public class UtworzKonto extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jLabel6 = new javax.swing.JLabel();
-        jLabel1 = new javax.swing.JLabel();
-        jLabel4 = new javax.swing.JLabel();
-        jLabel5 = new javax.swing.JLabel();
-        jLabel3 = new javax.swing.JLabel();
-        jLabel2 = new javax.swing.JLabel();
-        jTextField2 = new javax.swing.JTextField();
-        jTextField1 = new javax.swing.JTextField();
-        jTextField3 = new javax.swing.JTextField();
-        jTextField4 = new javax.swing.JTextField();
-        calendarComboBox2 = new com.imagine.component.calendar.CalendarComboBox();
+        tytulLabel = new javax.swing.JLabel();
+        imieLabel = new javax.swing.JLabel();
+        dataLabel = new javax.swing.JLabel();
+        peselLabel = new javax.swing.JLabel();
+        emailLabel = new javax.swing.JLabel();
+        nazwiskoLabel = new javax.swing.JLabel();
+        nazwiskoText = new javax.swing.JTextField();
+        imieText = new javax.swing.JTextField();
+        emailText = new javax.swing.JTextField();
+        peselText = new javax.swing.JTextField();
+        dataUrodzenia = new com.imagine.component.calendar.CalendarComboBox();
         jLabel8 = new javax.swing.JLabel();
         jLabel7 = new javax.swing.JLabel();
         jLabel11 = new javax.swing.JLabel();
         jLabel10 = new javax.swing.JLabel();
         jLabel9 = new javax.swing.JLabel();
-        jButton1 = new javax.swing.JButton();
+        wyslij = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setName("Form"); // NOI18N
 
         org.jdesktop.application.ResourceMap resourceMap = org.jdesktop.application.Application.getInstance(wypozyczalniaForma.WypozyczalniaForma.class).getContext().getResourceMap(UtworzKonto.class);
-        jLabel6.setText(resourceMap.getString("jLabel6.text")); // NOI18N
-        jLabel6.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        jLabel6.setName("jLabel6"); // NOI18N
+        tytulLabel.setText(resourceMap.getString("tytulLabel.text")); // NOI18N
+        tytulLabel.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        tytulLabel.setName("tytulLabel"); // NOI18N
 
-        jLabel1.setText(resourceMap.getString("jLabel1.text")); // NOI18N
-        jLabel1.setName("jLabel1"); // NOI18N
+        imieLabel.setText(resourceMap.getString("imieLabel.text")); // NOI18N
+        imieLabel.setName("imieLabel"); // NOI18N
 
-        jLabel4.setText(resourceMap.getString("jLabel4.text")); // NOI18N
-        jLabel4.setName("jLabel4"); // NOI18N
+        dataLabel.setText(resourceMap.getString("dataLabel.text")); // NOI18N
+        dataLabel.setName("dataLabel"); // NOI18N
 
-        jLabel5.setText(resourceMap.getString("jLabel5.text")); // NOI18N
-        jLabel5.setName("jLabel5"); // NOI18N
+        peselLabel.setText(resourceMap.getString("peselLabel.text")); // NOI18N
+        peselLabel.setName("peselLabel"); // NOI18N
 
-        jLabel3.setText(resourceMap.getString("jLabel3.text")); // NOI18N
-        jLabel3.setName("jLabel3"); // NOI18N
+        emailLabel.setText(resourceMap.getString("emailLabel.text")); // NOI18N
+        emailLabel.setName("emailLabel"); // NOI18N
 
-        jLabel2.setText(resourceMap.getString("jLabel2.text")); // NOI18N
-        jLabel2.setName("jLabel2"); // NOI18N
+        nazwiskoLabel.setText(resourceMap.getString("nazwiskoLabel.text")); // NOI18N
+        nazwiskoLabel.setName("nazwiskoLabel"); // NOI18N
 
-        jTextField2.setName("jTextField2"); // NOI18N
-        jTextField2.addKeyListener(new java.awt.event.KeyAdapter() {
+        nazwiskoText.setName("nazwiskoText"); // NOI18N
+        nazwiskoText.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyReleased(java.awt.event.KeyEvent evt) {
-                jTextField2KeyReleased(evt);
+                nazwiskoTextKeyReleased(evt);
             }
         });
 
-        jTextField1.setName("jTextField1"); // NOI18N
-        jTextField1.addActionListener(new java.awt.event.ActionListener() {
+        imieText.setName("imieText"); // NOI18N
+        imieText.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField1ActionPerformed(evt);
+                imieTextActionPerformed(evt);
             }
         });
-        jTextField1.addKeyListener(new java.awt.event.KeyAdapter() {
+        imieText.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyPressed(java.awt.event.KeyEvent evt) {
-                jTextField1KeyPressed(evt);
+                imieTextKeyPressed(evt);
             }
             public void keyReleased(java.awt.event.KeyEvent evt) {
-                jTextField1KeyReleased(evt);
+                imieTextKeyReleased(evt);
             }
         });
 
-        jTextField3.setName("jTextField3"); // NOI18N
-        jTextField3.addKeyListener(new java.awt.event.KeyAdapter() {
+        emailText.setName("emailText"); // NOI18N
+        emailText.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyReleased(java.awt.event.KeyEvent evt) {
-                jTextField3KeyReleased(evt);
+                emailTextKeyReleased(evt);
             }
         });
 
-        jTextField4.setName("jTextField4"); // NOI18N
-        jTextField4.addKeyListener(new java.awt.event.KeyAdapter() {
+        peselText.setName("peselText"); // NOI18N
+        peselText.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyReleased(java.awt.event.KeyEvent evt) {
-                jTextField4KeyReleased(evt);
+                peselTextKeyReleased(evt);
             }
         });
 
-        calendarComboBox2.setName("calendarComboBox2"); // NOI18N
+        dataUrodzenia.setName("dataUrodzenia"); // NOI18N
 
         jLabel8.setName("jLabel8"); // NOI18N
 
@@ -120,39 +122,38 @@ public class UtworzKonto extends javax.swing.JFrame {
         jLabel9.setName("jLabel9"); // NOI18N
 
         javax.swing.ActionMap actionMap = org.jdesktop.application.Application.getInstance(wypozyczalniaForma.WypozyczalniaForma.class).getContext().getActionMap(UtworzKonto.class, this);
-        jButton1.setAction(actionMap.get("createAccount")); // NOI18N
-        jButton1.setLabel(resourceMap.getString("jButton1.label")); // NOI18N
-        jButton1.setName("jButton1"); // NOI18N
+        wyslij.setAction(actionMap.get("createAccount")); // NOI18N
+        wyslij.setText(resourceMap.getString("wyslij.text")); // NOI18N
+        wyslij.setName("wyslij"); // NOI18N
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 529, Short.MAX_VALUE)
             .addGroup(layout.createSequentialGroup()
                 .addGap(35, 35, 35)
-                .addComponent(jLabel6, javax.swing.GroupLayout.PREFERRED_SIZE, 209, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(tytulLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 209, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(285, Short.MAX_VALUE))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(jButton1)
+                    .addComponent(wyslij)
                     .addGroup(layout.createSequentialGroup()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel1)
-                            .addComponent(jLabel4)
-                            .addComponent(jLabel5)
-                            .addComponent(jLabel3)
-                            .addComponent(jLabel2))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(imieLabel)
+                            .addComponent(dataLabel)
+                            .addComponent(peselLabel)
+                            .addComponent(emailLabel)
+                            .addComponent(nazwiskoLabel))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 72, Short.MAX_VALUE)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                             .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                .addComponent(jTextField2, javax.swing.GroupLayout.Alignment.TRAILING)
-                                .addComponent(jTextField1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 129, Short.MAX_VALUE))
+                                .addComponent(nazwiskoText, javax.swing.GroupLayout.Alignment.TRAILING)
+                                .addComponent(imieText, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 129, Short.MAX_VALUE))
                             .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                .addComponent(jTextField3, javax.swing.GroupLayout.Alignment.TRAILING)
-                                .addComponent(jTextField4, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 129, Short.MAX_VALUE)
-                                .addComponent(calendarComboBox2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                .addComponent(emailText, javax.swing.GroupLayout.Alignment.TRAILING)
+                                .addComponent(peselText, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 129, Short.MAX_VALUE)
+                                .addComponent(dataUrodzenia, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(layout.createSequentialGroup()
@@ -164,7 +165,7 @@ public class UtworzKonto extends javax.swing.JFrame {
                                 .addGap(10, 10, 10)
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addComponent(jLabel11, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(jLabel10, javax.swing.GroupLayout.DEFAULT_SIZE, 183, Short.MAX_VALUE)
+                                    .addComponent(jLabel10, javax.swing.GroupLayout.DEFAULT_SIZE, 251, Short.MAX_VALUE)
                                     .addComponent(jLabel9, javax.swing.GroupLayout.PREFERRED_SIZE, 170, javax.swing.GroupLayout.PREFERRED_SIZE))))))
                 .addGap(57, 57, 57))
         );
@@ -174,30 +175,30 @@ public class UtworzKonto extends javax.swing.JFrame {
                 .addContainerGap()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addGroup(layout.createSequentialGroup()
-                        .addComponent(jLabel6)
+                        .addComponent(tytulLabel)
                         .addGap(55, 55, 55)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jLabel1)
-                            .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                            .addComponent(imieLabel)
+                            .addComponent(imieText, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
                     .addComponent(jLabel7, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jLabel2)
-                            .addComponent(jTextField2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(nazwiskoLabel)
+                            .addComponent(nazwiskoText, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel4)
-                            .addComponent(calendarComboBox2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(dataLabel)
+                            .addComponent(dataUrodzenia, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jLabel5)
-                            .addComponent(jTextField4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(peselLabel)
+                            .addComponent(peselText, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 33, Short.MAX_VALUE)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jLabel3)
-                            .addComponent(jTextField3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(emailLabel)
+                            .addComponent(emailText, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(jLabel11, javax.swing.GroupLayout.PREFERRED_SIZE, 21, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED))
                     .addGroup(layout.createSequentialGroup()
@@ -208,16 +209,16 @@ public class UtworzKonto extends javax.swing.JFrame {
                         .addComponent(jLabel10, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(66, 66, 66)))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(wyslij, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(28, 28, 28))
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jTextField2KeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jTextField2KeyReleased
+    private void nazwiskoTextKeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_nazwiskoTextKeyReleased
         Pattern p = Pattern.compile("[A-Ża-ż-]*");
-        String imie = jTextField2.getText();
+        String imie = nazwiskoText.getText();
         Matcher m = p.matcher(imie);
         if(!m.matches() && imie.length()>2) {
             jLabel8.setText("Błąd w nazwisku");
@@ -225,19 +226,19 @@ public class UtworzKonto extends javax.swing.JFrame {
         } else
             jLabel8.setText("");
         valid[1] = true;
-    }//GEN-LAST:event_jTextField2KeyReleased
+}//GEN-LAST:event_nazwiskoTextKeyReleased
 
-    private void jTextField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField1ActionPerformed
+    private void imieTextActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_imieTextActionPerformed
         
-    }//GEN-LAST:event_jTextField1ActionPerformed
+}//GEN-LAST:event_imieTextActionPerformed
 
-    private void jTextField1KeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jTextField1KeyPressed
+    private void imieTextKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_imieTextKeyPressed
         
-    }//GEN-LAST:event_jTextField1KeyPressed
+}//GEN-LAST:event_imieTextKeyPressed
 
-    private void jTextField1KeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jTextField1KeyReleased
+    private void imieTextKeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_imieTextKeyReleased
         Pattern p = Pattern.compile("[A-Ż]+[a-ż]*");
-        String imie = jTextField1.getText();
+        String imie = imieText.getText();
         Matcher m = p.matcher(imie);
         if(!m.matches() && imie.length()>2) {
             jLabel7.setText("Błąd w imieniu");
@@ -245,11 +246,11 @@ public class UtworzKonto extends javax.swing.JFrame {
         } else
             jLabel7.setText("");
         valid[0] = true;
-    }//GEN-LAST:event_jTextField1KeyReleased
+}//GEN-LAST:event_imieTextKeyReleased
 
-    private void jTextField3KeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jTextField3KeyReleased
+    private void emailTextKeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_emailTextKeyReleased
         Pattern p = Pattern.compile("^[a-zA-Z][\\w\\.-]*[a-zA-Z0-9]@[a-zA-Z0-9][\\w\\.-]*[a-zA-Z0-9]\\.[a-zA-Z][a-zA-Z\\.]*[a-zA-Z]$");
-        String mail = jTextField3.getText();
+        String mail = emailText.getText();
         Matcher m = p.matcher(mail);
         //valid[3] = false;
         if(!m.matches()) {
@@ -258,11 +259,11 @@ public class UtworzKonto extends javax.swing.JFrame {
         } else
             jLabel11.setText("");
         valid[3] = true;
-    }//GEN-LAST:event_jTextField3KeyReleased
+}//GEN-LAST:event_emailTextKeyReleased
 
-    private void jTextField4KeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jTextField4KeyReleased
+    private void peselTextKeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_peselTextKeyReleased
         Pattern p = Pattern.compile("[0-9]{11}");
-        String pesel = jTextField4.getText();
+        String pesel = peselText.getText();
         Matcher m = p.matcher(pesel);
         
         if(m.matches()==false) {
@@ -282,7 +283,7 @@ public class UtworzKonto extends javax.swing.JFrame {
                 valid[2] = true;
             }
         }
-    }//GEN-LAST:event_jTextField4KeyReleased
+}//GEN-LAST:event_peselTextKeyReleased
     
     /**
      * @param args the command line arguments
@@ -296,23 +297,23 @@ public class UtworzKonto extends javax.swing.JFrame {
     }
     
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private com.imagine.component.calendar.CalendarComboBox calendarComboBox2;
-    private javax.swing.JButton jButton1;
-    private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel dataLabel;
+    private com.imagine.component.calendar.CalendarComboBox dataUrodzenia;
+    private javax.swing.JLabel emailLabel;
+    private javax.swing.JTextField emailText;
+    private javax.swing.JLabel imieLabel;
+    private javax.swing.JTextField imieText;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
-    private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel3;
-    private javax.swing.JLabel jLabel4;
-    private javax.swing.JLabel jLabel5;
-    private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel9;
-    private javax.swing.JTextField jTextField1;
-    private javax.swing.JTextField jTextField2;
-    private javax.swing.JTextField jTextField3;
-    private javax.swing.JTextField jTextField4;
+    private javax.swing.JLabel nazwiskoLabel;
+    private javax.swing.JTextField nazwiskoText;
+    private javax.swing.JLabel peselLabel;
+    private javax.swing.JTextField peselText;
+    private javax.swing.JLabel tytulLabel;
+    private javax.swing.JButton wyslij;
     // End of variables declaration//GEN-END:variables
     
 }
