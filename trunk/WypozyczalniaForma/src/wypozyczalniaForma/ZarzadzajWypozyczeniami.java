@@ -286,7 +286,7 @@ public class ZarzadzajWypozyczeniami extends javax.swing.JFrame {
                 if (wszystkieRadioButton.isSelected()) zam = zarzadzanie.pobierzZamowieniaWgCzasu(calendarComboBox1.getDate(), calendarComboBox2.getDate());
                 if (przyjeteRadioButton.isSelected()) zam = zarzadzanie.pobierzZamowieniaWgStanu(calendarComboBox1.getDate(), calendarComboBox2.getDate(), "PRZYJETE");
                 if (zrealizowaneRadioButton.isSelected()) zam = zarzadzanie.pobierzZamowieniaWgStanu(calendarComboBox1.getDate(), calendarComboBox2.getDate(), "ZREALIZOWANE");
-                if (doOdbioruRadioButton.isSelected()) zam = zarzadzanie.pobierzZamowieniaWgStanu(calendarComboBox1.getDate(), calendarComboBox2.getDate(), "DOODBIORU");
+                if (doOdbioruRadioButton.isSelected()) zam = zarzadzanie.pobierzZamowieniaWgStanu(calendarComboBox1.getDate(), calendarComboBox2.getDate(), "DOODIORU");
                 if (pozyczoneRadioButton.isSelected()) zam = zarzadzanie.pobierzZamowieniaWgStanu(calendarComboBox1.getDate(), calendarComboBox2.getDate(), "POZYCZONE");
                 model.setZamowienia(zam);
                 jTable1.updateUI();      
@@ -361,7 +361,7 @@ public class ZarzadzajWypozyczeniami extends javax.swing.JFrame {
         if (zrealizowaneZmianaRadioButton.isSelected()) zarzadzanie.setStan(nr, StanZamowienia.ZREALIZOWANE);
         if (pozyczoneZmianaRadioButton.isSelected()) zarzadzanie.setStan(nr, StanZamowienia.POZYCZONE);
         if (przyjeteZmianaRadioButton.isSelected()) zarzadzanie.setStan(nr, StanZamowienia.PRZYJETE);
-        if (doOdbioruZmianaRadioButton.isSelected()) zarzadzanie.setStan(nr, StanZamowienia.DOODBIORU);
+        if (doOdbioruZmianaRadioButton.isSelected()) zarzadzanie.setStan(nr, StanZamowienia.DOODIORU);
         if (anulowaneZmianaRadioButton.isSelected()) zarzadzanie.setStan(nr, StanZamowienia.ANULOWANE);
         //model.setZamowienia(zamowienia);
         String stan = jTable1.getValueAt(jTable1.getSelectedRow(), 4).toString();
@@ -379,7 +379,7 @@ public class ZarzadzajWypozyczeniami extends javax.swing.JFrame {
             doOdbioruZmianaRadioButton.setEnabled(true);
             anulowaneZmianaRadioButton.setEnabled(true);
         }
-        if(stan.compareTo("DOODBIORU")==0){
+        if(stan.compareTo("DOODIORU")==0){
             pozyczoneZmianaRadioButton.setEnabled(true);
             anulowaneZmianaRadioButton.setEnabled(true);
         }        
