@@ -25,6 +25,10 @@ public class ZarzadzanieWypozyczeniamiDummy implements ZarzadzanieWypozyczeniami
     private ArrayList<KlientTO> klienci = new ArrayList<KlientTO>(3);
     private Random r = new Random();
     private List<ZamowienieTO> zamowienia;
+    
+    public ZarzadzanieWypozyczeniamiDummy(){
+        initialize();
+    }
 
     public void initialize(){
         inicjujKlientow();
@@ -34,6 +38,7 @@ public class ZarzadzanieWypozyczeniamiDummy implements ZarzadzanieWypozyczeniami
         odd.set(2008, 5,1);
         doo.set(2008, 12,1);
         
+        /*
         for (int i = 0; i < 14; ++i) {
             odd.set(2008, 4, 1 + r.nextInt(29));
             ZamowienieTO z = generujZamowienie(odd.getTime(), doo.getTime());
@@ -45,7 +50,7 @@ public class ZarzadzanieWypozyczeniamiDummy implements ZarzadzanieWypozyczeniami
         for (int i = 0; i < 15; ++i) {
             odd.set(2008, 4, 1 + r.nextInt(29));
             ZamowienieTO z = generujZamowienie(odd.getTime(), doo.getTime());
-            z.setStanzamowienia(StanZamowienia.DOODBIORU);
+            z.setStanzamowienia(StanZamowienia.DOODIORU);
             zamowienia.add(z);
         }
 
@@ -62,6 +67,7 @@ public class ZarzadzanieWypozyczeniamiDummy implements ZarzadzanieWypozyczeniami
             z.setStanzamowienia(StanZamowienia.ZREALIZOWANE);
             zamowienia.add(z);
         }
+        */
     }
     
     private ZamowienieTO generujZamowienie(Date odd, Date doo) {
@@ -111,9 +117,24 @@ public class ZarzadzanieWypozyczeniamiDummy implements ZarzadzanieWypozyczeniami
     }
     
     public void setStan(int nr, StanZamowienia theStanZamowienia ){
-        for(ZamowienieTO zamowienie : zamowienia){ 
-            if(zamowienie.getId()==nr) zamowienie.setStanzamowienia(theStanZamowienia);
+        for(ZamowienieTO zamowienie : zamowienia){
+            if(zamowienie.getId()==nr){
+                zamowienie.setStanzamowienia(theStanZamowienia);
+            }
         }
+    }
+    
+    public ZamowienieTO pobierzZamowienie(int id){
+        System.out.println(" -- (" + zamowienia.size() + ")");
+        for(ZamowienieTO zamowienie : zamowienia){ 
+            if(zamowienie.getId()==id)
+                return zamowienie;
+        }
+        return null;
+    }
+    
+    public void noweZamowienie(ZamowienieTO nowe){
+        zamowienia.add(nowe);
     }
     
     public Collection<ZamowienieTO> pobierzZamowieniaWgStanu(Date odd, Date doo, String stan) {
