@@ -24,7 +24,7 @@ public enum StanZamowienia {
      * 
      * @generated "UML to Java (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform)"
      */
-    DOODIORU,
+    DOODBIORU,
     POZYCZONE,
     ZREALIZOWANE,
     ANULOWANE,
