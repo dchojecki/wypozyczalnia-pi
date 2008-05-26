@@ -34,7 +34,7 @@ public class ModelDrzewa implements TableModel{
     }
 
     public int getColumnCount() {
-        return 5;
+        return 6;
     }
 
     public String getColumnName(int arg0) {
@@ -54,6 +54,9 @@ public class ModelDrzewa implements TableModel{
                 break;
             case 4:
                 name = "Stan zamówienia";
+                break;
+            case 5:
+                name = "Nr zamówienia";
                 break;
                       
         }

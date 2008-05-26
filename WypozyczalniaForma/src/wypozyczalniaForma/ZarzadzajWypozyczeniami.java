@@ -7,8 +7,10 @@
 package wypozyczalniaForma;
 
 import java.util.Collection;
+import java.util.LinkedList;
 import javax.naming.Context;
 import javax.naming.InitialContext;
+import wypozyczalnia.dao.StanZamowienia;
 import wypozyczalnia.ejb.zarzadzaniewypozyczeniami.ZarzadzanieWypozyczeniami;
 import wypozyczalnia.ejb.zarzadzaniewypozyczeniami.ZarzadzanieWypozyczeniamiDummy;
 import wypozyczalnia.to.zarzadzaniewypozyczeniami.ZamowienieTO;
@@ -19,7 +21,8 @@ import wypozyczalnia.to.zarzadzaniewypozyczeniami.ZamowienieTO;
  * @author  Luke
  */
 public class ZarzadzajWypozyczeniami extends javax.swing.JFrame {
-    
+    public ZarzadzanieWypozyczeniami zarzadzanie ;
+    public ModelDrzewa model;
     /** Creates new form ZarzadzajWypozyczeniami */
     public ZarzadzajWypozyczeniami() {
             super("Zarządzaj Wypożyczeniami");
@@ -28,6 +31,9 @@ public class ZarzadzajWypozyczeniami extends javax.swing.JFrame {
         setDefaultCloseOperation(DISPOSE_ON_CLOSE);
         pack();
         setVisible(true);
+        zarzadzanie = new ZarzadzanieWypozyczeniamiDummy();
+        zarzadzanie.initialize();
+        model = (ModelDrzewa) jTable1.getModel();
     }
     
     /** This method is called from within the constructor to
@@ -39,6 +45,7 @@ public class ZarzadzajWypozyczeniami extends javax.swing.JFrame {
     private void initComponents() {
 
         buttonGroup_stan = new javax.swing.ButtonGroup();
+        buttonGroup_zmiana = new javax.swing.ButtonGroup();
         calendarComboBox1 = new com.imagine.component.calendar.CalendarComboBox();
         calendarComboBox2 = new com.imagine.component.calendar.CalendarComboBox();
         jLabel1 = new javax.swing.JLabel();
@@ -47,13 +54,18 @@ public class ZarzadzajWypozyczeniami extends javax.swing.JFrame {
         jScrollPane1 = new javax.swing.JScrollPane();
         jTable1 = new javax.swing.JTable();
         errorLabel = new javax.swing.JLabel();
-        jRadioButton1 = new javax.swing.JRadioButton();
-        jRadioButton2 = new javax.swing.JRadioButton();
-        jRadioButton3 = new javax.swing.JRadioButton();
-        jRadioButton4 = new javax.swing.JRadioButton();
-        jRadioButton5 = new javax.swing.JRadioButton();
+        przyjeteRadioButton = new javax.swing.JRadioButton();
+        zrealizowaneRadioButton = new javax.swing.JRadioButton();
+        doOdbioruRadioButton = new javax.swing.JRadioButton();
+        pozyczoneRadioButton = new javax.swing.JRadioButton();
+        wszystkieRadioButton = new javax.swing.JRadioButton();
         jButton1 = new javax.swing.JButton();
         jButton2 = new javax.swing.JButton();
+        przyjeteZmianaRadioButton = new javax.swing.JRadioButton();
+        zrealizowaneZmianaRadioButton = new javax.swing.JRadioButton();
+        doOdbioruZmianaRadioButton = new javax.swing.JRadioButton();
+        pozyczoneZmianaRadioButton = new javax.swing.JRadioButton();
+        anulowaneZmianaRadioButton = new javax.swing.JRadioButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setName("Form"); // NOI18N
@@ -105,26 +117,26 @@ public class ZarzadzajWypozyczeniami extends javax.swing.JFrame {
 
         errorLabel.setName("jLabel_error"); // NOI18N
 
-        buttonGroup_stan.add(jRadioButton1);
-        jRadioButton1.setText(resourceMap.getString("jRadioButton_przyjete.text")); // NOI18N
-        jRadioButton1.setName("jRadioButton_przyjete"); // NOI18N
+        buttonGroup_stan.add(przyjeteRadioButton);
+        przyjeteRadioButton.setText(resourceMap.getString("jRadioButton_przyjete.text")); // NOI18N
+        przyjeteRadioButton.setName("jRadioButton_przyjete"); // NOI18N
 
-        buttonGroup_stan.add(jRadioButton2);
-        jRadioButton2.setText(resourceMap.getString("jRadioButton_zrealizowane.text")); // NOI18N
-        jRadioButton2.setName("jRadioButton_zrealizowane"); // NOI18N
+        buttonGroup_stan.add(zrealizowaneRadioButton);
+        zrealizowaneRadioButton.setText(resourceMap.getString("jRadioButton_zrealizowane.text")); // NOI18N
+        zrealizowaneRadioButton.setName("jRadioButton_zrealizowane"); // NOI18N
 
-        buttonGroup_stan.add(jRadioButton3);
-        jRadioButton3.setText(resourceMap.getString("jRadioButton_doOdbioru.text")); // NOI18N
-        jRadioButton3.setName("jRadioButton_doOdbioru"); // NOI18N
+        buttonGroup_stan.add(doOdbioruRadioButton);
+        doOdbioruRadioButton.setText(resourceMap.getString("jRadioButton_doOdbioru.text")); // NOI18N
+        doOdbioruRadioButton.setName("jRadioButton_doOdbioru"); // NOI18N
 
-        buttonGroup_stan.add(jRadioButton4);
-        jRadioButton4.setText(resourceMap.getString("jRadioButton_pozyczone.text")); // NOI18N
-        jRadioButton4.setName("jRadioButton_pozyczone"); // NOI18N
+        buttonGroup_stan.add(pozyczoneRadioButton);
+        pozyczoneRadioButton.setText(resourceMap.getString("jRadioButton_pozyczone.text")); // NOI18N
+        pozyczoneRadioButton.setName("jRadioButton_pozyczone"); // NOI18N
 
-        buttonGroup_stan.add(jRadioButton5);
-        jRadioButton5.setSelected(true);
-        jRadioButton5.setText(resourceMap.getString("jRadioButton_wszystkie.text")); // NOI18N
-        jRadioButton5.setName("jRadioButton_wszystkie"); // NOI18N
+        buttonGroup_stan.add(wszystkieRadioButton);
+        wszystkieRadioButton.setSelected(true);
+        wszystkieRadioButton.setText(resourceMap.getString("jRadioButton_wszystkie.text")); // NOI18N
+        wszystkieRadioButton.setName("jRadioButton_wszystkie"); // NOI18N
 
         jButton1.setText(resourceMap.getString("jButton_wyszukaj.text")); // NOI18N
         jButton1.setName("jButton_wyszukaj"); // NOI18N
@@ -136,6 +148,31 @@ public class ZarzadzajWypozyczeniami extends javax.swing.JFrame {
 
         jButton2.setText(resourceMap.getString("zmienStanButton.text")); // NOI18N
         jButton2.setName("zmienStanButton"); // NOI18N
+        jButton2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton2ActionPerformed(evt);
+            }
+        });
+
+        buttonGroup_zmiana.add(przyjeteZmianaRadioButton);
+        przyjeteZmianaRadioButton.setText(resourceMap.getString("przyjeteZmianaRadioButton.text")); // NOI18N
+        przyjeteZmianaRadioButton.setName("przyjeteZmianaRadioButton"); // NOI18N
+
+        buttonGroup_zmiana.add(zrealizowaneZmianaRadioButton);
+        zrealizowaneZmianaRadioButton.setText(resourceMap.getString("zrealizowaneZmianaRadioButton.text")); // NOI18N
+        zrealizowaneZmianaRadioButton.setName("zrealizowaneZmianaRadioButton"); // NOI18N
+
+        buttonGroup_zmiana.add(doOdbioruZmianaRadioButton);
+        doOdbioruZmianaRadioButton.setText(resourceMap.getString("doOdbioruZmianaRadioButton.text")); // NOI18N
+        doOdbioruZmianaRadioButton.setName("doOdbioruZmianaRadioButton"); // NOI18N
+
+        buttonGroup_zmiana.add(pozyczoneZmianaRadioButton);
+        pozyczoneZmianaRadioButton.setText(resourceMap.getString("pozyczoneZmianaRadioButton.text")); // NOI18N
+        pozyczoneZmianaRadioButton.setName("pozyczoneZmianaRadioButton"); // NOI18N
+
+        buttonGroup_zmiana.add(anulowaneZmianaRadioButton);
+        anulowaneZmianaRadioButton.setText(resourceMap.getString("anulowaneZmianaRadioButton.text")); // NOI18N
+        anulowaneZmianaRadioButton.setName("anulowaneZmianaRadioButton"); // NOI18N
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -158,18 +195,16 @@ public class ZarzadzajWypozyczeniami extends javax.swing.JFrame {
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                             .addGroup(layout.createSequentialGroup()
-                                                .addComponent(jRadioButton1)
+                                                .addComponent(przyjeteRadioButton)
                                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                                .addComponent(jRadioButton2)
+                                                .addComponent(zrealizowaneRadioButton)
                                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                                .addComponent(jRadioButton3)
+                                                .addComponent(doOdbioruRadioButton)
                                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                                .addComponent(jRadioButton4)
+                                                .addComponent(pozyczoneRadioButton)
                                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                                .addComponent(jRadioButton5)
-                                                .addGap(30, 30, 30)
-                                                .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 152, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                                .addGap(64, 64, 64))
+                                                .addComponent(wszystkieRadioButton)
+                                                .addGap(246, 246, 246))
                                             .addGroup(layout.createSequentialGroup()
                                                 .addGap(51, 51, 51)
                                                 .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 13, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -181,7 +216,21 @@ public class ZarzadzajWypozyczeniami extends javax.swing.JFrame {
                                         .addGap(33, 33, 33))))))
                     .addGroup(layout.createSequentialGroup()
                         .addGap(10, 10, 10)
-                        .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 734, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                                .addComponent(anulowaneZmianaRadioButton)
+                                .addGap(18, 18, 18)
+                                .addComponent(przyjeteZmianaRadioButton)
+                                .addGap(18, 18, 18)
+                                .addComponent(zrealizowaneZmianaRadioButton)
+                                .addGap(18, 18, 18)
+                                .addComponent(doOdbioruZmianaRadioButton)
+                                .addGap(18, 18, 18)
+                                .addComponent(pozyczoneZmianaRadioButton)
+                                .addGap(18, 18, 18)
+                                .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 152, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(99, 99, 99))
+                            .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 734, javax.swing.GroupLayout.PREFERRED_SIZE))))
                 .addContainerGap())
         );
         layout.setVerticalGroup(
@@ -189,46 +238,56 @@ public class ZarzadzajWypozyczeniami extends javax.swing.JFrame {
             .addGroup(layout.createSequentialGroup()
                 .addGap(44, 44, 44)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(jButton1)
                     .addGroup(layout.createSequentialGroup()
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(jButton1)
-                            .addGroup(layout.createSequentialGroup()
-                                .addComponent(jLabel1)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 18, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(calendarComboBox1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(calendarComboBox2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                        .addGap(16, 16, 16)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jRadioButton1)
-                            .addComponent(jRadioButton2)
-                            .addComponent(jRadioButton3)
-                            .addComponent(jRadioButton4)
-                            .addComponent(jRadioButton5)))
-                    .addComponent(jButton2))
+                        .addComponent(jLabel1)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 18, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(calendarComboBox1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(calendarComboBox2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                .addGap(16, 16, 16)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(przyjeteRadioButton)
+                    .addComponent(zrealizowaneRadioButton)
+                    .addComponent(doOdbioruRadioButton)
+                    .addComponent(pozyczoneRadioButton)
+                    .addComponent(wszystkieRadioButton))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(errorLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 19, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 145, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(54, Short.MAX_VALUE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jButton2)
+                    .addComponent(pozyczoneZmianaRadioButton)
+                    .addComponent(doOdbioruZmianaRadioButton)
+                    .addComponent(zrealizowaneZmianaRadioButton)
+                    .addComponent(przyjeteZmianaRadioButton)
+                    .addComponent(anulowaneZmianaRadioButton))
+                .addContainerGap(24, Short.MAX_VALUE))
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        ModelDrzewa model = (ModelDrzewa) jTable1.getModel();
+
         try {
-            ZarzadzanieWypozyczeniami zarzadzanie = new ZarzadzanieWypozyczeniamiDummy();
+
                     if(calendarComboBox1.getDate().after(calendarComboBox2.getDate())){
             errorLabel.setText("Zakres dat jest nieprawidłowy");
             
             }
             else { 
                 errorLabel.setText("");
-                Collection<ZamowienieTO> zam = zarzadzanie.pobierzZamowieniaWgCzasu(calendarComboBox1.getDate(),calendarComboBox2.getDate());
+                Collection<ZamowienieTO> zam = new LinkedList<ZamowienieTO>();
+                if (wszystkieRadioButton.isSelected()) zam = zarzadzanie.pobierzZamowieniaWgCzasu(calendarComboBox1.getDate(), calendarComboBox2.getDate());
+                if (przyjeteRadioButton.isSelected()) zam = zarzadzanie.pobierzZamowieniaWgStanu(calendarComboBox1.getDate(), calendarComboBox2.getDate(), "PRZYJETE");
+                if (zrealizowaneRadioButton.isSelected()) zam = zarzadzanie.pobierzZamowieniaWgStanu(calendarComboBox1.getDate(), calendarComboBox2.getDate(), "ZREALIZOWANE");
+                if (doOdbioruRadioButton.isSelected()) zam = zarzadzanie.pobierzZamowieniaWgStanu(calendarComboBox1.getDate(), calendarComboBox2.getDate(), "DOODBIORU");
+                if (pozyczoneRadioButton.isSelected()) zam = zarzadzanie.pobierzZamowieniaWgStanu(calendarComboBox1.getDate(), calendarComboBox2.getDate(), "POZYCZONE");
                 model.setZamowienia(zam);
                 jTable1.updateUI();      
             }
@@ -272,8 +331,63 @@ public class ZarzadzajWypozyczeniami extends javax.swing.JFrame {
     }//GEN-LAST:event_calendarComboBox1MouseReleased
 
     private void jTable1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jTable1MouseClicked
-        jTable1.getSelectedRow();
+        String stan = jTable1.getValueAt(jTable1.getSelectedRow(), 4).toString();
+        pozyczoneZmianaRadioButton.setEnabled(false);
+        zrealizowaneZmianaRadioButton.setEnabled(false);
+        doOdbioruZmianaRadioButton.setEnabled(false);
+        przyjeteZmianaRadioButton.setEnabled(false);
+        anulowaneZmianaRadioButton.setEnabled(false);
+        pozyczoneZmianaRadioButton.setSelected(false);
+        zrealizowaneZmianaRadioButton.setSelected(false);
+        doOdbioruZmianaRadioButton.setSelected(false);
+        przyjeteZmianaRadioButton.setSelected(false);
+        anulowaneZmianaRadioButton.setSelected(false);
+        if(stan.compareTo("PRZYJETE")==0){
+            doOdbioruZmianaRadioButton.setEnabled(true);
+            anulowaneZmianaRadioButton.setEnabled(true);
+        }
+        if(stan.compareTo("DOODBIORU")==0){
+            pozyczoneZmianaRadioButton.setEnabled(true);
+            anulowaneZmianaRadioButton.setEnabled(true);
+        }        
+        if(stan.compareTo("POZYCZONE")==0){
+            zrealizowaneZmianaRadioButton.setEnabled(true);
+        }
     }//GEN-LAST:event_jTable1MouseClicked
+
+    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+        int nr = Integer.valueOf(jTable1.getValueAt(jTable1.getSelectedRow(), 5).toString());
+        
+        if (zrealizowaneZmianaRadioButton.isSelected()) zarzadzanie.setStan(nr, StanZamowienia.ZREALIZOWANE);
+        if (pozyczoneZmianaRadioButton.isSelected()) zarzadzanie.setStan(nr, StanZamowienia.POZYCZONE);
+        if (przyjeteZmianaRadioButton.isSelected()) zarzadzanie.setStan(nr, StanZamowienia.PRZYJETE);
+        if (doOdbioruZmianaRadioButton.isSelected()) zarzadzanie.setStan(nr, StanZamowienia.DOODBIORU);
+        if (anulowaneZmianaRadioButton.isSelected()) zarzadzanie.setStan(nr, StanZamowienia.ANULOWANE);
+        //model.setZamowienia(zamowienia);
+        String stan = jTable1.getValueAt(jTable1.getSelectedRow(), 4).toString();
+        pozyczoneZmianaRadioButton.setEnabled(false);
+        zrealizowaneZmianaRadioButton.setEnabled(false);
+        doOdbioruZmianaRadioButton.setEnabled(false);
+        przyjeteZmianaRadioButton.setEnabled(false);
+        anulowaneZmianaRadioButton.setEnabled(false);
+        pozyczoneZmianaRadioButton.setSelected(false);
+        zrealizowaneZmianaRadioButton.setSelected(false);
+        doOdbioruZmianaRadioButton.setSelected(false);
+        przyjeteZmianaRadioButton.setSelected(false);
+        anulowaneZmianaRadioButton.setSelected(false);
+        if(stan.compareTo("PRZYJETE")==0){
+            doOdbioruZmianaRadioButton.setEnabled(true);
+            anulowaneZmianaRadioButton.setEnabled(true);
+        }
+        if(stan.compareTo("DOODBIORU")==0){
+            pozyczoneZmianaRadioButton.setEnabled(true);
+            anulowaneZmianaRadioButton.setEnabled(true);
+        }        
+        if(stan.compareTo("POZYCZONE")==0){
+            zrealizowaneZmianaRadioButton.setEnabled(true);
+        }
+        jTable1.updateUI();
+    }//GEN-LAST:event_jButton2ActionPerformed
     
     /**
      * @param args the command line arguments
@@ -287,22 +401,28 @@ public class ZarzadzajWypozyczeniami extends javax.swing.JFrame {
     }
     
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JRadioButton anulowaneZmianaRadioButton;
     private javax.swing.ButtonGroup buttonGroup_stan;
+    private javax.swing.ButtonGroup buttonGroup_zmiana;
     private com.imagine.component.calendar.CalendarComboBox calendarComboBox1;
     private com.imagine.component.calendar.CalendarComboBox calendarComboBox2;
+    private javax.swing.JRadioButton doOdbioruRadioButton;
+    private javax.swing.JRadioButton doOdbioruZmianaRadioButton;
     private javax.swing.JLabel errorLabel;
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton2;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
-    private javax.swing.JRadioButton jRadioButton1;
-    private javax.swing.JRadioButton jRadioButton2;
-    private javax.swing.JRadioButton jRadioButton3;
-    private javax.swing.JRadioButton jRadioButton4;
-    private javax.swing.JRadioButton jRadioButton5;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JTable jTable1;
+    private javax.swing.JRadioButton pozyczoneRadioButton;
+    private javax.swing.JRadioButton pozyczoneZmianaRadioButton;
+    private javax.swing.JRadioButton przyjeteRadioButton;
+    private javax.swing.JRadioButton przyjeteZmianaRadioButton;
+    private javax.swing.JRadioButton wszystkieRadioButton;
+    private javax.swing.JRadioButton zrealizowaneRadioButton;
+    private javax.swing.JRadioButton zrealizowaneZmianaRadioButton;
     // End of variables declaration//GEN-END:variables
     
 }
