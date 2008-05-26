@@ -252,7 +252,7 @@ public class ZamowienieDAO implements Serializable {
             case ANULOWANE:
                 setDataAnulowania();
                 break;
-            case DOODIORU:
+            case DOODBIORU:
                 setDataDoOdbioru();
                 zarezerwujPlyty();
                 break;
@@ -285,7 +285,7 @@ public class ZamowienieDAO implements Serializable {
         if (getStanzamowienia() != StanZamowienia.PRZYJETE) {
             throw new IllegalArgumentException();
         }
-        setStanzamowienia(StanZamowienia.DOODIORU);
+        setStanzamowienia(StanZamowienia.DOODBIORU);
     }
 
     /** 
@@ -296,7 +296,7 @@ public class ZamowienieDAO implements Serializable {
      */
     public void odebrane() {
 
-        if (getStanzamowienia() != StanZamowienia.DOODIORU) {
+        if (getStanzamowienia() != StanZamowienia.DOODBIORU) {
             throw new IllegalArgumentException();
         }
         setStanzamowienia(StanZamowienia.POZYCZONE);
@@ -309,10 +309,10 @@ public class ZamowienieDAO implements Serializable {
      * @generated "UML to Java (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform)"
      */
     public void anuluj() {
-        if (getStanzamowienia() != StanZamowienia.DOODIORU && getStanzamowienia() != StanZamowienia.PRZYJETE) {
+        if (getStanzamowienia() != StanZamowienia.DOODBIORU && getStanzamowienia() != StanZamowienia.PRZYJETE) {
             throw new IllegalArgumentException();
         }
-        if (getStanzamowienia() == StanZamowienia.DOODIORU) {
+        if (getStanzamowienia() == StanZamowienia.DOODBIORU) {
             anulujRezerwacjePlyt();
         }
         setStanzamowienia(stanzamowienia.ANULOWANE);
