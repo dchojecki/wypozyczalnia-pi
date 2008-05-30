@@ -2,7 +2,7 @@
 <!--xtools2_universal_type_manager-->
 <?com.ibm.xtools.emf.core.signature <signature id="com.ibm.xtools.uml.msl.model" version="7.0.0"><feature description="" name="com.ibm.xtools.ruml.feature" url="" version="7.0.0"/></signature>?>
 <?com.ibm.xtools.emf.core.signature <signature id="com.ibm.xtools.mmi.ui.signatures.diagram" version="7.0.0"><feature description="" name="Rational Modeling Platform (com.ibm.xtools.rmp)" url="" version="7.0.0"/></signature>?>
-<uml:Model xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.0/notation" xmlns:uml="http://www.eclipse.org/uml2/2.0.0/UML" xmlns:umlnotation="http://www.ibm.com/xtools/1.5.2/Umlnotation" xmi:id="_hc5qYP5tEdy6V8d2FH3wgw" name="activity">
+<uml:Model xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.0/notation" xmlns:uml="http://www.eclipse.org/uml2/2.0.0/UML" xmlns:umlnotation="http://www.ibm.com/xtools/1.5.2/Umlnotation" xmi:id="_hc5qYP5tEdy6V8d2FH3wgw" name="Diagramy aktywności">
   <eAnnotations xmi:id="_hc5qYf5tEdy6V8d2FH3wgw" source="uml2.diagrams">
     <contents xmi:type="notation:Diagram" xmi:id="_wxCn4fsBEdycsIeIheJDLA" type="Activity" name="ActivityDiagram1" measurementUnit="Himetric">
       <children xmi:id="_wxCn4vsBEdycsIeIheJDLA" type="Activity Frame">
@@ -1101,6 +1101,577 @@
         <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_Bi7ZJAP0Ed2AA4PGNsuhQQ" points="[10, -932, 433, 33649]$[11271, -932, 11694, 33649]$[11271, -34739, 11694, -158]$[-212, -34739, 211, -158]"/>
         <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_Bi7ZKQP0Ed2AA4PGNsuhQQ" id="top"/>
         <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_EEdhwAP0Ed2AA4PGNsuhQQ" id="(0.93730307,0.56962824)"/>
+      </edges>
+    </contents>
+    <contents xmi:type="notation:Diagram" xmi:id="_fQrJ0S6FEd2UStPOAdOu7w" type="Activity" name="Logowanie do systemu" measurementUnit="Himetric">
+      <children xmi:id="_fQrJ0i6FEd2UStPOAdOu7w" type="Activity Frame">
+        <children xmi:id="_fQrJ0y6FEd2UStPOAdOu7w" type="ActivityCompartment">
+          <children xmi:id="_j9h6gC6FEd2UStPOAdOu7w" type="Partition">
+            <children xmi:id="_j9h6hC6FEd2UStPOAdOu7w" type="Stereotype"/>
+            <children xmi:id="_j9h6hS6FEd2UStPOAdOu7w" type="PartitionName"/>
+            <children xmi:id="_j9h6hi6FEd2UStPOAdOu7w" type="PartitionCompartment">
+              <children xmi:id="_6qNxAC6JEd2UStPOAdOu7w">
+                <children xmi:id="_6qNxAy6JEd2UStPOAdOu7w" type="ImageCompartment">
+                  <layoutConstraint xmi:type="notation:Size" xmi:id="_6qNxBC6JEd2UStPOAdOu7w" width="1320" height="1320"/>
+                </children>
+                <children xmi:id="_6qNxBS6JEd2UStPOAdOu7w" type="NameLabel">
+                  <children xmi:id="_6qNxBy6JEd2UStPOAdOu7w" type="Stereotype"/>
+                  <children xmi:id="_6qNxCC6JEd2UStPOAdOu7w" type="Name"/>
+                  <layoutConstraint xmi:type="notation:Bounds" xmi:id="_6qNxBi6JEd2UStPOAdOu7w" y="-186"/>
+                </children>
+                <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="_6qNxAS6JEd2UStPOAdOu7w" fillColor="11579568" showStereotype="Label"/>
+                <element xmi:type="uml:InitialNode" href="Blank%20Model.emx#_6qEnEC6JEd2UStPOAdOu7w?oracleModel/PU%201.3%20Logowanie%20do%20systemu./Węzeł%20początkowy?"/>
+                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_6qNxAi6JEd2UStPOAdOu7w" x="1559" y="607"/>
+              </children>
+              <children xmi:id="_EeJwQS6KEd2UStPOAdOu7w">
+                <children xmi:id="_EeJwRC6KEd2UStPOAdOu7w" type="ImageCompartment">
+                  <layoutConstraint xmi:type="notation:Size" xmi:id="_EeJwRS6KEd2UStPOAdOu7w" width="1320" height="1320"/>
+                </children>
+                <children xmi:id="_EeJwRi6KEd2UStPOAdOu7w" type="Stereotype"/>
+                <children xmi:id="_EeJwRy6KEd2UStPOAdOu7w" type="InPartitions"/>
+                <children xmi:id="_EeJwSC6KEd2UStPOAdOu7w" type="Name"/>
+                <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="_EeJwQi6KEd2UStPOAdOu7w" showStereotype="Label"/>
+                <element xmi:type="uml:OpaqueAction" href="Blank%20Model.emx#_EeJwQC6KEd2UStPOAdOu7w?oracleModel/PU%201.3%20Logowanie%20do%20systemu./Wypełnienie%20pola%20'login'%20oraz%20'hasło'?"/>
+                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_EeJwQy6KEd2UStPOAdOu7w" x="132" y="3460" width="3782" height="1559"/>
+              </children>
+              <children xmi:id="_gNLcES6KEd2UStPOAdOu7w">
+                <children xmi:id="_gNLcFC6KEd2UStPOAdOu7w" type="ImageCompartment">
+                  <layoutConstraint xmi:type="notation:Size" xmi:id="_gNLcFS6KEd2UStPOAdOu7w" width="1320" height="1320"/>
+                </children>
+                <children xmi:id="_gNLcFi6KEd2UStPOAdOu7w" type="Stereotype"/>
+                <children xmi:id="_gNVNEC6KEd2UStPOAdOu7w" type="InPartitions"/>
+                <children xmi:id="_gNVNES6KEd2UStPOAdOu7w" type="Name"/>
+                <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="_gNLcEi6KEd2UStPOAdOu7w" showStereotype="Label"/>
+                <element xmi:type="uml:DecisionNode" href="Blank%20Model.emx#_gNLcEC6KEd2UStPOAdOu7w?oracleModel/PU%201.3%20Logowanie%20do%20systemu./Wciśnięcie%20przycisku%20'Loguj'%20lub%20'Anuluj'?"/>
+                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_gNLcEy6KEd2UStPOAdOu7w" x="291" y="5996" width="3148" height="1905"/>
+              </children>
+              <children xmi:id="_ms7GsC6KEd2UStPOAdOu7w">
+                <children xmi:id="_ms7Gsy6KEd2UStPOAdOu7w" type="ImageCompartment">
+                  <layoutConstraint xmi:type="notation:Size" xmi:id="_ms7GtC6KEd2UStPOAdOu7w" width="1320" height="1320"/>
+                </children>
+                <children xmi:id="_ms7GtS6KEd2UStPOAdOu7w" type="NameLabel">
+                  <children xmi:id="_ms7Gty6KEd2UStPOAdOu7w" type="Stereotype"/>
+                  <children xmi:id="_ms7GuC6KEd2UStPOAdOu7w" type="Name"/>
+                  <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ms7Gti6KEd2UStPOAdOu7w" y="-186"/>
+                </children>
+                <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="_ms7GsS6KEd2UStPOAdOu7w" showStereotype="Label"/>
+                <element xmi:type="uml:ActivityFinalNode" href="Blank%20Model.emx#_msxVsC6KEd2UStPOAdOu7w?oracleModel/PU%201.3%20Logowanie%20do%20systemu./Węzeł%20końcowy?"/>
+                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ms7Gsi6KEd2UStPOAdOu7w" x="1559" y="31356"/>
+              </children>
+              <styles xmi:type="umlnotation:UMLShapeCompartmentStyle" xmi:id="_j9h6hy6FEd2UStPOAdOu7w"/>
+            </children>
+            <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="_j9h6gS6FEd2UStPOAdOu7w" showStereotype="Label"/>
+            <styles xmi:type="umlnotation:UMLFrameStyle" xmi:id="_j9h6gi6FEd2UStPOAdOu7w"/>
+            <element xmi:type="uml:ActivityPartition" href="Blank%20Model.emx#_j9YJgC6FEd2UStPOAdOu7w?oracleModel/PU%201.3%20Logowanie%20do%20systemu./Użytkownik?"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_j9h6gy6FEd2UStPOAdOu7w" x="396" y="396" width="4680"/>
+          </children>
+          <children xmi:id="_mnQV0C6FEd2UStPOAdOu7w" type="Partition">
+            <children xmi:id="_mnQV1C6FEd2UStPOAdOu7w" type="Stereotype"/>
+            <children xmi:id="_mnQV1S6FEd2UStPOAdOu7w" type="PartitionName"/>
+            <children xmi:id="_mnQV1i6FEd2UStPOAdOu7w" type="PartitionCompartment">
+              <children xmi:id="__z_HMC6JEd2UStPOAdOu7w">
+                <children xmi:id="__z_HMy6JEd2UStPOAdOu7w" type="ImageCompartment">
+                  <layoutConstraint xmi:type="notation:Size" xmi:id="__z_HNC6JEd2UStPOAdOu7w" width="1320" height="1320"/>
+                </children>
+                <children xmi:id="__z_HNS6JEd2UStPOAdOu7w" type="Stereotype"/>
+                <children xmi:id="__z_HNi6JEd2UStPOAdOu7w" type="InPartitions"/>
+                <children xmi:id="__z_HNy6JEd2UStPOAdOu7w" type="Name"/>
+                <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="__z_HMS6JEd2UStPOAdOu7w" showStereotype="Label"/>
+                <element xmi:type="uml:OpaqueAction" href="Blank%20Model.emx#__z1WMC6JEd2UStPOAdOu7w?oracleModel/PU%201.3%20Logowanie%20do%20systemu./Wyświetlenie%20formularza?"/>
+                <layoutConstraint xmi:type="notation:Bounds" xmi:id="__z_HMi6JEd2UStPOAdOu7w" x="260" y="1558" width="3782"/>
+              </children>
+              <children xmi:id="_uPRd0S6KEd2UStPOAdOu7w">
+                <children xmi:id="_uPRd1C6KEd2UStPOAdOu7w" type="ImageCompartment">
+                  <layoutConstraint xmi:type="notation:Size" xmi:id="_uPRd1S6KEd2UStPOAdOu7w" width="1320" height="1320"/>
+                </children>
+                <children xmi:id="_uPRd1i6KEd2UStPOAdOu7w" type="Stereotype"/>
+                <children xmi:id="_uPRd1y6KEd2UStPOAdOu7w" type="InPartitions"/>
+                <children xmi:id="_uPRd2C6KEd2UStPOAdOu7w" type="Name"/>
+                <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="_uPRd0i6KEd2UStPOAdOu7w" showStereotype="Label"/>
+                <element xmi:type="uml:OpaqueAction" href="Blank%20Model.emx#_uPRd0C6KEd2UStPOAdOu7w?oracleModel/PU%201.3%20Logowanie%20do%20systemu./Wysłanie%20danych?"/>
+                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_uPRd0y6KEd2UStPOAdOu7w" x="531" y="6630"/>
+              </children>
+              <children xmi:id="_ayG9sC6OEd2UStPOAdOu7w">
+                <children xmi:id="_ayG9sy6OEd2UStPOAdOu7w" type="ImageCompartment">
+                  <layoutConstraint xmi:type="notation:Size" xmi:id="_ayG9tC6OEd2UStPOAdOu7w" width="1320" height="1320"/>
+                </children>
+                <children xmi:id="_ayG9tS6OEd2UStPOAdOu7w" type="Stereotype"/>
+                <children xmi:id="_ayG9ti6OEd2UStPOAdOu7w" type="InPartitions"/>
+                <children xmi:id="_ayG9ty6OEd2UStPOAdOu7w" type="Name"/>
+                <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="_ayG9sS6OEd2UStPOAdOu7w" showStereotype="Label"/>
+                <element xmi:type="uml:OpaqueAction" href="Blank%20Model.emx#_ax9MsC6OEd2UStPOAdOu7w?oracleModel/PU%201.3%20Logowanie%20do%20systemu./Wyświetlenie%20informacji?"/>
+                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ayG9si6OEd2UStPOAdOu7w" x="627" y="23114" width="3226"/>
+              </children>
+              <children xmi:id="_ggzCAS6SEd2UStPOAdOu7w">
+                <children xmi:id="_gg8zAC6SEd2UStPOAdOu7w" type="ImageCompartment">
+                  <layoutConstraint xmi:type="notation:Size" xmi:id="_gg8zAS6SEd2UStPOAdOu7w" width="1320" height="1320"/>
+                </children>
+                <children xmi:id="_gg8zAi6SEd2UStPOAdOu7w" type="Stereotype"/>
+                <children xmi:id="_gg8zAy6SEd2UStPOAdOu7w" type="InPartitions"/>
+                <children xmi:id="_gg8zBC6SEd2UStPOAdOu7w" type="Name"/>
+                <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="_ggzCAi6SEd2UStPOAdOu7w" showStereotype="Label"/>
+                <element xmi:type="uml:OpaqueAction" href="Blank%20Model.emx#_ggzCAC6SEd2UStPOAdOu7w?oracleModel/PU%201.3%20Logowanie%20do%20systemu./Wyświetlenie%20informacji%20o%20poprawnym%20zalogowaniu?"/>
+                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ggzCAy6SEd2UStPOAdOu7w" x="132" y="29454" width="3781"/>
+              </children>
+              <children xmi:id="_RVuJgC6TEd2UStPOAdOu7w">
+                <children xmi:id="_RVuJgy6TEd2UStPOAdOu7w" type="ImageCompartment">
+                  <layoutConstraint xmi:type="notation:Size" xmi:id="_RVuJhC6TEd2UStPOAdOu7w" width="1320" height="1320"/>
+                </children>
+                <children xmi:id="_RVuJhS6TEd2UStPOAdOu7w" type="Stereotype"/>
+                <children xmi:id="_RVuJhi6TEd2UStPOAdOu7w" type="InPartitions"/>
+                <children xmi:id="_RVuJhy6TEd2UStPOAdOu7w" type="Name"/>
+                <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="_RVuJgS6TEd2UStPOAdOu7w" showStereotype="Label"/>
+                <element xmi:type="uml:OpaqueAction" href="Blank%20Model.emx#_RVk_kC6TEd2UStPOAdOu7w?oracleModel/PU%201.3%20Logowanie%20do%20systemu./Wyswietlenie%20informacji%20o%20zablokowanym%20koncie?"/>
+                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_RVuJgi6TEd2UStPOAdOu7w" x="132" y="10434" width="3702"/>
+              </children>
+              <styles xmi:type="umlnotation:UMLShapeCompartmentStyle" xmi:id="_mnQV1y6FEd2UStPOAdOu7w"/>
+            </children>
+            <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="_mnQV0S6FEd2UStPOAdOu7w" showStereotype="Label"/>
+            <styles xmi:type="umlnotation:UMLFrameStyle" xmi:id="_mnQV0i6FEd2UStPOAdOu7w"/>
+            <element xmi:type="uml:ActivityPartition" href="Blank%20Model.emx#_mnGk0C6FEd2UStPOAdOu7w?oracleModel/PU%201.3%20Logowanie%20do%20systemu./Formularz?"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_mnQV0y6FEd2UStPOAdOu7w" x="5687" y="396" width="4814"/>
+          </children>
+          <children xmi:id="_odkXMS6FEd2UStPOAdOu7w" type="Partition">
+            <children xmi:id="_odkXNS6FEd2UStPOAdOu7w" type="Stereotype"/>
+            <children xmi:id="_odkXNi6FEd2UStPOAdOu7w" type="PartitionName"/>
+            <children xmi:id="_odkXNy6FEd2UStPOAdOu7w" type="PartitionCompartment">
+              <children xmi:id="_bYUJcS6LEd2UStPOAdOu7w">
+                <children xmi:id="_bYUJdC6LEd2UStPOAdOu7w" type="ImageCompartment">
+                  <layoutConstraint xmi:type="notation:Size" xmi:id="_bYUJdS6LEd2UStPOAdOu7w" width="1320" height="1320"/>
+                </children>
+                <children xmi:id="_bYUJdi6LEd2UStPOAdOu7w" type="Stereotype"/>
+                <children xmi:id="_bYUJdy6LEd2UStPOAdOu7w" type="InPartitions"/>
+                <children xmi:id="_bYUJeC6LEd2UStPOAdOu7w" type="Name"/>
+                <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="_bYUJci6LEd2UStPOAdOu7w" showStereotype="Label"/>
+                <element xmi:type="uml:OpaqueAction" href="Blank%20Model.emx#_bYUJcC6LEd2UStPOAdOu7w?oracleModel/PU%201.3%20Logowanie%20do%20systemu./Utworzenie%20obiektów%20do%20komunikacji%20z%20BD?"/>
+                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_bYUJcy6LEd2UStPOAdOu7w" x="132" y="6313" width="4125"/>
+              </children>
+              <children xmi:id="_rteaAS6LEd2UStPOAdOu7w">
+                <children xmi:id="_rteaBC6LEd2UStPOAdOu7w" type="ImageCompartment">
+                  <layoutConstraint xmi:type="notation:Size" xmi:id="_rteaBS6LEd2UStPOAdOu7w" width="1320" height="1320"/>
+                </children>
+                <children xmi:id="_rteaBi6LEd2UStPOAdOu7w" type="Stereotype"/>
+                <children xmi:id="_rteaBy6LEd2UStPOAdOu7w" type="InPartitions"/>
+                <children xmi:id="_rteaCC6LEd2UStPOAdOu7w" type="Name"/>
+                <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="_rteaAi6LEd2UStPOAdOu7w" showStereotype="Label"/>
+                <element xmi:type="uml:OpaqueAction" href="Blank%20Model.emx#_rteaAC6LEd2UStPOAdOu7w?oracleModel/PU%201.3%20Logowanie%20do%20systemu./Porównanie%20hasła%20podanego%20przez%20użytkownika%20%20zawartym%20w%20BD?"/>
+                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_rteaAy6LEd2UStPOAdOu7w" x="307" y="10751" width="4125" height="2219"/>
+              </children>
+              <children xmi:id="_buPgsS6MEd2UStPOAdOu7w">
+                <children xmi:id="_buPgtC6MEd2UStPOAdOu7w" type="ImageCompartment">
+                  <layoutConstraint xmi:type="notation:Size" xmi:id="_buPgtS6MEd2UStPOAdOu7w" width="1320" height="1320"/>
+                </children>
+                <children xmi:id="_buPgti6MEd2UStPOAdOu7w" type="Stereotype"/>
+                <children xmi:id="_buPgty6MEd2UStPOAdOu7w" type="InPartitions"/>
+                <children xmi:id="_buPguC6MEd2UStPOAdOu7w" type="Name"/>
+                <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="_buPgsi6MEd2UStPOAdOu7w" showStereotype="Label"/>
+                <element xmi:type="uml:DecisionNode" href="Blank%20Model.emx#_buPgsC6MEd2UStPOAdOu7w?oracleModel/PU%201.3%20Logowanie%20do%20systemu./Hasła%20zgodne?"/>
+                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_buPgsy6MEd2UStPOAdOu7w" x="941" y="13604"/>
+              </children>
+              <children xmi:id="_j_Y3gC6MEd2UStPOAdOu7w">
+                <children xmi:id="_j_Y3gy6MEd2UStPOAdOu7w" type="ImageCompartment">
+                  <layoutConstraint xmi:type="notation:Size" xmi:id="_j_Y3hC6MEd2UStPOAdOu7w" width="1320" height="1320"/>
+                </children>
+                <children xmi:id="_j_Y3hS6MEd2UStPOAdOu7w" type="Stereotype"/>
+                <children xmi:id="_j_Y3hi6MEd2UStPOAdOu7w" type="InPartitions"/>
+                <children xmi:id="_j_Y3hy6MEd2UStPOAdOu7w" type="Name"/>
+                <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="_j_Y3gS6MEd2UStPOAdOu7w" showStereotype="Label"/>
+                <element xmi:type="uml:OpaqueAction" href="Blank%20Model.emx#_j_PGgC6MEd2UStPOAdOu7w?oracleModel/PU%201.3%20Logowanie%20do%20systemu./Autoryzacja%20aktora%20jako%20pracownika?"/>
+                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_j_Y3gi6MEd2UStPOAdOu7w" x="941" y="24065" width="3438"/>
+              </children>
+              <children xmi:id="_sUs8oS6MEd2UStPOAdOu7w">
+                <children xmi:id="_sUs8pC6MEd2UStPOAdOu7w" type="ImageCompartment">
+                  <layoutConstraint xmi:type="notation:Size" xmi:id="_sUs8pS6MEd2UStPOAdOu7w" width="1320" height="1320"/>
+                </children>
+                <children xmi:id="_sUs8pi6MEd2UStPOAdOu7w" type="Stereotype"/>
+                <children xmi:id="_sU2GkC6MEd2UStPOAdOu7w" type="InPartitions"/>
+                <children xmi:id="_sU2GkS6MEd2UStPOAdOu7w" type="Name"/>
+                <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="_sUs8oi6MEd2UStPOAdOu7w" showStereotype="Label"/>
+                <element xmi:type="uml:OpaqueAction" href="Blank%20Model.emx#_sUs8oC6MEd2UStPOAdOu7w?oracleModel/PU%201.3%20Logowanie%20do%20systemu./Zapisanie%20czasu%20logowania?"/>
+                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_sUs8oy6MEd2UStPOAdOu7w" x="730" y="26732" width="3649"/>
+              </children>
+              <children xmi:id="_xD8S8S6MEd2UStPOAdOu7w">
+                <children xmi:id="_xD8S9C6MEd2UStPOAdOu7w" type="ImageCompartment">
+                  <layoutConstraint xmi:type="notation:Size" xmi:id="_xD8S9S6MEd2UStPOAdOu7w" width="1320" height="1320"/>
+                </children>
+                <children xmi:id="_xD8S9i6MEd2UStPOAdOu7w" type="Stereotype"/>
+                <children xmi:id="_xD8S9y6MEd2UStPOAdOu7w" type="InPartitions"/>
+                <children xmi:id="_xD8S-C6MEd2UStPOAdOu7w" type="Name"/>
+                <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="_xD8S8i6MEd2UStPOAdOu7w" showStereotype="Label"/>
+                <element xmi:type="uml:OpaqueAction" href="Blank%20Model.emx#_xD8S8C6MEd2UStPOAdOu7w?oracleModel/PU%201.3%20Logowanie%20do%20systemu./Wyzerowanie%20licznika%20prób%20zalogowania?"/>
+                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_xD8S8y6MEd2UStPOAdOu7w" x="1047" y="28634" width="3437"/>
+              </children>
+              <children xmi:id="_rH_ccS6NEd2UStPOAdOu7w">
+                <children xmi:id="_rH_cdC6NEd2UStPOAdOu7w" type="ImageCompartment">
+                  <layoutConstraint xmi:type="notation:Size" xmi:id="_rH_cdS6NEd2UStPOAdOu7w" width="1320" height="1320"/>
+                </children>
+                <children xmi:id="_rH_cdi6NEd2UStPOAdOu7w" type="Stereotype"/>
+                <children xmi:id="_rH_cdy6NEd2UStPOAdOu7w" type="InPartitions"/>
+                <children xmi:id="_rIImYC6NEd2UStPOAdOu7w" type="Name"/>
+                <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="_rH_cci6NEd2UStPOAdOu7w" showStereotype="Label"/>
+                <element xmi:type="uml:OpaqueAction" href="Blank%20Model.emx#_rH_ccC6NEd2UStPOAdOu7w?oracleModel/PU%201.3%20Logowanie%20do%20systemu./Zwiększenie%20licznika%20prób?"/>
+                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_rH_ccy6NEd2UStPOAdOu7w" x="624" y="17091" width="3175" height="1586"/>
+              </children>
+              <children xmi:id="_xVGe8S6NEd2UStPOAdOu7w">
+                <children xmi:id="_xVGe9C6NEd2UStPOAdOu7w" type="ImageCompartment">
+                  <layoutConstraint xmi:type="notation:Size" xmi:id="_xVGe9S6NEd2UStPOAdOu7w" width="1320" height="1320"/>
+                </children>
+                <children xmi:id="_xVGe9i6NEd2UStPOAdOu7w" type="Stereotype"/>
+                <children xmi:id="_xVGe9y6NEd2UStPOAdOu7w" type="InPartitions"/>
+                <children xmi:id="_xVGe-C6NEd2UStPOAdOu7w" type="Name"/>
+                <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="_xVGe8i6NEd2UStPOAdOu7w" showStereotype="Label"/>
+                <element xmi:type="uml:DecisionNode" href="Blank%20Model.emx#_xVGe8C6NEd2UStPOAdOu7w?oracleModel/PU%201.3%20Logowanie%20do%20systemu./Licznik%20prób%20%3E%202?"/>
+                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_xVGe8y6NEd2UStPOAdOu7w" x="941" y="19310"/>
+              </children>
+              <children xmi:id="__o7w8S6NEd2UStPOAdOu7w">
+                <children xmi:id="__o7w9C6NEd2UStPOAdOu7w" type="ImageCompartment">
+                  <layoutConstraint xmi:type="notation:Size" xmi:id="__o7w9S6NEd2UStPOAdOu7w" width="1320" height="1320"/>
+                </children>
+                <children xmi:id="__pE64C6NEd2UStPOAdOu7w" type="Stereotype"/>
+                <children xmi:id="__pE64S6NEd2UStPOAdOu7w" type="InPartitions"/>
+                <children xmi:id="__pE64i6NEd2UStPOAdOu7w" type="Name"/>
+                <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="__o7w8i6NEd2UStPOAdOu7w" showStereotype="Label"/>
+                <element xmi:type="uml:OpaqueAction" href="Blank%20Model.emx#__o7w8C6NEd2UStPOAdOu7w?oracleModel/PU%201.3%20Logowanie%20do%20systemu./Zablokowanie%20konta?"/>
+                <layoutConstraint xmi:type="notation:Bounds" xmi:id="__o7w8y6NEd2UStPOAdOu7w" x="624" y="21529"/>
+              </children>
+              <children xmi:id="_JG0OYS6TEd2UStPOAdOu7w">
+                <children xmi:id="_JG0OZC6TEd2UStPOAdOu7w" type="ImageCompartment">
+                  <layoutConstraint xmi:type="notation:Size" xmi:id="_JG0OZS6TEd2UStPOAdOu7w" width="1320" height="1320"/>
+                </children>
+                <children xmi:id="_JG0OZi6TEd2UStPOAdOu7w" type="Stereotype"/>
+                <children xmi:id="_JG0OZy6TEd2UStPOAdOu7w" type="InPartitions"/>
+                <children xmi:id="_JG9_YC6TEd2UStPOAdOu7w" type="Name"/>
+                <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="_JG0OYi6TEd2UStPOAdOu7w" showStereotype="Label"/>
+                <element xmi:type="uml:DecisionNode" href="Blank%20Model.emx#_JG0OYC6TEd2UStPOAdOu7w?oracleModel/PU%201.3%20Logowanie%20do%20systemu./Konto%20użytkownika%20zablokowane?"/>
+                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_JG0OYy6TEd2UStPOAdOu7w" x="1258" y="8532" width="3492" height="1561"/>
+              </children>
+              <styles xmi:type="umlnotation:UMLShapeCompartmentStyle" xmi:id="_odkXOC6FEd2UStPOAdOu7w"/>
+            </children>
+            <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="_odkXMi6FEd2UStPOAdOu7w" showStereotype="Label"/>
+            <styles xmi:type="umlnotation:UMLFrameStyle" xmi:id="_odkXMy6FEd2UStPOAdOu7w"/>
+            <element xmi:type="uml:ActivityPartition" href="Blank%20Model.emx#_odkXMC6FEd2UStPOAdOu7w?oracleModel/PU%201.3%20Logowanie%20do%20systemu./Serwer?"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_odkXNC6FEd2UStPOAdOu7w" x="9890" y="396" width="6004"/>
+          </children>
+          <children xmi:id="_EALQQS6JEd2UStPOAdOu7w" type="Partition">
+            <children xmi:id="_EALQRS6JEd2UStPOAdOu7w" type="Stereotype"/>
+            <children xmi:id="_EAUaMC6JEd2UStPOAdOu7w" type="PartitionName"/>
+            <children xmi:id="_EAUaMS6JEd2UStPOAdOu7w" type="PartitionCompartment">
+              <children xmi:id="_fd-XQS6LEd2UStPOAdOu7w">
+                <children xmi:id="_fd-XRC6LEd2UStPOAdOu7w" type="ImageCompartment">
+                  <layoutConstraint xmi:type="notation:Size" xmi:id="_fd-XRS6LEd2UStPOAdOu7w" width="1320" height="1320"/>
+                </children>
+                <children xmi:id="_fd-XRi6LEd2UStPOAdOu7w" type="Stereotype"/>
+                <children xmi:id="_fd-XRy6LEd2UStPOAdOu7w" type="InPartitions"/>
+                <children xmi:id="_fd-XSC6LEd2UStPOAdOu7w" type="Name"/>
+                <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="_fd-XQi6LEd2UStPOAdOu7w" showStereotype="Label"/>
+                <element xmi:type="uml:OpaqueAction" href="Blank%20Model.emx#_fd-XQC6LEd2UStPOAdOu7w?oracleModel/PU%201.3%20Logowanie%20do%20systemu./Pobranie%20danych%20o%20użytkowniku?"/>
+                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_fd-XQy6LEd2UStPOAdOu7w" x="729" y="8532" width="3782"/>
+              </children>
+              <children xmi:id="_D9y4YS6OEd2UStPOAdOu7w">
+                <children xmi:id="_D9y4ZC6OEd2UStPOAdOu7w" type="ImageCompartment">
+                  <layoutConstraint xmi:type="notation:Size" xmi:id="_D9y4ZS6OEd2UStPOAdOu7w" width="1320" height="1320"/>
+                </children>
+                <children xmi:id="_D9y4Zi6OEd2UStPOAdOu7w" type="Stereotype"/>
+                <children xmi:id="_D9y4Zy6OEd2UStPOAdOu7w" type="InPartitions"/>
+                <children xmi:id="_D9y4aC6OEd2UStPOAdOu7w" type="Name"/>
+                <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="_D9y4Yi6OEd2UStPOAdOu7w" showStereotype="Label"/>
+                <element xmi:type="uml:OpaqueAction" href="Blank%20Model.emx#_D9y4YC6OEd2UStPOAdOu7w?oracleModel/PU%201.3%20Logowanie%20do%20systemu./Zmiana%20stanu%20konta%20w%20BD?"/>
+                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_D9y4Yy6OEd2UStPOAdOu7w" x="132" y="22480" width="4099"/>
+              </children>
+              <children xmi:id="_kEIDAS6LEd2UStPOAdOu7w">
+                <children xmi:id="_kEIDBC6LEd2UStPOAdOu7w" type="ImageCompartment">
+                  <layoutConstraint xmi:type="notation:Size" xmi:id="_kEIDBS6LEd2UStPOAdOu7w" width="1320" height="1320"/>
+                </children>
+                <children xmi:id="_kEIDBi6LEd2UStPOAdOu7w" type="Stereotype"/>
+                <children xmi:id="_kEIDBy6LEd2UStPOAdOu7w" type="InPartitions"/>
+                <children xmi:id="_kEIDCC6LEd2UStPOAdOu7w" type="Name"/>
+                <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="_kEIDAi6LEd2UStPOAdOu7w" showStereotype="Label"/>
+                <element xmi:type="uml:OpaqueAction" href="Blank%20Model.emx#_kEIDAC6LEd2UStPOAdOu7w?oracleModel/PU%201.3%20Logowanie%20do%20systemu./Zapisanie%20próby%20logowania?"/>
+                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_kEIDAy6LEd2UStPOAdOu7w" x="132" y="15479" width="4072"/>
+              </children>
+              <styles xmi:type="umlnotation:UMLShapeCompartmentStyle" xmi:id="_EAUaMi6JEd2UStPOAdOu7w"/>
+            </children>
+            <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="_EALQQi6JEd2UStPOAdOu7w" showStereotype="Label"/>
+            <styles xmi:type="umlnotation:UMLFrameStyle" xmi:id="_EALQQy6JEd2UStPOAdOu7w"/>
+            <element xmi:type="uml:ActivityPartition" href="Blank%20Model.emx#_EALQQC6JEd2UStPOAdOu7w?oracleModel/PU%201.3%20Logowanie%20do%20systemu./Baza%20danych?"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_EALQRC6JEd2UStPOAdOu7w" x="15262" y="396" width="4867"/>
+          </children>
+          <styles xmi:type="umlnotation:UMLShapeCompartmentStyle" xmi:id="_fQrJ1C6FEd2UStPOAdOu7w"/>
+        </children>
+        <children xmi:id="_fQrJ1S6FEd2UStPOAdOu7w" type="Name"/>
+        <styles xmi:type="umlnotation:UMLFrameStyle" xmi:id="_fQrJ1i6FEd2UStPOAdOu7w" showStereotype="Label"/>
+        <element xmi:type="uml:Activity" href="Blank%20Model.emx#_fPe3AC6FEd2UStPOAdOu7w?oracleModel/PU%201.3%20Logowanie%20do%20systemu.?"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_fQrJ1y6FEd2UStPOAdOu7w" x="793" y="793" width="19917" height="36325"/>
+      </children>
+      <styles xmi:type="umlnotation:UMLDiagramStyle" xmi:id="_fQrJ2C6FEd2UStPOAdOu7w"/>
+      <element xmi:type="uml:Activity" href="Blank%20Model.emx#_fPe3AC6FEd2UStPOAdOu7w?oracleModel/PU%201.3%20Logowanie%20do%20systemu.?"/>
+      <edges xmi:id="__1xP4C6JEd2UStPOAdOu7w" source="_6qNxAC6JEd2UStPOAdOu7w" target="__z_HMC6JEd2UStPOAdOu7w">
+        <children xmi:id="__1xP4y6JEd2UStPOAdOu7w" type="ActivityEdgeLabelCompartment">
+          <children xmi:id="__1xP5S6JEd2UStPOAdOu7w" type="Stereotype"/>
+          <children xmi:id="__1xP5i6JEd2UStPOAdOu7w" type="ActivityEdgeLabel"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="__1xP5C6JEd2UStPOAdOu7w" y="-186"/>
+        </children>
+        <styles xmi:type="umlnotation:UMLConnectorStyle" xmi:id="__1xP4S6JEd2UStPOAdOu7w" routing="Rectilinear" showStereotype="Text"/>
+        <element xmi:type="uml:ControlFlow" href="Blank%20Model.emx#__0IRIC6JEd2UStPOAdOu7w?oracleModel/PU%201.3%20Logowanie%20do%20systemu./%3CControlFlow%3E?"/>
+        <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="__1xP4i6JEd2UStPOAdOu7w" points="[265, -26, -4233, -1243]$[4286, -26, -212, -1243]$[4286, 688, -212, -529]"/>
+      </edges>
+      <edges xmi:id="_EemcMC6KEd2UStPOAdOu7w" source="__z_HMC6JEd2UStPOAdOu7w" target="_EeJwQS6KEd2UStPOAdOu7w">
+        <children xmi:id="_EemcMy6KEd2UStPOAdOu7w" visible="false" type="ActivityEdgeLabelCompartment">
+          <children xmi:id="_EemcNS6KEd2UStPOAdOu7w" type="Stereotype"/>
+          <children xmi:id="_EemcNi6KEd2UStPOAdOu7w" type="ActivityEdgeLabel"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_EemcNC6KEd2UStPOAdOu7w" y="-186"/>
+        </children>
+        <styles xmi:type="umlnotation:UMLConnectorStyle" xmi:id="_EemcMS6KEd2UStPOAdOu7w" routing="Rectilinear" showStereotype="Text"/>
+        <element xmi:type="uml:ControlFlow" href="Blank%20Model.emx#_EecrMC6KEd2UStPOAdOu7w?oracleModel/PU%201.3%20Logowanie%20do%20systemu./pe?"/>
+        <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_EemcMi6KEd2UStPOAdOu7w" points="[-1905, 53, 2540, -1958]$[-4922, 53, -477, -1958]$[-4922, 1217, -477, -794]"/>
+      </edges>
+      <edges xmi:id="_OznvQi6KEd2UStPOAdOu7w" source="_EeJwQS6KEd2UStPOAdOu7w" target="_gNLcES6KEd2UStPOAdOu7w">
+        <children xmi:id="_OznvRS6KEd2UStPOAdOu7w" type="ActivityEdgeLabelCompartment">
+          <children xmi:id="_Ozw5MS6KEd2UStPOAdOu7w" type="Stereotype"/>
+          <children xmi:id="_Ozw5Mi6KEd2UStPOAdOu7w" type="ActivityEdgeLabel"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Ozw5MC6KEd2UStPOAdOu7w" y="-186"/>
+        </children>
+        <styles xmi:type="umlnotation:UMLConnectorStyle" xmi:id="_OznvQy6KEd2UStPOAdOu7w" routing="Rectilinear" showStereotype="Text"/>
+        <element xmi:type="uml:ControlFlow" href="Blank%20Model.emx#_Ozd-QC6KEd2UStPOAdOu7w?oracleModel/PU%201.3%20Logowanie%20do%20systemu./%3CControlFlow%3E?"/>
+        <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_OznvRC6KEd2UStPOAdOu7w" points="[-14, -30, 63, 131]$[-77, -160, 0, 1]"/>
+        <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_jB7boC6KEd2UStPOAdOu7w" id="top"/>
+      </edges>
+      <edges xmi:id="_mtE3sy6KEd2UStPOAdOu7w" source="_gNLcES6KEd2UStPOAdOu7w" target="_ms7GsC6KEd2UStPOAdOu7w">
+        <children xmi:id="_mtE3ti6KEd2UStPOAdOu7w" type="ActivityEdgeLabelCompartment">
+          <children xmi:id="_mtE3uC6KEd2UStPOAdOu7w" type="Stereotype"/>
+          <children xmi:id="_mtE3uS6KEd2UStPOAdOu7w" type="ActivityEdgeLabel"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_mtE3ty6KEd2UStPOAdOu7w" y="-186"/>
+        </children>
+        <styles xmi:type="umlnotation:UMLConnectorStyle" xmi:id="_mtE3tC6KEd2UStPOAdOu7w" routing="Rectilinear" showStereotype="Text"/>
+        <element xmi:type="uml:ControlFlow" href="Blank%20Model.emx#_mtE3sC6KEd2UStPOAdOu7w?oracleModel/PU%201.3%20Logowanie%20do%20systemu./'Anuluj'?"/>
+        <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_mtE3tS6KEd2UStPOAdOu7w" points="[15, 968, -329, -24723]$[15, 25480, -329, -211]"/>
+        <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_mtOBoC6KEd2UStPOAdOu7w" id="bottom"/>
+      </edges>
+      <edges xmi:id="_uPbO0y6KEd2UStPOAdOu7w" source="_gNLcES6KEd2UStPOAdOu7w" target="_uPRd0S6KEd2UStPOAdOu7w">
+        <children xmi:id="_uPbO1i6KEd2UStPOAdOu7w" type="ActivityEdgeLabelCompartment">
+          <children xmi:id="_uPbO2C6KEd2UStPOAdOu7w" type="Stereotype"/>
+          <children xmi:id="_uPbO2S6KEd2UStPOAdOu7w" type="ActivityEdgeLabel"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_uPbO1y6KEd2UStPOAdOu7w" y="-186"/>
+        </children>
+        <styles xmi:type="umlnotation:UMLConnectorStyle" xmi:id="_uPbO1C6KEd2UStPOAdOu7w" routing="Rectilinear" showStereotype="Text"/>
+        <element xmi:type="uml:ControlFlow" href="Blank%20Model.emx#_uPbO0C6KEd2UStPOAdOu7w?oracleModel/PU%201.3%20Logowanie%20do%20systemu./'Loguj'?"/>
+        <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_uPbO1S6KEd2UStPOAdOu7w" points="[0, 36, -106, 299]$[106, -262, 0, 1]"/>
+        <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_uPkYwC6KEd2UStPOAdOu7w" id="right"/>
+      </edges>
+      <edges xmi:id="_feRSMC6LEd2UStPOAdOu7w" source="_bYUJcS6LEd2UStPOAdOu7w" target="_fd-XQS6LEd2UStPOAdOu7w">
+        <children xmi:id="_feRSMy6LEd2UStPOAdOu7w" type="ActivityEdgeLabelCompartment">
+          <children xmi:id="_feRSNS6LEd2UStPOAdOu7w" type="Stereotype"/>
+          <children xmi:id="_feRSNi6LEd2UStPOAdOu7w" type="ActivityEdgeLabel"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_feRSNC6LEd2UStPOAdOu7w" y="-186"/>
+        </children>
+        <styles xmi:type="umlnotation:UMLConnectorStyle" xmi:id="_feRSMS6LEd2UStPOAdOu7w" routing="Rectilinear" showStereotype="Text"/>
+        <element xmi:type="uml:ControlFlow" href="Blank%20Model.emx#_feIIQC6LEd2UStPOAdOu7w?oracleModel/PU%201.3%20Logowanie%20do%20systemu./%3CControlFlow%3E?"/>
+        <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_feRSMi6LEd2UStPOAdOu7w" points="[2090, 185, -2699, -2487]$[4578, 185, -211, -2487]$[4578, 1984, -211, -688]"/>
+      </edges>
+      <edges xmi:id="_kEa98C6LEd2UStPOAdOu7w" source="_uPRd0S6KEd2UStPOAdOu7w" target="_bYUJcS6LEd2UStPOAdOu7w">
+        <children xmi:id="_kEa98y6LEd2UStPOAdOu7w" type="ActivityEdgeLabelCompartment">
+          <children xmi:id="_kEa99S6LEd2UStPOAdOu7w" type="Stereotype"/>
+          <children xmi:id="_kEa99i6LEd2UStPOAdOu7w" type="ActivityEdgeLabel"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_kEa99C6LEd2UStPOAdOu7w" y="-186"/>
+        </children>
+        <styles xmi:type="umlnotation:UMLConnectorStyle" xmi:id="_kEa98S6LEd2UStPOAdOu7w" routing="Rectilinear" showStereotype="Text"/>
+        <element xmi:type="uml:ControlFlow" href="Blank%20Model.emx#_kERM8C6LEd2UStPOAdOu7w?oracleModel/PU%201.3%20Logowanie%20do%20systemu./%3CControlFlow%3E?"/>
+        <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_kEa98i6LEd2UStPOAdOu7w" points="[7, -20, -89, 251]$[96, -270, 0, 1]"/>
+      </edges>
+      <edges xmi:id="_rtx8AC6LEd2UStPOAdOu7w" source="_fd-XQS6LEd2UStPOAdOu7w" target="_JG0OYS6TEd2UStPOAdOu7w">
+        <children xmi:id="_rtx8Ay6LEd2UStPOAdOu7w" visible="false" type="ActivityEdgeLabelCompartment">
+          <children xmi:id="_rtx8BS6LEd2UStPOAdOu7w" type="Stereotype"/>
+          <children xmi:id="_rtx8Bi6LEd2UStPOAdOu7w" type="ActivityEdgeLabel"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_rtx8BC6LEd2UStPOAdOu7w" y="-186"/>
+        </children>
+        <styles xmi:type="umlnotation:UMLConnectorStyle" xmi:id="_rtx8AS6LEd2UStPOAdOu7w" routing="Rectilinear" showStereotype="Text"/>
+        <element xmi:type="uml:ControlFlow" href="Blank%20Model.emx#_rtoLAC6LEd2UStPOAdOu7w?oracleModel/PU%201.3%20Logowanie%20do%20systemu./Porównanie%20hasła%20podanego%20przez%20użytkownika%20%20zawartym%20w%20BD?"/>
+        <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_rtx8Ai6LEd2UStPOAdOu7w" points="[-185, 450, 3546, -106]$[-1973, 450, 1758, -106]"/>
+        <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_OsTQMC6TEd2UStPOAdOu7w" id="(0.04970915,0.38353115)"/>
+        <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_OIib0C6TEd2UStPOAdOu7w" id="right"/>
+      </edges>
+      <edges xmi:id="_dbnogi6MEd2UStPOAdOu7w" source="_buPgsS6MEd2UStPOAdOu7w" target="_kEIDAS6LEd2UStPOAdOu7w">
+        <children xmi:id="_dbnohS6MEd2UStPOAdOu7w" type="ActivityEdgeLabelCompartment">
+          <children xmi:id="_dbnohy6MEd2UStPOAdOu7w" type="Stereotype"/>
+          <children xmi:id="_dbnoiC6MEd2UStPOAdOu7w" type="ActivityEdgeLabel"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_dbnohi6MEd2UStPOAdOu7w" y="-186"/>
+        </children>
+        <styles xmi:type="umlnotation:UMLConnectorStyle" xmi:id="_dbnogy6MEd2UStPOAdOu7w" routing="Rectilinear" showStereotype="Text"/>
+        <element xmi:type="uml:ControlFlow" href="Blank%20Model.emx#_dbeekC6MEd2UStPOAdOu7w?oracleModel/PU%201.3%20Logowanie%20do%20systemu./Nie?"/>
+        <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_dbnohC6MEd2UStPOAdOu7w" points="[9, 665, -5944, -2166]$[5768, 665, -185, -2166]$[5768, 2143, -185, -688]"/>
+        <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_dbxZgC6MEd2UStPOAdOu7w" id="right"/>
+      </edges>
+      <edges xmi:id="_fRou8i6MEd2UStPOAdOu7w" source="_rteaAS6LEd2UStPOAdOu7w" target="_buPgsS6MEd2UStPOAdOu7w">
+        <children xmi:id="_fRou9S6MEd2UStPOAdOu7w" type="ActivityEdgeLabelCompartment">
+          <children xmi:id="_fRou9y6MEd2UStPOAdOu7w" type="Stereotype"/>
+          <children xmi:id="_fRou-C6MEd2UStPOAdOu7w" type="ActivityEdgeLabel"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_fRou9i6MEd2UStPOAdOu7w" y="-186"/>
+        </children>
+        <styles xmi:type="umlnotation:UMLConnectorStyle" xmi:id="_fRou8y6MEd2UStPOAdOu7w" routing="Rectilinear" showStereotype="Text"/>
+        <element xmi:type="uml:ControlFlow" href="Blank%20Model.emx#_fRflAC6MEd2UStPOAdOu7w?oracleModel/PU%201.3%20Logowanie%20do%20systemu./%3CControlFlow%3E?"/>
+        <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_fRou9C6MEd2UStPOAdOu7w" points="[-27, 0, 344, -1270]$[-27, 611, 344, -659]"/>
+        <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_fRyf8C6MEd2UStPOAdOu7w" id="(0.51345456,1.0)"/>
+        <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_fRyf8S6MEd2UStPOAdOu7w" id="top"/>
+      </edges>
+      <edges xmi:id="_j_rycC6MEd2UStPOAdOu7w" source="_buPgsS6MEd2UStPOAdOu7w" target="_j_Y3gC6MEd2UStPOAdOu7w">
+        <children xmi:id="_j_rycy6MEd2UStPOAdOu7w" type="ActivityEdgeLabelCompartment">
+          <children xmi:id="_j_rydS6MEd2UStPOAdOu7w" type="Stereotype"/>
+          <children xmi:id="_j_rydi6MEd2UStPOAdOu7w" type="ActivityEdgeLabel"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_j_rydC6MEd2UStPOAdOu7w" x="-3154" y="-271"/>
+        </children>
+        <styles xmi:type="umlnotation:UMLConnectorStyle" xmi:id="_j_rycS6MEd2UStPOAdOu7w" routing="Rectilinear" showStereotype="Text"/>
+        <element xmi:type="uml:ControlFlow" href="Blank%20Model.emx#_j_iBcC6MEd2UStPOAdOu7w?oracleModel/PU%201.3%20Logowanie%20do%20systemu./Tak?"/>
+        <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_j_ryci6MEd2UStPOAdOu7w" points="[9, 665, -440, -10950]$[2539, 665, 2090, -10950]$[2539, 11403, 2090, -212]$[2196, 11403, 1747, -212]"/>
+        <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_j_rydy6MEd2UStPOAdOu7w" id="bottom"/>
+      </edges>
+      <edges xmi:id="_sU_3ki6MEd2UStPOAdOu7w" source="_j_Y3gC6MEd2UStPOAdOu7w" target="_sUs8oS6MEd2UStPOAdOu7w">
+        <children xmi:id="_sU_3lS6MEd2UStPOAdOu7w" type="ActivityEdgeLabelCompartment">
+          <children xmi:id="_sU_3ly6MEd2UStPOAdOu7w" type="Stereotype"/>
+          <children xmi:id="_sU_3mC6MEd2UStPOAdOu7w" type="ActivityEdgeLabel"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_sU_3li6MEd2UStPOAdOu7w" y="-186"/>
+        </children>
+        <styles xmi:type="umlnotation:UMLConnectorStyle" xmi:id="_sU_3ky6MEd2UStPOAdOu7w" routing="Rectilinear" showStereotype="Text"/>
+        <element xmi:type="uml:ControlFlow" href="Blank%20Model.emx#_sU2Gki6MEd2UStPOAdOu7w?oracleModel/PU%201.3%20Logowanie%20do%20systemu./%3CControlFlow%3E?"/>
+        <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_sU_3lC6MEd2UStPOAdOu7w" points="[-4, -33, 87, 694]$[-91, -726, 0, 1]"/>
+      </edges>
+      <edges xmi:id="_xEPN4C6MEd2UStPOAdOu7w" source="_sUs8oS6MEd2UStPOAdOu7w" target="_xD8S8S6MEd2UStPOAdOu7w">
+        <children xmi:id="_xEPN4y6MEd2UStPOAdOu7w" type="ActivityEdgeLabelCompartment">
+          <children xmi:id="_xEPN5S6MEd2UStPOAdOu7w" type="Stereotype"/>
+          <children xmi:id="_xEPN5i6MEd2UStPOAdOu7w" type="ActivityEdgeLabel"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_xEPN5C6MEd2UStPOAdOu7w" y="-186"/>
+        </children>
+        <styles xmi:type="umlnotation:UMLConnectorStyle" xmi:id="_xEPN4S6MEd2UStPOAdOu7w" routing="Rectilinear" showStereotype="Text"/>
+        <element xmi:type="uml:ControlFlow" href="Blank%20Model.emx#_xEFc4C6MEd2UStPOAdOu7w?oracleModel/PU%201.3%20Logowanie%20do%20systemu./%3CControlFlow%3E?"/>
+        <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_xEPN4i6MEd2UStPOAdOu7w" points="[-3, -26, 84, 778]$[-87, -803, 0, 1]"/>
+      </edges>
+      <edges xmi:id="_wI9b8C6NEd2UStPOAdOu7w" source="_kEIDAS6LEd2UStPOAdOu7w" target="_rH_ccS6NEd2UStPOAdOu7w">
+        <children xmi:id="_wI9b8y6NEd2UStPOAdOu7w" type="ActivityEdgeLabelCompartment">
+          <children xmi:id="_wI9b9S6NEd2UStPOAdOu7w" type="Stereotype"/>
+          <children xmi:id="_wI9b9i6NEd2UStPOAdOu7w" type="ActivityEdgeLabel"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_wI9b9C6NEd2UStPOAdOu7w" y="-186"/>
+        </children>
+        <styles xmi:type="umlnotation:UMLConnectorStyle" xmi:id="_wI9b8S6NEd2UStPOAdOu7w" routing="Rectilinear" showStereotype="Text"/>
+        <element xmi:type="uml:ControlFlow" href="Blank%20Model.emx#_wIzq8C6NEd2UStPOAdOu7w?oracleModel/PU%201.3%20Logowanie%20do%20systemu./%3CControlFlow%3E?"/>
+        <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_wI9b8i6NEd2UStPOAdOu7w" points="[0, 0, 20, -38]$[41, 36, 61, -2]"/>
+        <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_wI9b9y6NEd2UStPOAdOu7w" id="(0.63752455,1.0)"/>
+      </edges>
+      <edges xmi:id="_xVaA8C6NEd2UStPOAdOu7w" source="_rH_ccS6NEd2UStPOAdOu7w" target="_xVGe8S6NEd2UStPOAdOu7w">
+        <children xmi:id="_xVaA8y6NEd2UStPOAdOu7w" type="ActivityEdgeLabelCompartment">
+          <children xmi:id="_xVaA9S6NEd2UStPOAdOu7w" type="Stereotype"/>
+          <children xmi:id="_xVaA9i6NEd2UStPOAdOu7w" type="ActivityEdgeLabel"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_xVaA9C6NEd2UStPOAdOu7w" y="-186"/>
+        </children>
+        <styles xmi:type="umlnotation:UMLConnectorStyle" xmi:id="_xVaA8S6NEd2UStPOAdOu7w" routing="Rectilinear" showStereotype="Text"/>
+        <element xmi:type="uml:ControlFlow" href="Blank%20Model.emx#_xVQP8C6NEd2UStPOAdOu7w?oracleModel/PU%201.3%20Logowanie%20do%20systemu./%3CControlFlow%3E?"/>
+        <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_xVaA8i6NEd2UStPOAdOu7w" points="[-4, -30, 80, 646]$[-84, -676, 0, 0]"/>
+        <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_xVaA9y6NEd2UStPOAdOu7w" id="top"/>
+      </edges>
+      <edges xmi:id="_569hgC6NEd2UStPOAdOu7w" source="_xVGe8S6NEd2UStPOAdOu7w" target="__z_HMC6JEd2UStPOAdOu7w">
+        <children xmi:id="_569hgy6NEd2UStPOAdOu7w" type="ActivityEdgeLabelCompartment">
+          <children xmi:id="_569hhS6NEd2UStPOAdOu7w" type="Stereotype"/>
+          <children xmi:id="_569hhi6NEd2UStPOAdOu7w" type="ActivityEdgeLabel"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_569hhC6NEd2UStPOAdOu7w" x="-7215" y="977"/>
+        </children>
+        <styles xmi:type="umlnotation:UMLConnectorStyle" xmi:id="_569hgS6NEd2UStPOAdOu7w" routing="Rectilinear" showStereotype="Text"/>
+        <element xmi:type="uml:ControlFlow" href="Blank%20Model.emx#_56zwgC6NEd2UStPOAdOu7w?oracleModel/PU%201.3%20Logowanie%20do%20systemu./Nie?"/>
+        <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_569hgi6NEd2UStPOAdOu7w" points="[-1443, 20, 3610, 17747]$[-3148, 20, 1905, 17747]$[-3148, -17066, 1905, 661]"/>
+        <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_569hhy6NEd2UStPOAdOu7w" id="left"/>
+      </edges>
+      <edges xmi:id="__pOr4S6NEd2UStPOAdOu7w" source="_xVGe8S6NEd2UStPOAdOu7w" target="__o7w8S6NEd2UStPOAdOu7w">
+        <children xmi:id="__pOr5C6NEd2UStPOAdOu7w" type="ActivityEdgeLabelCompartment">
+          <children xmi:id="__pOr5i6NEd2UStPOAdOu7w" type="Stereotype"/>
+          <children xmi:id="__pOr5y6NEd2UStPOAdOu7w" type="ActivityEdgeLabel"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="__pOr5S6NEd2UStPOAdOu7w" y="-186"/>
+        </children>
+        <styles xmi:type="umlnotation:UMLConnectorStyle" xmi:id="__pOr4i6NEd2UStPOAdOu7w" routing="Rectilinear" showStereotype="Text"/>
+        <element xmi:type="uml:ControlFlow" href="Blank%20Model.emx#__pE64y6NEd2UStPOAdOu7w?oracleModel/PU%201.3%20Logowanie%20do%20systemu./%3CControlFlow%3E?"/>
+        <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="__pOr4y6NEd2UStPOAdOu7w" points="[0, 25, 91, 780]$[-91, -754, 0, 1]"/>
+        <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="__pYc4C6NEd2UStPOAdOu7w" id="bottom"/>
+      </edges>
+      <edges xmi:id="_D98pYy6OEd2UStPOAdOu7w" source="__o7w8S6NEd2UStPOAdOu7w" target="_D9y4YS6OEd2UStPOAdOu7w">
+        <children xmi:id="_D98pZi6OEd2UStPOAdOu7w" type="ActivityEdgeLabelCompartment">
+          <children xmi:id="_D98paC6OEd2UStPOAdOu7w" type="Stereotype"/>
+          <children xmi:id="_D98paS6OEd2UStPOAdOu7w" type="ActivityEdgeLabel"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_D98pZy6OEd2UStPOAdOu7w" y="-186"/>
+        </children>
+        <styles xmi:type="umlnotation:UMLConnectorStyle" xmi:id="_D98pZC6OEd2UStPOAdOu7w" routing="Rectilinear" showStereotype="Text"/>
+        <element xmi:type="uml:ControlFlow" href="Blank%20Model.emx#_D98pYC6OEd2UStPOAdOu7w?oracleModel/PU%201.3%20Logowanie%20do%20systemu./%3CControlFlow%3E?"/>
+        <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_D98pZS6OEd2UStPOAdOu7w" points="[3, -20, -124, 814]$[127, -833, 0, 1]"/>
+      </edges>
+      <edges xmi:id="_ayQusy6OEd2UStPOAdOu7w" source="_D9y4YS6OEd2UStPOAdOu7w" target="_ayG9sC6OEd2UStPOAdOu7w">
+        <children xmi:id="_ayQuti6OEd2UStPOAdOu7w" type="ActivityEdgeLabelCompartment">
+          <children xmi:id="_ayQuuC6OEd2UStPOAdOu7w" type="Stereotype"/>
+          <children xmi:id="_ayQuuS6OEd2UStPOAdOu7w" type="ActivityEdgeLabel"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ayQuty6OEd2UStPOAdOu7w" y="-186"/>
+        </children>
+        <styles xmi:type="umlnotation:UMLConnectorStyle" xmi:id="_ayQutC6OEd2UStPOAdOu7w" routing="Rectilinear" showStereotype="Text"/>
+        <element xmi:type="uml:ControlFlow" href="Blank%20Model.emx#_ayQusC6OEd2UStPOAdOu7w?oracleModel/PU%201.3%20Logowanie%20do%20systemu./%3CControlFlow%3E?"/>
+        <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_ayQutS6OEd2UStPOAdOu7w" points="[-15, -26, 477, 850]$[-491, -875, 1, 1]"/>
+      </edges>
+      <edges xmi:id="_YHBToi6SEd2UStPOAdOu7w" source="_ayG9sC6OEd2UStPOAdOu7w" target="_ms7GsC6KEd2UStPOAdOu7w">
+        <children xmi:id="_YHBTpS6SEd2UStPOAdOu7w" type="ActivityEdgeLabelCompartment">
+          <children xmi:id="_YHBTpy6SEd2UStPOAdOu7w" type="Stereotype"/>
+          <children xmi:id="_YHBTqC6SEd2UStPOAdOu7w" type="ActivityEdgeLabel"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_YHBTpi6SEd2UStPOAdOu7w" y="-186"/>
+        </children>
+        <styles xmi:type="umlnotation:UMLConnectorStyle" xmi:id="_YHBToy6SEd2UStPOAdOu7w" routing="Rectilinear" showStereotype="Text"/>
+        <element xmi:type="uml:ControlFlow" href="Blank%20Model.emx#_YG3ioC6SEd2UStPOAdOu7w?oracleModel/PU%201.3%20Logowanie%20do%20systemu./%3CControlFlow%3E?"/>
+        <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_YHBTpC6SEd2UStPOAdOu7w" points="[0, -291, 3413, -7990]$[-2090, -291, 1323, -7990]$[-2090, 7065, 1323, -634]$[-3440, 7065, -27, -634]$[-3440, 7408, -27, -291]"/>
+        <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_YHBTqS6SEd2UStPOAdOu7w" id="(0.0,0.63724035)"/>
+      </edges>
+      <edges xmi:id="_ghGkAC6SEd2UStPOAdOu7w" source="_xD8S8S6MEd2UStPOAdOu7w" target="_ggzCAS6SEd2UStPOAdOu7w">
+        <children xmi:id="_ghGkAy6SEd2UStPOAdOu7w" type="ActivityEdgeLabelCompartment">
+          <children xmi:id="_ghGkBS6SEd2UStPOAdOu7w" type="Stereotype"/>
+          <children xmi:id="_ghGkBi6SEd2UStPOAdOu7w" type="ActivityEdgeLabel"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ghGkBC6SEd2UStPOAdOu7w" y="-186"/>
+        </children>
+        <styles xmi:type="umlnotation:UMLConnectorStyle" xmi:id="_ghGkAS6SEd2UStPOAdOu7w" routing="Rectilinear" showStereotype="Text"/>
+        <element xmi:type="uml:ControlFlow" href="Blank%20Model.emx#_gg8zBS6SEd2UStPOAdOu7w?oracleModel/PU%201.3%20Logowanie%20do%20systemu./%3CControlFlow%3E?"/>
+        <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_ghGkAi6SEd2UStPOAdOu7w" points="[-8, -33, 279, 1083]$[-287, -1115, 0, 1]"/>
+      </edges>
+      <edges xmi:id="_lVHFky6SEd2UStPOAdOu7w" source="_ggzCAS6SEd2UStPOAdOu7w" target="_ms7GsC6KEd2UStPOAdOu7w">
+        <children xmi:id="_lVQPgC6SEd2UStPOAdOu7w" type="ActivityEdgeLabelCompartment">
+          <children xmi:id="_lVQPgi6SEd2UStPOAdOu7w" type="Stereotype"/>
+          <children xmi:id="_lVQPgy6SEd2UStPOAdOu7w" type="ActivityEdgeLabel"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_lVQPgS6SEd2UStPOAdOu7w" y="-186"/>
+        </children>
+        <styles xmi:type="umlnotation:UMLConnectorStyle" xmi:id="_lVHFlC6SEd2UStPOAdOu7w" routing="Rectilinear" showStereotype="Text"/>
+        <element xmi:type="uml:ControlFlow" href="Blank%20Model.emx#_lVHFkC6SEd2UStPOAdOu7w?oracleModel/PU%201.3%20Logowanie%20do%20systemu./%3CControlFlow%3E?"/>
+        <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_lVHFlS6SEd2UStPOAdOu7w" points="[0, 0, 154, 60]$[-154, -72, 0, -12]"/>
+        <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_lVQPhC6SEd2UStPOAdOu7w" id="(0.30838403,0.0)"/>
+      </edges>
+      <edges xmi:id="_P_JYIy6TEd2UStPOAdOu7w" source="_JG0OYS6TEd2UStPOAdOu7w" target="_rteaAS6LEd2UStPOAdOu7w">
+        <children xmi:id="_P_JYJi6TEd2UStPOAdOu7w" type="ActivityEdgeLabelCompartment">
+          <children xmi:id="_P_JYKC6TEd2UStPOAdOu7w" type="Stereotype"/>
+          <children xmi:id="_P_JYKS6TEd2UStPOAdOu7w" type="ActivityEdgeLabel"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_P_JYJy6TEd2UStPOAdOu7w" y="-186"/>
+        </children>
+        <styles xmi:type="umlnotation:UMLConnectorStyle" xmi:id="_P_JYJC6TEd2UStPOAdOu7w" routing="Rectilinear" showStereotype="Text"/>
+        <element xmi:type="uml:ControlFlow" href="Blank%20Model.emx#_P_JYIC6TEd2UStPOAdOu7w?oracleModel/PU%201.3%20Logowanie%20do%20systemu./Nie?"/>
+        <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_P_JYJS6TEd2UStPOAdOu7w" points="[0, 30, 24, -67]$[17, 55, 41, -42]"/>
+        <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_P_JYKi6TEd2UStPOAdOu7w" id="bottom"/>
+      </edges>
+      <edges xmi:id="_RV36gy6TEd2UStPOAdOu7w" source="_JG0OYS6TEd2UStPOAdOu7w" target="_RVuJgC6TEd2UStPOAdOu7w">
+        <children xmi:id="_RV36hi6TEd2UStPOAdOu7w" type="ActivityEdgeLabelCompartment">
+          <children xmi:id="_RV36iC6TEd2UStPOAdOu7w" type="Stereotype"/>
+          <children xmi:id="_RV36iS6TEd2UStPOAdOu7w" type="ActivityEdgeLabel"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_RV36hy6TEd2UStPOAdOu7w" x="-1086" y="108"/>
+        </children>
+        <styles xmi:type="umlnotation:UMLConnectorStyle" xmi:id="_RV36hC6TEd2UStPOAdOu7w" routing="Rectilinear" showStereotype="Text"/>
+        <element xmi:type="uml:ControlFlow" href="Blank%20Model.emx#_RV36gC6TEd2UStPOAdOu7w?oracleModel/PU%201.3%20Logowanie%20do%20systemu./Tak?"/>
+        <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_RV36hS6TEd2UStPOAdOu7w" points="[12, 805, 5859, -1391]$[-6058, 805, -211, -1391]$[-6058, 1138, -211, -1058]"/>
+        <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_RWBrgC6TEd2UStPOAdOu7w" id="bottom"/>
+      </edges>
+      <edges xmi:id="_XYHJwC6TEd2UStPOAdOu7w" source="_RVuJgC6TEd2UStPOAdOu7w" target="_ms7GsC6KEd2UStPOAdOu7w">
+        <children xmi:id="_XYHJwy6TEd2UStPOAdOu7w" type="ActivityEdgeLabelCompartment">
+          <children xmi:id="_XYHJxS6TEd2UStPOAdOu7w" type="Stereotype"/>
+          <children xmi:id="_XYHJxi6TEd2UStPOAdOu7w" type="ActivityEdgeLabel"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_XYHJxC6TEd2UStPOAdOu7w" y="-186"/>
+        </children>
+        <styles xmi:type="umlnotation:UMLConnectorStyle" xmi:id="_XYHJwS6TEd2UStPOAdOu7w" routing="Rectilinear" showStereotype="Text"/>
+        <element xmi:type="uml:ControlFlow" href="Blank%20Model.emx#_XX9YwC6TEd2UStPOAdOu7w?oracleModel/PU%201.3%20Logowanie%20do%20systemu./%3CControlFlow%3E?"/>
+        <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_XYHJwi6TEd2UStPOAdOu7w" points="[-847, -1561, 2910, -20690]$[-2937, -1561, 820, -20690]$[-2937, 18071, 820, -1058]$[-3784, 18071, -27, -1058]$[-3784, 18838, -27, -291]"/>
+        <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_XYHJxy6TEd2UStPOAdOu7w" id="(0.22906537,1.0)"/>
       </edges>
     </contents>
   </eAnnotations>
