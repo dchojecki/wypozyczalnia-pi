@@ -22,13 +22,6 @@ public class ZarzWypOracleDAO implements ZarzadzanieWypozyczeniamiDAO {
 
     private EntityManager em;
 
-    /**
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * (non-Javadoc)
-     * @see ZarzadzanieWypozyczeniamiDAO#utworzNoweZamowienie()
-     * @generated "UML to Java (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform)"
-     */
     public ZamowienieDAO utworzNoweZamowienie() {
         ZamowienieDAO z = new ZamowienieDAO();
         em.getTransaction().begin();
@@ -77,7 +70,8 @@ public class ZarzWypOracleDAO implements ZarzadzanieWypozyczeniamiDAO {
      * @see ZarzadzanieWypozyczeniamiDAO#pobierzWszystkieZamowienia()
      * @generated "UML to Java (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform)"
      */
-    public Collection<? extends ZamowienieDAO> pobierzWszystkieZamowienia() {
+    @SuppressWarnings("unchecked")
+	public Collection<? extends ZamowienieDAO> pobierzWszystkieZamowienia() {
         List<ZamowienieDAO> zamowienia =
                 em.createNamedQuery("znajdzWszystkieZamowienia").getResultList();
         return zamowienia;
@@ -91,7 +85,8 @@ public class ZarzWypOracleDAO implements ZarzadzanieWypozyczeniamiDAO {
      * @see ZarzadzanieWypozyczeniamiDAO#pobierzWszystkieZamowieniaOdDo()
      * @generated "UML to Java (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform)"
      */
-    public Collection<? extends ZamowienieDAO> pobierzWszystkieZamowieniaOdDo(Date odd, Date ddo) {
+    @SuppressWarnings("unchecked")
+	public Collection<? extends ZamowienieDAO> pobierzWszystkieZamowieniaOdDo(Date odd, Date ddo) {
         List<ZamowienieDAO> zamowienia =
                 em.createNamedQuery("znajdzWszystkieZamowieniaOdDo").
                 setParameter("od", odd).setParameter("do", ddo).
