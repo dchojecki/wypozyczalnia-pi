@@ -4,7 +4,6 @@
 package wypozyczalnia.dao.fabryki.zarzadzaniewypozyczeniami;
 
 import wypozyczalnia.dao.fabryki.FactoryType;
-import wypozyczalnia.mock.ZarzWypOracleDAOMock;
 
 /** 
  * <!-- begin-user-doc -->
@@ -18,7 +17,7 @@ public class ZarzWypGLFabrykaDanych extends ZarzWypFabrykaDanych {
     private static ZarzWypOracleDAOMock mock = null;
     
     public ZarzWypGLFabrykaDanych() {
-        setFactoryType(FactoryType.OracleDAO);
+        setFactoryType(FactoryType.MEMORY);
     }
 
     @Override
