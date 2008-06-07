@@ -3,9 +3,10 @@
  */
 package wypozyczalnia.dao.fabryki.zarzadzaniekontami;
 
-import wypozyczalnia.dao.fabryki.*;
 import java.util.Collection;
+
 import wypozyczalnia.dao.KlientDAO;
+import wypozyczalnia.dao.PracownikDAO;
 
 /** 
  * <!-- begin-user-doc -->
@@ -38,5 +39,9 @@ public interface ZarzadzanieKontamiDAO {
     KlientDAO utworzNoweKonto();
 
     void usunKonto(KlientDAO daneKlienta);
+    
+    
+    PracownikDAO zwrocDanePracownika(String login);
+    PracownikDAO scalDanePracownika(PracownikDAO pracownik);
 
 }
