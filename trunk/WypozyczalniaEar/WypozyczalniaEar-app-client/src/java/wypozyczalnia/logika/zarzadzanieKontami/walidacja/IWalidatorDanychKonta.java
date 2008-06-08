@@ -3,7 +3,7 @@
  * and open the template in the editor.
  */
 
-package wypozyczalnia.logika.zarzadzanieKontami.walidacja;
+package wypozyczalniaklient.delegacje.konta.walidacja;
 
 /**
  *
