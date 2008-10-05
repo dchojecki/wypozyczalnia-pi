@@ -4,7 +4,7 @@
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
 	<classpathentry combineaccessrules="false" kind="src" path="/WypozyczalniaEjb"/>
 	<classpathentry combineaccessrules="false" kind="src" path="/WypozyczalniaEjbClient"/>
-	<classpathentry kind="lib" path="D:/marcindata/studia/pi/fitnesse/fitnesse.jar"/>
-	<classpathentry kind="lib" path="D:/marcindata/studia/pi/fitnesse/fitlibrary.jar"/>
+	<classpathentry kind="lib" path="C:/pi/fitnesse/fitnesse.jar"/>
+	<classpathentry kind="lib" path="C:/pi/fitnesse/fitlibrary.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
