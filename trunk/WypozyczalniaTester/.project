@@ -3,7 +3,6 @@
 	<name>WypozyczalniaTester</name>
 	<comment></comment>
 	<projects>
-		<project>WypozyczalniaDAO</project>
 		<project>WypozyczalniaEjbClient</project>
 	</projects>
 	<buildSpec>

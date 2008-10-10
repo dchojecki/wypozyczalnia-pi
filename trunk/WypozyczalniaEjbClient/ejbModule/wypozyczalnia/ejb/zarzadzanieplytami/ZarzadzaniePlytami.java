@@ -7,6 +7,7 @@ import javax.ejb.Remote;
 
 import zarzadzanieplytami.FilmTO;
 import zarzadzanieplytami.FilmTOZbior;
+import zarzadzanieplytami.PlytaTO;
 import zarzadzanieplytami.PlytaTOZbior;
 
 /** 
@@ -21,5 +22,9 @@ public interface ZarzadzaniePlytami{
 	
 	FilmTOZbior zwrocListeWszystkichFilmow();
 	PlytaTOZbior zwrocListeWszystkichPlyt(FilmTO film);
+
+	
+	void dodajFilm(FilmTO film);
+	void dodajPlyte(FilmTO film, PlytaTO plyta);
 	
 }

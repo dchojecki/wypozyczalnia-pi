@@ -47,7 +47,8 @@ public class ZarzadzanieKontamiBean implements ZarzadzanieKontami,
 	 * 
 	 * @see ZarzadzanieKontami#modyfikujDaneAdresu(AdresTO adres)
 	 * @generated "UML to Java
-	 *            (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform)"
+	 *            (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform
+	 *            )"
 	 */
 	public void modyfikujDaneAdresu(AdresTO adres) {
 		ZarzadzanieKontamiDAO dao = getFabrykaDAO().pobierzWypozyczalniaDAO();
@@ -70,7 +71,8 @@ public class ZarzadzanieKontamiBean implements ZarzadzanieKontami,
 	 * 
 	 * @see ZarzadzanieKontami#modyfikujDaneKlienta(KlientTO klient)
 	 * @generated "UML to Java
-	 *            (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform)"
+	 *            (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform
+	 *            )"
 	 */
 	public void modyfikujDaneKlienta(KlientTO klient) {
 		ZarzadzanieKontamiDAO dao = getFabrykaDAO().pobierzWypozyczalniaDAO();
@@ -90,7 +92,8 @@ public class ZarzadzanieKontamiBean implements ZarzadzanieKontami,
 	 * 
 	 * @see ZarzadzanieKontami#modyfikujDaneKonta(KontoTO konto)
 	 * @generated "UML to Java
-	 *            (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform)"
+	 *            (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform
+	 *            )"
 	 */
 	public void modyfikujDaneKonta(KontoTO konto) {
 		ZarzadzanieKontamiDAO dao = getFabrykaDAO().pobierzWypozyczalniaDAO();
@@ -106,7 +109,8 @@ public class ZarzadzanieKontamiBean implements ZarzadzanieKontami,
 	 * 
 	 * @see ZarzadzanieKontami#zwrocDaneAdresu(String nrPesel)
 	 * @generated "UML to Java
-	 *            (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform)"
+	 *            (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform
+	 *            )"
 	 */
 	public AdresTO zwrocDaneAdresu(String nrPesel) {
 		ZarzadzanieKontamiDAO dao = getFabrykaDAO().pobierzWypozyczalniaDAO();
@@ -119,7 +123,8 @@ public class ZarzadzanieKontamiBean implements ZarzadzanieKontami,
 	 * 
 	 * @see ZarzadzanieKontami#zwrocDaneKonta(Integer nrKonta)
 	 * @generated "UML to Java
-	 *            (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform)"
+	 *            (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform
+	 *            )"
 	 */
 	public KontoTO zwrocDaneKonta(String nrpesel) {
 		ZarzadzanieKontamiDAO dao = getFabrykaDAO().pobierzWypozyczalniaDAO();
@@ -132,7 +137,8 @@ public class ZarzadzanieKontamiBean implements ZarzadzanieKontami,
 	 * 
 	 * @see ZarzadzanieKontami#zwrocDaneKlienta(String nrpesel)
 	 * @generated "UML to Java
-	 *            (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform)"
+	 *            (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform
+	 *            )"
 	 */
 	public KlientTO zwrocDaneKlienta(String nrpesel) {
 		ZarzadzanieKontamiDAO dao = getFabrykaDAO().pobierzWypozyczalniaDAO();
@@ -145,7 +151,8 @@ public class ZarzadzanieKontamiBean implements ZarzadzanieKontami,
 	 * 
 	 * @see ZarzadzanieKontami#zablokujKonto(Integer nrKonta)
 	 * @generated "UML to Java
-	 *            (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform)"
+	 *            (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform
+	 *            )"
 	 */
 	public void zablokujKonto(KlientTO klient) {
 		ZarzadzanieKontamiDAO dao = getFabrykaDAO().pobierzWypozyczalniaDAO();
@@ -168,7 +175,8 @@ public class ZarzadzanieKontamiBean implements ZarzadzanieKontami,
 	 * 
 	 * @see ZarzadzanieKontami#odblokujKonto(Integer nrKonta)
 	 * @generated "UML to Java
-	 *            (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform)"
+	 *            (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform
+	 *            )"
 	 */
 	public void odblokujKonto(KlientTO klient) {
 		// begin-user-code
@@ -183,7 +191,8 @@ public class ZarzadzanieKontamiBean implements ZarzadzanieKontami,
 	 * @see ZarzadzanieKontami#zmienHaslo(String nowySkrotHasla, Integer
 	 *      nrKonta, String starySkrotHasla)
 	 * @generated "UML to Java
-	 *            (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform)"
+	 *            (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform
+	 *            )"
 	 */
 	public void zmienHaslo(String nowySkrotHasla, Integer nrKonta,
 			String starySkrotHasla) {
@@ -204,7 +213,8 @@ public class ZarzadzanieKontamiBean implements ZarzadzanieKontami,
 	 * 
 	 * @see ZarzadzanieKontami#zaloguj(String skrotHasla, Integer nrKonta)
 	 * @generated "UML to Java
-	 *            (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform)"
+	 *            (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform
+	 *            )"
 	 */
 	public KontoPracownikaTO zaloguj(String login, String haslo)
 			throws LogowanieWyjatek {
@@ -216,6 +226,7 @@ public class ZarzadzanieKontamiBean implements ZarzadzanieKontami,
 
 		try {
 			pracownik.getKonto().loguj(haslo);
+			dao.scalDanePracownika(pracownik);
 		} catch (NieobsluzoneZdarzenie e) {
 			if (pracownik.czyJestAdministratorem()) {
 				throw new LogowanieWyjatek(msg2, TransferObjectFactory
@@ -245,7 +256,8 @@ public class ZarzadzanieKontamiBean implements ZarzadzanieKontami,
 	 * 
 	 * @see ZarzadzanieKontami#czyKlientZarejestrowany(Integer nrPesel)
 	 * @generated "UML to Java
-	 *            (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform)"
+	 *            (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform
+	 *            )"
 	 */
 	public boolean czyKlientZarejestrowany(String nrPesel) {
 		ZarzadzanieKontamiDAO dao = getFabrykaDAO().pobierzWypozyczalniaDAO();
@@ -263,7 +275,8 @@ public class ZarzadzanieKontamiBean implements ZarzadzanieKontami,
 	 * 
 	 * @see ZarzadzanieKontami#zarejestrujKlienta(String nrPesel)
 	 * @generated "UML to Java
-	 *            (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform)"
+	 *            (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform
+	 *            )"
 	 */
 	public KontoTO zarejestrujKlienta(KlientTO klient, AdresTO adres) {
 
@@ -287,7 +300,7 @@ public class ZarzadzanieKontamiBean implements ZarzadzanieKontami,
 		nowyAdres.setNrMieszkania(adres.getNrMieszkania());
 		nowyAdres.setUlica(adres.getUlica());
 
-		dao.scalDaneKlienta(nowyKlient);
+		nowyKlient = dao.scalDaneKlienta(nowyKlient);
 
 		KontoTO retKonto = TransferObjectFactory.stworzKontoTO(nowyKlient);
 		return retKonto;
@@ -355,6 +368,17 @@ public class ZarzadzanieKontamiBean implements ZarzadzanieKontami,
 		return TransferObjectFactory.stworzKontoPracownikaTO(pracownik
 				.getKonto());
 
+	}
+
+	@Override
+	public KontoPracownikaTO zwrocDanePracownika(String login) {
+		ZarzadzanieKontamiDAO dao = getFabrykaDAO().pobierzWypozyczalniaDAO();
+		PracownikDAO pracownik = dao.zwrocDanePracownika(login);
+
+		if (pracownik == null)
+			return null;
+		return TransferObjectFactory.stworzKontoPracownikaTO(pracownik
+				.getKonto());
 	}
 
 }

@@ -36,41 +36,47 @@ public class Activator extends AbstractUIPlugin {
 	/*
 	 * (non-Javadoc)
 	 * 
-	 * @see org.eclipse.ui.plugin.AbstractUIPlugin#start(org.osgi.framework.BundleContext)
+	 * @see
+	 * org.eclipse.ui.plugin.AbstractUIPlugin#start(org.osgi.framework.BundleContext
+	 * )
 	 */
 	public void start(BundleContext context) throws Exception {
 		super.start(context);
 		plugin = this;
 		Properties properties = new Properties();
 		properties.put("java.naming.factory.initial",
-		"org.jnp.interfaces.NamingContextFactory");
+				"org.jnp.interfaces.NamingContextFactory");
 		properties.put("java.naming.factory.url.pkgs",
-		"=org.jboss.naming:org.jnp.interfaces");
-		properties.put("java.naming.provider.url","localhost:1099");
+				"=org.jboss.naming:org.jnp.interfaces");
+		properties.put("java.naming.provider.url", "localhost:1099");
 
 		Context context2;
 		try {
+/*			try {
+				ApplicationContext appCont = new ClassPathXmlApplicationContext(
+						"lib/jndibeans.xml");
+				ZarzadzanieKontami za = (ZarzadzanieKontami) appCont
+						.getBean("ZarzadzanieKontami");
+				System.out.println(za.toString());
+			} catch (Exception e) {
+				e.printStackTrace();
+			}*/
 			context2 = new InitialContext(properties);
 
-//			ZamowienieTimer timer = (ZamowienieTimer) context2
-//			.lookup("WypozyczalniaEar/TimerBean/remote");
-//			timer.za();
-
 			ZarzadzanieWypozyczeniami wyp = (ZarzadzanieWypozyczeniami) context2
-			.lookup("WypozyczalniaEar/ZarzadzanieWypozyczeniamiBean/remote");
+					.lookup("WypozyczalniaEar/ZarzadzanieWypozyczeniamiBean/remote");
 
-			ZarzadzanieWypozyczeniamiDelegacja.getInstance().setRealSubject(wyp);
+			ZarzadzanieWypozyczeniamiDelegacja.getInstance()
+					.setRealSubject(wyp);
 
 			ZarzadzanieKontami konta = (ZarzadzanieKontami) context2
-			.lookup("WypozyczalniaEar/ZarzadzanieKontamiBean/remote");
+					.lookup("WypozyczalniaEar/ZarzadzanieKontamiBean/remote");
 			ZarzadzanieKontamiDelegacja.setZarzadzanieKontami(konta);
 
-
 			ZarzadzaniePlytami plyty = (ZarzadzaniePlytami) context2
-			.lookup("WypozyczalniaEar/ZarzadzaniePlytamiBean/remote");
-			
-			ZarzadzaniePlytamiDelegacja.setZarzadzanieKontami(plyty);
+					.lookup("WypozyczalniaEar/ZarzadzaniePlytamiBean/remote");
 
+			ZarzadzaniePlytamiDelegacja.setZarzadzanieKontami(plyty);
 
 		} catch (Exception e) {
 			e.printStackTrace();
@@ -80,7 +86,9 @@ public class Activator extends AbstractUIPlugin {
 	/*
 	 * (non-Javadoc)
 	 * 
-	 * @see org.eclipse.ui.plugin.AbstractUIPlugin#stop(org.osgi.framework.BundleContext)
+	 * @see
+	 * org.eclipse.ui.plugin.AbstractUIPlugin#stop(org.osgi.framework.BundleContext
+	 * )
 	 */
 	public void stop(BundleContext context) throws Exception {
 		plugin = null;

@@ -24,7 +24,7 @@ public class ZarzPlytamiGLFabrykaDanych extends ZarzPlytamiFabrykaDanych {
 	private static ZarzadzaniePlytamiOracleDAOMock mock = null;
 
 	public ZarzPlytamiGLFabrykaDanych() {
-		setFactoryType(FactoryType.MEMORY);
+		setFactoryType(FactoryType.OracleDAO);
 	}
 
 	@Override

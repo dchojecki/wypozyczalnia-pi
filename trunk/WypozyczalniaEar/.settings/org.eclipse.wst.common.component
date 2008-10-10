@@ -12,5 +12,9 @@
         <dependent-module archiveName="WypozyczalniaDAO.jar" deploy-path="/" handle="module:/resource/WypozyczalniaDAO/WypozyczalniaDAO">
             <dependency-type>uses</dependency-type>
         </dependent-module>
+        <dependent-module deploy-path="/" handle="module:/resource/WypozyczalniaWeb/WypozyczalniaWeb">
+            <dependent-object/>
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
     </wb-module>
 </project-modules>

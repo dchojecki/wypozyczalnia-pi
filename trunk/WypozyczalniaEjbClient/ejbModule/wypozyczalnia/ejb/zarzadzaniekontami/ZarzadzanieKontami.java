@@ -136,4 +136,6 @@ public interface ZarzadzanieKontami {
     void usunKonto(KontoTO konto);
     
     void dodajPracownika(String imie, String nazwisko, String login, String haslo, boolean administrator);
+    
+    KontoPracownikaTO zwrocDanePracownika(String login);
 }

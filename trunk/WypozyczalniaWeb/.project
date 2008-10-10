@@ -3,6 +3,7 @@
 	<name>WypozyczalniaWeb</name>
 	<comment></comment>
 	<projects>
+		<project>WypozyczalniaEjbClient</project>
 	</projects>
 	<buildSpec>
 		<buildCommand>

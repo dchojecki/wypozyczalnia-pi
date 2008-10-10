@@ -3,8 +3,9 @@
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
-	<bean name="/testspring" class="test.SpringTestController">
-	</bean>
+	<bean name="/dispatch21" class="test.SpringTestController3"/>
+	<bean name="/dispatch22" class="test.SpringTestController4"/>
+	
 
 	<bean
 		class="org.springframework.web.servlet.view.InternalResourceViewResolver">

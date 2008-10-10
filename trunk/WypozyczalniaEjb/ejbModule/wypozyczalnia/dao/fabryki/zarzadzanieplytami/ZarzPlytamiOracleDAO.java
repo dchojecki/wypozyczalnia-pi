@@ -30,12 +30,6 @@ public class ZarzPlytamiOracleDAO implements ZarzadzaniePlytamiDAOBean {
 	private EntityManager em;
 
 	public ZarzPlytamiOracleDAO() {
-		try {
-			EntityManagerFactory emf = Persistence
-					.createEntityManagerFactory("DerbyPU");
-			em = emf.createEntityManager();
-		} catch (Exception e) {
-		}
 	}
 
 	public ZarzPlytamiOracleDAO(EntityManager em) {
@@ -64,8 +58,8 @@ public class ZarzPlytamiOracleDAO implements ZarzadzaniePlytamiDAOBean {
 	}
 
 	@Override
-	public void scalPlyte(PlytaDAO plyta) {
-		// TODO Auto-generated method stub
+	public void scalFilm(FilmDAO film) {
+		em.merge(film);
 
 	}
 
@@ -80,6 +74,12 @@ public class ZarzPlytamiOracleDAO implements ZarzadzaniePlytamiDAOBean {
 	@Override
 	public PlytaDAO zwrocPlyte(Integer id) {
 		PlytaDAO p = (PlytaDAO) em.createNamedQuery("zwrocPlyte").setParameter("id", id).getSingleResult();
+		return p;
+	}
+
+	@Override
+	public FilmDAO zwrocFilm(Integer id) {
+		FilmDAO p = (FilmDAO) em.createNamedQuery("zwrocFilm").setParameter("id", id).getSingleResult();
 		return p;
 	}
 }

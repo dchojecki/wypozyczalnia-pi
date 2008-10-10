@@ -203,4 +203,9 @@ public class ZarzadzanieKontamiDelegacja {
 		}
 		return null;
 	}
+	
+	
+	public KontoPracownikaTO zwrocDanePracownika(String login) {
+		return zarzadzaniekontami.zwrocDanePracownika(login);
+	}
 }

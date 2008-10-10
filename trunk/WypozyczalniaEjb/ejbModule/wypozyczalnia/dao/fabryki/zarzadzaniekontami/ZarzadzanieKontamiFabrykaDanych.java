@@ -24,7 +24,7 @@ public abstract class ZarzadzanieKontamiFabrykaDanych {
 
 
 	public ZarzadzanieKontamiFabrykaDanych() {
-		setFactoryType(FactoryType.MEMORY);
+		setFactoryType(FactoryType.OracleDAO);
 	}
 
 	public abstract ZarzadzanieKontamiDAO pobierzWypozyczalniaDAO();

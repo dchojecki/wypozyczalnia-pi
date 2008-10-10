@@ -9,6 +9,9 @@
 </head>
 <body>
 
-${date}
+${date} <br>
+${id} <br>
+${bean.name} <br>
+${bean}
 </body>
 </html>

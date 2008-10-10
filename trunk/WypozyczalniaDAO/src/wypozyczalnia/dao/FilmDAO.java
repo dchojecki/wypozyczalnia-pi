@@ -27,7 +27,11 @@ import javax.persistence.Transient;
  */
 @Entity
 @Table(name = "FilmTbl")
-@NamedQueries( { @NamedQuery(name = "zwrocListeWszystkichFilmow", query = "select object(o) from FilmDAO o") })
+@NamedQueries( { 
+	@NamedQuery(name = "zwrocListeWszystkichFilmow", query = "select object(o) from FilmDAO o"),
+	@NamedQuery(name = "zwrocFilm", query = "select object(o) from FilmDAO o where o.id = :id") 
+
+})
 public class FilmDAO implements Serializable {
 	/**
 	 * 
@@ -43,7 +47,8 @@ public class FilmDAO implements Serializable {
 	 * @param theGatunki
 	 *            the gatunki to set
 	 * @generated "UML to Java
-	 *            (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform)"
+	 *            (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform
+	 *            )"
 	 */
 	@OneToMany(mappedBy = "film")
 	private Set<PlytaDAO> plyty = new HashSet<PlytaDAO>();
@@ -53,7 +58,8 @@ public class FilmDAO implements Serializable {
 	 * 
 	 * @return the plyty
 	 * @generated "UML to Java
-	 *            (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform)"
+	 *            (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform
+	 *            )"
 	 */
 	public Set<PlytaDAO> getPlyty() {
 		// begin-user-code
@@ -67,7 +73,8 @@ public class FilmDAO implements Serializable {
 	 * @param thePlyty
 	 *            the plyty to set
 	 * @generated "UML to Java
-	 *            (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform)"
+	 *            (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform
+	 *            )"
 	 */
 	public void setPlyty(Set<PlytaDAO> thePlyty) {
 		// begin-user-code
@@ -79,7 +86,8 @@ public class FilmDAO implements Serializable {
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * 
 	 * @generated "UML to Java
-	 *            (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform)"
+	 *            (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform
+	 *            )"
 	 */
 	private String tytul;
 
@@ -88,7 +96,8 @@ public class FilmDAO implements Serializable {
 	 * 
 	 * @return the tytul
 	 * @generated "UML to Java
-	 *            (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform)"
+	 *            (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform
+	 *            )"
 	 */
 	public String getTytul() {
 		// begin-user-code
@@ -102,7 +111,8 @@ public class FilmDAO implements Serializable {
 	 * @param theTytul
 	 *            the tytul to set
 	 * @generated "UML to Java
-	 *            (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform)"
+	 *            (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform
+	 *            )"
 	 */
 	public void setTytul(String theTytul) {
 		// begin-user-code
@@ -114,7 +124,8 @@ public class FilmDAO implements Serializable {
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * 
 	 * @generated "UML to Java
-	 *            (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform)"
+	 *            (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform
+	 *            )"
 	 */
 	@Transient
 	private Date rokPremiery;
@@ -124,7 +135,8 @@ public class FilmDAO implements Serializable {
 	 * 
 	 * @return the rokPremiery
 	 * @generated "UML to Java
-	 *            (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform)"
+	 *            (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform
+	 *            )"
 	 */
 	public Date getRokPremiery() {
 		// begin-user-code
@@ -138,7 +150,8 @@ public class FilmDAO implements Serializable {
 	 * @param theRokPremiery
 	 *            the rokPremiery to set
 	 * @generated "UML to Java
-	 *            (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform)"
+	 *            (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform
+	 *            )"
 	 */
 	public void setRokPremiery(Date theRokPremiery) {
 		// begin-user-code
@@ -150,7 +163,8 @@ public class FilmDAO implements Serializable {
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * 
 	 * @generated "UML to Java
-	 *            (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform)"
+	 *            (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform
+	 *            )"
 	 */
 	private String opisFabuly;
 
@@ -159,7 +173,8 @@ public class FilmDAO implements Serializable {
 	 * 
 	 * @return the opisFabuly
 	 * @generated "UML to Java
-	 *            (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform)"
+	 *            (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform
+	 *            )"
 	 */
 	public String getOpisFabuly() {
 		// begin-user-code
@@ -173,7 +188,8 @@ public class FilmDAO implements Serializable {
 	 * @param theOpisFabuly
 	 *            the opisFabuly to set
 	 * @generated "UML to Java
-	 *            (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform)"
+	 *            (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform
+	 *            )"
 	 */
 	public void setOpisFabuly(String theOpisFabuly) {
 		// begin-user-code
@@ -185,7 +201,8 @@ public class FilmDAO implements Serializable {
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * 
 	 * @generated "UML to Java
-	 *            (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform)"
+	 *            (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform
+	 *            )"
 	 */
 	// private OcenyZbior oceny;
 	/**
@@ -193,7 +210,8 @@ public class FilmDAO implements Serializable {
 	 * 
 	 * @return the oceny
 	 * @generated "UML to Java
-	 *            (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform)"
+	 *            (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform
+	 *            )"
 	 */
 	public Integer getId() {
 		return id;
