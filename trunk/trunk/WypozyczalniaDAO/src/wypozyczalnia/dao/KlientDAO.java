@@ -10,12 +10,14 @@ import java.util.Set;
 import javax.persistence.CascadeType;
 import javax.persistence.DiscriminatorValue;
 import javax.persistence.Entity;
+import javax.persistence.FetchType;
 import javax.persistence.JoinColumn;
 import javax.persistence.NamedQueries;
 import javax.persistence.NamedQuery;
 import javax.persistence.OneToMany;
 import javax.persistence.OneToOne;
 import javax.persistence.Table;
+import javax.persistence.Transient;
 
 /** 
  * <!-- begin-user-doc -->
@@ -30,7 +32,7 @@ import javax.persistence.Table;
 @NamedQueries({
     @NamedQuery(name="czyKlientZarejestrowany", query="select object(o) from KlientDAO o"),
     @NamedQuery(name="pobierzDaneKlienta", query="select object(o) from KlientDAO o where o.nrpesel = :pesel"),    
-    @NamedQuery(name="zwrocWszystkichKlientow", query="select object(o) from KlientDAO o")
+    @NamedQuery(name="zwrocWszystkichKlientow", query="select object(o) from KlientDAO o fetch all properties")
     
 })
 public class KlientDAO extends OsobaDAO implements Serializable {
@@ -48,12 +50,12 @@ public class KlientDAO extends OsobaDAO implements Serializable {
      * 
      * @generated "UML to Java (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform)"
      */
-    @OneToMany(cascade = {CascadeType.ALL}, mappedBy = "klient")
+    @OneToMany(cascade = {CascadeType.ALL}, mappedBy = "klient", fetch=FetchType.EAGER)
     private Set<KontoDAO> konta = new HashSet<KontoDAO>();
 
     /** 
      * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+     * <!-- end-usefror-doc -->
      * @return the konta
      * @generated "UML to Java (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform)"
      */

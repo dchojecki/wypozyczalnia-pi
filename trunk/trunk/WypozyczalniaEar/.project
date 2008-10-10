@@ -6,6 +6,7 @@
 		<project>WypozyczalniaEjb</project>
 		<project>WypozyczalniaEjbClient</project>
 		<project>WypozyczalniaDAO</project>
+		<project>WypozyczalniaWeb</project>
 	</projects>
 	<buildSpec>
 		<buildCommand>

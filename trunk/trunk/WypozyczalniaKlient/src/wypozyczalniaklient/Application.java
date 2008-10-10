@@ -18,13 +18,14 @@ public class Application implements IApplication {
 	/*
 	 * (non-Javadoc)
 	 * 
-	 * @see org.eclipse.equinox.app.IApplication#start(org.eclipse.equinox.app.IApplicationContext)
+	 * @seeorg.eclipse.equinox.app.IApplication#start(org.eclipse.equinox.app.
+	 * IApplicationContext)
 	 */
 	public Object start(IApplicationContext context) throws Exception {
 		Display display = PlatformUI.createDisplay();
 		try {
 			if (!login(display)) {
-				//return IApplication.EXIT_OK;
+				return IApplication.EXIT_OK;
 			}
 
 			int returnCode = PlatformUI.createAndRunWorkbench(display,
@@ -41,10 +42,18 @@ public class Application implements IApplication {
 
 	private boolean login(Display display) {
 
-		ZarzadzanieKontamiDelegacja konta = ZarzadzanieKontamiDelegacja.getInstance();
-		konta.dodajPracownika("marcin", "kowalski", "mkowalski_user", "1234", false);
-		konta.dodajPracownika("marcin", "kowalski", "mkowalski_root", "1234", true);
-		
+		ZarzadzanieKontamiDelegacja konta = ZarzadzanieKontamiDelegacja
+				.getInstance();
+
+		if (konta.zwrocDanePracownika("mkowalski_user") == null) {
+			konta.dodajPracownika("marcin", "kowalski", "mkowalski_user",
+					"1234", false);
+		}
+
+		if (konta.zwrocDanePracownika("admin") == null) {
+			konta.dodajPracownika("marcin", "kowalski", "admin", "1234", true);
+		}
+
 		LoginDialog login = new LoginDialog(null);
 		if (login.open() != Window.OK) {
 			return false;

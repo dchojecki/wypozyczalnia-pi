@@ -117,6 +117,7 @@ public class ZarzadzanieWypozyczeniamiBean implements ZarzadzanieWypozyczeniami 
 			PlytaDAO plyta = zarzPlytami.zwrocPlyte(pt.getIdPlyty());
 			
 			PozycjaZamowieniaDAO pd = new PozycjaZamowieniaDAO();
+			pd.setZamowienie(zamowienie);
 			pd.setPlyta(plyta);
 			zamowienie.getPozycje().add(pd);
 		}

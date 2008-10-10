@@ -15,6 +15,7 @@ import wypozyczalnia.dao.fabryki.zarzadzanieplytami.ZarzPlytamiGLFabrykaDanych;
 import wypozyczalnia.dao.fabryki.zarzadzanieplytami.ZarzadzaniePlytamiDAO;
 import zarzadzanieplytami.FilmTO;
 import zarzadzanieplytami.FilmTOZbior;
+import zarzadzanieplytami.PlytaTO;
 import zarzadzanieplytami.PlytaTOZbior;
 
 /**
@@ -49,6 +50,31 @@ public class ZarzadzaniePlytamiBean implements ZarzadzaniePlytami {
 	 */
 	public ZarzPlytamiFabrykaDanych getFabrykaDAO() {
 		return fabrykaDAO;
+	}
+
+	@Override
+	public void dodajPlyte(FilmTO film, PlytaTO plyta) {
+		ZarzadzaniePlytamiDAO dao = getFabrykaDAO().createZarzadzaniePlytamiDAO();
+		FilmDAO f = dao.zwrocFilm(film.getId());
+		PlytaDAO p = new PlytaDAO();
+		p.setFilm(f);
+		p.setStanplyty(plyta.getStan());
+		p.setUwagiDoEgzemplarza(plyta.getUwagiDoEgzemplarza());		
+		f.getPlyty().add(p);
+		
+		dao.scalFilm(f);
+		
+	}
+	
+	@Override
+	public void dodajFilm(FilmTO film) {
+		FilmDAO f = new FilmDAO();
+		f.setOpisFabuly(film.getOpisFabuly());
+		f.setRokPremiery(film.getRokPremiery());
+		f.setTytul(film.getTytul());
+		ZarzadzaniePlytamiDAO dao = getFabrykaDAO().createZarzadzaniePlytamiDAO();
+		dao.scalFilm(f);		
+		
 	}
 
 }

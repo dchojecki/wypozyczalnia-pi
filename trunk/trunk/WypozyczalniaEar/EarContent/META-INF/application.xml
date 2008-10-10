@@ -6,4 +6,10 @@
   <module>
     <java>WypozyczalniaDAO.jar</java>
   </module>
+  <module>
+    <web>
+      <web-uri>WypozyczalniaWeb.war</web-uri>
+      <context-root>WypozyczalniaWeb</context-root>
+    </web>
+  </module>
 </application>

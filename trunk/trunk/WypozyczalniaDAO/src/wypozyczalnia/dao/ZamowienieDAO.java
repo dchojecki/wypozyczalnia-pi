@@ -16,6 +16,7 @@ import javax.persistence.CascadeType;
 import javax.persistence.Entity;
 import javax.persistence.EnumType;
 import javax.persistence.Enumerated;
+import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.persistence.ManyToOne;
@@ -56,9 +57,10 @@ public class ZamowienieDAO implements Serializable {
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * 
 	 * @generated "UML to Java
-	 *            (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform)"
+	 *            (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform
+	 *            )"
 	 */
-	@OneToMany(cascade = { CascadeType.ALL }, mappedBy = "zamowienie")
+	@OneToMany(cascade = { CascadeType.ALL }, mappedBy = "zamowienie", fetch = FetchType.EAGER)
 	private Set<PozycjaZamowieniaDAO> pozycje = new HashSet<PozycjaZamowieniaDAO>();
 	@ManyToOne(cascade = { CascadeType.ALL })
 	private KontoDAO konto;
@@ -68,7 +70,8 @@ public class ZamowienieDAO implements Serializable {
 	 * 
 	 * @return the pozycje
 	 * @generated "UML to Java
-	 *            (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform)"
+	 *            (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform
+	 *            )"
 	 */
 	public Set<PozycjaZamowieniaDAO> getPozycje() {
 		// begin-user-code
@@ -82,7 +85,8 @@ public class ZamowienieDAO implements Serializable {
 	 * @param thePozycje
 	 *            the pozycje to set
 	 * @generated "UML to Java
-	 *            (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform)"
+	 *            (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform
+	 *            )"
 	 */
 	public void setPozycje(Set<PozycjaZamowieniaDAO> thePozycje) {
 		// begin-user-code
@@ -94,7 +98,8 @@ public class ZamowienieDAO implements Serializable {
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * 
 	 * @generated "UML to Java
-	 *            (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform)"
+	 *            (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform
+	 *            )"
 	 */
 	@Temporal(javax.persistence.TemporalType.DATE)
 	private Date dataPrzyjecia;
@@ -104,7 +109,8 @@ public class ZamowienieDAO implements Serializable {
 	 * 
 	 * @return the dataPrzyjecia
 	 * @generated "UML to Java
-	 *            (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform)"
+	 *            (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform
+	 *            )"
 	 */
 	public Date getDataPrzyjecia() {
 		// begin-user-code
@@ -118,7 +124,8 @@ public class ZamowienieDAO implements Serializable {
 	 * @param theDataPrzyjecia
 	 *            the dataPrzyjecia to set
 	 * @generated "UML to Java
-	 *            (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform)"
+	 *            (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform
+	 *            )"
 	 */
 	private void setDataPrzyjecia() {
 		dataPrzyjecia = new Date();
@@ -132,7 +139,8 @@ public class ZamowienieDAO implements Serializable {
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * 
 	 * @generated "UML to Java
-	 *            (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform)"
+	 *            (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform
+	 *            )"
 	 */
 	@Temporal(javax.persistence.TemporalType.DATE)
 	private Date dataRealizacji;
@@ -142,7 +150,8 @@ public class ZamowienieDAO implements Serializable {
 	 * 
 	 * @return the dataRelizacji
 	 * @generated "UML to Java
-	 *            (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform)"
+	 *            (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform
+	 *            )"
 	 */
 	public Date getDataRealizacji() {
 		// begin-user-code
@@ -156,7 +165,8 @@ public class ZamowienieDAO implements Serializable {
 	 * @param theDataRelizacji
 	 *            the dataRelizacji to set
 	 * @generated "UML to Java
-	 *            (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform)"
+	 *            (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform
+	 *            )"
 	 */
 	private void setDataRealizacji() {
 		dataRealizacji = new Date();
@@ -170,7 +180,8 @@ public class ZamowienieDAO implements Serializable {
 	 * 
 	 * @return the dataRelizacji
 	 * @generated "UML to Java
-	 *            (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform)"
+	 *            (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform
+	 *            )"
 	 */
 	public Date getDataZalegle() {
 		// begin-user-code
@@ -184,7 +195,8 @@ public class ZamowienieDAO implements Serializable {
 	 * @param theDataRelizacji
 	 *            the dataRelizacji to set
 	 * @generated "UML to Java
-	 *            (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform)"
+	 *            (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform
+	 *            )"
 	 */
 	private void setDataZalegle() {
 		dataZalegle = new Date();
@@ -194,7 +206,8 @@ public class ZamowienieDAO implements Serializable {
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * 
 	 * @generated "UML to Java
-	 *            (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform)"
+	 *            (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform
+	 *            )"
 	 */
 	@Temporal(javax.persistence.TemporalType.DATE)
 	private Date dataDoOdbioru;
@@ -204,7 +217,8 @@ public class ZamowienieDAO implements Serializable {
 	 * 
 	 * @return the dataOdbioru
 	 * @generated "UML to Java
-	 *            (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform)"
+	 *            (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform
+	 *            )"
 	 */
 	public Date getDataDoOdbioru() {
 		// begin-user-code
@@ -220,7 +234,8 @@ public class ZamowienieDAO implements Serializable {
 	 * 
 	 * @return the dataOdbioru
 	 * @generated "UML to Java
-	 *            (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform)"
+	 *            (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform
+	 *            )"
 	 */
 	public Date getDataAnulowania() {
 		// begin-user-code
@@ -234,7 +249,8 @@ public class ZamowienieDAO implements Serializable {
 	 * @param theDataOdbioru
 	 *            the dataOdbioru to set
 	 * @generated "UML to Java
-	 *            (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform)"
+	 *            (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform
+	 *            )"
 	 */
 	private void setDataAnulowania() {
 		dataAnulowania = new Date();
@@ -244,7 +260,8 @@ public class ZamowienieDAO implements Serializable {
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * 
 	 * @generated "UML to Java
-	 *            (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform)"
+	 *            (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform
+	 *            )"
 	 */
 	@Basic
 	@Enumerated(EnumType.ORDINAL)
@@ -312,7 +329,8 @@ public class ZamowienieDAO implements Serializable {
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * 
 	 * @generated "UML to Java
-	 *            (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform)"
+	 *            (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform
+	 *            )"
 	 */
 	public void odebrane() {
 
@@ -326,7 +344,8 @@ public class ZamowienieDAO implements Serializable {
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * 
 	 * @generated "UML to Java
-	 *            (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform)"
+	 *            (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform
+	 *            )"
 	 */
 	public void anuluj() {
 		if (getStanzamowienia() != StanZamowienia.DOODIORU
@@ -344,7 +363,8 @@ public class ZamowienieDAO implements Serializable {
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * 
 	 * @generated "UML to Java
-	 *            (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform)"
+	 *            (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform
+	 *            )"
 	 */
 	public void oddane() {
 		if (getStanzamowienia() != StanZamowienia.POZYCZONE) {
@@ -357,7 +377,8 @@ public class ZamowienieDAO implements Serializable {
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * 
 	 * @generated "UML to Java
-	 *            (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform)"
+	 *            (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform
+	 *            )"
 	 */
 	public void uregulowano() {
 		if (getStanzamowienia() != StanZamowienia.ZALEGLE) {
@@ -370,7 +391,8 @@ public class ZamowienieDAO implements Serializable {
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * 
 	 * @generated "UML to Java
-	 *            (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform)"
+	 *            (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform
+	 *            )"
 	 */
 	public void sprawdzCzyZalegle() {
 		setStanzamowienia(ZALEGLE);// TODO
@@ -381,7 +403,8 @@ public class ZamowienieDAO implements Serializable {
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * 
 	 * @generated "UML to Java
-	 *            (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform)"
+	 *            (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform
+	 *            )"
 	 */
 	private void zarezerwujPlyty() {
 		for (PozycjaZamowieniaDAO p : pozycje) {
@@ -394,7 +417,8 @@ public class ZamowienieDAO implements Serializable {
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * 
 	 * @generated "UML to Java
-	 *            (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform)"
+	 *            (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform
+	 *            )"
 	 */
 	private void anulujRezerwacjePlyt() {
 		for (PozycjaZamowieniaDAO p : pozycje) {
@@ -406,7 +430,8 @@ public class ZamowienieDAO implements Serializable {
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * 
 	 * @generated "UML to Java
-	 *            (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform)"
+	 *            (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform
+	 *            )"
 	 */
 	private void pozyczPlyty() {
 		for (PozycjaZamowieniaDAO p : pozycje) {
@@ -418,7 +443,8 @@ public class ZamowienieDAO implements Serializable {
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * 
 	 * @generated "UML to Java
-	 *            (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform)"
+	 *            (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform
+	 *            )"
 	 */
 	private void oddajPlyty() {
 		for (PozycjaZamowieniaDAO p : pozycje) {

@@ -3,6 +3,7 @@ package wypozyczalniaklient.delegacje.plyty;
 import wypozyczalnia.ejb.zarzadzanieplytami.ZarzadzaniePlytami;
 import zarzadzanieplytami.FilmTO;
 import zarzadzanieplytami.FilmTOZbior;
+import zarzadzanieplytami.PlytaTO;
 import zarzadzanieplytami.PlytaTOZbior;
 
 public class ZarzadzaniePlytamiDelegacja {
@@ -13,10 +14,10 @@ public class ZarzadzaniePlytamiDelegacja {
 		 * @generated "UML to Java
 		 *            (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform)"
 		 */
-		private static ZarzadzaniePlytami zarzadzaniekontami;
+		private static ZarzadzaniePlytami zarzadzanieplytami;
 
 		public static void setZarzadzanieKontami(ZarzadzaniePlytami zarza) {
-			zarzadzaniekontami = zarza;
+			zarzadzanieplytami = zarza;
 		}
 
 		/**
@@ -59,13 +60,22 @@ public class ZarzadzaniePlytamiDelegacja {
 		}
 
 		public FilmTOZbior zwrocListeWszystkichFilmow() {
-			FilmTOZbior z = zarzadzaniekontami.zwrocListeWszystkichFilmow();
+			FilmTOZbior z = zarzadzanieplytami.zwrocListeWszystkichFilmow();
 			return z;
 		}
 
 		public PlytaTOZbior zwrocListeWszystkichPlyt(FilmTO film) {
-			PlytaTOZbior z = zarzadzaniekontami.zwrocListeWszystkichPlyt(film);
+			PlytaTOZbior z = zarzadzanieplytami.zwrocListeWszystkichPlyt(film);
 			return z;
+		}
+		
+		
+		public void dodajFilm(FilmTO film) {
+			zarzadzanieplytami.dodajFilm(film);
+		}
+		
+		public void dodajPlyte(FilmTO film, PlytaTO plyta) {
+			zarzadzanieplytami.dodajPlyte(film, plyta);
 		}
 	}
 

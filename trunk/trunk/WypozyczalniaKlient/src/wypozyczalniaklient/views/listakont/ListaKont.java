@@ -31,17 +31,22 @@ import org.eclipse.ui.PlatformUI;
 import org.eclipse.ui.part.DrillDownAdapter;
 import org.eclipse.ui.part.ViewPart;
 
+import wypozyczalnia.dao.StanPlyty;
 import wypozyczalnia.ejb.zarzadzniewypozyczeniami.ZarzadzanieWypozyczeniami;
+import wypozyczalnia.to.zarzadzaniekontami.AdresTO;
 import wypozyczalnia.to.zarzadzaniekontami.KontoTO;
 import wypozyczalnia.to.zarzadzaniekontami.KontoTOZbior;
 import wypozyczalniaklient.delegacje.konta.ZarzadzanieKontamiDelegacja;
 import wypozyczalniaklient.delegacje.konta.ZarzadzanieKontamiWyjatek;
 import wypozyczalniaklient.delegacje.konta.walidacja.WalidatorDanychKontaWyjatek;
+import wypozyczalniaklient.delegacje.plyty.ZarzadzaniePlytamiDelegacja;
 import wypozyczalniaklient.delegacje.wypozyczenia.ZarzadzanieWypozyczeniamiDelegacja;
 import wypozyczalniaklient.editors.danekonta.DaneKontaEdytor;
 import wypozyczalniaklient.editors.danekonta.DaneKontaInput;
 import wypozyczalniaklient.wizards.nowekonto.KreatorNowegoKonta;
 import wypozyczalniaklient.wizards.zablokujkonto.ZablokujKontoWizard;
+import zarzadzanieplytami.FilmTO;
+import zarzadzanieplytami.PlytaTO;
 
 public class ListaKont extends ViewPart {
 
@@ -52,6 +57,8 @@ public class ListaKont extends ViewPart {
 	private Action usunKonto;
 	private Action zablokujKonto;
 	private Action doubleClickAction;
+	private Action testactionKonto;
+	private Action testactionPlyta;
 
 	class NameSorter extends ViewerSorter {
 	}
@@ -63,12 +70,13 @@ public class ListaKont extends ViewPart {
 	}
 
 	public void createPartControl(Composite parent) {
-		viewer = new TableViewer(parent, SWT.MULTI | SWT.H_SCROLL | SWT.V_SCROLL);
-//		drillDownAdapter = new DrillDownAdapter(viewer);
+		viewer = new TableViewer(parent, SWT.MULTI | SWT.H_SCROLL
+				| SWT.V_SCROLL);
+		// drillDownAdapter = new DrillDownAdapter(viewer);
 		viewer.setContentProvider(new ListaUzytkownikowCP(this));
 		viewer.setLabelProvider(new ViewLabelProvider(this));
 		viewer.setSorter(new NameSorter());
-		
+
 		Table table = viewer.getTable();
 		table.setLinesVisible(true);
 		table.setHeaderVisible(true);
@@ -79,7 +87,7 @@ public class ListaKont extends ViewPart {
 
 		column = new TableColumn(table, SWT.LEFT, 1);
 		column.setText("Stan");
-		column.setWidth(200);		
+		column.setWidth(200);
 		makeActions();
 		hookContextMenu();
 		hookDoubleClickAction();
@@ -136,7 +144,10 @@ public class ListaKont extends ViewPart {
 		manager.add(usunKonto);
 		manager.add(new Separator());
 		manager.add(zablokujKonto);
-//		drillDownAdapter.addNavigationActions(manager);
+		manager.add(testactionKonto);
+		manager.add(testactionPlyta);
+
+		// drillDownAdapter.addNavigationActions(manager);
 	}
 
 	private void makeActions() {
@@ -232,6 +243,56 @@ public class ListaKont extends ViewPart {
 				} catch (PartInitException e) {
 					e.printStackTrace();
 				}
+			}
+		};
+
+		testactionKonto = new Action() {
+			public void run() {
+				ZarzadzanieKontamiDelegacja zk = ZarzadzanieKontamiDelegacja
+						.getInstance();
+				KontoTO konto;
+				try {
+					konto = zk.utworzNoweKonto("Kowalski", "Marcin",
+							new Date(), "85110916799", "scinek@gmail.com");
+
+					AdresTO adres = new AdresTO();
+					adres.setMiast("Wroclaw");
+					adres.setNrPeselKlienta(konto.getNrPeselKlienta());
+					adres.setUlica("Pilczycka");
+					adres.setNrMieszkania(109);
+					adres.setNrDomu(3);
+
+					zk.uaktualnijDaneAdresu(adres);
+
+					ListaKont.this.refreshViewer();
+
+				} catch (Exception e) {
+					e.printStackTrace();
+				}
+			}
+		};
+		testactionPlyta = new Action() {
+			public void run() {
+				ZarzadzaniePlytamiDelegacja zp = ZarzadzaniePlytamiDelegacja.getInstance();
+				FilmTO f = new FilmTO();
+				f.setOpisFabuly("fajny film");
+				f.setRokPremiery(new Date());
+				f.setTytul("Indiana Jones");
+				zp.dodajFilm(f);
+				
+				
+				PlytaTO p = new PlytaTO();
+				p.setDataNabycia(new Date());
+				p.setStan(StanPlyty.NIEWYPOZYCZONA);
+				p.setUwagiDoEgzemplarza("porysowana");
+				zp.dodajPlyte(f, p);
+				
+				p = new PlytaTO();
+				p.setDataNabycia(new Date());
+				p.setStan(StanPlyty.NIEWYPOZYCZONA);
+				p.setUwagiDoEgzemplarza("porysowana");
+				zp.dodajPlyte(f, p);
+				
 			}
 		};
 	}

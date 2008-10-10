@@ -39,6 +39,7 @@ public class ZarzadzanieKontamiOracleDAO implements ZarzadzanieKontamiDAOBean {
 	public Collection<KlientDAO> zwrocListeWszystkichKlientow() {
 		List<KlientDAO> klienci = em
 				.createNamedQuery("zwrocWszystkichKlientow").getResultList();
+
 		return klienci;
 	}
 
@@ -79,7 +80,6 @@ public class ZarzadzanieKontamiOracleDAO implements ZarzadzanieKontamiDAOBean {
 		noweKonto.setKlient(nowyKlient);
 		nowyKlient.getKonta().add(noweKonto);
 
-		em.persist(nowyAdres);
 		return nowyKlient;
 
 	}
@@ -125,7 +125,7 @@ public class ZarzadzanieKontamiOracleDAO implements ZarzadzanieKontamiDAOBean {
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
-		
+
 	}
 
 }
