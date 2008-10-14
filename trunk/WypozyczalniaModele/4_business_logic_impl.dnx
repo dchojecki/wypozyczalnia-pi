@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--xtools2_universal_type_manager-->
+<?com.ibm.xtools.emf.core.signature <signature id="com.ibm.xtools.mmi.ui.signatures.diagram" version="7.0.0"><feature description="" name="Rational Modeling Platform (com.ibm.xtools.rmp)" url="" version="7.0.0"/></signature>?>
+<notation:Diagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.0/notation" xmlns:uml="http://www.eclipse.org/uml2/2.0.0/UML" xmlns:umlnotation="http://www.ibm.com/xtools/1.5.2/Umlnotation" xmi:id="_Z_fFwJotEd2oA608hDWMrw" type="Class" name="4_business_logic_impl.dnx">
+  <children xmi:id="_cVbpepotEd2oA608hDWMrw">
+    <children xmi:id="_cVbpfZotEd2oA608hDWMrw" type="ImageCompartment">
+      <layoutConstraint xmi:type="notation:Size" xmi:id="_cVbpfpotEd2oA608hDWMrw" width="1320" height="1320"/>
+    </children>
+    <children xmi:id="_cVbpf5otEd2oA608hDWMrw" type="Stereotype"/>
+    <children xmi:id="_cVbpgJotEd2oA608hDWMrw" type="Name"/>
+    <children xmi:id="_cVbpgZotEd2oA608hDWMrw" type="Parent"/>
+    <children xmi:id="_cVbpgpotEd2oA608hDWMrw" type="AttributeCompartment">
+      <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_cVbpg5otEd2oA608hDWMrw"/>
+    </children>
+    <children xmi:id="_cVbphJotEd2oA608hDWMrw" type="OperationCompartment">
+      <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_cVbphZotEd2oA608hDWMrw"/>
+    </children>
+    <children xmi:id="_cVbphpotEd2oA608hDWMrw" visible="false" type="SignalCompartment">
+      <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_cVbph5otEd2oA608hDWMrw"/>
+    </children>
+    <children xmi:id="_cVbpiJotEd2oA608hDWMrw" visible="false" type="StructureCompartment">
+      <styles xmi:type="umlnotation:UMLShapeCompartmentStyle" xmi:id="_cVbpiZotEd2oA608hDWMrw"/>
+    </children>
+    <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="_cVbpe5otEd2oA608hDWMrw" showStereotype="Label"/>
+    <element xmi:type="uml:Class" href="JavaUMLModel1224015297176.emx#_yxbK0JosEd2oA608hDWMrw?4_businesslogic_impl/wypozyczalnia/dao/fabryki/TransferObjectFactory?"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_cVbpfJotEd2oA608hDWMrw" x="1430" y="1430"/>
+  </children>
+  <children xmi:id="_cVbpipotEd2oA608hDWMrw">
+    <children xmi:id="_cVbpjZotEd2oA608hDWMrw" type="ImageCompartment">
+      <layoutConstraint xmi:type="notation:Size" xmi:id="_cVbpjpotEd2oA608hDWMrw" width="1320" height="1320"/>
+    </children>
+    <children xmi:id="_cVbpj5otEd2oA608hDWMrw" type="Stereotype"/>
+    <children xmi:id="_cVbpkJotEd2oA608hDWMrw" type="Kind"/>
+    <children xmi:id="_cVhwEJotEd2oA608hDWMrw" type="Name"/>
+    <children xmi:id="_cVhwEZotEd2oA608hDWMrw" type="Parent"/>
+    <children xmi:id="_cVhwEpotEd2oA608hDWMrw" type="EnumerationCompartment">
+      <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_cVhwE5otEd2oA608hDWMrw"/>
+    </children>
+    <children xmi:id="_cVhwFJotEd2oA608hDWMrw" visible="false" type="AttributeCompartment">
+      <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_cVhwFZotEd2oA608hDWMrw"/>
+    </children>
+    <children xmi:id="_cVhwFpotEd2oA608hDWMrw" visible="false" type="OperationCompartment">
+      <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_cVhwF5otEd2oA608hDWMrw"/>
+    </children>
+    <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="_cVbpi5otEd2oA608hDWMrw" showStereotype="Label"/>
+    <element xmi:type="uml:Enumeration" href="JavaUMLModel1224015297176.emx#_xopk45osEd2oA608hDWMrw?4_businesslogic_impl/wypozyczalnia/dao/fabryki/FactoryType?"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_cVbpjJotEd2oA608hDWMrw" x="17024" y="1440"/>
+  </children>
+  <children xmi:id="_uFE7AJotEd2oA608hDWMrw">
+    <children xmi:id="_uFE7A5otEd2oA608hDWMrw" type="ImageCompartment">
+      <layoutConstraint xmi:type="notation:Size" xmi:id="_uFE7BJotEd2oA608hDWMrw" width="1320" height="1320"/>
+    </children>
+    <children xmi:id="_uFE7BZotEd2oA608hDWMrw" type="Stereotype"/>
+    <children xmi:id="_uFE7BpotEd2oA608hDWMrw" type="Name"/>
+    <children xmi:id="_uFE7B5otEd2oA608hDWMrw" type="Parent"/>
+    <children xmi:id="_uFE7CJotEd2oA608hDWMrw" type="AttributeCompartment">
+      <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_uFE7CZotEd2oA608hDWMrw"/>
+    </children>
+    <children xmi:id="_uFE7CpotEd2oA608hDWMrw" type="OperationCompartment">
+      <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_uFE7C5otEd2oA608hDWMrw"/>
+    </children>
+    <children xmi:id="_uFLBoJotEd2oA608hDWMrw" visible="false" type="SignalCompartment">
+      <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_uFLBoZotEd2oA608hDWMrw"/>
+    </children>
+    <children xmi:id="_uFLBopotEd2oA608hDWMrw" visible="false" type="StructureCompartment">
+      <styles xmi:type="umlnotation:UMLShapeCompartmentStyle" xmi:id="_uFLBo5otEd2oA608hDWMrw"/>
+    </children>
+    <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="_uFE7AZotEd2oA608hDWMrw" showStereotype="Label"/>
+    <element xmi:type="uml:Class" href="JavaUMLModel1224015297176.emx#_y7E2EJosEd2oA608hDWMrw?4_businesslogic_impl/wypozyczalnia/dao/fabryki/zarzadzaniekontami/ZarzadzanieKontamiDAOMock?"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_uFE7ApotEd2oA608hDWMrw" x="25423" y="21509"/>
+  </children>
+  <children xmi:id="_uFLBpJotEd2oA608hDWMrw">
+    <children xmi:id="_uFLBp5otEd2oA608hDWMrw" type="ImageCompartment">
+      <layoutConstraint xmi:type="notation:Size" xmi:id="_uFLBqJotEd2oA608hDWMrw" width="1320" height="1320"/>
+    </children>
+    <children xmi:id="_uFLBqZotEd2oA608hDWMrw" type="Stereotype"/>
+    <children xmi:id="_uFLBqpotEd2oA608hDWMrw" type="Name"/>
+    <children xmi:id="_uFLBq5otEd2oA608hDWMrw" type="Parent"/>
+    <children xmi:id="_uFLBrJotEd2oA608hDWMrw" type="AttributeCompartment">
+      <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_uFLBrZotEd2oA608hDWMrw"/>
+    </children>
+    <children xmi:id="_uFLBrpotEd2oA608hDWMrw" type="OperationCompartment">
+      <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_uFLBr5otEd2oA608hDWMrw"/>
+    </children>
+    <children xmi:id="_uFLBsJotEd2oA608hDWMrw" visible="false" type="SignalCompartment">
+      <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_uFLBsZotEd2oA608hDWMrw"/>
+    </children>
+    <children xmi:id="_uFLBspotEd2oA608hDWMrw" visible="false" type="StructureCompartment">
+      <styles xmi:type="umlnotation:UMLShapeCompartmentStyle" xmi:id="_uFLBs5otEd2oA608hDWMrw"/>
+    </children>
+    <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="_uFLBpZotEd2oA608hDWMrw" showStereotype="Label"/>
+    <element xmi:type="uml:Class" href="JavaUMLModel1224015297176.emx#_yBGhIZosEd2oA608hDWMrw?4_businesslogic_impl/wypozyczalnia/dao/fabryki/zarzadzaniekontami/ZarzadzanieKontamiFabrykaDanych?"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_uFLBppotEd2oA608hDWMrw" x="8501" y="1437"/>
+  </children>
+  <children xmi:id="_uFLBtJotEd2oA608hDWMrw">
+    <children xmi:id="_uFLBt5otEd2oA608hDWMrw" type="ImageCompartment">
+      <layoutConstraint xmi:type="notation:Size" xmi:id="_uFLBuJotEd2oA608hDWMrw" width="1320" height="1320"/>
+    </children>
+    <children xmi:id="_uFLBuZotEd2oA608hDWMrw" type="Stereotype"/>
+    <children xmi:id="_uFLBupotEd2oA608hDWMrw" type="Name"/>
+    <children xmi:id="_uFLBu5otEd2oA608hDWMrw" type="Parent"/>
+    <children xmi:id="_uFLBvJotEd2oA608hDWMrw" type="AttributeCompartment">
+      <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_uFLBvZotEd2oA608hDWMrw"/>
+    </children>
+    <children xmi:id="_uFLBvpotEd2oA608hDWMrw" type="OperationCompartment">
+      <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_uFLBv5otEd2oA608hDWMrw"/>
+    </children>
+    <children xmi:id="_uFLBwJotEd2oA608hDWMrw" visible="false" type="SignalCompartment">
+      <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_uFRIQJotEd2oA608hDWMrw"/>
+    </children>
+    <children xmi:id="_uFRIQZotEd2oA608hDWMrw" visible="false" type="StructureCompartment">
+      <styles xmi:type="umlnotation:UMLShapeCompartmentStyle" xmi:id="_uFRIQpotEd2oA608hDWMrw"/>
+    </children>
+    <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="_uFLBtZotEd2oA608hDWMrw" showStereotype="Label"/>
+    <element xmi:type="uml:Class" href="JavaUMLModel1224015297176.emx#_yd8OIJosEd2oA608hDWMrw?4_businesslogic_impl/wypozyczalnia/dao/fabryki/zarzadzaniekontami/ZarzadzanieKontamiGlownaFabrykaDanych?"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_uFLBtpotEd2oA608hDWMrw" x="7928" y="10020"/>
+  </children>
+  <children xmi:id="_uFRIQ5otEd2oA608hDWMrw">
+    <children xmi:id="_uFRIRpotEd2oA608hDWMrw" type="ImageCompartment">
+      <layoutConstraint xmi:type="notation:Size" xmi:id="_uFRIR5otEd2oA608hDWMrw" width="1320" height="1320"/>
+    </children>
+    <children xmi:id="_uFRISJotEd2oA608hDWMrw" type="Stereotype"/>
+    <children xmi:id="_uFRISZotEd2oA608hDWMrw" type="Name"/>
+    <children xmi:id="_uFRISpotEd2oA608hDWMrw" type="Parent"/>
+    <children xmi:id="_uFRIS5otEd2oA608hDWMrw" type="AttributeCompartment">
+      <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_uFRITJotEd2oA608hDWMrw"/>
+    </children>
+    <children xmi:id="_uFRITZotEd2oA608hDWMrw" type="OperationCompartment">
+      <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_uFRITpotEd2oA608hDWMrw"/>
+    </children>
+    <children xmi:id="_uFRIT5otEd2oA608hDWMrw" visible="false" type="SignalCompartment">
+      <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_uFRIUJotEd2oA608hDWMrw"/>
+    </children>
+    <children xmi:id="_uFRIUZotEd2oA608hDWMrw" visible="false" type="StructureCompartment">
+      <styles xmi:type="umlnotation:UMLShapeCompartmentStyle" xmi:id="_uFRIUpotEd2oA608hDWMrw"/>
+    </children>
+    <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="_uFRIRJotEd2oA608hDWMrw" showStereotype="Label"/>
+    <element xmi:type="uml:Class" href="JavaUMLModel1224015297176.emx#_y9dbsJosEd2oA608hDWMrw?4_businesslogic_impl/wypozyczalnia/dao/fabryki/zarzadzaniekontami/ZarzadzanieKontamiOracleDAO?"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_uFRIRZotEd2oA608hDWMrw" x="25322" y="13628"/>
+  </children>
+  <children xmi:id="_uFRIU5otEd2oA608hDWMrw">
+    <children xmi:id="_uFRIVpotEd2oA608hDWMrw" type="ImageCompartment">
+      <layoutConstraint xmi:type="notation:Size" xmi:id="_uFRIV5otEd2oA608hDWMrw" width="530" height="530"/>
+    </children>
+    <children xmi:id="_uFXO4JotEd2oA608hDWMrw" type="Stereotype"/>
+    <children xmi:id="_uFXO4ZotEd2oA608hDWMrw" type="Kind"/>
+    <children xmi:id="_uFXO4potEd2oA608hDWMrw" type="Name"/>
+    <children xmi:id="_uFXO45otEd2oA608hDWMrw" type="Parent"/>
+    <children xmi:id="_uFXO5JotEd2oA608hDWMrw" type="AttributeCompartment">
+      <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_uFXO5ZotEd2oA608hDWMrw"/>
+    </children>
+    <children xmi:id="_uFXO5potEd2oA608hDWMrw" type="OperationCompartment">
+      <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_uFXO55otEd2oA608hDWMrw"/>
+    </children>
+    <children xmi:id="_uFXO6JotEd2oA608hDWMrw" visible="false" type="SignalCompartment">
+      <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_uFXO6ZotEd2oA608hDWMrw"/>
+    </children>
+    <styles xmi:type="umlnotation:UMLClassifierStyle" xmi:id="_uFRIVJotEd2oA608hDWMrw" showStereotype="Label" useClassifierShape="true"/>
+    <element xmi:type="uml:Interface" href="JavaUMLModel1224015297176.emx#_zAVJgZosEd2oA608hDWMrw?4_businesslogic_impl/wypozyczalnia/dao/fabryki/zarzadzaniekontami/ZarzadzanieKontamiDAO?"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_uFRIVZotEd2oA608hDWMrw" x="21840" y="1442"/>
+  </children>
+  <children xmi:id="_uFXO6potEd2oA608hDWMrw">
+    <children xmi:id="_uFXO7ZotEd2oA608hDWMrw" type="ImageCompartment">
+      <layoutConstraint xmi:type="notation:Size" xmi:id="_uFXO7potEd2oA608hDWMrw" width="530" height="530"/>
+    </children>
+    <children xmi:id="_uFXO75otEd2oA608hDWMrw" type="Stereotype"/>
+    <children xmi:id="_uFXO8JotEd2oA608hDWMrw" type="Kind"/>
+    <children xmi:id="_uFXO8ZotEd2oA608hDWMrw" type="Name"/>
+    <children xmi:id="_uFXO8potEd2oA608hDWMrw" type="Parent"/>
+    <children xmi:id="_uFdVgJotEd2oA608hDWMrw" type="AttributeCompartment">
+      <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_uFdVgZotEd2oA608hDWMrw"/>
+    </children>
+    <children xmi:id="_uFdVgpotEd2oA608hDWMrw" type="OperationCompartment">
+      <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_uFdVg5otEd2oA608hDWMrw"/>
+    </children>
+    <children xmi:id="_uFdVhJotEd2oA608hDWMrw" visible="false" type="SignalCompartment">
+      <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_uFdVhZotEd2oA608hDWMrw"/>
+    </children>
+    <styles xmi:type="umlnotation:UMLClassifierStyle" xmi:id="_uFXO65otEd2oA608hDWMrw" showStereotype="Label" useClassifierShape="true"/>
+    <element xmi:type="uml:Interface" href="JavaUMLModel1224015297176.emx#_yPhXoJosEd2oA608hDWMrw?4_businesslogic_impl/wypozyczalnia/dao/fabryki/zarzadzaniekontami/ZarzadzanieKontamiDAOBean?"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_uFXO7JotEd2oA608hDWMrw" x="25447" y="10023"/>
+  </children>
+  <children xmi:id="_0gIS4JotEd2oA608hDWMrw" type="Note">
+    <children xmi:id="_0gOZgJotEd2oA608hDWMrw" type="DiagramName">
+      <element xsi:nil="true"/>
+    </children>
+    <children xmi:id="_0gOZgZotEd2oA608hDWMrw" type="Description">
+      <element xsi:nil="true"/>
+    </children>
+    <styles xmi:type="notation:ShapeStyle" xmi:id="_0gIS4ZotEd2oA608hDWMrw" description="dodany mechanizm FactoryType &#xD;&#xA;tj. zapisu do pamieci zamiast do bazy danych" fillColor="13369343" lineColor="6737151"/>
+    <element xsi:nil="true"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_0gIS4potEd2oA608hDWMrw" x="12680" y="6657"/>
+  </children>
+  <children xmi:id="_637icJotEd2oA608hDWMrw">
+    <eAnnotations xmi:id="_637ic5otEd2oA608hDWMrw" source="com.ibm.xtools.uml.ui.diagram.internal.styles">
+      <details xmi:id="_637idJotEd2oA608hDWMrw" key="ImageModeStyle" value="true"/>
+    </eAnnotations>
+    <children xmi:id="_637idZotEd2oA608hDWMrw" type="ImageCompartment">
+      <layoutConstraint xmi:type="notation:Size" xmi:id="_637idpotEd2oA608hDWMrw" width="1320" height="1320"/>
+    </children>
+    <children xmi:id="_637id5otEd2oA608hDWMrw" type="Stereotype"/>
+    <children xmi:id="_637ieJotEd2oA608hDWMrw" type="CommentBody"/>
+    <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="_637icZotEd2oA608hDWMrw" fillColor="16763850" lineColor="16744576" showStereotype="Label"/>
+    <element xmi:type="uml:Comment" href="JavaUMLModel1224015297176.emx#_631b0JotEd2oA608hDWMrw?4_businesslogic_impl/wypozyczalnia/dao/fabryki/zarzadzaniekontami/ZarzadzanieKontamiDAOBean/%3CComment%3E?"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_637icpotEd2oA608hDWMrw" x="30749" y="6974"/>
+  </children>
+  <styles xmi:type="umlnotation:UMLDiagramStyle" xmi:id="_Z_fFwZotEd2oA608hDWMrw"/>
+  <element xsi:nil="true"/>
+  <edges xmi:id="_uGgeYJotEd2oA608hDWMrw" source="_uFXO6potEd2oA608hDWMrw" target="_uFRIU5otEd2oA608hDWMrw">
+    <children xmi:id="_uGgeY5otEd2oA608hDWMrw" type="NameLabel">
+      <children xmi:id="_uGgeZZotEd2oA608hDWMrw" type="Stereotype"/>
+      <children xmi:id="_uGgeZpotEd2oA608hDWMrw" type="Name"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_uGgeZJotEd2oA608hDWMrw" y="-530"/>
+    </children>
+    <styles xmi:type="umlnotation:UMLConnectorStyle" xmi:id="_uGgeYZotEd2oA608hDWMrw" routing="Tree" showStereotype="Text"/>
+    <element xmi:type="uml:Generalization" href="JavaUMLModel1224015297176.emx#_zE6HgJosEd2oA608hDWMrw?4_businesslogic_impl/wypozyczalnia/dao/fabryki/zarzadzaniekontami/ZarzadzanieKontamiDAOBean/%3CGeneralization%3E?"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_uGgeYpotEd2oA608hDWMrw" points="[-13, -1019, 3717, 5080]$[-3744, -2607, -14, 3492]"/>
+  </edges>
+  <edges xmi:id="_uGgeZ5otEd2oA608hDWMrw" source="_uFLBtJotEd2oA608hDWMrw" target="_uFLBpJotEd2oA608hDWMrw">
+    <children xmi:id="_uGgeapotEd2oA608hDWMrw" type="NameLabel">
+      <children xmi:id="_uGgebJotEd2oA608hDWMrw" type="Stereotype"/>
+      <children xmi:id="_uGgebZotEd2oA608hDWMrw" type="Name"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_uGgea5otEd2oA608hDWMrw" y="-530"/>
+    </children>
+    <styles xmi:type="umlnotation:UMLConnectorStyle" xmi:id="_uGgeaJotEd2oA608hDWMrw" routing="Tree" showStereotype="Text"/>
+    <element xmi:type="uml:Generalization" href="JavaUMLModel1224015297176.emx#_zGWR8JosEd2oA608hDWMrw?4_businesslogic_impl/wypozyczalnia/dao/fabryki/zarzadzaniekontami/ZarzadzanieKontamiGlownaFabrykaDanych/%3CGeneralization%3E?"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_uGgeaZotEd2oA608hDWMrw" points="[-13, -1019, 0, 5080]$[-13, -2607, 0, 3492]"/>
+  </edges>
+  <edges xmi:id="_uGmlAJotEd2oA608hDWMrw" source="_uFE7AJotEd2oA608hDWMrw" target="_uFRIQ5otEd2oA608hDWMrw">
+    <children xmi:id="_uGmlA5otEd2oA608hDWMrw" type="NameLabel">
+      <children xmi:id="_uGmlBZotEd2oA608hDWMrw" type="Stereotype"/>
+      <children xmi:id="_uGmlBpotEd2oA608hDWMrw" type="Name"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_uGmlBJotEd2oA608hDWMrw" y="-530"/>
+    </children>
+    <styles xmi:type="umlnotation:UMLConnectorStyle" xmi:id="_uGmlAZotEd2oA608hDWMrw" routing="Tree" showStereotype="Text"/>
+    <element xmi:type="uml:Generalization" href="JavaUMLModel1224015297176.emx#_0Bj9AJosEd2oA608hDWMrw?4_businesslogic_impl/wypozyczalnia/dao/fabryki/zarzadzaniekontami/ZarzadzanieKontamiDAOMock/%3CGeneralization%3E?"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_uGmlApotEd2oA608hDWMrw" points="[-13, -1032, 0, 4723]$[-13, -2620, 0, 3135]"/>
+  </edges>
+  <edges xmi:id="_uGmlB5otEd2oA608hDWMrw" source="_uFRIQ5otEd2oA608hDWMrw" target="_uFXO6potEd2oA608hDWMrw">
+    <children xmi:id="_uGmlCpotEd2oA608hDWMrw" type="NameLabel">
+      <children xmi:id="_uGmlDJotEd2oA608hDWMrw" type="Stereotype"/>
+      <children xmi:id="_uGmlDZotEd2oA608hDWMrw" type="Name"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_uGmlC5otEd2oA608hDWMrw" y="-530"/>
+    </children>
+    <styles xmi:type="umlnotation:UMLConnectorStyle" xmi:id="_uGmlCJotEd2oA608hDWMrw" routing="Tree" showStereotype="Text"/>
+    <element xmi:type="uml:InterfaceRealization" href="JavaUMLModel1224015297176.emx#_0DX64JosEd2oA608hDWMrw?4_businesslogic_impl/wypozyczalnia/dao/fabryki/zarzadzaniekontami/ZarzadzanieKontamiOracleDAO/%3CInterfaceRealization%3E?"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_uGmlCZotEd2oA608hDWMrw" points="[0, -3135, -13, 2606]$[0, -4723, -13, 1018]"/>
+  </edges>
+  <edges xmi:id="_64mQ0JotEd2oA608hDWMrw" type="Reference" source="_637icJotEd2oA608hDWMrw" target="_uFXO6potEd2oA608hDWMrw">
+    <styles xmi:type="umlnotation:UMLConnectorStyle" xmi:id="_64mQ0ZotEd2oA608hDWMrw" showStereotype="Text"/>
+    <element xsi:nil="true"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_64mQ0potEd2oA608hDWMrw" points="[-14, 3492, 3744, -2607]$[-3771, 5080, -13, -1019]"/>
+  </edges>
+</notation:Diagram>

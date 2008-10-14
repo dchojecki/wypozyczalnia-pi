@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--xtools2_universal_type_manager-->
+<?com.ibm.xtools.emf.core.signature <signature id="com.ibm.xtools.mmi.ui.signatures.diagram" version="7.0.0"><feature description="" name="Rational Modeling Platform (com.ibm.xtools.rmp)" url="" version="7.0.0"/></signature>?>
+<notation:Diagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.0/notation" xmlns:uml="http://www.eclipse.org/uml2/2.0.0/UML" xmlns:umlnotation="http://www.ibm.com/xtools/1.5.2/Umlnotation" xmi:id="_gA8R4JotEd2oA608hDWMrw" type="Class" name="41_mocks.dnx">
+  <children xmi:id="_guyPUJotEd2oA608hDWMrw">
+    <children xmi:id="_guyPU5otEd2oA608hDWMrw" type="ImageCompartment">
+      <layoutConstraint xmi:type="notation:Size" xmi:id="_guyPVJotEd2oA608hDWMrw" width="1320" height="1320"/>
+    </children>
+    <children xmi:id="_guyPVZotEd2oA608hDWMrw" type="Stereotype"/>
+    <children xmi:id="_guyPVpotEd2oA608hDWMrw" type="Name"/>
+    <children xmi:id="_guyPV5otEd2oA608hDWMrw" type="Parent"/>
+    <children xmi:id="_guyPWJotEd2oA608hDWMrw" type="AttributeCompartment">
+      <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_guyPWZotEd2oA608hDWMrw"/>
+    </children>
+    <children xmi:id="_guyPWpotEd2oA608hDWMrw" type="OperationCompartment">
+      <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_guyPW5otEd2oA608hDWMrw"/>
+    </children>
+    <children xmi:id="_guyPXJotEd2oA608hDWMrw" visible="false" type="SignalCompartment">
+      <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_guyPXZotEd2oA608hDWMrw"/>
+    </children>
+    <children xmi:id="_guyPXpotEd2oA608hDWMrw" visible="false" type="StructureCompartment">
+      <styles xmi:type="umlnotation:UMLShapeCompartmentStyle" xmi:id="_guyPX5otEd2oA608hDWMrw"/>
+    </children>
+    <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="_guyPUZotEd2oA608hDWMrw" showStereotype="Label"/>
+    <element xmi:type="uml:Class" href="JavaUMLModel1224015297176.emx#_y_8vAJosEd2oA608hDWMrw?4_businesslogic_impl/wypozyczalnia/mock/EntityManagerMock?"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_guyPUpotEd2oA608hDWMrw" x="1454" y="12698"/>
+  </children>
+  <children xmi:id="_g6DrMJotEd2oA608hDWMrw">
+    <children xmi:id="_g6Jx0JotEd2oA608hDWMrw" type="ImageCompartment">
+      <layoutConstraint xmi:type="notation:Size" xmi:id="_g6Jx0ZotEd2oA608hDWMrw" width="1320" height="1320"/>
+    </children>
+    <children xmi:id="_g6Jx0potEd2oA608hDWMrw" type="Stereotype"/>
+    <children xmi:id="_g6Jx05otEd2oA608hDWMrw" type="Name"/>
+    <children xmi:id="_g6Jx1JotEd2oA608hDWMrw" type="Parent"/>
+    <children xmi:id="_g6Jx1ZotEd2oA608hDWMrw" type="AttributeCompartment">
+      <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_g6Jx1potEd2oA608hDWMrw"/>
+    </children>
+    <children xmi:id="_g6Jx15otEd2oA608hDWMrw" type="OperationCompartment">
+      <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_g6Jx2JotEd2oA608hDWMrw"/>
+    </children>
+    <children xmi:id="_g6Jx2ZotEd2oA608hDWMrw" visible="false" type="SignalCompartment">
+      <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_g6Jx2potEd2oA608hDWMrw"/>
+    </children>
+    <children xmi:id="_g6Jx25otEd2oA608hDWMrw" visible="false" type="StructureCompartment">
+      <styles xmi:type="umlnotation:UMLShapeCompartmentStyle" xmi:id="_g6Jx3JotEd2oA608hDWMrw"/>
+    </children>
+    <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="_g6DrMZotEd2oA608hDWMrw" showStereotype="Label"/>
+    <element xmi:type="uml:Class" href="JavaUMLModel1224015297176.emx#_ynyGoZosEd2oA608hDWMrw?4_businesslogic_impl/wypozyczalnia/mock/EntityTransactionMock?"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_g6DrMpotEd2oA608hDWMrw" x="1772" y="29446"/>
+  </children>
+  <children xmi:id="_hGRiQJotEd2oA608hDWMrw">
+    <children xmi:id="_hGRiQ5otEd2oA608hDWMrw" type="ImageCompartment">
+      <layoutConstraint xmi:type="notation:Size" xmi:id="_hGRiRJotEd2oA608hDWMrw" width="1320" height="1320"/>
+    </children>
+    <children xmi:id="_hGRiRZotEd2oA608hDWMrw" type="Stereotype"/>
+    <children xmi:id="_hGRiRpotEd2oA608hDWMrw" type="Name"/>
+    <children xmi:id="_hGXo4JotEd2oA608hDWMrw" type="Parent"/>
+    <children xmi:id="_hGXo4ZotEd2oA608hDWMrw" type="AttributeCompartment">
+      <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_hGXo4potEd2oA608hDWMrw"/>
+    </children>
+    <children xmi:id="_hGXo45otEd2oA608hDWMrw" type="OperationCompartment">
+      <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_hGXo5JotEd2oA608hDWMrw"/>
+    </children>
+    <children xmi:id="_hGXo5ZotEd2oA608hDWMrw" visible="false" type="SignalCompartment">
+      <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_hGXo5potEd2oA608hDWMrw"/>
+    </children>
+    <children xmi:id="_hGXo55otEd2oA608hDWMrw" visible="false" type="StructureCompartment">
+      <styles xmi:type="umlnotation:UMLShapeCompartmentStyle" xmi:id="_hGXo6JotEd2oA608hDWMrw"/>
+    </children>
+    <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="_hGRiQZotEd2oA608hDWMrw" showStereotype="Label"/>
+    <element xmi:type="uml:Class" href="JavaUMLModel1224015297176.emx#_zAI8QJosEd2oA608hDWMrw?4_businesslogic_impl/wypozyczalnia/mock/QueryMock?"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_hGRiQpotEd2oA608hDWMrw" x="2432" y="1454"/>
+  </children>
+  <children xmi:id="_m1l1gJotEd2oA608hDWMrw" type="Note">
+    <children xmi:id="_m1l1g5otEd2oA608hDWMrw" type="DiagramName">
+      <element xsi:nil="true"/>
+    </children>
+    <children xmi:id="_m1r8IJotEd2oA608hDWMrw" type="Description">
+      <element xsi:nil="true"/>
+    </children>
+    <styles xmi:type="notation:ShapeStyle" xmi:id="_m1l1gZotEd2oA608hDWMrw" description="klasy dodane w celach testowych" fillColor="13369343" lineColor="6737151"/>
+    <element xsi:nil="true"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_m1l1gpotEd2oA608hDWMrw" x="8281" y="2169" width="5978" height="3200"/>
+  </children>
+  <styles xmi:type="umlnotation:UMLDiagramStyle" xmi:id="_gA8R4ZotEd2oA608hDWMrw"/>
+  <element xsi:nil="true"/>
+  <edges xmi:id="_kJA6gJotEd2oA608hDWMrw" source="_guyPUJotEd2oA608hDWMrw" target="_g6DrMJotEd2oA608hDWMrw">
+    <children xmi:id="_kJA6g5otEd2oA608hDWMrw" type="FromMultiplicityLabel">
+      <children xmi:id="_kJA6hZotEd2oA608hDWMrw" type="FromMultiplicity"/>
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_kJA6hJotEd2oA608hDWMrw" y="396"/>
+    </children>
+    <children xmi:id="_kJA6hpotEd2oA608hDWMrw" type="FromRoleLabel">
+      <children xmi:id="_kJA6iJotEd2oA608hDWMrw" type="FromRole"/>
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_kJA6h5otEd2oA608hDWMrw" y="-397"/>
+    </children>
+    <styles xmi:type="umlnotation:UMLConnectorStyle" xmi:id="_kJA6gZotEd2oA608hDWMrw" showStereotype="Text"/>
+    <element xmi:type="uml:Property" href="JavaUMLModel1224015297176.emx#_0IcBEJosEd2oA608hDWMrw?4_businesslogic_impl/wypozyczalnia/mock/EntityManagerMock/entityTransaction?"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_kJA6gpotEd2oA608hDWMrw" points="[0, 7580, 0, -5371]$[0, 9167, 0, -3784]"/>
+  </edges>
+  <edges xmi:id="_lc3IAJotEd2oA608hDWMrw" source="_hGRiQJotEd2oA608hDWMrw" target="_guyPUJotEd2oA608hDWMrw">
+    <children xmi:id="_lc3IA5otEd2oA608hDWMrw" type="FromMultiplicityLabel">
+      <children xmi:id="_lc3IBZotEd2oA608hDWMrw" type="FromMultiplicity"/>
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_lc3IBJotEd2oA608hDWMrw" y="396"/>
+    </children>
+    <children xmi:id="_lc3IBpotEd2oA608hDWMrw" type="FromRoleLabel">
+      <children xmi:id="_lc3ICJotEd2oA608hDWMrw" type="FromRole"/>
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_lc3IB5otEd2oA608hDWMrw" y="-397"/>
+    </children>
+    <styles xmi:type="umlnotation:UMLConnectorStyle" xmi:id="_lc3IAZotEd2oA608hDWMrw" showStereotype="Text"/>
+    <element xmi:type="uml:Property" href="JavaUMLModel1224015297176.emx#_0NTS8JosEd2oA608hDWMrw?4_businesslogic_impl/wypozyczalnia/mock/QueryMock/mock?"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_lc3IApotEd2oA608hDWMrw" points="[-13, 4829, 0, -9168]$[-13, 6416, 0, -7581]"/>
+  </edges>
+</notation:Diagram>
