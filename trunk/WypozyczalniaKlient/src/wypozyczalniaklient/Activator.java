@@ -1,5 +1,5 @@
 package wypozyczalniaklient;
-
+// test
 import java.util.Properties;
 
 import javax.naming.Context;
