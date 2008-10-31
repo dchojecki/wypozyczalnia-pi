@@ -1,0 +1,630 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--xtools2_universal_type_manager-->
+<?com.ibm.xtools.emf.core.signature <signature id="com.ibm.xtools.mmi.ui.signatures.diagram" version="7.0.0"><feature description="" name="Rational Modeling Platform (com.ibm.xtools.rmp)" url="" version="7.0.0"/></signature>?>
+<?com.ibm.xtools.emf.core.signature <signature id="com.ibm.xtools.uml.msl.model" version="7.0.0"><feature description="" name="com.ibm.xtools.ruml.feature" url="" version="7.0.0"/></signature>?>
+<uml:Model xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.0/notation" xmlns:uml="http://www.eclipse.org/uml2/2.0.0/UML" xmlns:umlnotation="http://www.ibm.com/xtools/1.5.2/Umlnotation" xmi:id="_JoHtSqbqEd2QofOHEhHrHg" name="ActivityDiagramAddCD">
+  <eAnnotations xmi:id="_Qz4JAKbqEd2QofOHEhHrHg" source="uml2.diagrams">
+    <contents xmi:type="notation:Diagram" xmi:id="_pNJzQKblEd2QofOHEhHrHg" type="Activity" name="ActivityDiagram1" measurementUnit="Himetric">
+      <children xmi:id="_pNJzQablEd2QofOHEhHrHg" type="Activity Frame">
+        <children xmi:id="_pNJzQqblEd2QofOHEhHrHg" type="ActivityCompartment">
+          <children xmi:id="_rnxbkKblEd2QofOHEhHrHg">
+            <children xmi:id="_rnxblKblEd2QofOHEhHrHg" type="Stereotype"/>
+            <children xmi:id="_rn3iMKblEd2QofOHEhHrHg" type="PartitionName"/>
+            <children xmi:id="_rn3iMablEd2QofOHEhHrHg" type="PartitionCompartment">
+              <children xmi:id="_3mMVYKblEd2QofOHEhHrHg">
+                <children xmi:id="_3mYioKblEd2QofOHEhHrHg" type="ImageCompartment">
+                  <layoutConstraint xmi:type="notation:Size" xmi:id="_3mYioablEd2QofOHEhHrHg" width="1320" height="1320"/>
+                </children>
+                <children xmi:id="_3mYioqblEd2QofOHEhHrHg" type="NameLabel">
+                  <children xmi:id="_3mYipKblEd2QofOHEhHrHg" type="Stereotype"/>
+                  <children xmi:id="_3mYipablEd2QofOHEhHrHg" type="Name"/>
+                  <layoutConstraint xmi:type="notation:Bounds" xmi:id="_3mYio6blEd2QofOHEhHrHg" y="-186"/>
+                </children>
+                <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="_3mMVYablEd2QofOHEhHrHg" fillColor="11579568" showStereotype="Label"/>
+                <element xmi:type="uml:InitialNode" href="platform:/resource/Miscellaneous%20Models/ActivityDiagramAddCD.emx#_3lntoKblEd2QofOHEhHrHg?ActivityDiagramAddCD/Dodanie%20płyty/Węzeł%20początkowy?"/>
+                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_3mMVYqblEd2QofOHEhHrHg" x="1748" y="927"/>
+              </children>
+              <children xmi:id="_7XomsKblEd2QofOHEhHrHg">
+                <children xmi:id="_7Xoms6blEd2QofOHEhHrHg" type="ImageCompartment">
+                  <layoutConstraint xmi:type="notation:Size" xmi:id="_7XomtKblEd2QofOHEhHrHg" width="1320" height="1320"/>
+                </children>
+                <children xmi:id="_7XomtablEd2QofOHEhHrHg" type="Stereotype"/>
+                <children xmi:id="_7XomtqblEd2QofOHEhHrHg" type="InPartitions"/>
+                <children xmi:id="_7Xomt6blEd2QofOHEhHrHg" type="Name"/>
+                <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="_7XomsablEd2QofOHEhHrHg" showStereotype="Label"/>
+                <element xmi:type="uml:OpaqueAction" href="platform:/resource/Miscellaneous%20Models/ActivityDiagramAddCD.emx#_7XWS0KblEd2QofOHEhHrHg?ActivityDiagramAddCD/Dodanie%20płyty/Wybranie%20opcji%20dodania%20nowej%20płyty?"/>
+                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_7XomsqblEd2QofOHEhHrHg" x="580" y="2509" width="3754" height="2089"/>
+              </children>
+              <children xmi:id="_F9z7MKbmEd2QofOHEhHrHg">
+                <children xmi:id="_F9z7M6bmEd2QofOHEhHrHg" type="ImageCompartment">
+                  <layoutConstraint xmi:type="notation:Size" xmi:id="_F9z7NKbmEd2QofOHEhHrHg" width="1320" height="1320"/>
+                </children>
+                <children xmi:id="_F9z7NabmEd2QofOHEhHrHg" type="Stereotype"/>
+                <children xmi:id="_F9z7NqbmEd2QofOHEhHrHg" type="InPartitions"/>
+                <children xmi:id="_F9z7N6bmEd2QofOHEhHrHg" type="Name"/>
+                <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="_F9z7MabmEd2QofOHEhHrHg" showStereotype="Label"/>
+                <element xmi:type="uml:OpaqueAction" href="platform:/resource/Miscellaneous%20Models/ActivityDiagramAddCD.emx#_F9hnUKbmEd2QofOHEhHrHg?ActivityDiagramAddCD/Dodanie%20płyty/Wypełnienie%20pól%20formularza?"/>
+                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_F9z7MqbmEd2QofOHEhHrHg" x="291" y="5362" width="4152"/>
+              </children>
+              <styles xmi:type="umlnotation:UMLShapeCompartmentStyle" xmi:id="_rn3iMqblEd2QofOHEhHrHg"/>
+            </children>
+            <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="_rnxbkablEd2QofOHEhHrHg" showStereotype="Label"/>
+            <styles xmi:type="umlnotation:UMLFrameStyle" xmi:id="_rnxbkqblEd2QofOHEhHrHg"/>
+            <element xmi:type="uml:ActivityPartition" href="platform:/resource/Miscellaneous%20Models/ActivityDiagramAddCD.emx#_rm6f8KblEd2QofOHEhHrHg?ActivityDiagramAddCD/Dodanie%20płyty/Użytkownik?"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_rnxbk6blEd2QofOHEhHrHg" x="953" y="185" width="5715" height="3175"/>
+          </children>
+          <children xmi:id="_yBldUKblEd2QofOHEhHrHg">
+            <children xmi:id="_yBldVKblEd2QofOHEhHrHg" type="Stereotype"/>
+            <children xmi:id="_yBldVablEd2QofOHEhHrHg" type="PartitionName"/>
+            <children xmi:id="_yBldVqblEd2QofOHEhHrHg" type="PartitionCompartment">
+              <children xmi:id="_Cq1ukKbmEd2QofOHEhHrHg">
+                <children xmi:id="_Cq71MKbmEd2QofOHEhHrHg" type="ImageCompartment">
+                  <layoutConstraint xmi:type="notation:Size" xmi:id="_Cq71MabmEd2QofOHEhHrHg" width="1320" height="1320"/>
+                </children>
+                <children xmi:id="_Cq71MqbmEd2QofOHEhHrHg" type="Stereotype"/>
+                <children xmi:id="_Cq71M6bmEd2QofOHEhHrHg" type="InPartitions"/>
+                <children xmi:id="_Cq71NKbmEd2QofOHEhHrHg" type="Name"/>
+                <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="_Cq1ukabmEd2QofOHEhHrHg" showStereotype="Label"/>
+                <element xmi:type="uml:OpaqueAction" href="platform:/resource/Miscellaneous%20Models/ActivityDiagramAddCD.emx#_Cqvn8KbmEd2QofOHEhHrHg?ActivityDiagramAddCD/Dodanie%20płyty/Wyświetlenie%20formularza?"/>
+                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Cq1ukqbmEd2QofOHEhHrHg" x="282" y="4728"/>
+              </children>
+              <children xmi:id="_Kk1JoKbmEd2QofOHEhHrHg">
+                <children xmi:id="_Kk1Jo6bmEd2QofOHEhHrHg" type="ImageCompartment">
+                  <layoutConstraint xmi:type="notation:Size" xmi:id="_Kk1JpKbmEd2QofOHEhHrHg" width="1320" height="1320"/>
+                </children>
+                <children xmi:id="_Kk1JpabmEd2QofOHEhHrHg" type="Stereotype"/>
+                <children xmi:id="_Kk1JpqbmEd2QofOHEhHrHg" type="InPartitions"/>
+                <children xmi:id="_Kk1Jp6bmEd2QofOHEhHrHg" type="Name"/>
+                <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="_Kk1JoabmEd2QofOHEhHrHg" showStereotype="Label"/>
+                <element xmi:type="uml:OpaqueAction" href="platform:/resource/Miscellaneous%20Models/ActivityDiagramAddCD.emx#_Kko8YKbmEd2QofOHEhHrHg?ActivityDiagramAddCD/Dodanie%20płyty/Walidacja%20pól%20formularza?"/>
+                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Kk1JoqbmEd2QofOHEhHrHg" x="1550" y="6947" width="3781"/>
+              </children>
+              <children xmi:id="_caNPwKbmEd2QofOHEhHrHg">
+                <children xmi:id="_caNPw6bmEd2QofOHEhHrHg" type="ImageCompartment">
+                  <layoutConstraint xmi:type="notation:Size" xmi:id="_caNPxKbmEd2QofOHEhHrHg" width="1320" height="1320"/>
+                </children>
+                <children xmi:id="_caNPxabmEd2QofOHEhHrHg" type="Stereotype"/>
+                <children xmi:id="_caNPxqbmEd2QofOHEhHrHg" type="InPartitions"/>
+                <children xmi:id="_caNPx6bmEd2QofOHEhHrHg" type="Name"/>
+                <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="_caNPwabmEd2QofOHEhHrHg" showStereotype="Label"/>
+                <element xmi:type="uml:DecisionNode" href="platform:/resource/Miscellaneous%20Models/ActivityDiagramAddCD.emx#_caHJIKbmEd2QofOHEhHrHg?ActivityDiagramAddCD/Dodanie%20płyty/Pola%20poprawne?"/>
+                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_caNPwqbmEd2QofOHEhHrHg" x="1550" y="9483"/>
+              </children>
+              <children xmi:id="_5y-gkKbmEd2QofOHEhHrHg">
+                <children xmi:id="_5zEnMKbmEd2QofOHEhHrHg" type="ImageCompartment">
+                  <layoutConstraint xmi:type="notation:Size" xmi:id="_5zEnMabmEd2QofOHEhHrHg" width="1320" height="1320"/>
+                </children>
+                <children xmi:id="_5zEnMqbmEd2QofOHEhHrHg" type="Stereotype"/>
+                <children xmi:id="_5zEnM6bmEd2QofOHEhHrHg" type="InPartitions"/>
+                <children xmi:id="_5zEnNKbmEd2QofOHEhHrHg" type="Name"/>
+                <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="_5y-gkabmEd2QofOHEhHrHg" showStereotype="Label"/>
+                <element xmi:type="uml:OpaqueAction" href="platform:/resource/Miscellaneous%20Models/ActivityDiagramAddCD.emx#_5y4Z8KbmEd2QofOHEhHrHg?ActivityDiagramAddCD/Dodanie%20płyty/Wyświetlenie%20informacji%20o%20wykonaniu%20zadania?"/>
+                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_5y-gkqbmEd2QofOHEhHrHg" x="916" y="19944" width="3803"/>
+              </children>
+              <children xmi:id="_4OnVYKbnEd2QofOHEhHrHg">
+                <children xmi:id="_4OnVY6bnEd2QofOHEhHrHg" type="ImageCompartment">
+                  <layoutConstraint xmi:type="notation:Size" xmi:id="_4OnVZKbnEd2QofOHEhHrHg" width="1320" height="1320"/>
+                </children>
+                <children xmi:id="_4OnVZabnEd2QofOHEhHrHg" type="Stereotype"/>
+                <children xmi:id="_4OnVZqbnEd2QofOHEhHrHg" type="InPartitions"/>
+                <children xmi:id="_4OnVZ6bnEd2QofOHEhHrHg" type="Name"/>
+                <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="_4OnVYabnEd2QofOHEhHrHg" showStereotype="Label"/>
+                <element xmi:type="uml:OpaqueAction" href="platform:/resource/Miscellaneous%20Models/ActivityDiagramAddCD.emx#_4ObIIKbnEd2QofOHEhHrHg?ActivityDiagramAddCD/Dodanie%20płyty/Wyświetlenie%20informacji%20o%20przyczynie%20niepowodzenia%20zadania?"/>
+                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_4OnVYqbnEd2QofOHEhHrHg" x="547" y="22163" width="4665"/>
+              </children>
+              <children xmi:id="_-0W6UKbnEd2QofOHEhHrHg">
+                <children xmi:id="_-0W6U6bnEd2QofOHEhHrHg" type="ImageCompartment">
+                  <layoutConstraint xmi:type="notation:Size" xmi:id="_-0W6VKbnEd2QofOHEhHrHg" width="1320" height="1320"/>
+                </children>
+                <children xmi:id="_-1T8kKbnEd2QofOHEhHrHg" type="Stereotype"/>
+                <children xmi:id="_-1T8kabnEd2QofOHEhHrHg" type="InPartitions"/>
+                <children xmi:id="_-1T8kqbnEd2QofOHEhHrHg" type="Name"/>
+                <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="_-0W6UabnEd2QofOHEhHrHg" showStereotype="Label"/>
+                <element xmi:type="uml:OpaqueAction" href="platform:/resource/Miscellaneous%20Models/ActivityDiagramAddCD.emx#_-0QzsKbnEd2QofOHEhHrHg?ActivityDiagramAddCD/Dodanie%20płyty/Wyświetlenie%20informacji%20o%20niepowodzenia%20zadania?"/>
+                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_-0W6UqbnEd2QofOHEhHrHg" x="1233" y="17408" width="4193"/>
+              </children>
+              <children xmi:id="_IHpDkKboEd2QofOHEhHrHg">
+                <children xmi:id="_IHpDk6boEd2QofOHEhHrHg" type="ImageCompartment">
+                  <layoutConstraint xmi:type="notation:Size" xmi:id="_IHpDlKboEd2QofOHEhHrHg" width="1320" height="1320"/>
+                </children>
+                <children xmi:id="_IHpDlaboEd2QofOHEhHrHg" type="Stereotype"/>
+                <children xmi:id="_IHpDlqboEd2QofOHEhHrHg" type="InPartitions"/>
+                <children xmi:id="_IHpDl6boEd2QofOHEhHrHg" type="Name"/>
+                <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="_IHpDkaboEd2QofOHEhHrHg" showStereotype="Label"/>
+                <element xmi:type="uml:MergeNode" href="platform:/resource/Miscellaneous%20Models/ActivityDiagramAddCD.emx#_IHc2UKboEd2QofOHEhHrHg?ActivityDiagramAddCD/Dodanie%20płyty/%3CMergeNode%3E?"/>
+                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_IHpDkqboEd2QofOHEhHrHg" x="2184" y="12653"/>
+              </children>
+              <children xmi:id="_P2K1gKboEd2QofOHEhHrHg">
+                <children xmi:id="_P2dJYKboEd2QofOHEhHrHg" type="ImageCompartment">
+                  <layoutConstraint xmi:type="notation:Size" xmi:id="_P2dJYaboEd2QofOHEhHrHg" width="1320" height="1320"/>
+                </children>
+                <children xmi:id="_P2dJYqboEd2QofOHEhHrHg" type="Stereotype"/>
+                <children xmi:id="_P2dJY6boEd2QofOHEhHrHg" type="InPartitions"/>
+                <children xmi:id="_P2dJZKboEd2QofOHEhHrHg" type="Name"/>
+                <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="_P2K1gaboEd2QofOHEhHrHg" showStereotype="Label"/>
+                <element xmi:type="uml:OpaqueAction" href="platform:/resource/Miscellaneous%20Models/ActivityDiagramAddCD.emx#_P2Eu4KboEd2QofOHEhHrHg?ActivityDiagramAddCD/Dodanie%20płyty/Wyświetlenie%20informacji,%20które%20pola%20są%20niepoprawnie%20wypełnione?"/>
+                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_P2K1gqboEd2QofOHEhHrHg" x="853" y="14586" width="4184"/>
+              </children>
+              <styles xmi:type="umlnotation:UMLShapeCompartmentStyle" xmi:id="_yBldV6blEd2QofOHEhHrHg"/>
+            </children>
+            <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="_yBldUablEd2QofOHEhHrHg" showStereotype="Label"/>
+            <styles xmi:type="umlnotation:UMLFrameStyle" xmi:id="_yBldUqblEd2QofOHEhHrHg"/>
+            <element xmi:type="uml:ActivityPartition" href="platform:/resource/Miscellaneous%20Models/ActivityDiagramAddCD.emx#_yBA1kKblEd2QofOHEhHrHg?ActivityDiagramAddCD/Dodanie%20płyty/Aplikacja?"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_yBldU6blEd2QofOHEhHrHg" x="6033" y="185" width="6032" height="5715"/>
+          </children>
+          <children xmi:id="_0RmYIKblEd2QofOHEhHrHg">
+            <children xmi:id="_0RmYJKblEd2QofOHEhHrHg" type="Stereotype"/>
+            <children xmi:id="_0RsewKblEd2QofOHEhHrHg" type="PartitionName"/>
+            <children xmi:id="_0RsewablEd2QofOHEhHrHg" type="PartitionCompartment">
+              <children xmi:id="_gMBUgKbmEd2QofOHEhHrHg">
+                <children xmi:id="_gMBUg6bmEd2QofOHEhHrHg" type="ImageCompartment">
+                  <layoutConstraint xmi:type="notation:Size" xmi:id="_gMBUhKbmEd2QofOHEhHrHg" width="1320" height="1320"/>
+                </children>
+                <children xmi:id="_gMBUhabmEd2QofOHEhHrHg" type="Stereotype"/>
+                <children xmi:id="_gMHbIKbmEd2QofOHEhHrHg" type="InPartitions"/>
+                <children xmi:id="_gMHbIabmEd2QofOHEhHrHg" type="Name"/>
+                <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="_gMBUgabmEd2QofOHEhHrHg" showStereotype="Label"/>
+                <element xmi:type="uml:OpaqueAction" href="platform:/resource/Miscellaneous%20Models/ActivityDiagramAddCD.emx#_gK-LoKbmEd2QofOHEhHrHg?ActivityDiagramAddCD/Dodanie%20płyty/Walidacja%20poprawności%20przesłanych%20danych?"/>
+                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_gMBUgqbmEd2QofOHEhHrHg" x="907" y="9800" width="3578"/>
+              </children>
+              <children xmi:id="_mksGwKbmEd2QofOHEhHrHg">
+                <children xmi:id="_mkyNYKbmEd2QofOHEhHrHg" type="ImageCompartment">
+                  <layoutConstraint xmi:type="notation:Size" xmi:id="_mkyNYabmEd2QofOHEhHrHg" width="1320" height="1320"/>
+                </children>
+                <children xmi:id="_mkyNYqbmEd2QofOHEhHrHg" type="Stereotype"/>
+                <children xmi:id="_mkyNY6bmEd2QofOHEhHrHg" type="InPartitions"/>
+                <children xmi:id="_mkyNZKbmEd2QofOHEhHrHg" type="Name"/>
+                <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="_mksGwabmEd2QofOHEhHrHg" showStereotype="Label"/>
+                <element xmi:type="uml:DecisionNode" href="platform:/resource/Miscellaneous%20Models/ActivityDiagramAddCD.emx#_mkmAIKbmEd2QofOHEhHrHg?ActivityDiagramAddCD/Dodanie%20płyty/Pola%20poprawne?"/>
+                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_mksGwqbmEd2QofOHEhHrHg" x="1224" y="12653"/>
+              </children>
+              <children xmi:id="_xfr0sKbmEd2QofOHEhHrHg">
+                <children xmi:id="_xfr0s6bmEd2QofOHEhHrHg" type="ImageCompartment">
+                  <layoutConstraint xmi:type="notation:Size" xmi:id="_xfr0tKbmEd2QofOHEhHrHg" width="1320" height="1320"/>
+                </children>
+                <children xmi:id="_xfr0tabmEd2QofOHEhHrHg" type="Stereotype"/>
+                <children xmi:id="_xfr0tqbmEd2QofOHEhHrHg" type="InPartitions"/>
+                <children xmi:id="_xfr0t6bmEd2QofOHEhHrHg" type="Name"/>
+                <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="_xfr0sabmEd2QofOHEhHrHg" showStereotype="Label"/>
+                <element xmi:type="uml:OpaqueAction" href="platform:/resource/Miscellaneous%20Models/ActivityDiagramAddCD.emx#_xfluEKbmEd2QofOHEhHrHg?ActivityDiagramAddCD/Dodanie%20płyty/Potwierdzenie%20wykonania%20operacji?"/>
+                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_xfr0sqbmEd2QofOHEhHrHg" x="907" y="18993" width="3705"/>
+              </children>
+              <children xmi:id="_U_jmoKbnEd2QofOHEhHrHg">
+                <children xmi:id="_U_ptQKbnEd2QofOHEhHrHg" type="ImageCompartment">
+                  <layoutConstraint xmi:type="notation:Size" xmi:id="_U_ptQabnEd2QofOHEhHrHg" width="1320" height="1320"/>
+                </children>
+                <children xmi:id="_U_ptQqbnEd2QofOHEhHrHg" type="Stereotype"/>
+                <children xmi:id="_U_ptQ6bnEd2QofOHEhHrHg" type="InPartitions"/>
+                <children xmi:id="_U_ptRKbnEd2QofOHEhHrHg" type="Name"/>
+                <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="_U_jmoabnEd2QofOHEhHrHg" showStereotype="Label"/>
+                <element xmi:type="uml:DecisionNode" href="platform:/resource/Miscellaneous%20Models/ActivityDiagramAddCD.emx#_U_XZYKbnEd2QofOHEhHrHg?ActivityDiagramAddCD/Dodanie%20płyty/Występuje?"/>
+                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_U_jmoqbnEd2QofOHEhHrHg" x="1541" y="14872"/>
+              </children>
+              <children xmi:id="_1POMEKbnEd2QofOHEhHrHg">
+                <children xmi:id="_1POME6bnEd2QofOHEhHrHg" type="ImageCompartment">
+                  <layoutConstraint xmi:type="notation:Size" xmi:id="_1POMFKbnEd2QofOHEhHrHg" width="1320" height="1320"/>
+                </children>
+                <children xmi:id="_1POMFabnEd2QofOHEhHrHg" type="Stereotype"/>
+                <children xmi:id="_1POMFqbnEd2QofOHEhHrHg" type="InPartitions"/>
+                <children xmi:id="_1POMF6bnEd2QofOHEhHrHg" type="Name"/>
+                <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="_1POMEabnEd2QofOHEhHrHg" showStereotype="Label"/>
+                <element xmi:type="uml:DecisionNode" href="platform:/resource/Miscellaneous%20Models/ActivityDiagramAddCD.emx#_1PB-0KbnEd2QofOHEhHrHg?ActivityDiagramAddCD/Dodanie%20płyty/Powodzenie?"/>
+                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_1POMEqbnEd2QofOHEhHrHg" x="1541" y="21529"/>
+              </children>
+              <styles xmi:type="umlnotation:UMLShapeCompartmentStyle" xmi:id="_0RsewqblEd2QofOHEhHrHg"/>
+            </children>
+            <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="_0RmYIablEd2QofOHEhHrHg" showStereotype="Label"/>
+            <styles xmi:type="umlnotation:UMLFrameStyle" xmi:id="_0RmYIqblEd2QofOHEhHrHg"/>
+            <element xmi:type="uml:ActivityPartition" href="platform:/resource/Miscellaneous%20Models/ActivityDiagramAddCD.emx#_0RgRgKblEd2QofOHEhHrHg?ActivityDiagramAddCD/Dodanie%20płyty/Serwer?"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_0RmYI6blEd2QofOHEhHrHg" x="12143" y="396" width="5371" height="5715"/>
+          </children>
+          <children xmi:id="_2JvlgKblEd2QofOHEhHrHg">
+            <children xmi:id="_2JvlhKblEd2QofOHEhHrHg" type="Stereotype"/>
+            <children xmi:id="_2JvlhablEd2QofOHEhHrHg" type="PartitionName"/>
+            <children xmi:id="_2JvlhqblEd2QofOHEhHrHg" type="PartitionCompartment">
+              <children xmi:id="_sUwn8abmEd2QofOHEhHrHg">
+                <children xmi:id="_sVJCcKbmEd2QofOHEhHrHg" type="ImageCompartment">
+                  <layoutConstraint xmi:type="notation:Size" xmi:id="_sVJCcabmEd2QofOHEhHrHg" width="1320" height="1320"/>
+                </children>
+                <children xmi:id="_sVJCcqbmEd2QofOHEhHrHg" type="Stereotype"/>
+                <children xmi:id="_sVJCc6bmEd2QofOHEhHrHg" type="InPartitions"/>
+                <children xmi:id="_sVJCdKbmEd2QofOHEhHrHg" type="Name"/>
+                <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="_sUwn8qbmEd2QofOHEhHrHg" showStereotype="Label"/>
+                <element xmi:type="uml:OpaqueAction" href="platform:/resource/Miscellaneous%20Models/ActivityDiagramAddCD.emx#_sUwn8KbmEd2QofOHEhHrHg?ActivityDiagramAddCD/Dodanie%20płyty/Zapis%20danych?"/>
+                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_sUwn86bmEd2QofOHEhHrHg" x="608" y="15823"/>
+              </children>
+              <children xmi:id="_NxmLIKbnEd2QofOHEhHrHg">
+                <children xmi:id="_NxmLI6bnEd2QofOHEhHrHg" type="ImageCompartment">
+                  <layoutConstraint xmi:type="notation:Size" xmi:id="_NxmLJKbnEd2QofOHEhHrHg" width="1320" height="1320"/>
+                </children>
+                <children xmi:id="_NxmLJabnEd2QofOHEhHrHg" type="Stereotype"/>
+                <children xmi:id="_NxmLJqbnEd2QofOHEhHrHg" type="InPartitions"/>
+                <children xmi:id="_NxmLJ6bnEd2QofOHEhHrHg" type="Name"/>
+                <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="_NxmLIabnEd2QofOHEhHrHg" showStereotype="Label"/>
+                <element xmi:type="uml:OpaqueAction" href="platform:/resource/Miscellaneous%20Models/ActivityDiagramAddCD.emx#_NxgEgKbnEd2QofOHEhHrHg?ActivityDiagramAddCD/Dodanie%20płyty/Sprawdzenie,%20czy%20nie%20występuje%20już%20taka%20pozycja?"/>
+                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_NxmLIqbnEd2QofOHEhHrHg" x="291" y="13287" width="3799"/>
+              </children>
+              <styles xmi:type="umlnotation:UMLShapeCompartmentStyle" xmi:id="_2Jvlh6blEd2QofOHEhHrHg"/>
+            </children>
+            <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="_2JvlgablEd2QofOHEhHrHg" showStereotype="Label"/>
+            <styles xmi:type="umlnotation:UMLFrameStyle" xmi:id="_2JvlgqblEd2QofOHEhHrHg"/>
+            <element xmi:type="uml:ActivityPartition" href="platform:/resource/Miscellaneous%20Models/ActivityDiagramAddCD.emx#_2Jpe4KblEd2QofOHEhHrHg?ActivityDiagramAddCD/Dodanie%20płyty/Baza%20danych?"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_2Jvlg6blEd2QofOHEhHrHg" x="17437" y="503" width="4762" height="4762"/>
+          </children>
+          <styles xmi:type="umlnotation:UMLShapeCompartmentStyle" xmi:id="_pNJzQ6blEd2QofOHEhHrHg"/>
+        </children>
+        <children xmi:id="_pNJzRKblEd2QofOHEhHrHg" type="Name"/>
+        <styles xmi:type="umlnotation:UMLFrameStyle" xmi:id="_pNJzRablEd2QofOHEhHrHg" showStereotype="Label"/>
+        <element xmi:type="uml:Activity" href="platform:/resource/Miscellaneous%20Models/ActivityDiagramAddCD.emx#_pHnL8KblEd2QofOHEhHrHg?ActivityDiagramAddCD/Dodanie%20płyty?"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_pNJzRqblEd2QofOHEhHrHg" x="793" y="793" width="23071" height="29351"/>
+      </children>
+      <styles xmi:type="umlnotation:UMLDiagramStyle" xmi:id="_pNJzR6blEd2QofOHEhHrHg"/>
+      <element xmi:type="uml:Activity" href="platform:/resource/Miscellaneous%20Models/ActivityDiagramAddCD.emx#_pHnL8KblEd2QofOHEhHrHg?ActivityDiagramAddCD/Dodanie%20płyty?"/>
+      <edges xmi:id="_7a4H8KblEd2QofOHEhHrHg" source="_3mMVYKblEd2QofOHEhHrHg" target="_7XomsKblEd2QofOHEhHrHg">
+        <children xmi:id="_7a-OkKblEd2QofOHEhHrHg" type="ActivityEdgeLabelCompartment">
+          <children xmi:id="_7bEVMKblEd2QofOHEhHrHg" type="Stereotype"/>
+          <children xmi:id="_7bKb0KblEd2QofOHEhHrHg" type="ActivityEdgeLabel"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_7a-OkablEd2QofOHEhHrHg" y="-186"/>
+        </children>
+        <styles xmi:type="umlnotation:UMLConnectorStyle" xmi:id="_7a4H8ablEd2QofOHEhHrHg" routing="Rectilinear" showStereotype="Text"/>
+        <element xmi:type="uml:ControlFlow" href="platform:/resource/Miscellaneous%20Models/ActivityDiagramAddCD.emx#_7Zu4cKblEd2QofOHEhHrHg?ActivityDiagramAddCD/Dodanie%20płyty/%3CControlFlow%3E?"/>
+        <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_7a4H8qblEd2QofOHEhHrHg" points="[-9, -5, 67, 40]$[-75, -44, 1, 1]"/>
+      </edges>
+      <edges xmi:id="_CsFEsKbmEd2QofOHEhHrHg" source="_7XomsKblEd2QofOHEhHrHg" target="_Cq1ukKbmEd2QofOHEhHrHg">
+        <children xmi:id="_CsLLUKbmEd2QofOHEhHrHg" type="ActivityEdgeLabelCompartment">
+          <children xmi:id="_CsLLUqbmEd2QofOHEhHrHg" type="Stereotype"/>
+          <children xmi:id="_CsLLU6bmEd2QofOHEhHrHg" type="ActivityEdgeLabel"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_CsLLUabmEd2QofOHEhHrHg" y="-186"/>
+        </children>
+        <styles xmi:type="umlnotation:UMLConnectorStyle" xmi:id="_CsFEsabmEd2QofOHEhHrHg" routing="Rectilinear" showStereotype="Text"/>
+        <element xmi:type="uml:ControlFlow" href="platform:/resource/Miscellaneous%20Models/ActivityDiagramAddCD.emx#_Cryw0KbmEd2QofOHEhHrHg?ActivityDiagramAddCD/Dodanie%20płyty/%3CControlFlow%3E?"/>
+        <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_CsFEsqbmEd2QofOHEhHrHg" points="[1905, -159, -3942, -1852]$[5530, -159, -317, -1852]$[5530, 1164, -317, -529]"/>
+      </edges>
+      <edges xmi:id="_F-epkKbmEd2QofOHEhHrHg" source="_Cq1ukKbmEd2QofOHEhHrHg" target="_F9z7MKbmEd2QofOHEhHrHg">
+        <children xmi:id="_F-kwMKbmEd2QofOHEhHrHg" type="ActivityEdgeLabelCompartment">
+          <children xmi:id="_F-kwMqbmEd2QofOHEhHrHg" type="Stereotype"/>
+          <children xmi:id="_F-kwM6bmEd2QofOHEhHrHg" type="ActivityEdgeLabel"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_F-kwMabmEd2QofOHEhHrHg" y="-186"/>
+        </children>
+        <styles xmi:type="umlnotation:UMLConnectorStyle" xmi:id="_F-epkabmEd2QofOHEhHrHg" routing="Rectilinear" showStereotype="Text"/>
+        <element xmi:type="uml:ControlFlow" href="platform:/resource/Miscellaneous%20Models/ActivityDiagramAddCD.emx#_F-Yi8KbmEd2QofOHEhHrHg?ActivityDiagramAddCD/Dodanie%20płyty/%3CControlFlow%3E?"/>
+        <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_F-epkqbmEd2QofOHEhHrHg" points="[-767, 529, 5159, -1085]$[-767, 1164, 5159, -450]$[-3836, 1164, 2090, -450]"/>
+      </edges>
+      <edges xmi:id="_KlNkIKbmEd2QofOHEhHrHg" source="_F9z7MKbmEd2QofOHEhHrHg" target="_Kk1JoKbmEd2QofOHEhHrHg">
+        <children xmi:id="_KlTqwKbmEd2QofOHEhHrHg" type="ActivityEdgeLabelCompartment">
+          <children xmi:id="_KlTqwqbmEd2QofOHEhHrHg" type="Stereotype"/>
+          <children xmi:id="_KlTqw6bmEd2QofOHEhHrHg" type="ActivityEdgeLabel"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_KlTqwabmEd2QofOHEhHrHg" y="-186"/>
+        </children>
+        <styles xmi:type="umlnotation:UMLConnectorStyle" xmi:id="_KlNkIabmEd2QofOHEhHrHg" routing="Rectilinear" showStereotype="Text"/>
+        <element xmi:type="uml:ControlFlow" href="platform:/resource/Miscellaneous%20Models/ActivityDiagramAddCD.emx#_KlHdgKbmEd2QofOHEhHrHg?ActivityDiagramAddCD/Dodanie%20płyty/%3CControlFlow%3E?"/>
+        <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_KlNkIqbmEd2QofOHEhHrHg" points="[14, -26, -112, 203]$[126, -229, 0, 0]"/>
+      </edges>
+      <edges xmi:id="_cbELYKbmEd2QofOHEhHrHg" source="_Kk1JoKbmEd2QofOHEhHrHg" target="_caNPwKbmEd2QofOHEhHrHg">
+        <children xmi:id="_cbELY6bmEd2QofOHEhHrHg" type="ActivityEdgeLabelCompartment">
+          <children xmi:id="_cbELZabmEd2QofOHEhHrHg" type="Stereotype"/>
+          <children xmi:id="_cbELZqbmEd2QofOHEhHrHg" type="ActivityEdgeLabel"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_cbELZKbmEd2QofOHEhHrHg" y="-186"/>
+        </children>
+        <styles xmi:type="umlnotation:UMLConnectorStyle" xmi:id="_cbELYabmEd2QofOHEhHrHg" routing="Rectilinear" showStereotype="Text"/>
+        <element xmi:type="uml:ControlFlow" href="platform:/resource/Miscellaneous%20Models/ActivityDiagramAddCD.emx#_cax3gKbmEd2QofOHEhHrHg?ActivityDiagramAddCD/Dodanie%20płyty/%3CControlFlow%3E?"/>
+        <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_cbELYqbmEd2QofOHEhHrHg" points="[-8, -22, 82, 224]$[-90, -246, 0, 0]"/>
+        <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_cbWfQKbmEd2QofOHEhHrHg" id="top"/>
+      </edges>
+      <edges xmi:id="_gMZvAabmEd2QofOHEhHrHg" source="_caNPwKbmEd2QofOHEhHrHg" target="_gMBUgKbmEd2QofOHEhHrHg">
+        <children xmi:id="_gNEdYKbmEd2QofOHEhHrHg" type="ActivityEdgeLabelCompartment">
+          <children xmi:id="_gNEdYqbmEd2QofOHEhHrHg" type="Stereotype"/>
+          <children xmi:id="_gNEdY6bmEd2QofOHEhHrHg" type="ActivityEdgeLabel"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_gNEdYabmEd2QofOHEhHrHg" y="-186"/>
+        </children>
+        <styles xmi:type="umlnotation:UMLConnectorStyle" xmi:id="_gMZvAqbmEd2QofOHEhHrHg" routing="Rectilinear" showStereotype="Text"/>
+        <element xmi:type="uml:ControlFlow" href="platform:/resource/Miscellaneous%20Models/ActivityDiagramAddCD.emx#_gMToYKbmEd2QofOHEhHrHg?ActivityDiagramAddCD/Dodanie%20płyty/tak?"/>
+        <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_gMZvA6bmEd2QofOHEhHrHg" points="[0, 22, -100, 348]$[100, -325, 0, 1]"/>
+        <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_gNc34KbmEd2QofOHEhHrHg" id="bottom"/>
+      </edges>
+      <edges xmi:id="_mlc7wKbmEd2QofOHEhHrHg" source="_gMBUgKbmEd2QofOHEhHrHg" target="_mksGwKbmEd2QofOHEhHrHg">
+        <children xmi:id="_mljCYKbmEd2QofOHEhHrHg" type="ActivityEdgeLabelCompartment">
+          <children xmi:id="_mljCYqbmEd2QofOHEhHrHg" type="Stereotype"/>
+          <children xmi:id="_mljCY6bmEd2QofOHEhHrHg" type="ActivityEdgeLabel"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_mljCYabmEd2QofOHEhHrHg" y="-186"/>
+        </children>
+        <styles xmi:type="umlnotation:UMLConnectorStyle" xmi:id="_mlc7wabmEd2QofOHEhHrHg" routing="Rectilinear" showStereotype="Text"/>
+        <element xmi:type="uml:ControlFlow" href="platform:/resource/Miscellaneous%20Models/ActivityDiagramAddCD.emx#_mlQugKbmEd2QofOHEhHrHg?ActivityDiagramAddCD/Dodanie%20płyty/%3CControlFlow%3E?"/>
+        <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_mlc7wqbmEd2QofOHEhHrHg" points="[-8, -34, 79, 315]$[-87, -349, 0, 0]"/>
+        <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_mmBjgKbmEd2QofOHEhHrHg" id="top"/>
+      </edges>
+      <edges xmi:id="_xgQccKbmEd2QofOHEhHrHg" source="_sUwn8abmEd2QofOHEhHrHg" target="_xfr0sKbmEd2QofOHEhHrHg">
+        <children xmi:id="_xgWjEKbmEd2QofOHEhHrHg" type="ActivityEdgeLabelCompartment">
+          <children xmi:id="_xgWjEqbmEd2QofOHEhHrHg" type="Stereotype"/>
+          <children xmi:id="_xgWjE6bmEd2QofOHEhHrHg" type="ActivityEdgeLabel"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_xgWjEabmEd2QofOHEhHrHg" y="-186"/>
+        </children>
+        <styles xmi:type="umlnotation:UMLConnectorStyle" xmi:id="_xgQccabmEd2QofOHEhHrHg" routing="Rectilinear" showStereotype="Text"/>
+        <element xmi:type="uml:ControlFlow" href="platform:/resource/Miscellaneous%20Models/ActivityDiagramAddCD.emx#_xgEPMKbmEd2QofOHEhHrHg?ActivityDiagramAddCD/Dodanie%20płyty/%3CControlFlow%3E?"/>
+        <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_xgQccqbmEd2QofOHEhHrHg" points="[-9, -17, 229, 456]$[-237, -472, 1, 1]"/>
+      </edges>
+      <edges xmi:id="_NyKy4KbnEd2QofOHEhHrHg" source="_mksGwKbmEd2QofOHEhHrHg" target="_NxmLIKbnEd2QofOHEhHrHg">
+        <children xmi:id="_NyKy46bnEd2QofOHEhHrHg" type="ActivityEdgeLabelCompartment">
+          <children xmi:id="_NyKy5abnEd2QofOHEhHrHg" type="Stereotype"/>
+          <children xmi:id="_NyKy5qbnEd2QofOHEhHrHg" type="ActivityEdgeLabel"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_NyKy5KbnEd2QofOHEhHrHg" y="-186"/>
+        </children>
+        <styles xmi:type="umlnotation:UMLConnectorStyle" xmi:id="_NyKy4abnEd2QofOHEhHrHg" routing="Rectilinear" showStereotype="Text"/>
+        <element xmi:type="uml:ControlFlow" href="platform:/resource/Miscellaneous%20Models/ActivityDiagramAddCD.emx#_Nx-loKbnEd2QofOHEhHrHg?ActivityDiagramAddCD/Dodanie%20płyty/tak?"/>
+        <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_NyKy4qbnEd2QofOHEhHrHg" points="[0, 22, -89, 460]$[89, -437, 0, 1]"/>
+        <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_NyjNYKbnEd2QofOHEhHrHg" id="bottom"/>
+      </edges>
+      <edges xmi:id="_VAaiQKbnEd2QofOHEhHrHg" source="_NxmLIKbnEd2QofOHEhHrHg" target="_U_jmoKbnEd2QofOHEhHrHg">
+        <children xmi:id="_VAaiQ6bnEd2QofOHEhHrHg" type="ActivityEdgeLabelCompartment">
+          <children xmi:id="_VAaiRabnEd2QofOHEhHrHg" type="Stereotype"/>
+          <children xmi:id="_VAaiRqbnEd2QofOHEhHrHg" type="ActivityEdgeLabel"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_VAaiRKbnEd2QofOHEhHrHg" y="-186"/>
+        </children>
+        <styles xmi:type="umlnotation:UMLConnectorStyle" xmi:id="_VAaiQabnEd2QofOHEhHrHg" routing="Rectilinear" showStereotype="Text"/>
+        <element xmi:type="uml:ControlFlow" href="platform:/resource/Miscellaneous%20Models/ActivityDiagramAddCD.emx#_VAUboKbnEd2QofOHEhHrHg?ActivityDiagramAddCD/Dodanie%20płyty/%3CControlFlow%3E?"/>
+        <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_VAaiQqbnEd2QofOHEhHrHg" points="[-15, -28, 228, 427]$[-243, -455, 0, 0]"/>
+        <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_VAs2IKbnEd2QofOHEhHrHg" id="top"/>
+      </edges>
+      <edges xmi:id="_YVGmIKbnEd2QofOHEhHrHg" source="_U_jmoKbnEd2QofOHEhHrHg" target="_sUwn8abmEd2QofOHEhHrHg">
+        <children xmi:id="_YVMswKbnEd2QofOHEhHrHg" type="ActivityEdgeLabelCompartment">
+          <children xmi:id="_YVMswqbnEd2QofOHEhHrHg" type="Stereotype"/>
+          <children xmi:id="_YVMsw6bnEd2QofOHEhHrHg" type="ActivityEdgeLabel"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_YVMswabnEd2QofOHEhHrHg" y="-186"/>
+        </children>
+        <styles xmi:type="umlnotation:UMLConnectorStyle" xmi:id="_YVGmIabnEd2QofOHEhHrHg" routing="Rectilinear" showStereotype="Text"/>
+        <element xmi:type="uml:ControlFlow" href="platform:/resource/Miscellaneous%20Models/ActivityDiagramAddCD.emx#_YUuLoKbnEd2QofOHEhHrHg?ActivityDiagramAddCD/Dodanie%20płyty/nie?"/>
+        <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_YVGmIqbnEd2QofOHEhHrHg" points="[0, 22, -156, -5]$[108, 26, -48, -1]"/>
+        <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_YVfAoKbnEd2QofOHEhHrHg" id="bottom"/>
+      </edges>
+      <edges xmi:id="_1P_BEKbnEd2QofOHEhHrHg" source="_xfr0sKbmEd2QofOHEhHrHg" target="_1POMEKbnEd2QofOHEhHrHg">
+        <children xmi:id="_1P_BE6bnEd2QofOHEhHrHg" type="ActivityEdgeLabelCompartment">
+          <children xmi:id="_1P_BFabnEd2QofOHEhHrHg" type="Stereotype"/>
+          <children xmi:id="_1P_BFqbnEd2QofOHEhHrHg" type="ActivityEdgeLabel"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_1P_BFKbnEd2QofOHEhHrHg" y="-186"/>
+        </children>
+        <styles xmi:type="umlnotation:UMLConnectorStyle" xmi:id="_1P_BEabnEd2QofOHEhHrHg" routing="Rectilinear" showStereotype="Text"/>
+        <element xmi:type="uml:ControlFlow" href="platform:/resource/Miscellaneous%20Models/ActivityDiagramAddCD.emx#_1PmmkKbnEd2QofOHEhHrHg?ActivityDiagramAddCD/Dodanie%20płyty/%3CControlFlow%3E?"/>
+        <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_1P_BEqbnEd2QofOHEhHrHg" points="[-4, -28, 85, 539]$[-89, -567, 0, 0]"/>
+        <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_1QXbkKbnEd2QofOHEhHrHg" id="top"/>
+      </edges>
+      <edges xmi:id="_2nFW4KbnEd2QofOHEhHrHg" source="_1POMEKbnEd2QofOHEhHrHg" target="_5y-gkKbmEd2QofOHEhHrHg">
+        <children xmi:id="_2nFW46bnEd2QofOHEhHrHg" type="ActivityEdgeLabelCompartment">
+          <children xmi:id="_2nFW5abnEd2QofOHEhHrHg" type="Stereotype"/>
+          <children xmi:id="_2nFW5qbnEd2QofOHEhHrHg" type="ActivityEdgeLabel"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_2nFW5KbnEd2QofOHEhHrHg" y="-186"/>
+        </children>
+        <styles xmi:type="umlnotation:UMLConnectorStyle" xmi:id="_2nFW4abnEd2QofOHEhHrHg" routing="Rectilinear" showStereotype="Text"/>
+        <element xmi:type="uml:ControlFlow" href="platform:/resource/Miscellaneous%20Models/ActivityDiagramAddCD.emx#_2mUh4KbnEd2QofOHEhHrHg?ActivityDiagramAddCD/Dodanie%20płyty/tak?"/>
+        <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_2nFW4qbnEd2QofOHEhHrHg" points="[-38, 0, 167, 16]$[-206, 12, -1, 28]"/>
+        <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_2nRkIKbnEd2QofOHEhHrHg" id="left"/>
+      </edges>
+      <edges xmi:id="_4PL9IKbnEd2QofOHEhHrHg" source="_1POMEKbnEd2QofOHEhHrHg" target="_4OnVYKbnEd2QofOHEhHrHg">
+        <children xmi:id="_4PL9I6bnEd2QofOHEhHrHg" type="ActivityEdgeLabelCompartment">
+          <children xmi:id="_4PL9JabnEd2QofOHEhHrHg" type="Stereotype"/>
+          <children xmi:id="_4PL9JqbnEd2QofOHEhHrHg" type="ActivityEdgeLabel"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_4PL9JKbnEd2QofOHEhHrHg" y="-186"/>
+        </children>
+        <styles xmi:type="umlnotation:UMLConnectorStyle" xmi:id="_4PL9IabnEd2QofOHEhHrHg" routing="Rectilinear" showStereotype="Text"/>
+        <element xmi:type="uml:ControlFlow" href="platform:/resource/Miscellaneous%20Models/ActivityDiagramAddCD.emx#_4O_v4KbnEd2QofOHEhHrHg?ActivityDiagramAddCD/Dodanie%20płyty/nie?"/>
+        <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_4PL9IqbnEd2QofOHEhHrHg" points="[0, 21, 281, 663]$[-281, -641, 0, 1]"/>
+        <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_4PYKYKbnEd2QofOHEhHrHg" id="bottom"/>
+      </edges>
+      <edges xmi:id="_-1sXEKbnEd2QofOHEhHrHg" source="_U_jmoKbnEd2QofOHEhHrHg" target="_-0W6UKbnEd2QofOHEhHrHg">
+        <children xmi:id="_-1ydsKbnEd2QofOHEhHrHg" type="ActivityEdgeLabelCompartment">
+          <children xmi:id="_-1ydsqbnEd2QofOHEhHrHg" type="Stereotype"/>
+          <children xmi:id="_-1yds6bnEd2QofOHEhHrHg" type="ActivityEdgeLabel"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_-1ydsabnEd2QofOHEhHrHg" y="-186"/>
+        </children>
+        <styles xmi:type="umlnotation:UMLConnectorStyle" xmi:id="_-1sXEabnEd2QofOHEhHrHg" routing="Rectilinear" showStereotype="Text"/>
+        <element xmi:type="uml:ControlFlow" href="platform:/resource/Miscellaneous%20Models/ActivityDiagramAddCD.emx#_-1gJ0KbnEd2QofOHEhHrHg?ActivityDiagramAddCD/Dodanie%20płyty/%3CControlFlow%3E?"/>
+        <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_-1sXEqbnEd2QofOHEhHrHg" points="[0, 22, 278, 521]$[-277, -498, 1, 1]"/>
+        <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_-1ydtKbnEd2QofOHEhHrHg" id="bottom"/>
+      </edges>
+      <edges xmi:id="_IINrUKboEd2QofOHEhHrHg" source="_mksGwKbmEd2QofOHEhHrHg" target="_IHpDkKboEd2QofOHEhHrHg">
+        <children xmi:id="_IIZ4kKboEd2QofOHEhHrHg" type="ActivityEdgeLabelCompartment">
+          <children xmi:id="_IIZ4kqboEd2QofOHEhHrHg" type="Stereotype"/>
+          <children xmi:id="_IIZ4k6boEd2QofOHEhHrHg" type="ActivityEdgeLabel"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_IIZ4kaboEd2QofOHEhHrHg" y="-186"/>
+        </children>
+        <styles xmi:type="umlnotation:UMLConnectorStyle" xmi:id="_IINrUaboEd2QofOHEhHrHg" routing="Rectilinear" showStereotype="Text"/>
+        <element xmi:type="uml:ControlFlow" href="platform:/resource/Miscellaneous%20Models/ActivityDiagramAddCD.emx#_IIBeEKboEd2QofOHEhHrHg?ActivityDiagramAddCD/Dodanie%20płyty/nie?"/>
+        <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_IINrUqboEd2QofOHEhHrHg" points="[0, 21, 277, 449]$[-277, -428, 0, 0]"/>
+        <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_IIf_MKboEd2QofOHEhHrHg" id="bottom"/>
+        <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_IIf_MaboEd2QofOHEhHrHg" id="top"/>
+      </edges>
+      <edges xmi:id="_Jm2zkKboEd2QofOHEhHrHg" source="_caNPwKbmEd2QofOHEhHrHg" target="_IHpDkKboEd2QofOHEhHrHg">
+        <children xmi:id="_Jm2zk6boEd2QofOHEhHrHg" type="ActivityEdgeLabelCompartment">
+          <children xmi:id="_Jm2zlaboEd2QofOHEhHrHg" type="Stereotype"/>
+          <children xmi:id="_Jm2zlqboEd2QofOHEhHrHg" type="ActivityEdgeLabel"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Jm2zlKboEd2QofOHEhHrHg" y="-186"/>
+        </children>
+        <styles xmi:type="umlnotation:UMLConnectorStyle" xmi:id="_Jm2zkaboEd2QofOHEhHrHg" routing="Rectilinear" showStereotype="Text"/>
+        <element xmi:type="uml:ControlFlow" href="platform:/resource/Miscellaneous%20Models/ActivityDiagramAddCD.emx#_Jmws8KboEd2QofOHEhHrHg?ActivityDiagramAddCD/Dodanie%20płyty/nie?"/>
+        <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_Jm2zkqboEd2QofOHEhHrHg" points="[0, 22, 3, -80]$[-3, 81, 0, -21]"/>
+        <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_JnDA0KboEd2QofOHEhHrHg" id="bottom"/>
+        <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_JnDA0aboEd2QofOHEhHrHg" id="top"/>
+      </edges>
+      <edges xmi:id="_P2vdQKboEd2QofOHEhHrHg" source="_IHpDkKboEd2QofOHEhHrHg" target="_P2K1gKboEd2QofOHEhHrHg">
+        <children xmi:id="_P2vdQ6boEd2QofOHEhHrHg" type="ActivityEdgeLabelCompartment">
+          <children xmi:id="_P27qgKboEd2QofOHEhHrHg" type="Stereotype"/>
+          <children xmi:id="_P27qgaboEd2QofOHEhHrHg" type="ActivityEdgeLabel"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_P2vdRKboEd2QofOHEhHrHg" y="-186"/>
+        </children>
+        <styles xmi:type="umlnotation:UMLConnectorStyle" xmi:id="_P2vdQaboEd2QofOHEhHrHg" routing="Rectilinear" showStereotype="Text"/>
+        <element xmi:type="uml:ControlFlow" href="platform:/resource/Miscellaneous%20Models/ActivityDiagramAddCD.emx#_P2pWoKboEd2QofOHEhHrHg?ActivityDiagramAddCD/Dodanie%20płyty/%3CControlFlow%3E?"/>
+        <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_P2vdQqboEd2QofOHEhHrHg" points="[0, 21, 91, 449]$[-91, -427, 0, 1]"/>
+        <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_P3UFAKboEd2QofOHEhHrHg" id="bottom"/>
+      </edges>
+      <edges xmi:id="_coQn8KboEd2QofOHEhHrHg" source="_P2K1gKboEd2QofOHEhHrHg" target="_Cq1ukKbmEd2QofOHEhHrHg">
+        <children xmi:id="_coQn86boEd2QofOHEhHrHg" type="ActivityEdgeLabelCompartment">
+          <children xmi:id="_coc1MaboEd2QofOHEhHrHg" type="Stereotype"/>
+          <children xmi:id="_coc1MqboEd2QofOHEhHrHg" type="ActivityEdgeLabel"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_coc1MKboEd2QofOHEhHrHg" y="-186"/>
+        </children>
+        <styles xmi:type="umlnotation:UMLConnectorStyle" xmi:id="_coQn8aboEd2QofOHEhHrHg" routing="Rectilinear" showStereotype="Text"/>
+        <element xmi:type="uml:ControlFlow" href="platform:/resource/Miscellaneous%20Models/ActivityDiagramAddCD.emx#_coEasKboEd2QofOHEhHrHg?ActivityDiagramAddCD/Dodanie%20płyty/%3CControlFlow%3E?"/>
+        <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_coQn8qboEd2QofOHEhHrHg" points="[0, -846, -1720, 9710]$[-582, -846, -2302, 9710]$[-582, -10027, -2302, 529]"/>
+        <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_copCcKboEd2QofOHEhHrHg" id="(0.0,0.5670498)"/>
+      </edges>
+    </contents>
+  </eAnnotations>
+  <packageImport xmi:id="_JoHtS6bqEd2QofOHEhHrHg">
+    <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
+  </packageImport>
+  <packagedElement xmi:type="uml:Activity" xmi:id="_JoHtTKbqEd2QofOHEhHrHg" name="Dodanie płyty">
+    <node xmi:type="uml:InitialNode" xmi:id="_JoHtTabqEd2QofOHEhHrHg" name="Węzeł początkowy" outgoing="_JoHtX6bqEd2QofOHEhHrHg"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_JoHtTqbqEd2QofOHEhHrHg" name="Wybranie opcji dodania nowej płyty" outgoing="_JoHtYqbqEd2QofOHEhHrHg" incoming="_JoHtX6bqEd2QofOHEhHrHg" inPartition="_JoHtmKbqEd2QofOHEhHrHg"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_JoHtT6bqEd2QofOHEhHrHg" name="Wyświetlenie formularza" outgoing="_JoHtZabqEd2QofOHEhHrHg" incoming="_JoHtYqbqEd2QofOHEhHrHg _JoHtlabqEd2QofOHEhHrHg" inPartition="_JoHtmabqEd2QofOHEhHrHg"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_JoHtUKbqEd2QofOHEhHrHg" name="Wypełnienie pól formularza" outgoing="_JoHtaKbqEd2QofOHEhHrHg" incoming="_JoHtZabqEd2QofOHEhHrHg" inPartition="_JoHtmKbqEd2QofOHEhHrHg"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_JoHtUabqEd2QofOHEhHrHg" name="Walidacja pól formularza" outgoing="_JoHta6bqEd2QofOHEhHrHg" incoming="_JoHtaKbqEd2QofOHEhHrHg" inPartition="_JoHtmabqEd2QofOHEhHrHg"/>
+    <node xmi:type="uml:DecisionNode" xmi:id="_JoHtUqbqEd2QofOHEhHrHg" name="Pola poprawne" outgoing="_JoHtbqbqEd2QofOHEhHrHg _JoHtj6bqEd2QofOHEhHrHg" incoming="_JoHta6bqEd2QofOHEhHrHg" inPartition="_JoHtmabqEd2QofOHEhHrHg"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_JoHtU6bqEd2QofOHEhHrHg" name="Walidacja poprawności przesłanych danych" outgoing="_JoHtcabqEd2QofOHEhHrHg" incoming="_JoHtbqbqEd2QofOHEhHrHg" inPartition="_JoHtmqbqEd2QofOHEhHrHg"/>
+    <node xmi:type="uml:DecisionNode" xmi:id="_JoHtVKbqEd2QofOHEhHrHg" name="Pola poprawne" outgoing="_JoHtd6bqEd2QofOHEhHrHg _JoHtjKbqEd2QofOHEhHrHg" incoming="_JoHtcabqEd2QofOHEhHrHg" inPartition="_JoHtmqbqEd2QofOHEhHrHg"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_JoHtVabqEd2QofOHEhHrHg" name="Zapis danych" outgoing="_JoHtdKbqEd2QofOHEhHrHg" incoming="_JoHtfabqEd2QofOHEhHrHg" inPartition="_JoHtm6bqEd2QofOHEhHrHg"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_JoHtVqbqEd2QofOHEhHrHg" name="Potwierdzenie wykonania operacji" outgoing="_JoHtgKbqEd2QofOHEhHrHg" incoming="_JoHtdKbqEd2QofOHEhHrHg" inPartition="_JoHtmqbqEd2QofOHEhHrHg"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_JoHtV6bqEd2QofOHEhHrHg" name="Wyświetlenie informacji o wykonaniu zadania" incoming="_JoHtg6bqEd2QofOHEhHrHg" inPartition="_JoHtmabqEd2QofOHEhHrHg"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_JoHtWKbqEd2QofOHEhHrHg" name="Sprawdzenie, czy nie występuje już taka pozycja" outgoing="_JoHteqbqEd2QofOHEhHrHg" incoming="_JoHtd6bqEd2QofOHEhHrHg" inPartition="_JoHtm6bqEd2QofOHEhHrHg"/>
+    <node xmi:type="uml:DecisionNode" xmi:id="_JoHtWabqEd2QofOHEhHrHg" name="Występuje" outgoing="_JoHtfabqEd2QofOHEhHrHg _JoHtiabqEd2QofOHEhHrHg" incoming="_JoHteqbqEd2QofOHEhHrHg" inPartition="_JoHtmqbqEd2QofOHEhHrHg"/>
+    <node xmi:type="uml:DecisionNode" xmi:id="_JoHtWqbqEd2QofOHEhHrHg" name="Powodzenie" outgoing="_JoHtg6bqEd2QofOHEhHrHg _JoHthqbqEd2QofOHEhHrHg" incoming="_JoHtgKbqEd2QofOHEhHrHg" inPartition="_JoHtmqbqEd2QofOHEhHrHg"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_JoHtW6bqEd2QofOHEhHrHg" name="Wyświetlenie informacji o przyczynie niepowodzenia zadania" incoming="_JoHthqbqEd2QofOHEhHrHg" inPartition="_JoHtmabqEd2QofOHEhHrHg"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_JoHtXKbqEd2QofOHEhHrHg" name="Wyświetlenie informacji o niepowodzenia zadania" incoming="_JoHtiabqEd2QofOHEhHrHg" inPartition="_JoHtmabqEd2QofOHEhHrHg"/>
+    <node xmi:type="uml:MergeNode" xmi:id="_JoHtXabqEd2QofOHEhHrHg" name="" outgoing="_JoHtkqbqEd2QofOHEhHrHg" incoming="_JoHtjKbqEd2QofOHEhHrHg _JoHtj6bqEd2QofOHEhHrHg" inPartition="_JoHtmabqEd2QofOHEhHrHg"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_JoHtXqbqEd2QofOHEhHrHg" name="Wyświetlenie informacji, które pola są niepoprawnie wypełnione" outgoing="_JoHtlabqEd2QofOHEhHrHg" incoming="_JoHtkqbqEd2QofOHEhHrHg" inPartition="_JoHtmabqEd2QofOHEhHrHg"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_JoHtX6bqEd2QofOHEhHrHg" source="_JoHtTabqEd2QofOHEhHrHg" target="_JoHtTqbqEd2QofOHEhHrHg">
+      <guard xmi:type="uml:OpaqueExpression" xmi:id="_JoHtYKbqEd2QofOHEhHrHg">
+        <body></body>
+      </guard>
+      <weight xmi:type="uml:LiteralInteger" xmi:id="_JoHtYabqEd2QofOHEhHrHg" value="1"/>
+    </edge>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_JoHtYqbqEd2QofOHEhHrHg" source="_JoHtTqbqEd2QofOHEhHrHg" target="_JoHtT6bqEd2QofOHEhHrHg" inPartition="_JoHtmKbqEd2QofOHEhHrHg">
+      <guard xmi:type="uml:OpaqueExpression" xmi:id="_JoHtY6bqEd2QofOHEhHrHg">
+        <body></body>
+      </guard>
+      <weight xmi:type="uml:LiteralInteger" xmi:id="_JoHtZKbqEd2QofOHEhHrHg" value="1"/>
+    </edge>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_JoHtZabqEd2QofOHEhHrHg" source="_JoHtT6bqEd2QofOHEhHrHg" target="_JoHtUKbqEd2QofOHEhHrHg" inPartition="_JoHtmabqEd2QofOHEhHrHg">
+      <guard xmi:type="uml:OpaqueExpression" xmi:id="_JoHtZqbqEd2QofOHEhHrHg">
+        <body></body>
+      </guard>
+      <weight xmi:type="uml:LiteralInteger" xmi:id="_JoHtZ6bqEd2QofOHEhHrHg" value="1"/>
+    </edge>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_JoHtaKbqEd2QofOHEhHrHg" source="_JoHtUKbqEd2QofOHEhHrHg" target="_JoHtUabqEd2QofOHEhHrHg" inPartition="_JoHtmKbqEd2QofOHEhHrHg">
+      <guard xmi:type="uml:OpaqueExpression" xmi:id="_JoHtaabqEd2QofOHEhHrHg">
+        <body></body>
+      </guard>
+      <weight xmi:type="uml:LiteralInteger" xmi:id="_JoHtaqbqEd2QofOHEhHrHg" value="1"/>
+    </edge>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_JoHta6bqEd2QofOHEhHrHg" source="_JoHtUabqEd2QofOHEhHrHg" target="_JoHtUqbqEd2QofOHEhHrHg" inPartition="_JoHtmabqEd2QofOHEhHrHg">
+      <guard xmi:type="uml:OpaqueExpression" xmi:id="_JoHtbKbqEd2QofOHEhHrHg">
+        <body></body>
+      </guard>
+      <weight xmi:type="uml:LiteralInteger" xmi:id="_JoHtbabqEd2QofOHEhHrHg" value="1"/>
+    </edge>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_JoHtbqbqEd2QofOHEhHrHg" name="tak" source="_JoHtUqbqEd2QofOHEhHrHg" target="_JoHtU6bqEd2QofOHEhHrHg" inPartition="_JoHtmabqEd2QofOHEhHrHg">
+      <guard xmi:type="uml:OpaqueExpression" xmi:id="_JoHtb6bqEd2QofOHEhHrHg">
+        <body></body>
+      </guard>
+      <weight xmi:type="uml:LiteralInteger" xmi:id="_JoHtcKbqEd2QofOHEhHrHg" value="1"/>
+    </edge>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_JoHtcabqEd2QofOHEhHrHg" source="_JoHtU6bqEd2QofOHEhHrHg" target="_JoHtVKbqEd2QofOHEhHrHg" inPartition="_JoHtmqbqEd2QofOHEhHrHg">
+      <guard xmi:type="uml:OpaqueExpression" xmi:id="_JoHtcqbqEd2QofOHEhHrHg">
+        <body></body>
+      </guard>
+      <weight xmi:type="uml:LiteralInteger" xmi:id="_JoHtc6bqEd2QofOHEhHrHg" value="1"/>
+    </edge>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_JoHtdKbqEd2QofOHEhHrHg" source="_JoHtVabqEd2QofOHEhHrHg" target="_JoHtVqbqEd2QofOHEhHrHg" inPartition="_JoHtm6bqEd2QofOHEhHrHg">
+      <guard xmi:type="uml:OpaqueExpression" xmi:id="_JoHtdabqEd2QofOHEhHrHg">
+        <body></body>
+      </guard>
+      <weight xmi:type="uml:LiteralInteger" xmi:id="_JoHtdqbqEd2QofOHEhHrHg" value="1"/>
+    </edge>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_JoHtd6bqEd2QofOHEhHrHg" name="tak" source="_JoHtVKbqEd2QofOHEhHrHg" target="_JoHtWKbqEd2QofOHEhHrHg" inPartition="_JoHtmqbqEd2QofOHEhHrHg">
+      <guard xmi:type="uml:OpaqueExpression" xmi:id="_JoHteKbqEd2QofOHEhHrHg">
+        <body></body>
+      </guard>
+      <weight xmi:type="uml:LiteralInteger" xmi:id="_JoHteabqEd2QofOHEhHrHg" value="1"/>
+    </edge>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_JoHteqbqEd2QofOHEhHrHg" source="_JoHtWKbqEd2QofOHEhHrHg" target="_JoHtWabqEd2QofOHEhHrHg" inPartition="_JoHtm6bqEd2QofOHEhHrHg">
+      <guard xmi:type="uml:OpaqueExpression" xmi:id="_JoHte6bqEd2QofOHEhHrHg">
+        <body></body>
+      </guard>
+      <weight xmi:type="uml:LiteralInteger" xmi:id="_JoHtfKbqEd2QofOHEhHrHg" value="1"/>
+    </edge>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_JoHtfabqEd2QofOHEhHrHg" name="nie" source="_JoHtWabqEd2QofOHEhHrHg" target="_JoHtVabqEd2QofOHEhHrHg" inPartition="_JoHtmqbqEd2QofOHEhHrHg">
+      <guard xmi:type="uml:OpaqueExpression" xmi:id="_JoHtfqbqEd2QofOHEhHrHg">
+        <body></body>
+      </guard>
+      <weight xmi:type="uml:LiteralInteger" xmi:id="_JoHtf6bqEd2QofOHEhHrHg" value="1"/>
+    </edge>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_JoHtgKbqEd2QofOHEhHrHg" source="_JoHtVqbqEd2QofOHEhHrHg" target="_JoHtWqbqEd2QofOHEhHrHg" inPartition="_JoHtmqbqEd2QofOHEhHrHg">
+      <guard xmi:type="uml:OpaqueExpression" xmi:id="_JoHtgabqEd2QofOHEhHrHg">
+        <body></body>
+      </guard>
+      <weight xmi:type="uml:LiteralInteger" xmi:id="_JoHtgqbqEd2QofOHEhHrHg" value="1"/>
+    </edge>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_JoHtg6bqEd2QofOHEhHrHg" name="tak" source="_JoHtWqbqEd2QofOHEhHrHg" target="_JoHtV6bqEd2QofOHEhHrHg" inPartition="_JoHtmqbqEd2QofOHEhHrHg">
+      <guard xmi:type="uml:OpaqueExpression" xmi:id="_JoHthKbqEd2QofOHEhHrHg">
+        <body></body>
+      </guard>
+      <weight xmi:type="uml:LiteralInteger" xmi:id="_JoHthabqEd2QofOHEhHrHg" value="1"/>
+    </edge>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_JoHthqbqEd2QofOHEhHrHg" name="nie" source="_JoHtWqbqEd2QofOHEhHrHg" target="_JoHtW6bqEd2QofOHEhHrHg" inPartition="_JoHtmqbqEd2QofOHEhHrHg">
+      <guard xmi:type="uml:OpaqueExpression" xmi:id="_JoHth6bqEd2QofOHEhHrHg">
+        <body></body>
+      </guard>
+      <weight xmi:type="uml:LiteralInteger" xmi:id="_JoHtiKbqEd2QofOHEhHrHg" value="1"/>
+    </edge>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_JoHtiabqEd2QofOHEhHrHg" source="_JoHtWabqEd2QofOHEhHrHg" target="_JoHtXKbqEd2QofOHEhHrHg" inPartition="_JoHtmqbqEd2QofOHEhHrHg">
+      <guard xmi:type="uml:OpaqueExpression" xmi:id="_JoHtiqbqEd2QofOHEhHrHg">
+        <body></body>
+      </guard>
+      <weight xmi:type="uml:LiteralInteger" xmi:id="_JoHti6bqEd2QofOHEhHrHg" value="1"/>
+    </edge>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_JoHtjKbqEd2QofOHEhHrHg" name="nie" source="_JoHtVKbqEd2QofOHEhHrHg" target="_JoHtXabqEd2QofOHEhHrHg" inPartition="_JoHtmqbqEd2QofOHEhHrHg">
+      <guard xmi:type="uml:OpaqueExpression" xmi:id="_JoHtjabqEd2QofOHEhHrHg">
+        <body></body>
+      </guard>
+      <weight xmi:type="uml:LiteralInteger" xmi:id="_JoHtjqbqEd2QofOHEhHrHg" value="1"/>
+    </edge>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_JoHtj6bqEd2QofOHEhHrHg" name="nie" source="_JoHtUqbqEd2QofOHEhHrHg" target="_JoHtXabqEd2QofOHEhHrHg" inPartition="_JoHtmabqEd2QofOHEhHrHg">
+      <guard xmi:type="uml:OpaqueExpression" xmi:id="_JoHtkKbqEd2QofOHEhHrHg">
+        <body></body>
+      </guard>
+      <weight xmi:type="uml:LiteralInteger" xmi:id="_JoHtkabqEd2QofOHEhHrHg" value="1"/>
+    </edge>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_JoHtkqbqEd2QofOHEhHrHg" source="_JoHtXabqEd2QofOHEhHrHg" target="_JoHtXqbqEd2QofOHEhHrHg" inPartition="_JoHtmabqEd2QofOHEhHrHg">
+      <guard xmi:type="uml:OpaqueExpression" xmi:id="_JoHtk6bqEd2QofOHEhHrHg">
+        <body></body>
+      </guard>
+      <weight xmi:type="uml:LiteralInteger" xmi:id="_JoHtlKbqEd2QofOHEhHrHg" value="1"/>
+    </edge>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_JoHtlabqEd2QofOHEhHrHg" source="_JoHtXqbqEd2QofOHEhHrHg" target="_JoHtT6bqEd2QofOHEhHrHg" inPartition="_JoHtmabqEd2QofOHEhHrHg">
+      <guard xmi:type="uml:OpaqueExpression" xmi:id="_JoHtlqbqEd2QofOHEhHrHg">
+        <body></body>
+      </guard>
+      <weight xmi:type="uml:LiteralInteger" xmi:id="_JoHtl6bqEd2QofOHEhHrHg" value="1"/>
+    </edge>
+    <group xmi:type="uml:ActivityPartition" xmi:id="_JoHtmKbqEd2QofOHEhHrHg" name="Użytkownik" node="_JoHtTqbqEd2QofOHEhHrHg _JoHtUKbqEd2QofOHEhHrHg" edge="_JoHtYqbqEd2QofOHEhHrHg _JoHtaKbqEd2QofOHEhHrHg"/>
+    <group xmi:type="uml:ActivityPartition" xmi:id="_JoHtmabqEd2QofOHEhHrHg" name="Aplikacja" node="_JoHtT6bqEd2QofOHEhHrHg _JoHtUabqEd2QofOHEhHrHg _JoHtUqbqEd2QofOHEhHrHg _JoHtV6bqEd2QofOHEhHrHg _JoHtW6bqEd2QofOHEhHrHg _JoHtXKbqEd2QofOHEhHrHg _JoHtXabqEd2QofOHEhHrHg _JoHtXqbqEd2QofOHEhHrHg" edge="_JoHtZabqEd2QofOHEhHrHg _JoHta6bqEd2QofOHEhHrHg _JoHtbqbqEd2QofOHEhHrHg _JoHtj6bqEd2QofOHEhHrHg _JoHtkqbqEd2QofOHEhHrHg _JoHtlabqEd2QofOHEhHrHg"/>
+    <group xmi:type="uml:ActivityPartition" xmi:id="_JoHtmqbqEd2QofOHEhHrHg" name="Serwer" node="_JoHtU6bqEd2QofOHEhHrHg _JoHtVKbqEd2QofOHEhHrHg _JoHtVqbqEd2QofOHEhHrHg _JoHtWabqEd2QofOHEhHrHg _JoHtWqbqEd2QofOHEhHrHg" edge="_JoHtcabqEd2QofOHEhHrHg _JoHtd6bqEd2QofOHEhHrHg _JoHtfabqEd2QofOHEhHrHg _JoHtgKbqEd2QofOHEhHrHg _JoHtg6bqEd2QofOHEhHrHg _JoHthqbqEd2QofOHEhHrHg _JoHtiabqEd2QofOHEhHrHg _JoHtjKbqEd2QofOHEhHrHg"/>
+    <group xmi:type="uml:ActivityPartition" xmi:id="_JoHtm6bqEd2QofOHEhHrHg" name="Baza danych" node="_JoHtVabqEd2QofOHEhHrHg _JoHtWKbqEd2QofOHEhHrHg" edge="_JoHtdKbqEd2QofOHEhHrHg _JoHteqbqEd2QofOHEhHrHg"/>
+  </packagedElement>
+  <profileApplication xmi:id="_JoHtnKbqEd2QofOHEhHrHg">
+    <eAnnotations xmi:id="_JoHtnabqEd2QofOHEhHrHg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+      <references xmi:type="ecore:EPackage" href="pathmap://UML_PROFILES/Standard.profile.uml#_yzU58YinEdqtvbnfB2L_5w"/>
+    </eAnnotations>
+    <appliedProfile href="pathmap://UML_PROFILES/Standard.profile.uml#_0"/>
+  </profileApplication>
+  <profileApplication xmi:id="_JoHtnqbqEd2QofOHEhHrHg">
+    <eAnnotations xmi:id="_JoHtn6bqEd2QofOHEhHrHg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+      <references xmi:type="ecore:EPackage" href="pathmap://UML2_MSL_PROFILES/Default.epx#_IN8k8MmBEdqBcN1R6EvWUw?Default/Default?"/>
+    </eAnnotations>
+    <appliedProfile href="pathmap://UML2_MSL_PROFILES/Default.epx#_a_S3wNWLEdiy4IqP8whjFA?Default?"/>
+  </profileApplication>
+  <profileApplication xmi:id="_JoHtoKbqEd2QofOHEhHrHg">
+    <eAnnotations xmi:id="_JoHtoabqEd2QofOHEhHrHg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+      <references xmi:type="ecore:EPackage" href="pathmap://UML2_MSL_PROFILES/Deployment.epx#_IrdAUMmBEdqBcN1R6EvWUw?Deployment/Deployment?"/>
+    </eAnnotations>
+    <appliedProfile href="pathmap://UML2_MSL_PROFILES/Deployment.epx#_vjbuwOvHEdiDX5bji0iVSA?Deployment?"/>
+  </profileApplication>
+</uml:Model>
