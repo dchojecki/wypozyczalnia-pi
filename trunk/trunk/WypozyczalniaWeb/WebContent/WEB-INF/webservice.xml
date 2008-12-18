@@ -3,10 +3,13 @@
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
-	<bean name="/dispatch21" class="test.SpringTestController3"/>
-	<bean name="/dispatch22" class="test.SpringTestController4"/>
-	
 
+	<bean name="/" class="core.Home"/>
+	<bean name="/filmy" class="core.Finder"/>
+	<bean name="/zamow" class="core.Reserver" />
+	<bean name="/twoje" class="core.Account" />
+	
+	
 	<bean
 		class="org.springframework.web.servlet.view.InternalResourceViewResolver">
 		<property name="prefix">
@@ -15,9 +18,5 @@
 		<property name="suffix">
 			<value>.jsp</value>
 		</property>
-		<property name="viewClass">
-			<value>org.springframework.web.servlet.view.JstlView</value>
-		</property>
-
 	</bean>
 </beans>
