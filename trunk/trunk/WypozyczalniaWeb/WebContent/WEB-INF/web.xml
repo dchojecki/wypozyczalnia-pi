@@ -10,53 +10,22 @@
     <welcome-file>default.jsp</welcome-file>
   </welcome-file-list>
   <servlet>
-    <description></description>
-    <display-name>test</display-name>
-    <servlet-name>test</servlet-name>
-    <servlet-class>test.test</servlet-class>
-  </servlet>
-  <servlet>
-    <description></description>
-    <display-name>dispatch1</display-name>
-    <servlet-name>dispatch1</servlet-name>
+    <description>Wypozyczalnia Webservice</description>
+    <display-name>webservice</display-name>
+    <servlet-name>webservice</servlet-name>
     <servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
     <init-param>
     	<param-name>contextConfigLocation</param-name>
-    	<param-value>/WEB-INF/dispatch1.xml</param-value>
+    	<param-value>/WEB-INF/webservice.xml</param-value>
     </init-param> 
     <load-on-startup>2</load-on-startup>
   </servlet>
-  <servlet>
-    <description></description>
-    <display-name>dispatch2</display-name>
-    <servlet-name>dispatch2</servlet-name>
-    <servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
-    <init-param>
-    	<param-name>contextConfigLocation</param-name>
-    	<param-value>/WEB-INF/dispatch2.xml</param-value>
-    </init-param> 
-    <load-on-startup>2</load-on-startup>
-  </servlet>
+
   <servlet-mapping>
-    <servlet-name>test</servlet-name>
-    <url-pattern>/test</url-pattern>
+    <servlet-name>webservice</servlet-name>
+    <url-pattern>/</url-pattern>
   </servlet-mapping>
-  <servlet-mapping>
-    <servlet-name>dispatch1</servlet-name>
-    <url-pattern>/dispatch11</url-pattern>
-  </servlet-mapping>
-  <servlet-mapping>
-    <servlet-name>dispatch1</servlet-name>
-    <url-pattern>/dispatch12</url-pattern>
-  </servlet-mapping>
-  <servlet-mapping>
-    <servlet-name>dispatch2</servlet-name>
-    <url-pattern>/dispatch21</url-pattern>
-  </servlet-mapping>
-  <servlet-mapping>
-    <servlet-name>dispatch2</servlet-name>
-    <url-pattern>/dispatch22</url-pattern>
-  </servlet-mapping>
+
   <listener>
   	<listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
   </listener>
