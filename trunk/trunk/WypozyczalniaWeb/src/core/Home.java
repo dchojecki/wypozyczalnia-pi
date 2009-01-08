@@ -1,11 +1,7 @@
 package core;
 
-import java.util.Date;
 
 import javax.ejb.EJB;
-import javax.naming.Context;
-import javax.naming.InitialContext;
-import javax.naming.NamingException;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
@@ -13,12 +9,10 @@ import org.springframework.web.context.WebApplicationContext;
 import org.springframework.web.servlet.ModelAndView;
 import org.springframework.web.servlet.mvc.AbstractController;
 
-import wypozyczalnia.ejb.zarzadzniewypozyczeniami.ZarzadzanieWypozyczeniami;
 
 public class Home extends AbstractController {
 	
 	@EJB(name = "ZarzadzanieWypozyczeniamiBean")
-	public ZarzadzanieWypozyczeniami manager; 
 	
 	protected ModelAndView handleRequestInternal(HttpServletRequest req,
 			HttpServletResponse res) {

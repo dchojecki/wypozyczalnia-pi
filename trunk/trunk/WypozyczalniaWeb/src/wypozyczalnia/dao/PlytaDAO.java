@@ -25,4 +25,9 @@ public class PlytaDAO {
 		stan.zamow(konto);
 	}
 
+
+	public StanPlyty getStan() {
+		return stan;
+	}
+
 }
