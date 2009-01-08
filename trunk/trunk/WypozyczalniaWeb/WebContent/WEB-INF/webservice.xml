@@ -5,9 +5,10 @@
 
 
 	<bean name="/" class="core.Home"/>
-	<bean name="/filmy" class="core.Finder"/>
-	<bean name="/zamow" class="core.Reserver" />
-	<bean name="/twoje" class="core.Account" />
+	<bean name="/index.html" class="core.Home"/>
+	<bean name="/filmy.html" class="core.Finder"/>
+	<bean name="/zamow.html" class="core.Reserver" />
+	<bean name="/twoje.html" class="core.Account" />
 	
 	
 	<bean
