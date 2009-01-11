@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry exported="true" kind="lib" path="activation.jar"/>
+	<classpathentry exported="true" kind="lib" path="antlr.jar"/>
+	<classpathentry exported="true" kind="lib" path="avalon-framework.jar"/>
+	<classpathentry exported="true" kind="lib" path="commons-codec.jar"/>
+	<classpathentry exported="true" kind="lib" path="commons-httpclient.jar"/>
+	<classpathentry exported="true" kind="lib" path="commons-logging.jar"/>
+	<classpathentry exported="true" kind="lib" path="concurrent.jar"/>
+	<classpathentry exported="true" kind="lib" path="ejb3-persistence.jar"/>
+	<classpathentry exported="true" kind="lib" path="getopt.jar"/>
+	<classpathentry exported="true" kind="lib" path="hibernate-annotations.jar"/>
+	<classpathentry exported="true" kind="lib" path="hibernate-client.jar"/>
+	<classpathentry exported="true" kind="lib" path="jacorb.jar"/>
+	<classpathentry exported="true" kind="lib" path="javassist.jar"/>
+	<classpathentry exported="true" kind="lib" path="jaxb-api.jar"/>
+	<classpathentry exported="true" kind="lib" path="jaxb-impl.jar"/>
+	<classpathentry exported="true" kind="lib" path="jaxb-xjc.jar"/>
+	<classpathentry exported="true" kind="lib" path="jaxws-rt.jar"/>
+	<classpathentry exported="true" kind="lib" path="jaxws-tools.jar"/>
+	<classpathentry exported="true" kind="lib" path="jbossall-client.jar"/>
+	<classpathentry exported="true" kind="lib" path="jboss-annotations-ejb3.jar"/>
+	<classpathentry exported="true" kind="lib" path="jboss-aop-jdk50-client.jar"/>
+	<classpathentry exported="true" kind="lib" path="jboss-aspect-jdk50-client.jar"/>
+	<classpathentry exported="true" kind="lib" path="jboss-client.jar"/>
+	<classpathentry exported="true" kind="lib" path="jboss-common-client.jar"/>
+	<classpathentry exported="true" kind="lib" path="jbosscx-client.jar"/>
+	<classpathentry exported="true" kind="lib" path="jboss-deployment.jar"/>
+	<classpathentry exported="true" kind="lib" path="jboss-ejb3-client.jar"/>
+	<classpathentry exported="true" kind="lib" path="jboss-ejb3x.jar"/>
+	<classpathentry exported="true" kind="lib" path="jbossha-client.jar"/>
+	<classpathentry exported="true" kind="lib" path="jboss-iiop-client.jar"/>
+	<classpathentry exported="true" kind="lib" path="jboss-j2ee.jar"/>
+	<classpathentry exported="true" kind="lib" path="jboss-jaxrpc.jar"/>
+	<classpathentry exported="true" kind="lib" path="jboss-jaxws.jar"/>
+	<classpathentry exported="true" kind="lib" path="jbossjmx-ant.jar"/>
+	<classpathentry exported="true" kind="lib" path="jboss-jsr77-client.jar"/>
+	<classpathentry exported="true" kind="lib" path="jbossmq-client.jar"/>
+	<classpathentry exported="true" kind="lib" path="jboss-remoting.jar"/>
+	<classpathentry exported="true" kind="lib" path="jboss-saaj.jar"/>
+	<classpathentry exported="true" kind="lib" path="jboss-serialization.jar"/>
+	<classpathentry exported="true" kind="lib" path="jboss-srp-client.jar"/>
+	<classpathentry exported="true" kind="lib" path="jbosssx-client.jar"/>
+	<classpathentry exported="true" kind="lib" path="jboss-system-client.jar"/>
+	<classpathentry exported="true" kind="lib" path="jboss-transaction-client.jar"/>
+	<classpathentry exported="true" kind="lib" path="jbossws-client.jar"/>
+	<classpathentry exported="true" kind="lib" path="jbossws-common.jar"/>
+	<classpathentry exported="true" kind="lib" path="jbossws-framework.jar"/>
+	<classpathentry exported="true" kind="lib" path="jbossws-jboss42.jar"/>
+	<classpathentry exported="true" kind="lib" path="jbossws-spi.jar"/>
+	<classpathentry exported="true" kind="lib" path="jboss-xml-binding.jar"/>
+	<classpathentry exported="true" kind="lib" path="jmx-client.jar"/>
+	<classpathentry exported="true" kind="lib" path="jmx-invoker-adaptor-client.jar"/>
+	<classpathentry exported="true" kind="lib" path="jnp-client.jar"/>
+	<classpathentry exported="true" kind="lib" path="log4j.jar"/>
+	<classpathentry exported="true" kind="lib" path="logkit.jar"/>
+	<classpathentry exported="true" kind="lib" path="mail.jar"/>
+	<classpathentry exported="true" kind="lib" path="policy.jar"/>
+	<classpathentry exported="true" kind="lib" path="scout.jar"/>
+	<classpathentry exported="true" kind="lib" path="servlet-api.jar"/>
+	<classpathentry exported="true" kind="lib" path="stax-api.jar"/>
+	<classpathentry exported="true" kind="lib" path="stax-ex.jar"/>
+	<classpathentry exported="true" kind="lib" path="streambuffer.jar"/>
+	<classpathentry exported="true" kind="lib" path="trove.jar"/>
+	<classpathentry exported="true" kind="lib" path="wsdl4j.jar"/>
+	<classpathentry exported="true" kind="lib" path="wstx.jar"/>
+	<classpathentry exported="true" kind="lib" path="xmlsec.jar"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="con" path="org.eclipse.pde.core.requiredPlugins"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
