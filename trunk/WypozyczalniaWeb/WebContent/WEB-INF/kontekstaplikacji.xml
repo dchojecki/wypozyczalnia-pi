@@ -2,9 +2,62 @@
 <beans xmlns="http://www.springframework.org/schema/beans"
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
-	
+
 	<bean id="sesja" class="core.Sesja" scope="session">
+		<property name="plytyMgr">
+			<ref local="ZarzadzaniePlytami"/>
+		</property>
+		<property name="zamowieniaMgr">
+			<ref local="ZarzadzanieZamowieniami"/>
+		</property>
+		<property name="filmy">
+			<ref local="filmyFactory"/>
+		</property>
+	</bean>
+	<bean id="filmyFactory" class="wypozyczalnia.daots.FilmyFactory">
+	<constructor-arg index="0">
+			<ref local="ZarzadzaniePlytami"/>
+	</constructor-arg>
 	</bean>
 
-
+	<bean id="ZarzadzaniePlytami"
+		class="org.springframework.ejb.access.LocalStatelessSessionProxyFactoryBean">
+		<property name="jndiEnvironment">
+			<props>
+				<prop key="java.naming.factory.initial">org.jnp.interfaces.NamingContextFactory</prop>
+				<prop key="java.naming.provider.url">localhost:1099</prop>
+				<prop key="java.naming.factory.url.pkgs">=org.jboss.naming:org.jnp.interfaces
+				</prop>
+			</props>
+		</property>
+		<property name="jndiName">
+			<value>WypozyczalniaEar/ZarzadzaniePlytamiBean/local</value>
+		</property>
+		<property name="resourceRef">
+			<value>true</value>
+		</property>
+		<property name="businessInterface">
+			<value>wypozyczalnia.ejb.zarzadzanieplytami.ZarzadzaniePlytamiLocal</value>
+		</property>
+	</bean>
+	<bean id="ZarzadzanieZamowieniami"
+		class="org.springframework.ejb.access.LocalStatelessSessionProxyFactoryBean">
+		<property name="jndiEnvironment">
+			<props>
+				<prop key="java.naming.factory.initial">org.jnp.interfaces.NamingContextFactory</prop>
+				<prop key="java.naming.provider.url">localhost:1099</prop>
+				<prop key="java.naming.factory.url.pkgs">=org.jboss.naming:org.jnp.interfaces
+				</prop>
+			</props>
+		</property>
+		<property name="jndiName">
+			<value>WypozyczalniaEar/ZarzadzanieWypozyczeniamiBean/local</value>
+		</property>
+		<property name="resourceRef">
+			<value>true</value>
+		</property>
+		<property name="businessInterface">
+			<value>wypozyczalnia.ejb.zarzadzniewypozyczeniami.ZarzadzanieWypozyczeniamiLocal</value>
+		</property>
+	</bean>
 </beans>

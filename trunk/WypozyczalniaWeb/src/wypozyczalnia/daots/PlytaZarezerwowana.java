@@ -1,4 +1,4 @@
-package wypozyczalnia.dao;
+package wypozyczalnia.daots;
 
 public class PlytaZarezerwowana extends StanPlyty {
 
@@ -17,12 +17,12 @@ public class PlytaZarezerwowana extends StanPlyty {
 
 	@Override
 	public void zamow(KontoDAO komu) {
-		
+
 	}
 
 	@Override
 	public void zwroc() {
-		
+
 	}
 
 }

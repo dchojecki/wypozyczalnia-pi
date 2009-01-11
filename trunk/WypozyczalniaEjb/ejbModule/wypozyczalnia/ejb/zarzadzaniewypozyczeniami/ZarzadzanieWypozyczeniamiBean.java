@@ -15,7 +15,9 @@ import java.util.Date;
 
 import javax.ejb.Stateless;
 
+import wypozyczalnia.dao.FilmDAO;
 import wypozyczalnia.dao.KlientDAO;
+import wypozyczalnia.dao.KontoDAO;
 import wypozyczalnia.dao.PlytaDAO;
 import wypozyczalnia.dao.PozycjaZamowieniaDAO;
 import wypozyczalnia.dao.StanZamowienia;
@@ -30,7 +32,9 @@ import wypozyczalnia.dao.fabryki.zarzadzanieplytami.ZarzadzaniePlytamiDAO;
 import wypozyczalnia.dao.fabryki.zarzadzaniewypozyczeniami.ZarzWypFabrykaDanych;
 import wypozyczalnia.dao.fabryki.zarzadzaniewypozyczeniami.ZarzWypGLFabrykaDanych;
 import wypozyczalnia.dao.fabryki.zarzadzaniewypozyczeniami.ZarzadzanieWypozyczeniamiDAO;
+import wypozyczalnia.dao.plyty.StanPlyty;
 import wypozyczalnia.ejb.zarzadzniewypozyczeniami.ZarzadzanieWypozyczeniami;
+import wypozyczalnia.ejb.zarzadzniewypozyczeniami.ZarzadzanieWypozyczeniamiLocal;
 import wypozyczalnia.to.zarzadzaniewypozyczeniami.PozycjaZamowieniaTO;
 import wypozyczalnia.to.zarzadzaniewypozyczeniami.ZamowienieTO;
 import wypozyczalnia.to.zarzadzaniewypozyczeniami.ZamowienieTOZbior;
@@ -45,7 +49,8 @@ import zarzadzanieplytami.PlytaTO;
  *            (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform)"
  */
 @Stateless
-public class ZarzadzanieWypozyczeniamiBean implements ZarzadzanieWypozyczeniami {
+public class ZarzadzanieWypozyczeniamiBean implements
+		ZarzadzanieWypozyczeniami, ZarzadzanieWypozyczeniamiLocal {
 
 	public ZarzadzanieWypozyczeniamiBean() {
 	}
@@ -53,7 +58,7 @@ public class ZarzadzanieWypozyczeniamiBean implements ZarzadzanieWypozyczeniami 
 	private ZarzWypFabrykaDanych daoFabryka = new ZarzWypGLFabrykaDanych();
 	private ZarzPlytamiFabrykaDanych plytyFabryka = new ZarzPlytamiGLFabrykaDanych();
 	private ZarzadzanieKontamiFabrykaDanych kontaDaoFabryka = new ZarzadzanieKontamiGlownaFabrykaDanych();
-	
+
 	public ZamowienieTOZbior pobierzZamowieniaWgCzasu(Date odd, Date doo) {
 		ZarzadzanieWypozyczeniamiDAO dao = getDaoFabryka()
 				.createZarzadzanieWypozyczeniamiDAO();
@@ -61,7 +66,8 @@ public class ZarzadzanieWypozyczeniamiBean implements ZarzadzanieWypozyczeniami 
 		Collection<? extends ZamowienieDAO> zamowieniaDAO = dao
 				.pobierzWszystkieZamowieniaOdDo(odd, doo);
 
-		return new ZamowienieTOZbior(TransferObjectFactory.kopiujKolekcje(zamowieniaDAO));
+		return new ZamowienieTOZbior(TransferObjectFactory
+				.kopiujKolekcje(zamowieniaDAO));
 	}
 
 	public ZamowienieTOZbior pobierzWszystkieZamowienia() {
@@ -77,13 +83,15 @@ public class ZarzadzanieWypozyczeniamiBean implements ZarzadzanieWypozyczeniami 
 	public ZamowienieTO scalDaneZamowienia(ZamowienieTO zam) {
 		ZarzadzanieWypozyczeniamiDAO dao = getDaoFabryka()
 				.createZarzadzanieWypozyczeniamiDAO();
-		
-		ZarzadzanieKontamiDAO kontaDAO = kontaDaoFabryka.pobierzWypozyczalniaDAO();
-		KlientDAO k = kontaDAO.zwrocDaneKlienta(zam.getKonto().getNrPeselKlienta());
-		
+
+		ZarzadzanieKontamiDAO kontaDAO = kontaDaoFabryka
+				.pobierzWypozyczalniaDAO();
+		KlientDAO k = kontaDAO.zwrocDaneKlienta(zam.getKonto()
+				.getNrPeselKlienta());
+
 		ZamowienieDAO zamowienie = dao.pobierzZamowienie(zam.getId());
 		zamowienie.setKonto(k.zwrocPierwszeKonto());
-		
+
 		if (zamowienie == null) {
 			return null;
 		}
@@ -110,12 +118,13 @@ public class ZarzadzanieWypozyczeniamiBean implements ZarzadzanieWypozyczeniami 
 		}
 
 		zamowienie.getPozycje().clear();
-		
-		ZarzadzaniePlytamiDAO zarzPlytami = plytyFabryka.createZarzadzaniePlytamiDAO();
-		for (PozycjaZamowieniaTO pz: zam.getPozycjezamowienia()) {
+
+		ZarzadzaniePlytamiDAO zarzPlytami = plytyFabryka
+				.createZarzadzaniePlytamiDAO();
+		for (PozycjaZamowieniaTO pz : zam.getPozycjezamowienia()) {
 			PlytaTO pt = pz.getPlyta();
 			PlytaDAO plyta = zarzPlytami.zwrocPlyte(pt.getIdPlyty());
-			
+
 			PozycjaZamowieniaDAO pd = new PozycjaZamowieniaDAO();
 			pd.setZamowienie(zamowienie);
 			pd.setPlyta(plyta);
@@ -137,6 +146,21 @@ public class ZarzadzanieWypozyczeniamiBean implements ZarzadzanieWypozyczeniami 
 		dao.scalZamowienie(z);
 		ZamowienieTO ret = TransferObjectFactory.stworzZamowienieTO(z);
 		return ret;
+	}
+
+	@Override
+	public void zamow(KontoDAO konto, FilmDAO film) {
+		if (konto != null && film != null) {
+			PlytaDAO plyta = film.wolnyEgzemplarz();
+			if (plyta != null) {
+				// plyta.zamow(konto);
+				StanPlyty s = plyta.getStan();
+				s.zamow(plyta, konto);
+				plytyFabryka.createZarzadzaniePlytamiDAO().scalFilm(film);
+				// konto.zamowione.add(plyta);
+			}
+		}
+
 	}
 
 }

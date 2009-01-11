@@ -1,6 +1,5 @@
 package wypozyczalniaklient.views.plyty;
 
-
 import org.eclipse.jface.action.IMenuListener;
 import org.eclipse.jface.action.IMenuManager;
 import org.eclipse.jface.action.IToolBarManager;
@@ -23,8 +22,7 @@ import wypozyczalniaklient.eventprovider.SelectionEventProvider;
 import zarzadzanieplytami.FilmTO;
 import zarzadzanieplytami.PlytaTO;
 
-
-public class DanePlyty extends ViewPart  implements GlobalListener{
+public class DanePlyty extends ViewPart implements GlobalListener {
 	private Table viewer;
 	public static String ID = "wypozyczalniaklient.views.plyty.DanePlyty";
 
@@ -33,7 +31,8 @@ public class DanePlyty extends ViewPart  implements GlobalListener{
 	}
 
 	public void createPartControl(Composite parent) {
-		viewer = new Table(parent, SWT.MULTI | SWT.H_SCROLL | SWT.V_SCROLL | SWT.FULL_SELECTION);
+		viewer = new Table(parent, SWT.MULTI | SWT.H_SCROLL | SWT.V_SCROLL
+				| SWT.FULL_SELECTION);
 		viewer.setLinesVisible(true);
 		viewer.setHeaderVisible(true);
 
@@ -75,12 +74,12 @@ public class DanePlyty extends ViewPart  implements GlobalListener{
 		// Other plug-ins can contribute there actions here
 		manager.add(new Separator(IWorkbenchActionConstants.MB_ADDITIONS));
 	}
-	
+
 	private void fillLocalToolBar(IToolBarManager manager) {
 	}
 
 	private void makeActions() {
-		
+
 	}
 
 	private void hookDoubleClickAction() {
@@ -91,36 +90,36 @@ public class DanePlyty extends ViewPart  implements GlobalListener{
 	}
 
 	private FilmTO aktualnyFilm;
+
 	@Override
 	public void FilmTOSelected(FilmTO film) {
 		if (film != aktualnyFilm)
 			viewer.removeAll();
 		aktualnyFilm = film;
-		
+
 	}
 
 	@Override
 	public void PlytaTOSelected(PlytaTO plyta) {
-		
+
 		viewer.removeAll();
 		TableItem t4 = new TableItem(viewer, SWT.NONE);
 		t4.setText(0, "Idenyfikator");
-		t4.setText(1, ((Integer)plyta.getIdPlyty()).toString());
+		t4.setText(1, (plyta.getIdPlyty()));
 
 		TableItem t5 = new TableItem(viewer, SWT.NONE);
 		t5.setText(0, "Tytul");
 		t5.setText(1, plyta.getTytul());
 
-		
 		TableItem t1 = new TableItem(viewer, SWT.NONE);
 		t1.setText(0, "Stan");
 		t1.setText(1, plyta.getStan().toString());
 
 		TableItem t2 = new TableItem(viewer, SWT.NONE);
 		t2.setText(0, "Data nabycia");
-		
+
 		if (plyta.getDataNabycia() != null)
-		t2.setText(1, plyta.getDataNabycia().toString());
+			t2.setText(1, plyta.getDataNabycia().toString());
 		else
 			t2.setText(1, "");
 
@@ -128,10 +127,8 @@ public class DanePlyty extends ViewPart  implements GlobalListener{
 		t3.setText(0, "Uwagi");
 		t3.setText(1, plyta.getUwagiDoEgzemplarza());
 
-
-		
 	}
-	
+
 	public void dispose() {
 		SelectionEventProvider.removeListener(this);
 	}
@@ -139,12 +136,12 @@ public class DanePlyty extends ViewPart  implements GlobalListener{
 	@Override
 	public void PozycjaZamowieniaTOSelected(PozycjaZamowieniaTO plyta) {
 		// TODO Auto-generated method stub
-		
+
 	}
 
 	@Override
 	public void ZamowienieTOSelected(ZamowienieTO plyta) {
 		// TODO Auto-generated method stub
-		
+
 	}
 }

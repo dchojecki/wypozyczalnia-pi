@@ -15,7 +15,7 @@ public class PlytaTO implements Serializable {
 	private int idFilmu = 0;
 	private String uwagiDoEgzemplarza = "";
 	private StanPlyty stan = StanPlyty.NIEWYPOZYCZONA;
-	private int idPlyty;
+	private String idPlyty;
 
 	public void setDataNabycia(Date dataNabycia) {
 		this.dataNabycia = dataNabycia;
@@ -72,16 +72,17 @@ public class PlytaTO implements Serializable {
 	}
 
 	/**
-	 * @param idPlyty the idPlyty to set
+	 * @param idPlyty
+	 *            the idPlyty to set
 	 */
-	public void setIdPlyty(int idPlyty) {
+	public void setIdPlyty(String idPlyty) {
 		this.idPlyty = idPlyty;
 	}
 
 	/**
 	 * @return the idPlyty
 	 */
-	public int getIdPlyty() {
+	public String getIdPlyty() {
 		return idPlyty;
 	}
 }

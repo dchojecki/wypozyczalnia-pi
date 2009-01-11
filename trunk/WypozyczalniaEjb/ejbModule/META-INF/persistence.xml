@@ -27,6 +27,11 @@
 			wypozyczalnia.dao.kontopracownika.StanSprawdzanieHasla
 		</class>
 		<class>wypozyczalnia.dao.kontopracownika.StanZablokowane</class>
+		
+		<class>wypozyczalnia.dao.plyty.StanPlyty</class>
+		<class>wypozyczalnia.dao.plyty.PlytaPozyczona</class>
+		<class>wypozyczalnia.dao.plyty.PlytaWolna</class>
+		<class>wypozyczalnia.dao.plyty.PlytaZarezerwowana</class>
 		<properties>
 			<property name="hibernate.connection.driver_class"
 				value="org.hsqldb.jdbcDriver" />

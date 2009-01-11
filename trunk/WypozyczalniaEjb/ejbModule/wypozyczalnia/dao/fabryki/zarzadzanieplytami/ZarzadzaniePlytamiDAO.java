@@ -28,6 +28,8 @@ public interface ZarzadzaniePlytamiDAO {
 
 	void scalFilm(FilmDAO film);
 
-	PlytaDAO zwrocPlyte(Integer id);
+	PlytaDAO zwrocPlyte(String id);
+
+	Collection<FilmDAO> zwrocFilmy(String tytul);
 
 }

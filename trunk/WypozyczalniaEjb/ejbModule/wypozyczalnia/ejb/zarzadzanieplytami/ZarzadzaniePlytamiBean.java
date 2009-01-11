@@ -27,7 +27,8 @@ import zarzadzanieplytami.PlytaTOZbior;
  *            (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform)"
  */
 @Stateless(mappedName = "ZarzadzanieKontamiBean")
-public class ZarzadzaniePlytamiBean implements ZarzadzaniePlytami {
+public class ZarzadzaniePlytamiBean implements ZarzadzaniePlytami,
+		ZarzadzaniePlytamiLocal {
 
 	private ZarzPlytamiFabrykaDanych fabrykaDAO = new ZarzPlytamiGLFabrykaDanych();
 
@@ -35,6 +36,13 @@ public class ZarzadzaniePlytamiBean implements ZarzadzaniePlytami {
 		ZarzadzaniePlytamiDAO z = getFabrykaDAO().createZarzadzaniePlytamiDAO();
 		Collection<FilmDAO> filmy = z.pobierzWszystkieFilmy();
 		return TransferObjectFactory.stworzFilmyTO(filmy);
+	}
+
+	@Override
+	public Collection<FilmDAO> zwrocListeWszystkichFilmowDAO() {
+		ZarzadzaniePlytamiDAO z = getFabrykaDAO().createZarzadzaniePlytamiDAO();
+		Collection<FilmDAO> filmy = z.pobierzWszystkieFilmy();
+		return filmy;
 	}
 
 	public PlytaTOZbior zwrocListeWszystkichPlyt(FilmTO film) {
@@ -54,27 +62,73 @@ public class ZarzadzaniePlytamiBean implements ZarzadzaniePlytami {
 
 	@Override
 	public void dodajPlyte(FilmTO film, PlytaTO plyta) {
-		ZarzadzaniePlytamiDAO dao = getFabrykaDAO().createZarzadzaniePlytamiDAO();
+		ZarzadzaniePlytamiDAO dao = getFabrykaDAO()
+				.createZarzadzaniePlytamiDAO();
 		FilmDAO f = dao.zwrocFilm(film.getId());
 		PlytaDAO p = new PlytaDAO();
 		p.setFilm(f);
-		p.setStanplyty(plyta.getStan());
-		p.setUwagiDoEgzemplarza(plyta.getUwagiDoEgzemplarza());		
+		// p.setStanplyty(plyta.getStan());
+		p.setUwagiDoEgzemplarza(plyta.getUwagiDoEgzemplarza());
 		f.getPlyty().add(p);
-		
-		dao.scalFilm(f);
-		
+		dodajPlyte(p);
 	}
-	
+
 	@Override
 	public void dodajFilm(FilmTO film) {
 		FilmDAO f = new FilmDAO();
 		f.setOpisFabuly(film.getOpisFabuly());
-		f.setRokPremiery(film.getRokPremiery());
+		f.setRok(film.getRokPremiery());
 		f.setTytul(film.getTytul());
-		ZarzadzaniePlytamiDAO dao = getFabrykaDAO().createZarzadzaniePlytamiDAO();
-		dao.scalFilm(f);		
-		
+		dodajFilm(f);
+
+	}
+
+	@Override
+	public void dodajFilm(FilmDAO film) {
+		ZarzadzaniePlytamiDAO dao = getFabrykaDAO()
+				.createZarzadzaniePlytamiDAO();
+		dao.scalFilm(film);
+
+	}
+
+	@Override
+	public void dodajPlyte(PlytaDAO plyta) {
+		ZarzadzaniePlytamiDAO dao = getFabrykaDAO()
+				.createZarzadzaniePlytamiDAO();
+		FilmDAO f = dao.zwrocFilm(plyta.getFilm().getId());
+		f.getPlyty().add(plyta);
+		dao.scalFilm(f);
+
+	}
+
+	@Override
+	public FilmDAO pobierzFilm(Integer id) {
+		ZarzadzaniePlytamiDAO z = getFabrykaDAO().createZarzadzaniePlytamiDAO();
+		FilmDAO film = z.zwrocFilm(id);
+		return film;
+	}
+
+	@Override
+	public PlytaDAO pobierzPlyte(String id) {
+		ZarzadzaniePlytamiDAO z = getFabrykaDAO().createZarzadzaniePlytamiDAO();
+		PlytaDAO zwrocPlyte = z.zwrocPlyte(id);
+		return zwrocPlyte;
+	}
+
+	@Override
+	public Collection<PlytaDAO> zwrocListeWszystkichPlytDAO(FilmDAO film) {
+		if (film == null)
+			return null;
+		ZarzadzaniePlytamiDAO z = getFabrykaDAO().createZarzadzaniePlytamiDAO();
+		Collection<PlytaDAO> plyty = z.pobierzWszystkiePlyty(film.getId());
+		return plyty;
+	}
+
+	@Override
+	public Collection<FilmDAO> zwrocListeFilmowDAO(String tytul) {
+		ZarzadzaniePlytamiDAO z = getFabrykaDAO().createZarzadzaniePlytamiDAO();
+		Collection<FilmDAO> filmy = z.zwrocFilmy(tytul);
+		return filmy;
 	}
 
 }

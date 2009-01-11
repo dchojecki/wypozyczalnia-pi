@@ -40,7 +40,7 @@ ${title} (${ile}):
 	<c:forEach var="film" items="${films}">
 		<li><strong>${film.tytul}</strong> (${film.rok})
 		<a href='#' class='slider r-arr' onclick='return slideDiv(this);'>Opis</a>
-		<div style='display: none;'>${film.opis}</div>
+		<div style='display: none;'>mysio</div>
 		<div>Dostepne: <b>${film.ileWolnych}</b></div>
 		<div class='act'>
 			<c:if test="${act_zamow}"><a href='zamow.html?fid=${film.id}'>Zamow</a></c:if>

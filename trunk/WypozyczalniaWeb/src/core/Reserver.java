@@ -18,7 +18,7 @@ public class Reserver extends AbstractController {
 			HttpServletResponse res) throws Exception {
 
 		Integer id = Integer.parseInt(req.getParameter("fid"));
-		
+
 		WebApplicationContext ctx = getWebApplicationContext();
 		Sesja sesja = (Sesja) ctx.getBean("sesja");
 
@@ -26,14 +26,14 @@ public class Reserver extends AbstractController {
 		Collection<FilmDAO> filmy = sesja.zamowioneFilmy();
 
 		ModelAndView m = new ModelAndView("results");
-		
+
 		m.addObject("title", "Zamowione filmy");
-		//m.addObject("query", query);
+		// m.addObject("query", query);
 		m.addObject("ile", filmy.size());
 		m.addObject("act_zamow", false);
 		m.addObject("act_anuluj", true);
 		m.addObject("films", filmy);
-		
+
 		return m;
 	}
 

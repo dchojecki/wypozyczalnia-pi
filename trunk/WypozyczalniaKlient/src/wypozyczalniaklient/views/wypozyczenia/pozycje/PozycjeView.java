@@ -136,17 +136,16 @@ public class PozycjeView extends ViewPart implements GlobalListener {
 	@Override
 	public void PozycjaZamowieniaTOSelected(PozycjaZamowieniaTO plyta) {
 		pozycja = plyta;
-		
+
 		viewer.removeAll();
 		TableItem t1 = new TableItem(viewer, SWT.NONE);
 		t1.setText(0, "Identyfikator filmu");
-		t1.setText(1, ((Integer)pozycja.getPlyta().getIdFilmu()).toString());
+		t1.setText(1, ((Integer) pozycja.getPlyta().getIdFilmu()).toString());
 
 		TableItem t2 = new TableItem(viewer, SWT.NONE);
 		t2.setText(0, "Identyfikator p³yty");
-		t2.setText(1, ((Integer)pozycja.getPlyta().getIdPlyty()).toString());
+		t2.setText(1, (pozycja.getPlyta().getIdPlyty()));
 
-		
 		TableItem t3 = new TableItem(viewer, SWT.NONE);
 		t3.setText(0, "Cena");
 		t3.setText(1, pozycja.getCenaJednostkowa().toString());
@@ -154,11 +153,11 @@ public class PozycjeView extends ViewPart implements GlobalListener {
 		TableItem t4 = new TableItem(viewer, SWT.NONE);
 		t4.setText(0, "Tytu³");
 		t4.setText(1, pozycja.getPlyta().getTytul());
-		
+
 		TableItem t5 = new TableItem(viewer, SWT.NONE);
 		t5.setText(0, "Stan");
 		t5.setText(1, pozycja.getPlyta().getStan().toString());
-		
+
 	}
 
 	@Override

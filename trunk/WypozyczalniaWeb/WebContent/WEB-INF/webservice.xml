@@ -9,6 +9,9 @@
 	<bean name="/filmy.html" class="core.Finder"/>
 	<bean name="/zamow.html" class="core.Reserver" />
 	<bean name="/twoje.html" class="core.Account" />
+	<bean name="/dodajFilm.html" class="core.DodajFilm">
+	</bean>
+	<bean name="/dodajPlyte.html" class="core.DodajPlyte" />
 	
 	
 	<bean

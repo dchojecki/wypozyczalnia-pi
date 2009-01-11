@@ -19,22 +19,20 @@ public class PlytySorter extends ViewerSorter {
 		PlytaTO plyta2 = (PlytaTO) e2;
 		StanPlyty stan1 = plyta1.getStan();
 		StanPlyty stan2 = plyta2.getStan();
-
+		Integer i = plyta2.getIdFilmu();
 		if (stan1 == stan2) {
-			if (plyta1.getIdPlyty() > plyta2.getIdFilmu())
+			if (plyta1.getIdPlyty().compareTo(i.toString()) > 0)
 				return 1;
 			else
 				return -1;
 		}
-		
-		
 
 		if (stan1.ordinal() < stan2.ordinal())
 			return 1;
 		else
 			return -1;
 		/*
-		 * * WYPOZYCZONA, /** NIEWYPOZYCZONA, ZAREZERWOWANA WDRODZE} }
+		 * WYPOZYCZONA, / NIEWYPOZYCZONA, ZAREZERWOWANA WDRODZE} }
 		 */
 	}
 }
