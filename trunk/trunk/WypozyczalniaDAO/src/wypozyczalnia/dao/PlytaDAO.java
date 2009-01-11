@@ -3,27 +3,22 @@
  */
 package wypozyczalnia.dao;
 
-import static wypozyczalnia.dao.StanPlyty.NIEWYPOZYCZONA;
-import static wypozyczalnia.dao.StanPlyty.WDRODZE;
-import static wypozyczalnia.dao.StanPlyty.WYPOZYCZONA;
-import static wypozyczalnia.dao.StanPlyty.ZAREZERWOWANA;
-
 import java.io.Serializable;
 import java.util.Date;
 
-import javax.persistence.Basic;
 import javax.persistence.CascadeType;
 import javax.persistence.Entity;
-import javax.persistence.EnumType;
-import javax.persistence.Enumerated;
-import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
 import javax.persistence.NamedQueries;
 import javax.persistence.NamedQuery;
+import javax.persistence.OneToOne;
 import javax.persistence.Table;
 import javax.persistence.Temporal;
+
+import wypozyczalnia.dao.plyty.PlytaWolna;
+import wypozyczalnia.dao.plyty.StanPlyty;
 
 /**
  * <!-- begin-user-doc --> <!-- end-user-doc -->
@@ -43,31 +38,48 @@ public class PlytaDAO implements Serializable {
 	/**
 	 * 
 	 */
+	private KontoDAO pozyczona, zamowiona;
 	private static final long serialVersionUID = 1L;
 	@Id
-	@GeneratedValue
-	private Integer id;
+	private String id;
+	@OneToOne(cascade = { CascadeType.ALL })
+	@JoinColumn(name = "stanId")
+	private StanPlyty stan;
 
 	public PlytaDAO() {
-		setStanplyty(WDRODZE);
+		setStan(new PlytaWolna());
+	}
+
+	public void setStan(StanPlyty s) {
+		stan = s;
+	}
+
+	public StanPlyty getStan() {
+		return stan;
 	}
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * 
 	 * @generated "UML to Java
-	 *            (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform)"
+	 *            (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform
+	 *            )"
 	 */
 	@ManyToOne(cascade = { CascadeType.ALL })
 	@JoinColumn(name = "filmId")
 	private FilmDAO film;
+
+	@ManyToOne(cascade = { CascadeType.ALL })
+	@JoinColumn(name = "filmWolne")
+	private FilmDAO filmWolne;
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * 
 	 * @return the film
 	 * @generated "UML to Java
-	 *            (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform)"
+	 *            (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform
+	 *            )"
 	 */
 	public FilmDAO getFilm() {
 		// begin-user-code
@@ -81,7 +93,8 @@ public class PlytaDAO implements Serializable {
 	 * @param theFilm
 	 *            the film to set
 	 * @generated "UML to Java
-	 *            (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform)"
+	 *            (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform
+	 *            )"
 	 */
 	public void setFilm(FilmDAO theFilm) {
 		// begin-user-code
@@ -93,7 +106,8 @@ public class PlytaDAO implements Serializable {
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * 
 	 * @generated "UML to Java
-	 *            (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform)"
+	 *            (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform
+	 *            )"
 	 */
 	private String uwagiDoEgzemplarza;
 
@@ -102,7 +116,8 @@ public class PlytaDAO implements Serializable {
 	 * 
 	 * @return the uwagiDoEgzemplarza
 	 * @generated "UML to Java
-	 *            (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform)"
+	 *            (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform
+	 *            )"
 	 */
 	public String getUwagiDoEgzemplarza() {
 		// begin-user-code
@@ -116,7 +131,8 @@ public class PlytaDAO implements Serializable {
 	 * @param theUwagiDoEgzemplarza
 	 *            the uwagiDoEgzemplarza to set
 	 * @generated "UML to Java
-	 *            (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform)"
+	 *            (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform
+	 *            )"
 	 */
 	public void setUwagiDoEgzemplarza(String theUwagiDoEgzemplarza) {
 		// begin-user-code
@@ -128,7 +144,8 @@ public class PlytaDAO implements Serializable {
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * 
 	 * @generated "UML to Java
-	 *            (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform)"
+	 *            (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform
+	 *            )"
 	 */
 	@Temporal(javax.persistence.TemporalType.DATE)
 	private Date dataNabycia;
@@ -138,7 +155,8 @@ public class PlytaDAO implements Serializable {
 	 * 
 	 * @return the dataNabycia
 	 * @generated "UML to Java
-	 *            (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform)"
+	 *            (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform
+	 *            )"
 	 */
 	public Date getDataNabycia() {
 		// begin-user-code
@@ -152,7 +170,8 @@ public class PlytaDAO implements Serializable {
 	 * @param theDataNabycia
 	 *            the dataNabycia to set
 	 * @generated "UML to Java
-	 *            (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform)"
+	 *            (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform
+	 *            )"
 	 */
 	private void setDataNabycia() {
 		// begin-user-code
@@ -164,44 +183,14 @@ public class PlytaDAO implements Serializable {
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * 
 	 * @generated "UML to Java
-	 *            (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform)"
+	 *            (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform
+	 *            )"
 	 */
-	@Basic
-	@Enumerated(EnumType.ORDINAL)
-	private StanPlyty stanplyty;
-
-	/**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
-	 * @return the stanplyty
-	 * @generated "UML to Java
-	 *            (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform)"
-	 */
-	public StanPlyty getStanplyty() {
-		// begin-user-code
-		return stanplyty;
-		// end-user-code
-	}
-
-	/**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
-	 * @param theStanplyty
-	 *            the stanplyty to set
-	 * @generated "UML to Java
-	 *            (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform)"
-	 */
-	public void setStanplyty(StanPlyty theStanplyty) {
-		// begin-user-code
-		stanplyty = theStanplyty;
-		// end-user-code
-	}
-
-	public Integer getId() {
+	public String getId() {
 		return id;
 	}
 
-	public void setId(Integer id) {
+	public void setId(String id) {
 		this.id = id;
 	}
 
@@ -209,66 +198,95 @@ public class PlytaDAO implements Serializable {
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * 
 	 * @generated "UML to Java
-	 *            (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform)"
+	 *            (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform
+	 *            )"
 	 */
 	public void gotowa() {
-		if (getStanplyty() != WDRODZE) {
-			throw new IllegalArgumentException("zly stan poczatkowy");
-		}
-		setStanplyty(NIEWYPOZYCZONA);
-
-		setDataNabycia();
+		// if (getStanplyty() != WDRODZE) {
+		// throw new IllegalArgumentException("zly stan poczatkowy");
+		// }
+		// setStanplyty(NIEWYPOZYCZONA);
+		//
+		// setDataNabycia();
 	}
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * 
 	 * @generated "UML to Java
-	 *            (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform)"
+	 *            (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform
+	 *            )"
 	 */
 	public void rezerwuj() {
-		if (getStanplyty() != NIEWYPOZYCZONA) {
-			throw new IllegalArgumentException("zly stan poczatkowy");
-		}
-		setStanplyty(ZAREZERWOWANA);
+		// if (getStanplyty() != NIEWYPOZYCZONA) {
+		// throw new IllegalArgumentException("zly stan poczatkowy");
+		// }
+		// setStanplyty(ZAREZERWOWANA);
 	}
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * 
 	 * @generated "UML to Java
-	 *            (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform)"
+	 *            (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform
+	 *            )"
 	 */
 	public void wypozycz() {
-		if (getStanplyty() != ZAREZERWOWANA) {
-			throw new IllegalArgumentException("zly stan poczatkowy");
-		}
-		setStanplyty(WYPOZYCZONA);
+		// if (getStanplyty() != ZAREZERWOWANA) {
+		// throw new IllegalArgumentException("zly stan poczatkowy");
+		// }
+		// setStanplyty(WYPOZYCZONA);
 	}
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * 
 	 * @generated "UML to Java
-	 *            (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform)"
+	 *            (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform
+	 *            )"
 	 */
 	public void zwroc() {
-		if (getStanplyty() != WYPOZYCZONA) {
-			throw new IllegalArgumentException("zly stan poczatkowy");
-		}
-		setStanplyty(NIEWYPOZYCZONA);
+		// if (getStanplyty() != WYPOZYCZONA) {
+		// throw new IllegalArgumentException("zly stan poczatkowy");
+		// }
+		// setStanplyty(NIEWYPOZYCZONA);
 	}
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * 
 	 * @generated "UML to Java
-	 *            (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform)"
+	 *            (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform
+	 *            )"
 	 */
 	public void anulujRezerwacje() {
-		if (getStanplyty() != ZAREZERWOWANA) {
-			throw new IllegalArgumentException("zly stan poczatkowy");
-		}
-		setStanplyty(NIEWYPOZYCZONA);
+		// if (getStanplyty() != ZAREZERWOWANA) {
+		// throw new IllegalArgumentException("zly stan poczatkowy");
+		// }
+		// setStanplyty(NIEWYPOZYCZONA);
+	}
+
+	public void setPozyczona(KontoDAO pozyczona) {
+		this.pozyczona = pozyczona;
+	}
+
+	public KontoDAO getPozyczona() {
+		return pozyczona;
+	}
+
+	public void setZamowiona(KontoDAO zamowiona) {
+		this.zamowiona = zamowiona;
+	}
+
+	public KontoDAO getZamowiona() {
+		return zamowiona;
+	}
+
+	public void setFilmWolne(FilmDAO filmWolne) {
+		this.filmWolne = filmWolne;
+	}
+
+	public FilmDAO getFilmWolne() {
+		return filmWolne;
 	}
 }

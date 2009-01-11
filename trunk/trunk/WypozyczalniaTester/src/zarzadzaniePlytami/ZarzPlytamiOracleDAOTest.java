@@ -9,9 +9,10 @@ import wypozyczalnia.dao.fabryki.zarzadzanieplytami.ZarzadzaniePlytamiOracleDAOM
 public class ZarzPlytamiOracleDAOTest extends TestCase {
 
 	private ZarzadzaniePlytamiOracleDAOMock zarz = new ZarzadzaniePlytamiOracleDAOMock();
+
 	@Test
 	public void test1() {
-		zarz.zwrocPlyte(0);
+		zarz.zwrocPlyte("0");
 		zarz.pobierzWszystkieFilmy();
 	}
 }

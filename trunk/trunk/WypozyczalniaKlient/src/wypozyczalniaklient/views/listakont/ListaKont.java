@@ -14,7 +14,6 @@ import org.eclipse.jface.viewers.IDoubleClickListener;
 import org.eclipse.jface.viewers.ISelection;
 import org.eclipse.jface.viewers.IStructuredSelection;
 import org.eclipse.jface.viewers.TableViewer;
-import org.eclipse.jface.viewers.TreeViewer;
 import org.eclipse.jface.viewers.ViewerSorter;
 import org.eclipse.jface.wizard.WizardDialog;
 import org.eclipse.swt.SWT;
@@ -273,26 +272,26 @@ public class ListaKont extends ViewPart {
 		};
 		testactionPlyta = new Action() {
 			public void run() {
-				ZarzadzaniePlytamiDelegacja zp = ZarzadzaniePlytamiDelegacja.getInstance();
+				ZarzadzaniePlytamiDelegacja zp = ZarzadzaniePlytamiDelegacja
+						.getInstance();
 				FilmTO f = new FilmTO();
 				f.setOpisFabuly("fajny film");
-				f.setRokPremiery(new Date());
+				f.setRokPremiery("2008");
 				f.setTytul("Indiana Jones");
 				zp.dodajFilm(f);
-				
-				
+
 				PlytaTO p = new PlytaTO();
 				p.setDataNabycia(new Date());
 				p.setStan(StanPlyty.NIEWYPOZYCZONA);
 				p.setUwagiDoEgzemplarza("porysowana");
 				zp.dodajPlyte(f, p);
-				
+
 				p = new PlytaTO();
 				p.setDataNabycia(new Date());
 				p.setStan(StanPlyty.NIEWYPOZYCZONA);
 				p.setUwagiDoEgzemplarza("porysowana");
 				zp.dodajPlyte(f, p);
-				
+
 			}
 		};
 	}

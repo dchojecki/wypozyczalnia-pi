@@ -132,7 +132,7 @@ public class TransferObjectFactory {
 		FilmTO ret = new FilmTO();
 		ret.setId(film.getId());
 		ret.setOpisFabuly(film.getOpisFabuly());
-		ret.setRokPremiery(film.getRokPremiery());
+		ret.setRokPremiery(film.getRok());
 		ret.setTytul(film.getTytul());
 		return ret;
 
@@ -142,7 +142,7 @@ public class TransferObjectFactory {
 		PlytaTO ret = new PlytaTO();
 		ret.setDataNabycia(plyta.getDataNabycia());
 		ret.setIdFilmu(plyta.getFilm().getId());
-		ret.setStan(plyta.getStanplyty());
+		// ret.setStan(plyta.getStanplyty());
 		ret.setTytul(plyta.getFilm().getTytul());
 		ret.setIdPlyty(plyta.getId());
 		ret.setUwagiDoEgzemplarza(plyta.getUwagiDoEgzemplarza());

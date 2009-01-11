@@ -13,39 +13,49 @@ import javax.persistence.InheritanceType;
 @Inheritance(strategy = InheritanceType.SINGLE_TABLE)
 @DiscriminatorColumn(name = "TYPE")
 public abstract class StanKontaPracownika implements Serializable {
-	
+
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
 	@Id
 	@GeneratedValue
 	private Integer id;
-	
+
 	public StanKontaPracownika() {
 		// TODO Auto-generated constructor stub
 	}
-	
+
 	public void loguj(KontoPracownikaDAO konto, String i_haslo) {
 		throw new NieobsluzoneZdarzenie();
 	}
 
 	public void wyloguj(KontoPracownikaDAO konto) {
 		throw new NieobsluzoneZdarzenie();
-		
+
 	}
 
 	public void zablokuj(KontoPracownikaDAO konto) {
 		throw new NieobsluzoneZdarzenie();
-		
+
 	}
 
 	public void odblokuj(KontoPracownikaDAO konto) {
 		throw new NieobsluzoneZdarzenie();
 	}
-	
-	public void entry() {}
-	public void exit() {}
-	public void doo() {}
+
+	public void entry() {
+	}
+
+	public void exit() {
+	}
+
+	public void doo() {
+	}
 
 	/**
-	 * @param id the id to set
+	 * @param id
+	 *            the id to set
 	 */
 	public void setId(Integer id) {
 		this.id = id;

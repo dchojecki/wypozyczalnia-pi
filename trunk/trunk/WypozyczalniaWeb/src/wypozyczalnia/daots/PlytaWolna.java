@@ -1,4 +1,4 @@
-package wypozyczalnia.dao;
+package wypozyczalnia.daots;
 
 public class PlytaWolna extends StanPlyty {
 
@@ -14,14 +14,14 @@ public class PlytaWolna extends StanPlyty {
 	public void zamow(KontoDAO komu) {
 		plyta.zamowiona = komu;
 		komu.zamowione.add(plyta);
-		plyta.film.wolne.remove(plyta);
+		plyta.film.getWolne().remove(plyta);
 		plyta.setStan(new PlytaZarezerwowana());
 	}
 
 	@Override
 	public void zwroc() {
 		// TODO Auto-generated method stub
-		
+
 	}
 
 }

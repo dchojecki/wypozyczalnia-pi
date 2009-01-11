@@ -5,6 +5,7 @@ package wypozyczalnia.dao;
 
 import java.io.Serializable;
 import java.util.Date;
+import java.util.HashSet;
 import java.util.Set;
 
 import javax.persistence.Basic;
@@ -42,7 +43,8 @@ public class KontoDAO implements Serializable {
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * 
 	 * @generated "UML to Java
-	 *            (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform)"
+	 *            (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform
+	 *            )"
 	 */
 	@OneToOne(cascade = { CascadeType.ALL })
 	@JoinColumn(name = "klientId")
@@ -53,7 +55,8 @@ public class KontoDAO implements Serializable {
 	 * 
 	 * @return the klient
 	 * @generated "UML to Java
-	 *            (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform)"
+	 *            (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform
+	 *            )"
 	 */
 	public KlientDAO getKlient() {
 		// begin-user-code
@@ -67,7 +70,8 @@ public class KontoDAO implements Serializable {
 	 * @param theKlient
 	 *            the klient to set
 	 * @generated "UML to Java
-	 *            (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform)"
+	 *            (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform
+	 *            )"
 	 */
 	public void setKlient(KlientDAO theKlient) {
 		// begin-user-code
@@ -79,7 +83,8 @@ public class KontoDAO implements Serializable {
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * 
 	 * @generated "UML to Java
-	 *            (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform)"
+	 *            (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform
+	 *            )"
 	 */
 	@Basic
 	@Enumerated(EnumType.ORDINAL)
@@ -90,7 +95,8 @@ public class KontoDAO implements Serializable {
 	 * 
 	 * @return the stankonta
 	 * @generated "UML to Java
-	 *            (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform)"
+	 *            (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform
+	 *            )"
 	 */
 	public StanKonta getStankonta() {
 		// begin-user-code
@@ -104,7 +110,8 @@ public class KontoDAO implements Serializable {
 	 * @param theStankonta
 	 *            the stankonta to set
 	 * @generated "UML to Java
-	 *            (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform)"
+	 *            (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform
+	 *            )"
 	 */
 	public void setStankonta(StanKonta theStankonta) {
 		// begin-user-code
@@ -116,7 +123,8 @@ public class KontoDAO implements Serializable {
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * 
 	 * @generated "UML to Java
-	 *            (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform)"
+	 *            (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform
+	 *            )"
 	 */
 	@Temporal(javax.persistence.TemporalType.DATE)
 	private Date dataOstatniegoLogowania;
@@ -126,7 +134,8 @@ public class KontoDAO implements Serializable {
 	 * 
 	 * @return the dataUstatniegoLogowania
 	 * @generated "UML to Java
-	 *            (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform)"
+	 *            (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform
+	 *            )"
 	 */
 	public Date getDataUstatniegoLogowania() {
 		// begin-user-code
@@ -140,7 +149,8 @@ public class KontoDAO implements Serializable {
 	 * @param theDataUstatniegoLogowania
 	 *            the dataUstatniegoLogowania to set
 	 * @generated "UML to Java
-	 *            (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform)"
+	 *            (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform
+	 *            )"
 	 */
 	public void setDataUstatniegoLogowania(Date theDataUstatniegoLogowania) {
 		// begin-user-code
@@ -152,7 +162,8 @@ public class KontoDAO implements Serializable {
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * 
 	 * @generated "UML to Java
-	 *            (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform)"
+	 *            (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform
+	 *            )"
 	 */
 	private String skrotHasla;
 
@@ -161,7 +172,8 @@ public class KontoDAO implements Serializable {
 	 * 
 	 * @return the skrotHasla
 	 * @generated "UML to Java
-	 *            (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform)"
+	 *            (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform
+	 *            )"
 	 */
 	public String getSkrotHasla() {
 		// begin-user-code
@@ -175,7 +187,8 @@ public class KontoDAO implements Serializable {
 	 * @param theSkrotHasla
 	 *            the skrotHasla to set
 	 * @generated "UML to Java
-	 *            (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform)"
+	 *            (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform
+	 *            )"
 	 */
 	public void setSkrotHasla(String theSkrotHasla) {
 		// begin-user-code
@@ -187,7 +200,8 @@ public class KontoDAO implements Serializable {
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * 
 	 * @generated "UML to Java
-	 *            (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform)"
+	 *            (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform
+	 *            )"
 	 */
 	@Id
 	@GeneratedValue
@@ -199,7 +213,8 @@ public class KontoDAO implements Serializable {
 	 * 
 	 * @return the nrKonta
 	 * @generated "UML to Java
-	 *            (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform)"
+	 *            (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform
+	 *            )"
 	 */
 	public Integer getNrKonta() {
 		// begin-user-code
@@ -213,7 +228,8 @@ public class KontoDAO implements Serializable {
 	 * @param theNrKonta
 	 *            the nrKonta to set
 	 * @generated "UML to Java
-	 *            (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform)"
+	 *            (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform
+	 *            )"
 	 */
 	public void setNrKonta(Integer theNrKonta) {
 		// begin-user-code
@@ -225,7 +241,8 @@ public class KontoDAO implements Serializable {
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * 
 	 * @generated "UML to Java
-	 *            (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform)"
+	 *            (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform
+	 *            )"
 	 */
 	@Temporal(javax.persistence.TemporalType.DATE)
 	private Date dataOstatniejZmianyHasla;
@@ -235,7 +252,8 @@ public class KontoDAO implements Serializable {
 	 * 
 	 * @return the dataOstatniejZmianyHasla
 	 * @generated "UML to Java
-	 *            (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform)"
+	 *            (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform
+	 *            )"
 	 */
 	public Date getDataOstatniejZmianyHasla() {
 		// begin-user-code
@@ -249,16 +267,18 @@ public class KontoDAO implements Serializable {
 	 * @param theDataOstatniejZmianyHasla
 	 *            the dataOstatniejZmianyHasla to set
 	 * @generated "UML to Java
-	 *            (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform)"
+	 *            (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform
+	 *            )"
 	 */
 	public void setDataOstatniejZmianyHasla(Date theDataOstatniejZmianyHasla) {
 		// begin-user-code
 		dataOstatniejZmianyHasla = theDataOstatniejZmianyHasla;
 		// end-user-code
 	}
-	
+
 	/**
-	 * @param zamowienia the zamowienia to set
+	 * @param zamowienia
+	 *            the zamowienia to set
 	 */
 	public void setZamowienia(Set<ZamowienieDAO> zamowienia) {
 		this.zamowienia = zamowienia;
@@ -271,8 +291,22 @@ public class KontoDAO implements Serializable {
 		return zamowienia;
 	}
 
-	@OneToMany(cascade = {CascadeType.ALL}, mappedBy = "konto")
-    private Set<ZamowienieDAO> zamowienia;
-	
+	public Set<ZamowienieDAO> getPozyczenia() {
+		return pozyczenia;
+	}
+
+	public void setLogin(String login) {
+		this.login = login;
+	}
+
+	public String getLogin() {
+		return login;
+	}
+
+	@OneToMany(cascade = { CascadeType.ALL }, mappedBy = "konto")
+	private Set<ZamowienieDAO> zamowienia = new HashSet<ZamowienieDAO>();
+	@OneToMany(cascade = { CascadeType.ALL }, mappedBy = "konto")
+	private Set<ZamowienieDAO> pozyczenia = new HashSet<ZamowienieDAO>();
+	private String login;
 
 }

@@ -8,8 +8,6 @@ import java.util.List;
 
 import javax.ejb.Stateless;
 import javax.persistence.EntityManager;
-import javax.persistence.EntityManagerFactory;
-import javax.persistence.Persistence;
 import javax.persistence.PersistenceContext;
 
 import wypozyczalnia.dao.FilmDAO;
@@ -26,7 +24,7 @@ import wypozyczalnia.dao.PlytaDAO;
 @Stateless
 public class ZarzPlytamiOracleDAO implements ZarzadzaniePlytamiDAOBean {
 
-	@PersistenceContext(unitName="wypozyczalniaPU")
+	@PersistenceContext(unitName = "wypozyczalniaPU")
 	private EntityManager em;
 
 	public ZarzPlytamiOracleDAO() {
@@ -72,14 +70,25 @@ public class ZarzPlytamiOracleDAO implements ZarzadzaniePlytamiDAOBean {
 	}
 
 	@Override
-	public PlytaDAO zwrocPlyte(Integer id) {
-		PlytaDAO p = (PlytaDAO) em.createNamedQuery("zwrocPlyte").setParameter("id", id).getSingleResult();
+	public PlytaDAO zwrocPlyte(String id) {
+		PlytaDAO p = (PlytaDAO) em.createNamedQuery("zwrocPlyte").setParameter(
+				"id", id).getSingleResult();
 		return p;
 	}
 
 	@Override
 	public FilmDAO zwrocFilm(Integer id) {
-		FilmDAO p = (FilmDAO) em.createNamedQuery("zwrocFilm").setParameter("id", id).getSingleResult();
+		FilmDAO p = (FilmDAO) em.createNamedQuery("zwrocFilm").setParameter(
+				"id", id).getSingleResult();
+		return p;
+	}
+
+	@SuppressWarnings("unchecked")
+	@Override
+	public Collection<FilmDAO> zwrocFilmy(String tytul) {
+		List<FilmDAO> p = (List<FilmDAO>) em.createNamedQuery(
+				"zwrocListeFilmow").setParameter("tytul", tytul)
+				.getResultList();
 		return p;
 	}
 }

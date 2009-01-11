@@ -17,21 +17,20 @@ public class Account extends AbstractController {
 	protected ModelAndView handleRequestInternal(HttpServletRequest req,
 			HttpServletResponse res) throws Exception {
 
-		
 		WebApplicationContext ctx = getWebApplicationContext();
 		Sesja sesja = (Sesja) ctx.getBean("sesja");
 
 		Collection<FilmDAO> filmy = sesja.zamowioneFilmy();
 
 		ModelAndView m = new ModelAndView("results");
-		
+
 		m.addObject("title", "Zamowione filmy");
-		//m.addObject("query", query);
+		// m.addObject("query", query);
 		m.addObject("ile", filmy.size());
 		m.addObject("act_zamow", false);
 		m.addObject("act_anuluj", true);
 		m.addObject("films", filmy);
-		
+
 		return m;
 	}
 

@@ -4,18 +4,18 @@
 package wypozyczalnia.dao;
 
 import java.io.Serializable;
-import java.util.Date;
 import java.util.HashSet;
 import java.util.Set;
 
+import javax.persistence.CascadeType;
 import javax.persistence.Entity;
+import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.persistence.NamedQueries;
 import javax.persistence.NamedQuery;
 import javax.persistence.OneToMany;
 import javax.persistence.Table;
-import javax.persistence.Transient;
 
 /**
  * <!-- begin-user-doc --> <!-- end-user-doc -->
@@ -27,9 +27,10 @@ import javax.persistence.Transient;
  */
 @Entity
 @Table(name = "FilmTbl")
-@NamedQueries( { 
-	@NamedQuery(name = "zwrocListeWszystkichFilmow", query = "select object(o) from FilmDAO o"),
-	@NamedQuery(name = "zwrocFilm", query = "select object(o) from FilmDAO o where o.id = :id") 
+@NamedQueries( {
+		@NamedQuery(name = "zwrocListeWszystkichFilmow", query = "select object(o) from FilmDAO o"),
+		@NamedQuery(name = "zwrocFilm", query = "select object(o) from FilmDAO o where o.id = :id"),
+		@NamedQuery(name = "zwrocListeFilmow", query = "select object(o) from FilmDAO o where o.tytul = :tytul")
 
 })
 public class FilmDAO implements Serializable {
@@ -50,8 +51,10 @@ public class FilmDAO implements Serializable {
 	 *            (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform
 	 *            )"
 	 */
-	@OneToMany(mappedBy = "film")
+	@OneToMany(mappedBy = "film", cascade = { CascadeType.ALL }, fetch = FetchType.EAGER)
 	private Set<PlytaDAO> plyty = new HashSet<PlytaDAO>();
+	@OneToMany(mappedBy = "filmWolne", cascade = { CascadeType.ALL }, fetch = FetchType.EAGER)
+	private Set<PlytaDAO> wolne = new HashSet<PlytaDAO>();
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
@@ -127,8 +130,7 @@ public class FilmDAO implements Serializable {
 	 *            (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform
 	 *            )"
 	 */
-	@Transient
-	private Date rokPremiery;
+	private String rok;
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
@@ -138,9 +140,9 @@ public class FilmDAO implements Serializable {
 	 *            (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform
 	 *            )"
 	 */
-	public Date getRokPremiery() {
+	public String getRok() {
 		// begin-user-code
-		return rokPremiery;
+		return rok;
 		// end-user-code
 	}
 
@@ -153,9 +155,9 @@ public class FilmDAO implements Serializable {
 	 *            (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform
 	 *            )"
 	 */
-	public void setRokPremiery(Date theRokPremiery) {
+	public void setRok(String r) {
 		// begin-user-code
-		rokPremiery = theRokPremiery;
+		rok = r;
 		// end-user-code
 	}
 
@@ -219,5 +221,23 @@ public class FilmDAO implements Serializable {
 
 	public void setId(Integer id) {
 		this.id = id;
+	}
+
+	public int getIleWolnych() {
+		return wolne.size();
+	}
+
+	public PlytaDAO wolnyEgzemplarz() {
+		if (wolne.size() > 0)
+			return wolne.iterator().next();
+		return null;
+	}
+
+	public void zamowPlyte(PlytaDAO plyta) {
+		wolne.remove(plyta);
+	}
+
+	public Set<PlytaDAO> getWolne() {
+		return wolne;
 	}
 }
