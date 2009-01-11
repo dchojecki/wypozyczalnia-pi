@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence xmlns="http://java.sun.com/xml/ns/persistence"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/persistence/persistence_1_0.xsd"
+	version="1.0">
+	<persistence-unit name="wypozyczalniaPU" transaction-type="JTA">
+		<jta-data-source>java:/DefaultDS</jta-data-source>
+		<provider>org.hibernate.ejb.HibernatePersistence</provider>
+		<class>
+			wypozyczalnia.dao.kontopracownika.KontoPracownikaDAO
+		</class>
+		<class>wypozyczalnia.dao.PracownikDAO</class>
+		<class>wypozyczalnia.dao.AdresDAO</class>
+		<class>wypozyczalnia.dao.FilmDAO</class>
+		<class>wypozyczalnia.dao.KlientDAO</class>
+		<class>wypozyczalnia.dao.KontoDAO</class>
+		<class>wypozyczalnia.dao.OsobaDAO</class>
+		<class>wypozyczalnia.dao.PlytaDAO</class>
+		<class>wypozyczalnia.dao.PozycjaZamowieniaDAO</class>
+		<class>wypozyczalnia.dao.ZamowienieDAO</class>
+		<class>wypozyczalnia.dao.kontopracownika.StanAktywne</class>
+		<class>wypozyczalnia.dao.kontopracownika.StanAutoryzacja</class>
+		<class>wypozyczalnia.dao.kontopracownika.StanBrakDostepu</class>
+		<class>wypozyczalnia.dao.kontopracownika.StanDostep</class>
+		<class>wypozyczalnia.dao.kontopracownika.StanNieaktywne</class>
+		<class>
+			wypozyczalnia.dao.kontopracownika.StanSprawdzanieHasla
+		</class>
+		<class>wypozyczalnia.dao.kontopracownika.StanZablokowane</class>
+		<properties>
+			<property name="hibernate.connection.driver_class"
+				value="org.hsqldb.jdbcDriver" />
+			<property name="hibernate.connection.url"
+				value="jdbc:hsqldb:data/example" />
+			<property name="hibernate.dialect"
+				value="org.hibernate.dialect.HSQLDialect" />
+			<property name="hibernate.connection.username" value="sa" />
+			<property name="hibernate.connection.password" value="" />
+			<property name="hibernate.max_fetch_depth" value="3" />
+			<property name="hibernate.hbm2ddl.auto" value="create-drop" />
+			<property name="hibernate.show_sql" value="true" />
+			<!--
+				<property name="hibernate.jndi.java.naming.factory.initial"
+				value="org.jnp.interfaces.NamingContextFactory">
+				</property>
+				<property name="hibernate.jndi.java.naming.factory.url.pkgs"
+				value="org.jboss.naming:org.jnp.interfaces" />
+			-->
+		</properties>
+	</persistence-unit>
+</persistence>
