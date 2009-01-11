@@ -16,12 +16,10 @@ public class DodajFilm extends AbstractController {
 			HttpServletResponse res) throws Exception {
 		WebApplicationContext ctx = getWebApplicationContext();
 		Sesja sesja = (Sesja) ctx.getBean("sesja");
-		FilmDAO film = new FilmDAO();
-		// id - generated value
-		film.setTytul("300");
-		sesja.getPlytyMgr().dodajFilm(film);
+		FilmDAO f = sesja.nowyFilm("300", "2008", "opis fabuly");
 		ModelAndView mv;
 		mv = new ModelAndView("dodajfilm");
+		mv.addObject("film", f);
 		return mv;
 	}
 }

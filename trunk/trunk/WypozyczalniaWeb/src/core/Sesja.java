@@ -107,4 +107,24 @@ public class Sesja {
 	public ZarzadzanieWypozyczeniamiLocal getZamowieniaMgr() {
 		return zamowieniaMgr;
 	}
+
+	public FilmDAO nowyFilm(String tytul, String rok, String opis) {
+		FilmDAO film = new FilmDAO();
+		// id - generated value
+		film.setTytul("300");
+		film.setRok(rok);
+		film.setOpisFabuly(opis);
+		getPlytyMgr().dodajFilm(film);
+		return film;
+	}
+
+	public PlytaDAO dodajPlyte(String plytaId, int filmId, String string2) {
+		FilmDAO film = plytyMgr.pobierzFilm(filmId);
+		PlytaDAO plyta = new PlytaDAO();
+		plyta.setFilm(film);
+		plyta.setFilmWolne(film);
+		plyta.setId("1/I");
+		plytyMgr.dodajPlyte(plyta);
+		return plyta;
+	}
 }
