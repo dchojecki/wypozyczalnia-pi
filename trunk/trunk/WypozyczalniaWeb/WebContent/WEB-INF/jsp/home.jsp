@@ -33,7 +33,7 @@
 
 <div class="right"> 
 
-<h3>Witaj, !</h3>
+<h3>Witaj, ${uzytkownik.klient.imie}!</h3>
 
 <h5>Jestesmy tu dla Ciebie!</h5>
 Jesli masz ochote cos obejrzec, ale nie wiesz jeszce co, skorzystaj z katalogu filmow w menu, po lewej stronie.<br/>
