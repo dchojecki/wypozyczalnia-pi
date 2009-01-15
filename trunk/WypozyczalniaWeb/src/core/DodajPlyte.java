@@ -23,10 +23,12 @@ public class DodajPlyte extends AbstractController {
 		Sesja sesja = (Sesja) webApplicationContext.getBean("sesja");
 		Collection<FilmDAO> filmy = sesja.getFilmy().getAll();
 		
+		Integer ileDodano = 0;
 		Integer idFilmu = -1;
 		String tekst = new String("Wybierz film, do ktorego chcesz dodac plyty.");
 		if ((arg0.getParameter("fid") != null) && (arg0.getParameter("ile") != null)) {
 			if (arg0.getParameter("ile").equals("jedna")) {
+				
 				idFilmu = Integer.valueOf(arg0.getParameter("fid"));
 				ZarzadzaniePlytamiLocal plytyMgr = sesja.getPlytyMgr();	
 				FilmDAO film = plytyMgr.pobierzFilm(idFilmu);
@@ -36,17 +38,33 @@ public class DodajPlyte extends AbstractController {
 				Random r = new Random();
 				plyta.setId(Long.toString(r.nextLong())); // wygeneruj losowe ID
 				plytyMgr.dodajPlyte(plyta);
-				tekst = new String("Dodano plyte do filmu " + film.getTytul() + " !");		
+				tekst = new String("Dodano plyte do filmu " + film.getTytul() + " !");
+				ileDodano = 1;
+				
 			} else if (arg0.getParameter("ile").equals("wiele")) {
-				// tutaj trzeba juz zmienic ModelAndView i pokazac formularz
-				tekst = "TODO";
+
+				int ileDodac = Integer.valueOf(arg0.getParameter("iledodac"));
+				idFilmu = Integer.valueOf(arg0.getParameter("fid"));
+				ZarzadzaniePlytamiLocal plytyMgr = sesja.getPlytyMgr();	
+				FilmDAO film = plytyMgr.pobierzFilm(idFilmu);
+				Random r = new Random();
+				
+				for (int i=0; i<ileDodac; i++) {
+					PlytaDAO plyta = new PlytaDAO();
+					plyta.setFilm(film);
+					plyta.setFilmWolne(film);
+					plyta.setId(Long.toString(r.nextLong()));
+					plytyMgr.dodajPlyte(plyta);
+				}
+				tekst = new String("Dodano " + Integer.toString(ileDodac) + " plyt do filmu " + film.getTytul() + " !");	
+				ileDodano = ileDodac;
 			}
 		}
-		
 		ModelAndView mv = new ModelAndView("dodajplyte");
 		mv.addObject("films", filmy);
 		mv.addObject("tekst", tekst);
 		mv.addObject("idFilmu", idFilmu);
+		mv.addObject("ileDodano", ileDodano);
 		return mv;
 	}
 
