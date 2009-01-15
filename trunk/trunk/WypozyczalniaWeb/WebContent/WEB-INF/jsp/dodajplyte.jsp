@@ -28,10 +28,32 @@
 <div class="right"> 
 
 
-<h5>Wybierz film, ktorego ilosc chcesz zmienic.</h5>
-TODO
+<h5>${tekst}</h5>
+
 <br/>
 
+<div class='results'>
+	<ul>
+	<c:forEach var="film" items="${films}">
+		<li><strong>${film.tytul}</strong> (${film.rok})
+		<a href='#' class='slider r-arr' onclick='return slideDiv(this);'>Opis</a>
+		<div style='display: none;'>${film.opisFabuly}</div>
+		
+		<c:if test="${idFilmu == film.id}">
+		<div>Dostepne: <b>${film.ileWolnych + 1}</b></div>
+		</c:if>
+		
+		<c:if test="${idFilmu != film.id}">
+		<div>Dostepne: <b>${film.ileWolnych}</b></div>
+		</c:if>
+		
+		<div class='act'>
+			<a href='dodajPlyte.html?ile=jedna&fid=${film.id}'>Dodaj plyte</a>
+			<a href='dodajPlyte.html?ile=wiele&fid=${film.id}'>Dodaj wiele plyt</a>
+		</div></li>
+	</c:forEach>
+	</ul>
+</div>
 
 </div>
 
