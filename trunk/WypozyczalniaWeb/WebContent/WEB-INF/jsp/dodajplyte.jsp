@@ -1,4 +1,4 @@
-<%@ taglib prefix="c" uri="http://java.sun.com/jstl/core" %>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
@@ -27,13 +27,13 @@
 
 <div class="right"> 
 
-<h3>Witaj, ${uzytkownik.imie}!</h3>
 
-<h5>Jestesmy tu dla Ciebie!</h5>
-Jesli masz ochote cos obejrzec, ale nie wiesz jeszce co, skorzystaj z katalogu filmow w menu, po lewej stronie.<br/>
+<h5>Wybierz film, ktorego ilosc chcesz zmienic.</h5>
+TODO
 <br/>
-Jesli chcesz sprawdzic stan Twoich zamowien, rowniez znajdziesz go w menu.<br/>
 
+
+</div>
 
 <div class="left"> 
 
@@ -49,8 +49,6 @@ Jesli chcesz sprawdzic stan Twoich zamowien, rowniez znajdziesz go w menu.<br/>
 
 
 <div style="clear: both;"> </div>
-
-</div>
 
 <div id="footer">
 <a href='dodajFilm.html'>Dodaj film</a> | <a href='filmy.html'>Dostepne filmy</a> | <a href='twoje.html'>Zamowione przez Ciebie</a>
