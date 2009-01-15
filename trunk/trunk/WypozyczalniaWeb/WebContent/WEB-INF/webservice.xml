@@ -12,6 +12,7 @@
 	<bean name="/dodajFilm.html" class="core.DodajFilm">
 	</bean>
 	<bean name="/dodajPlyte.html" class="core.DodajPlyte" />
+	<bean name="/dodajWielePlyt.html" class="core.DodajWielePlyt" />
 	
 	
 	<bean

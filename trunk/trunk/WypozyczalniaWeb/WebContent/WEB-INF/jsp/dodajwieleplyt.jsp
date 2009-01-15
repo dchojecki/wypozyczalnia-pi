@@ -27,33 +27,18 @@
 
 <div class="right"> 
 
-
-<h5>${tekst}</h5>
+<h5>Wypelnij formularz dodawania wielu egzemplarzy tego samego filmu:</h5>
 
 <br/>
-
-<div class='results'>
-	<ul>
-	<c:forEach var="film" items="${films}">
-		<li><strong>${film.tytul}</strong> (${film.rok})
-		<a href='#' class='slider r-arr' onclick='return slideDiv(this);'>Opis</a>
-		<div style='display: none;'>${film.opisFabuly}</div>
-		
-		<c:if test="${idFilmu == film.id}">
-		<div>Dostepne: <b>${film.ileWolnych + ileDodano}</b></div>
-		</c:if>
-		
-		<c:if test="${idFilmu != film.id}">
-		<div>Dostepne: <b>${film.ileWolnych}</b></div>
-		</c:if>
-		
-		<div class='act'>
-			<a href='dodajPlyte.html?ile=jedna&fid=${film.id}'>Dodaj plyte</a>
-			<a href='dodajWielePlyt.html?fid=${film.id}'>Dodaj wiele plyt</a>
-		</div></li>
-	</c:forEach>
-	</ul>
-</div>
+Dodawanie egzemplarzy do filmu ${film.tytul }
+<form action='dodajPlyte.html' method='post'>
+		<label>Ile plyt chcesz dodac:</label>
+		<input type='text' name='iledodac'/><br/>
+		<input type='hidden' name='ile' value='wiele'>
+		<input type='hidden' name='fid' value='${film.id }'>
+		<input type='submit' value='Dodaj plyty' class='button'/>
+</form>
+<br/>
 
 </div>
 
