@@ -422,7 +422,7 @@ public class ZamowienieDAO implements Serializable {
 	 */
 	private void anulujRezerwacjePlyt() {
 		for (PozycjaZamowieniaDAO p : pozycje) {
-			p.getPlyta().anulujRezerwacje();
+			// p.getPlyta().anulujRezerwacje();
 		}
 	}
 

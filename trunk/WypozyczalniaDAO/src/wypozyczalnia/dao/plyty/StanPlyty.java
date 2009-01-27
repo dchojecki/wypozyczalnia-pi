@@ -26,7 +26,7 @@ public abstract class StanPlyty implements Serializable {
 
 	public abstract void zamow(PlytaDAO p, KontoDAO komu);
 
-	public abstract void anuluj(PlytaDAO p);
+	public abstract void anuluj(PlytaDAO p, KontoDAO komu);
 
 	public abstract void wydaj(PlytaDAO p);
 
