@@ -9,7 +9,6 @@ import org.springframework.web.context.WebApplicationContext;
 import org.springframework.web.servlet.ModelAndView;
 import org.springframework.web.servlet.mvc.AbstractController;
 
-import wypozyczalnia.dao.FilmDAO;
 import wypozyczalnia.dao.PlytaDAO;
 
 public class Account extends AbstractController {
