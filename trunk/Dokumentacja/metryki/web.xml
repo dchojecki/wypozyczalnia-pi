@@ -1,0 +1,563 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Metrics scope="WypozyczalniaWeb" type="Project" date="2009-01-27" xmlns="http://metrics.sourceforge.net/2003/Metrics-First-Flat">
+   <Metric id = "NORM" description ="Number of Overridden Methods">
+      <Values per = "type" total = "0" avg = "0" stddev = "0" max = "0">
+         <Value name="Account" source ="Account.java" package ="core" value ="0"/>
+         <Value name="DodajFilm" source ="DodajFilm.java" package ="core" value ="0"/>
+         <Value name="DodajPlyte" source ="DodajPlyte.java" package ="core" value ="0"/>
+         <Value name="DodajWielePlyt" source ="DodajWielePlyt.java" package ="core" value ="0"/>
+         <Value name="Finder" source ="Finder.java" package ="core" value ="0"/>
+         <Value name="Home" source ="Home.java" package ="core" value ="0"/>
+         <Value name="Reserver" source ="Reserver.java" package ="core" value ="0"/>
+         <Value name="Sesja" source ="Sesja.java" package ="core" value ="0"/>
+         <Value name="FilmDAO" source ="FilmDAO.java" package ="wypozyczalnia.daots" value ="0"/>
+         <Value name="FilmyFactory" source ="FilmyFactory.java" package ="wypozyczalnia.daots" value ="0"/>
+         <Value name="KontaFactory" source ="KontaFactory.java" package ="wypozyczalnia.daots" value ="0"/>
+         <Value name="KontoDAO" source ="KontoDAO.java" package ="wypozyczalnia.daots" value ="0"/>
+         <Value name="PlytaDAO" source ="PlytaDAO.java" package ="wypozyczalnia.daots" value ="0"/>
+         <Value name="PlytaPozyczona" source ="PlytaPozyczona.java" package ="wypozyczalnia.daots" value ="0"/>
+         <Value name="PlytaWolna" source ="PlytaWolna.java" package ="wypozyczalnia.daots" value ="0"/>
+         <Value name="PlytaZarezerwowana" source ="PlytaZarezerwowana.java" package ="wypozyczalnia.daots" value ="0"/>
+         <Value name="StanPlyty" source ="StanPlyty.java" package ="wypozyczalnia.daots" value ="0"/>
+         <Value name="ZarzadzajKontami" source ="ZarzadzajKontami.java" package ="wypozyczalnia.managers" value ="0"/>
+      </Values>
+   </Metric>
+   <Metric id = "NOF" description ="Number of Attributes">
+      <Values per = "type" total = "26" avg = "1,444" stddev = "2,477" max = "7">
+         <Value name="Sesja" source ="Sesja.java" package ="core" value ="7"/>
+         <Value name="FilmDAO" source ="FilmDAO.java" package ="wypozyczalnia.daots" value ="6"/>
+         <Value name="KontoDAO" source ="KontoDAO.java" package ="wypozyczalnia.daots" value ="6"/>
+         <Value name="PlytaDAO" source ="PlytaDAO.java" package ="wypozyczalnia.daots" value ="5"/>
+         <Value name="FilmyFactory" source ="FilmyFactory.java" package ="wypozyczalnia.daots" value ="1"/>
+         <Value name="StanPlyty" source ="StanPlyty.java" package ="wypozyczalnia.daots" value ="1"/>
+         <Value name="Account" source ="Account.java" package ="core" value ="0"/>
+         <Value name="DodajFilm" source ="DodajFilm.java" package ="core" value ="0"/>
+         <Value name="DodajPlyte" source ="DodajPlyte.java" package ="core" value ="0"/>
+         <Value name="DodajWielePlyt" source ="DodajWielePlyt.java" package ="core" value ="0"/>
+         <Value name="Finder" source ="Finder.java" package ="core" value ="0"/>
+         <Value name="Home" source ="Home.java" package ="core" value ="0"/>
+         <Value name="Reserver" source ="Reserver.java" package ="core" value ="0"/>
+         <Value name="KontaFactory" source ="KontaFactory.java" package ="wypozyczalnia.daots" value ="0"/>
+         <Value name="PlytaPozyczona" source ="PlytaPozyczona.java" package ="wypozyczalnia.daots" value ="0"/>
+         <Value name="PlytaWolna" source ="PlytaWolna.java" package ="wypozyczalnia.daots" value ="0"/>
+         <Value name="PlytaZarezerwowana" source ="PlytaZarezerwowana.java" package ="wypozyczalnia.daots" value ="0"/>
+         <Value name="ZarzadzajKontami" source ="ZarzadzajKontami.java" package ="wypozyczalnia.managers" value ="0"/>
+      </Values>
+   </Metric>
+   <Metric id = "NSC" description ="Number of Children">
+      <Values per = "type" total = "3" avg = "0,167" stddev = "0,687" max = "3">
+         <Value name="StanPlyty" source ="StanPlyty.java" package ="wypozyczalnia.daots" value ="3"/>
+         <Value name="Account" source ="Account.java" package ="core" value ="0"/>
+         <Value name="DodajFilm" source ="DodajFilm.java" package ="core" value ="0"/>
+         <Value name="DodajPlyte" source ="DodajPlyte.java" package ="core" value ="0"/>
+         <Value name="DodajWielePlyt" source ="DodajWielePlyt.java" package ="core" value ="0"/>
+         <Value name="Finder" source ="Finder.java" package ="core" value ="0"/>
+         <Value name="Home" source ="Home.java" package ="core" value ="0"/>
+         <Value name="Reserver" source ="Reserver.java" package ="core" value ="0"/>
+         <Value name="Sesja" source ="Sesja.java" package ="core" value ="0"/>
+         <Value name="FilmDAO" source ="FilmDAO.java" package ="wypozyczalnia.daots" value ="0"/>
+         <Value name="FilmyFactory" source ="FilmyFactory.java" package ="wypozyczalnia.daots" value ="0"/>
+         <Value name="KontaFactory" source ="KontaFactory.java" package ="wypozyczalnia.daots" value ="0"/>
+         <Value name="KontoDAO" source ="KontoDAO.java" package ="wypozyczalnia.daots" value ="0"/>
+         <Value name="PlytaDAO" source ="PlytaDAO.java" package ="wypozyczalnia.daots" value ="0"/>
+         <Value name="PlytaPozyczona" source ="PlytaPozyczona.java" package ="wypozyczalnia.daots" value ="0"/>
+         <Value name="PlytaWolna" source ="PlytaWolna.java" package ="wypozyczalnia.daots" value ="0"/>
+         <Value name="PlytaZarezerwowana" source ="PlytaZarezerwowana.java" package ="wypozyczalnia.daots" value ="0"/>
+         <Value name="ZarzadzajKontami" source ="ZarzadzajKontami.java" package ="wypozyczalnia.managers" value ="0"/>
+      </Values>
+   </Metric>
+   <Metric id = "NOC" description ="Number of Classes">
+      <Values per = "packageFragment" total = "18" avg = "6" stddev = "3,559" max = "9">
+         <Value name="wypozyczalnia.daots" package ="wypozyczalnia.daots" value ="9"/>
+         <Value name="core" package ="core" value ="8"/>
+         <Value name="wypozyczalnia.managers" package ="wypozyczalnia.managers" value ="1"/>
+      </Values>
+   </Metric>
+   <Metric id = "MLOC" description ="Method Lines of Code">
+      <Values per = "method" total = "309" avg = "4,352" stddev = "10,148" max = "64">
+         <Value name="FilmyFactory" source ="FilmyFactory.java" package ="wypozyczalnia.daots" value ="64"/>
+         <Value name="handleRequestInternal" source ="DodajPlyte.java" package ="core" value ="42"/>
+         <Value name="handleRequestInternal" source ="DodajFilm.java" package ="core" value ="39"/>
+         <Value name="handleRequestInternal" source ="Home.java" package ="core" value ="16"/>
+         <Value name="zamowioneFilmy" source ="Sesja.java" package ="core" value ="16"/>
+         <Value name="handleRequestInternal" source ="Finder.java" package ="core" value ="12"/>
+         <Value name="handleRequestInternal" source ="Reserver.java" package ="core" value ="12"/>
+         <Value name="handleRequestInternal" source ="Account.java" package ="core" value ="10"/>
+         <Value name="KontaFactory" source ="KontaFactory.java" package ="wypozyczalnia.daots" value ="8"/>
+         <Value name="handleRequestInternal" source ="DodajWielePlyt.java" package ="core" value ="7"/>
+         <Value name="dodajPlyte" source ="Sesja.java" package ="core" value ="7"/>
+         <Value name="zaloguj" source ="ZarzadzajKontami.java" package ="wypozyczalnia.managers" value ="7"/>
+         <Value name="nowyFilm" source ="Sesja.java" package ="core" value ="6"/>
+         <Value name="getKonto" source ="KontaFactory.java" package ="wypozyczalnia.daots" value ="5"/>
+         <Value name="zamow" source ="Sesja.java" package ="core" value ="4"/>
+         <Value name="zamow" source ="PlytaWolna.java" package ="wypozyczalnia.daots" value ="4"/>
+         <Value name="wolnyEgzemplarz" source ="FilmDAO.java" package ="wypozyczalnia.daots" value ="3"/>
+         <Value name="wydaj" source ="PlytaZarezerwowana.java" package ="wypozyczalnia.daots" value ="3"/>
+         <Value name="zaloguj" source ="Sesja.java" package ="core" value ="2"/>
+         <Value name="FilmDAO" source ="FilmDAO.java" package ="wypozyczalnia.daots" value ="2"/>
+         <Value name="KontoDAO" source ="KontoDAO.java" package ="wypozyczalnia.daots" value ="2"/>
+         <Value name="setStan" source ="PlytaDAO.java" package ="wypozyczalnia.daots" value ="2"/>
+         <Value name="anuluj" source ="PlytaZarezerwowana.java" package ="wypozyczalnia.daots" value ="2"/>
+         <Value name="czyZalogowany" source ="Sesja.java" package ="core" value ="1"/>
+         <Value name="getFilmy" source ="Sesja.java" package ="core" value ="1"/>
+         <Value name="getId" source ="Sesja.java" package ="core" value ="1"/>
+         <Value name="getName" source ="Sesja.java" package ="core" value ="1"/>
+         <Value name="getPlytyMgr" source ="Sesja.java" package ="core" value ="1"/>
+         <Value name="getZamowieniaMgr" source ="Sesja.java" package ="core" value ="1"/>
+         <Value name="setFilmy" source ="Sesja.java" package ="core" value ="1"/>
+         <Value name="setId" source ="Sesja.java" package ="core" value ="1"/>
+         <Value name="setName" source ="Sesja.java" package ="core" value ="1"/>
+         <Value name="setPlytyMgr" source ="Sesja.java" package ="core" value ="1"/>
+         <Value name="setZamowieniaMgr" source ="Sesja.java" package ="core" value ="1"/>
+         <Value name="getId" source ="FilmDAO.java" package ="wypozyczalnia.daots" value ="1"/>
+         <Value name="getIleWolnych" source ="FilmDAO.java" package ="wypozyczalnia.daots" value ="1"/>
+         <Value name="getOpis" source ="FilmDAO.java" package ="wypozyczalnia.daots" value ="1"/>
+         <Value name="getPlyty" source ="FilmDAO.java" package ="wypozyczalnia.daots" value ="1"/>
+         <Value name="getRok" source ="FilmDAO.java" package ="wypozyczalnia.daots" value ="1"/>
+         <Value name="getTytul" source ="FilmDAO.java" package ="wypozyczalnia.daots" value ="1"/>
+         <Value name="getWolne" source ="FilmDAO.java" package ="wypozyczalnia.daots" value ="1"/>
+         <Value name="zamowPlyte" source ="FilmDAO.java" package ="wypozyczalnia.daots" value ="1"/>
+         <Value name="getAll" source ="FilmyFactory.java" package ="wypozyczalnia.daots" value ="1"/>
+         <Value name="getFilm" source ="FilmyFactory.java" package ="wypozyczalnia.daots" value ="1"/>
+         <Value name="getPlytyMgr" source ="FilmyFactory.java" package ="wypozyczalnia.daots" value ="1"/>
+         <Value name="setPlytyMgr" source ="FilmyFactory.java" package ="wypozyczalnia.daots" value ="1"/>
+         <Value name="getHaslo" source ="KontoDAO.java" package ="wypozyczalnia.daots" value ="1"/>
+         <Value name="getImie" source ="KontoDAO.java" package ="wypozyczalnia.daots" value ="1"/>
+         <Value name="getLogin" source ="KontoDAO.java" package ="wypozyczalnia.daots" value ="1"/>
+         <Value name="getNazwisko" source ="KontoDAO.java" package ="wypozyczalnia.daots" value ="1"/>
+         <Value name="getZamowione" source ="KontoDAO.java" package ="wypozyczalnia.daots" value ="1"/>
+         <Value name="PlytaDAO" source ="PlytaDAO.java" package ="wypozyczalnia.daots" value ="1"/>
+         <Value name="getFilm" source ="PlytaDAO.java" package ="wypozyczalnia.daots" value ="1"/>
+         <Value name="getStan" source ="PlytaDAO.java" package ="wypozyczalnia.daots" value ="1"/>
+         <Value name="zamow" source ="PlytaDAO.java" package ="wypozyczalnia.daots" value ="1"/>
+         <Value name="getPlyta" source ="StanPlyty.java" package ="wypozyczalnia.daots" value ="1"/>
+         <Value name="setPlyta" source ="StanPlyty.java" package ="wypozyczalnia.daots" value ="1"/>
+         <Value name="Sesja" source ="Sesja.java" package ="core" value ="0"/>
+         <Value name="anuluj" source ="PlytaPozyczona.java" package ="wypozyczalnia.daots" value ="0"/>
+         <Value name="wydaj" source ="PlytaPozyczona.java" package ="wypozyczalnia.daots" value ="0"/>
+         <Value name="zamow" source ="PlytaPozyczona.java" package ="wypozyczalnia.daots" value ="0"/>
+         <Value name="zwroc" source ="PlytaPozyczona.java" package ="wypozyczalnia.daots" value ="0"/>
+         <Value name="anuluj" source ="PlytaWolna.java" package ="wypozyczalnia.daots" value ="0"/>
+         <Value name="wydaj" source ="PlytaWolna.java" package ="wypozyczalnia.daots" value ="0"/>
+         <Value name="zwroc" source ="PlytaWolna.java" package ="wypozyczalnia.daots" value ="0"/>
+         <Value name="zamow" source ="PlytaZarezerwowana.java" package ="wypozyczalnia.daots" value ="0"/>
+         <Value name="zwroc" source ="PlytaZarezerwowana.java" package ="wypozyczalnia.daots" value ="0"/>
+         <Value name="anuluj" source ="StanPlyty.java" package ="wypozyczalnia.daots" value ="0"/>
+         <Value name="wydaj" source ="StanPlyty.java" package ="wypozyczalnia.daots" value ="0"/>
+         <Value name="zamow" source ="StanPlyty.java" package ="wypozyczalnia.daots" value ="0"/>
+         <Value name="zwroc" source ="StanPlyty.java" package ="wypozyczalnia.daots" value ="0"/>
+      </Values>
+   </Metric>
+   <Metric id = "NOM" description ="Number of Methods">
+      <Values per = "type" total = "70" avg = "3,889" stddev = "4,054" max = "17">
+         <Value name="Sesja" source ="Sesja.java" package ="core" value ="17"/>
+         <Value name="FilmDAO" source ="FilmDAO.java" package ="wypozyczalnia.daots" value ="10"/>
+         <Value name="KontoDAO" source ="KontoDAO.java" package ="wypozyczalnia.daots" value ="6"/>
+         <Value name="StanPlyty" source ="StanPlyty.java" package ="wypozyczalnia.daots" value ="6"/>
+         <Value name="FilmyFactory" source ="FilmyFactory.java" package ="wypozyczalnia.daots" value ="5"/>
+         <Value name="PlytaDAO" source ="PlytaDAO.java" package ="wypozyczalnia.daots" value ="5"/>
+         <Value name="PlytaPozyczona" source ="PlytaPozyczona.java" package ="wypozyczalnia.daots" value ="4"/>
+         <Value name="PlytaWolna" source ="PlytaWolna.java" package ="wypozyczalnia.daots" value ="4"/>
+         <Value name="PlytaZarezerwowana" source ="PlytaZarezerwowana.java" package ="wypozyczalnia.daots" value ="4"/>
+         <Value name="Account" source ="Account.java" package ="core" value ="1"/>
+         <Value name="DodajFilm" source ="DodajFilm.java" package ="core" value ="1"/>
+         <Value name="DodajPlyte" source ="DodajPlyte.java" package ="core" value ="1"/>
+         <Value name="DodajWielePlyt" source ="DodajWielePlyt.java" package ="core" value ="1"/>
+         <Value name="Finder" source ="Finder.java" package ="core" value ="1"/>
+         <Value name="Home" source ="Home.java" package ="core" value ="1"/>
+         <Value name="Reserver" source ="Reserver.java" package ="core" value ="1"/>
+         <Value name="KontaFactory" source ="KontaFactory.java" package ="wypozyczalnia.daots" value ="1"/>
+         <Value name="ZarzadzajKontami" source ="ZarzadzajKontami.java" package ="wypozyczalnia.managers" value ="1"/>
+      </Values>
+   </Metric>
+   <Metric id = "NBD" description ="Nested Block Depth" max ="5" hint ="use Extract-method to split the method up">
+      <Values per = "method" avg = "1,141" stddev = "0,792" max = "6" maxinrange="false">
+         <Value name="handleRequestInternal" source ="DodajFilm.java" package ="core" value ="6" inrange="false"/>
+         <Value name="handleRequestInternal" source ="DodajPlyte.java" package ="core" value ="4"/>
+         <Value name="zaloguj" source ="ZarzadzajKontami.java" package ="wypozyczalnia.managers" value ="3"/>
+         <Value name="handleRequestInternal" source ="Home.java" package ="core" value ="2"/>
+         <Value name="zamowioneFilmy" source ="Sesja.java" package ="core" value ="2"/>
+         <Value name="zamow" source ="Sesja.java" package ="core" value ="2"/>
+         <Value name="getKonto" source ="KontaFactory.java" package ="wypozyczalnia.daots" value ="2"/>
+         <Value name="handleRequestInternal" source ="Account.java" package ="core" value ="1"/>
+         <Value name="handleRequestInternal" source ="DodajWielePlyt.java" package ="core" value ="1"/>
+         <Value name="handleRequestInternal" source ="Finder.java" package ="core" value ="1"/>
+         <Value name="handleRequestInternal" source ="Reserver.java" package ="core" value ="1"/>
+         <Value name="Sesja" source ="Sesja.java" package ="core" value ="1"/>
+         <Value name="czyZalogowany" source ="Sesja.java" package ="core" value ="1"/>
+         <Value name="dodajPlyte" source ="Sesja.java" package ="core" value ="1"/>
+         <Value name="getFilmy" source ="Sesja.java" package ="core" value ="1"/>
+         <Value name="getId" source ="Sesja.java" package ="core" value ="1"/>
+         <Value name="getName" source ="Sesja.java" package ="core" value ="1"/>
+         <Value name="getPlytyMgr" source ="Sesja.java" package ="core" value ="1"/>
+         <Value name="getZamowieniaMgr" source ="Sesja.java" package ="core" value ="1"/>
+         <Value name="nowyFilm" source ="Sesja.java" package ="core" value ="1"/>
+         <Value name="setFilmy" source ="Sesja.java" package ="core" value ="1"/>
+         <Value name="setId" source ="Sesja.java" package ="core" value ="1"/>
+         <Value name="setName" source ="Sesja.java" package ="core" value ="1"/>
+         <Value name="setPlytyMgr" source ="Sesja.java" package ="core" value ="1"/>
+         <Value name="setZamowieniaMgr" source ="Sesja.java" package ="core" value ="1"/>
+         <Value name="zaloguj" source ="Sesja.java" package ="core" value ="1"/>
+         <Value name="FilmDAO" source ="FilmDAO.java" package ="wypozyczalnia.daots" value ="1"/>
+         <Value name="getId" source ="FilmDAO.java" package ="wypozyczalnia.daots" value ="1"/>
+         <Value name="getIleWolnych" source ="FilmDAO.java" package ="wypozyczalnia.daots" value ="1"/>
+         <Value name="getOpis" source ="FilmDAO.java" package ="wypozyczalnia.daots" value ="1"/>
+         <Value name="getPlyty" source ="FilmDAO.java" package ="wypozyczalnia.daots" value ="1"/>
+         <Value name="getRok" source ="FilmDAO.java" package ="wypozyczalnia.daots" value ="1"/>
+         <Value name="getTytul" source ="FilmDAO.java" package ="wypozyczalnia.daots" value ="1"/>
+         <Value name="getWolne" source ="FilmDAO.java" package ="wypozyczalnia.daots" value ="1"/>
+         <Value name="wolnyEgzemplarz" source ="FilmDAO.java" package ="wypozyczalnia.daots" value ="1"/>
+         <Value name="zamowPlyte" source ="FilmDAO.java" package ="wypozyczalnia.daots" value ="1"/>
+         <Value name="FilmyFactory" source ="FilmyFactory.java" package ="wypozyczalnia.daots" value ="1"/>
+         <Value name="getAll" source ="FilmyFactory.java" package ="wypozyczalnia.daots" value ="1"/>
+         <Value name="getFilm" source ="FilmyFactory.java" package ="wypozyczalnia.daots" value ="1"/>
+         <Value name="getPlytyMgr" source ="FilmyFactory.java" package ="wypozyczalnia.daots" value ="1"/>
+         <Value name="setPlytyMgr" source ="FilmyFactory.java" package ="wypozyczalnia.daots" value ="1"/>
+         <Value name="KontaFactory" source ="KontaFactory.java" package ="wypozyczalnia.daots" value ="1"/>
+         <Value name="KontoDAO" source ="KontoDAO.java" package ="wypozyczalnia.daots" value ="1"/>
+         <Value name="getHaslo" source ="KontoDAO.java" package ="wypozyczalnia.daots" value ="1"/>
+         <Value name="getImie" source ="KontoDAO.java" package ="wypozyczalnia.daots" value ="1"/>
+         <Value name="getLogin" source ="KontoDAO.java" package ="wypozyczalnia.daots" value ="1"/>
+         <Value name="getNazwisko" source ="KontoDAO.java" package ="wypozyczalnia.daots" value ="1"/>
+         <Value name="getZamowione" source ="KontoDAO.java" package ="wypozyczalnia.daots" value ="1"/>
+         <Value name="PlytaDAO" source ="PlytaDAO.java" package ="wypozyczalnia.daots" value ="1"/>
+         <Value name="getFilm" source ="PlytaDAO.java" package ="wypozyczalnia.daots" value ="1"/>
+         <Value name="getStan" source ="PlytaDAO.java" package ="wypozyczalnia.daots" value ="1"/>
+         <Value name="setStan" source ="PlytaDAO.java" package ="wypozyczalnia.daots" value ="1"/>
+         <Value name="zamow" source ="PlytaDAO.java" package ="wypozyczalnia.daots" value ="1"/>
+         <Value name="anuluj" source ="PlytaPozyczona.java" package ="wypozyczalnia.daots" value ="1"/>
+         <Value name="wydaj" source ="PlytaPozyczona.java" package ="wypozyczalnia.daots" value ="1"/>
+         <Value name="zamow" source ="PlytaPozyczona.java" package ="wypozyczalnia.daots" value ="1"/>
+         <Value name="zwroc" source ="PlytaPozyczona.java" package ="wypozyczalnia.daots" value ="1"/>
+         <Value name="anuluj" source ="PlytaWolna.java" package ="wypozyczalnia.daots" value ="1"/>
+         <Value name="wydaj" source ="PlytaWolna.java" package ="wypozyczalnia.daots" value ="1"/>
+         <Value name="zamow" source ="PlytaWolna.java" package ="wypozyczalnia.daots" value ="1"/>
+         <Value name="zwroc" source ="PlytaWolna.java" package ="wypozyczalnia.daots" value ="1"/>
+         <Value name="anuluj" source ="PlytaZarezerwowana.java" package ="wypozyczalnia.daots" value ="1"/>
+         <Value name="wydaj" source ="PlytaZarezerwowana.java" package ="wypozyczalnia.daots" value ="1"/>
+         <Value name="zamow" source ="PlytaZarezerwowana.java" package ="wypozyczalnia.daots" value ="1"/>
+         <Value name="zwroc" source ="PlytaZarezerwowana.java" package ="wypozyczalnia.daots" value ="1"/>
+         <Value name="getPlyta" source ="StanPlyty.java" package ="wypozyczalnia.daots" value ="1"/>
+         <Value name="setPlyta" source ="StanPlyty.java" package ="wypozyczalnia.daots" value ="1"/>
+         <Value name="anuluj" source ="StanPlyty.java" package ="wypozyczalnia.daots" value ="0"/>
+         <Value name="wydaj" source ="StanPlyty.java" package ="wypozyczalnia.daots" value ="0"/>
+         <Value name="zamow" source ="StanPlyty.java" package ="wypozyczalnia.daots" value ="0"/>
+         <Value name="zwroc" source ="StanPlyty.java" package ="wypozyczalnia.daots" value ="0"/>
+      </Values>
+   </Metric>
+   <Metric id = "DIT" description ="Depth of Inheritance Tree">
+      <Values per = "type" avg = "2,722" stddev = "1,85" max = "5">
+         <Value name="Account" source ="Account.java" package ="core" value ="5"/>
+         <Value name="DodajFilm" source ="DodajFilm.java" package ="core" value ="5"/>
+         <Value name="DodajPlyte" source ="DodajPlyte.java" package ="core" value ="5"/>
+         <Value name="DodajWielePlyt" source ="DodajWielePlyt.java" package ="core" value ="5"/>
+         <Value name="Finder" source ="Finder.java" package ="core" value ="5"/>
+         <Value name="Home" source ="Home.java" package ="core" value ="5"/>
+         <Value name="Reserver" source ="Reserver.java" package ="core" value ="5"/>
+         <Value name="PlytaPozyczona" source ="PlytaPozyczona.java" package ="wypozyczalnia.daots" value ="2"/>
+         <Value name="PlytaWolna" source ="PlytaWolna.java" package ="wypozyczalnia.daots" value ="2"/>
+         <Value name="PlytaZarezerwowana" source ="PlytaZarezerwowana.java" package ="wypozyczalnia.daots" value ="2"/>
+         <Value name="Sesja" source ="Sesja.java" package ="core" value ="1"/>
+         <Value name="FilmDAO" source ="FilmDAO.java" package ="wypozyczalnia.daots" value ="1"/>
+         <Value name="FilmyFactory" source ="FilmyFactory.java" package ="wypozyczalnia.daots" value ="1"/>
+         <Value name="KontaFactory" source ="KontaFactory.java" package ="wypozyczalnia.daots" value ="1"/>
+         <Value name="KontoDAO" source ="KontoDAO.java" package ="wypozyczalnia.daots" value ="1"/>
+         <Value name="PlytaDAO" source ="PlytaDAO.java" package ="wypozyczalnia.daots" value ="1"/>
+         <Value name="StanPlyty" source ="StanPlyty.java" package ="wypozyczalnia.daots" value ="1"/>
+         <Value name="ZarzadzajKontami" source ="ZarzadzajKontami.java" package ="wypozyczalnia.managers" value ="1"/>
+      </Values>
+   </Metric>
+   <Metric id = "NOP" description ="Number of Packages">
+      <Value value="3"/>
+   </Metric>
+   <Metric id = "CA" description ="Afferent Coupling">
+      <Values per = "packageFragment" avg = "0" stddev = "0">
+      </Values>
+   </Metric>
+   <Metric id = "NOI" description ="Number of Interfaces">
+      <Values per = "packageFragment" total = "0" avg = "0" stddev = "0" max = "0">
+         <Value name="core" package ="core" value ="0"/>
+         <Value name="wypozyczalnia.daots" package ="wypozyczalnia.daots" value ="0"/>
+         <Value name="wypozyczalnia.managers" package ="wypozyczalnia.managers" value ="0"/>
+      </Values>
+   </Metric>
+   <Metric id = "VG" description ="McCabe Cyclomatic Complexity" max ="10" hint ="use Extract-method to split the method up">
+      <Values per = "method" avg = "1,282" stddev = "1,01" max = "7">
+         <Value name="handleRequestInternal" source ="DodajFilm.java" package ="core" value ="7"/>
+         <Value name="handleRequestInternal" source ="DodajPlyte.java" package ="core" value ="6"/>
+         <Value name="handleRequestInternal" source ="Home.java" package ="core" value ="4"/>
+         <Value name="zaloguj" source ="ZarzadzajKontami.java" package ="wypozyczalnia.managers" value ="3"/>
+         <Value name="zamowioneFilmy" source ="Sesja.java" package ="core" value ="2"/>
+         <Value name="zamow" source ="Sesja.java" package ="core" value ="2"/>
+         <Value name="wolnyEgzemplarz" source ="FilmDAO.java" package ="wypozyczalnia.daots" value ="2"/>
+         <Value name="getKonto" source ="KontaFactory.java" package ="wypozyczalnia.daots" value ="2"/>
+         <Value name="handleRequestInternal" source ="Account.java" package ="core" value ="1"/>
+         <Value name="handleRequestInternal" source ="DodajWielePlyt.java" package ="core" value ="1"/>
+         <Value name="handleRequestInternal" source ="Finder.java" package ="core" value ="1"/>
+         <Value name="handleRequestInternal" source ="Reserver.java" package ="core" value ="1"/>
+         <Value name="Sesja" source ="Sesja.java" package ="core" value ="1"/>
+         <Value name="czyZalogowany" source ="Sesja.java" package ="core" value ="1"/>
+         <Value name="dodajPlyte" source ="Sesja.java" package ="core" value ="1"/>
+         <Value name="getFilmy" source ="Sesja.java" package ="core" value ="1"/>
+         <Value name="getId" source ="Sesja.java" package ="core" value ="1"/>
+         <Value name="getName" source ="Sesja.java" package ="core" value ="1"/>
+         <Value name="getPlytyMgr" source ="Sesja.java" package ="core" value ="1"/>
+         <Value name="getZamowieniaMgr" source ="Sesja.java" package ="core" value ="1"/>
+         <Value name="nowyFilm" source ="Sesja.java" package ="core" value ="1"/>
+         <Value name="setFilmy" source ="Sesja.java" package ="core" value ="1"/>
+         <Value name="setId" source ="Sesja.java" package ="core" value ="1"/>
+         <Value name="setName" source ="Sesja.java" package ="core" value ="1"/>
+         <Value name="setPlytyMgr" source ="Sesja.java" package ="core" value ="1"/>
+         <Value name="setZamowieniaMgr" source ="Sesja.java" package ="core" value ="1"/>
+         <Value name="zaloguj" source ="Sesja.java" package ="core" value ="1"/>
+         <Value name="FilmDAO" source ="FilmDAO.java" package ="wypozyczalnia.daots" value ="1"/>
+         <Value name="getId" source ="FilmDAO.java" package ="wypozyczalnia.daots" value ="1"/>
+         <Value name="getIleWolnych" source ="FilmDAO.java" package ="wypozyczalnia.daots" value ="1"/>
+         <Value name="getOpis" source ="FilmDAO.java" package ="wypozyczalnia.daots" value ="1"/>
+         <Value name="getPlyty" source ="FilmDAO.java" package ="wypozyczalnia.daots" value ="1"/>
+         <Value name="getRok" source ="FilmDAO.java" package ="wypozyczalnia.daots" value ="1"/>
+         <Value name="getTytul" source ="FilmDAO.java" package ="wypozyczalnia.daots" value ="1"/>
+         <Value name="getWolne" source ="FilmDAO.java" package ="wypozyczalnia.daots" value ="1"/>
+         <Value name="zamowPlyte" source ="FilmDAO.java" package ="wypozyczalnia.daots" value ="1"/>
+         <Value name="FilmyFactory" source ="FilmyFactory.java" package ="wypozyczalnia.daots" value ="1"/>
+         <Value name="getAll" source ="FilmyFactory.java" package ="wypozyczalnia.daots" value ="1"/>
+         <Value name="getFilm" source ="FilmyFactory.java" package ="wypozyczalnia.daots" value ="1"/>
+         <Value name="getPlytyMgr" source ="FilmyFactory.java" package ="wypozyczalnia.daots" value ="1"/>
+         <Value name="setPlytyMgr" source ="FilmyFactory.java" package ="wypozyczalnia.daots" value ="1"/>
+         <Value name="KontaFactory" source ="KontaFactory.java" package ="wypozyczalnia.daots" value ="1"/>
+         <Value name="KontoDAO" source ="KontoDAO.java" package ="wypozyczalnia.daots" value ="1"/>
+         <Value name="getHaslo" source ="KontoDAO.java" package ="wypozyczalnia.daots" value ="1"/>
+         <Value name="getImie" source ="KontoDAO.java" package ="wypozyczalnia.daots" value ="1"/>
+         <Value name="getLogin" source ="KontoDAO.java" package ="wypozyczalnia.daots" value ="1"/>
+         <Value name="getNazwisko" source ="KontoDAO.java" package ="wypozyczalnia.daots" value ="1"/>
+         <Value name="getZamowione" source ="KontoDAO.java" package ="wypozyczalnia.daots" value ="1"/>
+         <Value name="PlytaDAO" source ="PlytaDAO.java" package ="wypozyczalnia.daots" value ="1"/>
+         <Value name="getFilm" source ="PlytaDAO.java" package ="wypozyczalnia.daots" value ="1"/>
+         <Value name="getStan" source ="PlytaDAO.java" package ="wypozyczalnia.daots" value ="1"/>
+         <Value name="setStan" source ="PlytaDAO.java" package ="wypozyczalnia.daots" value ="1"/>
+         <Value name="zamow" source ="PlytaDAO.java" package ="wypozyczalnia.daots" value ="1"/>
+         <Value name="anuluj" source ="PlytaPozyczona.java" package ="wypozyczalnia.daots" value ="1"/>
+         <Value name="wydaj" source ="PlytaPozyczona.java" package ="wypozyczalnia.daots" value ="1"/>
+         <Value name="zamow" source ="PlytaPozyczona.java" package ="wypozyczalnia.daots" value ="1"/>
+         <Value name="zwroc" source ="PlytaPozyczona.java" package ="wypozyczalnia.daots" value ="1"/>
+         <Value name="anuluj" source ="PlytaWolna.java" package ="wypozyczalnia.daots" value ="1"/>
+         <Value name="wydaj" source ="PlytaWolna.java" package ="wypozyczalnia.daots" value ="1"/>
+         <Value name="zamow" source ="PlytaWolna.java" package ="wypozyczalnia.daots" value ="1"/>
+         <Value name="zwroc" source ="PlytaWolna.java" package ="wypozyczalnia.daots" value ="1"/>
+         <Value name="anuluj" source ="PlytaZarezerwowana.java" package ="wypozyczalnia.daots" value ="1"/>
+         <Value name="wydaj" source ="PlytaZarezerwowana.java" package ="wypozyczalnia.daots" value ="1"/>
+         <Value name="zamow" source ="PlytaZarezerwowana.java" package ="wypozyczalnia.daots" value ="1"/>
+         <Value name="zwroc" source ="PlytaZarezerwowana.java" package ="wypozyczalnia.daots" value ="1"/>
+         <Value name="anuluj" source ="StanPlyty.java" package ="wypozyczalnia.daots" value ="1"/>
+         <Value name="getPlyta" source ="StanPlyty.java" package ="wypozyczalnia.daots" value ="1"/>
+         <Value name="setPlyta" source ="StanPlyty.java" package ="wypozyczalnia.daots" value ="1"/>
+         <Value name="wydaj" source ="StanPlyty.java" package ="wypozyczalnia.daots" value ="1"/>
+         <Value name="zamow" source ="StanPlyty.java" package ="wypozyczalnia.daots" value ="1"/>
+         <Value name="zwroc" source ="StanPlyty.java" package ="wypozyczalnia.daots" value ="1"/>
+      </Values>
+   </Metric>
+   <Metric id = "TLOC" description ="Total Lines of Code">
+      <Value value="634"/>
+   </Metric>
+   <Metric id = "RMI" description ="Instability">
+      <Values per = "packageFragment" avg = "0" stddev = "0">
+      </Values>
+   </Metric>
+   <Metric id = "PAR" description ="Number of Parameters" max ="5" hint ="Move invoked method or pass an object">
+      <Values per = "method" avg = "0,592" stddev = "0,815" max = "3">
+         <Value name="dodajPlyte" source ="Sesja.java" package ="core" value ="3"/>
+         <Value name="nowyFilm" source ="Sesja.java" package ="core" value ="3"/>
+         <Value name="handleRequestInternal" source ="Account.java" package ="core" value ="2"/>
+         <Value name="handleRequestInternal" source ="DodajFilm.java" package ="core" value ="2"/>
+         <Value name="handleRequestInternal" source ="DodajPlyte.java" package ="core" value ="2"/>
+         <Value name="handleRequestInternal" source ="DodajWielePlyt.java" package ="core" value ="2"/>
+         <Value name="handleRequestInternal" source ="Finder.java" package ="core" value ="2"/>
+         <Value name="handleRequestInternal" source ="Home.java" package ="core" value ="2"/>
+         <Value name="handleRequestInternal" source ="Reserver.java" package ="core" value ="2"/>
+         <Value name="zaloguj" source ="Sesja.java" package ="core" value ="2"/>
+         <Value name="zaloguj" source ="ZarzadzajKontami.java" package ="wypozyczalnia.managers" value ="2"/>
+         <Value name="setFilmy" source ="Sesja.java" package ="core" value ="1"/>
+         <Value name="setId" source ="Sesja.java" package ="core" value ="1"/>
+         <Value name="setName" source ="Sesja.java" package ="core" value ="1"/>
+         <Value name="setPlytyMgr" source ="Sesja.java" package ="core" value ="1"/>
+         <Value name="setZamowieniaMgr" source ="Sesja.java" package ="core" value ="1"/>
+         <Value name="zamow" source ="Sesja.java" package ="core" value ="1"/>
+         <Value name="zamowPlyte" source ="FilmDAO.java" package ="wypozyczalnia.daots" value ="1"/>
+         <Value name="FilmyFactory" source ="FilmyFactory.java" package ="wypozyczalnia.daots" value ="1"/>
+         <Value name="getFilm" source ="FilmyFactory.java" package ="wypozyczalnia.daots" value ="1"/>
+         <Value name="setPlytyMgr" source ="FilmyFactory.java" package ="wypozyczalnia.daots" value ="1"/>
+         <Value name="getKonto" source ="KontaFactory.java" package ="wypozyczalnia.daots" value ="1"/>
+         <Value name="setStan" source ="PlytaDAO.java" package ="wypozyczalnia.daots" value ="1"/>
+         <Value name="zamow" source ="PlytaDAO.java" package ="wypozyczalnia.daots" value ="1"/>
+         <Value name="zamow" source ="PlytaPozyczona.java" package ="wypozyczalnia.daots" value ="1"/>
+         <Value name="zamow" source ="PlytaWolna.java" package ="wypozyczalnia.daots" value ="1"/>
+         <Value name="zamow" source ="PlytaZarezerwowana.java" package ="wypozyczalnia.daots" value ="1"/>
+         <Value name="setPlyta" source ="StanPlyty.java" package ="wypozyczalnia.daots" value ="1"/>
+         <Value name="zamow" source ="StanPlyty.java" package ="wypozyczalnia.daots" value ="1"/>
+         <Value name="Sesja" source ="Sesja.java" package ="core" value ="0"/>
+         <Value name="czyZalogowany" source ="Sesja.java" package ="core" value ="0"/>
+         <Value name="getFilmy" source ="Sesja.java" package ="core" value ="0"/>
+         <Value name="getId" source ="Sesja.java" package ="core" value ="0"/>
+         <Value name="getName" source ="Sesja.java" package ="core" value ="0"/>
+         <Value name="getPlytyMgr" source ="Sesja.java" package ="core" value ="0"/>
+         <Value name="getZamowieniaMgr" source ="Sesja.java" package ="core" value ="0"/>
+         <Value name="zamowioneFilmy" source ="Sesja.java" package ="core" value ="0"/>
+         <Value name="FilmDAO" source ="FilmDAO.java" package ="wypozyczalnia.daots" value ="0"/>
+         <Value name="getId" source ="FilmDAO.java" package ="wypozyczalnia.daots" value ="0"/>
+         <Value name="getIleWolnych" source ="FilmDAO.java" package ="wypozyczalnia.daots" value ="0"/>
+         <Value name="getOpis" source ="FilmDAO.java" package ="wypozyczalnia.daots" value ="0"/>
+         <Value name="getPlyty" source ="FilmDAO.java" package ="wypozyczalnia.daots" value ="0"/>
+         <Value name="getRok" source ="FilmDAO.java" package ="wypozyczalnia.daots" value ="0"/>
+         <Value name="getTytul" source ="FilmDAO.java" package ="wypozyczalnia.daots" value ="0"/>
+         <Value name="getWolne" source ="FilmDAO.java" package ="wypozyczalnia.daots" value ="0"/>
+         <Value name="wolnyEgzemplarz" source ="FilmDAO.java" package ="wypozyczalnia.daots" value ="0"/>
+         <Value name="getAll" source ="FilmyFactory.java" package ="wypozyczalnia.daots" value ="0"/>
+         <Value name="getPlytyMgr" source ="FilmyFactory.java" package ="wypozyczalnia.daots" value ="0"/>
+         <Value name="KontaFactory" source ="KontaFactory.java" package ="wypozyczalnia.daots" value ="0"/>
+         <Value name="KontoDAO" source ="KontoDAO.java" package ="wypozyczalnia.daots" value ="0"/>
+         <Value name="getHaslo" source ="KontoDAO.java" package ="wypozyczalnia.daots" value ="0"/>
+         <Value name="getImie" source ="KontoDAO.java" package ="wypozyczalnia.daots" value ="0"/>
+         <Value name="getLogin" source ="KontoDAO.java" package ="wypozyczalnia.daots" value ="0"/>
+         <Value name="getNazwisko" source ="KontoDAO.java" package ="wypozyczalnia.daots" value ="0"/>
+         <Value name="getZamowione" source ="KontoDAO.java" package ="wypozyczalnia.daots" value ="0"/>
+         <Value name="PlytaDAO" source ="PlytaDAO.java" package ="wypozyczalnia.daots" value ="0"/>
+         <Value name="getFilm" source ="PlytaDAO.java" package ="wypozyczalnia.daots" value ="0"/>
+         <Value name="getStan" source ="PlytaDAO.java" package ="wypozyczalnia.daots" value ="0"/>
+         <Value name="anuluj" source ="PlytaPozyczona.java" package ="wypozyczalnia.daots" value ="0"/>
+         <Value name="wydaj" source ="PlytaPozyczona.java" package ="wypozyczalnia.daots" value ="0"/>
+         <Value name="zwroc" source ="PlytaPozyczona.java" package ="wypozyczalnia.daots" value ="0"/>
+         <Value name="anuluj" source ="PlytaWolna.java" package ="wypozyczalnia.daots" value ="0"/>
+         <Value name="wydaj" source ="PlytaWolna.java" package ="wypozyczalnia.daots" value ="0"/>
+         <Value name="zwroc" source ="PlytaWolna.java" package ="wypozyczalnia.daots" value ="0"/>
+         <Value name="anuluj" source ="PlytaZarezerwowana.java" package ="wypozyczalnia.daots" value ="0"/>
+         <Value name="wydaj" source ="PlytaZarezerwowana.java" package ="wypozyczalnia.daots" value ="0"/>
+         <Value name="zwroc" source ="PlytaZarezerwowana.java" package ="wypozyczalnia.daots" value ="0"/>
+         <Value name="anuluj" source ="StanPlyty.java" package ="wypozyczalnia.daots" value ="0"/>
+         <Value name="getPlyta" source ="StanPlyty.java" package ="wypozyczalnia.daots" value ="0"/>
+         <Value name="wydaj" source ="StanPlyty.java" package ="wypozyczalnia.daots" value ="0"/>
+         <Value name="zwroc" source ="StanPlyty.java" package ="wypozyczalnia.daots" value ="0"/>
+      </Values>
+   </Metric>
+   <Metric id = "LCOM" description ="Lack of Cohesion of Methods">
+      <Values per = "type" avg = "0,213" stddev = "0,399" max = "1,067">
+         <Value name="PlytaDAO" source ="PlytaDAO.java" package ="wypozyczalnia.daots" value ="1,067"/>
+         <Value name="KontoDAO" source ="KontoDAO.java" package ="wypozyczalnia.daots" value ="0,967"/>
+         <Value name="FilmDAO" source ="FilmDAO.java" package ="wypozyczalnia.daots" value ="0,907"/>
+         <Value name="Sesja" source ="Sesja.java" package ="core" value ="0,888"/>
+         <Value name="Account" source ="Account.java" package ="core" value ="0"/>
+         <Value name="DodajFilm" source ="DodajFilm.java" package ="core" value ="0"/>
+         <Value name="DodajPlyte" source ="DodajPlyte.java" package ="core" value ="0"/>
+         <Value name="DodajWielePlyt" source ="DodajWielePlyt.java" package ="core" value ="0"/>
+         <Value name="Finder" source ="Finder.java" package ="core" value ="0"/>
+         <Value name="Home" source ="Home.java" package ="core" value ="0"/>
+         <Value name="Reserver" source ="Reserver.java" package ="core" value ="0"/>
+         <Value name="FilmyFactory" source ="FilmyFactory.java" package ="wypozyczalnia.daots" value ="0"/>
+         <Value name="KontaFactory" source ="KontaFactory.java" package ="wypozyczalnia.daots" value ="0"/>
+         <Value name="PlytaPozyczona" source ="PlytaPozyczona.java" package ="wypozyczalnia.daots" value ="0"/>
+         <Value name="PlytaWolna" source ="PlytaWolna.java" package ="wypozyczalnia.daots" value ="0"/>
+         <Value name="PlytaZarezerwowana" source ="PlytaZarezerwowana.java" package ="wypozyczalnia.daots" value ="0"/>
+         <Value name="StanPlyty" source ="StanPlyty.java" package ="wypozyczalnia.daots" value ="0"/>
+         <Value name="ZarzadzajKontami" source ="ZarzadzajKontami.java" package ="wypozyczalnia.managers" value ="0"/>
+      </Values>
+   </Metric>
+   <Metric id = "CE" description ="Efferent Coupling">
+      <Values per = "packageFragment" avg = "0" stddev = "0">
+      </Values>
+   </Metric>
+   <Metric id = "NSM" description ="Number of Static Methods">
+      <Values per = "type" total = "1" avg = "0,056" stddev = "0,229" max = "1">
+         <Value name="KontaFactory" source ="KontaFactory.java" package ="wypozyczalnia.daots" value ="1"/>
+         <Value name="Account" source ="Account.java" package ="core" value ="0"/>
+         <Value name="DodajFilm" source ="DodajFilm.java" package ="core" value ="0"/>
+         <Value name="DodajPlyte" source ="DodajPlyte.java" package ="core" value ="0"/>
+         <Value name="DodajWielePlyt" source ="DodajWielePlyt.java" package ="core" value ="0"/>
+         <Value name="Finder" source ="Finder.java" package ="core" value ="0"/>
+         <Value name="Home" source ="Home.java" package ="core" value ="0"/>
+         <Value name="Reserver" source ="Reserver.java" package ="core" value ="0"/>
+         <Value name="Sesja" source ="Sesja.java" package ="core" value ="0"/>
+         <Value name="FilmDAO" source ="FilmDAO.java" package ="wypozyczalnia.daots" value ="0"/>
+         <Value name="FilmyFactory" source ="FilmyFactory.java" package ="wypozyczalnia.daots" value ="0"/>
+         <Value name="KontoDAO" source ="KontoDAO.java" package ="wypozyczalnia.daots" value ="0"/>
+         <Value name="PlytaDAO" source ="PlytaDAO.java" package ="wypozyczalnia.daots" value ="0"/>
+         <Value name="PlytaPozyczona" source ="PlytaPozyczona.java" package ="wypozyczalnia.daots" value ="0"/>
+         <Value name="PlytaWolna" source ="PlytaWolna.java" package ="wypozyczalnia.daots" value ="0"/>
+         <Value name="PlytaZarezerwowana" source ="PlytaZarezerwowana.java" package ="wypozyczalnia.daots" value ="0"/>
+         <Value name="StanPlyty" source ="StanPlyty.java" package ="wypozyczalnia.daots" value ="0"/>
+         <Value name="ZarzadzajKontami" source ="ZarzadzajKontami.java" package ="wypozyczalnia.managers" value ="0"/>
+      </Values>
+   </Metric>
+   <Metric id = "RMD" description ="Normalized Distance">
+      <Values per = "packageFragment" avg = "0" stddev = "0">
+      </Values>
+   </Metric>
+   <Metric id = "RMA" description ="Abstractness">
+      <Values per = "packageFragment" avg = "0" stddev = "0">
+      </Values>
+   </Metric>
+   <Metric id = "SIX" description ="Specialization Index">
+      <Values per = "type" avg = "0" stddev = "0" max = "0">
+         <Value name="Account" source ="Account.java" package ="core" value ="0"/>
+         <Value name="DodajFilm" source ="DodajFilm.java" package ="core" value ="0"/>
+         <Value name="DodajPlyte" source ="DodajPlyte.java" package ="core" value ="0"/>
+         <Value name="DodajWielePlyt" source ="DodajWielePlyt.java" package ="core" value ="0"/>
+         <Value name="Finder" source ="Finder.java" package ="core" value ="0"/>
+         <Value name="Home" source ="Home.java" package ="core" value ="0"/>
+         <Value name="Reserver" source ="Reserver.java" package ="core" value ="0"/>
+         <Value name="Sesja" source ="Sesja.java" package ="core" value ="0"/>
+         <Value name="FilmDAO" source ="FilmDAO.java" package ="wypozyczalnia.daots" value ="0"/>
+         <Value name="FilmyFactory" source ="FilmyFactory.java" package ="wypozyczalnia.daots" value ="0"/>
+         <Value name="KontaFactory" source ="KontaFactory.java" package ="wypozyczalnia.daots" value ="0"/>
+         <Value name="KontoDAO" source ="KontoDAO.java" package ="wypozyczalnia.daots" value ="0"/>
+         <Value name="PlytaDAO" source ="PlytaDAO.java" package ="wypozyczalnia.daots" value ="0"/>
+         <Value name="PlytaPozyczona" source ="PlytaPozyczona.java" package ="wypozyczalnia.daots" value ="0"/>
+         <Value name="PlytaWolna" source ="PlytaWolna.java" package ="wypozyczalnia.daots" value ="0"/>
+         <Value name="PlytaZarezerwowana" source ="PlytaZarezerwowana.java" package ="wypozyczalnia.daots" value ="0"/>
+         <Value name="StanPlyty" source ="StanPlyty.java" package ="wypozyczalnia.daots" value ="0"/>
+         <Value name="ZarzadzajKontami" source ="ZarzadzajKontami.java" package ="wypozyczalnia.managers" value ="0"/>
+      </Values>
+   </Metric>
+   <Metric id = "WMC" description ="Weighted methods per Class">
+      <Values per = "type" total = "91" avg = "5,056" stddev = "4,183" max = "19">
+         <Value name="Sesja" source ="Sesja.java" package ="core" value ="19"/>
+         <Value name="FilmDAO" source ="FilmDAO.java" package ="wypozyczalnia.daots" value ="11"/>
+         <Value name="DodajFilm" source ="DodajFilm.java" package ="core" value ="7"/>
+         <Value name="DodajPlyte" source ="DodajPlyte.java" package ="core" value ="6"/>
+         <Value name="KontoDAO" source ="KontoDAO.java" package ="wypozyczalnia.daots" value ="6"/>
+         <Value name="StanPlyty" source ="StanPlyty.java" package ="wypozyczalnia.daots" value ="6"/>
+         <Value name="FilmyFactory" source ="FilmyFactory.java" package ="wypozyczalnia.daots" value ="5"/>
+         <Value name="PlytaDAO" source ="PlytaDAO.java" package ="wypozyczalnia.daots" value ="5"/>
+         <Value name="Home" source ="Home.java" package ="core" value ="4"/>
+         <Value name="PlytaPozyczona" source ="PlytaPozyczona.java" package ="wypozyczalnia.daots" value ="4"/>
+         <Value name="PlytaWolna" source ="PlytaWolna.java" package ="wypozyczalnia.daots" value ="4"/>
+         <Value name="PlytaZarezerwowana" source ="PlytaZarezerwowana.java" package ="wypozyczalnia.daots" value ="4"/>
+         <Value name="KontaFactory" source ="KontaFactory.java" package ="wypozyczalnia.daots" value ="3"/>
+         <Value name="ZarzadzajKontami" source ="ZarzadzajKontami.java" package ="wypozyczalnia.managers" value ="3"/>
+         <Value name="Account" source ="Account.java" package ="core" value ="1"/>
+         <Value name="DodajWielePlyt" source ="DodajWielePlyt.java" package ="core" value ="1"/>
+         <Value name="Finder" source ="Finder.java" package ="core" value ="1"/>
+         <Value name="Reserver" source ="Reserver.java" package ="core" value ="1"/>
+      </Values>
+   </Metric>
+   <Metric id = "NSF" description ="Number of Static Attributes">
+      <Values per = "type" total = "1" avg = "0,056" stddev = "0,229" max = "1">
+         <Value name="KontaFactory" source ="KontaFactory.java" package ="wypozyczalnia.daots" value ="1"/>
+         <Value name="Account" source ="Account.java" package ="core" value ="0"/>
+         <Value name="DodajFilm" source ="DodajFilm.java" package ="core" value ="0"/>
+         <Value name="DodajPlyte" source ="DodajPlyte.java" package ="core" value ="0"/>
+         <Value name="DodajWielePlyt" source ="DodajWielePlyt.java" package ="core" value ="0"/>
+         <Value name="Finder" source ="Finder.java" package ="core" value ="0"/>
+         <Value name="Home" source ="Home.java" package ="core" value ="0"/>
+         <Value name="Reserver" source ="Reserver.java" package ="core" value ="0"/>
+         <Value name="Sesja" source ="Sesja.java" package ="core" value ="0"/>
+         <Value name="FilmDAO" source ="FilmDAO.java" package ="wypozyczalnia.daots" value ="0"/>
+         <Value name="FilmyFactory" source ="FilmyFactory.java" package ="wypozyczalnia.daots" value ="0"/>
+         <Value name="KontoDAO" source ="KontoDAO.java" package ="wypozyczalnia.daots" value ="0"/>
+         <Value name="PlytaDAO" source ="PlytaDAO.java" package ="wypozyczalnia.daots" value ="0"/>
+         <Value name="PlytaPozyczona" source ="PlytaPozyczona.java" package ="wypozyczalnia.daots" value ="0"/>
+         <Value name="PlytaWolna" source ="PlytaWolna.java" package ="wypozyczalnia.daots" value ="0"/>
+         <Value name="PlytaZarezerwowana" source ="PlytaZarezerwowana.java" package ="wypozyczalnia.daots" value ="0"/>
+         <Value name="StanPlyty" source ="StanPlyty.java" package ="wypozyczalnia.daots" value ="0"/>
+         <Value name="ZarzadzajKontami" source ="ZarzadzajKontami.java" package ="wypozyczalnia.managers" value ="0"/>
+      </Values>
+   </Metric>
+   </Metrics>
