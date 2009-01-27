@@ -9,7 +9,6 @@ import org.springframework.web.context.WebApplicationContext;
 import org.springframework.web.servlet.ModelAndView;
 import org.springframework.web.servlet.mvc.AbstractController;
 
-import wypozyczalnia.dao.FilmDAO;
 import wypozyczalnia.dao.PlytaDAO;
 
 public class Reserver extends AbstractController {
@@ -26,7 +25,7 @@ public class Reserver extends AbstractController {
 		sesja.zamow(id);
 		Collection<PlytaDAO> plyty = sesja.zamowionePlyty();
 
-		ModelAndView m = new ModelAndView("results");
+		ModelAndView m = new ModelAndView("res_pid");
 
 		m.addObject("title", "Zamowione filmy");
 		// m.addObject("query", query);
