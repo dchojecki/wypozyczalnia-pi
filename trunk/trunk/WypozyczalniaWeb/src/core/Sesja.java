@@ -55,7 +55,13 @@ public class Sesja {
 		}
 	}
 
-	public Collection<FilmDAO> zamowioneFilmy() {
+	public void anuluj(String id) {
+		if (czyZalogowany()) {
+			PlytaDAO plyta = plytyMgr.pobierzPlyte(id);
+			zamowieniaMgr.anuluj(zalogowany, plyta);
+		}
+	}
+	public Collection<PlytaDAO> zamowionePlyty() {
 		if (czyZalogowany()) {
 			Set<ZamowienieDAO> zamowienia = zalogowany.getZamowienia();
 			HashSet<PlytaDAO> ps = new HashSet<PlytaDAO>();
@@ -66,13 +72,9 @@ public class Sesja {
 				}
 			}
 
-			HashSet<FilmDAO> fs = new HashSet<FilmDAO>();
-			for (PlytaDAO p : ps) {
-				fs.add(p.getFilm());
-			}
-			return fs;
+			return ps;
 		}
-		return new HashSet<FilmDAO>();
+		return new HashSet<PlytaDAO>();
 	}
 
 	public boolean czyZalogowany() {

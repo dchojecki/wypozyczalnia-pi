@@ -5,6 +5,8 @@ import javax.persistence.Entity;
 
 import wypozyczalnia.dao.KontoDAO;
 import wypozyczalnia.dao.PlytaDAO;
+import wypozyczalnia.dao.PozycjaZamowieniaDAO;
+import wypozyczalnia.dao.ZamowienieDAO;
 
 @Entity
 @DiscriminatorValue("PlytaZarezerwowana")
@@ -26,6 +28,7 @@ public class PlytaZarezerwowana extends StanPlyty {
 	@Override
 	public void anuluj(PlytaDAO plyta) {
 		plyta.setZamowiona(null);
+		plyta.getFilm().anulujPlyte(plyta);
 		plyta.setStan(new PlytaWolna());
 	}
 

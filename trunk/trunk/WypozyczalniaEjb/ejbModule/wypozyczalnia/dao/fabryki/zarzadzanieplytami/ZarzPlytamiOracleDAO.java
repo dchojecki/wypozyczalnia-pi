@@ -11,6 +11,7 @@ import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
 
 import wypozyczalnia.dao.FilmDAO;
+import wypozyczalnia.dao.KontoDAO;
 import wypozyczalnia.dao.PlytaDAO;
 
 /**
@@ -58,8 +59,22 @@ public class ZarzPlytamiOracleDAO implements ZarzadzaniePlytamiDAOBean {
 	@Override
 	public void scalFilm(FilmDAO film) {
 		em.merge(film);
-
 	}
+	
+	@Override
+	public void scalKonto(KontoDAO konto) {
+		em.merge(konto);
+	}
+	
+//	@Override
+//	public void scalZamowienie(ZamowienieDAO zamowienie) {
+//		em.merge(zamowienie);
+//	}
+	
+	/*
+	 * Prawdopodobnie trzeba dopisac jw. scalKonto(KontoDAO k)
+	 * + dodac do interfejsow
+	 */
 
 	@SuppressWarnings("unchecked")
 	@Override

@@ -236,6 +236,10 @@ public class FilmDAO implements Serializable {
 	public void zamowPlyte(PlytaDAO plyta) {
 		wolne.remove(plyta);
 	}
+	
+	public void anulujPlyte(PlytaDAO plyta) {
+		wolne.add(plyta);
+	}
 
 	public Set<PlytaDAO> getWolne() {
 		return wolne;

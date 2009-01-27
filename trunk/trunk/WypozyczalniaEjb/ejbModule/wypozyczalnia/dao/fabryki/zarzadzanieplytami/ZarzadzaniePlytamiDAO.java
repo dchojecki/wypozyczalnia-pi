@@ -6,6 +6,7 @@ package wypozyczalnia.dao.fabryki.zarzadzanieplytami;
 import java.util.Collection;
 
 import wypozyczalnia.dao.FilmDAO;
+import wypozyczalnia.dao.KontoDAO;
 import wypozyczalnia.dao.PlytaDAO;
 
 /**
@@ -31,5 +32,7 @@ public interface ZarzadzaniePlytamiDAO {
 	PlytaDAO zwrocPlyte(String id);
 
 	Collection<FilmDAO> zwrocFilmy(String tytul);
+
+	void scalKonto(KontoDAO konto);
 
 }

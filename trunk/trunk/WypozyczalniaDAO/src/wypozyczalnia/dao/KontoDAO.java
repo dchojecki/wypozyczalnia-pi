@@ -4,6 +4,7 @@
 package wypozyczalnia.dao;
 
 import java.io.Serializable;
+import java.util.Collection;
 import java.util.Date;
 import java.util.HashSet;
 import java.util.Set;
@@ -308,5 +309,19 @@ public class KontoDAO implements Serializable {
 	@OneToMany(cascade = { CascadeType.ALL }, mappedBy = "konto")
 	private Set<ZamowienieDAO> pozyczenia = new HashSet<ZamowienieDAO>();
 	private String login;
+
+	public void anuluj(PlytaDAO plyta) {
+		Collection<ZamowienieDAO> zamowienia = getZamowienia();
+		ZamowienieDAO found = null;
+		for (ZamowienieDAO z : zamowienia) {
+			if (z.getPozycje().contains(plyta)) {
+				found = z;
+			}
+		}
+		if (found != null) {
+			found.anuluj();
+			zamowienia.remove(found);
+		}
+	}
 
 }

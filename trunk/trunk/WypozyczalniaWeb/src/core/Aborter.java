@@ -12,29 +12,29 @@ import org.springframework.web.servlet.mvc.AbstractController;
 import wypozyczalnia.dao.FilmDAO;
 import wypozyczalnia.dao.PlytaDAO;
 
-public class Reserver extends AbstractController {
+public class Aborter extends AbstractController {
 
 	@Override
 	protected ModelAndView handleRequestInternal(HttpServletRequest req,
 			HttpServletResponse res) throws Exception {
 
-		Integer id = Integer.parseInt(req.getParameter("fid"));
-
+		String id =(String)req.getParameter("fid");
+		
 		WebApplicationContext ctx = getWebApplicationContext();
 		Sesja sesja = (Sesja) ctx.getBean("sesja");
 
-		sesja.zamow(id);
+		sesja.anuluj(id);
 		Collection<PlytaDAO> plyty = sesja.zamowionePlyty();
 
-		ModelAndView m = new ModelAndView("results");
-
+		ModelAndView m = new ModelAndView("res_pid");
+		
 		m.addObject("title", "Zamowione filmy");
-		// m.addObject("query", query);
+		//m.addObject("query", query);
 		m.addObject("ile", plyty.size());
 		m.addObject("act_zamow", false);
 		m.addObject("act_anuluj", true);
 		m.addObject("plyty", plyty);
-
+		
 		return m;
 	}
 

@@ -163,4 +163,12 @@ public class ZarzadzanieWypozyczeniamiBean implements
 
 	}
 
+	@Override
+	public void anuluj(KontoDAO konto, PlytaDAO plyta) {
+		if (konto != null && plyta != null) {
+			konto.anuluj(plyta);
+			plytyFabryka.createZarzadzaniePlytamiDAO().scalFilm(plyta.getFilm());
+		}
+	}
+
 }
