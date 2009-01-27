@@ -22,10 +22,6 @@ public class PlytaWolna extends StanPlyty {
 	}
 
 	@Override
-	public void anuluj(PlytaDAO p) {
-	}
-
-	@Override
 	public void wydaj(PlytaDAO p) {
 	}
 
@@ -44,6 +40,12 @@ public class PlytaWolna extends StanPlyty {
 
 	@Override
 	public void zwroc(PlytaDAO p) {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public void anuluj(PlytaDAO p, KontoDAO komu) {
 		// TODO Auto-generated method stub
 
 	}

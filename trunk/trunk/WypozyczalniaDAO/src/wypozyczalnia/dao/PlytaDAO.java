@@ -87,21 +87,22 @@ public class PlytaDAO implements Serializable {
 		// end-user-code
 	}
 
-	
 	public String getRok() {
 		return film.getRok();
 	}
+
 	public int getIleWolnych() {
 		return film.getIleWolnych();
 	}
+
 	public String getTytul() {
 		return film.getTytul();
 	}
+
 	public String getOpisFabuly() {
 		return film.getOpisFabuly();
 	}
-	
-	
+
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * 
@@ -274,11 +275,6 @@ public class PlytaDAO implements Serializable {
 	 *            (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform
 	 *            )"
 	 */
-	public void anulujRezerwacje() {
-		stan.anuluj(this);
-		this.zamowiona = null;
-	}
-
 	public void setPozyczona(KontoDAO pozyczona) {
 		this.pozyczona = pozyczona;
 	}
@@ -302,4 +298,30 @@ public class PlytaDAO implements Serializable {
 	public FilmDAO getFilmWolne() {
 		return filmWolne;
 	}
+
+	@Override
+	public int hashCode() {
+		final int prime = 31;
+		int result = 1;
+		result = prime * result + ((id == null) ? 0 : id.hashCode());
+		return result;
+	}
+
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj)
+			return true;
+		if (obj == null)
+			return false;
+		if (getClass() != obj.getClass())
+			return false;
+		PlytaDAO other = (PlytaDAO) obj;
+		if (id == null) {
+			if (other.id != null)
+				return false;
+		} else if (!id.equals(other.id))
+			return false;
+		return true;
+	}
+
 }
