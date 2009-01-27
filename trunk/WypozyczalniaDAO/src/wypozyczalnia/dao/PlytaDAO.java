@@ -87,6 +87,21 @@ public class PlytaDAO implements Serializable {
 		// end-user-code
 	}
 
+	
+	public String getRok() {
+		return film.getRok();
+	}
+	public int getIleWolnych() {
+		return film.getIleWolnych();
+	}
+	public String getTytul() {
+		return film.getTytul();
+	}
+	public String getOpisFabuly() {
+		return film.getOpisFabuly();
+	}
+	
+	
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * 
@@ -260,10 +275,8 @@ public class PlytaDAO implements Serializable {
 	 *            )"
 	 */
 	public void anulujRezerwacje() {
-		// if (getStanplyty() != ZAREZERWOWANA) {
-		// throw new IllegalArgumentException("zly stan poczatkowy");
-		// }
-		// setStanplyty(NIEWYPOZYCZONA);
+		stan.anuluj(this);
+		this.zamowiona = null;
 	}
 
 	public void setPozyczona(KontoDAO pozyczona) {

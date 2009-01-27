@@ -7,6 +7,9 @@ import java.util.Date;
 
 import javax.ejb.Remote;
 
+import wypozyczalnia.dao.FilmDAO;
+import wypozyczalnia.dao.KontoDAO;
+import wypozyczalnia.dao.PlytaDAO;
 import wypozyczalnia.to.zarzadzaniewypozyczeniami.ZamowienieTO;
 import wypozyczalnia.to.zarzadzaniewypozyczeniami.ZamowienieTOZbior;
 
@@ -24,4 +27,5 @@ public interface ZarzadzanieWypozyczeniami {
     
     public ZamowienieTO scalDaneZamowienia(ZamowienieTO zam);
     public ZamowienieTO utworzNoweZamowienie();
+	void anuluj(KontoDAO konto, PlytaDAO film);
 }

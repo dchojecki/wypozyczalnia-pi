@@ -10,6 +10,7 @@ import org.springframework.web.servlet.ModelAndView;
 import org.springframework.web.servlet.mvc.AbstractController;
 
 import wypozyczalnia.dao.FilmDAO;
+import wypozyczalnia.dao.PlytaDAO;
 
 public class Account extends AbstractController {
 
@@ -20,16 +21,16 @@ public class Account extends AbstractController {
 		WebApplicationContext ctx = getWebApplicationContext();
 		Sesja sesja = (Sesja) ctx.getBean("sesja");
 
-		Collection<FilmDAO> filmy = sesja.zamowioneFilmy();
+		Collection<PlytaDAO> plyty = sesja.zamowionePlyty();
 
-		ModelAndView m = new ModelAndView("results");
+		ModelAndView m = new ModelAndView("res_pid");
 
 		m.addObject("title", "Zamowione filmy");
 		// m.addObject("query", query);
-		m.addObject("ile", filmy.size());
+		m.addObject("ile", plyty.size());
 		m.addObject("act_zamow", false);
 		m.addObject("act_anuluj", true);
-		m.addObject("films", filmy);
+		m.addObject("plyty", plyty);
 
 		return m;
 	}

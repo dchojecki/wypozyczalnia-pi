@@ -1,10 +1,13 @@
 package wypozyczalnia.dao.plyty;
 
+import java.util.Collection;
+
 import javax.persistence.DiscriminatorValue;
 import javax.persistence.Entity;
 
 import wypozyczalnia.dao.KontoDAO;
 import wypozyczalnia.dao.PlytaDAO;
+import wypozyczalnia.dao.ZamowienieDAO;
 
 @Entity
 @DiscriminatorValue("PlytaPozyczona")
@@ -21,8 +24,7 @@ public class PlytaPozyczona extends StanPlyty {
 
 	@Override
 	public void anuluj(PlytaDAO plyta) {
-		// TODO Auto-generated method stub
-
+		
 	}
 
 	@Override
