@@ -24,7 +24,7 @@ public class ZarzWypGLFabrykaDanych extends ZarzWypFabrykaDanych {
 	private static ZarzWypOracleDAOMock mock = null;
 
 	public ZarzWypGLFabrykaDanych() {
-		setFactoryType(FactoryType.OracleDAO);
+		setFactoryType(FactoryType.MEMORY);
 	}
 
 	@Override
