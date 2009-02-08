@@ -22,7 +22,6 @@ public class FilmyFactory {
 		PlytaDAO p;
 
 		f = new FilmDAO();
-		f.setId(32);
 		f.setTytul("Karmazynowy przyplyw");
 		f.setRok("1995");
 		f
@@ -31,14 +30,12 @@ public class FilmyFactory {
 		Set<PlytaDAO> plyty = f.getPlyty();
 		Set<PlytaDAO> wolne = f.getWolne();
 		p = new PlytaDAO();
-		p.setId("32/I");
 		p.setFilm(f);
 		p.setFilmWolne(f);
 
 		plyty.add(p);
 
 		p = new PlytaDAO();
-		p.setId("32/II");
 		p.setFilm(f);
 		p.setFilmWolne(f);
 		plyty.add(p);
@@ -47,7 +44,6 @@ public class FilmyFactory {
 		_filmy.put(f.getId(), f);
 
 		f = new FilmDAO();
-		f.setId(43);
 		f.setTytul("Zezowate szczescie");
 		f.setRok("1960");
 		f
@@ -88,9 +84,13 @@ public class FilmyFactory {
 		f.getWolne().addAll(f.getPlyty());
 		_filmy.put(f.getId(), f);
 
-		for (FilmDAO film : _filmy.values()) {
-			plytyMgr.dodajFilm(film);
-		}
+		// for (FilmDAO film : _filmy.values()) {
+		// plytyMgr.dodajFilm(film);
+		//
+		// for (PlytaDAO p1 : film.getPlyty()) {
+		// plytyMgr.dodajPlyte(p1);
+		// }
+		// }
 
 	}
 

@@ -61,6 +61,7 @@ public class Sesja {
 			zamowieniaMgr.anuluj(zalogowany, plyta);
 		}
 	}
+
 	public Collection<PlytaDAO> zamowionePlyty() {
 		if (czyZalogowany()) {
 			Set<ZamowienieDAO> zamowienia = zalogowany.getZamowienia();

@@ -19,12 +19,12 @@ public abstract class ZarzadzanieKontamiFabrykaDanych {
 	 * 
 	 * @return
 	 * @generated "UML to Java
-	 *            (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform)"
+	 *            (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform
+	 *            )"
 	 */
 
-
 	public ZarzadzanieKontamiFabrykaDanych() {
-		setFactoryType(FactoryType.OracleDAO);
+		setFactoryType(FactoryType.MEMORY);
 	}
 
 	public abstract ZarzadzanieKontamiDAO pobierzWypozyczalniaDAO();
