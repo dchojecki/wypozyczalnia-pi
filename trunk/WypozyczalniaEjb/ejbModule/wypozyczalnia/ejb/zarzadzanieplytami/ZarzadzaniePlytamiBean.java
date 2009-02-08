@@ -131,4 +131,16 @@ public class ZarzadzaniePlytamiBean implements ZarzadzaniePlytami,
 		return filmy;
 	}
 
+	@Override
+	public FilmDAO dodajFilm(String tytul, String opis, String rok) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public void dodajPlyte(Integer idFilmu) {
+		// TODO Auto-generated method stub
+
+	}
+
 }

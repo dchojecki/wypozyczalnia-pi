@@ -309,4 +309,20 @@ public class KontoDAO implements Serializable {
 	private Set<ZamowienieDAO> pozyczenia = new HashSet<ZamowienieDAO>();
 	private String login;
 
+	public void usunZamowienie(ZamowienieDAO found) {
+		zamowienia.remove(found);
+	}
+
+	public ZamowienieDAO zwrocZamowieniePlyty(PlytaDAO plyta) {
+		ZamowienieDAO found = null;
+		for (ZamowienieDAO z : zamowienia) {
+			Set<PozycjaZamowieniaDAO> pozycje = z.getPozycje();
+			for (PozycjaZamowieniaDAO pozycjaZamowieniaDAO : pozycje) {
+				if (pozycjaZamowieniaDAO.getPlyta().equals(plyta))
+					found = z;
+			}
+		}
+		return found;
+	}
+
 }

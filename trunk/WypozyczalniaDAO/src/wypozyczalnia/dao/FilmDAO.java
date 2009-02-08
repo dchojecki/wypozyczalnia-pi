@@ -17,6 +17,8 @@ import javax.persistence.NamedQuery;
 import javax.persistence.OneToMany;
 import javax.persistence.Table;
 
+import wypozyczalnia.dao.plyty.PlytaWolna;
+
 /**
  * <!-- begin-user-doc --> <!-- end-user-doc -->
  * 
@@ -236,9 +238,12 @@ public class FilmDAO implements Serializable {
 	public void zamowPlyte(PlytaDAO plyta) {
 		wolne.remove(plyta);
 	}
-	
+
 	public void anulujPlyte(PlytaDAO plyta) {
 		wolne.add(plyta);
+		plyta.setFilmWolne(this);
+		plyta.setStan(new PlytaWolna());
+		plyta.setZamowiona(null);
 	}
 
 	public Set<PlytaDAO> getWolne() {

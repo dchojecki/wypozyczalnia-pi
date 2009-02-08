@@ -11,7 +11,9 @@ import wypozyczalnia.dao.PlytaDAO;
 public interface ZarzadzaniePlytamiLocal {
 	void dodajFilm(FilmDAO film);
 
-	void dodajPlyte(PlytaDAO plyta);
+	void dodajPlyte(Integer idFilmu);
+
+	void dodajPlyte(PlytaDAO idFilmu);
 
 	PlytaDAO pobierzPlyte(String id);
 
@@ -22,4 +24,6 @@ public interface ZarzadzaniePlytamiLocal {
 	Collection<FilmDAO> zwrocListeFilmowDAO(String tytul);
 
 	Collection<PlytaDAO> zwrocListeWszystkichPlytDAO(FilmDAO film);
+
+	FilmDAO dodajFilm(String tytul, String opis, String rok);
 }

@@ -61,4 +61,32 @@ public class ZarzadzaniePlytamiMem implements ZarzadzaniePlytamiLocal {
 		return filmDAO.getPlyty();
 	}
 
+	@Override
+	public FilmDAO dodajFilm(String tytul, String opis, String rok) {
+		Collection<FilmDAO> filmy = zwrocListeFilmowDAO(tytul);
+		if (!filmy.isEmpty())
+			return null; // film juz istnieje
+
+		FilmDAO film = new FilmDAO();
+		film.setTytul(tytul);
+		film.setOpisFabuly(opis);
+		film.setRok(rok);
+		film.setId(Storage.filmyBufor.size());
+		Storage.filmyBufor.put(film.getId(), film);
+		return film;
+
+	}
+
+	@Override
+	public void dodajPlyte(Integer idFilmu) {
+		FilmDAO film = Storage.filmyBufor.get(idFilmu);
+		PlytaDAO plyta = new PlytaDAO();
+		plyta.setFilm(film);
+		plyta.setFilmWolne(film);
+		plyta.setId(((Integer) Storage.plytyBufor.size()).toString());
+		film.getPlyty().add(plyta);
+		film.getWolne().add(plyta);
+		Storage.plytyBufor.put(plyta.getId(), plyta);
+	}
+
 }
