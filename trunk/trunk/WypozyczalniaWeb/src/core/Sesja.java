@@ -111,23 +111,44 @@ public class Sesja {
 		return zamowieniaMgr;
 	}
 
-	public FilmDAO nowyFilm(String tytul, String rok, String opis) {
-		FilmDAO film = new FilmDAO();
-		// id - generated value
-		film.setTytul("300");
-		film.setRok(rok);
-		film.setOpisFabuly(opis);
-		getPlytyMgr().dodajFilm(film);
-		return film;
+	public String dodajFilm(String tytul, String rok, String opis) {
+		String tekst = "";
+
+		try {
+			Integer rokI = Integer.valueOf(rok);
+			if ((rokI < 1900) || (rokI > 2009)) {
+				return "Niepoprawny rok.";
+			}
+		} catch (NumberFormatException e) {
+			return "Niepoprawny rok.";
+		}
+
+		if (tytul.equals(""))
+			return "Musisz podac tytul!!!";
+
+		FilmDAO film = plytyMgr.dodajFilm(tytul, opis, rok);
+		if (film != null) // film nie istnial wczesniej
+			tekst = "Film " + film.getTytul()
+					+ " zostal poprawnie dodany do bazy!";
+		else
+			tekst = "Film o takim tytule juz istnieje!!!";
+
+		return tekst;
 	}
 
-	public PlytaDAO dodajPlyte(String plytaId, int filmId, String string2) {
-		FilmDAO film = plytyMgr.pobierzFilm(filmId);
-		PlytaDAO plyta = new PlytaDAO();
-		plyta.setFilm(film);
-		plyta.setFilmWolne(film);
-		plyta.setId("1/I");
-		plytyMgr.dodajPlyte(plyta);
-		return plyta;
+	public String dodajJednaPlyte(Integer idFilmu) {
+		FilmDAO film = plytyMgr.pobierzFilm(idFilmu);
+		plytyMgr.dodajPlyte(idFilmu);
+		return "Dodano plyte do filmu " + film.getTytul() + " !";
+	}
+
+	public String dodajWielePlyt(Integer idFilmu, Integer ileDodac) {
+		FilmDAO film = plytyMgr.pobierzFilm(idFilmu);
+
+		for (int i = 0; i < ileDodac; i++) {
+			plytyMgr.dodajPlyte(idFilmu);
+		}
+		return "Dodano " + Integer.toString(ileDodac) + " plyt do filmu "
+				+ film.getTytul() + " !";
 	}
 }
